@@ -1,0 +1,118 @@
+/* resets */
+body {margin:0;}
+#manuscript {margin:0;width:985px;margin-left:auto;margin-right:auto;font-size:20.5px;font-family:"times new roman", serif;position:relative;}
+div[data-type="section"] {width:auto;margin-left:285px;}
+h2 {font-size:1em;font-family: "Open Sans",Arial,sans-serif;}
+[data-type="box"] {background-color: #efefef;border:0; margin-bottom: 0em;padding:0;}
+
+/* summary sections */
+div[data-block_type="SR-H"]  h2.section-title span[data-block_type="SR-N-ri"] {font-size:1.2em;color:#006288;font-weight:bold;text-transform:uppercase;font-family:"arial",sans-serif;}
+div[data-block_type="SR-H"]  h2.section-title span[data-block_type="SR-H"] {font-size:1.2em;color:#35ADBB;font-weight:normal;text-transform:uppercase;font-family:"arial",sans-serif;}
+
+
+/* regular section a head sections */
+/* section title */
+div[data-block_type="h1"] h2.section-title span[data-type="number"] {display:none;}
+div[data-block_type="h1"] h2.section-title {color:#69003A;font-size:1.3em;font-family:sans-serif;}
+div[data-block_type="h1"] h2.section-title span[data-block_type="h1-N-ri"] {padding-right:.5em;}
+/* level 2 section title in regular section */
+div[data-block_type="h1"] > div[data-block_type="level_2_title"] span[data-block_type="h2"] {font-size:1.1em;color:#00AAAA;font-family:"arial", sans-serif;font-weight:bold;}
+div[data-block_type="h1"] > div[data-block_type="level_2_title"] p {margin-top:1em;}
+
+/* section intro box */
+div[data-block_type="h1"] div[data-block_type="SP"] {margin-bottom:1.2em;padding:.5em 0 .5em 0;border:0;background-color:#fff;margin-left:-285px;position:relative;background-image:url('../asset/css/introbg.png');background-position:left top;background-repeat:repeat-y;background-position:left top;}
+div[data-block_type="h1"] div[data-block_type="SP"] h3 {display:none;}
+div[data-block_type="h1"] div[data-block_type="SP"] [data-type="box_inner"] {margin-left:285px;}
+div[data-block_type="h1"] div[data-block_type="SP"] [data-block_type="SP-TXT-ni"] {color:#004178;position:absolute;left:60px;width:200px;text-align:justify;font-family:arial;font-weight:bold;color:#004178;}
+div[data-block_type="h1"] div[data-block_type="SP"] {font-size:19.5px;}
+div[data-block_type="h1"] div[data-block_type="SP"] ul {color:#006288;font-family:sans-serif;margin-top:0;margin-bottom:0;}
+div[data-block_type="h1"] div[data-block_type="SP"] ul p {margin-bottom:.25em;}
+div[data-block_type="h1"] div[data-block_type="SP"] ul [data-block_type="maker"] {display:none;}
+
+/* margin terms */
+[data-block_type="MN-GL-term"] {text-indent:0;color: orange;font-family: arial,sans-serif;left: 0;position: absolute;text-align: right;width: 255px;}
+
+/* numbered figures */
+[data-caption-compass] {margin-top:1em;margin-bottom:1em;}
+[data-type="figure_text"] > span[data-type="number"]  {display:none;}
+[data-type="figure_text"] > [data-type="caption"] span[data-block_type="FG-N-ri"] {color: #006288;font-family: "arial",sans-serig;font-weight: bold;}
+[data-type="figure_text"] > [data-type="caption"] span[data-block_type="FG-CAP"] {font-family:arial,sans-serif;font-size:.9em}
+[data-caption-compass] > img {display: block; margin-left: auto;margin-right: auto;}
+/* for sample can likely delete/alter later */
+body#supp_win #manuscript > img {display: block; margin-left: auto;margin-right: auto;margin-top:1em;} 
+body#supp_win #rightnav {display:none;}
+/* align left (compass doesn't matter) */
+[data-caption-compass][align="left"] {margin:0;position:absolute;margin-left:-285px;width:285px;}
+[data-caption-compass][align="left"] [data-type="figure_text"] {width:255px;}
+/* compass W */
+[data-caption-compass="NW"],[data-caption-compass="SW"],[data-caption-compass="W"] {display:table;margin-left:-285px;}
+.compassImg {display:table-cell;text-align:center;width:700px;}
+[data-caption-compass="NW"] [data-type="figure_text"],[data-caption-compass="W"] [data-type="figure_text"],[data-caption-compass="SW"] [data-type="figure_text"] {width:255px;padding-right:30px;display:table-cell;}
+[data-caption-compass="NW"] [data-type="figure_text"] {vertical-align:top;}
+[data-caption-compass="W"] [data-type="figure_text"] {vertical-align:middle;}
+[data-caption-compass="SW"] [data-type="figure_text"] {vertical-align:bottom;}
+/* figures in examples */
+[data-caption-compass][align="left"] {margin-left:-305px;}
+[data-block_type="EXP"] [data-caption-compass="NW"],[data-block_type="EXP"] [data-caption-compass="SW"],[data-block_type="EXP"] [data-caption-compass="W"] {margin-left:-305px;}
+[data-block_type="EXP"] [data-caption-compass] {background-color:white;}
+[data-caption-compass="S"] > [data-type="figure_text"] {margin-top:.8em;}
+
+
+/* def boxes */
+[data-block_type="BX1"] {background-color:#E9F6F7;}
+[data-block_type="BX1"] h3 {display:none;}
+[data-block_type="BX1"] [data-block_type="BX1-T"] p {background-color:#D1EDEE;color:#F37322;font-family:sans-serif;font-weight:bold;padding:.3em 1em;border-bottom:3px solid white;margin-bottom:.3em;}
+[data-block_type="BX1"] [data-type="box_inner"] p {padding-left:1em;padding-right:1em;}
+[data-block_type="BX1"] [data-type="box_inner"] {margin-bottom: 1em;overflow: hidden;}
+
+/* regular paragraphs */
+[data-block_type="TXT"] p {text-indent:1.5em;}
+[data-block_type="EQ"] p {text-align:center;}
+
+/* icons */
+[data-block_type="rl_linkbox"] {display:none;}
+
+/* math 
+span[data-math^="math_"] {color:inherit;}
+*/
+
+
+/* example boxes */
+[data-block_type="EXP"] {background-image: url("../asset/css/bgexampletop.png");background-position:left top;background-repeat:no-repeat;margin-left:-285px;overflow:hidden;margin-top:1em;background-color:transparent;}
+[data-block_type="EXP"] > h3 {display:none;}
+[data-block_type="EXP"] > [data-type="box_inner"] {margin-left:285px;border-left:2px solid #BECDD6; padding-left:18px;margin-top:5px;}
+[data-block_type="EXP"] [data-block_type="EXP-N"] {
+    background-image: url("../asset/css/bgexampletitle.png");
+    background-repeat: repeat-y;
+    color: #69003a;
+    font-family: arial,sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    margin-left: -305px;
+    margin-top: -13px;
+    position: absolute;
+    text-align: center;
+    width: 285px;
+}
+[data-block_type="EXP-N"]:hover {text-decoration:underline;}
+[data-block_type="EXP-N"] {cursor: pointer;}
+
+[data-block_type="EXP"] [data-block_type="EXP-N"] p {margin-bottom:.2em;margin-top:.2em}
+[data-block_type="EXP"] [data-block_type="EXP-TXT-first"] [data-block_type="EXP-T-ri"] {color:#69003A;font-family:arial;font-weight:bold;}
+[data-block_type="EXP"] [data-block_type="EXP-TXT-first"] p {position:relative;top:-8px;margin-bottom:0em;}
+
+
+
+/* supp wins examples */
+.supp_win button.readon_button {display:none;}
+
+/* temporary and can be removed */
+[data-block_type*="image15"] {cursor: pointer;}
+[data-block_type*="image15"]:hover {text-decoration:underline;}
+[data-block_type*="image25"] {cursor: pointer;}
+[data-block_type*="image25"]:hover {text-decoration:underline;}
+[data-block_type*="image35"] {cursor: pointer;}
+[data-block_type*="image35"]:hover {text-decoration:underline;}
+
+
+[src="asset/ch1/images/17MOOREIPS-MSE_9e_fig_01_16.jpg"] {position:relative;left:-230px;}

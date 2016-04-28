@@ -18,7 +18,7 @@ use strict;
 binmode(STDIN, ":utf8");
 binmode(STDOUT, ":utf8");
 
-my $baseXMLfile = "scc9e-ch03.xml"; #-------------------------> identify digfir file here
+my $baseXMLfile = "ips9e-ch01.xml"; #-------------------------> identify digfir file here
 my $nomathXML_file = "math/${baseXMLfile}_no_math.xml";
 my $mathXMLfile = "math/math_only_$baseXMLfile";
 my $mathJSfile = "math/mathjax_$baseXMLfile.js";

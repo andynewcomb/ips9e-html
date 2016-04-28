@@ -82,17 +82,78 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ebook\asset\css\bgexampletitle.png" />
+    <Content Include="ebook\asset\css\bgexampletop.png" />
+    <Content Include="ebook\asset\css\introbg.png" />
+    <Content Include="ebook\css\boilerplate.css" />
+    <Content Include="ebook\css\digfir_ebook_fw.css" />
+    <Content Include="ebook\css\images\drop_down.png" />
+    <Content Include="ebook\css\images\drop_right.png" />
+    <Content Include="ebook\css\images\query_correct.gif" />
+    <Content Include="ebook\css\images\query_incorrect.gif" />
+    <Content Include="ebook\css\images\simple_modal_x.png" />
+    <Content Include="ebook\css\images\status-modal-sprite.png" />
+    <Content Include="ebook\css\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="ebook\css\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="ebook\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="ebook\css\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="ebook\css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="ebook\css\ips9e.css" />
+    <Content Include="ebook\css\jquery-ui-custom.css" />
+    <Content Include="ebook\css\manuscript.css" />
+    <Content Include="ebook\ips9e.xml" />
+    <Content Include="ebook\ips9e_ch1_1.html" />
+    <Content Include="ebook\ips9e_ch1_10.html" />
+    <Content Include="ebook\ips9e_ch1_10_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_11.html" />
+    <Content Include="ebook\ips9e_ch1_11_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_12.html" />
+    <Content Include="ebook\ips9e_ch1_12_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_13.html" />
+    <Content Include="ebook\ips9e_ch1_13_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_14.html" />
+    <Content Include="ebook\ips9e_ch1_14_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_1_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_2.html" />
+    <Content Include="ebook\ips9e_ch1_2_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_3.html" />
+    <Content Include="ebook\ips9e_ch1_3_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_4.html" />
+    <Content Include="ebook\ips9e_ch1_4_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_5.html" />
+    <Content Include="ebook\ips9e_ch1_5_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_6.html" />
+    <Content Include="ebook\ips9e_ch1_6_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_7.html" />
+    <Content Include="ebook\ips9e_ch1_7_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_8.html" />
+    <Content Include="ebook\ips9e_ch1_8_dlap.xml" />
+    <Content Include="ebook\ips9e_ch1_9.html" />
+    <Content Include="ebook\ips9e_ch1_9_dlap.xml" />
+    <Content Include="ebook\js\bh_cleanup.js" />
+    <Content Include="ebook\js\digfir_ebook_fw.js" />
+    <Content Include="ebook\js\excanvas.compiled.js" />
+    <Content Include="ebook\js\ips9e.js" />
+    <Content Include="ebook\js\ips9e_ch1.js" />
+    <Content Include="ebook\js\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="ebook\js\jquery.js" />
+    <Content Include="ebook\js\jquery_extensions.js" />
+    <Content Include="ebook\js\player.js" />
+    <Content Include="ebook\js\query_types.js" />
+    <Content Include="ebook\js\swfobject.js" />
+    <Content Include="ebook\js\utilities.js" />
     <Content Include="Web.config" />
     <Content Include="xml\ips9e-ch01.xml" />
     <Content Include="xml\ips9e-ch02.xml" />
     <Content Include="xml\ips9e-ch03.xml" />
+    <Content Include="xml\math\ips9e-ch01.xml_no_math.xml" />
+    <Content Include="xml\math\mathjax_ips9e-ch01.xml.js" />
+    <Content Include="xml\math\math_only_ips9e-ch01.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="xml\math\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
