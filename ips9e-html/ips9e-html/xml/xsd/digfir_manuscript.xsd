@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:attribute name="title" type="xs:string"/>
+    <xs:attribute name="name" type="xs:string"/>
+    <xs:attribute name="number" type="xs:string"/>
+
+    <!--  Manuscript -->
+    <xs:element name="manuscript">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="chapter" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="manuscript-id" type="xs:string"/>
+            <xs:attribute name="subtype" type="xs:string"/>
+            <xs:attribute ref="title" use="required"/>
+            <xs:attribute ref="name" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!--  Chapter -->
+    <xs:element name="chapter">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="chapter-metadata" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="description" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="section" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string"/>
+            <xs:attribute name="start-numbering-at"/>
+            <xs:attribute name="start-table-numbering-at"/>
+            <xs:attribute name="start-figure-numbering-at"/>
+            <xs:attribute name="start-question-numbering-at"/>
+            <xs:attribute name="question-numbering-level"/>
+            <xs:attribute name="table-caption-placement"/>
+            <xs:attribute name="block_type" type="xs:string" use="optional"/>
+            <xs:attribute ref="title" use="optional"/>
+            <xs:attribute ref="number"/>
+            <xs:attribute name="customnumbering"/>
+            <xs:attribute name="numberall"/>
+            <xs:attribute name="numbered">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="true"/>
+                        <xs:enumeration value="false"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="supp_win" type="xs:string" use="optional"/>
+            <xs:attribute name="print_page" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="chapter-metadata">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element name="chapter-title" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="chapter-title">
+        <xs:complexType mixed="true">
+            <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Description -->
+    <xs:element name="description">
+        <xs:complexType mixed="true">
+            <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:group name="textInlineElements">
+        <xs:choice>
+            <xs:element name="sub">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="sup">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="br" type="xs:string"/>
+            <xs:element name="image"/>
+            <xs:element name="wbr"/>
+            <xs:element name="ref"/>
+            <xs:element name="em">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="strong">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="xref"/>
+
+            <!-- PW: the following two are kind of blocks, but are inline elements -->
+            <xs:element name="query">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:attribute name="display" type="xs:string"/>
+                    <xs:attribute name="id" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+
+            <!-- keywords -->
+            <xs:element name="keywords">
+                <xs:complexType mixed="true"> </xs:complexType>
+            </xs:element>
+
+            <!-- metadata -->
+            <xs:element name="metadata">
+                <xs:complexType mixed="true"> </xs:complexType>
+            </xs:element>
+
+            <!-- "link" -->
+            <xs:element name="link">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:attribute name="href" type="xs:string" use="required"/>
+                    <xs:attribute name="target" type="xs:string" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+
+            <!-- "phrase" (really just a span), with optional block_type -->
+            <xs:element name="phrase">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+
+            <!-- reference to a defined term in the text -->
+            <xs:element name="termref">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                    <xs:attribute name="term" type="xs:string" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:group>
+
+    <!--  Section -->
+    <xs:element name="section">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="section-metadata" minOccurs="0" maxOccurs="1"/>
+                <xs:group ref="textBlockElements" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string"/>
+            <xs:attribute name="start-numbering-at" type="xs:string"/>
+            <xs:attribute name="block_type" type="xs:string" use="optional"/>
+            <xs:attribute ref="title" use="optional"/>
+            <xs:attribute ref="number"/>
+            <xs:attribute name="level">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="1"/>
+                        <xs:maxInclusive value="6"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="chapter"/>
+            <xs:attribute name="numbered">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="true"/>
+                        <xs:enumeration value="false"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="print_page" type="xs:string"/>
+            <xs:attribute name="supp_win" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="section-metadata">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element name="section-title" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="section-title">
+        <xs:complexType mixed="true">
+            <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attribute name="block_type" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="box-metadata">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element name="box-title" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="box-title">
+        <xs:complexType mixed="true">
+            <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attribute name="block_type" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+
+
+    <!-- Caption -->
+    <xs:element name="caption">
+        <xs:complexType mixed="true">
+            <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:complexType>
+    </xs:element>
+
+
+
+    <!-- Asset source -->
+    <xs:element name="asset_source">
+        <xs:complexType mixed="true">
+            <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Image -->
+    <xs:element name="image">
+        <xs:complexType>
+            <xs:attribute name="id" type="xs:string"/>
+            <xs:attribute name="asset-id" type="xs:string"/>
+            <xs:attribute name="src" type="xs:string"/>
+            <xs:attribute name="width" type="xs:string"/>
+            <xs:attribute name="height" type="xs:string"/>
+            <xs:attribute name="alt" type="xs:string"/>
+            <xs:attribute name="title" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Layout -->
+    <xs:element name="layout">
+        <xs:complexType>
+            <xs:attribute name="align">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="center"/>
+                        <xs:enumeration value="left"/>
+                        <xs:enumeration value="right"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="width" type="xs:string"/>
+            <xs:attribute name="border">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="true"/>
+                        <xs:enumeration value="false"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="field">
+        <xs:complexType mixed="true">
+            <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attribute name="key" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="field_block">
+        <xs:complexType mixed="true">
+            <xs:group ref="textBlockElements" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attribute name="key" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="term">
+        <xs:complexType mixed="true">
+            <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attribute name="key" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="definition">
+        <xs:complexType mixed="true">
+            <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attribute name="key" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="glossaryentry">
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="2" maxOccurs="2">
+                <xs:element ref="term" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="definition" minOccurs="1" maxOccurs="1"/>
+            </xs:choice>
+            <xs:attribute name="block_type" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:group name="textBlockElements">
+        <xs:choice>
+            <!-- Box -->
+            <xs:element name="box">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="box-metadata" minOccurs="0" maxOccurs="1"/>
+                        <xs:group ref="textBlockElements" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:string"/>
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick_trigger" type="xs:string" use="optional"/>
+                    <xs:attribute ref="title" use="optional"/>
+                    <xs:attribute ref="number"/>
+                    <xs:attribute name="numbered">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="true"/>
+                                <xs:enumeration value="false"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="data-instructions"/>
+                    <xs:attribute name="data-chapter" type="xs:string"/>
+                    <xs:attribute name="data-footnote-number" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+
+            <!-- comment -->
+            <xs:element name="comment">
+                <xs:complexType mixed="true">
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+
+            <!-- Description -->
+            <xs:element name="description">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:complexType>
+            </xs:element>
+
+
+            <!-- Figure -->
+            <!--- Ex:
+              <figure id="xxx" type="numbered">
+                  <image src="hello.jpg"/>
+                  <layout align="right" width="200"/>
+                  <caption>blah blah<i>blah</i></caption>
+              </figure>
+              <figure id="xxx" type="unnumbered">
+                  <video src="boo.flv" autostart="yes" />
+                  <layout align="left" width="200"/>
+                  <caption>blah blah<i>blah</i></caption>
+              </figure>
+          -->
+            <xs:element name="figure">
+                <xs:complexType>
+                    <xs:choice minOccurs="1" maxOccurs="unbounded">
+                        <xs:element ref="image" minOccurs="1" maxOccurs="1"/>
+                        <xs:element ref="layout" minOccurs="1" maxOccurs="1"/>
+                        <xs:element name="caption"/>
+                        <xs:element name="metadata"/>
+                        <xs:element name="rawhtml"/>
+                        <xs:element name="question"/>
+                        <xs:element ref="asset_source" minOccurs="1" maxOccurs="1"/>
+                    </xs:choice>
+                    <xs:attribute name="numbered">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="true"/>
+                                <xs:enumeration value="false"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="link-url" use="optional" type="xs:string"/>
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick_trigger" type="xs:string" use="optional"/>
+                    <xs:attribute name="number" type="xs:string"/>
+                    <xs:attribute name="id" type="xs:string"/>
+                    <xs:attribute name="mmtype" type="xs:string"/>
+                    <xs:attribute name="mmsrc" type="xs:string"/>
+                    <xs:attribute name="attr" type="xs:string"/>
+                    <xs:attribute name="playerid" type="xs:string"/>
+                    <xs:attribute name="autoplay" type="xs:string" use="optional"/>
+                    <xs:attribute name="expandable" type="xs:string" use="optional"/>
+                    <xs:attribute name="altsrc" type="xs:string" use="optional"/>
+                    <xs:attribute name="alt-asset-id" type="xs:string" use="optional"/>
+                    <xs:attribute name="data-caption-compass" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+
+            <!-- glossary -->
+            <!--
+        <xs:element name="glossary">
+            <xs:complexType mixed="true">
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element ref="glossaryentry" minOccurs="0" maxOccurs="unbounded" />
+                </xs:choice>
+                <xs:attribute name="block_type" type="xs:string" use="optional"/>
+            </xs:complexType>
+        </xs:element>
+        -->
+            <xs:element name="glossary"> </xs:element>
+            <xs:element name="icon">
+                <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="image" minOccurs="1" maxOccurs="1"/>
+                        <xs:element name="caption"/>
+                        <xs:element name="metadata"/>
+                    </xs:choice>
+                    <xs:attribute name="link-url" use="optional" type="xs:string"/>
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick_trigger" type="xs:string" use="optional"/>
+                    <xs:attribute name="id" type="xs:string"/>
+                    <xs:attribute name="attr" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+
+            <!-- imchoice -->
+            <xs:element name="imchoice">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:attribute name="title" type="xs:string" use="required"/>
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                    <xs:attribute name="encrypted" type="xs:string" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+
+            <!-- keywords -->
+            <xs:element name="keywords">
+                <xs:complexType mixed="true">
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+
+            <!-- List -->
+            <xs:element name="list">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="li" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                    <xs:attribute name="type" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="unordered"/>
+                                <xs:enumeration value="ordered"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="pin" use="optional">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="true"/>
+                                <xs:enumeration value="false"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="id" type="xs:string" use="optional"/>
+                    <xs:attribute name="start" type="xs:string" use="optional"/>
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick_trigger" type="xs:string" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+
+
+            <!-- metadata -->
+            <!--
+        <xs:element name="metadata">
+            <xs:complexType mixed="true">
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded" />
+                    <xs:element ref="field" minOccurs="0" maxOccurs="unbounded" />
+                    <xs:element ref="field_block" minOccurs="0" maxOccurs="unbounded" />
+                </xs:choice>
+                <xs:attribute name="block_type" type="xs:string" use="optional"/>
+            </xs:complexType>
+        </xs:element>
+        -->
+            <xs:element name="metadata"> </xs:element>
+
+            <!-- Paragraph -->
+            <xs:element name="p">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:attribute name="pin" use="optional">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="true"/>
+                                <xs:enumeration value="false"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="id" type="xs:string" use="optional"/>
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick_trigger" type="xs:string" use="optional"/>
+                    <xs:attribute name="data-margin-content"/>
+                    <xs:attribute name="data-url" type="xs:string" use="optional"/>
+                    <xs:attribute name="data-file" type="xs:string" use="optional"/>
+                    <xs:attribute name="data-dataset" type="xs:string" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+
+
+
+            <!-- query -->
+            <xs:element name="query">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                    <xs:attribute name="encrypted" type="xs:string" use="optional"/>
+                    <xs:attribute name="id" type="xs:string" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+
+
+            <!-- question -->
+            <xs:element name="question">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textBlockElements" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:attribute name="numbered">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="true"/>
+                                <xs:enumeration value="false"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="number" type="xs:string"/>
+                    <xs:attribute name="id" type="xs:string"/>
+                    <xs:attribute name="title" type="xs:string"/>
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+
+
+
+            <!-- Rawhtml -->
+            <xs:element name="rawhtml">
+                <xs:complexType mixed="true">
+                    <xs:attribute name="id" type="xs:string" use="optional"/>
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick_trigger" type="xs:string" use="optional"/>
+                    <xs:attribute name="pin" use="optional">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="true"/>
+                                <xs:enumeration value="false"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+
+
+
+            <!-- table -->
+            <xs:element name="table">
+                <xs:complexType mixed="true">
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element name="tbody"/>
+                        <xs:element name="p"/>
+                        <xs:element ref="layout" minOccurs="1" maxOccurs="1"/>
+                        <xs:element name="table_caption"/>
+                        <xs:element name="metadata"/>
+                    </xs:choice>
+                    <xs:attribute name="numbered">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="true"/>
+                                <xs:enumeration value="false"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="number" type="xs:string"/>
+                    <xs:attribute name="id" type="xs:string"/>
+                    <xs:attribute name="title" type="xs:string"/>
+                    <xs:attribute name="block_type" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick" type="xs:string" use="optional"/>
+                    <xs:attribute name="onclick_trigger" type="xs:string" use="optional"/>
+                    <xs:attribute name="mmsrc" type="xs:string"/>
+                    <xs:attribute name="attr" type="xs:string"/>
+                    <xs:attribute name="caption-placement" type="xs:string"/>
+                    <xs:attribute name="height" type="xs:string"/>
+                    <xs:attribute name="width" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+
+            <!-- table_caption -->
+            <xs:element name="table_caption">
+                <xs:complexType mixed="true">
+                    <xs:group ref="textInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="tbody">
+                <xs:complexType mixed="true">
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element name="tr"/>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="tr">
+                <xs:complexType mixed="true">
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element name="th"/>
+                        <xs:element name="td"/>
+                    </xs:choice>
+                    <xs:attribute name="class" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="th">
+                <xs:complexType mixed="true">
+                    <xs:attribute name="align" type="xs:string"/>
+                    <xs:attribute name="colspan" type="xs:string"/>
+
+                    <xs:attribute name="cell_class" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="td">
+                <xs:complexType mixed="true">
+                    <xs:attribute name="align" type="xs:string"/>
+                    <xs:attribute name="colspan" type="xs:string"/>
+                    <xs:attribute name="class" type="xs:string"/>
+                    <xs:attribute name="cell_class" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:group>
+
+</xs:schema>
