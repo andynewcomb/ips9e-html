@@ -60,7 +60,7 @@ var Player_subtype = Player_manuscript_type.extend({
     initialize2: function() {
 	
 	// Do not delete this
-    this._super();
+        this._super();
 
 	// You will most likely not want to delete this
 	var link_handler = new LinkHandler();
@@ -71,7 +71,7 @@ var Player_subtype = Player_manuscript_type.extend({
 
 
     // all figures displaying on main page
-    // figures aligned left need flagged as such (use a non digfir flag)
+	// figures aligned left need flagged as such (use a non digfir flag)
     // Why not just say "left"? Why not just take all values for align?
 	$('[data-type="figure"][data-layout-align="left"]').each(function() {
 		var left = $(this);
@@ -102,7 +102,7 @@ var Player_subtype = Player_manuscript_type.extend({
 	});
 	$('[data-block_type="h1"] [data-caption-compass*="W"] > img').wrap("<div class='compassImg'></div>");
 
-        
+
     // common code for all popup requests - size/position of popup
     var pop_content = function(url, w, h) {
         var path = window.location.pathname;
@@ -111,99 +111,36 @@ var Player_subtype = Player_manuscript_type.extend({
     };
 
 
-//EXAMPLE LINKS
-        // add link to popup on the example number
-        $('[data-block_type="EXP"] > [data-type="box_inner"] > [data-block_type="EXP-N"]').click(function() {
-            var exnum = $(this).find('p').text().replace(/EXAMPLE ([\d\.]+)/i, "$1");
-            var supp_win = exnum.replace(/(\d+)\.(\d+)/, "asset/ch$1/supp_wins/examples/example_$1_$2.html");
-	    pop_content(supp_win, "1020px", "500px");
-        });
+////EXAMPLE LINKS
+//        // add link to popup on the example number
+//        $('[data-block_type="EXP"] > [data-type="box_inner"] > [data-block_type="EXP-N"]').click(function() {
+//            var exnum = $(this).find('p').text().replace(/EXAMPLE ([\d\.]+)/i, "$1");
+//            var supp_win = exnum.replace(/(\d+)\.(\d+)/, "asset/ch$1/supp_wins/examples/example_$1_$2.html");
+//	    pop_content(supp_win, "1020px", "500px");
+//        });
 
 
-//NUMBERED FIGURE LINKS
-	// add link on the figure image so it popup (
-	$('[data-block_type="h1"] [data-caption-compass]  > .compassImg img').click(function() {
-            var fignum = $(this).attr('src').replace(/fig_([\d_]+)/i, "$1");
-            var supp_win = fignum.replace(/.*0?(\d+)_0?(\d+)\.jpg/, "asset/ch$1/supp_wins/figures/figure_$1_$2.html");
-	    pop_content(supp_win, "1015px", "700px");
-        });
-        // add link on the figure image to popup 
-	$('[data-block_type="h1"] [data-caption-compass]  > img').click(function() {
-            var fignum = $(this).attr('src').replace(/fig_([\d_]+)/i, "$1");
-            var supp_win = fignum.replace(/.*0?(\d+)_0?(\d+)\.jpg/, "asset/ch$1/supp_wins/figures/figure_$1_$2.html");
-	    pop_content(supp_win, "1015px", "700px");
-        });
-	// add link on the figure number to popup
-	$('[data-block_type="h1"] [data-caption-compass] [data-block_type="FG-N-ri"]').click(function() {
-            var fignum = $(this).text().replace(/FIGURE ([\d\.]+)/i, "$1");
-            var supp_win = fignum.replace(/(\d+)\.(\d+)/, "asset/ch$1/supp_wins/figures/figure_$1_$2.html");
-	    pop_content(supp_win, "1015px", "700px");
-        });
-        
-/* Create some sample HTML files for the different figures. Delete this code when done */
+////NUMBERED FIGURE LINKS
+//	// add link on the figure image so it popup (
+//	$('[data-block_type="h1"] [data-caption-compass]  > .compassImg img').click(function() {
+//            var fignum = $(this).attr('src').replace(/fig_([\d_]+)/i, "$1");
+//            var supp_win = fignum.replace(/.*0?(\d+)_0?(\d+)\.jpg/, "asset/ch$1/supp_wins/figures/figure_$1_$2.html");
+//	    pop_content(supp_win, "1015px", "700px");
+//        });
+//        // add link on the figure image to popup 
+//	$('[data-block_type="h1"] [data-caption-compass]  > img').click(function() {
+//            var fignum = $(this).attr('src').replace(/fig_([\d_]+)/i, "$1");
+//            var supp_win = fignum.replace(/.*0?(\d+)_0?(\d+)\.jpg/, "asset/ch$1/supp_wins/figures/figure_$1_$2.html");
+//	    pop_content(supp_win, "1015px", "700px");
+//        });
+//	// add link on the figure number to popup
+//	$('[data-block_type="h1"] [data-caption-compass] [data-block_type="FG-N-ri"]').click(function() {
+//            var fignum = $(this).text().replace(/FIGURE ([\d\.]+)/i, "$1");
+//            var supp_win = fignum.replace(/(\d+)\.(\d+)/, "asset/ch$1/supp_wins/figures/figure_$1_$2.html");
+//	    pop_content(supp_win, "1015px", "700px");
+//        });
 	
-//now change the size of the image in the supp window by a percentage
-	//15%
-	$('body#supp_win > #manuscript > img.fifteen').each(function() {
-		var scale = .23;
-		image = $(this) //update... this will find caption images too. 
-		var h = image.height() * scale;
-		var w = image.width() * scale;
-		image.css({ height: h, width: w });
-	});
 	
-	//25%
-	$('body#supp_win > #manuscript > img.twentyfive').each(function() {
-		var scale = .25;
-		image = $(this) //update... this will find caption images too. 
-		var h = image.height() * scale;
-		var w = image.width() * scale;
-		image.css({ height: h, width: w });
-	});
-	//35%
-	$('body#supp_win > #manuscript > img.thirtyfive').each(function() {
-		var scale = .27;
-		image = $(this) //update... this will find caption images too. 
-		var h = image.height() * scale;
-		var w = image.width() * scale;
-		image.css({ height: h, width: w });
-	});
-$('[data-block_type="image1512"]').click(function() {
-            var supp_win = "asset/ch1/supp_wins/figures/figure_1_12_15.html";
-	    pop_content(supp_win, "1015px", "700px");
-        });	
-$('[data-block_type="image2512"]').click(function() {
-            var supp_win = "asset/ch1/supp_wins/figures/figure_1_12_25.html";
-	    pop_content(supp_win, "1015px", "700px");
-        });
-$('[data-block_type="image3512"]').click(function() {
-            var supp_win = "asset/ch1/supp_wins/figures/figure_1_12_35.html";
-	    pop_content(supp_win, "1015px", "700px");
-        });
-$('[data-block_type="image1514"]').click(function() {
-            var supp_win = "asset/ch1/supp_wins/figures/figure_1_14_15.html";
-	    pop_content(supp_win, "1015px", "700px");
-        });	
-$('[data-block_type="image2514"]').click(function() {
-            var supp_win = "asset/ch1/supp_wins/figures/figure_1_14_25.html";
-	    pop_content(supp_win, "1015px", "700px");
-        });
-$('[data-block_type="image3514"]').click(function() {
-            var supp_win = "asset/ch1/supp_wins/figures/figure_1_14_35.html";
-	    pop_content(supp_win, "1015px", "700px");
-        });
-$('[data-block_type="image1516"]').click(function() {
-            var supp_win = "asset/ch1/supp_wins/figures/figure_1_16_15.html";
-	    pop_content(supp_win, "1015px", "700px");
-        });	
-$('[data-block_type="image2516"]').click(function() {
-            var supp_win = "asset/ch1/supp_wins/figures/figure_1_16_25.html";
-	    pop_content(supp_win, "1015px", "700px");
-        });
-$('[data-block_type="image3516"]').click(function() {
-            var supp_win = "asset/ch1/supp_wins/figures/figure_1_16_35.html";
-	    pop_content(supp_win, "1015px", "700px");
-        });
 
 
 
