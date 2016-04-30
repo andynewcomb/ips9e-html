@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<manifest id="ips9e" timestamp="1461863745" supp_win="0"><manuscript id="57224235757a2ef453000000" title="Chapter 1: Looking at Data&#x2014;Distributions" question-delivery-method="ARGA" number="1">
+<manifest id="ips9e" timestamp="1461967394" supp_win="0"><manuscript id="57224235757a2ef453000000" title="Chapter 1: Looking at Data&#x2014;Distributions" question-delivery-method="ARGA" number="1">
     <section title="Looking at Data&#x2014;Distributions" id="ips9e-ch01-sec-01" folder="false" filename="ips9e_ch1_1.html" dlapFilename="ips9e_ch1_1_dlap.xml" numquestions="0"/>
     <section number="1.1" id="ips9e-ch01-sec1-01" folder="false" filename="ips9e_ch1_2.html" dlapFilename="ips9e_ch1_2_dlap.xml" numquestions="0">
       <title><phrase block_type="h1-N-ri">1.1</phrase> <phrase block_type="h1">Data</phrase></title>
@@ -8,7 +8,10 @@
       <title><phrase block_type="SR-XH">SECTION 1.1</phrase> <phrase block_type="SR-H">SUMMARY</phrase></title>
     </section>
     <section id="ips9e-ch01-exer1-01" folder="false" filename="ips9e_ch1_4.html" dlapFilename="ips9e_ch1_4_dlap.xml" numquestions="0">
-      <title><phrase block_type="SR-XH">SECTION 1.1</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></title>
+      <title>
+        <phrase block_type="SR-XH">SECTION 1.1</phrase>
+        <phrase block_type="SR-X-H">EXERCISES</phrase>
+      </title>
     </section>
     <section number="1.2" id="ips9e-ch01-sec1-02" folder="false" filename="ips9e_ch1_5.html" dlapFilename="ips9e_ch1_5_dlap.xml" numquestions="0">
       <title><phrase block_type="h1-N-ri">1.2</phrase> <phrase block_type="h1">Displaying Distributions with Graphs</phrase></title>
@@ -35,7 +38,7 @@
       <title><phrase block_type="SR-XH">SECTION 1.4</phrase> <phrase block_type="SR-H">SUMMARY</phrase></title>
     </section>
     <section id="ips9e-ch01-exer1-04" folder="false" filename="ips9e_ch1_13.html" dlapFilename="ips9e_ch1_13_dlap.xml" numquestions="0">
-      <title><phrase block_type="SR-XH">SECTION 1.4</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></title>
+      <title> <phrase block_type="SR-XH">SECTION 1.4</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></title>
     </section>
     <section id="ips9e-ch01-chapexer-01" folder="false" filename="ips9e_ch1_14.html" dlapFilename="ips9e_ch1_14_dlap.xml" numquestions="0">
       <title><phrase block_type="CR-X-N-ri">CHAPTER 1</phrase> <phrase block_type="CR-X-H">EXERCISES</phrase></title>

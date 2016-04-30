@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="Stylesheet.xsl" type="text/xsl"?>
 <manuscript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://www.w3.org/1998/Math/MathML" manuscript-id="02" name="" title="Moore_Chapter_02" xsi:noNamespaceSchemaLocation="xsd/digfir_manuscript.xsd">
-<chapter id="ips9e-ch02" number="2" title="Chapter 2: Looking at Data&#8212;Relationships" start-numbering-at="79" numbered="true">
+<chapter id="ips9e-ch02" number="2" title="Chapter 2: Looking at Data&#8212;Relationships" start-numbering-at="2" numbered="true">
 <section id="ips9e-ch02-sec-01" block_type="chapter" number="2" title="Looking at Data&#8212;Relationships" numbered="true" level="1" print_page="79">
 <p id="ips9e-ch02-p-01" block_type="CN">2</p>
 <p id="ips9e-ch02-p-02" block_type="CT">Looking at Data&#8212;Relationships</p>
 <p id="ips9e_page_79" block_type="page_start" data-margin-content="right">79</p>
 <figure id="ips9e-ch02-unfig-01" block_type="C-H-graphic" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch02-img-01" alt="image" src="images/17MOOREIPS-MSE_9e_CO02.jpg"/>
+<image asset-id="ips9e-ch02-img-01" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_CO02.jpg"/>
 <asset_source>Yellow Dog Productions/Getty Images</asset_source>
 </figure>
 <box id="ips9e-ch02-box-01" numbered="false" block_type="chap_outline" title="CHAPTER OUTLINE">
@@ -61,7 +61,7 @@
 </box>
 <figure id="ips9e-ch02-unfig-02" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="left" width="small" border="false"/>
-<image asset-id="ips9e-ch02-img-03" alt="image" src="images/17MOOREIPS-MSE_9e_P_02_01.jpg"/>
+<image asset-id="ips9e-ch02-img-03" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_P_02_01.jpg"/>
 <asset_source>Anthony Behar/Sipa USA/Sipa via AP Images</asset_source>
 </figure>
 <box id="ips9e-ch02-box-06" numbered="false" block_type="BX1">
@@ -202,7 +202,7 @@
 <box id="ips9e-ch02-box-18" block_type="rl_linkbox"><p id="ips9e-ch02-p-99" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="LAUNDRY"><phrase>LAUNDRY</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <figure id="ips9e-ch02-unfig-03" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="right" width="small" border="false"/>
-<image asset-id="ips9e-ch02-img-05" alt="image" src="images/17MOOREIPS-MSE_9e_P_02_02.jpg"/>
+<image asset-id="ips9e-ch02-img-05" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_P_02_02.jpg"/>
 <asset_source>&#169; Kristoffer Tripplaar/Alamy</asset_source>
 </figure>
 <p id="ips9e-ch02-p-100" block_type="EXP-last">One recent study rated 53 laundry detergents on a scale from 1 to 100. The scale summarizes washing performance under a variety of conditions. Price per load is given in cents.<termref term="fn_ch2_fn5"><sup>5</sup></termref> We will examine the relationship between rating and price per load for these laundry detergents. We expect that the higher-priced detergents will tend to have higher ratings.</p>
@@ -237,7 +237,7 @@
 <p id="ips9e-ch02-p-116" block_type="EXP-last"><link href="figure_2_1.html">Figure 2.1</link> gives a scatterplot that displays the relationship between the response variable, rating, and the explanatory variable, price per load. The most striking feature that we see in the plot is a case that appears to be very different from the others. One of the laundry detergents has a rating that is about average (51), but the price per load (56 cents) is almost double that of the other products.</p>
 <figure id="ips9e-ch02-fig-01" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.1" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-06" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_01.jpg"/>
+<image asset-id="ips9e-ch02-img-06" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_01.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.1</phrase> <phrase block_type="FG-CAP">Scatterplot of price per load (in cents) versus rating for 53 laundry detergents, <link href="example_2_9.html">Example 2.9</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-117" block_type="EXP-last">Cases that fall well outside the general pattern of the relationship are called outliers. We provide a more detailed description of these in <link href="ips9e-ch02-sec1-05">Section 2.5</link>. For now, we remove this case and focus on the relationship of the remaining data.</p>
@@ -246,7 +246,7 @@
 <p id="ips9e_page_87" block_type="page_start" data-margin-content="right">87</p>
 <figure id="ips9e-ch02-fig-02" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.2" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-07" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_02.jpg"/>
+<image asset-id="ips9e-ch02-img-07" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_02.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.2</phrase> <phrase block_type="FG-CAP">Scatterplot of price per load (in cents) versus rating for 52 laundry detergents (with the outlier removed), <link href="example_2_9.html">Example 2.9</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-119" block_type="TXT">Always plot the explanatory variable, if there is one, on the horizontal axis (the <em>x</em> axis) of a scatterplot. We usually call the explanatory variable <em>x</em> and the response variable <em>y</em>. If there is no explanatory-response distinction, either variable can go on the horizontal axis. Time plots such as the one in <link href="figure_1_12.html">Figure 1.12</link> (page 22) are special scatterplots where the explanatory variable <em>x</em> is a measure of time.</p>
@@ -287,7 +287,7 @@
 <box id="ips9e-ch02-box-30" block_type="rl_linkbox"><p id="ips9e-ch02-p-140" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="LAUND"><phrase>LAUND</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <figure id="ips9e-ch02-fig-03" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.3" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-08" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_03.jpg"/>
+<image asset-id="ips9e-ch02-img-08" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_03.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.3</phrase> <phrase block_type="FG-CAP">Scatterplot of rating versus price per load (in cents), with a fitted straight line, <link href="example_2_10.html">Example 2.10</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-141" block_type="EXP-mid">There is a large amount of scatter about the line. We see that there are eight laundry detergents with a price of 14 cents per load. For these products, the variation in ratings is substantial, from 25 to 71. We do not see any additional outliers in this plot.</p>
@@ -309,13 +309,13 @@
 <p id="ips9e_page_90" block_type="page_start" data-margin-content="left">90</p>
 <figure id="ips9e-ch02-fig-04" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="2.4" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-09" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_04a.jpg"/>
-<image asset-id="ips9e-ch02-img-10" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_04b.jpg"/>
+<image asset-id="ips9e-ch02-img-09" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_04a.jpg"/>
+<image asset-id="ips9e-ch02-img-10" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_04b.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.4</phrase> <phrase block_type="FG-CAP">State spending (in billions of dollars) and population (in millions) for the 50 U.S. states, <link href="example_2_11.html">Example 2.11</link>.</phrase></caption>
 </figure>
 <figure id="ips9e-ch02-fig-05" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="2.5" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-11" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_05.jpg"/>
+<image asset-id="ips9e-ch02-img-11" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_05.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.5</phrase> <phrase block_type="FG-CAP">Scatterplot of state spending (in billions of dollars) versus population for the 50 U.S. states, with a fitted straight line, <link href="example_2_11.html">Example 2.11</link>.</phrase></caption>
 </figure>
 <box id="ips9e-ch02-box-34" numbered="false" block_type="EXR">
@@ -332,7 +332,7 @@
 <p id="ips9e-ch02-p-157" block_type="EXP-last"><link href="figure_2_6.html">Figure 2.6</link> is a scatterplot of calcium retention in milligrams per day (mg/d) versus calcium intake (mg/d) for 56 children aged 11 to 15 years. A smooth curve generated by software helps us see the relationship between the two variables.</p>
 <figure id="ips9e-ch02-fig-06" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="2.6" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-12" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_06.jpg"/>
+<image asset-id="ips9e-ch02-img-12" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_06.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.6</phrase> <phrase block_type="FG-CAP">Scatterplot of calcium retention (mg/d) versus calcium intake (mg/d) for 56 children, with a fitted curve, <link href="example_2_12.html">Example 2.12</link>. There is a positive relationship between these two variables, but it is not linear.</phrase></caption>
 </figure>
 <p id="ips9e_page_91" block_type="page_start" data-margin-content="right">91</p>
@@ -351,7 +351,7 @@
 </box>
 <figure id="ips9e-ch02-fig-07" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="2.7" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-13" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_07.jpg"/>
+<image asset-id="ips9e-ch02-img-13" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_07.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.7</phrase> <phrase block_type="FG-CAP">Scatterplot of log calcium retention versus calcium intake, with a fitted line, for 56 children, <link href="example_2_13.html">Example 2.13</link>. The relationship is approximately linear.</phrase></caption>
 </figure>
 <p id="ips9e_page_92" block_type="page_start" data-margin-content="left">92</p>
@@ -364,7 +364,7 @@
 <box id="ips9e-ch02-box-40" block_type="rl_linkbox"><p id="ips9e-ch02-p-173" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="EDSPEND"><phrase>EDSPEND</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <figure id="ips9e-ch02-fig-08" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.8" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-15" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_08.jpg"/>
+<image asset-id="ips9e-ch02-img-15" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_08.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.8</phrase> <phrase block_type="FG-CAP">Scatterplot of log spending versus log population for the 50 U.S. states, with a fitted line, <link href="example_2_14.html">Example 2.14</link>. The relationship is approximately linear.</phrase></caption>
 </figure>
 </box>
@@ -390,7 +390,7 @@
 <box id="ips9e-ch02-box-45" block_type="rl_linkbox"><p id="ips9e-ch02-p-185" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="LAUND"><phrase>LAUND</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <figure id="ips9e-ch02-fig-09" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.9" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-17" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_09.jpg"/>
+<image asset-id="ips9e-ch02-img-17" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_09.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.9</phrase> <phrase block_type="FG-CAP">Scatterplot of rating versus price per load (in cents), with fitted straight lines, for 52 laundry detergents, <link href="example_2_15.html">Example 2.15</link>. The type of detergent is indicated by the color: blue for liquid and red for powder.</phrase></caption>
 </figure>
 </box>
@@ -408,8 +408,8 @@
 </box>
 <figure id="ips9e-ch02-fig-10" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.10" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-19" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_10a.jpg"/>
-<image asset-id="ips9e-ch02-img-20" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_10b.jpg"/>
+<image asset-id="ips9e-ch02-img-19" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_10a.jpg"/>
+<image asset-id="ips9e-ch02-img-20" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_10b.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.10</phrase> <phrase block_type="FG-CAP">Scatterplot of rating versus price per load (in cents), with smooth curves, <link href="example_2_16.html">Example 2.16</link>: (a) with a small value of the smoothing parameter; (b) with a higher value of the smoothing parameter.</phrase></caption>
 </figure>
 <p id="ips9e_page_95" block_type="page_start" data-margin-content="right">95</p>
@@ -421,7 +421,7 @@
 </box>
 <figure id="ips9e-ch02-fig-11" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="2.11" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-21" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_11.jpg"/>
+<image asset-id="ips9e-ch02-img-21" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_11.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.11</phrase> <phrase block_type="FG-CAP">Scatterplot of log spending versus log population, with a smooth curve fitted to the data, for 50 U.S. states, <link href="example_2_17.html">Example 2.17</link>. This smooth curve fits the data very well and suggests that the relationship is generally linear except for states with small populations.</phrase></caption>
 </figure>
 <p id="ips9e_page_96" block_type="page_start" data-margin-content="left">96</p>
@@ -703,7 +703,7 @@
 <li id="ips9e-ch02-li-88"><p id="ips9e-ch02-p-257" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> <link href="figure_2_12.html">Figure 2.12</link> gives a scatterplot of calories versus percent alcohol. Give a short summary of what can be learned from the plot.</p>
 <figure id="ips9e-ch02-fig-12" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.12" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-22" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_12.jpg"/>
+<image asset-id="ips9e-ch02-img-22" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_12.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.12</phrase> <phrase block_type="FG-CAP">Scatterplot of calories versus percent alcohol for 159 domestic brands of beer, <link href="exercise_2_28.html">Exercise 2.28</link>.</phrase></caption>
 </figure>
 <p id="ips9e_page_99" block_type="page_start" data-margin-content="right">99</p>
@@ -780,7 +780,7 @@
 </list>
 <figure id="ips9e-ch02-fig-13" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.13" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-23" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_13.jpg"/>
+<image asset-id="ips9e-ch02-img-23" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_13.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.13</phrase> <phrase block_type="FG-CAP">Scatterplot of births (per 1000 people) versus Internet users (per 100 people) for 106 countries, <link href="exercise_2_34.html">Exercise 2.34</link>.</phrase></caption>
 </figure>
 </question>
@@ -936,7 +936,7 @@
 <p id="ips9e_page_101" block_type="page_start" data-margin-content="right">101</p>
 <figure id="ips9e-ch02-fig-14" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.14" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-25" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_14.jpg"/>
+<image asset-id="ips9e-ch02-img-25" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_14.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.14</phrase> <phrase block_type="FG-CAP">Two scatterplots of the same data. The linear pattern in the plot on the right appears stronger because of the surrounding space.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-297" block_type="TXT">Our eyes can be fooled by changing the plotting scales or the amount of white space around the cloud of points in a scatterplot.<termref term="fn_ch2_fn16"><sup>16</sup></termref> We need to follow our strategy for data analysis by using a numerical measure to supplement the graph. <em>Correlation</em> is the measure we use.</p>
@@ -996,7 +996,7 @@
 <p id="ips9e-ch02-p-335" block_type="TXT">The scatterplots in <link href="figure_2_15.html">Figure 2.15</link> illustrate how values of <em>r</em> closer to 1 or <em>&#8722;</em>1 correspond to stronger linear relationships. To make the essential meaning of <em>r</em> clear, the standard deviations of both variables in these plots are equal, and the horizontal and vertical scales are the same. In general, it is not so easy to guess the value of <em>r</em> from the appearance of a scatterplot. Remember that changing the plotting scales in a scatterplot may mislead our eyes, but it does not change the standardized values of the variables and, therefore, cannot change the correlation. To explore how extreme observations can influence <em>r</em>, use the <em>Correlation and Regression</em> applet available on the text website. Also, see <link href="exercise_2_56.html">Exercises 2.56</link> and <link href="exercise_2_57.html">2.57</link> (page 106).</p>
 <figure id="ips9e-ch02-fig-15" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="2.15" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-28" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_15.jpg"/>
+<image asset-id="ips9e-ch02-img-28" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_15.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.15</phrase> <phrase block_type="FG-CAP">How the correlation <em>r</em> measures the direction and strength of a linear association.</phrase></caption>
 </figure>
 <p id="ips9e_page_104" block_type="page_start" data-margin-content="left">104</p>
@@ -1281,7 +1281,7 @@
 <p id="ips9e-ch02-p-418" block_type="EXP-last"><link href="figure_2_16.html">Figure 2.16</link> is a scatterplot of these data. The plot shows a moderately strong negative linear association with no outliers. The correlation is <em>r</em> = &#8722;0.7786. People with larger increases in nonexercise activity do indeed gain less fat. A line drawn through the points will describe the overall pattern well.</p>
 <figure id="ips9e-ch02-fig-16" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.16" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-32" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_16.jpg"/>
+<image asset-id="ips9e-ch02-img-32" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_16.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.16</phrase> <phrase block_type="FG-CAP">Fat gain after eight weeks of overeating plotted against the increase in nonexercise activity over the same period, <link href="example_2_19.html">Example 2.19</link>.</phrase></caption>
 </figure>
 </box>
@@ -1304,7 +1304,7 @@
 <p id="ips9e-ch02-p-431" block_type="EXP-EQ">fat gain = 3.505 &#8722; (0.00344 &#215; NEA increase)</p>
 <figure id="ips9e-ch02-fig-17" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.17" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-33" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_17.jpg"/>
+<image asset-id="ips9e-ch02-img-33" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_17.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.17</phrase> <phrase block_type="FG-CAP">A regression line fitted to the nonexercise activity data and used to predict fat gain for an NEA increase of 400 calories, <link href="example_2_20.html">Examples 2.20</link> and <link href="example_2_21.html">2.21</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-432" block_type="EXP-last">The figure shows that this line fits the data well. The slope <em>b</em><sub>1</sub> = &#8722;0.00344 tells us that fat gained goes down by 0.00344 kilogram for each added calorie of NEA increase.</p>
@@ -1361,7 +1361,7 @@
 <p id="ips9e-ch02-p-462" block_type="TXT-ni">Errors are positive if the observed response lies above the line and negative if the response lies below the line. We want a regression line that makes these prediction errors as small as possible. <link href="figure_2_18.html">Figure 2.18</link> illustrates the idea. For clarity, the plot shows only three of the points from <link href="figure_2_17.html">Figure 2.17</link>, along with the line, on an expanded scale. The line passes below two of the points and above one of them. The vertical distances of the data points from the line appear as vertical line segments. A &#8220;good&#8221; regression line makes these distances as small as possible. There are many ways to make &#8220;as small as possible&#8221; precise. The most common is the <em>least-squares</em> idea. The line in <link href="figure_2_17.html">Figures 2.17</link> and <link href="figure_2_18.html">2.18</link> is, in fact, the least-squares regression line.</p>
 <figure id="ips9e-ch02-fig-18" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="2.18" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-34" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_18.jpg"/>
+<image asset-id="ips9e-ch02-img-34" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_18.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.18</phrase> <phrase block_type="FG-CAP">The least-squares idea: make the errors in predicting <em>y</em> as small as possible by minimizing the sum of their squares.</phrase></caption>
 </figure>
 <p id="ips9e_page_112" block_type="page_start" data-margin-content="left">112</p>
@@ -1415,9 +1415,9 @@
 <p id="ips9e_page_114" block_type="page_start" data-margin-content="left">114</p>
 <figure id="ips9e-ch02-fig-19" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.19" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-37" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_19a.jpg"/>
-<image asset-id="ips9e-ch02-img-38" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_19b.jpg"/>
-<image asset-id="ips9e-ch02-img-39" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_19c.jpg"/>
+<image asset-id="ips9e-ch02-img-37" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_19a.jpg"/>
+<image asset-id="ips9e-ch02-img-38" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_19b.jpg"/>
+<image asset-id="ips9e-ch02-img-39" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_19c.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.19</phrase> <phrase block_type="FG-CAP">Regression results for the nonexercise activity data from three statistical software packages: (a) SPSS; (b) Minitab; (c) JMP. Other software produces similar output.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-501" block_type="TXT">Part of the art of using software is to ignore the extra information that is almost always present. Look for the results that you need. Once you understand a statistical method, you can read output from almost any software.</p>
@@ -1437,7 +1437,7 @@
 <box id="ips9e-ch02-box-112" block_type="rl_linkbox"><p id="ips9e-ch02-p-513" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET"><phrase>FIDGET</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <figure id="ips9e-ch02-fig-20" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="2.20" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-40" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_20.jpg"/>
+<image asset-id="ips9e-ch02-img-40" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_20.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.20</phrase> <phrase block_type="FG-CAP">Scatterplot of fat gain versus nonexercise activity for 16 subjects from <link href="example_2_8.html">Example 2.8</link>. The two lines are the two least-squares regression lines, using nonexercise activity to predict fat gain (blue) and using fat gain to predict nonexercise activity (red), <link href="example_2_25.html">Example 2.25</link>.</phrase></caption>
 </figure>
 </box>
@@ -1651,12 +1651,12 @@
 <p id="ips9e_page_121" block_type="page_start" data-margin-content="right">121</p>
 <figure id="ips9e-ch02-fig-21" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.21" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-41" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_21.jpg"/>
+<image asset-id="ips9e-ch02-img-41" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_21.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.21</phrase> <phrase block_type="FG-CAP">SPSS output for predicting number of undergraduate college students using population for the 50 states, <link href="exercise_2_78.html">Exercise 2.78</link>.</phrase></caption>
 </figure>
 <figure id="ips9e-ch02-fig-22" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.22" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-42" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_22.jpg"/>
+<image asset-id="ips9e-ch02-img-42" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_22.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.22</phrase> <phrase block_type="FG-CAP">SPSS output for predicting number of undergraduate college students using population, with the four largest states deleted, <link href="exercise_2_79.html">Exercise 2.79</link>.</phrase></caption>
 </figure>
 </question>
@@ -2009,8 +2009,8 @@
 </box>
 <figure id="ips9e-ch02-fig-23" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.23" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-45" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_23a.jpg"/>
-<image asset-id="ips9e-ch02-img-46" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_23b.jpg"/>
+<image asset-id="ips9e-ch02-img-45" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_23a.jpg"/>
+<image asset-id="ips9e-ch02-img-46" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_23b.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.23</phrase> <phrase block_type="FG-CAP">(a) Scatterplot of fat gain versus increase in nonexercise activity, with the least-squares regression line, <link href="example_2_26.html">Example 2.26</link>. (b) Residual plot for the regression displayed in panel (a); the line at <em>y</em> = 0 marks the mean of the residuals.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-662" block_type="TXT">Most regression software will calculate and store residuals for you.</p>
@@ -2069,8 +2069,8 @@
 <p id="ips9e-ch02-p-678" block_type="EXP-last"><link href="figure_2_24.html">Figure 2.24</link>(a) gives the data with the least-squares regression line, and <link href="figure_2_24.html">Figure 2.24</link>(b) plots the residuals. Look at the right part of <link href="figure_2_24.html">Figure 2.24</link>(b), where the values of Internet users are high. Here we see that the residuals tend to be positive.</p>
 <figure id="ips9e-ch02-fig-24" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.24" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-47" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_24a.jpg"/>
-<image asset-id="ips9e-ch02-img-48" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_24b.jpg"/>
+<image asset-id="ips9e-ch02-img-47" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_24a.jpg"/>
+<image asset-id="ips9e-ch02-img-48" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_24b.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.24</phrase> <phrase block_type="FG-CAP">(a) Scatterplot of birthrate versus Internet users, with the least-squares regression line, <link href="example_2_27.html">Example 2.27</link>. (b) Residual plot for the regression displayed in panel (a); the line at <em>y</em> = 0 marks the mean of the residuals.</phrase></caption>
 </figure>
 </box>
@@ -2168,8 +2168,8 @@
 <p id="ips9e-ch02-p-686" block_type="EXP-last">This diagnostic test is becoming widely used and is sometimes called A1c by health care professionals. <link href="table_2_2.html">Table 2.2</link> gives data on both HbA1c and FPG for 18 diabetics five months after they completed a diabetes education class.<termref term="fn_ch2_fn21"><sup>21</sup></termref></p>
 <figure id="ips9e-ch02-fig-25" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.25" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-50" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_25a.jpg"/>
-<image asset-id="ips9e-ch02-img-51" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_25b.jpg"/>
+<image asset-id="ips9e-ch02-img-50" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_25a.jpg"/>
+<image asset-id="ips9e-ch02-img-51" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_25b.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.25</phrase> <phrase block_type="FG-CAP">(a) Scatterplot of fasting plasma glucose against HbA1c (which measures long-term blood glucose), with the least-squares regression line, <link href="example_2_28.html">Example 2.28</link>. (b) Residual plot for the regression of fasting plasma glucose on HbA1c. Subject 15 is an outlier in fasting plasma glucose. Subject 18 is an outlier in HbA1c that may be influential but does not have a large residual.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-687" block_type="EXP-last">Because both FPG and HbA1c measure blood glucose, we expect a positive association. The scatterplot in <link href="figure_2_25.html">Figure 2.25</link>(a) shows a surprisingly weak relationship, with correlation <em>r</em> = 0.4819. The line on the plot is the least-squares regression line for predicting FPG from HbA1c. Its equation is</p>
@@ -2194,7 +2194,7 @@
 <p id="ips9e-ch02-p-700" block_type="EXP-last">To assess influence on the least-squares line, we recalculate the line leaving out a suspicious point. <link href="figure_2_26.html">Figure 2.26</link> shows three least-squares lines. The solid line is the regression line of FPG on HbA1c based on all 18 subjects. This is the same line that appears in <link href="figure_2_25.html">Figure 2.25</link>(a). The dotted line is calculated from all subjects except Subject 18. You see that point 18 does pull the line down toward itself. But the influence of Subject 18 is not very large&#8212;the dotted and solid lines are close together for HbA1c values between 6 and 14, the range of all except Subject 18.</p>
 <figure id="ips9e-ch02-fig-26" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.26" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-52" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_26.jpg"/>
+<image asset-id="ips9e-ch02-img-52" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_26.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.26</phrase> <phrase block_type="FG-CAP">Three regression lines for predicting fasting plasma glucose from HbA1c, <link href="example_2_29.html">Example 2.29</link>. The solid line uses all 18 subjects. The dotted line leaves out Subject 18. The dashed line leaves out Subject 15. &#8220;Leaving one out&#8221; calculations are the surest way to assess influence.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-701" block_type="EXP-last">The dashed line omits Subject 15, the outlier in <em>y</em>. Comparing the solid and dashed lines, we see that Subject 15 pulls the regression line up. The influence is again not large, but it exceeds the influence of Subject 18.</p>
@@ -2227,7 +2227,7 @@
 <p id="ips9e_page_131" block_type="page_start" data-margin-content="right">131</p>
 <figure id="ips9e-ch02-fig-27" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.27" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-53" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_27.jpg"/>
+<image asset-id="ips9e-ch02-img-53" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_27.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.27</phrase> <phrase block_type="FG-CAP">Scatterplot with least-squares regression line for predicting a household&#8217;s monthly charges for gas using its monthly charges for electricity, <link href="example_2_31.html">Example 2.31</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-718" block_type="TXT">Correlations that are due to lurking variables are sometimes called &#8220;nonsense correlations.&#8221; The correlation is real. What is nonsense is the suggestion that the variables are directly related so that changing one of the variables <em>causes</em> changes in the other. The question of causation is important enough to merit separate treatment in <link href="ips9e-ch02-sec1-07">Section 2.7</link>. For now, just <em>remember that an association between two variables x and y can reflect many types of relationships among x, y, and one or more lurking variables</em>.</p>
@@ -2818,9 +2818,9 @@
 <p id="ips9e_page_142" block_type="page_start" data-margin-content="left">142</p>
 <figure id="ips9e-ch02-fig-28" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="2.28" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-64" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_28a.jpg"/>
-<image asset-id="ips9e-ch02-img-65" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_28b.jpg"/>
-<image asset-id="ips9e-ch02-img-66" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_28c.jpg"/>
+<image asset-id="ips9e-ch02-img-64" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_28a.jpg"/>
+<image asset-id="ips9e-ch02-img-65" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_28b.jpg"/>
+<image asset-id="ips9e-ch02-img-66" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_28c.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.28</phrase> <phrase block_type="FG-CAP">Computer output for the calcium requirement study, <link href="example_2_40.html">Example 2.40</link>: (a) Minitab; (b) SPSS; (c) JMP.</phrase></caption>
 </figure>
 <p id="ips9e_page_143" block_type="page_start" data-margin-content="right">143</p>
@@ -3009,7 +3009,7 @@
 <p id="ips9e_page_147" block_type="page_start" data-margin-content="right">147</p>
 <figure id="ips9e-ch02-fig-29" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.29" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-69" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_29.jpg"/>
+<image asset-id="ips9e-ch02-img-69" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_29.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.29</phrase> <phrase block_type="FG-CAP">Computer output for the lying to a teacher data, <link href="exercise_2_123.html">Exercise 2.123</link>.</phrase></caption>
 </figure></li>
 <li id="ips9e-ch02-li-323"><p id="ips9e-ch02-p-952" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(e)</phrase> Find the conditional distribution that you chose in part (d) and, write a summary that includes your interpretation of the relationship based on this conditional distribution.</p></li>
@@ -3051,7 +3051,7 @@
 </table>
 <figure id="ips9e-ch02-fig-30" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.30" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-70" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_30.jpg"/>
+<image asset-id="ips9e-ch02-img-70" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_30.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.30</phrase> <phrase block_type="FG-CAP">Computer output for the trust and honesty in the workplace data, <link href="exercise_2_124.html">Exercise 2.124</link>.</phrase></caption>
 </figure>
 <list id="ips9e-ch02-list-86" type="ordered" block_type="numbered">
@@ -3229,7 +3229,7 @@
 <p id="ips9e-ch02-p-996" block_type="TXT">Items 1 and 2 in <link href="example_2_43.html">Example 2.43</link> are examples of direct causation. <em>Even when direct causation is present, very often it is not a complete explanation of an association between two variables.</em> The best evidence for causation comes from experiments that actually change <em>x</em> while holding all other factors fixed. If <em>y</em> changes, we have good reason to think that <em>x</em> caused the change in <em>y</em>.</p>
 <figure id="ips9e-ch02-fig-31" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.31" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-72" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_31.jpg"/>
+<image asset-id="ips9e-ch02-img-72" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_31.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.31</phrase> <phrase block_type="FG-CAP">Possible explanations for an observed association. The dashed double-arrow lines show an association. The solid arrows show a cause-and-effect link. The variable <em>x</em> is explanatory, <em>y</em> is a response variable, and <em>z</em> is a lurking variable.</phrase></caption>
 </figure>
 <p id="ips9e_page_150" block_type="page_start" data-margin-content="left">150</p>
@@ -3253,7 +3253,7 @@
 <p id="ips9e-ch02-p-1010" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Power lines and leukemia.</phrase> Electric currents generate magnetic fields. So living with electricity exposes people to magnetic fields. Living near power lines increases exposure to these fields. Really strong fields can disturb living cells in laboratory studies. Some people claim that the weaker fields we experience if we live near power lines cause leukemia in children.</p>
 <figure id="ips9e-ch02-unfig-04" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="left" width="small" border="false"/>
-<image asset-id="ips9e-ch02-img-74" alt="image" src="images/17MOOREIPS-MSE_9e_P_02_03.jpg"/>
+<image asset-id="ips9e-ch02-img-74" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_P_02_03.jpg"/>
 <asset_source>&#169; redbrickstock.com/Alamy Stock Photo</asset_source></figure>
 <p id="ips9e-ch02-p-1011" block_type="EXP-TXT-ni">It isn&#8217;t ethical to do experiments that expose children to magnetic fields. It&#8217;s hard to compare cancer rates among children who happen to live in more and less exposed locations because leukemia is rare and locations vary in many ways other than magnetic fields. We must rely on studies that compare children who have leukemia with children who don&#8217;t.</p>
 <p id="ips9e-ch02-p-1012" block_type="EXP-TXT-ni">A careful study of the effect of magnetic fields on children took five years and cost &#36;5 million. The researchers compared 638 children who had leukemia and 620 who did not. They went into the homes and actually measured the magnetic fields in the children&#8217;s bedrooms, in other rooms, and at the front door. They recorded facts about nearby power lines for the family home and also for the mother&#8217;s residence when she was pregnant. Result: no evidence of more than a chance connection between magnetic fields and childhood leukemia.<termref term="fn_ch2_fn29"><sup>29</sup></termref></p>
@@ -3511,7 +3511,7 @@
 </list>
 <figure id="ips9e-ch02-fig-32" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="2.32" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-75" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_32.jpg"/>
+<image asset-id="ips9e-ch02-img-75" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_32.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.32</phrase> <phrase block_type="FG-CAP">Percent of the population over 65 years and percent of the population under 15 years in the 13 Canadian provinces and territories, <link href="exercise_2_147.html">Exercise 2.147</link>.</phrase></caption>
 </figure>
 </question>
@@ -3523,7 +3523,7 @@
 <li id="ips9e-ch02-li-375"><p id="ips9e-ch02-p-1068" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Write a short paragraph explaining what the plot tells you about these two demographic groups in the 13 Canadian provinces and territories.</p>
 <figure id="ips9e-ch02-fig-33" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.33" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-76" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_33.jpg"/>
+<image asset-id="ips9e-ch02-img-76" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_33.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.33</phrase> <phrase block_type="FG-CAP">Scatterplot of percent of the population over 65 years versus percent of the population under 15 years for the 13 Canadian provinces and territories, <link href="exercise_2_147.html">Exercise 2.147</link>.</phrase></caption>
 </figure></li>
 <li id="ips9e-ch02-li-376"><p id="ips9e-ch02-p-1069" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Find the correlation between the percent of the population over 65 and the percent under 15. Does the correlation give a good numerical summary of the strength of this relationship? Explain your answer.</p></li>
@@ -3961,7 +3961,7 @@
 </table>
 <figure id="ips9e-ch02-fig-34" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.34" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-78" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_34.jpg"/>
+<image asset-id="ips9e-ch02-img-78" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_34.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.34</phrase> <phrase block_type="FG-CAP">Plot of salary versus year for an individual who receives approximately a 5&#37; raise each year for 20 years, with the least-squares regression line, <link href="exercise_2_156.html">Exercise 2.156</link>.</phrase></caption>
 </figure>
 <list id="ips9e-ch02-list-103" type="ordered" block_type="lower-alpha">
@@ -3986,12 +3986,12 @@
 </list>
 <figure id="ips9e-ch02-fig-35" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.35" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-79" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_35.jpg"/>
+<image asset-id="ips9e-ch02-img-79" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_35.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.35</phrase> <phrase block_type="FG-CAP">Plot of residuals versus year for an individual who receives approximately a 5&#37; raise each year for 20 years, <link href="exercise_2_157.html">Exercise 2.157</link>.</phrase></caption>
 </figure>
 <figure id="ips9e-ch02-fig-36" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.36" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-80" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_36.jpg"/>
+<image asset-id="ips9e-ch02-img-80" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_36.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.36</phrase> <phrase block_type="FG-CAP">Plot of log salary versus year for an individual who receives approximately a 5&#37; raise each year for 20 years, with the least-squares regression line, <link href="exercise_2_158.html">Exercise 2.158</link>.</phrase></caption>
 </figure>
 </question>
@@ -4004,7 +4004,7 @@
 <li id="ips9e-ch02-li-398"><p id="ips9e-ch02-p-1105" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Predict her salary for Year 25 using the least-squares regression equation constructed to predict log salary from year. Note that you will need to take the predicted log salary and convert this value back to the predicted salary. Many calculators have a function that will perform this operation.</p>
 <figure id="ips9e-ch02-fig-37" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.37" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-81" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_37.jpg"/>
+<image asset-id="ips9e-ch02-img-81" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_37.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.37</phrase> <phrase block_type="FG-CAP">Plot of residuals, based on log salary, versus year for an individual who receives approximately a 5&#37; raise each year for 20 years, <link href="exercise_2_158.html">Exercise 2.158</link>.</phrase></caption>
 </figure></li>
 <li id="ips9e-ch02-li-399"><p id="ips9e-ch02-p-1106" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(c)</phrase> Which prediction do you prefer? Explain your answer.</p></li>
@@ -4548,8 +4548,8 @@
 <p id="ips9e_page_162" block_type="page_start" data-margin-content="left">162</p>
 <figure id="ips9e-ch02-fig-38" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.38" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-86" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_38a.jpg"/>
-<image asset-id="ips9e-ch02-img-87" alt="image" src="images/17MOOREIPS-MSE_9e_fig_02_38b.jpg"/>
+<image asset-id="ips9e-ch02-img-86" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_38a.jpg"/>
+<image asset-id="ips9e-ch02-img-87" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_38b.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.38</phrase> <phrase block_type="FG-CAP">Selected JMP output for examining the relationship between Antho2 and Antho1, <link href="exercise_2_174.html">Exercise 2.174</link>.</phrase></caption>
 </figure>
 </section>

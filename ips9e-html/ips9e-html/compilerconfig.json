@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "ebook/css/ips9e.css",
+    "inputFile": "ebook/css/ips9e.less"
+  },
+  {
+    "outputFile": "ebook/css/ips9e_ch1.css",
+    "inputFile": "ebook/css/ips9e_ch1.less"
+  }
+]

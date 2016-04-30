@@ -1,15 +1,15 @@
 <chapter id="ips9e-ch01" number="1" title="Chapter 1: Looking at Data&#8212;Distributions" start-numbering-at="1" numbered="true">
   <section id="ips9e-ch01-sec-01" block_type="chapter" title="Looking at Data&#8212;Distributions" numbered="false" level="1" print_page="1">
-    <p id="ips9e-ch01-p-01" block_type="CN">1</p>
-    <p id="ips9e-ch01-p-02" block_type="CT">Looking at Data&#8212;Distributions</p>
     <p id="ips9e_page_1" block_type="page_start" data-margin-content="right">1</p>
     <figure id="ips9e-ch01-unfig-01" block_type="C-H-graphic" numbered="false" mmtype="image" mmsrc="" attr="">
-      <layout align="left" width="large" border="false"/>
-      <image asset-id="ips9e-ch01-img-01" alt="image" src="images/17MOOREIPS-MSE_9e_CO01.jpg"/>
+      <layout align="center" width="xlarge" border="false"/>
+      <image asset-id="ips9e-ch01-img-01" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_CO01.jpg"/>
       <asset_source>
         <phrase block_type="CO_PHCR">iStock/Creatista/Getty Images Plus</phrase>
       </asset_source>
     </figure>
+    <p id="ips9e-ch01-p-02" block_type="CT">Looking at Data&#8212;Distributions</p>
+    <p id="ips9e-ch01-p-01" block_type="CN">1</p>
     <box id="ips9e-ch01-box-01" numbered="false" block_type="chap_outline" title="CHAPTER OUTLINE">
       <list id="ips9e-ch01-list-01" type="unordered" block_type="simple">
         <li id="ips9e-ch01-li-01">
@@ -61,10 +61,7 @@
   </section>
   <section id="ips9e-ch01-sec1-01" block_type="h1" chapter="ch1" number="1.1" numbered="true" level="1" print_page="2">
     <section-metadata>
-      <section-title>
-        <phrase block_type="h1-N-ri">1.1</phrase>
-        <phrase block_type="h1">Data</phrase>
-      </section-title>
+      <section-title><phrase block_type="h1-N-ri">1.1</phrase> <phrase block_type="h1">Data</phrase></section-title>
     </section-metadata>
     <p id="ips9e_page_2" block_type="page_start" data-margin-content="left">2</p>
     <box id="ips9e-ch01-box-02" numbered="false" block_type="SP">
@@ -139,7 +136,7 @@
     </box>
     <figure id="ips9e-ch01-fig-01" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="1.1" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-02" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_01.jpg"/>
+      <image asset-id="ips9e-ch01-img-02" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_01.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.1</phrase>
         <phrase block_type="FG-CAP">
@@ -177,7 +174,7 @@
       </termref><phrase block_type="MN-GL-term">spreadsheet</phrase>. Spreadsheets are very useful for doing the kind of simple computations that you will do in <link href="exercise_1_2.html">Exercise 1.2</link>. You can type in a formula and have the same computation performed for each row.
     </p>
     <p id="ips9e-ch01-p-41" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-03" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-03" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-42" block_type="TXT">Note that the names we have chosen for the variables in our spreadsheet do not have spaces. For example, instead of &#8220;Restaurant Name&#8221; for the name of the restaurant, we simply use Name. In some statistical software packages, however, spaces are not allowed in variable names. For this reason, when creating spreadsheets for eventual use with statistical software, it is best to avoid spaces in variable names. Another convention is to use an underscore (&#95;) where you would normally use a space. For our data set, we could have used Regular&#95;Price and Discount&#95;Price for the two price variables.</p>
     <box id="ips9e-ch01-box-09" numbered="false" block_type="EXR">
@@ -227,12 +224,12 @@
       </p>
       <figure id="ips9e-ch01-unfig-02" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
         <layout align="left" width="small" border="false"/>
-        <image asset-id="ips9e-ch01-img-04" alt="image" src="images/17MOOREIPS-MSE_9e_P_01_01.jpg"/>
+        <image asset-id="ips9e-ch01-img-04" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_P_01_01.jpg"/>
         <asset_source>
           <phrase block_type="PHCR">Caiaimage/Chris Ryan/Getty Images</phrase>
         </asset_source>
       </figure>
-      <p id="ips9e-ch01-p-54" block_type="EXP-TXT-ni">The spreadsheet for this course will have seven variables:</p>
+      <p id="ips9e-ch01-p-54" block_type="EXP-TXT">The spreadsheet for this course will have seven variables:</p>
       <list id="ips9e-ch01-list-04" type="unordered" block_type="bullet">
         <li id="ips9e-ch01-li-15">
           <p id="ips9e-ch01-p-55" block_type="EXP-BLF">
@@ -311,7 +308,7 @@
     <p id="ips9e_page_6" block_type="page_start" data-margin-content="left">6</p>
     <p id="ips9e-ch01-p-74" block_type="TXT">Part of mastering your field of work is learning what variables are important and how they are best measured. Because details of particular measurements usually require knowledge of the particular field of study, we will say little about them.</p>
     <p id="ips9e-ch01-p-75" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-05" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-05" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-76" block_type="TXT">
       <em>Be sure that each variable really does measure what you want it to. A poor choice of variables can lead to misleading conclusions.</em> Often, for example, the <termref term="rate">
@@ -364,7 +361,7 @@
     </box>
     <p id="ips9e_page_7" block_type="page_start" data-margin-content="right">7</p>
     <p id="ips9e-ch01-p-89" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-06" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-06" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-90" block_type="TXT">
       <link href="exercise_1_5.html">Exercises 1.5</link> and <link href="exercise_1_6.html">1.6</link> illustrate an important point about presenting the results of your statistical calculations. <em>Always consider how to best communicate your results to a general audience.</em> For example, the numbers produced by your calculator or by statistical software frequently contain more digits that are needed. Be sure that you do not include extra information generated by software that will distract from a clear explanation of what you have found.
@@ -372,10 +369,7 @@
   </section>
   <section id="ips9e-ch01-sum1-01" block_type="SR-H" chapter="ch1" numbered="false" level="1" print_page="7">
     <section-metadata>
-      <section-title>
-        <phrase block_type="SR-XH">SECTION 1.1</phrase>
-        <phrase block_type="SR-H">SUMMARY</phrase>
-      </section-title>
+      <section-title><phrase block_type="SR-XH">SECTION 1.1</phrase> <phrase block_type="SR-H">SUMMARY</phrase></section-title>
     </section-metadata>
     <list id="ips9e-ch01-list-06" type="unordered" block_type="bullet">
       <li id="ips9e-ch01-li-24">
@@ -580,10 +574,7 @@
   </section>
   <section id="ips9e-ch01-sec1-02" block_type="h1" chapter="ch1" number="1.2" numbered="true" level="1" print_page="8">
     <section-metadata>
-      <section-title>
-        <phrase block_type="h1-N-ri">1.2</phrase>
-        <phrase block_type="h1">Displaying Distributions with Graphs</phrase>
-      </section-title>
+      <section-title><phrase block_type="h1-N-ri">1.2</phrase> <phrase block_type="h1">Displaying Distributions with Graphs</phrase></section-title>
     </section-metadata>
     <box id="ips9e-ch01-box-17" numbered="false" block_type="SP">
       <p id="ips9e-ch01-p-126" block_type="SP-TXT-ni">When you complete this section, you will be able to:</p>
@@ -656,14 +647,11 @@
     </p>
     <p id="ips9e-ch01-p-140" block_type="TXT-ni">
       The values of a categorical variable are labels for the categories, such as &#8220;yes&#8221; and &#8220;no.&#8221; The <termref term="distribution of a categorical variable">
-        <strong>distribution of a categorical variable</strong>
-      </termref><phrase block_type="MN-GL-term">distribution of a categorical variable</phrase> lists the categories and gives either the <termref term="count">
-        <strong>count</strong>
-      </termref><phrase block_type="MN-GL-term">count</phrase> or the <termref term="percent">
-        <strong>percent</strong>
-      </termref><phrase block_type="MN-GL-term">percent</phrase> of cases that fall in each category. An alternative to the percent is the <termref term="proportion">
-        <strong>proportion</strong>
-      </termref><phrase block_type="MN-GL-term">proportion</phrase>, the count divided by the sum of the counts. Note that the percent is simply the proportion times 100.
+        <strong>distribution of a categorical variable</strong></termref>
+      <phrase block_type="MN-GL-term">distribution of a categorical variable</phrase> lists the categories and gives either the <termref term="count"><strong>count</strong></termref>
+      <phrase block_type="MN-GL-term">count</phrase> or the <termref term="percent"><strong>percent</strong></termref>
+      <phrase block_type="MN-GL-term">percent</phrase> of cases that fall in each category. An alternative to the percent is the <termref term="proportion"><strong>proportion</strong></termref>
+      <phrase block_type="MN-GL-term">proportion</phrase>, the count divided by the sum of the counts. Note that the percent is simply the proportion times 100.
     </p>
     <box id="ips9e-ch01-box-18" numbered="false" block_type="EXP">
       <p id="ips9e-ch01-p-141" block_type="EXP-N">EXAMPLE 1.7</p>
@@ -711,7 +699,7 @@
       </box>
       <figure id="ips9e-ch01-unfig-03" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
         <layout align="left" width="small" border="false"/>
-        <image asset-id="ips9e-ch01-img-07" alt="image" src="images/17MOOREIPS-MSE_9e_P_01_02.jpg"/>
+        <image asset-id="ips9e-ch01-img-07" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_P_01_02.jpg"/>
         <asset_source>
           <phrase block_type="PHCR">&#169; Carl Skepper/Alamy</phrase>
         </asset_source>
@@ -721,7 +709,7 @@
       Note that the last value of the variable resource is &#8220;Other,&#8221; which includes all other online resources that were given as selection options. For data sets that have a large number of values for a categorical variable, we often create a category such as this that includes categories that have relatively small counts or percents. <em>Careful judgment is needed when doing this.</em> You don&#8217;t want to cover up some important piece of information contained in the data by combining data in this way.
     </p>
     <p id="ips9e-ch01-p-147" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-08" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-08" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <box id="ips9e-ch01-box-20" numbered="false" block_type="EXP">
       <p id="ips9e-ch01-p-148" block_type="EXP-N">EXAMPLE 1.8</p>
@@ -781,7 +769,7 @@
     </box>
     <figure id="ips9e-ch01-fig-02" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="1.2" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-09" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_02.jpg"/>
+      <image asset-id="ips9e-ch01-img-09" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_02.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.2</phrase>
         <phrase block_type="FG-CAP">
@@ -793,7 +781,7 @@
       The categories in a bar graph can be put in any order. In <link href="figure_1_2.html">Figure 1.2</link>, we ordered the resources based on their preference percents. For other data sets, an alphabetical ordering or some other arrangement might produce a more useful graphical display.
     </p>
     <p id="ips9e-ch01-p-158" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-10" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-10" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-159" block_type="TXT">You should always consider the best way to order the values of the categorical variable in a bar graph. Choose an ordering that will be useful to you. If you have difficulty, ask a friend if your choice communicates what you expect. Note that a bar graph using counts will look the same as a bar graph using percents. A pie chart naturally uses percents.</p>
     <p id="ips9e_page_11" block_type="page_start" data-margin-content="right">11</p>
@@ -813,7 +801,7 @@
     </box>
     <figure id="ips9e-ch01-fig-03" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="1.3" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-11" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_03.jpg"/>
+      <image asset-id="ips9e-ch01-img-11" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_03.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.3</phrase>
         <phrase block_type="FG-CAP">
@@ -839,7 +827,7 @@
       <em>To make a pie chart, you must include all the categories that make up a whole.</em> A category such as &#8220;Other&#8221; in this example can be used, but the sum of the percents for all the categories should be 100&#37;. This constraint makes bar graphs more flexible.
     </p>
     <p id="ips9e-ch01-p-169" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-12" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-12" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-170" block_type="level_2_title">
       <phrase block_type="h2">Quantitative variables: Stemplots and histograms</phrase>
@@ -919,11 +907,11 @@
       <p id="ips9e-ch01-p-181" block_type="EXP-TXT-first">
         To make a stemplot of these data, use the first digits as stems and the second digits as leaves. <link href="figure_1_4.html">Figure 1.4</link> shows the steps in making the plot, We use the first digit of each value as the stem. <link href="figure_1_4.html">Figure 1.4(a)</link> shows the stems that have values 3, 4, 5, 6, and 7. The first entry in our data set is 50. This appears in <link href="figure_1_4.html">Figure 1.4(b)</link> on the 5 stem with a leaf of 0. Similarly, the second value, 43, appears in the 4 stem with a leaf of 3. The stemplot is completed in <link href="figure_1_4.html">Figure 1.4(c)</link>, where the leaves are ordered from smallest to largest.
       </p>
-      <p id="ips9e-ch01-p-182" block_type="EXP-TXT-ni">The center of the distribution is in the 40s, and the data are more stretched out toward high values than low values (the highest value is 76, while the lowest is 31). In the plot, we do not see any extreme values that lie far from the remaining data.</p>
+      <p id="ips9e-ch01-p-182" block_type="EXP-TXT">The center of the distribution is in the 40s, and the data are more stretched out toward high values than low values (the highest value is 76, while the lowest is 31). In the plot, we do not see any extreme values that lie far from the remaining data.</p>
     </box>
     <figure id="ips9e-ch01-fig-04" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.4" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-13" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_04a-c.jpg"/>
+      <image asset-id="ips9e-ch01-img-13" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_04a-c.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.4</phrase>
         <phrase block_type="FG-CAP">
@@ -1039,7 +1027,7 @@
     </box>
     <figure id="ips9e-ch01-fig-05" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="1.5" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-14" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_05.jpg"/>
+      <image asset-id="ips9e-ch01-img-14" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_05.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.5</phrase>
         <phrase block_type="FG-CAP">
@@ -1069,7 +1057,7 @@
     </box>
     <figure id="ips9e-ch01-fig-06" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="1.6" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-15" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_06.jpg"/>
+      <image asset-id="ips9e-ch01-img-15" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_06.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.6</phrase>
         <phrase block_type="FG-CAP">
@@ -1213,7 +1201,7 @@
         </li>
         <li id="ips9e-ch01-li-65">
           <p id="ips9e-ch01-p-218" block_type="BX1-NLF">
-            <phrase block_type="maker">1.</phrase> Count the number of individuals in each class. These counts are called <termref term="frequencies">
+            <phrase block_type="maker">2.</phrase> Count the number of individuals in each class. These counts are called <termref term="frequencies">
               <strong>frequencies</strong>
             </termref><phrase block_type="MN-GL-term">frequency</phrase>, and a table of frequencies for all classes is a <termref term="frequency table">
               <strong>frequency table</strong>
@@ -1224,31 +1212,31 @@
               <tr class="tborder">
                 <th align="center" block_type="EXP-TB1-COLHD">Class</th>
                 <th align="center" block_type="EXP-TB1-COLHD">Count</th>
-                <th align="center" block_type="EXP-TB1-COLHD">Class</th>
+                <th align="center" block_type="EXP-TB1-COLHD" class="lborder">Class</th>
                 <th align="center" block_type="EXP-TB1-COLHD">Count</th>
               </tr>
               <tr class="tborder">
                 <td align="center" block_type="EXP-TB1-TXT">75 &#8804; IQ score &#60; 85</td>
                 <td align="center" block_type="EXP-TB1-TXT">2</td>
-                <td align="center" block_type="EXP-TB1-TXT">115 &#8804; IQ score &#60; 125</td>
+                <td align="center" block_type="EXP-TB1-TXT" class="lborder">115 &#8804; IQ score &#60; 125</td>
                 <td align="center" block_type="EXP-TB1-TXT">13</td>
               </tr>
               <tr>
                 <td align="center" block_type="EXP-TB1-TXT">85 &#8804; IQ score &#60; 95</td>
                 <td align="center" block_type="EXP-TB1-TXT">3</td>
-                <td align="center" block_type="EXP-TB1-TXT">125 &#8804; IQ score &#60; 135</td>
+                <td align="center" block_type="EXP-TB1-TXT" class="lborder">125 &#8804; IQ score &#60; 135</td>
                 <td align="center" block_type="EXP-TB1-TXT">10</td>
               </tr>
               <tr>
                 <td align="center" block_type="EXP-TB1-TXT">95 &#8804; IQ score &#60; 105</td>
                 <td align="center" block_type="EXP-TB1-TXT">10</td>
-                <td align="center" block_type="EXP-TB1-TXT">135 &#8804; IQ score &#60; 145</td>
+                <td align="center" block_type="EXP-TB1-TXT" class="lborder">135 &#8804; IQ score &#60; 145</td>
                 <td align="center" block_type="EXP-TB1-TXT">5</td>
               </tr>
               <tr class="bborder">
                 <td align="center" block_type="EXP-TB1-TXT">105 &#8804; IQ score &#60; 115</td>
                 <td align="center" block_type="EXP-TB1-TXT">16</td>
-                <td align="center" block_type="EXP-TB1-TXT">145 &#8804; IQ score &#60; 155</td>
+                <td align="center" block_type="EXP-TB1-TXT" class="lborder">145 &#8804; IQ score &#60; 155</td>
                 <td align="center" block_type="EXP-TB1-TXT">1</td>
               </tr>
             </tbody>
@@ -1263,7 +1251,7 @@
     </box>
     <figure id="ips9e-ch01-fig-07" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="1.7" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-16" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_07.jpg"/>
+      <image asset-id="ips9e-ch01-img-16" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_07.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.7</phrase>
         <phrase block_type="FG-CAP">
@@ -1293,10 +1281,10 @@
       Our eyes respond to the <em>area</em> of the bars in a histogram. Because the classes are all the same width, area is determined by height and all classes are fairly represented. There is no one right choice of the classes in a histogram. Too few classes will give a &#8220;skyscraper&#8221; graph, with all values in a few classes with tall bars. Too many will produce a &#8220;pancake&#8221; graph, with most classes having one or no observations. Neither choice will give a good picture of the shape of the distribution. You must use your judgment in choosing classes to display the shape. Statistical software will choose the classes for you. The software&#8217;s choice is often a good one, but you can change it if you want.
     </p>
     <p id="ips9e-ch01-p-226" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-17" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-17" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-227" block_type="Applet icon">
-      <image asset-id="ips9e-ch01-img-18" alt="image" src="images/BPSapplet-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-18" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-228" block_type="TXT">
       <em>You should be aware that the appearance of a histogram can change when you change the classes.</em> The histogram function in the <em>One-Variable Statistical Calculator</em> applet on the text website allows you to change the number of classes by dragging with the mouse, so that it is easy to see how the choice of classes affects the histogram.
@@ -1327,7 +1315,7 @@
       Draw bar graphs with blank space between the bars to separate the items being compared. Draw histograms with no space, to indicate that all values of the variable are covered. <em>Some spreadsheet programs, which are not primarily intended for statistics, will draw histograms as if they were bar graphs, with space between the bars.</em> Often, you can tell the software to eliminate the space to produce a proper histogram.
     </p>
     <p id="ips9e-ch01-p-236" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-19" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-19" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-237" block_type="level_2_title">
       <phrase block_type="h2">Data analysis in action: Don&#8217;t hang up on me</phrase>
@@ -1476,7 +1464,7 @@
     </box>
     <figure id="ips9e-ch01-fig-08" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="1.8" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-20" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_08.jpg"/>
+      <image asset-id="ips9e-ch01-img-20" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_08.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.8</phrase>
         <phrase block_type="FG-CAP">
@@ -1594,7 +1582,7 @@
       <phrase block_type="h2">Dealing with outliers</phrase>
     </p>
     <p id="ips9e-ch01-p-280" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-21" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-21" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-281" block_type="TXT-ni">
       In data sets smaller than the service call data, you can spot outliers by looking for observations that stand apart (either high or low) from the overall pattern of a histogram or stemplot. <em>Identifying outliers is a matter for judgment. Look for points that are clearly apart from the body of the data, not just the most extreme observations in a distribution. You should search for an explanation for any outlier.</em> Sometimes outliers point to errors made in recording the data. In other cases, the outlying observation may be caused by equipment failure or other unusual circumstances.
@@ -1616,7 +1604,7 @@
     </box>
     <figure id="ips9e-ch01-fig-09" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="1.9" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-22" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_09.jpg"/>
+      <image asset-id="ips9e-ch01-img-22" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_09.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.9</phrase>
         <phrase block_type="FG-CAP">
@@ -1639,7 +1627,7 @@
     </box>
     <figure id="ips9e-ch01-fig-10" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="1.10" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-23" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_10.jpg"/>
+      <image asset-id="ips9e-ch01-img-23" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_10.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.10</phrase>
         <phrase block_type="FG-CAP">
@@ -1681,7 +1669,7 @@
       If you are interested in marketing a product to undergraduate students, the unadjusted numbers would be of interest because you want to reach the most people. On the other hand, if you are interested in comparing states with respect to how well they provide opportunities for higher education to their residents, the population-adjusted values would be more suitable. <em>Always think about why you are doing a statistical analysis, and this will guide you in choosing an appropriate analytic strategy.</em>
     </p>
     <p id="ips9e-ch01-p-299" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-24" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-24" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-300" block_type="TXT">Here is an example with a different kind of outlier.</p>
     <box id="ips9e-ch01-box-59" numbered="false" block_type="EXP">
@@ -1737,7 +1725,7 @@
       </box>
       <figure id="ips9e-ch01-fig-11" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.11" mmtype="image" mmsrc="" attr="">
         <layout align="center" width="medium" border="false"/>
-        <image asset-id="ips9e-ch01-img-25" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_11.jpg"/>
+        <image asset-id="ips9e-ch01-img-25" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_11.jpg"/>
         <caption>
           <phrase block_type="FG-N-ri">Figure 1.11</phrase>
           <phrase block_type="FG-CAP">
@@ -1757,7 +1745,7 @@
       Whenever data are collected over time, it is a good idea to plot the observations in time order. <em>Displays of the distribution of a variable that ignore time order, such as stemplots and histograms, can be misleading when there is systematic change over time.</em>
     </p>
     <p id="ips9e-ch01-p-309" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-26" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-26" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e_page_22" block_type="page_start" data-margin-content="left">22</p>
     <box id="ips9e-ch01-box-61" numbered="false" block_type="BX1">
@@ -1785,7 +1773,7 @@
     </box>
     <figure id="ips9e-ch01-fig-12" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.12" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-27" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_12.jpg"/>
+      <image asset-id="ips9e-ch01-img-27" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_12.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.12</phrase>
         <phrase block_type="FG-CAP">
@@ -1797,10 +1785,7 @@
   </section>
   <section id="ips9e-ch01-sum1-02" block_type="SR-H" chapter="ch1" numbered="false" level="1" print_page="23">
     <section-metadata>
-      <section-title>
-        <phrase block_type="SR-XH">SECTION 1.2</phrase>
-        <phrase block_type="SR-H">SUMMARY</phrase>
-      </section-title>
+      <section-title><phrase block_type="SR-XH">SECTION 1.2</phrase> <phrase block_type="SR-H">SUMMARY</phrase></section-title>
     </section-metadata>
     <p id="ips9e_page_23" block_type="page_start" data-margin-content="right">23</p>
     <list id="ips9e-ch01-list-20" type="unordered" block_type="bullet">
@@ -1848,10 +1833,7 @@
   </section>
   <section id="ips9e-ch01-exer1-02" block_type="SR-X-H" chapter="ch1" numbered="false" level="1" print_page="23">
     <section-metadata>
-      <section-title>
-        <phrase block_type="SR-XH">SECTION 1.2</phrase>
-        <phrase block_type="SR-X-H">EXERCISES</phrase>
-      </section-title>
+      <section-title><phrase block_type="SR-XH">SECTION 1.2</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></section-title>
     </section-metadata>
     <p id="ips9e-ch01-p-326" block_type="SR-X-TXT-ni">
       <em>
@@ -3183,10 +3165,7 @@
   </section>
   <section id="ips9e-ch01-sec1-03" block_type="h1" chapter="ch1" number="1.3" numbered="true" level="1" print_page="27">
     <section-metadata>
-      <section-title>
-        <phrase block_type="h1-N-ri">1.3</phrase>
-        <phrase block_type="h1">Describing Distributions with Numbers</phrase>
-      </section-title>
+      <section-title><phrase block_type="h1-N-ri">1.3</phrase> <phrase block_type="h1">Describing Distributions with Numbers</phrase></section-title>
     </section-metadata>
     <box id="ips9e-ch01-box-81" numbered="false" block_type="SP">
       <p id="ips9e-ch01-p-411" block_type="SP-TXT-ni">When you complete this section, you will be able to:</p>
@@ -3302,7 +3281,7 @@
       </p>
       <figure id="ips9e-ch01-fig-13" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.13" mmtype="image" mmsrc="" attr="">
         <layout align="left" width="small" border="false"/>
-        <image asset-id="ips9e-ch01-img-28" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_13.jpg"/>
+        <image asset-id="ips9e-ch01-img-28" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_13.jpg"/>
         <caption>
           <phrase block_type="FG-N-ri">Figure 1.13</phrase>
           <phrase block_type="FG-CAP">
@@ -3441,7 +3420,7 @@
       </list>
     </box>
     <p id="ips9e-ch01-p-461" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-29" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-29" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-462" block_type="TXT">
       <em>Note that the formula</em> <phrase data-math="math_14"></phrase> <em>does not give the median, just the location of the median in the ordered list.</em> Medians require little arithmetic, so they are easy to find by hand for small sets of data. Arranging even a moderate number of observations in order is tedious, however, so that finding the median by hand for larger sets of data is unpleasant. Even simple calculators have an <phrase data-math="math_15"></phrase> button, but you will need computer software or a graphing calculator to automate finding the median.
@@ -3567,7 +3546,7 @@
       The median is more <em>resistant</em> than the mean. If the largest start time in the data set was 1200 days, the median for all 25 countries would still be 12 days. The largest observation just counts as one observation above the center, no matter how far above the center it lies. The mean uses the actual value of each observation and so will chase a single large observation upward.
     </p>
     <p id="ips9e-ch01-p-484" block_type="Applet icon">
-      <image asset-id="ips9e-ch01-img-30" alt="image" src="images/BPSapplet-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-30" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-485" block_type="TXT">
       The best way to compare the response of the mean and median to extreme observations is to use an interactive applet that allows you to place points on a line and then drag them with your computer&#8217;s mouse. Exercises 1.83, 1.84, and 1.85 use the <em>Mean and Median</em> applet on the website for this text to compare the mean and the median.
@@ -3580,7 +3559,7 @@
       </termref> The few wealthy institutions pull the mean up but do not affect the median. <em>Don&#8217;t confuse the &#8220;average&#8221; value of a variable (the mean) with its &#8220;typical&#8221; value, which we might describe by the median.</em>
     </p>
     <p id="ips9e-ch01-p-488" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-31" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-31" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-489" block_type="TXT">
       We can now give a better answer to the question of how to deal with outliers in data. First, look at the data to identify outliers and investigate their causes. You can then correct outliers if they are wrongly recorded, delete them for good reason, or otherwise give them individual attention. The outlier in <link href="example_1_21.html">Example 1.21</link> (page 21) can be dropped from the data once we discover that it is an error. If you have no clear reason to drop outliers, you may want to use resistant measures in your analysis, so that outliers have little influence over your conclusions. The choice is often a matter for judgment.
@@ -3687,7 +3666,7 @@
       Notice that the quartiles are resistant. For example, <phrase data-math="math_23"></phrase> would have the same value if the highest start time was 530 days rather than 53 days.
     </p>
     <p id="ips9e-ch01-p-508" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-32" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-32" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-509" block_type="TXT">
       <em>Be careful when several observations take the same numerical value.</em> Write down all the observations and apply the rules just as if they all had distinct values.
@@ -3724,7 +3703,7 @@
       </question>
     </box>
     <p id="ips9e-ch01-p-515" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-33" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-33" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-516" block_type="TXT">
       <em>There are several rules for calculating quartiles, which often give slightly different values. The differences are generally small. For describing data, just report the values that your software gives.</em>
@@ -3848,7 +3827,7 @@
     </box>
     <figure id="ips9e-ch01-fig-14" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="1.14" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-34" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_14.jpg"/>
+      <image asset-id="ips9e-ch01-img-34" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_14.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.14</phrase>
         <phrase block_type="FG-CAP">
@@ -3926,7 +3905,7 @@
       The quartiles and the <em>IQR</em> are not affected by changes in either tail of the distribution. They are resistant, therefore, because changes in a few data points have no further effect once these points move outside the quartiles.
     </p>
     <p id="ips9e-ch01-p-558" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-35" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-35" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-559" block_type="TXT">
       However, <em>no single numerical measure of spread, such as IQR, is very useful for describing skewed distributions.</em> The two sides of a skewed distribution have different spreads, so one number can&#8217;t summarize them. We can often detect skewness from the five-number summary by comparing how far the first quartile and the minimum are from the median (left tail) with how far the third quartile and the maximum are from the median (right tail). The interquartile range is mainly used as the basis for a rule of thumb for identifying suspected outliers.
@@ -4022,7 +4001,7 @@
       <p id="ips9e-ch01-p-580" block_type="EXP-last">Displaying the boxplots for the three categories of writers lets us compare the three distributions. We see that nonfiction writers tend to live the longest, followed by novelists. The poets do appear to die young! There is one outlier among the nonfiction writers, which is plotted individually along with the value of its label. This writer died at the age of 40, young for a nonfiction writer, but not for a novelist or a poet!</p>
       <figure id="ips9e-ch01-fig-15" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="1.15" mmtype="image" mmsrc="" attr="">
         <layout align="center" width="medium" border="false"/>
-        <image asset-id="ips9e-ch01-img-36" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_15.jpg"/>
+        <image asset-id="ips9e-ch01-img-36" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_15.jpg"/>
         <caption>
           <phrase block_type="FG-N-ri">Figure 1.15</phrase>
           <phrase block_type="FG-CAP">
@@ -4092,7 +4071,7 @@
     <p id="ips9e_page_39" block_type="page_start" data-margin-content="right">39</p>
     <figure id="ips9e-ch01-fig-16" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.16" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-37" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_16.jpg"/>
+      <image asset-id="ips9e-ch01-img-37" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_16.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.16</phrase>
         <phrase block_type="FG-CAP">
@@ -4218,7 +4197,7 @@
       </question>
     </box>
     <p id="ips9e-ch01-p-623" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-38" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-38" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-624" block_type="TXT">
       <em>The use of squared deviations renders s even more sensitive than</em> <phrase data-math="math_35"></phrase> <em>to a few extreme observations.</em> For example, when we add Suriname to our sample of 24 countries for the analysis of the time to start a business (<link href="exercise_1_43.html">Exercise 1.43</link>, page 29, and <link href="exercise_1_45.html">Exercise 1.45</link>, page 31), we increase the standard deviation from 14.2 to 40.8! Distributions with outliers and strongly skewed distributions have standard deviations that do not give much helpful information about such distributions.
@@ -4252,7 +4231,7 @@
       </p>
     </box>
     <p id="ips9e-ch01-p-632" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-39" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-39" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-633" block_type="TXT">
       <em>Remember that a graph gives the best overall picture of a distribution. Numerical measures of center and spread report specific facts about a distribution, but they do not describe its shape.</em> Numerical summaries do not disclose the presence of multiple modes or gaps, for example. <strong>Always plot your data</strong>.
@@ -4271,9 +4250,9 @@
       </box>
       <figure id="ips9e-ch01-fig-17" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="1.17" mmtype="image" mmsrc="" attr="">
         <layout align="center" width="medium" border="false"/>
-        <image asset-id="ips9e-ch01-img-40" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_17a.jpg"/>
-        <image asset-id="ips9e-ch01-img-41" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_17b.jpg"/>
-        <image asset-id="ips9e-ch01-img-42" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_17c.jpg"/>
+        <image asset-id="ips9e-ch01-img-40" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_17a.jpg"/>
+        <image asset-id="ips9e-ch01-img-41" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_17b.jpg"/>
+        <image asset-id="ips9e-ch01-img-42" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_17c.jpg"/>
         <caption>
           <phrase block_type="FG-N-ri">Figure 1.17</phrase>
           <phrase block_type="FG-CAP">
@@ -4284,9 +4263,9 @@
       <p id="ips9e_page_42" block_type="page_start" data-margin-content="left">42</p>
       <figure id="ips9e-ch01-fig-18" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="1.18" mmtype="image" mmsrc="" attr="">
         <layout align="center" width="medium" border="false"/>
-        <image asset-id="ips9e-ch01-img-43" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_18a.jpg"/>
-        <image asset-id="ips9e-ch01-img-44" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_18b.jpg"/>
-        <image asset-id="ips9e-ch01-img-45" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_18c.jpg"/>
+        <image asset-id="ips9e-ch01-img-43" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_18a.jpg"/>
+        <image asset-id="ips9e-ch01-img-44" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_18b.jpg"/>
+        <image asset-id="ips9e-ch01-img-45" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_18c.jpg"/>
         <caption>
           <phrase block_type="FG-N-ri">Figure 1.18</phrase>
           <phrase block_type="FG-CAP">
@@ -4297,7 +4276,7 @@
       <p id="ips9e_page_43" block_type="page_start" data-margin-content="right">43</p>
       <figure id="ips9e-ch01-fig-19" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.19" mmtype="image" mmsrc="" attr="">
         <layout align="center" width="medium" border="false"/>
-        <image asset-id="ips9e-ch01-img-46" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_19.jpg"/>
+        <image asset-id="ips9e-ch01-img-46" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_19.jpg"/>
         <caption>
           <phrase block_type="FG-N-ri">Figure 1.19</phrase>
           <phrase block_type="FG-CAP">
@@ -4429,10 +4408,7 @@
   </section>
   <section id="ips9e-ch01-sum1-03" block_type="SR-H" chapter="ch1" numbered="false" level="1" print_page="46">
     <section-metadata>
-      <section-title>
-        <phrase block_type="SR-XH">SECTION 1.3</phrase>
-        <phrase block_type="SR-H">SUMMARY</phrase>
-      </section-title>
+      <section-title><phrase block_type="SR-XH">SECTION 1.3</phrase> <phrase block_type="SR-H">SUMMARY</phrase></section-title>
     </section-metadata>
     <p id="ips9e_page_46" block_type="page_start" data-margin-content="left">46</p>
     <list id="ips9e-ch01-list-41" type="unordered" block_type="bullet">
@@ -4507,10 +4483,7 @@
   </section>
   <section id="ips9e-ch01-exer1-03" block_type="SR-X-H" chapter="ch1" numbered="false" level="1" print_page="47">
     <section-metadata>
-      <section-title>
-        <phrase block_type="SR-XH">SECTION 1.3</phrase>
-        <phrase block_type="SR-X-H">EXERCISES</phrase>
-      </section-title>
+      <section-title><phrase block_type="SR-XH">SECTION 1.3</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></section-title>
     </section-metadata>
     <p id="ips9e_page_47" block_type="page_start" data-margin-content="right">47</p>
     <p id="ips9e-ch01-p-679" block_type="SR-X-TXT-ni">
@@ -5228,7 +5201,7 @@
     </question>
     <question id="ips9e-ch01-ques-81">
       <p id="ips9e-ch01-p-787" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-47" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.81 Earthquakes.</phrase> Each year there are about 900,000 earthquakes of magnitude 2.5 or less that are usually not felt. In contrast, there are about 10 of magnitude 7.0 that cause serious damage.<termref term="fn_ch1_fn28">
+        <image asset-id="ips9e-ch01-img-47" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.81 Earthquakes.</phrase> Each year there are about 900,000 earthquakes of magnitude 2.5 or less that are usually not felt. In contrast, there are about 10 of magnitude 7.0 that cause serious damage.<termref term="fn_ch1_fn28">
           <sup>28</sup>
         </termref> Explain why the average magnitude of earthquakes is not a good measure of their impact.
       </p>
@@ -5264,12 +5237,12 @@
     </question>
     <question id="ips9e-ch01-ques-83">
       <p id="ips9e-ch01-p-793" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-48" alt="image" src="images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">1.83 Mean and median for two observations.</phrase> The <em>Mean and Median</em> applet allows you to place observations on a line and see their mean and median visually. Place two observations on the line by clicking below it. Why does only one arrow appear?
+        <image asset-id="ips9e-ch01-img-48" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">1.83 Mean and median for two observations.</phrase> The <em>Mean and Median</em> applet allows you to place observations on a line and see their mean and median visually. Place two observations on the line by clicking below it. Why does only one arrow appear?
       </p>
     </question>
     <question id="ips9e-ch01-ques-84">
       <p id="ips9e-ch01-p-794" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-49" alt="image" src="images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">1.84 Mean and median for three observations.</phrase> In the <em>Mean and Median</em> applet, place four observations on the line by clicking below it, three close together near the center of the line and one somewhat to the right of these two.
+        <image asset-id="ips9e-ch01-img-49" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">1.84 Mean and median for three observations.</phrase> In the <em>Mean and Median</em> applet, place four observations on the line by clicking below it, three close together near the center of the line and one somewhat to the right of these two.
       </p>
       <list id="ips9e-ch01-list-60" type="ordered" block_type="lower-alpha">
         <li id="ips9e-ch01-li-217">
@@ -5286,7 +5259,7 @@
     </question>
     <question id="ips9e-ch01-ques-85">
       <p id="ips9e-ch01-p-797" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-50" alt="image" src="images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">1.85 Mean and median for seven observations.</phrase> Place seven observations on the line in the <em>Mean and Median</em> applet by clicking below it.
+        <image asset-id="ips9e-ch01-img-50" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">1.85 Mean and median for seven observations.</phrase> Place seven observations on the line in the <em>Mean and Median</em> applet by clicking below it.
       </p>
       <list id="ips9e-ch01-list-61" type="ordered" block_type="lower-alpha">
         <li id="ips9e-ch01-li-219">
@@ -5350,7 +5323,7 @@
     </question>
     <question id="ips9e-ch01-ques-87">
       <p id="ips9e-ch01-p-806" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-51" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.87 A standard deviation contest.</phrase> This is a standard deviation contest. You must choose four numbers from the whole numbers 10 to 20, with repeats allowed.
+        <image asset-id="ips9e-ch01-img-51" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.87 A standard deviation contest.</phrase> This is a standard deviation contest. You must choose four numbers from the whole numbers 10 to 20, with repeats allowed.
       </p>
       <list id="ips9e-ch01-list-63" type="ordered" block_type="lower-alpha">
         <li id="ips9e-ch01-li-224">
@@ -5465,7 +5438,7 @@
     </question>
     <question id="ips9e-ch01-ques-90">
       <p id="ips9e-ch01-p-817" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-52" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.90 Changing units from inches to centimeters.</phrase> Changing the unit of length from inches to centimeters multiplies each length by 2.54 because there are 2.54 centimeters in an inch. This change of units multiplies our usual measures of spread by 2.54. This is true of <em>IQR</em> and the standard deviation. What happens to the variance when we change units in this way?
+        <image asset-id="ips9e-ch01-img-52" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.90 Changing units from inches to centimeters.</phrase> Changing the unit of length from inches to centimeters multiplies each length by 2.54 because there are 2.54 centimeters in an inch. This change of units multiplies our usual measures of spread by 2.54. This is true of <em>IQR</em> and the standard deviation. What happens to the variance when we change units in this way?
       </p>
     </question>
     <question id="ips9e-ch01-ques-91">
@@ -5475,16 +5448,13 @@
     </question>
     <question id="ips9e-ch01-ques-92">
       <p id="ips9e-ch01-p-819" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-53" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.92 Changing units from centimeters to inches.</phrase> Refer to <link href="exercise_1_88.html">Exercise 1.88</link> (page 50). Change the measurements from centimeters to inches by multiplying each value by 0.39. Answer the questions from that exercise and explain the effect of the transformation on these data.
+        <image asset-id="ips9e-ch01-img-53" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.92 Changing units from centimeters to inches.</phrase> Refer to <link href="exercise_1_88.html">Exercise 1.88</link> (page 50). Change the measurements from centimeters to inches by multiplying each value by 0.39. Answer the questions from that exercise and explain the effect of the transformation on these data.
       </p>
     </question>
   </section>
   <section id="ips9e-ch01-sec1-04" block_type="h1" chapter="ch1" number="1.4" numbered="true" level="1" print_page="51">
     <section-metadata>
-      <section-title>
-        <phrase block_type="h1-N-ri">1.4</phrase>
-        <phrase block_type="h1">Density Curves and Normal Distributions</phrase>
-      </section-title>
+      <section-title><phrase block_type="h1-N-ri">1.4</phrase> <phrase block_type="h1">Density Curves and Normal Distributions</phrase></section-title>
     </section-metadata>
     <box id="ips9e-ch01-box-161" numbered="false" block_type="SP">
       <p id="ips9e-ch01-p-820" block_type="SP-TXT-ni">When you complete this section, you will be able to:</p>
@@ -5573,8 +5543,8 @@
     </box>
     <figure id="ips9e-ch01-fig-20" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.20" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-54" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_20a.jpg"/>
-      <image asset-id="ips9e-ch01-img-55" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_20b.jpg"/>
+      <image asset-id="ips9e-ch01-img-54" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_20a.jpg"/>
+      <image asset-id="ips9e-ch01-img-55" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_20b.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.20</phrase>
         <phrase block_type="FG-CAP">
@@ -5585,8 +5555,8 @@
     <p id="ips9e_page_53" block_type="page_start" data-margin-content="right">53</p>
     <figure id="ips9e-ch01-fig-21" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.21" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="large" border="false"/>
-      <image asset-id="ips9e-ch01-img-56" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_21a.jpg"/>
-      <image asset-id="ips9e-ch01-img-57" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_21b.jpg"/>
+      <image asset-id="ips9e-ch01-img-56" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_21a.jpg"/>
+      <image asset-id="ips9e-ch01-img-57" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_21b.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.21</phrase>
         <phrase block_type="FG-CAP">
@@ -5643,8 +5613,8 @@
     </p>
     <figure id="ips9e-ch01-fig-22" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.22" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="large" border="false"/>
-      <image asset-id="ips9e-ch01-img-58" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_22a.jpg"/>
-      <image asset-id="ips9e-ch01-img-59" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_22b.jpg"/>
+      <image asset-id="ips9e-ch01-img-58" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_22a.jpg"/>
+      <image asset-id="ips9e-ch01-img-59" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_22b.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.22</phrase>
         <phrase block_type="FG-CAP">(a) A symmetric Normal density curve with its mean and median marked. (b) A right-skewed density curve with its mean and median marked.</phrase>
@@ -5653,7 +5623,7 @@
     <p id="ips9e_page_55" block_type="page_start" data-margin-content="right">55</p>
     <figure id="ips9e-ch01-fig-23" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="1.23" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="large" border="false"/>
-      <image asset-id="ips9e-ch01-img-60" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_23.jpg"/>
+      <image asset-id="ips9e-ch01-img-60" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_23.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.23</phrase>
         <phrase block_type="FG-CAP">The mean of a density curve is the point at which it would balance.</phrase>
@@ -5715,12 +5685,12 @@
     </p>
     <figure id="ips9e-ch01-unfig-04" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-61" alt="image" src="images/17MOOREIPS-MSE_9e_UNfig_01_01.jpg"/>
+      <image asset-id="ips9e-ch01-img-61" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_UNfig_01_01.jpg"/>
     </figure>
     <p id="ips9e-ch01-p-867" block_type="TXT-ni">to falling ever less steeply</p>
     <figure id="ips9e-ch01-unfig-05" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-62" alt="image" src="images/17MOOREIPS-MSE_9e_UNfig_01_02.jpg"/>
+      <image asset-id="ips9e-ch01-img-62" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_UNfig_01_02.jpg"/>
     </figure>
     <p id="ips9e-ch01-p-868" block_type="TXT-ni">
       <em>The points at which this change of curvature takes place are located at distance</em> <em>&#963;</em> <em>
@@ -5731,7 +5701,7 @@
     </p>
     <figure id="ips9e-ch01-fig-24" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.24" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="large" border="false"/>
-      <image asset-id="ips9e-ch01-img-63" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_24.jpg"/>
+      <image asset-id="ips9e-ch01-img-63" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_24.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.24</phrase>
         <phrase block_type="FG-CAP">
@@ -5803,7 +5773,7 @@
     <p id="ips9e_page_58" block_type="page_start" data-margin-content="left">58</p>
     <figure id="ips9e-ch01-fig-25" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.25" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-64" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_25.jpg"/>
+      <image asset-id="ips9e-ch01-img-64" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_25.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.25</phrase>
         <phrase block_type="FG-CAP">The 68&#8211;95&#8211;99.7 rule for Normal distributions.</phrase>
@@ -5819,7 +5789,7 @@
     </box>
     <figure id="ips9e-ch01-fig-26" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.26" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-65" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_26.jpg"/>
+      <image asset-id="ips9e-ch01-img-65" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_26.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.26</phrase>
         <phrase block_type="FG-CAP">
@@ -5954,7 +5924,7 @@
     <p id="ips9e_page_61" block_type="page_start" data-margin-content="right">61</p>
     <figure id="ips9e-ch01-fig-27" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="1.27" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-66" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_27.jpg"/>
+      <image asset-id="ips9e-ch01-img-66" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_27.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.27</phrase>
         <phrase block_type="FG-CAP">
@@ -5980,7 +5950,7 @@
       </p>
       <figure id="ips9e-ch01-unfig-06" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
         <layout align="center" width="medium" border="false"/>
-        <image asset-id="ips9e-ch01-img-67" alt="image" src="images/17MOOREIPS-MSE_9e_P_01_03.jpg"/>
+        <image asset-id="ips9e-ch01-img-67" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_P_01_03.jpg"/>
         <asset_source>
           <phrase block_type="PHCR">Mitchell Layton/Getty Images</phrase>
         </asset_source>
@@ -5993,7 +5963,7 @@
       <p id="ips9e-ch01-p-927" block_type="EXP-last">Here is the calculation in pictures: the proportion of scores above 800 is the area under the curve to the right of 800. That&#8217;s the total area under the curve (which is always 1) minus the cumulative proportion up to 800.</p>
       <figure id="ips9e-ch01-unfig-07" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
         <layout align="center" width="large" border="false"/>
-        <image asset-id="ips9e-ch01-img-68" alt="image" src="images/17MOOREIPS-MSE_9e_UNfig_01_03.jpg"/>
+        <image asset-id="ips9e-ch01-img-68" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_UNfig_01_03.jpg"/>
       </figure>
       <p id="ips9e-ch01-p-928" block_type="EXP-EQ">area right of 800 = total area &#8722; area left of 800</p>
       <p id="ips9e-ch01-p-929" block_type="EXP-EQ">0.8247 = 1 &#8722; 0.1753</p>
@@ -6011,7 +5981,7 @@
       <p id="ips9e-ch01-p-934" block_type="EXP-last">What proportion of college-bound students who take the SAT would be eligible to receive an athletic scholarship and to practice with the team but would not be eligible to compete? That is, what proportion have scores between 620 and 800? Here are the pictures:</p>
       <figure id="ips9e-ch01-unfig-08" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
         <layout align="center" width="large" border="false"/>
-        <image asset-id="ips9e-ch01-img-69" alt="image" src="images/17MOOREIPS-MSE_9e_UNfig_01_04.jpg"/>
+        <image asset-id="ips9e-ch01-img-69" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_UNfig_01_04.jpg"/>
       </figure>
       <p id="ips9e-ch01-p-935" block_type="EXP-EQ">area between 620 and 800 = area left of 800 &#8722; area left of 620</p>
       <p id="ips9e-ch01-p-936" block_type="EXP-EQ">0.1338 = 0.1753 &#8722; 0.0415</p>
@@ -6021,7 +5991,7 @@
       How do we find the numerical values of the areas in <link href="example_1_40.html">Examples 1.40</link> and <link href="example_1_41.html">1.41</link>? If you use software, just plug in mean 1010 and standard deviation 225. Then ask for the cumulative proportions for 800 and for 620. (Your software will probably refer to these as &#8220;cumulative probabilities.&#8221; We will learn in <link href="ips9e-ch04.xml">Chapter 4</link> why the language of probability fits.) Sketches of the areas that you want similar to the ones in <link href="example_1_40.html">Examples 1.40</link> and <link href="example_1_41.html">1.41</link> are very helpful in making sure that you are doing the correct calculations.
     </p>
     <p id="ips9e-ch01-p-939" block_type="Applet icon">
-      <image asset-id="ips9e-ch01-img-70" alt="image" src="images/BPSapplet-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-70" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/>
     </p>
     <p id="ips9e-ch01-p-940" block_type="TXT">
       You can use the <em>Normal Curve</em> applet on the text website to find Normal proportions. The applet is more flexible than most software&#8212;it will find any Normal proportion, not just cumulative proportions. The applet is an excellent way to understand Normal curves. But, because of the limitations of web browsers, the applet is not as accurate as statistical software.
@@ -6044,7 +6014,7 @@
     </box>
     <figure id="ips9e-ch01-fig-28" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="1.28" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-71" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_28.jpg"/>
+      <image asset-id="ips9e-ch01-img-71" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_28.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.28</phrase>
         <phrase block_type="FG-CAP">
@@ -6160,7 +6130,7 @@
       </p>
       <figure id="ips9e-ch01-fig-29" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.29" mmtype="image" mmsrc="" attr="">
         <layout align="center" width="medium" border="false"/>
-        <image asset-id="ips9e-ch01-img-72" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_29.jpg"/>
+        <image asset-id="ips9e-ch01-img-72" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_29.jpg"/>
         <caption>
           <phrase block_type="FG-N-ri">Figure 1.29</phrase>
           <phrase block_type="FG-CAP">
@@ -6270,7 +6240,7 @@
     </box>
     <figure id="ips9e-ch01-fig-30" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="1.30" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-73" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_30.jpg"/>
+      <image asset-id="ips9e-ch01-img-73" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_30.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.30</phrase>
         <phrase block_type="FG-CAP">
@@ -6293,7 +6263,7 @@
     </box>
     <figure id="ips9e-ch01-fig-31" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="1.31" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-74" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_31.jpg"/>
+      <image asset-id="ips9e-ch01-img-74" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_31.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.31</phrase>
         <phrase block_type="FG-CAP">
@@ -6305,7 +6275,7 @@
       Real data often show some departure from the theoretical Normal model. <em>When you examine a Normal quantile plot, look for shapes that show clear departures from Normality. Don&#8217;t overreact to minor wiggles in the plot.</em> When we discuss statistical methods that are based on the Normal model, we are interested in whether or not the data are sufficiently Normal for these procedures to work properly. We are not concerned about minor deviations from Normality. Many common methods work well as long as the data are approximately Normal and outliers are not present.
     </p>
     <p id="ips9e-ch01-p-1005" block_type="Caution icon">
-      <image asset-id="ips9e-ch01-img-75" alt="image" src="images/BPScaution-icon.jpg"/>
+      <image asset-id="ips9e-ch01-img-75" alt="image" src="asset/global_images/BPScaution-icon.jpg"/>
     </p>
     <box id="ips9e-ch01-box-188" numbered="false" block_type="BX2">
       <p id="ips9e-ch01-p-1006" block_type="BX2-T">BEYOND THE BASICS</p>
@@ -6337,7 +6307,7 @@
     </box>
     <figure id="ips9e-ch01-fig-32" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="1.32" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-76" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_32.jpg"/>
+      <image asset-id="ips9e-ch01-img-76" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_32.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.32</phrase>
         <phrase block_type="FG-CAP">
@@ -6358,10 +6328,7 @@
   </section>
   <section id="ips9e-ch01-sum1-04" block_type="SR-H" chapter="ch1" numbered="false" level="1" print_page="69">
     <section-metadata>
-      <section-title>
-        <phrase block_type="SR-XH">SECTION 1.4</phrase>
-        <phrase block_type="SR-H">SUMMARY</phrase>
-      </section-title>
+      <section-title><phrase block_type="SR-XH">SECTION 1.4</phrase> <phrase block_type="SR-H">SUMMARY</phrase></section-title>
     </section-metadata>
     <list id="ips9e-ch01-list-74" type="unordered" block_type="bullet">
       <li id="ips9e-ch01-li-258">
@@ -6401,10 +6368,7 @@
   </section>
   <section id="ips9e-ch01-exer1-04" block_type="SR-X-H" chapter="ch1" numbered="false" level="1" print_page="70">
     <section-metadata>
-      <section-title>
-        <phrase block_type="SR-XH">SECTION 1.4</phrase>
-        <phrase block_type="SR-X-H">EXERCISES</phrase>
-      </section-title>
+      <section-title> <phrase block_type="SR-XH">SECTION 1.4</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></section-title>
     </section-metadata>
     <p id="ips9e-ch01-p-1022" block_type="SR-X-TXT-ni">
       <em>
@@ -6512,7 +6476,7 @@
     <p id="ips9e_page_71" block_type="page_start" data-margin-content="right">71</p>
     <question id="ips9e-ch01-ques-108">
       <p id="ips9e-ch01-p-1041" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-77" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.108 Are the NAEP U.S. history scores approximately Normal?</phrase> In <link href="exercise_1_105.html">Exercise 1.105</link>, we assumed that the NAEP U.S history scores for 12th-grade students are approximately Normal with the reported mean and standard deviation, <em>N</em>(288,32). Let&#8217;s check that assumption. In addition to means and standard deviations, you can find selected percentiles for the NAEP assessments (see previous exercise). For the 12th-grade U.S. history scores, the following percentiles are reported:
+        <image asset-id="ips9e-ch01-img-77" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.108 Are the NAEP U.S. history scores approximately Normal?</phrase> In <link href="exercise_1_105.html">Exercise 1.105</link>, we assumed that the NAEP U.S history scores for 12th-grade students are approximately Normal with the reported mean and standard deviation, <em>N</em>(288,32). Let&#8217;s check that assumption. In addition to means and standard deviations, you can find selected percentiles for the NAEP assessments (see previous exercise). For the 12th-grade U.S. history scores, the following percentiles are reported:
       </p>
       <table id="ips9e-ch01-untab-31" numbered="false" block_type="UN-TABLE" attr="50">
         <tbody>
@@ -6546,7 +6510,7 @@
     </question>
     <question id="ips9e-ch01-ques-109">
       <p id="ips9e-ch01-p-1043" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-78" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.109 Are the NAEP mathematics scores approximately Normal?</phrase> Refer to the previous exercise. For the NAEP mathematics scores for 12th-graders, the mean is 153 and the standard deviation is 34. Here are the reported percentiles:
+        <image asset-id="ips9e-ch01-img-78" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.109 Are the NAEP mathematics scores approximately Normal?</phrase> Refer to the previous exercise. For the NAEP mathematics scores for 12th-graders, the mean is 153 and the standard deviation is 34. Here are the reported percentiles:
       </p>
       <table id="ips9e-ch01-untab-32" numbered="false" block_type="UN-TABLE" attr="50">
         <tbody>
@@ -6683,7 +6647,7 @@
       </list>
       <figure id="ips9e-ch01-fig-33" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.33" mmtype="image" mmsrc="" attr="">
         <layout align="center" width="medium" border="false"/>
-        <image asset-id="ips9e-ch01-img-79" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_33.jpg"/>
+        <image asset-id="ips9e-ch01-img-79" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_33.jpg"/>
         <caption>
           <phrase block_type="FG-N-ri">Figure 1.33</phrase>
           <phrase block_type="FG-CAP">
@@ -6693,9 +6657,9 @@
       </figure>
       <figure id="ips9e-ch01-fig-34" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.34" mmtype="image" mmsrc="" attr="">
         <layout align="center" width="medium" border="false"/>
-        <image asset-id="ips9e-ch01-img-80" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_34a.jpg"/>
-        <image asset-id="ips9e-ch01-img-81" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_34b.jpg"/>
-        <image asset-id="ips9e-ch01-img-82" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_34c.jpg"/>
+        <image asset-id="ips9e-ch01-img-80" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_34a.jpg"/>
+        <image asset-id="ips9e-ch01-img-81" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_34b.jpg"/>
+        <image asset-id="ips9e-ch01-img-82" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_34c.jpg"/>
         <caption>
           <phrase block_type="FG-N-ri">Figure 1.34</phrase>
           <phrase block_type="FG-CAP">
@@ -6717,14 +6681,14 @@
     </question>
     <question id="ips9e-ch01-ques-116">
       <p id="ips9e-ch01-p-1065" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-83" alt="image" src="images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">
+        <image asset-id="ips9e-ch01-img-83" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">
           1.116 Use the <em>Normal Curve</em> applet.
         </phrase> Use the <em>Normal Curve</em> applet for the standard Normal distribution to say how many standard deviations above and below the mean the quartiles of any Normal distribution lie.
       </p>
     </question>
     <question id="ips9e-ch01-ques-117">
       <p id="ips9e-ch01-p-1066" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-84" alt="image" src="images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">
+        <image asset-id="ips9e-ch01-img-84" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">
           1.117 Use the <em>Normal Curve</em> applet.
         </phrase> The 68&#8211;95&#8211;99.7 rule for Normal distributions is a useful approximation. You can use the <em>Normal Curve</em> applet on the text website to see how accurate the rule is. Drag one flag across the other so that the applet shows the area under the curve between the two flags.
       </p>
@@ -6964,7 +6928,7 @@
     </question>
     <question id="ips9e-ch01-ques-138">
       <p id="ips9e-ch01-p-1109" block_type="SR-X-QUE-NL-lvl2">
-        <image asset-id="ips9e-ch01-img-85" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.138 Quartiles for Normal distributions.</phrase> The quartiles of any distribution are the values with cumulative proportions 0.25 and 0.75.
+        <image asset-id="ips9e-ch01-img-85" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.138 Quartiles for Normal distributions.</phrase> The quartiles of any distribution are the values with cumulative proportions 0.25 and 0.75.
       </p>
       <list id="ips9e-ch01-list-91" type="ordered" block_type="lower-alpha">
         <li id="ips9e-ch01-li-308">
@@ -7001,7 +6965,7 @@
     </question>
     <question id="ips9e-ch01-ques-140">
       <p id="ips9e-ch01-p-1115" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-86" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.140 Outliers for Normal distributions.</phrase> Continue your work from the previous two exercises. The percent of the observations that are suspected outliers according to the 1.5 &#215; <em>IQR</em> rule is the same for any Normal distribution. What is this percent?
+        <image asset-id="ips9e-ch01-img-86" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.140 Outliers for Normal distributions.</phrase> Continue your work from the previous two exercises. The percent of the observations that are suspected outliers according to the 1.5 &#215; <em>IQR</em> rule is the same for any Normal distribution. What is this percent?
       </p>
     </question>
     <question id="ips9e-ch01-ques-141">
@@ -7069,14 +7033,11 @@
   </section>
   <section id="ips9e-ch01-chapexer-01" block_type="CR-X-H" chapter="ch1" numbered="false" level="1" print_page="74">
     <section-metadata>
-      <section-title>
-        <phrase block_type="CR-X-N-ri">CHAPTER 1</phrase>
-        <phrase block_type="CR-X-H">EXERCISES</phrase>
-      </section-title>
+      <section-title><phrase block_type="CR-X-N-ri">CHAPTER 1</phrase> <phrase block_type="CR-X-H">EXERCISES</phrase></section-title>
     </section-metadata>
     <question id="ips9e-ch01-ques-145">
       <p id="ips9e-ch01-p-1127" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-87" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.145 Sources of energy consumed.</phrase> Energy consumed in the United States can be classified as coming from one of three sources: fossil fuels, nuclear and electric power, and renewable energy. In 2014, the energy from these three sources was 80.3, 8.3, and 9.6 quadrillion Btu, respectively. In 2004, the corresponding amounts were 85.8, 8.2, and 6.1.<termref term="fn_ch1_fn37">
+        <image asset-id="ips9e-ch01-img-87" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.145 Sources of energy consumed.</phrase> Energy consumed in the United States can be classified as coming from one of three sources: fossil fuels, nuclear and electric power, and renewable energy. In 2014, the energy from these three sources was 80.3, 8.3, and 9.6 quadrillion Btu, respectively. In 2004, the corresponding amounts were 85.8, 8.2, and 6.1.<termref term="fn_ch1_fn37">
           <sup>37</sup>
         </termref> Write a description of the changes from 2004 to 2014 expressed in these data. Illustrate your summary with appropriate graphical summaries. Be sure to discuss both the amounts of energy from each source as well as the percents.
       </p>
@@ -7424,14 +7385,14 @@
     </question>
     <question id="ips9e-ch01-ques-152">
       <p id="ips9e-ch01-p-1146" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-88" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.152 Canadian international trade.</phrase> The government organization Statistics Canada provides data on many topics related to Canada&#8217;s population, resources, economy, society, and culture. Go to the web page <strong>
+        <image asset-id="ips9e-ch01-img-88" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.152 Canadian international trade.</phrase> The government organization Statistics Canada provides data on many topics related to Canada&#8217;s population, resources, economy, society, and culture. Go to the web page <strong>
           <link href="http://statcan.gc.ca/start-debut-eng.html">statcan.gc.ca/start-debut-eng.html</link>
         </strong>. Under the &#8220;Subject&#8221; tab, choose &#8220;International trade.&#8221; Pick some data from the resources listed and use the methods that you learned in this chapter to create graphical and numerical summaries. Write a report summarizing your findings that includes supporting evidence from your analyses.
       </p>
     </question>
     <question id="ips9e-ch01-ques-153">
       <p id="ips9e-ch01-p-1147" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-89" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.153 Travel and tourism in Canada.</phrase> Refer to the previous exercise. Under the &#8220;Subject&#8221; tab, choose &#8220;Travel and tourism.&#8221; Pick some data from the resources listed and use the methods that you learned in this chapter to create graphical and numerical summaries. Write a report summarizing your findings that includes supporting evidence from your analyses.
+        <image asset-id="ips9e-ch01-img-89" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.153 Travel and tourism in Canada.</phrase> Refer to the previous exercise. Under the &#8220;Subject&#8221; tab, choose &#8220;Travel and tourism.&#8221; Pick some data from the resources listed and use the methods that you learned in this chapter to create graphical and numerical summaries. Write a report summarizing your findings that includes supporting evidence from your analyses.
       </p>
     </question>
     <p id="ips9e_page_76" block_type="page_start" data-margin-content="left">76</p>
@@ -7454,7 +7415,7 @@
     </question>
     <question id="ips9e-ch01-ques-155">
       <p id="ips9e-ch01-p-1151" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-90" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.155 How much vitamin C do you need?</phrase> The Food and Nutrition Board of the Institute of Medicine, working in cooperation with scientists from Canada, have used scientific data to answer this question for a variety of vitamins and minerals.<termref term="fn_ch1_fn42">
+        <image asset-id="ips9e-ch01-img-90" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.155 How much vitamin C do you need?</phrase> The Food and Nutrition Board of the Institute of Medicine, working in cooperation with scientists from Canada, have used scientific data to answer this question for a variety of vitamins and minerals.<termref term="fn_ch1_fn42">
           <sup>42</sup>
         </termref> Their methodology assumes that needs, or requirements, follow a distribution. They have produced guidelines called dietary reference intakes for different gender-by-age combinations. For vitamin C, there are three dietary reference intakes: the estimated average requirement (EAR), which is the mean of the requirement distribution; the recommended dietary allowance (RDA), which is the intake that would be sufficient for 97&#37; to 98&#37; of the population; and the tolerable upper level (UL), the intake that is unlikely to pose health risks. For women aged 19 to 30 years, the EAR is 60 milligrams per day (mg/d), the RDA is 75 mg/d, and the UL is 2000 mg/d.<termref term="fn_ch1_fn43">
           <sup>43</sup>
@@ -7475,12 +7436,12 @@
     </question>
     <question id="ips9e-ch01-ques-156">
       <p id="ips9e-ch01-p-1154" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-91" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.156 How much vitamin C do men need?</phrase> Refer to the previous exercise. For men aged 19 to 30 years, the EAR is 75 milligrams per day (mg/d), the RDA is 90 mg/d, and the UL is 2000 mg/d. Answer the questions in the previous exercise for this population.
+        <image asset-id="ips9e-ch01-img-91" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.156 How much vitamin C do men need?</phrase> Refer to the previous exercise. For men aged 19 to 30 years, the EAR is 75 milligrams per day (mg/d), the RDA is 90 mg/d, and the UL is 2000 mg/d. Answer the questions in the previous exercise for this population.
       </p>
     </question>
     <question id="ips9e-ch01-ques-157">
       <p id="ips9e-ch01-p-1155" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-92" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.157 How much vitamin C do women consume?</phrase> To evaluate whether or not the intake of a vitamin or mineral is adequate, comparisons are made between the intake distribution and the requirement distribution. Here is some information about the distribution of vitamin C intake, in milligrams per day, for women aged 19 to 30 years:<termref term="fn_ch1_fn44">
+        <image asset-id="ips9e-ch01-img-92" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.157 How much vitamin C do women consume?</phrase> To evaluate whether or not the intake of a vitamin or mineral is adequate, comparisons are made between the intake distribution and the requirement distribution. Here is some information about the distribution of vitamin C intake, in milligrams per day, for women aged 19 to 30 years:<termref term="fn_ch1_fn44">
           <sup>44</sup>
         </termref>
       </p>
@@ -7535,7 +7496,7 @@
     </question>
     <question id="ips9e-ch01-ques-158">
       <p id="ips9e-ch01-p-1159" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-93" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.158 How much vitamin C do men consume?</phrase> To evaluate whether or not the intake of a vitamin or mineral is adequate, comparisons are made between the intake distribution and the requirement distribution. Here is some information about the distribution of vitamin C intake, in milligrams per day, for men aged 19 to 30 years:
+        <image asset-id="ips9e-ch01-img-93" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.158 How much vitamin C do men consume?</phrase> To evaluate whether or not the intake of a vitamin or mineral is adequate, comparisons are made between the intake distribution and the requirement distribution. Here is some information about the distribution of vitamin C intake, in milligrams per day, for men aged 19 to 30 years:
       </p>
       <table id="ips9e-ch01-untab-37" numbered="false" block_type="UN-TABLE" attr="100">
         <tbody>
@@ -7763,7 +7724,7 @@
     </question>
     <question id="ips9e-ch01-ques-163">
       <p id="ips9e-ch01-p-1173" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-94" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.163 Phish.</phrase> One of the most favored songs of the band Phish is &#8220;Divided Sky.&#8221; The band plays this song at many of their concerts. Frequently, after the main theme, Trey, the guitarist, pauses before playing the resolving note.<termref term="fn_ch1_fn45">
+        <image asset-id="ips9e-ch01-img-94" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.163 Phish.</phrase> One of the most favored songs of the band Phish is &#8220;Divided Sky.&#8221; The band plays this song at many of their concerts. Frequently, after the main theme, Trey, the guitarist, pauses before playing the resolving note.<termref term="fn_ch1_fn45">
           <sup>45</sup>
         </termref> The data file PHISH gives the date of each concert where &#8220;Divided Sky&#8221; was played, the venue, and the length of the pause for 366 concerts. Analyze the data and write a report summarizing what you have found. Be sure to include graphical and numerical summaries. Include the rationale for decisions that you made in performing your analysis. For example, did you give any consideration to the relatively large number of zeros?
       </p>
@@ -7776,7 +7737,7 @@
     </question>
     <question id="ips9e-ch01-ques-164">
       <p id="ips9e-ch01-p-1175" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-95" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.164 Visits to a help room for statistics.</phrase> A help room staffed by graduate students provides assistance to students taking statistics courses. To justify the cost of providing this service, extensive records are kept. Each time a student visits the help room, the student signs a sheet with several variables. These include the date of the visit, the course number that they are taking, the time they arrived at the room, and the time that they left the room. The length of time that the each student spent in the help room is computed from the two time variables. Data for 1268 visits are given in the file HELP.<termref term="fn_ch1_fn46">
+        <image asset-id="ips9e-ch01-img-95" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.164 Visits to a help room for statistics.</phrase> A help room staffed by graduate students provides assistance to students taking statistics courses. To justify the cost of providing this service, extensive records are kept. Each time a student visits the help room, the student signs a sheet with several variables. These include the date of the visit, the course number that they are taking, the time they arrived at the room, and the time that they left the room. The length of time that the each student spent in the help room is computed from the two time variables. Data for 1268 visits are given in the file HELP.<termref term="fn_ch1_fn46">
           <sup>46</sup>
         </termref> Analyze the data and write a report summarizing what you have found. Be sure to include graphical and numerical summaries. Include the rationale for the choices of methods that you chose for your analysis. There are some missing course numbers. How did you handle these?
       </p>
@@ -7789,7 +7750,7 @@
     </question>
     <question id="ips9e-ch01-ques-165">
       <p id="ips9e-ch01-p-1177" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-96" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.165 Blueberries and anthocyanins.</phrase> Anthocyanins are compounds that have been associated with health benefits associated with the heart, bones, and the brain. Blueberries are a good source of many different anthocyanins. Researchers at the Piedmont Research Station of North Carolina State University have assembled a database giving the concentrations of 18 different anthocyanins for 267 varieties of blueberries.<termref term="fn_ch1_fn47">
+        <image asset-id="ips9e-ch01-img-96" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.165 Blueberries and anthocyanins.</phrase> Anthocyanins are compounds that have been associated with health benefits associated with the heart, bones, and the brain. Blueberries are a good source of many different anthocyanins. Researchers at the Piedmont Research Station of North Carolina State University have assembled a database giving the concentrations of 18 different anthocyanins for 267 varieties of blueberries.<termref term="fn_ch1_fn47">
           <sup>47</sup>
         </termref> Four of the anthocyanins measured are delphinidin-3-arabinoside, malvidin-3-arabinoside, cyanidin-3-galactoside, and delphinidin-3-glucoside, all measured in units of mg/100g of berries. In the data file, we have simplified the names of these anthocyanins to Antho1, Antho2, Antho3, and Antho4. <link href="figure_1_35.html">Figure 1.35</link> gives graphical and numeric summaries from JMP for Antho1. Use this output to write a summary of the distribution of Antho1 using the methods and ideas that you learned in this chapter.
       </p>
@@ -7802,7 +7763,7 @@
     </question>
     <question id="ips9e-ch01-ques-166">
       <p id="ips9e-ch01-p-1179" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-97" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.166 Blueberries and anthocyanins, Antho2.</phrase> Refer to the previous exercise. Generate your own output for the analysis of Antho2 and use your output to write a summary of the distribution of Antho2 using the methods and ideas that you learned in this chapter.
+        <image asset-id="ips9e-ch01-img-97" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.166 Blueberries and anthocyanins, Antho2.</phrase> Refer to the previous exercise. Generate your own output for the analysis of Antho2 and use your output to write a summary of the distribution of Antho2 using the methods and ideas that you learned in this chapter.
       </p>
       <box id="ips9e-ch01-box-206" block_type="rl_linkbox">
         <p id="ips9e-ch01-p-1180" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="BERRIES">
@@ -7813,7 +7774,7 @@
     </question>
     <question id="ips9e-ch01-ques-167">
       <p id="ips9e-ch01-p-1181" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-98" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.167 Blueberries and anthocyanins, Antho3.</phrase> Refer to <link href="exercise_1_165.html">Exercise 1.165</link>. <link href="figure_1_36.html">Figure 1.36</link> gives the JMP output for Antho3. Use this output to write a summary of the distribution of Antho3 using the methods and ideas that you learned in this chapter.
+        <image asset-id="ips9e-ch01-img-98" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.167 Blueberries and anthocyanins, Antho3.</phrase> Refer to <link href="exercise_1_165.html">Exercise 1.165</link>. <link href="figure_1_36.html">Figure 1.36</link> gives the JMP output for Antho3. Use this output to write a summary of the distribution of Antho3 using the methods and ideas that you learned in this chapter.
       </p>
       <box id="ips9e-ch01-box-207" block_type="rl_linkbox">
         <p id="ips9e-ch01-p-1182" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="BERRIES">
@@ -7824,7 +7785,7 @@
     </question>
     <question id="ips9e-ch01-ques-168">
       <p id="ips9e-ch01-p-1183" block_type="SR-X-QUE-NL">
-        <image asset-id="ips9e-ch01-img-99" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.168 Blueberries and anthocyanins, Antho4.</phrase> Refer to <link href="exercise_1_165.html">Exercise 1.165</link>. Generate your own output for the analysis of Antho4 and use your output to write a summary of the distribution of Antho4 using the methods and ideas that you learned in this chapter.
+        <image asset-id="ips9e-ch01-img-99" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.168 Blueberries and anthocyanins, Antho4.</phrase> Refer to <link href="exercise_1_165.html">Exercise 1.165</link>. Generate your own output for the analysis of Antho4 and use your output to write a summary of the distribution of Antho4 using the methods and ideas that you learned in this chapter.
       </p>
       <box id="ips9e-ch01-box-208" block_type="rl_linkbox">
         <p id="ips9e-ch01-p-1184" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="BERRIES">
@@ -7836,7 +7797,7 @@
     <p id="ips9e_page_78" block_type="page_start" data-margin-content="left">78</p>
     <figure id="ips9e-ch01-fig-35" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.35" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-100" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_35.jpg"/>
+      <image asset-id="ips9e-ch01-img-100" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_35.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.35</phrase>
         <phrase block_type="FG-CAP">
@@ -7846,7 +7807,7 @@
     </figure>
     <figure id="ips9e-ch01-fig-36" block_type="FIGURE" data-caption-compass="S" numbered="true" number="1.36" mmtype="image" mmsrc="" attr="">
       <layout align="center" width="medium" border="false"/>
-      <image asset-id="ips9e-ch01-img-101" alt="image" src="images/17MOOREIPS-MSE_9e_fig_01_36.jpg"/>
+      <image asset-id="ips9e-ch01-img-101" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_36.jpg"/>
       <caption>
         <phrase block_type="FG-N-ri">Figure 1.36</phrase>
         <phrase block_type="FG-CAP">

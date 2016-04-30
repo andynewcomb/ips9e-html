@@ -96,3 +96,12 @@ window.MathJax = {
   };
 
 $.getScript( "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"); 
+
+// some span content must be identified by its text
+$('#ips9e-ch01-p-140 [data-block_type="MN-GL-term"]:contains("distribution of a categorical variable")').addClass('up-1em');
+//$('#ips9e-ch01-p-140 [data-block_type="MN-GL-term"]:contains("count")').addClass('down-1em');
+$('#ips9e-ch01-p-140 [data-block_type="MN-GL-term"]:contains("percent")').addClass('down-1em');
+$('#ips9e-ch01-p-140 [data-block_type="MN-GL-term"]:contains("proportion")').addClass('down-1em');
+$('#ips9e-ch01-p-161 [data-block_type="MN-GL-term"]:contains("pie chart")').addClass('down-1em');
+$('#ips9e-ch01-p-218 [data-block_type="MN-GL-term"]:contains("frequency table")').addClass('down-1em');
+

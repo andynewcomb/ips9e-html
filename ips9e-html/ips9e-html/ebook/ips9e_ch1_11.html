@@ -13,7 +13,8 @@
 <link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
 <link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
 <link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
-<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >    
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e_ch1.css" media="screen" rel="stylesheet" type="text/css" >    
     
     </head>
 <body class="noUi">
@@ -23,495 +24,930 @@
 <span data-type="number">1.4</span> <span data-type="title" data-title-for="ips9e-ch01-sec1-04"><span data-block_type="h1-N-ri">1.4</span> <span data-block_type="h1">Density Curves and Normal Distributions</span>
 </span>
 </h2>
-
-<div data-type="box" data-block_type="SP" id="ips9e-ch01-box-161"><div data-type="box_inner">
+    
+    <div data-type="box" data-block_type="SP" id="ips9e-ch01-box-161"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-161"></h3>
-<div data-block_type="SP-TXT-ni" id="ips9e-ch01-p-820"><p>When you complete this section, you will be able to:</p></div>
-<ul data-block_type="bluebullet" id="ips9e-ch01-list-65">
-<li><div data-block_type="SP-BL-first" id="ips9e-ch01-p-821"><p><span data-block_type="maker">•</span> Compare the mean and the median for symmetric and skewed distributions.</p></div></li>
-<li><div data-block_type="SP-BL-mid" id="ips9e-ch01-p-822"><p><span data-block_type="maker">•</span> Sketch a Normal distribution for any given mean and standard deviation.</p></div></li>
-<li><div data-block_type="SP-BL-mid" id="ips9e-ch01-p-823"><p><span data-block_type="maker">•</span> Apply the 68–95–99.7 rule to find proportions of observations within one, two, and three standard deviations of the mean for any Normal distribution.</p></div></li>
-<li><div data-block_type="SP-BL-mid" id="ips9e-ch01-p-824"><p><span data-block_type="maker">•</span> Transform values of a variable from a general Normal distribution to the standard Normal distribution.</p></div></li>
-<li><div data-block_type="SP-BL-mid" id="ips9e-ch01-p-825"><p><span data-block_type="maker">•</span> Compute areas under a Normal curve using software or <span data-type="link" data-href="table_a.html">Table A</span>.</p></div></li>
-<li><div data-block_type="SP-BL-mid" id="ips9e-ch01-p-826"><p><span data-block_type="maker">•</span> Perform inverse Normal calculations to find values of a Normal variable corresponding to various areas.</p></div></li>
-<li><div data-block_type="SP-BL-last" id="ips9e-ch01-p-827"><p><span data-block_type="maker">•</span> Assess the extent to which the distribution of a set of data can be approximated by a Normal distribution.</p></div></li>
-</ul>
-</div></div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-828"><p>We now have a kit of graphical and numerical tools for describing distributions. What is more, we have a clear strategy for exploring data on a single quantitative variable:</p></div>
-<ol data-block_type="numbered" id="ips9e-ch01-list-66">
-<li><div data-block_type="NL-first" id="ips9e-ch01-p-829"><p><span data-block_type="maker">1.</span> Always plot your data: make a graph, usually a stemplot or a histogram.</p></div></li>
-<li><div data-block_type="NL-mid" id="ips9e-ch01-p-830"><p><span data-block_type="maker">2.</span> Look for the overall pattern and for striking deviations such as outliers.</p></div></li>
-<li><div data-block_type="NL-last" id="ips9e-ch01-p-831"><p><span data-block_type="maker">3.</span> Calculate an appropriate numerical summary to briefly describe center and spread.</p></div></li>
-</ol>
-<div data-block_type="TXT" id="ips9e-ch01-p-832"><p>Technology has expanded the set of graphs that we can choose for Step 1. It is possible, though painful, to make histograms by hand. Using software, clever algorithms can describe a distribution in a way that is not feasible by hand, by fitting a smooth curve to the data in addition to or instead of a histogram. The curves used are called <span data-type="termref" data-term="density curves"><strong>density curves</strong></span><span data-block_type="MN-GL-term">density curves</span>. Before we examine density curves in detail, here is an example of what software can do.</p></div>
-<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_52"><p>52</p></div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-162"><div data-type="box_inner">
+      <div data-block_type="SP-TXT-ni" id="ips9e-ch01-p-820"><p>When you complete this section, you will be able to:</p></div>
+      <ul data-block_type="bluebullet" id="ips9e-ch01-list-65">
+        <li><div data-block_type="SP-BL-first" id="ips9e-ch01-p-821"><p>
+            <span data-block_type="maker">•</span> Compare the mean and the median for symmetric and skewed distributions.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch01-p-822"><p>
+            <span data-block_type="maker">•</span> Sketch a Normal distribution for any given mean and standard deviation.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch01-p-823"><p>
+            <span data-block_type="maker">•</span> Apply the 68–95–99.7 rule to find proportions of observations within one, two, and three standard deviations of the mean for any Normal distribution.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch01-p-824"><p>
+            <span data-block_type="maker">•</span> Transform values of a variable from a general Normal distribution to the standard Normal distribution.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch01-p-825"><p>
+            <span data-block_type="maker">•</span> Compute areas under a Normal curve using software or <span data-type="link" data-href="table_a.html">Table A</span>.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch01-p-826"><p>
+            <span data-block_type="maker">•</span> Perform inverse Normal calculations to find values of a Normal variable corresponding to various areas.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-last" id="ips9e-ch01-p-827"><p>
+            <span data-block_type="maker">•</span> Assess the extent to which the distribution of a set of data can be approximated by a Normal distribution.
+          </p></div>
+        </li>
+      </ul>
+    </div></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-828"><p>We now have a kit of graphical and numerical tools for describing distributions. What is more, we have a clear strategy for exploring data on a single quantitative variable:</p></div>
+    <ol data-block_type="numbered" id="ips9e-ch01-list-66">
+      <li><div data-block_type="NL-first" id="ips9e-ch01-p-829"><p>
+          <span data-block_type="maker">1.</span> Always plot your data: make a graph, usually a stemplot or a histogram.
+        </p></div>
+      </li>
+      <li><div data-block_type="NL-mid" id="ips9e-ch01-p-830"><p>
+          <span data-block_type="maker">2.</span> Look for the overall pattern and for striking deviations such as outliers.
+        </p></div>
+      </li>
+      <li><div data-block_type="NL-last" id="ips9e-ch01-p-831"><p>
+          <span data-block_type="maker">3.</span> Calculate an appropriate numerical summary to briefly describe center and spread.
+        </p></div>
+      </li>
+    </ol>
+    <div data-block_type="TXT" id="ips9e-ch01-p-832"><p>
+      Technology has expanded the set of graphs that we can choose for Step 1. It is possible, though painful, to make histograms by hand. Using software, clever algorithms can describe a distribution in a way that is not feasible by hand, by fitting a smooth curve to the data in addition to or instead of a histogram. The curves used are called <span data-type="termref" data-term="density curves">
+        <strong>density curves</strong>
+      </span><span data-block_type="MN-GL-term">density curves</span>. Before we examine density curves in detail, here is an example of what software can do.
+    </p></div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_52"><p>52</p></div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-162"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-162"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-833"><p>EXAMPLE 1.36</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-834"><p><span data-block_type="EXP-T-ri">Density curves for times to start a business and Titanic passenger ages.</span> <span data-type="link" data-href="figure_1_20.html">Figure 1.20</span> illustrates the use of density curves along with histograms to describe distributions. <span data-type="link" data-href="figure_1_20.html">Figure 1.20</span>(a) shows the distribution of the times to start a business for 189 countries (see <span data-type="link" data-href="example_1_23.html">Example 1.23</span>. page 28). The outlier, Suriname, described in <span data-type="link" data-href="exercise_1_43.html">Exercise 1.43</span> (page 29) has been deleted from the data set. The distribution is highly skewed to the right. Most of the data are in the first two classes, with 40 or fewer days to start a business.</p></div>
-<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch01-box-163"><div data-type="box_inner">
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-833"><p>EXAMPLE 1.36</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-834"><p>
+        <span data-block_type="EXP-T-ri">Density curves for times to start a business and Titanic passenger ages.</span> <span data-type="link" data-href="figure_1_20.html">Figure 1.20</span> illustrates the use of density curves along with histograms to describe distributions. <span data-type="link" data-href="figure_1_20.html">Figure 1.20</span>(a) shows the distribution of the times to start a business for 189 countries (see <span data-type="link" data-href="example_1_23.html">Example 1.23</span>. page 28). The outlier, Suriname, described in <span data-type="link" data-href="exercise_1_43.html">Exercise 1.43</span> (page 29) has been deleted from the data set. The distribution is highly skewed to the right. Most of the data are in the first two classes, with 40 or fewer days to start a business.
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch01-box-163"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-163"></h3>
-<div data-url="asset/datasets/Data_Icon.jpg" data-file="TTS" data-block_type="rl_dataset" id="ips9e-ch01-p-835"><p><span>TTS</span></p></div>
-<div data-dataset="" data-block_type="rl_crunchit" id="idm7873072"><p></p></div>
-</div></div>
-<div data-block_type="EXP-last" id="ips9e-ch01-p-836"><p><span data-type="link" data-href="exercise_1_27.html">Exercise 1.27</span> (page 24) describes data on the class of the ticket of the <em>Titanic</em> passengers, and <span data-type="link" data-href="figure_1_20.html">Figure 1.20</span>(b) shows the distribution of the ages of these passengers. It has a single mode, a long right tail, and a relatively short left tail.</p></div>
-<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch01-box-164"><div data-type="box_inner">
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="TTS" data-block_type="rl_dataset" id="ips9e-ch01-p-835"><p>
+          <span>TTS</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idm1113600"><p></p></div>
+      </div></div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-836"><p>
+        <span data-type="link" data-href="exercise_1_27.html">Exercise 1.27</span> (page 24) describes data on the class of the ticket of the <em>Titanic</em> passengers, and <span data-type="link" data-href="figure_1_20.html">Figure 1.20</span>(b) shows the distribution of the ages of these passengers. It has a single mode, a long right tail, and a relatively short left tail.
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch01-box-164"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-164"></h3>
-<div data-url="asset/datasets/Data_Icon.jpg" data-file="TITANIC" data-block_type="rl_dataset" id="ips9e-ch01-p-837"><p><span>TITANIC</span></p></div>
-<div data-dataset="" data-block_type="rl_crunchit" id="idm7867264"><p></p></div>
-</div></div>
-</div></div>
-<div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-20" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_20a.jpg" data-figure-id="ips9e-ch01-fig-20" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_20b.jpg" data-figure-id="ips9e-ch01-fig-20" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.20: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.20</span> <span data-block_type="FG-CAP">(a) The distribution of the time to start a business, <span data-type="link" data-href="example_1_36.html">Example 1.36</span>. The distribution is pictured with both a histogram and a density curve. (b) The distribution of the ages of the <em>Titanic</em> passengers, <span data-type="link" data-href="example_1_36.html">Example 1.36</span>. These distributions have a single mode with tails of two different lengths.</span></span>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="TITANIC" data-block_type="rl_dataset" id="ips9e-ch01-p-837"><p>
+          <span>TITANIC</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idm1107008"><p></p></div>
+      </div></div>
+    </div></div>
+    <div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-20" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_20a.jpg" data-figure-id="ips9e-ch01-fig-20" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_20b.jpg" data-figure-id="ips9e-ch01-fig-20" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 1.20: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 1.20</span>
+        <span data-block_type="FG-CAP">
+          (a) The distribution of the time to start a business, <span data-type="link" data-href="example_1_36.html">Example 1.36</span>. The distribution is pictured with both a histogram and a density curve. (b) The distribution of the ages of the <em>Titanic</em> passengers, <span data-type="link" data-href="example_1_36.html">Example 1.36</span>. These distributions have a single mode with tails of two different lengths.
+        </span>
+      </span>
 </div>
+    </div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_53"><p>53</p></div>
+    <div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-21" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_21a.jpg" data-figure-id="ips9e-ch01-fig-21" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_21b.jpg" data-figure-id="ips9e-ch01-fig-21" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 1.21: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 1.21</span>
+        <span data-block_type="FG-CAP">
+          (a) The distribution of Iowa Test vocabulary scores for Gary, Indiana, seventh-graders, <span data-type="link" data-href="example_1_37.html">Example 1.37</span>. The shaded bars in the histogram represent scores less than or equal to 6.0. (b) The shaded area under the Normal density curve also represents scores less than or equal to 6.0. This area is 0.293, close to the true 0.303 for the actual data.
+        </span>
+      </span>
 </div>
-<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_53"><p>53</p></div>
-<div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-21" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_21a.jpg" data-figure-id="ips9e-ch01-fig-21" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_21b.jpg" data-figure-id="ips9e-ch01-fig-21" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.21: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.21</span> <span data-block_type="FG-CAP">(a) The distribution of Iowa Test vocabulary scores for Gary, Indiana, seventh-graders, <span data-type="link" data-href="example_1_37.html">Example 1.37</span>. The shaded bars in the histogram represent scores less than or equal to 6.0. (b) The shaded area under the Normal density curve also represents scores less than or equal to 6.0. This area is 0.293, close to the true 0.303 for the actual data.</span></span>
-</div>
-</div>
-<div data-block_type="TXT" id="ips9e-ch01-p-838"><p>A smooth density curve is an idealization that gives the overall pattern of the data but ignores minor irregularities. We first discuss density curves in general and then focus on a special class of density curves, the bell-shaped Normal curves.</p></div>
-<div data-block_type="level_2_title" id="ips9e-ch01-p-839"><p><span data-block_type="h2">Density curves</span></p></div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-840"><p>One way to think of a density curve is as a smooth approximation to the irregular bars of a histogram. <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span> shows a histogram of the scores of all 947 seventh-grade students in Gary, Indiana, on the vocabulary part of the Iowa Test of Basic Skills. Scores of many students on this national test have a very regular distribution. The histogram is symmetric, and both tails fall off quite smoothly from a single center peak. There are no large gaps or obvious outliers. The curve drawn through the tops of the histogram bars in <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span> is a good description of the overall pattern of the data.</p></div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-165"><div data-type="box_inner">
+    </div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-838"><p>A smooth density curve is an idealization that gives the overall pattern of the data but ignores minor irregularities. We first discuss density curves in general and then focus on a special class of density curves, the bell-shaped Normal curves.</p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch01-p-839"><p>
+      <span data-block_type="h2">Density curves</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-840"><p>
+      One way to think of a density curve is as a smooth approximation to the irregular bars of a histogram. <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span> shows a histogram of the scores of all 947 seventh-grade students in Gary, Indiana, on the vocabulary part of the Iowa Test of Basic Skills. Scores of many students on this national test have a very regular distribution. The histogram is symmetric, and both tails fall off quite smoothly from a single center peak. There are no large gaps or obvious outliers. The curve drawn through the tops of the histogram bars in <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span> is a good description of the overall pattern of the data.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-165"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-165"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-841"><p>EXAMPLE 1.37</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-842"><p><span data-block_type="EXP-T-ri">Vocabulary scores.</span> In a histogram, the <em>areas</em> of the bars represent either counts or proportions of the observations. In <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span>(a), we shaded the bars that represent students with vocabulary scores 6.0 or lower. There are 287 such students, who make up the proportion 287/947 = 0.303 of all Gary seventh-graders. The shaded bars in <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span>(a) make up <em>proportion</em> 0.303 of the total area under all the bars. If we adjust the scale so that the total area of the bars is 1, the <em>area of the shaded bars</em> will also be 0.303.</p></div>
-<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_54"><p>54</p></div>
-<div data-block_type="EXP-last" id="ips9e-ch01-p-843"><p>In <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span>(b), we shaded the <em>area under the curve</em> to the left of 6.0. If we adjust the scale so that the total area under the curve is exactly 1, areas under the curve will then represent proportions of the observations. That is, <em>area</em> = <em>proportion.</em> The curve is then a density curve. The shaded area under the density curve in <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span>(b) represents the proportion of students with score 6.0 or lower. This area is 0.293, only 0.010 away from the histogram result. You can see that areas under the density curve give quite good approximations of areas given by the histogram.</p></div>
-</div></div>
-<div data-type="box" data-block_type="BX1" id="ips9e-ch01-box-166"><div data-type="box_inner">
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-841"><p>EXAMPLE 1.37</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-842"><p>
+        <span data-block_type="EXP-T-ri">Vocabulary scores.</span> In a histogram, the <em>areas</em> of the bars represent either counts or proportions of the observations. In <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span>(a), we shaded the bars that represent students with vocabulary scores 6.0 or lower. There are 287 such students, who make up the proportion 287/947 = 0.303 of all Gary seventh-graders. The shaded bars in <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span>(a) make up <em>proportion</em> 0.303 of the total area under all the bars. If we adjust the scale so that the total area of the bars is 1, the <em>area of the shaded bars</em> will also be 0.303.
+      </p></div>
+      <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_54"><p>54</p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-843"><p>
+        In <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span>(b), we shaded the <em>area under the curve</em> to the left of 6.0. If we adjust the scale so that the total area under the curve is exactly 1, areas under the curve will then represent proportions of the observations. That is, <em>area</em> = <em>proportion.</em> The curve is then a density curve. The shaded area under the density curve in <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span>(b) represents the proportion of students with score 6.0 or lower. This area is 0.293, only 0.010 away from the histogram result. You can see that areas under the density curve give quite good approximations of areas given by the histogram.
+      </p></div>
+    </div></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch01-box-166"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-166"></h3>
-<div data-block_type="BX1-T" id="ips9e-ch01-p-844"><p>DENSITY CURVE</p></div>
-<div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-845"><p>A <strong>density curve</strong> is a curve that</p></div>
-<ul data-block_type="bullet" id="ips9e-ch01-list-67">
-<li><div data-block_type="EXP-BL" id="ips9e-ch01-p-846"><p><span data-block_type="maker">•</span> Is always on or above the horizontal axis.</p></div></li>
-<li><div data-block_type="EXP-BLL" id="ips9e-ch01-p-847"><p><span data-block_type="maker">•</span> Has area exactly 1 underneath it.</p></div></li>
-</ul>
-<div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-848"><p>A density curve describes the overall pattern of a distribution. The area under the curve and above any range of values is the proportion of all observations that fall in that range.</p></div>
-</div></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-849"><p>The density curve in <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span> is a <em>Normal curve.</em> Density curves, like distributions, come in many shapes. <span data-type="link" data-href="figure_1_22.html">Figure 1.22</span> shows two density curves, a symmetric Normal density curve and a right-skewed curve.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-850"><p>We will discuss Normal density curves in detail in this section because of the important role that they play in statistics. There are, however, many applications where the use of other families of density curves are essential.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-851"><p>A density curve of an appropriate shape is often an adequate description of the overall pattern of a distribution. Outliers, which are deviations from the overall pattern, are not described by the curve.</p></div>
-<div data-block_type="level_2_title" id="ips9e-ch01-p-852"><p><span data-block_type="h2">Measuring center and spread for density curves</span></p></div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-853"><p>Our measures of center and spread apply to density curves as well as to actual sets of observations, but only some of these measures are easily seen from the curve. A <em>mode</em> of a distribution described by a density curve is a peak point of the curve, the location where the curve is highest. Because areas under a density curve represent proportions of the observations, the <em>median</em> is the point with half the total area on each side. You can roughly locate the <em>quartiles</em> by dividing the area under the curve into quarters as accurately as possible by eye. The <em>IQR</em> is the distance between the first and third quartiles. There are mathematical ways of calculating areas under curves. These allow us to locate the median and quartiles exactly on any density curve.</p></div>
-<div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-22" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_22a.jpg" data-figure-id="ips9e-ch01-fig-22" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_22b.jpg" data-figure-id="ips9e-ch01-fig-22" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.22: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.22</span> <span data-block_type="FG-CAP">(a) A symmetric Normal density curve with its mean and median marked. (b) A right-skewed density curve with its mean and median marked.</span></span>
+      <div data-block_type="BX1-T" id="ips9e-ch01-p-844"><p>DENSITY CURVE</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-845"><p>
+        A <strong>density curve</strong> is a curve that
+      </p></div>
+      <ul data-block_type="bullet" id="ips9e-ch01-list-67">
+        <li><div data-block_type="EXP-BL" id="ips9e-ch01-p-846"><p>
+            <span data-block_type="maker">•</span> Is always on or above the horizontal axis.
+          </p></div>
+        </li>
+        <li><div data-block_type="EXP-BLL" id="ips9e-ch01-p-847"><p>
+            <span data-block_type="maker">•</span> Has area exactly 1 underneath it.
+          </p></div>
+        </li>
+      </ul>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-848"><p>A density curve describes the overall pattern of a distribution. The area under the curve and above any range of values is the proportion of all observations that fall in that range.</p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-849"><p>
+      The density curve in <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span> is a <em>Normal curve.</em> Density curves, like distributions, come in many shapes. <span data-type="link" data-href="figure_1_22.html">Figure 1.22</span> shows two density curves, a symmetric Normal density curve and a right-skewed curve.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-850"><p>We will discuss Normal density curves in detail in this section because of the important role that they play in statistics. There are, however, many applications where the use of other families of density curves are essential.</p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-851"><p>A density curve of an appropriate shape is often an adequate description of the overall pattern of a distribution. Outliers, which are deviations from the overall pattern, are not described by the curve.</p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch01-p-852"><p>
+      <span data-block_type="h2">Measuring center and spread for density curves</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-853"><p>
+      Our measures of center and spread apply to density curves as well as to actual sets of observations, but only some of these measures are easily seen from the curve. A <em>mode</em> of a distribution described by a density curve is a peak point of the curve, the location where the curve is highest. Because areas under a density curve represent proportions of the observations, the <em>median</em> is the point with half the total area on each side. You can roughly locate the <em>quartiles</em> by dividing the area under the curve into quarters as accurately as possible by eye. The <em>IQR</em> is the distance between the first and third quartiles. There are mathematical ways of calculating areas under curves. These allow us to locate the median and quartiles exactly on any density curve.
+    </p></div>
+    <div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-22" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_22a.jpg" data-figure-id="ips9e-ch01-fig-22" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_22b.jpg" data-figure-id="ips9e-ch01-fig-22" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 1.22: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 1.22</span>
+        <span data-block_type="FG-CAP">(a) A symmetric Normal density curve with its mean and median marked. (b) A right-skewed density curve with its mean and median marked.</span>
+      </span>
 </div>
+    </div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_55"><p>55</p></div>
+    <div data-type="figure" data-caption-compass="SW" data-figure-id="ips9e-ch01-fig-23" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_23.jpg" data-figure-id="ips9e-ch01-fig-23" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 1.23: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 1.23</span>
+        <span data-block_type="FG-CAP">The mean of a density curve is the point at which it would balance.</span>
+      </span>
 </div>
-<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_55"><p>55</p></div>
-<div data-type="figure" data-caption-compass="SW" data-figure-id="ips9e-ch01-fig-23" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_23.jpg" data-figure-id="ips9e-ch01-fig-23" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.23: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.23</span> <span data-block_type="FG-CAP">The mean of a density curve is the point at which it would balance.</span></span>
-</div>
-</div>
-<div data-block_type="TXT" id="ips9e-ch01-p-854"><p>What about the mean and standard deviation? The mean of a set of observations is their arithmetic average. If we think of the observations as weights strung out along a thin rod, the mean is the point at which the rod would balance. This fact is also true of density curves. The mean is the point at which the curve would balance if it were made out of solid material. <span data-type="link" data-href="figure_1_23.html">Figure 1.23</span> illustrates this interpretation of the mean.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-855"><p>A symmetric curve, such as the Normal curve in <span data-type="link" data-href="figure_1_22.html">Figure 1.22</span>(a), balances at its center of symmetry. Half the area under a symmetric curve lies on either side of its center, so this is also the median.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-856"><p>For a right-skewed curve, such as those shown in <span data-type="link" data-href="figure_1_22.html">Figures 1.22(b)</span> and <span data-type="link" data-href="figure_1_23.html">1.23</span>, the small area in the long right tail tips the curve more than the same area near the center. The mean (the balance point), therefore, lies to the right of the median. It is hard to locate the balance point by eye on a skewed curve. There are mathematical ways of calculating the mean for any density curve, so we are able to mark the mean as well as the median in <span data-type="link" data-href="figure_1_22.html">Figure 1.22</span>(b). The standard deviation can also be calculated mathematically, but it can’t be located by eye on most density curves.</p></div>
-<div data-type="box" data-block_type="BX1" id="ips9e-ch01-box-167"><div data-type="box_inner">
+    </div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-854"><p>
+      What about the mean and standard deviation? The mean of a set of observations is their arithmetic average. If we think of the observations as weights strung out along a thin rod, the mean is the point at which the rod would balance. This fact is also true of density curves. The mean is the point at which the curve would balance if it were made out of solid material. <span data-type="link" data-href="figure_1_23.html">Figure 1.23</span> illustrates this interpretation of the mean.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-855"><p>
+      A symmetric curve, such as the Normal curve in <span data-type="link" data-href="figure_1_22.html">Figure 1.22</span>(a), balances at its center of symmetry. Half the area under a symmetric curve lies on either side of its center, so this is also the median.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-856"><p>
+      For a right-skewed curve, such as those shown in <span data-type="link" data-href="figure_1_22.html">Figures 1.22(b)</span> and <span data-type="link" data-href="figure_1_23.html">1.23</span>, the small area in the long right tail tips the curve more than the same area near the center. The mean (the balance point), therefore, lies to the right of the median. It is hard to locate the balance point by eye on a skewed curve. There are mathematical ways of calculating the mean for any density curve, so we are able to mark the mean as well as the median in <span data-type="link" data-href="figure_1_22.html">Figure 1.22</span>(b). The standard deviation can also be calculated mathematically, but it can’t be located by eye on most density curves.
+    </p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch01-box-167"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-167"></h3>
-<div data-block_type="BX1-T" id="ips9e-ch01-p-857"><p>MEDIAN AND MEAN OF A DENSITY CURVE</p></div>
-<div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-858"><p>The <strong>median</strong> of a density curve is the equal-areas point, the point that divides the area under the curve in half.</p></div>
-<div data-block_type="BX1-TXT" id="ips9e-ch01-p-859"><p>The <strong>mean</strong> of a density curve is the balance point, at which the curve would balance if made of solid material.</p></div>
-<div data-block_type="BX1-TXT" id="ips9e-ch01-p-860"><p>The median and mean are the same for a symmetric density curve. They both lie at the center of the curve. The mean of a skewed curve is pulled away from the median in the direction of the long tail.</p></div>
-</div></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-861"><p>A density curve is an idealized description of a distribution of data. For example, the density curve in <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span> is exactly symmetric, but the histogram of vocabulary scores is only approximately symmetric. We therefore need to distinguish between the mean and standard deviation of the density curve and the numbers <span data-math="math_50"></span> and <em>s</em> computed from the actual observations. The usual notation for the mean of an idealized distribution is <span data-type="termref" data-term="μ"><strong><em>μ</em></strong></span><span data-block_type="MN-GL-term">mean <em>μ</em></span> (the Greek letter mu). We write the standard deviation of a density curve as <span data-type="termref" data-term="σ"><strong><em>σ</em></strong></span><span data-block_type="MN-GL-term">standard deviation σ</span> (the Greek letter sigma). In <span data-type="link" data-href="ips9e-ch05.xml">Chapter 5</span>, we refer to <span data-math="math_51"></span> and <em>s</em> as statistics associated with a sample and to <strong><em>μ</em></strong> and <em>σ</em> as parameters associated with a population.</p></div>
-<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_56"><p>56</p></div>
-<div data-block_type="level_2_title" id="ips9e-ch01-p-862"><p><span data-block_type="h2">Normal distributions</span></p></div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-863"><p>One particularly important class of density curves has already appeared in <span data-type="link" data-href="figure_1_21.html">Figures 1.21</span> and <span data-type="link" data-href="figure_1_22.html">1.22(a)</span>. These density curves are symmetric, unimodal, and bell-shaped. They are called <span data-type="termref" data-term="Normal curves"><strong>Normal curves</strong></span><span data-block_type="MN-GL-term">Normal curves</span>, and they describe <span data-type="termref" data-term="Normal distributions"><strong>Normal distributions</strong></span><span data-block_type="MN-GL-term">Normal distributions</span>. All Normal distributions have the same overall shape.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-864"><p>The exact density curve for a particular Normal distribution is specified by giving the distribution’s mean <em>μ</em> and its standard deviation <em>σ</em>. The mean is located at the center of the symmetric curve and is the same as the median. Changing <em>μ</em> without changing <em>σ</em> moves the Normal curve along the horizontal axis without changing its spread.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-865"><p>The standard deviation <em>σ</em> controls the spread of a Normal curve. <span data-type="link" data-href="figure_1_24.html">Figure 1.24</span> shows two Normal curves with different values of <em>σ</em>. The curve with the larger standard deviation is more spread out.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-866"><p>The standard deviation <em>σ</em> is the natural measure of spread for Normal distributions. Not only do <em>μ</em> and <em>σ</em> completely determine the shape of a Normal curve, but we can locate <em>σ</em> by eye on the curve. Here’s how. As we move out in either direction from the center <em>μ</em>, the curve changes from falling ever more steeply</p></div>
-<div data-type="figure" data-figure-id="ips9e-ch01-unfig-04" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_UNfig_01_01.jpg" data-figure-id="ips9e-ch01-unfig-04" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-block_type="BX1-T" id="ips9e-ch01-p-857"><p>MEDIAN AND MEAN OF A DENSITY CURVE</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-858"><p>
+        The <strong>median</strong> of a density curve is the equal-areas point, the point that divides the area under the curve in half.
+      </p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch01-p-859"><p>
+        The <strong>mean</strong> of a density curve is the balance point, at which the curve would balance if made of solid material.
+      </p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch01-p-860"><p>The median and mean are the same for a symmetric density curve. They both lie at the center of the curve. The mean of a skewed curve is pulled away from the median in the direction of the long tail.</p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-861"><p>
+      A density curve is an idealized description of a distribution of data. For example, the density curve in <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span> is exactly symmetric, but the histogram of vocabulary scores is only approximately symmetric. We therefore need to distinguish between the mean and standard deviation of the density curve and the numbers <span data-math="math_50"></span> and <em>s</em> computed from the actual observations. The usual notation for the mean of an idealized distribution is <span data-type="termref" data-term="μ">
+        <strong>
+          <em>μ</em>
+        </strong>
+      </span><span data-block_type="MN-GL-term">
+        mean <em>μ</em>
+      </span> (the Greek letter mu). We write the standard deviation of a density curve as <span data-type="termref" data-term="σ">
+        <strong>
+          <em>σ</em>
+        </strong>
+      </span><span data-block_type="MN-GL-term">standard deviation σ</span> (the Greek letter sigma). In <span data-type="link" data-href="ips9e-ch05.xml">Chapter 5</span>, we refer to <span data-math="math_51"></span> and <em>s</em> as statistics associated with a sample and to <strong>
+        <em>μ</em>
+      </strong> and <em>σ</em> as parameters associated with a population.
+    </p></div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_56"><p>56</p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch01-p-862"><p>
+      <span data-block_type="h2">Normal distributions</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-863"><p>
+      One particularly important class of density curves has already appeared in <span data-type="link" data-href="figure_1_21.html">Figures 1.21</span> and <span data-type="link" data-href="figure_1_22.html">1.22(a)</span>. These density curves are symmetric, unimodal, and bell-shaped. They are called <span data-type="termref" data-term="Normal curves">
+        <strong>Normal curves</strong>
+      </span><span data-block_type="MN-GL-term">Normal curves</span>, and they describe <span data-type="termref" data-term="Normal distributions">
+        <strong>Normal distributions</strong>
+      </span><span data-block_type="MN-GL-term">Normal distributions</span>. All Normal distributions have the same overall shape.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-864"><p>
+      The exact density curve for a particular Normal distribution is specified by giving the distribution’s mean <em>μ</em> and its standard deviation <em>σ</em>. The mean is located at the center of the symmetric curve and is the same as the median. Changing <em>μ</em> without changing <em>σ</em> moves the Normal curve along the horizontal axis without changing its spread.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-865"><p>
+      The standard deviation <em>σ</em> controls the spread of a Normal curve. <span data-type="link" data-href="figure_1_24.html">Figure 1.24</span> shows two Normal curves with different values of <em>σ</em>. The curve with the larger standard deviation is more spread out.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-866"><p>
+      The standard deviation <em>σ</em> is the natural measure of spread for Normal distributions. Not only do <em>μ</em> and <em>σ</em> completely determine the shape of a Normal curve, but we can locate <em>σ</em> by eye on the curve. Here’s how. As we move out in either direction from the center <em>μ</em>, the curve changes from falling ever more steeply
+    </p></div>
+    <div data-type="figure" data-figure-id="ips9e-ch01-unfig-04" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_UNfig_01_01.jpg" data-figure-id="ips9e-ch01-unfig-04" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+    </div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-867"><p>to falling ever less steeply</p></div>
+    <div data-type="figure" data-figure-id="ips9e-ch01-unfig-05" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_UNfig_01_02.jpg" data-figure-id="ips9e-ch01-unfig-05" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+    </div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-868"><p>
+      <em>The points at which this change of curvature takes place are located at distance</em> <em>σ</em> <em>
+        on either side of the mean <strong>m</strong>.
+      </em> You can feel the change as you run your finger along a Normal curve, and so find the standard deviation. Remember that <strong>
+        <em>m</em>
+      </strong> and <em>σ</em> alone do not specify the shape of most distributions, and that the shape of density curves in general does not reveal <em>σ</em>. These are special properties of Normal distributions.
+    </p></div>
+    <div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-24" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_24.jpg" data-figure-id="ips9e-ch01-fig-24" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 1.24: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 1.24</span>
+        <span data-block_type="FG-CAP">
+          Two Normal curves, showing the mean <em>μ</em> and the standard deviation <em>σ</em>.
+        </span>
+      </span>
 </div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-867"><p>to falling ever less steeply</p></div>
-<div data-type="figure" data-figure-id="ips9e-ch01-unfig-05" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_UNfig_01_02.jpg" data-figure-id="ips9e-ch01-unfig-05" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-</div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-868"><p><em>The points at which this change of curvature takes place are located at distance</em> <em>σ</em> <em>on either side of the mean <strong>m</strong>.</em> You can feel the change as you run your finger along a Normal curve, and so find the standard deviation. Remember that <strong><em>m</em></strong> and <em>σ</em> alone do not specify the shape of most distributions, and that the shape of density curves in general does not reveal <em>σ</em>. These are special properties of Normal distributions.</p></div>
-<div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-24" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_24.jpg" data-figure-id="ips9e-ch01-fig-24" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.24: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.24</span> <span data-block_type="FG-CAP">Two Normal curves, showing the mean <em>μ</em> and the standard deviation <em>σ</em>.</span></span>
-</div>
-</div>
-<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_57"><p>57</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-869"><p>There are other symmetric bell-shaped density curves that are not Normal. The Normal density curves are specified by a particular equation. The height of the density curve at any point <em>x</em> is given by</p></div>
-<div data-block_type="EQ" id="ips9e-ch01-p-870"><p><span data-math="math_52"></span></p></div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-871"><p>We will not make direct use of this fact, although it is the basis of mathematical work with Normal distributions. Notice that the equation of the curve is completely determined by the mean <em>μ</em> and the standard deviation <em>σ</em>.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-872"><p>Why are the Normal distributions important in statistics? Here are three reasons.</p></div>
-<ol data-block_type="numbered" id="ips9e-ch01-list-68">
-<li><div data-block_type="NL-first" id="ips9e-ch01-p-873"><p><span data-block_type="maker">1.</span> Normal distributions are good descriptions for some distributions of <em>real data.</em> Distributions that are often close to Normal include scores on tests taken by many people (such as the Iowa Test of <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span>, page 53), repeated careful measurements of the same quantity, and characteristics of biological populations (such as lengths of baby pythons and yields of corn).</p></div></li>
-<li><div data-block_type="NL-mid" id="ips9e-ch01-p-874"><p><span data-block_type="maker">2.</span> Normal distributions are good approximations to the results of many kinds of <em>chance outcomes</em>, such as tossing a coin many times.</p></div></li>
-<li><div data-block_type="NL-last" id="ips9e-ch01-p-875"><p><span data-block_type="maker">3.</span> Many <em>statistical inference</em> procedures based on Normal distributions work well for other roughly symmetric distributions.</p></div></li>
-</ol>
-<div data-block_type="TXT" id="ips9e-ch01-p-876"><p>However, <em>even though many sets of data follow a Normal distribution, many do not.</em> Most income distributions, for example, are skewed to the right and so are not Normal. Non-Normal data, like nonnormal people, not only are common but are also sometimes more interesting than their Normal counterparts.</p></div>
-<div data-block_type="level_2_title" id="ips9e-ch01-p-877"><p><span data-block_type="h2">The 68–95–99.7 rule</span></p></div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-878"><p>Although there are many Normal curves, they all have common properties. Here is one of the most important.</p></div>
-<div data-type="box" data-block_type="BX1" id="ips9e-ch01-box-168"><div data-type="box_inner">
+    </div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_57"><p>57</p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-869"><p>
+      There are other symmetric bell-shaped density curves that are not Normal. The Normal density curves are specified by a particular equation. The height of the density curve at any point <em>x</em> is given by
+    </p></div>
+    <div data-block_type="EQ" id="ips9e-ch01-p-870"><p>
+      <span data-math="math_52"></span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-871"><p>
+      We will not make direct use of this fact, although it is the basis of mathematical work with Normal distributions. Notice that the equation of the curve is completely determined by the mean <em>μ</em> and the standard deviation <em>σ</em>.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-872"><p>Why are the Normal distributions important in statistics? Here are three reasons.</p></div>
+    <ol data-block_type="numbered" id="ips9e-ch01-list-68">
+      <li><div data-block_type="NL-first" id="ips9e-ch01-p-873"><p>
+          <span data-block_type="maker">1.</span> Normal distributions are good descriptions for some distributions of <em>real data.</em> Distributions that are often close to Normal include scores on tests taken by many people (such as the Iowa Test of <span data-type="link" data-href="figure_1_21.html">Figure 1.21</span>, page 53), repeated careful measurements of the same quantity, and characteristics of biological populations (such as lengths of baby pythons and yields of corn).
+        </p></div>
+      </li>
+      <li><div data-block_type="NL-mid" id="ips9e-ch01-p-874"><p>
+          <span data-block_type="maker">2.</span> Normal distributions are good approximations to the results of many kinds of <em>chance outcomes</em>, such as tossing a coin many times.
+        </p></div>
+      </li>
+      <li><div data-block_type="NL-last" id="ips9e-ch01-p-875"><p>
+          <span data-block_type="maker">3.</span> Many <em>statistical inference</em> procedures based on Normal distributions work well for other roughly symmetric distributions.
+        </p></div>
+      </li>
+    </ol>
+    <div data-block_type="TXT" id="ips9e-ch01-p-876"><p>
+      However, <em>even though many sets of data follow a Normal distribution, many do not.</em> Most income distributions, for example, are skewed to the right and so are not Normal. Non-Normal data, like nonnormal people, not only are common but are also sometimes more interesting than their Normal counterparts.
+    </p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch01-p-877"><p>
+      <span data-block_type="h2">The 68–95–99.7 rule</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-878"><p>Although there are many Normal curves, they all have common properties. Here is one of the most important.</p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch01-box-168"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-168"></h3>
-<div data-block_type="BX1-T" id="ips9e-ch01-p-879"><p>THE 68–95–99.7 RULE</p></div>
-<div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-880"><p>In the Normal distribution with mean <em>μ</em> and standard deviation <em>σ</em>:</p></div>
-<ul data-block_type="bullet" id="ips9e-ch01-list-69">
-<li><div data-block_type="EXP-BL" id="ips9e-ch01-p-881"><p><span data-block_type="maker">•</span> Approximately <strong>68%</strong> of the observations fall within <em>σ</em> of the mean <em>μ</em>.</p></div></li>
-<li><div data-block_type="EXP-BL" id="ips9e-ch01-p-882"><p><span data-block_type="maker">•</span> Approximately <strong>95%</strong> of the observations fall within 2<em>σ</em> of <em>μ</em>.</p></div></li>
-<li><div data-block_type="EXP-BL" id="ips9e-ch01-p-883"><p><span data-block_type="maker">•</span> Approximately <strong>99.7%</strong> of the observations fall within 3<em>σ</em> of <em>μ</em>.</p></div></li>
-</ul>
-</div></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-884"><p><span data-type="link" data-href="figure_1_25.html">Figure 1.25</span> illustrates the 68–95–99.7 rule. By remembering these three numbers, you can think about Normal distributions without constantly making detailed calculations.</p></div>
-<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_58"><p>58</p></div>
-<div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-25" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_25.jpg" data-figure-id="ips9e-ch01-fig-25" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.25: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.25</span> <span data-block_type="FG-CAP">The 68–95–99.7 rule for Normal distributions.</span></span>
+      <div data-block_type="BX1-T" id="ips9e-ch01-p-879"><p>THE 68–95–99.7 RULE</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-880"><p>
+        In the Normal distribution with mean <em>μ</em> and standard deviation <em>σ</em>:
+      </p></div>
+      <ul data-block_type="bullet" id="ips9e-ch01-list-69">
+        <li><div data-block_type="EXP-BL" id="ips9e-ch01-p-881"><p>
+            <span data-block_type="maker">•</span> Approximately <strong>68%</strong> of the observations fall within <em>σ</em> of the mean <em>μ</em>.
+          </p></div>
+        </li>
+        <li><div data-block_type="EXP-BL" id="ips9e-ch01-p-882"><p>
+            <span data-block_type="maker">•</span> Approximately <strong>95%</strong> of the observations fall within 2<em>σ</em> of <em>μ</em>.
+          </p></div>
+        </li>
+        <li><div data-block_type="EXP-BL" id="ips9e-ch01-p-883"><p>
+            <span data-block_type="maker">•</span> Approximately <strong>99.7%</strong> of the observations fall within 3<em>σ</em> of <em>μ</em>.
+          </p></div>
+        </li>
+      </ul>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-884"><p>
+      <span data-type="link" data-href="figure_1_25.html">Figure 1.25</span> illustrates the 68–95–99.7 rule. By remembering these three numbers, you can think about Normal distributions without constantly making detailed calculations.
+    </p></div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_58"><p>58</p></div>
+    <div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-25" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_25.jpg" data-figure-id="ips9e-ch01-fig-25" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 1.25: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 1.25</span>
+        <span data-block_type="FG-CAP">The 68–95–99.7 rule for Normal distributions.</span>
+      </span>
 </div>
-</div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-169"><div data-type="box_inner">
+    </div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-169"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-169"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-885"><p>EXAMPLE 1.38</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-886"><p><span data-block_type="EXP-T-ri">Heights of young women.</span> The distribution of heights of young women aged 18 to 24 is approximately Normal with mean <em>μ</em> = 64.5 inches and standard deviation <em>σ</em> = 2.5 inches. <span data-type="link" data-href="figure_1_26.html">Figure 1.26</span> shows what the 68–95–99.7 rule says about this distribution.</p></div>
-<div data-block_type="EXP-last" id="ips9e-ch01-p-887"><p>Two standard deviations equals five inches for this distribution. The 95 part of the 68–95–99.7 rule says that the middle 95% of young women are between 64.5 − 5 and 64.5 + 5 inches tall, that is, between 59.5 and 69.5 inches. This fact is exactly true for an exactly Normal distribution. It is approximately true for the heights of young women because the distribution of heights is approximately Normal.</p></div>
-<div data-block_type="EXP-last" id="ips9e-ch01-p-888"><p>The other 5% of young women have heights outside the range from 59.5 to 69.5 inches. Because the Normal distributions are symmetric, half of these women are on the tall side. So the tallest 2.5% of young women are taller than 69.5 inches.</p></div>
-</div></div>
-<div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-26" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_26.jpg" data-figure-id="ips9e-ch01-fig-26" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.26: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.26</span> <span data-block_type="FG-CAP">The 68–95–99.7 rule applied to the heights of young women, <span data-type="link" data-href="example_1_38.html">Example 1.38</span>.</span></span>
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-885"><p>EXAMPLE 1.38</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-886"><p>
+        <span data-block_type="EXP-T-ri">Heights of young women.</span> The distribution of heights of young women aged 18 to 24 is approximately Normal with mean <em>μ</em> = 64.5 inches and standard deviation <em>σ</em> = 2.5 inches. <span data-type="link" data-href="figure_1_26.html">Figure 1.26</span> shows what the 68–95–99.7 rule says about this distribution.
+      </p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-887"><p>Two standard deviations equals five inches for this distribution. The 95 part of the 68–95–99.7 rule says that the middle 95% of young women are between 64.5 − 5 and 64.5 + 5 inches tall, that is, between 59.5 and 69.5 inches. This fact is exactly true for an exactly Normal distribution. It is approximately true for the heights of young women because the distribution of heights is approximately Normal.</p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-888"><p>The other 5% of young women have heights outside the range from 59.5 to 69.5 inches. Because the Normal distributions are symmetric, half of these women are on the tall side. So the tallest 2.5% of young women are taller than 69.5 inches.</p></div>
+    </div></div>
+    <div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-26" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_26.jpg" data-figure-id="ips9e-ch01-fig-26" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 1.26: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 1.26</span>
+        <span data-block_type="FG-CAP">
+          The 68–95–99.7 rule applied to the heights of young women, <span data-type="link" data-href="example_1_38.html">Example 1.38</span>.
+        </span>
+      </span>
 </div>
-</div>
-<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_59"><p>59</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-889"><p>Because we will mention Normal distributions often, a short notation is helpful. We abbreviate the Normal distribution with mean <strong><em>μ</em></strong> and standard deviation σ as <span data-type="termref" data-term="N(μ,σ)"><strong><em>N</em></strong>(<strong><em>μ</em></strong>, <strong><em>σ</em></strong>)</span><span data-block_type="MN-GL-term"><em>N</em>(<em>μ</em>, <em>σ</em>)</span>. For example, the distribution of young women’s heights is <em>N</em>(64.5, 2.5).</p></div>
-<div data-type="box" data-block_type="EXR" id="ips9e-ch01-box-170"><div data-type="box_inner">
+    </div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_59"><p>59</p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-889"><p>
+      Because we will mention Normal distributions often, a short notation is helpful. We abbreviate the Normal distribution with mean <strong>
+        <em>μ</em>
+      </strong> and standard deviation σ as <span data-type="termref" data-term="N(μ,σ)">
+        <strong>
+          <em>N</em>
+        </strong>(<strong>
+          <em>μ</em>
+        </strong>, <strong>
+          <em>σ</em>
+        </strong>)
+      </span><span data-block_type="MN-GL-term">
+        <em>N</em>(<em>μ</em>, <em>σ</em>)
+      </span>. For example, the distribution of young women’s heights is <em>N</em>(64.5, 2.5).
+    </p></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch01-box-170"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-170"></h3>
-<div data-block_type="EXR-H" id="ips9e-ch01-p-890"><p>USE YOUR KNOWLEDGE</p></div>
-<div data-type="question" id="ips9e-ch01-ques-93">
+      <div data-block_type="EXR-H" id="ips9e-ch01-p-890"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" id="ips9e-ch01-ques-93">
 <h3>Question
 			    <span data-type="number">1.93 </span><span data-type="title"></span>
 </h3>
-<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch01-p-891"><p><span data-block_type="EXR-QUE-N-ri">1.93</span> <span data-block_type="EXR-QUE-T-ri">Test scores.</span> Many states assess the skills of their students in various grades. One program that is available for this purpose is the National Assessment of Educational Progress (NAEP).<span data-type="termref" data-term="fn_ch1_fn30"><sup>30</sup></span> One of the tests provided by the NAEP assesses the reading skills of 12th-grade students. In a recent year, the national mean score was 288 and the standard deviation was 38. Assuming that these scores are approximately Normally distributed, <em>N</em>(288, 38), use the 68–95–99.7 rule to give a range of scores that includes 95% of these students.</p></div>
-</div>
-<div data-type="question" id="ips9e-ch01-ques-94">
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch01-p-891"><p>
+          <span data-block_type="EXR-QUE-N-ri">1.93</span> <span data-block_type="EXR-QUE-T-ri">Test scores.</span> Many states assess the skills of their students in various grades. One program that is available for this purpose is the National Assessment of Educational Progress (NAEP).<span data-type="termref" data-term="fn_ch1_fn30">
+            <sup>30</sup>
+          </span> One of the tests provided by the NAEP assesses the reading skills of 12th-grade students. In a recent year, the national mean score was 288 and the standard deviation was 38. Assuming that these scores are approximately Normally distributed, <em>N</em>(288, 38), use the 68–95–99.7 rule to give a range of scores that includes 95% of these students.
+        </p></div>
+      </div>
+      <div data-type="question" id="ips9e-ch01-ques-94">
 <h3>Question
 			    <span data-type="number">1.94 </span><span data-type="title"></span>
 </h3>
-<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch01-p-892"><p><span data-block_type="EXR-QUE-N-ri">1.94</span> <span data-block_type="EXR-QUE-T-ri">Use the 68–95–99.7 rule.</span> Refer to the previous exercise. Use the 68–95–99.7 rule to give a range of scores that includes 99.7% of these students.</p></div>
-</div>
-</div></div>
-<div data-block_type="level_2_title" id="ips9e-ch01-p-893"><p><span data-block_type="h2">Standardizing observations</span></p></div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-894"><p>As the 68–95–99.7 rule suggests, all Normal distributions share many properties. In fact, all Normal distributions are the same if we measure in units of size <em>σ</em> about the mean <em>μ</em> as center. Changing to these units is called <em>standardizing.</em> To standardize a value, subtract the mean of the distribution and then divide by the standard deviation.</p></div>
-<div data-type="box" data-block_type="BX1" id="ips9e-ch01-box-171"><div data-type="box_inner">
+        <div data-block_type="EXR-QUE-NL-last" id="ips9e-ch01-p-892"><p>
+          <span data-block_type="EXR-QUE-N-ri">1.94</span> <span data-block_type="EXR-QUE-T-ri">Use the 68–95–99.7 rule.</span> Refer to the previous exercise. Use the 68–95–99.7 rule to give a range of scores that includes 99.7% of these students.
+        </p></div>
+      </div>
+    </div></div>
+    <div data-block_type="level_2_title" id="ips9e-ch01-p-893"><p>
+      <span data-block_type="h2">Standardizing observations</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-894"><p>
+      As the 68–95–99.7 rule suggests, all Normal distributions share many properties. In fact, all Normal distributions are the same if we measure in units of size <em>σ</em> about the mean <em>μ</em> as center. Changing to these units is called <em>standardizing.</em> To standardize a value, subtract the mean of the distribution and then divide by the standard deviation.
+    </p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch01-box-171"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-171"></h3>
-<div data-block_type="BX1-T" id="ips9e-ch01-p-895"><p>STANDARDIZING AND <em>z</em>-SCORES</p></div>
-<div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-896"><p>If <em>x</em> is an observation from a distribution that has mean <em>μ</em> and standard deviation <em>σ</em>, the <strong>standardized value</strong> of <em>x</em> is</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-897"><p><span data-math="math_53"></span></p></div>
-<div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-898"><p>A standardized value is often called a <strong><em>z</em>-score</strong>.</p></div>
-</div></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-899"><p>A <em>z</em>-score tells us how many standard deviations the original observation falls away from the mean, and in which direction. Observations larger than the mean are positive when standardized, and observations smaller than the mean are negative.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-900"><p>To compare scores based on different measures, <em>z</em>-scores can be very useful. For example, see <span data-type="link" data-href="exercise_1_124.html">Exercise 1.124</span> (page 73), where you are asked to compare an SAT score with an ACT score.</p></div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-172"><div data-type="box_inner">
+      <div data-block_type="BX1-T" id="ips9e-ch01-p-895"><p>
+        STANDARDIZING AND <em>z</em>-SCORES
+      </p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-896"><p>
+        If <em>x</em> is an observation from a distribution that has mean <em>μ</em> and standard deviation <em>σ</em>, the <strong>standardized value</strong> of <em>x</em> is
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch01-p-897"><p>
+        <span data-math="math_53"></span>
+      </p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-898"><p>
+        A standardized value is often called a <strong>
+          <em>z</em>-score
+        </strong>.
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-899"><p>
+      A <em>z</em>-score tells us how many standard deviations the original observation falls away from the mean, and in which direction. Observations larger than the mean are positive when standardized, and observations smaller than the mean are negative.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-900"><p>
+      To compare scores based on different measures, <em>z</em>-scores can be very useful. For example, see <span data-type="link" data-href="exercise_1_124.html">Exercise 1.124</span> (page 73), where you are asked to compare an SAT score with an ACT score.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-172"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-172"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-901"><p>EXAMPLE 1.39</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-902"><p><span data-block_type="EXP-T-ri">Find some z-scores.</span> The heights of young women are approximately Normal with <em>μ</em> = 64.5 inches and <em>σ</em> = 2.5 inches. The <em>z</em>-score for height is</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-903"><p><span data-math="math_54"></span></p></div>
-<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_60"><p>60</p></div>
-<div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-904"><p>A woman’s standardized height is the number of standard deviations by which her height differs from the mean height of all young women. A woman 68 inches tall, for example, has <em>z</em>-score</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-905"><p><span data-math="math_55"></span></p></div>
-<div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-906"><p>or 1.4 standard deviations above the mean. Similarly, a woman 5 feet (60 inches) tall has <em>z</em>-score</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-907"><p><span data-math="math_56"></span></p></div>
-<div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-908"><p>or 1.8 standard deviations less than the mean height.</p></div>
-</div></div>
-<div data-type="box" data-block_type="EXR" id="ips9e-ch01-box-173"><div data-type="box_inner">
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-901"><p>EXAMPLE 1.39</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-902"><p>
+        <span data-block_type="EXP-T-ri">Find some z-scores.</span> The heights of young women are approximately Normal with <em>μ</em> = 64.5 inches and <em>σ</em> = 2.5 inches. The <em>z</em>-score for height is
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch01-p-903"><p>
+        <span data-math="math_54"></span>
+      </p></div>
+      <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_60"><p>60</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-904"><p>
+        A woman’s standardized height is the number of standard deviations by which her height differs from the mean height of all young women. A woman 68 inches tall, for example, has <em>z</em>-score
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch01-p-905"><p>
+        <span data-math="math_55"></span>
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-906"><p>
+        or 1.4 standard deviations above the mean. Similarly, a woman 5 feet (60 inches) tall has <em>z</em>-score
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch01-p-907"><p>
+        <span data-math="math_56"></span>
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-908"><p>or 1.8 standard deviations less than the mean height.</p></div>
+    </div></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch01-box-173"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-173"></h3>
-<div data-block_type="EXR-H" id="ips9e-ch01-p-909"><p>USE YOUR KNOWLEDGE</p></div>
-<div data-type="question" id="ips9e-ch01-ques-95">
+      <div data-block_type="EXR-H" id="ips9e-ch01-p-909"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" id="ips9e-ch01-ques-95">
 <h3>Question
 			    <span data-type="number">1.95 </span><span data-type="title"></span>
 </h3>
-<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch01-p-910"><p><span data-block_type="EXR-QUE-N-ri">1.95</span> <span data-block_type="EXR-QUE-T-ri">Find the <em>z</em>-score.</span> Consider the NAEP scores (see <span data-type="link" data-href="exercise_1_93.html">Exercise 1.93</span>, page 59), which we assume are approximately Normal, <em>N</em>(288, 38). Give the <em>z</em>-score for a student who received a score of 350.</p></div>
-</div>
-<div data-type="question" id="ips9e-ch01-ques-96">
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch01-p-910"><p>
+          <span data-block_type="EXR-QUE-N-ri">1.95</span> <span data-block_type="EXR-QUE-T-ri">
+            Find the <em>z</em>-score.
+          </span> Consider the NAEP scores (see <span data-type="link" data-href="exercise_1_93.html">Exercise 1.93</span>, page 59), which we assume are approximately Normal, <em>N</em>(288, 38). Give the <em>z</em>-score for a student who received a score of 350.
+        </p></div>
+      </div>
+      <div data-type="question" id="ips9e-ch01-ques-96">
 <h3>Question
 			    <span data-type="number">1.96 </span><span data-type="title"></span>
 </h3>
-<div data-block_type="EXR-QUE-NL-mid" id="ips9e-ch01-p-911"><p><span data-block_type="EXR-QUE-N-ri">1.96</span> <span data-block_type="EXR-QUE-T-ri">Find another <em>z</em>-score.</span> Consider the NAEP scores, which we assume are approximately Normal, <em>N</em>(288, 38). Give the <em>z</em>-score for a student who received a score of 240. Explain why your answer is negative even though all the test scores are positive.</p></div>
-</div>
-</div></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-912"><p>We need a way to write variables, such as “height” in <span data-type="link" data-href="example_1_38.html">Example 1.38</span>, that follow a theoretical distribution such as a Normal distribution. We use capital letters near the end of the alphabet for such variables. If <em>X</em> is the height of a young woman, we can then shorten “the height of a young woman is less than 68 inches” to “<em>X</em> &lt; 68.” We will use lowercase <em>x</em> to stand for any specific value of the variable <em>X</em>.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-913"><p>We often standardize observations from symmetric distributions to express them in a common scale. We might, for example, compare the heights of two children of different ages by calculating their <em>z</em>-scores. The standardized heights tell us where each child stands in the distribution for his or her age group.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-914"><p>Standardizing is a linear transformation that transforms the data into the standard scale of <em>z</em>-scores. We know that a linear transformation does not change the shape of a distribution, and that the mean and standard deviation change in a simple manner. In particular, <em>the standardized values for any distribution always have mean 0 and standard deviation 1.</em></p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-915"><p>If the variable we standardize has a Normal distribution, standardizing does more than give a common scale. It makes all Normal distributions into a single distribution, and this distribution is still Normal. Standardizing a variable that has any Normal distribution produces a new variable that has the <em>standard Normal distribution.</em></p></div>
-<div data-type="box" data-block_type="BX1" id="ips9e-ch01-box-174"><div data-type="box_inner">
+        <div data-block_type="EXR-QUE-NL-mid" id="ips9e-ch01-p-911"><p>
+          <span data-block_type="EXR-QUE-N-ri">1.96</span> <span data-block_type="EXR-QUE-T-ri">
+            Find another <em>z</em>-score.
+          </span> Consider the NAEP scores, which we assume are approximately Normal, <em>N</em>(288, 38). Give the <em>z</em>-score for a student who received a score of 240. Explain why your answer is negative even though all the test scores are positive.
+        </p></div>
+      </div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-912"><p>
+      We need a way to write variables, such as “height” in <span data-type="link" data-href="example_1_38.html">Example 1.38</span>, that follow a theoretical distribution such as a Normal distribution. We use capital letters near the end of the alphabet for such variables. If <em>X</em> is the height of a young woman, we can then shorten “the height of a young woman is less than 68 inches” to “<em>X</em> &lt; 68.” We will use lowercase <em>x</em> to stand for any specific value of the variable <em>X</em>.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-913"><p>
+      We often standardize observations from symmetric distributions to express them in a common scale. We might, for example, compare the heights of two children of different ages by calculating their <em>z</em>-scores. The standardized heights tell us where each child stands in the distribution for his or her age group.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-914"><p>
+      Standardizing is a linear transformation that transforms the data into the standard scale of <em>z</em>-scores. We know that a linear transformation does not change the shape of a distribution, and that the mean and standard deviation change in a simple manner. In particular, <em>the standardized values for any distribution always have mean 0 and standard deviation 1.</em>
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-915"><p>
+      If the variable we standardize has a Normal distribution, standardizing does more than give a common scale. It makes all Normal distributions into a single distribution, and this distribution is still Normal. Standardizing a variable that has any Normal distribution produces a new variable that has the <em>standard Normal distribution.</em>
+    </p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch01-box-174"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-174"></h3>
-<div data-block_type="BX1-T" id="ips9e-ch01-p-916"><p>THE STANDARD NORMAL DISTRIBUTION</p></div>
-<div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-917"><p>The <strong>standard Normal distribution</strong> is the Normal distribution <em>N</em>(0, 1) with mean 0 and standard deviation 1.</p></div>
-<div data-block_type="BX1-TXT" id="ips9e-ch01-p-918"><p>If a variable <em>X</em> has any Normal distribution <em>N</em>(<em>μ</em>, <em>σ</em>) with mean <em>μ</em> and standard deviation <em>σ</em>, then the standardized variable</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-919"><p><span data-math="math_57"></span></p></div>
-<div data-block_type="BX1-TXT" id="ips9e-ch01-p-920"><p>has the standard Normal distribution.</p></div>
-</div></div>
-<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_61"><p>61</p></div>
-<div data-type="figure" data-caption-compass="SW" data-figure-id="ips9e-ch01-fig-27" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_27.jpg" data-figure-id="ips9e-ch01-fig-27" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.27: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.27</span> <span data-block_type="FG-CAP">The cumulative proportion for a value <em>x</em> is the proportion of all observations from the distribution that are less than or equal to <em>x</em>. This is the area to the left of <em>x</em> under the Normal curve.</span></span>
+      <div data-block_type="BX1-T" id="ips9e-ch01-p-916"><p>THE STANDARD NORMAL DISTRIBUTION</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-917"><p>
+        The <strong>standard Normal distribution</strong> is the Normal distribution <em>N</em>(0, 1) with mean 0 and standard deviation 1.
+      </p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch01-p-918"><p>
+        If a variable <em>X</em> has any Normal distribution <em>N</em>(<em>μ</em>, <em>σ</em>) with mean <em>μ</em> and standard deviation <em>σ</em>, then the standardized variable
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch01-p-919"><p>
+        <span data-math="math_57"></span>
+      </p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch01-p-920"><p>has the standard Normal distribution.</p></div>
+    </div></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_61"><p>61</p></div>
+    <div data-type="figure" data-caption-compass="SW" data-figure-id="ips9e-ch01-fig-27" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_27.jpg" data-figure-id="ips9e-ch01-fig-27" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 1.27: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 1.27</span>
+        <span data-block_type="FG-CAP">
+          The cumulative proportion for a value <em>x</em> is the proportion of all observations from the distribution that are less than or equal to <em>x</em>. This is the area to the left of <em>x</em> under the Normal curve.
+        </span>
+      </span>
 </div>
-</div>
-<div data-block_type="level_2_title" id="ips9e-ch01-p-921"><p><span data-block_type="h2">Normal distribution calculations</span></p></div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-922"><p>Areas under a Normal curve represent proportions of observations from that Normal distribution. There is no formula for areas under a Normal curve. Calculations use either software that calculates areas or a table of areas. The table and most software calculate one kind of area: <span data-type="termref" data-term="cumulative proportions"><strong>cumulative proportions</strong></span><span data-block_type="MN-GL-term">cumulative proportion</span>. A cumulative proportion is the proportion of observations in a distribution that lie at or below a given value. When the distribution is given by a density curve, the cumulative proportion is the area under the curve to the left of a given value. <span data-type="link" data-href="figure_1_27.html">Figure 1.27</span> shows the idea more clearly than words do.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-923"><p>The key to calculating Normal proportions is to match the area you want with areas that represent cumulative proportions. Then get areas for cumulative proportions either from software or (with an extra step) from a table. The following examples show the method in pictures.</p></div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-175"><div data-type="box_inner">
+    </div>
+    <div data-block_type="level_2_title" id="ips9e-ch01-p-921"><p>
+      <span data-block_type="h2">Normal distribution calculations</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-922"><p>
+      Areas under a Normal curve represent proportions of observations from that Normal distribution. There is no formula for areas under a Normal curve. Calculations use either software that calculates areas or a table of areas. The table and most software calculate one kind of area: <span data-type="termref" data-term="cumulative proportions">
+        <strong>cumulative proportions</strong>
+      </span><span data-block_type="MN-GL-term">cumulative proportion</span>. A cumulative proportion is the proportion of observations in a distribution that lie at or below a given value. When the distribution is given by a density curve, the cumulative proportion is the area under the curve to the left of a given value. <span data-type="link" data-href="figure_1_27.html">Figure 1.27</span> shows the idea more clearly than words do.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-923"><p>The key to calculating Normal proportions is to match the area you want with areas that represent cumulative proportions. Then get areas for cumulative proportions either from software or (with an extra step) from a table. The following examples show the method in pictures.</p></div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-175"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-175"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-924"><p>EXAMPLE 1.40</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-925"><p><span data-block_type="EXP-T-ri">NCAA eligibility for competition.</span> To be eligible to compete in their first year of college, the National Collegiate Athletic Association (NCAA) requires Division I athletes to meet certain academic standards. These are based on their grade point average (GPA) in certain courses and combined scores on the SAT Critical Reading and Mathematics sections or the ACT composite score.<span data-type="termref" data-term="fn_ch1_fn31"><sup>31</sup></span></p></div>
-<div data-type="figure" data-figure-id="ips9e-ch01-unfig-06" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_P_01_03.jpg" data-figure-id="ips9e-ch01-unfig-06" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="asset_source"><span data-block_type="PHCR">Mitchell Layton/Getty Images</span></div>
-</div>
-<div data-block_type="EXP-last" id="ips9e-ch01-p-926"><p>For a student with a 3.0 GPA, the combined SAT score must be 800 or higher. Based on the distribution of SAT scores for college-bound students, we assume that the distribution of the combined Critical Reading and Mathematics scores is approximately Normal with mean 1010 and standard deviation 225.<span data-type="termref" data-term="fn_ch1_fn32"><sup>32</sup></span> What proportion of college-bound students have SAT scores of 800 or more?</p></div>
-<div data-block_type="EXP-last" id="ips9e-ch01-p-927"><p>Here is the calculation in pictures: the proportion of scores above 800 is the area under the curve to the right of 800. That’s the total area under the curve (which is always 1) minus the cumulative proportion up to 800.</p></div>
-<div data-type="figure" data-figure-id="ips9e-ch01-unfig-07" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_UNfig_01_03.jpg" data-figure-id="ips9e-ch01-unfig-07" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-</div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-928"><p>area right of 800 = total area − area left of 800</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-929"><p>0.8247 = 1 − 0.1753</p></div>
-<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_62"><p>62</p></div>
-<div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-930"><p>That is, the proportion of college-bound SAT takers with a 3.0 GPA who are eligible to compete is 0.8247, or about 82%.</p></div>
-</div></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-931"><p>There is <em>no</em> area under a smooth curve that is exactly over the point 800. Consequently, the area to the right of 800 (the proportion of scores &gt; 800) is the same as the area at or to the right of this point (the proportion of scores ≥ 800). The actual data may contain a student who scored exactly 800 on the SAT. That the proportion of scores exactly equal to 800 is 0 for a Normal distribution is a consequence of the idealized smoothing of Normal distributions for data.</p></div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-176"><div data-type="box_inner">
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-924"><p>EXAMPLE 1.40</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-925"><p>
+        <span data-block_type="EXP-T-ri">NCAA eligibility for competition.</span> To be eligible to compete in their first year of college, the National Collegiate Athletic Association (NCAA) requires Division I athletes to meet certain academic standards. These are based on their grade point average (GPA) in certain courses and combined scores on the SAT Critical Reading and Mathematics sections or the ACT composite score.<span data-type="termref" data-term="fn_ch1_fn31">
+          <sup>31</sup>
+        </span>
+      </p></div>
+      <div data-type="figure" data-figure-id="ips9e-ch01-unfig-06" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+        
+        <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_P_01_03.jpg" data-figure-id="ips9e-ch01-unfig-06" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+        <div data-type="asset_source">
+          <span data-block_type="PHCR">Mitchell Layton/Getty Images</span>
+        </div>
+      </div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-926"><p>
+        For a student with a 3.0 GPA, the combined SAT score must be 800 or higher. Based on the distribution of SAT scores for college-bound students, we assume that the distribution of the combined Critical Reading and Mathematics scores is approximately Normal with mean 1010 and standard deviation 225.<span data-type="termref" data-term="fn_ch1_fn32">
+          <sup>32</sup>
+        </span> What proportion of college-bound students have SAT scores of 800 or more?
+      </p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-927"><p>Here is the calculation in pictures: the proportion of scores above 800 is the area under the curve to the right of 800. That’s the total area under the curve (which is always 1) minus the cumulative proportion up to 800.</p></div>
+      <div data-type="figure" data-figure-id="ips9e-ch01-unfig-07" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+        
+        <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_UNfig_01_03.jpg" data-figure-id="ips9e-ch01-unfig-07" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      </div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch01-p-928"><p>area right of 800 = total area − area left of 800</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch01-p-929"><p>0.8247 = 1 − 0.1753</p></div>
+      <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_62"><p>62</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-930"><p>That is, the proportion of college-bound SAT takers with a 3.0 GPA who are eligible to compete is 0.8247, or about 82%.</p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-931"><p>
+      There is <em>no</em> area under a smooth curve that is exactly over the point 800. Consequently, the area to the right of 800 (the proportion of scores &gt; 800) is the same as the area at or to the right of this point (the proportion of scores ≥ 800). The actual data may contain a student who scored exactly 800 on the SAT. That the proportion of scores exactly equal to 800 is 0 for a Normal distribution is a consequence of the idealized smoothing of Normal distributions for data.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-176"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-176"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-932"><p>EXAMPLE 1.41</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-933"><p><span data-block_type="EXP-T-ri">NCAA eligibility for aid and practice.</span> The NCAA has a category of eligibility in which a first-year student may not compete but is still eligible to receive an athletic scholarship and to practice with the team. The requirements for this category are a 3.0 GPA and combined SAT Critical Reading and Mathematics scores of at least 620.</p></div>
-<div data-block_type="EXP-last" id="ips9e-ch01-p-934"><p>What proportion of college-bound students who take the SAT would be eligible to receive an athletic scholarship and to practice with the team but would not be eligible to compete? That is, what proportion have scores between 620 and 800? Here are the pictures:</p></div>
-<div data-type="figure" data-figure-id="ips9e-ch01-unfig-08" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_UNfig_01_04.jpg" data-figure-id="ips9e-ch01-unfig-08" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-</div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-935"><p>area between 620 and 800 = area left of 800 − area left of 620</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-936"><p>0.1338 = 0.1753 − 0.0415</p></div>
-<div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-937"><p>About 13% of college-bound students with a 3.0 GPA have SAT scores between 620 and 800.</p></div>
-</div></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-938"><p>How do we find the numerical values of the areas in <span data-type="link" data-href="example_1_40.html">Examples 1.40</span> and <span data-type="link" data-href="example_1_41.html">1.41</span>? If you use software, just plug in mean 1010 and standard deviation 225. Then ask for the cumulative proportions for 800 and for 620. (Your software will probably refer to these as “cumulative probabilities.” We will learn in <span data-type="link" data-href="ips9e-ch04.xml">Chapter 4</span> why the language of probability fits.) Sketches of the areas that you want similar to the ones in <span data-type="link" data-href="example_1_40.html">Examples 1.40</span> and <span data-type="link" data-href="example_1_41.html">1.41</span> are very helpful in making sure that you are doing the correct calculations.</p></div>
-<div data-block_type="Applet icon" id="ips9e-ch01-p-939"><p><img id="" src="images/BPSapplet-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-940"><p>You can use the <em>Normal Curve</em> applet on the text website to find Normal proportions. The applet is more flexible than most software—it will find any Normal proportion, not just cumulative proportions. The applet is an excellent way to understand Normal curves. But, because of the limitations of web browsers, the applet is not as accurate as statistical software.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-941"><p>If you are not using software, you can find cumulative proportions for Normal curves from a table. That requires an extra step, as we now explain.</p></div>
-<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_63"><p>63</p></div>
-<div data-block_type="level_2_title" id="ips9e-ch01-p-942"><p><span data-block_type="h2">Using the standard Normal table</span></p></div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-943"><p>The extra step in finding cumulative proportions from a table is that we must first standardize to express the problem in the standard scale of <em>z</em>-scores. This allows us to get by with just one table, a table of <em>standard Normal cumulative proportions.</em> <span data-type="link" data-href="table_a.html">Table A</span> in the back of the book gives standard Normal probabilities. The picture at the top of the table reminds us that the entries are cumulative proportions, areas under the curve to the left of a value <em>z</em>.</p></div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-177"><div data-type="box_inner">
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-932"><p>EXAMPLE 1.41</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-933"><p>
+        <span data-block_type="EXP-T-ri">NCAA eligibility for aid and practice.</span> The NCAA has a category of eligibility in which a first-year student may not compete but is still eligible to receive an athletic scholarship and to practice with the team. The requirements for this category are a 3.0 GPA and combined SAT Critical Reading and Mathematics scores of at least 620.
+      </p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-934"><p>What proportion of college-bound students who take the SAT would be eligible to receive an athletic scholarship and to practice with the team but would not be eligible to compete? That is, what proportion have scores between 620 and 800? Here are the pictures:</p></div>
+      <div data-type="figure" data-figure-id="ips9e-ch01-unfig-08" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+        
+        <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_UNfig_01_04.jpg" data-figure-id="ips9e-ch01-unfig-08" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      </div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch01-p-935"><p>area between 620 and 800 = area left of 800 − area left of 620</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch01-p-936"><p>0.1338 = 0.1753 − 0.0415</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-937"><p>About 13% of college-bound students with a 3.0 GPA have SAT scores between 620 and 800.</p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-938"><p>
+      How do we find the numerical values of the areas in <span data-type="link" data-href="example_1_40.html">Examples 1.40</span> and <span data-type="link" data-href="example_1_41.html">1.41</span>? If you use software, just plug in mean 1010 and standard deviation 225. Then ask for the cumulative proportions for 800 and for 620. (Your software will probably refer to these as “cumulative probabilities.” We will learn in <span data-type="link" data-href="ips9e-ch04.xml">Chapter 4</span> why the language of probability fits.) Sketches of the areas that you want similar to the ones in <span data-type="link" data-href="example_1_40.html">Examples 1.40</span> and <span data-type="link" data-href="example_1_41.html">1.41</span> are very helpful in making sure that you are doing the correct calculations.
+    </p></div>
+    <div data-block_type="Applet icon" id="ips9e-ch01-p-939"><p>
+      <img id="" src="asset/global_images/BPSapplet-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-940"><p>
+      You can use the <em>Normal Curve</em> applet on the text website to find Normal proportions. The applet is more flexible than most software—it will find any Normal proportion, not just cumulative proportions. The applet is an excellent way to understand Normal curves. But, because of the limitations of web browsers, the applet is not as accurate as statistical software.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-941"><p>If you are not using software, you can find cumulative proportions for Normal curves from a table. That requires an extra step, as we now explain.</p></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_63"><p>63</p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch01-p-942"><p>
+      <span data-block_type="h2">Using the standard Normal table</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-943"><p>
+      The extra step in finding cumulative proportions from a table is that we must first standardize to express the problem in the standard scale of <em>z</em>-scores. This allows us to get by with just one table, a table of <em>standard Normal cumulative proportions.</em> <span data-type="link" data-href="table_a.html">Table A</span> in the back of the book gives standard Normal probabilities. The picture at the top of the table reminds us that the entries are cumulative proportions, areas under the curve to the left of a value <em>z</em>.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-177"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-177"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-944"><p>EXAMPLE 1.42</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-945"><p><span data-block_type="EXP-T-ri">Find the proportion from <em>z</em>.</span> What proportion of observations on a standard Normal variable <em>Z</em> take values less than 1.47? We need to find the area to the left of 1.47; locate 1.4 in the left-hand column of <span data-type="link" data-href="table_a.html">Table A</span> and then locate the remaining digit 7 as .07 in the top row. The entry opposite 1.4 and under .07 is 0.9292. This is the cumulative proportion we seek. <span data-type="link" data-href="figure_1_28.html">Figure 1.28</span> illustrates this area.</p></div>
-</div></div>
-<div data-type="figure" data-caption-compass="SW" data-figure-id="ips9e-ch01-fig-28" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_28.jpg" data-figure-id="ips9e-ch01-fig-28" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.28: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.28</span> <span data-block_type="FG-CAP">The area under a standard Normal curve to the left of the point z = 1.47 is 0.9292, <span data-type="link" data-href="example_1_42.html">Example 1.42</span>.</span></span>
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-944"><p>EXAMPLE 1.42</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-945"><p>
+        <span data-block_type="EXP-T-ri">
+          Find the proportion from <em>z</em>.
+        </span> What proportion of observations on a standard Normal variable <em>Z</em> take values less than 1.47? We need to find the area to the left of 1.47; locate 1.4 in the left-hand column of <span data-type="link" data-href="table_a.html">Table A</span> and then locate the remaining digit 7 as .07 in the top row. The entry opposite 1.4 and under .07 is 0.9292. This is the cumulative proportion we seek. <span data-type="link" data-href="figure_1_28.html">Figure 1.28</span> illustrates this area.
+      </p></div>
+    </div></div>
+    <div data-type="figure" data-caption-compass="SW" data-figure-id="ips9e-ch01-fig-28" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_28.jpg" data-figure-id="ips9e-ch01-fig-28" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 1.28: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 1.28</span>
+        <span data-block_type="FG-CAP">
+          The area under a standard Normal curve to the left of the point z = 1.47 is 0.9292, <span data-type="link" data-href="example_1_42.html">Example 1.42</span>.
+        </span>
+      </span>
 </div>
-</div>
-<div data-block_type="TXT" id="ips9e-ch01-p-946"><p>Now that you see how <span data-type="link" data-href="table_a.html">Table A</span> works, let’s redo the NCAA <span data-type="link" data-href="example_1_40.html">Examples 1.40</span> and <span data-type="link" data-href="example_1_41.html">1.41</span> using the table.</p></div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-178"><div data-type="box_inner">
+    </div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-946"><p>
+      Now that you see how <span data-type="link" data-href="table_a.html">Table A</span> works, let’s redo the NCAA <span data-type="link" data-href="example_1_40.html">Examples 1.40</span> and <span data-type="link" data-href="example_1_41.html">1.41</span> using the table.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-178"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-178"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-947"><p>EXAMPLE 1.43</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-948"><p><span data-block_type="EXP-T-ri">Find the proportion from <em>x</em>.</span> What proportion of college-bound students who take the SAT have scores of at least 800? The picture that leads to the answer is exactly the same as in <span data-type="link" data-href="example_1_40.html">Example 1.40</span>. The extra step is that we first standardize to read cumulative proportions from <span data-type="link" data-href="table_a.html">Table A</span>. If <em>X</em> is SAT score, we want the proportion of students for which <em>X</em> ≥ <em>x,</em> where <em>x</em> = 800.</p></div>
-<ol data-block_type="numbered" id="ips9e-ch01-list-70">
-<li><div data-block_type="BX1-NLF" id="ips9e-ch01-p-949"><p><span data-block_type="maker">1.</span> <em>Standardize.</em> Subtract the mean, then divide by the standard deviation, to transform the problem about <em>X</em> into a problem about a standard Normal <em>Z</em>:</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-950"><p><em>X</em> ≥ 800</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-951"><p><span data-math="math_58"></span></p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-952"><p><em>Z</em> ≥ −0.93</p></div>
-</li>
-<li><div data-block_type="BX1-NL-L" id="ips9e-ch01-p-953"><p><span data-block_type="maker">2.</span> <em>Use the table.</em> Look at the pictures in <span data-type="link" data-href="example_1_40.html">Example 1.40</span>. From <span data-type="link" data-href="table_a.html">Table A</span>, we see that the proportion of observations less than −0.93 is 0.1762. The area to the right of −0.93 is therefore 1 − 0.1762 = 0.8238. This is about 82%.</p></div></li>
-</ol>
-</div></div>
-<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_64"><p>64</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-954"><p>The area from the table in <span data-type="link" data-href="example_1_43.html">Example 1.43</span> (0.8238) is slightly less accurate than the area from software in <span data-type="link" data-href="example_1_40.html">Example 1.40</span> (0.8247) because we must round <em>z</em> to two places when we use <span data-type="link" data-href="table_a.html">Table A</span>. The difference is rarely important in practice.</p></div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-179"><div data-type="box_inner">
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-947"><p>EXAMPLE 1.43</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-948"><p>
+        <span data-block_type="EXP-T-ri">
+          Find the proportion from <em>x</em>.
+        </span> What proportion of college-bound students who take the SAT have scores of at least 800? The picture that leads to the answer is exactly the same as in <span data-type="link" data-href="example_1_40.html">Example 1.40</span>. The extra step is that we first standardize to read cumulative proportions from <span data-type="link" data-href="table_a.html">Table A</span>. If <em>X</em> is SAT score, we want the proportion of students for which <em>X</em> ≥ <em>x,</em> where <em>x</em> = 800.
+      </p></div>
+      <ol data-block_type="numbered" id="ips9e-ch01-list-70">
+        <li><div data-block_type="BX1-NLF" id="ips9e-ch01-p-949"><p>
+            <span data-block_type="maker">1.</span> <em>Standardize.</em> Subtract the mean, then divide by the standard deviation, to transform the problem about <em>X</em> into a problem about a standard Normal <em>Z</em>:
+          </p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-950"><p>
+            <em>X</em> ≥ 800
+          </p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-951"><p>
+            <span data-math="math_58"></span>
+          </p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-952"><p>
+            <em>Z</em> ≥ −0.93
+          </p></div>
+        </li>
+        <li><div data-block_type="BX1-NL-L" id="ips9e-ch01-p-953"><p>
+            <span data-block_type="maker">2.</span> <em>Use the table.</em> Look at the pictures in <span data-type="link" data-href="example_1_40.html">Example 1.40</span>. From <span data-type="link" data-href="table_a.html">Table A</span>, we see that the proportion of observations less than −0.93 is 0.1762. The area to the right of −0.93 is therefore 1 − 0.1762 = 0.8238. This is about 82%.
+          </p></div>
+        </li>
+      </ol>
+    </div></div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_64"><p>64</p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-954"><p>
+      The area from the table in <span data-type="link" data-href="example_1_43.html">Example 1.43</span> (0.8238) is slightly less accurate than the area from software in <span data-type="link" data-href="example_1_40.html">Example 1.40</span> (0.8247) because we must round <em>z</em> to two places when we use <span data-type="link" data-href="table_a.html">Table A</span>. The difference is rarely important in practice.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-179"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-179"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-955"><p>EXAMPLE 1.44</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-956"><p><span data-block_type="EXP-T-ri">Eligibility for aid and practice.</span> What proportion of all students who take the SAT would be eligible to receive athletic scholarships and to practice with the team but would not be eligible to compete in the eyes of the NCAA? That is, what proportion of students have SAT scores between 620 and 800? First, sketch the areas, exactly as in <span data-type="link" data-href="example_1_41.html">Example 1.41</span>. We again use <em>X</em> as shorthand for an SAT score.</p></div>
-<ol data-block_type="numbered" id="ips9e-ch01-list-71">
-<li><div data-block_type="BX1-NLF" id="ips9e-ch01-p-957"><p><span data-block_type="maker">1.</span> <em>Standardize.</em></p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-958"><p>620	≤<em>X</em>	&lt;	800</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-959"><p><span data-math="math_59"></span></p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-960"><p>	−1.73	≤	<em>Z</em>	&lt;	−0.93</p></div>
-</li>
-<li><div data-block_type="BX1-NL-L" id="ips9e-ch01-p-961"><p><span data-block_type="maker">2.</span> <em>Use the table.</em></p></div>
-<div data-block_type="BX1-NL-L" id="ips9e-ch01-p-962"><p>area between −1.73 and −0.93 = (area left of −0.93) − (area left of −1.73)</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-963"><p>= 0.1762 − 0.0418 = 0.1344</p></div>
-</li>
-</ol>
-<div data-block_type="EXP-last" id="ips9e-ch01-p-964"><p>As in <span data-type="link" data-href="example_1_41.html">Example 1.41</span>, about 13% of students would be eligible to receive athletic scholarships and to practice with the team.</p></div>
-</div></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-965"><p>Sometimes we encounter a value of <em>z</em> more extreme than those appearing in <span data-type="link" data-href="table_a.html">Table A</span>. For example, the area to the left of <em>z</em> = −4 is not given in the table. The <em>z</em>-values in <span data-type="link" data-href="table_a.html">Table A</span> leave only area 0.0002 in each tail unaccounted for. For practical purposes, we can act as if there is zero area outside the range of <span data-type="link" data-href="table_a.html">Table A</span>.</p></div>
-<div data-type="box" data-block_type="EXR" id="ips9e-ch01-box-180"><div data-type="box_inner">
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-955"><p>EXAMPLE 1.44</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-956"><p>
+        <span data-block_type="EXP-T-ri">Eligibility for aid and practice.</span> What proportion of all students who take the SAT would be eligible to receive athletic scholarships and to practice with the team but would not be eligible to compete in the eyes of the NCAA? That is, what proportion of students have SAT scores between 620 and 800? First, sketch the areas, exactly as in <span data-type="link" data-href="example_1_41.html">Example 1.41</span>. We again use <em>X</em> as shorthand for an SAT score.
+      </p></div>
+      <ol data-block_type="numbered" id="ips9e-ch01-list-71">
+        <li><div data-block_type="BX1-NLF" id="ips9e-ch01-p-957"><p>
+            <span data-block_type="maker">1.</span>
+            <em>Standardize.</em>
+          </p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-958"><p>
+            620	≤<em>X</em>	&lt;	800
+          </p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-959"><p>
+            <span data-math="math_59"></span>
+          </p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-960"><p>
+            −1.73	≤	<em>Z</em>	&lt;	−0.93
+          </p></div>
+        </li>
+        <li><div data-block_type="BX1-NL-L" id="ips9e-ch01-p-961"><p>
+            <span data-block_type="maker">2.</span>
+            <em>Use the table.</em>
+          </p></div>
+          <div data-block_type="BX1-NL-L" id="ips9e-ch01-p-962"><p>area between −1.73 and −0.93 = (area left of −0.93) − (area left of −1.73)</p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-963"><p>= 0.1762 − 0.0418 = 0.1344</p></div>
+        </li>
+      </ol>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-964"><p>
+        As in <span data-type="link" data-href="example_1_41.html">Example 1.41</span>, about 13% of students would be eligible to receive athletic scholarships and to practice with the team.
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-965"><p>
+      Sometimes we encounter a value of <em>z</em> more extreme than those appearing in <span data-type="link" data-href="table_a.html">Table A</span>. For example, the area to the left of <em>z</em> = −4 is not given in the table. The <em>z</em>-values in <span data-type="link" data-href="table_a.html">Table A</span> leave only area 0.0002 in each tail unaccounted for. For practical purposes, we can act as if there is zero area outside the range of <span data-type="link" data-href="table_a.html">Table A</span>.
+    </p></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch01-box-180"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-180"></h3>
-<div data-block_type="EXR-H" id="ips9e-ch01-p-966"><p>USE YOUR KNOWLEDGE</p></div>
-<div data-type="question" id="ips9e-ch01-ques-97">
+      <div data-block_type="EXR-H" id="ips9e-ch01-p-966"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" id="ips9e-ch01-ques-97">
 <h3>Question
 			    <span data-type="number">1.97 </span><span data-type="title"></span>
 </h3>
-<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch01-p-967"><p><span data-block_type="EXR-QUE-N-ri">1.97</span> <span data-block_type="EXR-QUE-T-ri">Find the proportion.</span> Consider the NAEP scores, which are approximately Normal, <em>N</em>(288, 38). Find the proportion of students who have scores less than 350. Find the proportion of students who have scores greater than or equal to 350. Sketch the relationship between these two calculations using pictures of Normal curves similar to the ones given in <span data-type="link" data-href="example_1_40.html">Example 1.40</span> (page 61).</p></div>
-</div>
-<div data-type="question" id="ips9e-ch01-ques-98">
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch01-p-967"><p>
+          <span data-block_type="EXR-QUE-N-ri">1.97</span> <span data-block_type="EXR-QUE-T-ri">Find the proportion.</span> Consider the NAEP scores, which are approximately Normal, <em>N</em>(288, 38). Find the proportion of students who have scores less than 350. Find the proportion of students who have scores greater than or equal to 350. Sketch the relationship between these two calculations using pictures of Normal curves similar to the ones given in <span data-type="link" data-href="example_1_40.html">Example 1.40</span> (page 61).
+        </p></div>
+      </div>
+      <div data-type="question" id="ips9e-ch01-ques-98">
 <h3>Question
 			    <span data-type="number">1.98 </span><span data-type="title"></span>
 </h3>
-<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch01-p-968"><p><span data-block_type="EXR-QUE-N-ri">1.98</span> <span data-block_type="EXR-QUE-T-ri">Find another proportion.</span> Consider the NAEP scores, which are approximately Normal, <em>N</em>(288, 38). Find the proportion of students who have scores between 300 and 350. Use pictures of Normal curves similar to the ones given in <span data-type="link" data-href="example_1_41.html">Example 1.41</span> (page 62) to illustrate your calculations.</p></div>
-</div>
-</div></div>
-<div data-block_type="level_2_title" id="ips9e-ch01-p-969"><p><span data-block_type="h2">Inverse Normal calculations</span></p></div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-970"><p><span data-type="link" data-href="example_1_40.html">Examples 1.40</span> to <span data-type="link" data-href="example_1_44.html">1.44</span> illustrate the use of Normal distributions to find the proportion of observations in a given event, such as “SAT score between 620 and 800.” We may instead want to find the observed value corresponding to a given proportion.</p></div>
-<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_65"><p>65</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-971"><p>Statistical software will do this directly. Without software, use <span data-type="link" data-href="table_a.html">Table A</span> backward, finding the desired proportion in the body of the table and then reading the corresponding <em>z</em> from the left column and top row.</p></div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-181"><div data-type="box_inner">
+        <div data-block_type="EXR-QUE-NL-last" id="ips9e-ch01-p-968"><p>
+          <span data-block_type="EXR-QUE-N-ri">1.98</span> <span data-block_type="EXR-QUE-T-ri">Find another proportion.</span> Consider the NAEP scores, which are approximately Normal, <em>N</em>(288, 38). Find the proportion of students who have scores between 300 and 350. Use pictures of Normal curves similar to the ones given in <span data-type="link" data-href="example_1_41.html">Example 1.41</span> (page 62) to illustrate your calculations.
+        </p></div>
+      </div>
+    </div></div>
+    <div data-block_type="level_2_title" id="ips9e-ch01-p-969"><p>
+      <span data-block_type="h2">Inverse Normal calculations</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-970"><p>
+      <span data-type="link" data-href="example_1_40.html">Examples 1.40</span> to <span data-type="link" data-href="example_1_44.html">1.44</span> illustrate the use of Normal distributions to find the proportion of observations in a given event, such as “SAT score between 620 and 800.” We may instead want to find the observed value corresponding to a given proportion.
+    </p></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_65"><p>65</p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-971"><p>
+      Statistical software will do this directly. Without software, use <span data-type="link" data-href="table_a.html">Table A</span> backward, finding the desired proportion in the body of the table and then reading the corresponding <em>z</em> from the left column and top row.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-181"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-181"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-972"><p>EXAMPLE 1.45</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-973"><p><span data-block_type="EXP-T-ri">How high for the top 10%?</span> Scores for college-bound students on the SAT Critical Reading test in recent years follow approximately the <em>N</em>(500, 120) distribution.<span data-type="termref" data-term="fn_ch1_fn33"><sup>33</sup></span> How high must a student score to place in the top 10% of all students taking the SAT?</p></div>
-<div data-block_type="EXP-last" id="ips9e-ch01-p-974"><p>Again, the key to the problem is to draw a picture. <span data-type="link" data-href="figure_1_29.html">Figure 1.29</span> shows that we want the score <em>x</em> with an area of 0.10 above it. That’s the same as area below <em>x</em> equal to 0.90.</p></div>
-<div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-29" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_29.jpg" data-figure-id="ips9e-ch01-fig-29" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.29: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.29</span> <span data-block_type="FG-CAP">Locating the point on a Normal curve with area 0.10 to its right, <span data-type="link" data-href="example_1_45.html">Example 1.45</span>.</span></span>
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-972"><p>EXAMPLE 1.45</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-973"><p>
+        <span data-block_type="EXP-T-ri">How high for the top 10%?</span> Scores for college-bound students on the SAT Critical Reading test in recent years follow approximately the <em>N</em>(500, 120) distribution.<span data-type="termref" data-term="fn_ch1_fn33">
+          <sup>33</sup>
+        </span> How high must a student score to place in the top 10% of all students taking the SAT?
+      </p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-974"><p>
+        Again, the key to the problem is to draw a picture. <span data-type="link" data-href="figure_1_29.html">Figure 1.29</span> shows that we want the score <em>x</em> with an area of 0.10 above it. That’s the same as area below <em>x</em> equal to 0.90.
+      </p></div>
+      <div data-type="figure" data-caption-compass="S" data-figure-id="ips9e-ch01-fig-29" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+        
+        <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_29.jpg" data-figure-id="ips9e-ch01-fig-29" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+        <div data-type="figure_text">
+<span data-type="number">Figure 1.29: </span><span data-type="caption">
+          <span data-block_type="FG-N-ri">Figure 1.29</span>
+          <span data-block_type="FG-CAP">
+            Locating the point on a Normal curve with area 0.10 to its right, <span data-type="link" data-href="example_1_45.html">Example 1.45</span>.
+          </span>
+        </span>
 </div>
-</div>
-<div data-block_type="EXP-last" id="ips9e-ch01-p-975"><p>Statistical software has a function that will give you the <em>x</em> for any cumulative proportion you specify. The function often has a name such as “inverse cumulative probability.” Plug in mean 500, standard deviation 120, and cumulative proportion 0.9. The software tells you that <em>x</em> = 653.786. We see that a student must score at least 654 to place in the highest 10%.</p></div>
-<div data-block_type="EXP-last" id="ips9e-ch01-p-976"><p>Without software, first find the standard score <em>z</em> with cumulative proportion 0.9, then “unstandardize” to find <em>x</em>. Here is the two-step process:</p></div>
-<ol data-block_type="numbered" id="ips9e-ch01-list-72">
-<li><div data-block_type="BX1-NLF" id="ips9e-ch01-p-977"><p><span data-block_type="maker">1.</span> <em>Use the table.</em> Look in the body of <span data-type="link" data-href="table_a.html">Table A</span> for the entry closest to 0.9. It is 0.8997. This is the entry corresponding to <em>z</em> = 1.28. So <em>z</em> = 1.28 is the standardized value with area 0.9 to its left.</p></div></li>
-<li><div data-block_type="BX1-NL-L" id="ips9e-ch01-p-978"><p><span data-block_type="maker">2.</span> <em>Unstandardize</em> to transform the solution from <em>z</em> back to the original <em>x</em> scale. We know that the standardized value of the unknown <em>x</em> is <em>z</em> = 1.28. So <em>x</em> itself satisfies</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-979"><p><span data-math="math_60"></span></p></div>
-<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_66"><p>66</p></div>
-<div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-980"><p>Solving this equation for <em>x</em> gives</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-981"><p><em>x</em> = 500 + (1.28)(120) = 653.6</p></div>
-<div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-982"><p>This equation should make sense: it finds the <em>x</em> that lies 1.28 standard deviations above the mean on this particular Normal curve. That is the “unstandardized” meaning of <em>z</em> = 1.28. The general rule for unstandardizing a <em>z</em>-score is</p></div>
-<div data-block_type="EXP-EQ" id="ips9e-ch01-p-983"><p><em>x</em> = <em>μ</em> + <em>z</em><em>σ</em></p></div>
-</li>
-</ol>
-</div></div>
-<div data-type="box" data-block_type="EXR" id="ips9e-ch01-box-182"><div data-type="box_inner">
+      </div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-975"><p>
+        Statistical software has a function that will give you the <em>x</em> for any cumulative proportion you specify. The function often has a name such as “inverse cumulative probability.” Plug in mean 500, standard deviation 120, and cumulative proportion 0.9. The software tells you that <em>x</em> = 653.786. We see that a student must score at least 654 to place in the highest 10%.
+      </p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-976"><p>
+        Without software, first find the standard score <em>z</em> with cumulative proportion 0.9, then “unstandardize” to find <em>x</em>. Here is the two-step process:
+      </p></div>
+      <ol data-block_type="numbered" id="ips9e-ch01-list-72">
+        <li><div data-block_type="BX1-NLF" id="ips9e-ch01-p-977"><p>
+            <span data-block_type="maker">1.</span> <em>Use the table.</em> Look in the body of <span data-type="link" data-href="table_a.html">Table A</span> for the entry closest to 0.9. It is 0.8997. This is the entry corresponding to <em>z</em> = 1.28. So <em>z</em> = 1.28 is the standardized value with area 0.9 to its left.
+          </p></div>
+        </li>
+        <li><div data-block_type="BX1-NL-L" id="ips9e-ch01-p-978"><p>
+            <span data-block_type="maker">2.</span> <em>Unstandardize</em> to transform the solution from <em>z</em> back to the original <em>x</em> scale. We know that the standardized value of the unknown <em>x</em> is <em>z</em> = 1.28. So <em>x</em> itself satisfies
+          </p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-979"><p>
+            <span data-math="math_60"></span>
+          </p></div>
+          <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_66"><p>66</p></div>
+          <div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-980"><p>
+            Solving this equation for <em>x</em> gives
+          </p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-981"><p>
+            <em>x</em> = 500 + (1.28)(120) = 653.6
+          </p></div>
+          <div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-982"><p>
+            This equation should make sense: it finds the <em>x</em> that lies 1.28 standard deviations above the mean on this particular Normal curve. That is the “unstandardized” meaning of <em>z</em> = 1.28. The general rule for unstandardizing a <em>z</em>-score is
+          </p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-983"><p>
+            <em>x</em> = <em>μ</em> + <em>z</em><em>σ</em>
+          </p></div>
+        </li>
+      </ol>
+    </div></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch01-box-182"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-182"></h3>
-<div data-block_type="EXR-H" id="ips9e-ch01-p-984"><p>USE YOUR KNOWLEDGE</p></div>
-<div data-type="question" id="ips9e-ch01-ques-99">
+      <div data-block_type="EXR-H" id="ips9e-ch01-p-984"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" id="ips9e-ch01-ques-99">
 <h3>Question
 			    <span data-type="number">1.99 </span><span data-type="title"></span>
 </h3>
-<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch01-p-985"><p><span data-block_type="EXR-QUE-N-ri">1.99</span> <span data-block_type="EXR-QUE-T-ri">What score is needed to be in the top 20%?</span> Consider the NAEP scores, which are approximately Normal, <em>N</em>(288, 38). How high a score is needed to be in the top 20% of students who take this exam?</p></div>
-</div>
-<div data-type="question" id="ips9e-ch01-ques-100">
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch01-p-985"><p>
+          <span data-block_type="EXR-QUE-N-ri">1.99</span> <span data-block_type="EXR-QUE-T-ri">What score is needed to be in the top 20%?</span> Consider the NAEP scores, which are approximately Normal, <em>N</em>(288, 38). How high a score is needed to be in the top 20% of students who take this exam?
+        </p></div>
+      </div>
+      <div data-type="question" id="ips9e-ch01-ques-100">
 <h3>Question
 			    <span data-type="number">1.100 </span><span data-type="title"></span>
 </h3>
-<div data-block_type="exr-que-nl-last" id="ips9e-ch01-p-986"><p><span data-block_type="EXR-QUE-N-ri">1.100</span> <span data-block_type="EXR-QUE-T-ri">Find the score that 75% of students will exceed.</span> Consider the NAEP scores, which are approximately Normal, <em>N</em>(288, 38). Seventy-five percent of the students will score above <em>x</em> on this exam. Find <em>x</em>.</p></div>
-</div>
-</div></div>
-<div data-block_type="level_2_title" id="ips9e-ch01-p-987"><p><span data-block_type="h2">Normal quantile plots</span></p></div>
-<div data-block_type="TXT-ni" id="ips9e-ch01-p-988"><p>The Normal distributions provide good descriptions of some distributions of real data, such as the Iowa Test vocabulary scores. The distributions of some other common variables are usually skewed and therefore distinctly non-Normal. Examples include economic variables such as personal income and gross sales of business firms, the survival times of cancer patients after treatment, and the service lifetime of mechanical or electronic components. While experience can suggest whether or not a Normal distribution is plausible in a particular case, it is risky to assume that a distribution is Normal without actually inspecting the data.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-989"><p>A histogram or stemplot can reveal distinctly non-Normal features of a distribution, such as outliers, pronounced skewness, or gaps and clusters. If the stemplot or histogram appears roughly symmetric and unimodal, however, we need a more sensitive way to judge the adequacy of a Normal model. The most useful tool for assessing Normality is another graph, the <span data-type="termref" data-term="Normal quantile plot"><strong>Normal quantile plot</strong></span><span data-block_type="MN-GL-term">Normal quantile plot</span>.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-990"><p>Here is the basic idea of a Normal quantile plot. The graphs produced by software use more sophisticated versions of this idea. It is not practical to make Normal quantile plots by hand.</p></div>
-<ol data-block_type="numbered" id="ips9e-ch01-list-73">
-<li><div data-block_type="NL-first" id="ips9e-ch01-p-991"><p><span data-block_type="maker">1.</span> Arrange the observed data values from smallest to largest. Record what percentile of the data each value occupies. For example, the smallest observation in a set of 20 is at the 5% point, the second smallest is at the 10% point, and so on.</p></div></li>
-<li><div data-block_type="NL-mid" id="ips9e-ch01-p-992"><p><span data-block_type="maker">2.</span> Do Normal distribution calculations to find the values of <em>z</em> corresponding to these same percentiles. For example, <em>z</em> = −1.645 is the 5% point of the standard Normal distribution, and <em>z</em> = −1.282 is the 10% point. We call these values of <em>Z</em> <span data-type="termref" data-term="Normal scores"><strong>Normal scores</strong></span><span data-block_type="MN-GL-term">Normal scores</span>.</p></div>
-<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_67"><p>67</p></div>
-</li>
-<li><div data-block_type="NL-last" id="ips9e-ch01-p-993"><p><span data-block_type="maker">3.</span> Plot each data point <em>x</em> against the corresponding Normal score. If the data distribution is close to any Normal distribution, the plotted points will lie close to a straight line.</p></div></li>
-</ol>
-<div data-block_type="TXT" id="ips9e-ch01-p-994"><p>Any Normal distribution produces a straight line on the plot because standardizing turns any Normal distribution into a standard Normal distribution. Standardizing is a linear transformation that can change the slope and intercept of the line in our plot but cannot turn a line into a curved pattern.</p></div>
-<div data-type="box" data-block_type="BX1" id="ips9e-ch01-box-183"><div data-type="box_inner">
+        <div data-block_type="exr-que-nl-last" id="ips9e-ch01-p-986"><p>
+          <span data-block_type="EXR-QUE-N-ri">1.100</span> <span data-block_type="EXR-QUE-T-ri">Find the score that 75% of students will exceed.</span> Consider the NAEP scores, which are approximately Normal, <em>N</em>(288, 38). Seventy-five percent of the students will score above <em>x</em> on this exam. Find <em>x</em>.
+        </p></div>
+      </div>
+    </div></div>
+    <div data-block_type="level_2_title" id="ips9e-ch01-p-987"><p>
+      <span data-block_type="h2">Normal quantile plots</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch01-p-988"><p>The Normal distributions provide good descriptions of some distributions of real data, such as the Iowa Test vocabulary scores. The distributions of some other common variables are usually skewed and therefore distinctly non-Normal. Examples include economic variables such as personal income and gross sales of business firms, the survival times of cancer patients after treatment, and the service lifetime of mechanical or electronic components. While experience can suggest whether or not a Normal distribution is plausible in a particular case, it is risky to assume that a distribution is Normal without actually inspecting the data.</p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-989"><p>
+      A histogram or stemplot can reveal distinctly non-Normal features of a distribution, such as outliers, pronounced skewness, or gaps and clusters. If the stemplot or histogram appears roughly symmetric and unimodal, however, we need a more sensitive way to judge the adequacy of a Normal model. The most useful tool for assessing Normality is another graph, the <span data-type="termref" data-term="Normal quantile plot">
+        <strong>Normal quantile plot</strong>
+      </span><span data-block_type="MN-GL-term">Normal quantile plot</span>.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-990"><p>Here is the basic idea of a Normal quantile plot. The graphs produced by software use more sophisticated versions of this idea. It is not practical to make Normal quantile plots by hand.</p></div>
+    <ol data-block_type="numbered" id="ips9e-ch01-list-73">
+      <li><div data-block_type="NL-first" id="ips9e-ch01-p-991"><p>
+          <span data-block_type="maker">1.</span> Arrange the observed data values from smallest to largest. Record what percentile of the data each value occupies. For example, the smallest observation in a set of 20 is at the 5% point, the second smallest is at the 10% point, and so on.
+        </p></div>
+      </li>
+      <li><div data-block_type="NL-mid" id="ips9e-ch01-p-992"><p>
+          <span data-block_type="maker">2.</span> Do Normal distribution calculations to find the values of <em>z</em> corresponding to these same percentiles. For example, <em>z</em> = −1.645 is the 5% point of the standard Normal distribution, and <em>z</em> = −1.282 is the 10% point. We call these values of <em>Z</em> <span data-type="termref" data-term="Normal scores">
+            <strong>Normal scores</strong>
+          </span><span data-block_type="MN-GL-term">Normal scores</span>.
+        </p></div>
+        <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_67"><p>67</p></div>
+      </li>
+      <li><div data-block_type="NL-last" id="ips9e-ch01-p-993"><p>
+          <span data-block_type="maker">3.</span> Plot each data point <em>x</em> against the corresponding Normal score. If the data distribution is close to any Normal distribution, the plotted points will lie close to a straight line.
+        </p></div>
+      </li>
+    </ol>
+    <div data-block_type="TXT" id="ips9e-ch01-p-994"><p>Any Normal distribution produces a straight line on the plot because standardizing turns any Normal distribution into a standard Normal distribution. Standardizing is a linear transformation that can change the slope and intercept of the line in our plot but cannot turn a line into a curved pattern.</p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch01-box-183"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-183"></h3>
-<div data-block_type="BX1-T" id="ips9e-ch01-p-995"><p>USE OF NORMAL QUANTILE PLOTS</p></div>
-<div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-996"><p>If the points on a <strong>Normal quantile plot</strong> lie close to a straight line, the plot indicates that the data are Normal. Systematic deviations from a straight line indicate a non-Normal distribution. Outliers appear as points that are far away from the overall pattern of the plot. An optional line can be drawn on the plot that corresponds to the Normal distribution with mean equal to the mean of the data and standard deviation equal to the standard deviation of the data.</p></div>
-</div></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-997"><p><span data-type="link" data-href="figure_1_30.html">Figures 1.30</span> and <span data-type="link" data-href="figure_1_31.html">1.31</span> are Normal quantile plots for data we have met earlier. The data <em>x</em> are plotted vertically against the corresponding standard Normal <em>z</em>-score plotted horizontally. The <em>z</em>-score scale generally extends from −3 to 3 because almost all of a standard Normal curve lies between these values. These figures show how Normal quantile plots behave.</p></div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-184"><div data-type="box_inner">
+      <div data-block_type="BX1-T" id="ips9e-ch01-p-995"><p>USE OF NORMAL QUANTILE PLOTS</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch01-p-996"><p>
+        If the points on a <strong>Normal quantile plot</strong> lie close to a straight line, the plot indicates that the data are Normal. Systematic deviations from a straight line indicate a non-Normal distribution. Outliers appear as points that are far away from the overall pattern of the plot. An optional line can be drawn on the plot that corresponds to the Normal distribution with mean equal to the mean of the data and standard deviation equal to the standard deviation of the data.
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-997"><p>
+      <span data-type="link" data-href="figure_1_30.html">Figures 1.30</span> and <span data-type="link" data-href="figure_1_31.html">1.31</span> are Normal quantile plots for data we have met earlier. The data <em>x</em> are plotted vertically against the corresponding standard Normal <em>z</em>-score plotted horizontally. The <em>z</em>-score scale generally extends from −3 to 3 because almost all of a standard Normal curve lies between these values. These figures show how Normal quantile plots behave.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-184"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-184"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-998"><p>EXAMPLE 1.46</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-999"><p><span data-block_type="EXP-T-ri">IQ scores are approximately Normal.</span> <span data-type="link" data-href="figure_1_30.html">Figure 1.30</span> is a Normal quantile plot of the 60 fifth-grade IQ scores from <span data-type="link" data-href="table_1_1.html">Table 1.1</span> (page 14). The points lie very close to the straight line drawn on the plot. We conclude that the distribution of IQ data is approximately Normal.</p></div>
-<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch01-box-185"><div data-type="box_inner">
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-998"><p>EXAMPLE 1.46</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-999"><p>
+        <span data-block_type="EXP-T-ri">IQ scores are approximately Normal.</span> <span data-type="link" data-href="figure_1_30.html">Figure 1.30</span> is a Normal quantile plot of the 60 fifth-grade IQ scores from <span data-type="link" data-href="table_1_1.html">Table 1.1</span> (page 14). The points lie very close to the straight line drawn on the plot. We conclude that the distribution of IQ data is approximately Normal.
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch01-box-185"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-185"></h3>
-<div data-url="asset/datasets/Data_Icon.jpg" data-file="IQ" data-block_type="rl_dataset" id="ips9e-ch01-p-1000"><p><span>IQ</span></p></div>
-<div data-dataset="" data-block_type="rl_crunchit" id="idp14055440"><p></p></div>
-</div></div>
-</div></div>
-<div data-type="figure" data-caption-compass="NW" data-figure-id="ips9e-ch01-fig-30" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_30.jpg" data-figure-id="ips9e-ch01-fig-30" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.30: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.30</span> <span data-block_type="FG-CAP">Normal quantile plot of IQ scores, <span data-type="link" data-href="example_1_46.html">Example 1.46</span>. This distribution is approximately Normal.</span></span>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="IQ" data-block_type="rl_dataset" id="ips9e-ch01-p-1000"><p>
+          <span>IQ</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp4934112"><p></p></div>
+      </div></div>
+    </div></div>
+    <div data-type="figure" data-caption-compass="NW" data-figure-id="ips9e-ch01-fig-30" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_30.jpg" data-figure-id="ips9e-ch01-fig-30" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 1.30: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 1.30</span>
+        <span data-block_type="FG-CAP">
+          Normal quantile plot of IQ scores, <span data-type="link" data-href="example_1_46.html">Example 1.46</span>. This distribution is approximately Normal.
+        </span>
+      </span>
 </div>
-</div>
-<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_68"><p>68</p></div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-186"><div data-type="box_inner">
+    </div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_68"><p>68</p></div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-186"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-186"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-1001"><p>EXAMPLE 1.47</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-1002"><p><span data-block_type="EXP-T-ri">Times to start a business are skewed.</span> <span data-type="link" data-href="figure_1_31.html">Figure 1.31</span> is a Normal quantile plot of the data on times to start a business from <span data-type="link" data-href="example_1_23.html">Example 1.23</span>. We have excluded Suriname, the outlier that you examined in <span data-type="link" data-href="exercise_1_43.html">Exercise 1.43</span> (page 29). The line drawn on the plot shows clearly that the plot of the data is curved. We conclude that these data are not Normally distributed. The shape of the curve is what we typically see with a distribution that is strongly skewed to the right.</p></div>
-<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch01-box-187"><div data-type="box_inner">
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-1001"><p>EXAMPLE 1.47</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-1002"><p>
+        <span data-block_type="EXP-T-ri">Times to start a business are skewed.</span> <span data-type="link" data-href="figure_1_31.html">Figure 1.31</span> is a Normal quantile plot of the data on times to start a business from <span data-type="link" data-href="example_1_23.html">Example 1.23</span>. We have excluded Suriname, the outlier that you examined in <span data-type="link" data-href="exercise_1_43.html">Exercise 1.43</span> (page 29). The line drawn on the plot shows clearly that the plot of the data is curved. We conclude that these data are not Normally distributed. The shape of the curve is what we typically see with a distribution that is strongly skewed to the right.
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch01-box-187"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-187"></h3>
-<div data-url="asset/datasets/Data_Icon.jpg" data-file="TIME" data-block_type="rl_dataset" id="ips9e-ch01-p-1003"><p><span>TIME</span></p></div>
-<div data-dataset="" data-block_type="rl_crunchit" id="idp14072640"><p></p></div>
-</div></div>
-</div></div>
-<div data-type="figure" data-caption-compass="SW" data-figure-id="ips9e-ch01-fig-31" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_31.jpg" data-figure-id="ips9e-ch01-fig-31" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.31: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.31</span> <span data-block_type="FG-CAP">Normal quantile plot of 188 times to start a business, with the outlier, Suriname, excluded, <span data-type="link" data-href="example_1_47.html">Example 1.47</span>. This distribution is highly skewed.</span></span>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="TIME" data-block_type="rl_dataset" id="ips9e-ch01-p-1003"><p>
+          <span>TIME</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp4952368"><p></p></div>
+      </div></div>
+    </div></div>
+    <div data-type="figure" data-caption-compass="SW" data-figure-id="ips9e-ch01-fig-31" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_31.jpg" data-figure-id="ips9e-ch01-fig-31" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 1.31: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 1.31</span>
+        <span data-block_type="FG-CAP">
+          Normal quantile plot of 188 times to start a business, with the outlier, Suriname, excluded, <span data-type="link" data-href="example_1_47.html">Example 1.47</span>. This distribution is highly skewed.
+        </span>
+      </span>
 </div>
-</div>
-<div data-block_type="TXT" id="ips9e-ch01-p-1004"><p>Real data often show some departure from the theoretical Normal model. <em>When you examine a Normal quantile plot, look for shapes that show clear departures from Normality. Don’t overreact to minor wiggles in the plot.</em> When we discuss statistical methods that are based on the Normal model, we are interested in whether or not the data are sufficiently Normal for these procedures to work properly. We are not concerned about minor deviations from Normality. Many common methods work well as long as the data are approximately Normal and outliers are not present.</p></div>
-<div data-block_type="Caution icon" id="ips9e-ch01-p-1005"><p><img id="" src="images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
-<div data-type="box" data-block_type="BX2" id="ips9e-ch01-box-188"><div data-type="box_inner">
+    </div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-1004"><p>
+      Real data often show some departure from the theoretical Normal model. <em>When you examine a Normal quantile plot, look for shapes that show clear departures from Normality. Don’t overreact to minor wiggles in the plot.</em> When we discuss statistical methods that are based on the Normal model, we are interested in whether or not the data are sufficiently Normal for these procedures to work properly. We are not concerned about minor deviations from Normality. Many common methods work well as long as the data are approximately Normal and outliers are not present.
+    </p></div>
+    <div data-block_type="Caution icon" id="ips9e-ch01-p-1005"><p>
+      <img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+    </p></div>
+    <div data-type="box" data-block_type="BX2" id="ips9e-ch01-box-188"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-188"></h3>
-<div data-block_type="BX2-T" id="ips9e-ch01-p-1006"><p>BEYOND THE BASICS</p></div>
-<div data-block_type="BX2-H" id="ips9e-ch01-p-1007"><p>Density Estimation</p></div>
-<div data-block_type="BX2-TXT-ni" id="ips9e-ch01-p-1008"><p>A density curve gives a compact summary of the overall shape of a distribution. Many distributions do not have the Normal shape. There are other families of density curves that are used as mathematical models for various distribution shapes. Modern software offers more flexible options. A <span data-type="termref" data-term="density estimator"><strong>density estimator</strong></span><span data-block_type="MN-GL-term">density estimator</span> does not start with any specific shape, such as the Normal shape. It looks at the data and draws a density curve that describes the overall shape of the data. Density estimators join stemplots and histograms as useful graphical tools for exploratory data analysis.</p></div>
-<div data-block_type="BX2-TXT-ni" id="ips9e-ch01-p-1009"><p>Density estimates can capture other unusual features of a distribution. Here is an example.</p></div>
-</div></div>
-<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_69"><p>69</p></div>
-<div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-189"><div data-type="box_inner">
+      <div data-block_type="BX2-T" id="ips9e-ch01-p-1006"><p>BEYOND THE BASICS</p></div>
+      <div data-block_type="BX2-H" id="ips9e-ch01-p-1007"><p>Density Estimation</p></div>
+      <div data-block_type="BX2-TXT-ni" id="ips9e-ch01-p-1008"><p>
+        A density curve gives a compact summary of the overall shape of a distribution. Many distributions do not have the Normal shape. There are other families of density curves that are used as mathematical models for various distribution shapes. Modern software offers more flexible options. A <span data-type="termref" data-term="density estimator">
+          <strong>density estimator</strong>
+        </span><span data-block_type="MN-GL-term">density estimator</span> does not start with any specific shape, such as the Normal shape. It looks at the data and draws a density curve that describes the overall shape of the data. Density estimators join stemplots and histograms as useful graphical tools for exploratory data analysis.
+      </p></div>
+      <div data-block_type="BX2-TXT-ni" id="ips9e-ch01-p-1009"><p>Density estimates can capture other unusual features of a distribution. Here is an example.</p></div>
+    </div></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_69"><p>69</p></div>
+    <div data-type="box" data-block_type="EXP" id="ips9e-ch01-box-189"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-189"></h3>
-<div data-block_type="EXP-N" id="ips9e-ch01-p-1010"><p>EXAMPLE 1.48</p></div>
-<div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-1011"><p><span data-block_type="EXP-T-ri">StubHub!</span> StubHub! is a website where fans can buy and sell tickets to sporting events. Ticket holders wanting to sell their tickets provide the location of their seats and the selling price. People wanting to buy tickets can choose from among the tickets offered for a given event.<span data-type="termref" data-term="fn_ch1_fn34"><sup>34</sup></span></p></div>
-<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch01-box-190"><div data-type="box_inner">
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-1010"><p>EXAMPLE 1.48</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-1011"><p>
+        <span data-block_type="EXP-T-ri">StubHub!</span> StubHub! is a website where fans can buy and sell tickets to sporting events. Ticket holders wanting to sell their tickets provide the location of their seats and the selling price. People wanting to buy tickets can choose from among the tickets offered for a given event.<span data-type="termref" data-term="fn_ch1_fn34">
+          <sup>34</sup>
+        </span>
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch01-box-190"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-190"></h3>
-<div data-url="asset/datasets/Data_Icon.jpg" data-file="STUBHUB" data-block_type="rl_dataset" id="ips9e-ch01-p-1012"><p><span>STUBHUB</span></p></div>
-<div data-dataset="" data-block_type="rl_crunchit" id="idp14099088"><p></p></div>
-</div></div>
-<div data-block_type="EXP-last" id="ips9e-ch01-p-1013"><p>Tickets for the 2015 NCAA women’s basketball tournament were available from StubHub! in a package deal that included the semifinal games and the championship game. On June 28, 2014, StubHub! listed 518 tickets for sale. A histogram of the distribution of ticket prices with a density estimate is given in <span data-type="link" data-href="figure_1_32.html">Figure 1.32</span>. The distribution has three peaks: one around $700, another around $2800, and the third around $4650. This is the identifying characteristic of a trimodal distribution. There appears to be three types of tickets. How would you name the three types?</p></div>
-</div></div>
-<div data-type="figure" data-caption-compass="SW" data-figure-id="ips9e-ch01-fig-32" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
-
-<img id="" src="images/17MOOREIPS-MSE_9e_fig_01_32.jpg" data-figure-id="ips9e-ch01-fig-32" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-<div data-type="figure_text">
-<span data-type="number">Figure 1.32: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 1.32</span> <span data-block_type="FG-CAP">Histogram of StubHub! price per seat for tickets to the 2015 NCAA Women’s Semifinal and Championship games, with a density estimate, <span data-type="link" data-href="example_1_48.html">Example 1.48</span>.</span></span>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="STUBHUB" data-block_type="rl_dataset" id="ips9e-ch01-p-1012"><p>
+          <span>STUBHUB</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp4980768"><p></p></div>
+      </div></div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-1013"><p>
+        Tickets for the 2015 NCAA women’s basketball tournament were available from StubHub! in a package deal that included the semifinal games and the championship game. On June 28, 2014, StubHub! listed 518 tickets for sale. A histogram of the distribution of ticket prices with a density estimate is given in <span data-type="link" data-href="figure_1_32.html">Figure 1.32</span>. The distribution has three peaks: one around $700, another around $2800, and the third around $4650. This is the identifying characteristic of a trimodal distribution. There appears to be three types of tickets. How would you name the three types?
+      </p></div>
+    </div></div>
+    <div data-type="figure" data-caption-compass="SW" data-figure-id="ips9e-ch01-fig-32" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_32.jpg" data-figure-id="ips9e-ch01-fig-32" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 1.32: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 1.32</span>
+        <span data-block_type="FG-CAP">
+          Histogram of StubHub! price per seat for tickets to the 2015 NCAA Women’s Semifinal and Championship games, with a density estimate, <span data-type="link" data-href="example_1_48.html">Example 1.48</span>.
+        </span>
+      </span>
 </div>
-</div>
-<div data-block_type="TXT" id="ips9e-ch01-p-1014"><p>Many distributions that we have met have a single peak, or mode. The distribution described in <span data-type="link" data-href="example_1_48.html">Example 1.48</span> has three modes and is called a <span data-type="termref" data-term="trimodal distribution"><strong>trimodal distribution</strong></span><span data-block_type="MN-GL-term">trimodal distribution</span>. A distribution that has two modes is called a <span data-type="termref" data-term="bimodal distribution"><strong>bimodal distribution</strong></span><span data-block_type="MN-GL-term">bimodal distribution</span>.</p></div>
-<div data-block_type="TXT" id="ips9e-ch01-p-1015"><p>The previous example reminds of a continuing theme for data analysis. We looked at a histogram and a density estimate and saw something interesting. This led us to speculation. Additional data on the type and location of the seats may explain more about the prices than we see in <span data-type="link" data-href="figure_1_32.html">Figure 1.32</span>.</p></div>
-</div>
+    </div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-1014"><p>
+      Many distributions that we have met have a single peak, or mode. The distribution described in <span data-type="link" data-href="example_1_48.html">Example 1.48</span> has three modes and is called a <span data-type="termref" data-term="trimodal distribution">
+        <strong>trimodal distribution</strong>
+      </span><span data-block_type="MN-GL-term">trimodal distribution</span>. A distribution that has two modes is called a <span data-type="termref" data-term="bimodal distribution">
+        <strong>bimodal distribution</strong>
+      </span><span data-block_type="MN-GL-term">bimodal distribution</span>.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch01-p-1015"><p>
+      The previous example reminds of a continuing theme for data analysis. We looked at a histogram and a density estimate and saw something interesting. This led us to speculation. Additional data on the type and location of the seats may explain more about the prices than we see in <span data-type="link" data-href="figure_1_32.html">Figure 1.32</span>.
+    </p></div>
+  </div>
 <!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
 <br class="clear" />
 <!-- end of material in original view -->

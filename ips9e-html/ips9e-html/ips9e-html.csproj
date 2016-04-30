@@ -66,9 +66,30 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ebook\asset\global_images\BPScaution-icon.jpg" />
+    <Content Include="ebook\asset\global_images\chapter_vertical.jpg" />
+    <Content Include="ebook\asset\global_images\chap_title_underbars.jpg" />
+    <Content Include="ebook\css\ips9e.css">
+      <DependentUpon>ips9e.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\ips9e.less" />
+    <Content Include="ebook\css\ips9e.min.css">
+      <DependentUpon>ips9e.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\ips9e_ch1.css">
+      <DependentUpon>ips9e_ch1.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\ips9e_ch1.less" />
+    <Content Include="ebook\css\ips9e_ch1.min.css">
+      <DependentUpon>ips9e_ch1.css</DependentUpon>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="docs\01_MooreIPS9e_13387_Ch01_01-78_2nd_Pass.pdf" />
     <Content Include="docs\02_MooreIPS9e_13387_Ch02_79-162_2nd_Pass.pdf" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -223,7 +244,6 @@
     <Content Include="ebook\css\images\ui-icons_222222_256x240.png" />
     <Content Include="ebook\css\images\ui-icons_cccccc_256x240.png" />
     <Content Include="ebook\css\images\ui-icons_ffffff_256x240.png" />
-    <Content Include="ebook\css\ips9e.css" />
     <Content Include="ebook\css\jquery-ui-custom.css" />
     <Content Include="ebook\css\manuscript.css" />
     <Content Include="ebook\ips9e.xml" />
@@ -254,7 +274,9 @@
     <Content Include="ebook\js\swfobject.js" />
     <Content Include="ebook\js\utilities.js" />
     <Content Include="Web.config" />
-    <Content Include="xml\ips9e-ch01.xml" />
+    <Content Include="xml\ips9e-ch01.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="xml\ips9e-ch02.xml" />
     <Content Include="xml\ips9e-ch03.xml" />
     <Content Include="xml\math\ips9e-ch01.xml_no_math.xml" />

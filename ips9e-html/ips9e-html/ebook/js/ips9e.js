@@ -21,7 +21,7 @@ var Player_subtype = Player_manuscript_type.extend({
     //cfg_LH_ebookTargetDefault: "_pop",
     //cfg_LH_imageTargetDefault: "_blank",
 
-    //cfg_LH_useOpenContent: "on",
+    cfg_LH_useOpenContent: "on",
     //cfg_LH_useLinksFile: "on",
     
     //cfg_Glossary_hoverTerms: "on",
@@ -60,7 +60,7 @@ var Player_subtype = Player_manuscript_type.extend({
     initialize2: function() {
 	
 	// Do not delete this
-        this._super();
+    this._super();
 
 	// You will most likely not want to delete this
 	var link_handler = new LinkHandler();
@@ -70,27 +70,28 @@ var Player_subtype = Player_manuscript_type.extend({
 
 
 
-// numbered figures displaying on main page
-	// figures aligned left need flagged as such (use a non digfir flag)
-	$('[data-block_type="h1"] [data-caption-compass][data-layout-align="left"]').each(function() {
+    // all figures displaying on main page
+    // figures aligned left need flagged as such (use a non digfir flag)
+    // Why not just say "left"? Why not just take all values for align?
+	$('[data-type="figure"][data-layout-align="left"]').each(function() {
 		var left = $(this);
     		left.attr({align : left.attr('data-layout-align')});
 	});
 	// get rid of digfir styling
-	$('[data-block_type="h1"] [data-caption-compass]').removeAttr( "data-layout-align" );
-	$('[data-block_type="h1"] [data-caption-compass]').removeAttr( "data-layout-width" );
-	$('[data-block_type="h1"] [data-caption-compass]').removeAttr( "style" );
-	$('[data-block_type="h1"] [data-caption-compass]').removeAttr( "data-type" );
-	$('[data-block_type="h1"] [data-caption-compass] > img').removeAttr( "data-layout-width" );		
+	$('[data-type="figure"]').removeAttr("data-layout-align");
+	$('[data-type="figure"]').removeAttr("data-layout-width");
+	$('[data-type="figure"]').removeAttr("style");
+	// $('[data-block_type="h1"] [data-caption-compass]').removeAttr( "data-type" );
+	$('[data-type="figure"] > img').removeAttr("data-layout-width");
 
 	//now change the size of the image by a percentage
-	$('[data-block_type="h1"] [data-caption-compass]').each(function() {
-		var scale = .20;
-		image = $(this).find('img') //update... this will find caption images too. 
-		var h = image.height() * scale;
-		var w = image.width() * scale;
-		image.css({ height: h, width: w });
-	});
+	//$('[data-block_type="h1"] [data-caption-compass]').each(function() {
+	//	var scale = .20;
+	//	image = $(this).find('img') //update... this will find caption images too. 
+	//	var h = image.height() * scale;
+	//	var w = image.width() * scale;
+	//	image.css({ height: h, width: w });
+	//});
 
 	//if image needs caption "West" (to the left of table) flip caption and image so that caption comes first
 	//and place extra div around img
@@ -101,16 +102,13 @@ var Player_subtype = Player_manuscript_type.extend({
 	});
 	$('[data-block_type="h1"] [data-caption-compass*="W"] > img').wrap("<div class='compassImg'></div>");
 
-
-
-
         
-// common code for all popup requests - size/position of popup
-        var pop_content = function(url, w, h) {
-            var path = window.location.pathname;
-	        var newWin = window.open(url,'_blank','width='+w+',height='+h+',menubar=0,location=0,scrollbars=yes','');
-	        newWin.moveTo(150, 150);
-        };
+    // common code for all popup requests - size/position of popup
+    var pop_content = function(url, w, h) {
+        var path = window.location.pathname;
+	    var newWin = window.open(url,'_blank','width='+w+',height='+h+',menubar=0,location=0,scrollbars=yes','');
+	    newWin.moveTo(150, 150);
+    };
 
 
 //EXAMPLE LINKS
