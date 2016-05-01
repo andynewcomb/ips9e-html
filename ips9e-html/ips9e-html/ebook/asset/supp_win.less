@@ -1,0 +1,106 @@
+﻿/* supplemental window styles */
+[data-block_type="page_start"] {
+    display: none;
+}
+// suppress "Question" in questions no longer in BX2 boxes
+[data-type="question"] {
+    margin-top: 2em;
+    h3 {
+        display: none;
+    }
+    img[src*="global_images"] {
+        float: left;
+        margin-right: 10px;
+        width: 73px;
+    }
+}
+// destyle examples
+[data-block_type="EXP"] {
+    [data-block_type="EXP-T"] p {
+	    &:hover {
+		    cursor: auto;
+		    text-decoration: none;
+	    }
+    }
+}
+// destyle questions
+[data-block_type="BX2-QUE-N-ri"] {
+	&:hover {
+		    cursor: auto;
+		    text-decoration: none;
+	}
+}
+
+// destyle tables
+[data-type="section"][data-block_type="EXP"] {
+    margin-left: 2em !important;
+    background-image: none;
+    [data-type="table"][data-block_type="TABLE"] {
+        margin: 2em auto;
+        width: 100%;
+        table {
+            width: 100% !important;
+        }
+    }
+}
+
+// check the basics
+div[data-type="section"][data-block_type="CR-X-H"] {
+    [data-type="question"] {
+        [data-block_type="CR-X-NL-N-ri"] {
+	        &:hover {
+		            cursor: auto;
+		            text-decoration: none;
+	        }
+        }
+    }
+}
+// exercises section
+div[data-type="section"][data-block_type="CR-X-H-v1"] {
+    [data-type="question"] {
+        [data-block_type="CR-X-NL-N-ri"] {
+	        &:hover {
+		            cursor: auto;
+		            text-decoration: none;
+	        }
+        }
+    }
+}
+// make sure margins are normalized for supplemental windows
+[data-type="section"] {
+    margin: 0 !important;
+}
+
+// for all figures
+[data-type="section"] > [data-type="figure"] {
+    float: none !important;
+    margin: 2em auto !important;
+    width: 600px !important;
+    img {
+        //max-width: initial;
+        cursor: auto !important;
+    }
+}
+
+/* destyle numbered figure title numbers */
+// need to do ONLY if in figure popup (e.g. not example popup)
+div[data-type="section"] > [data-block_type="FIGURE"] {
+    float: none;
+    margin: 30px auto !important;
+    img {
+        cursor: auto !important;
+    }
+    [data-type="figure_text"] {
+        margin-bottom: 1em;
+        width: 100%;
+        [data-type="caption"] [data-block_type="FG-N-ri"]{
+            font-weight: bold;
+            cursor: auto;
+            // needs enhancing when PDFs available
+        }
+    }
+}
+/* turn off asset credits */
+[data-type="asset_source"] {
+    display: none;
+}

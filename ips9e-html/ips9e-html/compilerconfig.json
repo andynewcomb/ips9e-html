@@ -6,5 +6,9 @@
   {
     "outputFile": "ebook/css/ips9e_ch1.css",
     "inputFile": "ebook/css/ips9e_ch1.less"
+  },
+  {
+    "outputFile": "ebook/asset/supp_win.css",
+    "inputFile": "ebook/asset/supp_win.less"
   }
 ]

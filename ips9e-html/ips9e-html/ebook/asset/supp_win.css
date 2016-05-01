@@ -1,0 +1,73 @@
+﻿/* supplemental window styles */
+[data-block_type="page_start"] {
+  display: none;
+}
+[data-type="question"] {
+  margin-top: 2em;
+}
+[data-type="question"] h3 {
+  display: none;
+}
+[data-type="question"] img[src*="global_images"] {
+  float: left;
+  margin-right: 10px;
+  width: 73px;
+}
+[data-block_type="EXP"] [data-block_type="EXP-T"] p:hover {
+  cursor: auto;
+  text-decoration: none;
+}
+[data-block_type="BX2-QUE-N-ri"]:hover {
+  cursor: auto;
+  text-decoration: none;
+}
+[data-type="section"][data-block_type="EXP"] {
+  margin-left: 2em !important;
+  background-image: none;
+}
+[data-type="section"][data-block_type="EXP"] [data-type="table"][data-block_type="TABLE"] {
+  margin: 2em auto;
+  width: 100%;
+}
+[data-type="section"][data-block_type="EXP"] [data-type="table"][data-block_type="TABLE"] table {
+  width: 100% !important;
+}
+div[data-type="section"][data-block_type="CR-X-H"] [data-type="question"] [data-block_type="CR-X-NL-N-ri"]:hover {
+  cursor: auto;
+  text-decoration: none;
+}
+div[data-type="section"][data-block_type="CR-X-H-v1"] [data-type="question"] [data-block_type="CR-X-NL-N-ri"]:hover {
+  cursor: auto;
+  text-decoration: none;
+}
+[data-type="section"] {
+  margin: 0 !important;
+}
+[data-type="section"] > [data-type="figure"] {
+  float: none !important;
+  margin: 2em auto !important;
+  width: 600px !important;
+}
+[data-type="section"] > [data-type="figure"] img {
+  cursor: auto !important;
+}
+/* destyle numbered figure title numbers */
+div[data-type="section"] > [data-block_type="FIGURE"] {
+  float: none;
+  margin: 30px auto !important;
+}
+div[data-type="section"] > [data-block_type="FIGURE"] img {
+  cursor: auto !important;
+}
+div[data-type="section"] > [data-block_type="FIGURE"] [data-type="figure_text"] {
+  margin-bottom: 1em;
+  width: 100%;
+}
+div[data-type="section"] > [data-block_type="FIGURE"] [data-type="figure_text"] [data-type="caption"] [data-block_type="FG-N-ri"] {
+  font-weight: bold;
+  cursor: auto;
+}
+/* turn off asset credits */
+[data-type="asset_source"] {
+  display: none;
+}
