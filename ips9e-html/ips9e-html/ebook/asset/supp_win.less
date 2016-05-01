@@ -2,6 +2,12 @@
 [data-block_type="page_start"] {
     display: none;
 }
+
+// make sure margins are normalized for supplemental windows
+[data-type="section"] {
+    margin: 2em !important;
+}
+
 // suppress "Question" in questions no longer in BX2 boxes
 [data-type="question"] {
     margin-top: 2em;
@@ -17,6 +23,7 @@
 // destyle examples
 [data-block_type="EXP"] {
     margin-left: 2em !important;
+    width: 1000px !important;
     [data-block_type="EXP-T"] p {
 	    &:hover {
 		    cursor: auto;
@@ -34,8 +41,8 @@
 
 // destyle tables
 [data-type="section"][data-block_type="EXP"] {
-    margin-left: 2em !important;
     background-image: none;
+    width: 1000px !important;
     [data-type="table"][data-block_type="TABLE"] {
         margin: 2em auto;
         width: 100%;
@@ -67,16 +74,13 @@ div[data-type="section"][data-block_type="CR-X-H-v1"] {
         }
     }
 }
-// make sure margins are normalized for supplemental windows
-[data-type="section"] {
-    margin: 0 !important;
-}
+
 
 // for all figures
 [data-type="section"] > [data-type="figure"] {
     float: none !important;
     margin: 2em auto !important;
-    width: 600px !important;
+    width: 800px !important;
     img {
         //max-width: initial;
         cursor: auto !important;
@@ -87,7 +91,7 @@ div[data-type="section"][data-block_type="CR-X-H-v1"] {
 // need to do ONLY if in figure popup (e.g. not example popup)
 div[data-type="section"] > [data-block_type="FIGURE"] {
     float: none;
-    margin: 30px auto !important;
+    margin: 2em auto !important;
     img {
         cursor: auto !important;
     }
