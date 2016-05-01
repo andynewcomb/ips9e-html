@@ -161,7 +161,7 @@ var Player_subtype = Player_manuscript_type.extend({
 	    var filename = $(this).attr('data_href');
 	    //var ch = filename.replace(/table_(\d+).*/i, "$1");
 	    var supp_win = "asset/ch" + chapter_number + "/supp_wins/tables/" + filename;
-	    pop_content(supp_win, "1015px", "700px");
+	    pop_content(supp_win, "1020px", "700px");
 	});
 
 
@@ -170,14 +170,14 @@ var Player_subtype = Player_manuscript_type.extend({
 	$('[data-block_type="EXP"] > [data-type="box_inner"] > [data-block_type="EXP-N"]').click(function () {
 	    var filename = $(this).closest('[data-block_type="EXP"]').attr("data-filename");
 	    var supp_win = "asset/ch" + chapter_number + "/supp_wins/examples/" + filename;
-	    pop_content(supp_win, "1020px", "500px");
+	    pop_content(supp_win, "1200px", "500px");
 	});
         // add link on example reference in the text
 	$('span[data_href^="example_"]').click(function () {
 	    var filename = $(this).attr('data_href');
 	    //var ch = filename.replace(/example_(\d+).*/i, "$1");
 	    var supp_win = "asset/ch" + chapter_number + "/supp_wins/examples/" + filename;
-	    pop_content(supp_win, "1020px", "500px");
+	    pop_content(supp_win, "1200px", "500px");
 	});
 
 

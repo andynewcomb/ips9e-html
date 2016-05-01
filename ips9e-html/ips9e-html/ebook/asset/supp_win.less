@@ -3,6 +3,31 @@
     display: none;
 }
 
+// adjust manuscript per supplemental window type
+#manuscript {
+    &.figure {
+        margin: 2em;
+        [data-type="figure"] {
+            float: none !important;
+            margin: 2em auto !important;
+            width: 800px !important;
+            img {
+                //max-width: initial;
+                cursor: auto !important;
+            }
+        }    
+    }
+    &.table {
+        margin: 2em;
+    }
+    &.example {
+        margin: 2em;     // same as main window
+    }
+    &.exercise {
+        margin: 2em;
+    }
+}
+
 // make sure margins are normalized for supplemental windows
 [data-type="section"] {
     margin: 2em !important;
@@ -75,17 +100,6 @@ div[data-type="section"][data-block_type="CR-X-H-v1"] {
     }
 }
 
-
-// for all figures
-[data-type="section"] > [data-type="figure"] {
-    float: none !important;
-    margin: 2em auto !important;
-    width: 800px !important;
-    img {
-        //max-width: initial;
-        cursor: auto !important;
-    }
-}
 
 /* destyle numbered figure title numbers */
 // need to do ONLY if in figure popup (e.g. not example popup)

@@ -2,6 +2,26 @@
 [data-block_type="page_start"] {
   display: none;
 }
+#manuscript.figure {
+  margin: 2em;
+}
+#manuscript.figure [data-type="figure"] {
+  float: none !important;
+  margin: 2em auto !important;
+  width: 800px !important;
+}
+#manuscript.figure [data-type="figure"] img {
+  cursor: auto !important;
+}
+#manuscript.table {
+  margin: 2em;
+}
+#manuscript.example {
+  margin: 2em;
+}
+#manuscript.exercise {
+  margin: 2em;
+}
 [data-type="section"] {
   margin: 2em !important;
 }
@@ -46,14 +66,6 @@ div[data-type="section"][data-block_type="CR-X-H"] [data-type="question"] [data-
 div[data-type="section"][data-block_type="CR-X-H-v1"] [data-type="question"] [data-block_type="CR-X-NL-N-ri"]:hover {
   cursor: auto;
   text-decoration: none;
-}
-[data-type="section"] > [data-type="figure"] {
-  float: none !important;
-  margin: 2em auto !important;
-  width: 800px !important;
-}
-[data-type="section"] > [data-type="figure"] img {
-  cursor: auto !important;
 }
 /* destyle numbered figure title numbers */
 div[data-type="section"] > [data-block_type="FIGURE"] {
