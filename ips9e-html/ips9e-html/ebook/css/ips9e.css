@@ -635,6 +635,11 @@ span[data-math^="math_"] {color: inherit;}
 [data-block_type="UN-TABLE"] table tr th.rborder {
   border-right: 1px solid #006288 !important;
 }
+span[data_href] {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
 /* supp wins examples */
 .supp_win button.readon_button {
   display: none;

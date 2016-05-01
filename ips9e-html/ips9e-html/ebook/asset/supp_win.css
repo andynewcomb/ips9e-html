@@ -13,6 +13,9 @@
   margin-right: 10px;
   width: 73px;
 }
+[data-block_type="EXP"] {
+  margin-left: 2em !important;
+}
 [data-block_type="EXP"] [data-block_type="EXP-T"] p:hover {
   cursor: auto;
   text-decoration: none;

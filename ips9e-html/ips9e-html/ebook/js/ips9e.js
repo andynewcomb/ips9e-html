@@ -166,12 +166,10 @@ var Player_subtype = Player_manuscript_type.extend({
 
 
         //Links to example
-        // The example box has a title and number, add link on the example number
-	$('[data-block_type="EXP"] > [data-type="box_inner"] > [data-block_type="EXP-T"]').click(function () {
-	    //need chapter number, grab from a <p> id.
-	    var ch = $(this).attr('id').replace(/.*ch0?(\d+).*/i, "$1");
-	    var exnum = $(this).find('p [data-block_type="EXP-N-ri"]').text().replace(/EXAMPLE ([\d]+)/i, "$1");
-	    var supp_win = "asset/ch" + ch + "/supp_wins/examples/example_" + ch + "_" + exnum + ".html";
+        // The example box has a title and number, add link
+	$('[data-block_type="EXP"] > [data-type="box_inner"] > [data-block_type="EXP-N"]').click(function () {
+	    var filename = $(this).closest('[data-block_type="EXP"]').attr("data-filename");
+	    var supp_win = "asset/ch" + chapter_number + "/supp_wins/examples/" + filename;
 	    pop_content(supp_win, "1020px", "500px");
 	});
         // add link on example reference in the text
