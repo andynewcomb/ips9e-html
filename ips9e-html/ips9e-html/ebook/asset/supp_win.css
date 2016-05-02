@@ -12,6 +12,7 @@
 }
 #manuscript.figure [data-type="figure"] img {
   cursor: auto !important;
+  margin-left: 0;
 }
 #manuscript.table {
   margin: 2em;

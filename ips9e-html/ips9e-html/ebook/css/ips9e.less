@@ -4,6 +4,7 @@
 @lt-blue: #3291b2;
 @deep-purple: #67003c;
 @gray-bg: #e6e7e7;
+@chap_exer_tbl_red: #f26e28;
 
 @text-indent: 1.5em;
 
@@ -201,10 +202,59 @@ div[data-block_type="h1"] {
         > li {
             margin: 6px 0;
         }
+        // compensate for margin term margin in this list
+        [data-block_type="MN-GL-term"] {
+            left: -330px;
+        }
+
     }
     [data-block_type="UN-FIGURE"][align="left"] {
         position: absolute;
         left: 0;
+    }
+    [data-type="table"][data-block_type="TABLE"] {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        margin: 1em 0 1em -2em;
+        [data-type="table_text"] {
+            background-color: @gray-bg;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            width: 100% !important;
+            [data-type="number"] {
+                display: none;
+            }
+            [data-type="table_caption"] {
+                // table number
+                [data-block_type="TBN-N"] {
+                    color: white;
+                    background-color: @dk-blue;
+                    padding: 2px 6px;
+                }
+                // table title
+                [data-block_type="TBN-T"] {
+                    color: @dk-blue;
+                    padding: 2px 6px;
+                    //background-color: @lt-blue;
+                }
+            }
+        }
+        table {
+            border: 1px solid @dk-blue;
+            margin: 0 auto;
+            width: 100% !important;
+            //border: 0;
+            tr, th, td {
+                border: 0;
+                background-color: transparent;
+                font-family: 'Times New Roman', serif;
+            }
+        }
+    }
+    [data-block_type="UL"] {
+        margin: 10px 0;
     }
 }
 
@@ -244,7 +294,7 @@ div[data-block_type="SR-H"]  {
     }
 }
 
-/* exercise sections */
+/* exercise sections (for section groups) */
 div[data-block_type="SR-X-H"]  {
     h2.section-title {
         font-size: 1.2em;
@@ -285,6 +335,61 @@ div[data-block_type="SR-X-H"]  {
             }
         }
     }
+    // unnumbered tables
+    [data-type="table"][data-block_type="UN-TABLE"] {
+        border: 0;
+        table {
+            margin: 0 auto;
+            border: 0;
+            tr, th, td {
+                border: 0;
+                background-color: transparent;
+                font-family: 'Times New Roman', serif;
+            }
+        }
+    }
+    // numbered tables
+    [data-type="table"][data-block_type="TABLE"] {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        margin: 1em 0 1em -2em;
+        [data-type="table_text"] {
+            background-color: @gray-bg;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            width: 100% !important;
+            font-size: 20px;
+            [data-type="number"] {
+                display: none;
+            }
+            [data-type="table_caption"] {
+                // table number
+                [data-block_type="TBN-N"] {
+                    color: white;
+                    background-color: @dk-blue;
+                    padding: 2px 6px;
+                }
+                // table title
+                [data-block_type="TBN-T"] {
+                    color: @dk-blue;
+                    padding: 2px 6px;
+                    //background-color: @lt-blue;
+                }
+            }
+        }
+        table {
+            border: 1px solid @dk-blue;
+            margin: 0 auto;
+            width: 100% !important;
+            //border: 0;
+            tr, th, td {
+                border: 0;
+                background-color: transparent;
+                font-family: 'Times New Roman', serif;
+            }
+        }
+    }
 
     /*ul[data-block_type="bullet"] {
         list-style-type: none;
@@ -297,6 +402,138 @@ div[data-block_type="SR-X-H"]  {
             }
         }
     }*/
+}
+
+/* exercise sections (chapter exercises at end of each chapter) */
+div[data-block_type="CR-X-H"]  {
+    h2.section-title {
+        font-size: 1.2em;
+        // section number
+        span[data-block_type="CR-X-N-ri"] {
+            color: @dk-blue;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: "arial",sans-serif;
+        }
+        // "EXERCISES"
+        span[data-block_type="CR-X-H"] {
+            color: #35ADBB;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-family: "arial",sans-serif;
+        }
+    }
+    // questions
+    [data-type="question"] {
+        border: 0;
+        padding: 0;
+        h3 {
+            display: none;
+        }
+        [data-block_type="SR-X-QUE-NL"] {
+            // question number/title
+            [data-block_type="SR-XH"] {
+                color: @dk-blue;
+                font-weight: bold;
+            }
+        }
+        ol[data-block_type="lower-alpha"] {
+            list-style-type: none;
+            margin: 8px 0;
+            > li {
+                margin: 12px 0;
+            }
+        }
+    }
+    // unnumbered tables
+    [data-type="table"][data-block_type="UN-TABLE"] {
+        border: 0;
+        table {
+            margin: 0 auto;
+            border: 0;
+            tr, th, td {
+                border: 0;
+                background-color: transparent;
+                font-family: 'Times New Roman', serif;
+            }
+        }
+    }
+    // numbered tables
+    [data-type="table"][data-block_type="TABLE"] {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        margin: 1em 0 1em -2em;
+        [data-type="table_text"] {
+            background-color: @gray-bg;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            width: 100% !important;
+            font-size: 20px;
+            [data-type="number"] {
+                display: none;
+            }
+            [data-type="table_caption"] {
+                // table number
+                [data-block_type="TBN-N"] {
+                    color: white;
+                    background-color: @dk-blue;
+                    padding: 2px 6px;
+                }
+                // table title
+                [data-block_type="TBN-T"] {
+                    color: @dk-blue;
+                    padding: 2px 6px;
+                    //background-color: @lt-blue;
+                }
+            }
+        }
+        table {
+            border: 1px solid @dk-blue;
+            margin: 0 auto;
+            width: 100% !important;
+            //border: 0;
+            tr, th, td {
+                border: 0;
+                background-color: transparent;
+                font-family: 'Times New Roman', serif;
+            }
+        }
+    }
+    [data-type="table"] {
+	    tr {
+            &.tborder {
+                border-top: 1px solid @chap_exer_tbl_red !important;
+            }
+            &.bborder {
+                border-bottom: 1px solid @chap_exer_tbl_red !important;
+            }
+		    td.tborder {
+			    border-top: 1px solid @chap_exer_tbl_red !important;
+		    }
+		    td.bborder {
+			    border-bottom: 1px solid @chap_exer_tbl_red !important;
+		    }
+		    td.lborder {
+			    border-left: 1px solid @chap_exer_tbl_red !important;
+		    }
+		    td.rborder {
+			    border-right: 1px solid @chap_exer_tbl_red !important;
+		    }
+		    th.tborder {
+			    border-top: 1px solid @chap_exer_tbl_red !important;
+		    }
+		    th.bborder {
+			    border-bottom: 1px solid @chap_exer_tbl_red !important;
+		    }
+		    th.lborder {
+			    border-left: 1px solid @chap_exer_tbl_red !important;
+		    }
+		    th.rborder {
+			    border-right: 1px solid @chap_exer_tbl_red !important;
+		    }
+        }
+    }
 }
 
 
@@ -319,6 +556,7 @@ div[data-block_type="SR-X-H"]  {
 [data-caption-compass] {
     margin-top: 1em;
     margin-bottom: 1em;
+    background-color: white !important;
     > img {
         display: block;
         margin-left: auto;
@@ -426,7 +664,18 @@ body#supp_win #rightnav {display: none;}*/
         // probably wrong block types used, but left as-is
         //text-indent: @text-indent;
         margin: 8px 0;
+        text-align: justify;
     }
+    [data-block_type="BX1-TXT-ni"] {
+        // probably wrong block types used, but left as-is
+        //text-indent: @text-indent;
+        text-align: justify;
+    }
+    [data-block_type="BX1-EQ"] {
+        text-align: center;
+        margin: 10px 0;
+    }
+
     ol[data-block_type="numbered"] {
         // all comments below are inherited from "h1"
         //list-style-type: none;
@@ -440,10 +689,57 @@ body#supp_win #rightnav {display: none;}*/
         //}
     }
 }
+/* beyond the basics boxes */
+[data-block_type="BX2"] {
+    background-color: #dfe6ea;
+    margin: 1em 0;
+    h3 {
+        display: none;
+    }
+    // title
+    [data-block_type="BX2-T"] p {
+        background-color: @bullet-blue;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: .3em 1em;
+        border-bottom: 3px solid white;
+        margin-bottom: .3em;
+    }
+    [data-type="box_inner"] {
+        margin-bottom: 1em;
+        overflow: hidden;
+        padding-bottom: .5em;
+        p {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+    // subtitle
+    [data-block_type="BX2-H"] {
+        color: #282525;
+        margin: 8px 0;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    [data-block_type="BX2-TXT"] {
+        text-align: left;
+        text-indent: @text-indent;
+    }
+    [data-block_type="BX2-TXT-ni"] {
+        // probably wrong block types used, but left as-is
+        text-align: left;
+    }
+}
 
 /* regular paragraphs */
 [data-block_type="TXT"] p {
     text-indent: 1.5em;
+    text-align: justify;
+}
+[data-block_type="TXT-ni"] p {
+    text-indent: 0;
+    text-align: justify;
 }
 [data-block_type="EQ"] p {
     text-align: center;
@@ -510,14 +806,24 @@ span[data-math^="math_"] {color: inherit;}
             position: relative;
             top: -8px;
             margin-bottom: 0em;
+            text-align: justify;
         }
+    }
+    [data-block_type="EXP-last"] {
+        text-indent: @text-indent;
+        text-align: justify;
     }
     [data-block_type="EXP-TXT"] {
         text-indent: @text-indent;
+        text-align: justify;
+    }
+    [data-block_type="EXP-TXT-ni"] {
+        text-indent: 0;
+        text-align: justify;
     }
     [data-block_type="EXP-EQ"] {
         text-align: center;
-        margin: 8px 0;
+        margin: 10px 0;
     }
     ul[data-block_type="bullet"] {
         list-style-type: none;
@@ -555,6 +861,7 @@ span[data-math^="math_"] {color: inherit;}
             background-color: @gray-bg;
             margin: 0;
             font-family: Arial, sans-serif;
+            width: 100% !important;
             font-size: 20px;
             [data-type="number"] {
                 display: none;
@@ -577,7 +884,7 @@ span[data-math^="math_"] {color: inherit;}
         table {
             border: 1px solid @dk-blue;
             margin: 0 auto;
-            width: 100%;
+            width: 100% !important;
             //border: 0;
             tr, th, td {
                 border: 0;
@@ -652,6 +959,9 @@ span[data-math^="math_"] {color: inherit;}
                 color: @dk-blue;
                 font-weight: bold;
             }
+            [data-block_type="EXR-QUE-NL-first"] {
+                text-align: justify;
+            }
             [data-type="table"] {
                 border: 0;
                 table {
@@ -694,7 +1004,7 @@ span[data-math^="math_"] {color: inherit;}
 }
 
 /* tables */
-[data-block_type="UN-TABLE"] {
+[data-type="table"] {
     table {
 	    tr {
             &.tborder {

@@ -1289,8 +1289,8 @@
     <p id="ips9e-ch01-p-228" block_type="TXT">
       <em>You should be aware that the appearance of a histogram can change when you change the classes.</em> The histogram function in the <em>One-Variable Statistical Calculator</em> applet on the text website allows you to change the number of classes by dragging with the mouse, so that it is easy to see how the choice of classes affects the histogram.
     </p>
-    <box id="ips9e-ch01-box-41" numbered="false" block_type="bx3">
-      <p id="ips9e-ch01-p-229" block_type="exr-h">
+    <box id="ips9e-ch01-box-41" numbered="false" block_type="EXR">
+      <p id="ips9e-ch01-p-229" block_type="EXR-H">
         <strong>USE YOUR KNOWLEDGE</strong>
       </p>
       <question id="ips9e-ch01-ques-21" block_type="exercise_1_21.html">
@@ -1461,7 +1461,6 @@
         </p>
         <p id="ips9e-ch01-p-248" block_type="rl_crunchit" data-dataset=""/>
       </box>
-    </box>
     <figure id="ips9e-ch01-fig-08" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="1.8" mmtype="image" mmsrc="" attr="" data-filename="figure_1_8.html">
       <layout align="center" width="medium" border="false"/>
       <image asset-id="ips9e-ch01-img-20" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_08.jpg"/>
@@ -1474,6 +1473,7 @@
     </figure>
     <p id="ips9e_page_18" block_type="page_start" data-margin-content="left">18</p>
     <p id="ips9e-ch01-p-249" block_type="EXP-TXT-ni">It turned out that the bank penalized representatives whose average call length was too long&#8212;so some representatives just hung up on customers to bring their average length down. Neither the customers nor the bank were happy about this. The bank changed its policy, and later data showed that calls under 10 seconds had almost disappeared.</p>
+    </box>
     <p id="ips9e-ch01-p-250" block_type="TXT">
       The extreme values of a distribution are in the <termref term="tails">
         <strong>tails</strong>
@@ -1856,13 +1856,13 @@
       </box>
       <table id="ips9e-ch01-untab-08" numbered="false" block_type="UN-TABLE" attr="75">
         <tbody>
-          <tr>
+          <tr class="tborder">
             <th align="center" block_type="CR-X-QUE-NL-TB1-COLHD">Country</th>
             <th align="char" char="." block_type="CR-X-QUE-NL-TB1-COLHD">
               Facebook users<br/>(in millions)
             </th>
           </tr>
-          <tr>
+          <tr class="tborder">
             <td align="center" block_type="CR-X-QUE-NL-TB1-TXT">Brazil</td>
             <td align="char" char="." block_type="CR-X-QUE-NL-TB1-TXT">29.30</td>
           </tr>
@@ -1898,7 +1898,7 @@
             <td align="center" block_type="CR-X-QUE-NL-TB1-TXT">United States</td>
             <td align="char" char="." block_type="CR-X-QUE-NL-TB1-TXT">155.74</td>
           </tr>
-          <tr>
+          <tr class="bborder">
             <td align="center" block_type="CR-X-QUE-NL-TB1-TXT">Turkey</td>
             <td align="char" char="." block_type="CR-X-QUE-NL-TB1-TXT">30.63</td>
           </tr>
@@ -1934,13 +1934,13 @@
       </box>
       <table id="ips9e-ch01-untab-09" numbered="false" block_type="UN-TABLE" attr="75">
         <tbody>
-          <tr>
+          <tr class="tborder">
             <th align="center" block_type="CR-X-QUE-NL-TB1-COLHD">Country</th>
             <th align="char" char="." block_type="CR-X-QUE-NL-TB1-COLHD">
               Increase in users<br/>(in millions)
             </th>
           </tr>
-          <tr>
+          <tr class="tborder">
             <td align="center" block_type="CR-X-QUE-NL-TB1-TXT">Brazil</td>
             <td align="char" char="." block_type="CR-X-QUE-NL-TB1-TXT">2.47</td>
           </tr>
@@ -1976,7 +1976,7 @@
             <td align="center" block_type="CR-X-QUE-NL-TB1-TXT">United States</td>
             <td align="char" char="." block_type="CR-X-QUE-NL-TB1-TXT">0.65</td>
           </tr>
-          <tr>
+          <tr class="bborder">
             <td align="center" block_type="CR-X-QUE-NL-TB1-TXT">Turkey</td>
             <td align="char" char="." block_type="CR-X-QUE-NL-TB1-TXT">0.09</td>
           </tr>
@@ -3808,9 +3808,9 @@
     <p id="ips9e-ch01-p-538" block_type="TXT">
       The lines extending to the smallest and largest observations are sometimes called <termref term="whiskers">
         <strong>whiskers</strong>
-      </termref><phrase block_type="MN-GL-term">whiskers</phrase>, and boxplots are sometimes called <termref term="box-and-whisker plots">
+      </termref><phrase block_type="MN-GL-term">whiskers<br/>box-and-whisker plots</phrase>, and boxplots are sometimes called <termref term="box-and-whisker plots">
         <strong>box-and-whisker plots</strong>
-      </termref><phrase block_type="MN-GL-term">box-and-whisker plots</phrase>. Software provides many varieties of boxplots, some of which use different choices for the placement of the whiskers.
+      </termref>. Software provides many varieties of boxplots, some of which use different choices for the placement of the whiskers.
     </p>
     <p id="ips9e-ch01-p-539" block_type="TXT">When you look at a boxplot, first locate the median, which marks the center of the distribution. Then look at the spread. The quartiles show the spread of the middle half of the data, and the extremes (the smallest and largest observations) show the spread of the entire data set.</p>
     <box id="ips9e-ch01-box-109" numbered="false" block_type="EXP" data-filename="example_1_28.html">
@@ -3884,7 +3884,7 @@
           interquartile range <em>IQR</em>
         </strong> is the distance between the first and third quartiles,
       </p>
-      <p id="ips9e-ch01-p-551" block_type="bx1-eq">
+      <p id="ips9e-ch01-p-551" block_type="BX1-EQ">
         <em>IQR</em> = <em>Q</em><sub>3</sub> &#8722; <em>Q</em><sub>1</sub>
       </p>
     </box>
@@ -3932,7 +3932,7 @@
         </p>
         <p block_type="rl_crunchit" data-dataset=""/>
       </box>
-      <p id="ips9e-ch01-p-566" block_type="EXP-TXT-first">Any values below 54.5 &#8722; 218.25 = &#8722;163.75 or above 200 &#43; 218.25 = 418.25 are flagged as possible outliers. There are no low outliers, but the eight longest calls are flagged as possible high outliers. Their lengths are</p>
+      <p id="ips9e-ch01-p-566" block_type="EXP-TXT-ni">Any values below 54.5 &#8722; 218.25 = &#8722;163.75 or above 200 &#43; 218.25 = 418.25 are flagged as possible outliers. There are no low outliers, but the eight longest calls are flagged as possible high outliers. Their lengths are</p>
       <p id="ips9e-ch01-p-567" block_type="EXP-EQ">438&#8195;465&#8195;479&#8195;700&#8195;700&#8195;951&#8195;1148&#8195;2631</p>
       <p id="ips9e-ch01-p-568" block_type="TXT">It is difficult to imagine calls lasting this long.</p>
     </box>
@@ -4057,7 +4057,7 @@
         </p>
         <p block_type="rl_crunchit" data-dataset=""/>
       </box>
-      <p id="ips9e-ch01-p-595" block_type="EXP-TXT-first">Enter these data into your calculator or software and verify that</p>
+      <p id="ips9e-ch01-p-595" block_type="EXP-TXT-ni">Enter these data into your calculator or software and verify that</p>
       <p id="ips9e-ch01-p-596" block_type="EXP-EQ">
         <phrase data-math="math_31"></phrase>&#8195;&#8195;<phrase data-math="math_32"></phrase>
       </p>
@@ -4419,7 +4419,7 @@
       </li>
       <li id="ips9e-ch01-li-146">
         <p id="ips9e-ch01-p-669" block_type="BL-first">
-          <phrase block_type="maker">&#8226;</phrase> The <strong>mean</strong><phrase data-math="math_42"></phrase> and the <strong>
+          <phrase block_type="maker">&#8226;</phrase> The <strong>mean</strong> <phrase data-math="math_42"></phrase> and the <strong>
             median <em>M</em>
           </strong> describe the center of a distribution in different ways. The mean is the arithmetic average of the observations, and the median is their midpoint.
         </p>
@@ -5531,7 +5531,7 @@
         </p>
         <p block_type="rl_crunchit" data-dataset=""/>
       </box>
-      <p id="ips9e-ch01-p-836" block_type="EXP-last">
+      <p id="ips9e-ch01-p-836" block_type="EXP-TXT">
         <link href="exercise_1_27.html">Exercise 1.27</link> (page 24) describes data on the class of the ticket of the <em>Titanic</em> passengers, and <link href="figure_1_20.html">Figure 1.20</link>(b) shows the distribution of the ages of these passengers. It has a single mode, a long right tail, and a relatively short left tail.
       </p>
       <box id="ips9e-ch01-box-164" block_type="rl_linkbox">
@@ -5668,11 +5668,7 @@
       <phrase block_type="h2">Normal distributions</phrase>
     </p>
     <p id="ips9e-ch01-p-863" block_type="TXT-ni">
-      One particularly important class of density curves has already appeared in <link href="figure_1_21.html">Figures 1.21</link> and <link href="figure_1_22.html">1.22(a)</link>. These density curves are symmetric, unimodal, and bell-shaped. They are called <termref term="Normal curves">
-        <strong>Normal curves</strong>
-      </termref><phrase block_type="MN-GL-term">Normal curves</phrase>, and they describe <termref term="Normal distributions">
-        <strong>Normal distributions</strong>
-      </termref><phrase block_type="MN-GL-term">Normal distributions</phrase>. All Normal distributions have the same overall shape.
+      One particularly important class of density curves has already appeared in <link href="figure_1_21.html">Figures 1.21</link> and <link href="figure_1_22.html">1.22(a)</link>. These density curves are symmetric, unimodal, and bell-shaped. They are called <termref term="Normal curves"><strong>Normal curves</strong></termref><phrase block_type="MN-GL-term">Normal curves<br/>Normal distributions</phrase>, and they describe <termref term="Normal distributions"><strong>Normal distributions</strong></termref>. All Normal distributions have the same overall shape.
     </p>
     <p id="ips9e-ch01-p-864" block_type="TXT">
       The exact density curve for a particular Normal distribution is specified by giving the distribution&#8217;s mean <em>&#956;</em> and its standard deviation <em>&#963;</em>. The mean is located at the center of the symmetric curve and is the same as the median. Changing <em>&#956;</em> without changing <em>&#963;</em> moves the Normal curve along the horizontal axis without changing its spread.
@@ -5949,7 +5945,7 @@
         </termref>
       </p>
       <figure id="ips9e-ch01-unfig-06" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="" data-filename="17MOOREIPS-MSE_9e_P_01_03.html">
-        <layout align="center" width="medium" border="false"/>
+        <layout align="left" width="medium" border="false"/>
         <image asset-id="ips9e-ch01-img-67" alt="image" src="asset/ch1/17MOOREIPS-MSE_9e_P_01_03.jpg"/>
         <asset_source>
           <phrase block_type="PHCR">Mitchell Layton/Getty Images</phrase>
@@ -6285,7 +6281,7 @@
           <strong>density estimator</strong>
         </termref><phrase block_type="MN-GL-term">density estimator</phrase> does not start with any specific shape, such as the Normal shape. It looks at the data and draws a density curve that describes the overall shape of the data. Density estimators join stemplots and histograms as useful graphical tools for exploratory data analysis.
       </p>
-      <p id="ips9e-ch01-p-1009" block_type="BX2-TXT-ni">Density estimates can capture other unusual features of a distribution. Here is an example.</p>
+      <p id="ips9e-ch01-p-1009" block_type="BX2-TXT">Density estimates can capture other unusual features of a distribution. Here is an example.</p>
     </box>
     <p id="ips9e_page_69" block_type="page_start" data-margin-content="right">69</p>
     <box id="ips9e-ch01-box-189" numbered="false" block_type="EXP" data-filename="example_1_48.html">
@@ -6318,9 +6314,7 @@
     <p id="ips9e-ch01-p-1014" block_type="TXT">
       Many distributions that we have met have a single peak, or mode. The distribution described in <link href="example_1_48.html">Example 1.48</link> has three modes and is called a <termref term="trimodal distribution">
         <strong>trimodal distribution</strong>
-      </termref><phrase block_type="MN-GL-term">trimodal distribution</phrase>. A distribution that has two modes is called a <termref term="bimodal distribution">
-        <strong>bimodal distribution</strong>
-      </termref><phrase block_type="MN-GL-term">bimodal distribution</phrase>.
+      </termref><phrase block_type="MN-GL-term">trimodal distribution<br/>bimodal distribution</phrase>. A distribution that has two modes is called a <termref term="bimodal distribution"><strong>bimodal distribution</strong></termref><phrase block_type="MN-GL-term">bimodal distribution</phrase>.
     </p>
     <p id="ips9e-ch01-p-1015" block_type="TXT">
       The previous example reminds of a continuing theme for data analysis. We looked at a histogram and a density estimate and saw something interesting. This led us to speculation. Additional data on the type and location of the seats may explain more about the prices than we see in <link href="figure_1_32.html">Figure 1.32</link>.
@@ -6534,7 +6528,7 @@
             <td align="center" block_type="EXP-TB1-TXT">75&#37;</td>
             <td align="center" block_type="EXP-TB1-TXT">177</td>
           </tr>
-          <tr>
+          <tr class="bborder">
             <td align="center" block_type="EXP-TB1-TXT">90&#37;</td>
             <td align="center" block_type="EXP-TB1-TXT">197</td>
           </tr>
@@ -7623,7 +7617,7 @@
             <td align="center" block_type="EXP-TB1-TXT">95</td>
             <td align="center" block_type="EXP-TB1-TXT">150</td>
           </tr>
-          <tr>
+          <tr class="bborder">
             <td align="center" block_type="EXP-TB1-TXT">90</td>
             <td align="center" block_type="EXP-TB1-TXT">240</td>
             <td align="center" block_type="EXP-TB1-TXT">180</td>
