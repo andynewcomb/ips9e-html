@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<title>Example</title>
+<link href = "../../../../css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/ips9e_ch1.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../supp_win.css" media="screen" rel="stylesheet" type="text/css" >
+</head>
+<body id="supp_win">
+<div id="manuscript" class="example">
+<div data-type="section" data-block_type="h1">
+<div data-type="box" data-block_type="EXP" data-filename="example_1_45.html" id="ips9e-ch01-box-181"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch01-box-181"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch01-p-972"><p>EXAMPLE 1.45</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch01-p-973"><p>
+        <span data-block_type="EXP-T-ri">How high for the top 10%?</span> Scores for college-bound students on the SAT Critical Reading test in recent years follow approximately the <em>N</em>(500, 120) distribution.<span data-type="termref" data-term="fn_ch1_fn33">
+          <sup>33</sup>
+        </span> How high must a student score to place in the top 10% of all students taking the SAT?
+      </p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-974"><p>
+        Again, the key to the problem is to draw a picture. <span data-type="link" data-href="figure_1_29.html">Figure 1.29</span> shows that we want the score <em>x</em> with an area of 0.10 above it. That&#8217;s the same as area below <em>x</em> equal to 0.90.
+      </p></div>
+      <div data-type="figure" data-caption-compass="S" data-filename="figure_1_29.html" data-figure-id="ips9e-ch01-fig-29" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+        
+        <img id src="asset/ch1/17MOOREIPS-MSE_9e_fig_01_29.jpg" data-figure-id="ips9e-ch01-fig-29" data-layout-width="medium" data-mmtype="image" data-mmsrc data-attr alt="image">
+        <div data-type="figure_text">
+<span data-type="number">Figure 1.29: </span><span data-type="caption">
+          <span data-block_type="FG-N-ri">Figure 1.29</span>
+          <span data-block_type="FG-CAP">
+            Locating the point on a Normal curve with area 0.10 to its right, <span data-type="link" data-href="example_1_45.html">Example 1.45</span>.
+          </span>
+        </span>
+</div>
+      </div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-975"><p>
+        Statistical software has a function that will give you the <em>x</em> for any cumulative proportion you specify. The function often has a name such as &#8220;inverse cumulative probability.&#8221; Plug in mean 500, standard deviation 120, and cumulative proportion 0.9. The software tells you that <em>x</em> = 653.786. We see that a student must score at least 654 to place in the highest 10%.
+      </p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch01-p-976"><p>
+        Without software, first find the standard score <em>z</em> with cumulative proportion 0.9, then &#8220;unstandardize&#8221; to find <em>x</em>. Here is the two-step process:
+      </p></div>
+      <ol data-block_type="numbered" id="ips9e-ch01-list-72">
+        <li><div data-block_type="BX1-NLF" id="ips9e-ch01-p-977"><p>
+            <span data-block_type="maker">1.</span> <em>Use the table.</em> Look in the body of <span data-type="link" data-href="table_a.html">Table A</span> for the entry closest to 0.9. It is 0.8997. This is the entry corresponding to <em>z</em> = 1.28. So <em>z</em> = 1.28 is the standardized value with area 0.9 to its left.
+          </p></div>
+        </li>
+        <li><div data-block_type="BX1-NL-L" id="ips9e-ch01-p-978"><p>
+            <span data-block_type="maker">2.</span> <em>Unstandardize</em> to transform the solution from <em>z</em> back to the original <em>x</em> scale. We know that the standardized value of the unknown <em>x</em> is <em>z</em> = 1.28. So <em>x</em> itself satisfies
+          </p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-979"><p>
+            <span data-math="math_60"></span>
+          </p></div>
+          <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_66"><p>66</p></div>
+          <div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-980"><p>
+            Solving this equation for <em>x</em> gives
+          </p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-981"><p>
+            <em>x</em> = 500 + (1.28)(120) = 653.6
+          </p></div>
+          <div data-block_type="EXP-TXT-ni" id="ips9e-ch01-p-982"><p>
+            This equation should make sense: it finds the <em>x</em> that lies 1.28 standard deviations above the mean on this particular Normal curve. That is the &#8220;unstandardized&#8221; meaning of <em>z</em> = 1.28. The general rule for unstandardizing a <em>z</em>-score is
+          </p></div>
+          <div data-block_type="EXP-EQ" id="ips9e-ch01-p-983"><p>
+            <em>x</em> = <em>&#956;</em> + <em>z</em><em>&#963;</em>
+          </p></div>
+        </li>
+      </ol>
+    </div></div>
+</div>
+</div>
+<script type = "text/javascript" src="../../../../js/utilities.js"></script>
+<script type = "text/javascript" src="../../../../js/query_types.js"></script>
+<script type = "text/javascript" src="../../../../js/player.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery_extensions.js"></script>
+<script type = "text/javascript" src="../../../../js/swfobject.js"></script>
+<script type = "text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type = "text/javascript" src="../../../../js/digfir_ebook_fw.js"></script>
+<script type = "text/javascript" src="../../../../js/ips9e.js"></script>
+<script type = "text/javascript" src="../../../../js/ips9e_ch1.js"></script>
+<script type = "text/javascript" src="../../../supp_win.js"></script>
+<script type = "text/javascript">
+
+//<!--
+$(window).ready(function ()
+    {
+        player.initialize('52c6e83c757a2ef70c000000');
+    });
+//-->
+</script>
+</body>
+</html>
