@@ -33,7 +33,7 @@ var suppwins_Player_subtype = Player_subtype.extend({
          // in-text links
          $('span[data_href^="figure_"], [data_href^="exercise_"],[data_href^="example_"],[data_href^="table_"]').unbind(); //intext references
          // links in features
-         $('[data-block_type="h1"] [data-block_type="EXP-T"]').unbind(); //example titles
+         $('[data-block_type="h1"] [data-block_type="EXP-N"]').unbind(); //example titles
          $('[data-block_type="TABLE"] [data-type="table_caption"]').unbind(); //table captions
          $('[data-type="question"] [data-block_type="BX2-QUE-N-ri"]').unbind(); // Titles for "Now it's your turn" exercises
          $('[data-type="question"] [data-block_type="CR-X-NL-N-ri"]').unbind(); // Titles for end of chapter exercises
@@ -69,7 +69,7 @@ var suppwins_Player_subtype = Player_subtype.extend({
              var filename = $(this).attr('data_href');
              var ch = filename.replace(/example_(\d+).*/i, "$1");
              var supp_win = "../../../ch" + ch + "/supp_wins/examples/" + filename;
-             pop_content(supp_win, "1020px", "500px");
+             pop_content(supp_win, "1200px", "500px");
          });
 
          // adjust all image paths

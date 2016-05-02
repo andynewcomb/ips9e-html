@@ -183,6 +183,12 @@ var Player_subtype = Player_manuscript_type.extend({
 
         //Exercises
         //add link on exercise titles
+        //"use your knowledge" exercises found throughout sections
+	$('[data-type="question"] [data-block_type="EXR-QUE-N-ri"]').click(function () {
+	    var filename = $(this).closest('[data-type="question"]').attr('data-block_type');
+	    var supp_win = "asset/ch" + chapter_number + "/supp_wins/exercises/" + filename;
+	    pop_content(supp_win, "1020px", "500px");
+	});
         //"now it's your turn" exercises found throughout sections
 	$('[data-type="question"] [data-block_type="BX2-QUE-N-ri"]').click(function () {
 	    //need question number	               
