@@ -37,8 +37,9 @@ var suppwins_Player_subtype = Player_subtype.extend({
          $('[data-block_type="TABLE"] [data-type="table_caption"]').unbind(); //table captions
          $('[data-type="question"] [data-block_type="BX2-QUE-N-ri"]').unbind(); // Titles for "Now it's your turn" exercises
          $('[data-type="question"] [data-block_type="CR-X-NL-N-ri"]').unbind(); // Titles for end of chapter exercises
-         // $('[data-block_type="h1"] [data-caption-compass]  > img').unbind();
-         // $('[data-block_type="h1"] [data-caption-compass]  > .compassImg img').unbind();
+         $('[data-type="question"] [data-block_type="SR-XH"]').unbind(); // Titles for section and chapter reviews
+         $('[data-type="question"] [data-block_type="EXR-QUE-N-ri"]').unbind(); // User Your Knowledge question number
+         $('[data-type="question"] [data-block_type="EXR-QUE-T-ri"]').unbind(); // User Your Knowledge question title
          $('[data-caption-compass] [data-block_type="FG-N-ri"]').unbind();
          // $('[data-type="figure"][data-block_type="UN-FIGURE"] img').unbind();
          // unbind all image events -- will be rebound below, if needed

@@ -170,25 +170,32 @@ var Player_subtype = Player_manuscript_type.extend({
 	$('[data-block_type="EXP"] > [data-type="box_inner"] > [data-block_type="EXP-N"]').click(function () {
 	    var filename = $(this).closest('[data-block_type="EXP"]').attr("data-filename");
 	    var supp_win = "asset/ch" + chapter_number + "/supp_wins/examples/" + filename;
-	    pop_content(supp_win, "1200px", "500px");
+	    pop_content(supp_win, "1020px", "500px");
 	});
         // add link on example reference in the text
 	$('span[data_href^="example_"]').click(function () {
 	    var filename = $(this).attr('data_href');
 	    //var ch = filename.replace(/example_(\d+).*/i, "$1");
 	    var supp_win = "asset/ch" + chapter_number + "/supp_wins/examples/" + filename;
-	    pop_content(supp_win, "1200px", "500px");
+	    pop_content(supp_win, "1020px", "500px");
 	});
 
 
         //Exercises
-        //add link on exercise titles
+        //add link on exercise numbers and titles
+
         //"use your knowledge" exercises found throughout sections
 	$('[data-type="question"] [data-block_type="EXR-QUE-N-ri"]').click(function () {
 	    var filename = $(this).closest('[data-type="question"]').attr('data-block_type');
 	    var supp_win = "asset/ch" + chapter_number + "/supp_wins/exercises/" + filename;
 	    pop_content(supp_win, "1020px", "500px");
 	});
+	$('[data-type="question"] [data-block_type="EXR-QUE-T-ri"]').click(function () {
+	    var filename = $(this).closest('[data-type="question"]').attr('data-block_type');
+	    var supp_win = "asset/ch" + chapter_number + "/supp_wins/exercises/" + filename;
+	    pop_content(supp_win, "1020px", "500px");
+	});
+
         //"now it's your turn" exercises found throughout sections
 	$('[data-type="question"] [data-block_type="BX2-QUE-N-ri"]').click(function () {
 	    //need question number	               
@@ -196,11 +203,11 @@ var Player_subtype = Player_manuscript_type.extend({
 	    var supp_win = "asset/ch" + exernum.replace(/exercise_(\d+)_.*/, "$1") + "/supp_wins/exercises/" + exernum;
 	    pop_content(supp_win, "1020px", "500px");
 	});
-        //these are at end of chapter
-	$('[data-type="question"] [data-block_type="CR-X-NL-N-ri"]').click(function () {
+        //these are at end of section groups and chapters
+	$('[data-type="question"] [data-block_type="SR-XH"]').click(function () {
 	    //need question number	               
-	    var exernum = $(this).text().replace(/ *(\d+)\.(\d+).*/i, "exercise_$1_$2.html");
-	    var supp_win = "asset/ch" + exernum.replace(/exercise_(\d+)_.*/, "$1") + "/supp_wins/exercises/" + exernum;
+	    var filename = $(this).closest('[data-type="question"]').attr('data-block_type');
+	    var supp_win = "asset/ch" + chapter_number + "/supp_wins/exercises/" + filename;
 	    pop_content(supp_win, "1020px", "500px");
 	});
         // add link on exercise references in the text

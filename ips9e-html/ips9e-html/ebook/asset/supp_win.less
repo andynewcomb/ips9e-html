@@ -1,5 +1,12 @@
 ﻿/* supplemental window styles */
+
+// no page numbering
 [data-block_type="page_start"] {
+    display: none;
+}
+
+// turn off asset credits
+[data-type="asset_source"] {
     display: none;
 }
 
@@ -7,6 +14,9 @@
 #manuscript {
     &.figure {
         margin: 2em;
+        [data-type="section"] {
+            margin: 2em !important;
+        }
         [data-type="figure"] {
             float: none !important;
             margin: 2em auto !important;
@@ -20,23 +30,44 @@
     }
     &.table {
         margin: 2em;
+        [data-type="section"] {
+            margin: 2em !important;
+        }
     }
     &.example {
-        margin: 2em;     // same as main window
+        margin: 0;          // no room for more
+        [data-type="section"] {
+            margin: 0 !important;
+            [data-block_type="EXP"] {
+                margin-left: 1px !important;
+                width: 999px !important;
+                [data-block_type="EXP-N"] {
+	                &:hover {
+		                cursor: auto;
+		                text-decoration: none;
+	                }
+                }
+            }
+        }
     }
     &.exercise {
         margin: 2em;
+        [data-type="section"] {
+            border: 0;
+            margin-left: 2em !important;
+            position: relative;
+        }
+        [data-block_type="SR-XH"] {
+            cursor: auto;
+        }
     }
 }
 
-// make sure margins are normalized for supplemental windows
-[data-type="section"] {
-    margin: 2em !important;
-}
 
-// suppress "Question" in questions no longer in BX2 boxes
 [data-type="question"] {
     margin-top: 2em;
+    width: 629px;
+    text-align: justify;
     h3 {
         display: none;
     }
@@ -45,18 +76,15 @@
         margin-right: 10px;
         width: 73px;
     }
-}
-// destyle examples
-[data-block_type="EXP"] {
-    margin-left: 2em !important;
-    width: 1000px !important;
-    [data-block_type="EXP-N"] {
-	    &:hover {
-		    cursor: auto;
-		    text-decoration: none;
-	    }
+    ol {
+        list-style-type: none;
+        margin-left: 0;
+        li {
+            margin: 8px 0;
+        }
     }
 }
+
 // destyle questions
 [data-block_type="BX2-QUE-N-ri"] {
 	&:hover {
@@ -78,17 +106,29 @@
     }
 }
 
-// check the basics
-div[data-type="section"][data-block_type="CR-X-H"] {
-    [data-type="question"] {
-        [data-block_type="CR-X-NL-N-ri"] {
-	        &:hover {
-		            cursor: auto;
-		            text-decoration: none;
-	        }
-        }
+@dk-blue: #004377;
+
+// destyle questions
+[data-type="question"] {
+    [data-block_type="CR-X-NL-N-ri"],
+    [data-block_type="CR-X-NL-T-ri"] {
+        cursor: auto;
+    }
+    [data-block_type="EXR-QUE-N-ri"] {
+        color: @dk-blue;
+        position: absolute;
+        left: -2em;
+        font-weight: bold;
+        cursor: auto;
+    }
+    // question title text
+    [data-block_type="EXR-QUE-T-ri"] {
+        color: @dk-blue;
+        font-weight: bold;
+        cursor: auto;
     }
 }
+
 // exercises section
 div[data-type="section"][data-block_type="CR-X-H-v1"] {
     [data-type="question"] {
@@ -119,8 +159,4 @@ div[data-type="section"] > [data-block_type="FIGURE"] {
             // needs enhancing when PDFs available
         }
     }
-}
-/* turn off asset credits */
-[data-type="asset_source"] {
-    display: none;
 }
