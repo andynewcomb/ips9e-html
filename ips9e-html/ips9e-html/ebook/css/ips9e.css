@@ -181,7 +181,7 @@ div[data-block_type="h1"] ol[data-block_type="numbered"] > li {
   margin: 6px 0;
 }
 div[data-block_type="h1"] ol[data-block_type="numbered"] [data-block_type="MN-GL-term"] {
-  left: -330px;
+  left: -340px;
 }
 div[data-block_type="h1"] [data-block_type="UN-FIGURE"][align="left"] {
   position: absolute;
@@ -485,10 +485,6 @@ div[data-block_type="CR-X-H"] [data-type="table"] tr th.rborder {
   text-align: right;
   width: 255px;
 }
-[data-block_type="Caution icon"] {
-  left: 217px;
-  position: absolute;
-}
 /* numbered figures */
 [data-caption-compass] {
   margin-top: 1em;
@@ -542,6 +538,10 @@ div[data-block_type="CR-X-H"] [data-type="table"] tr th.rborder {
   color: #006288;
   font-family: "arial", sans-serif;
   font-weight: bold;
+  cursor: pointer;
+}
+[data-caption-compass] [data-type="figure_text"] > [data-type="caption"] span[data-block_type="FG-N-ri"]:hover {
+  text-decoration: underline;
 }
 [data-caption-compass] [data-type="figure_text"] > [data-type="caption"] span[data-block_type="FG-CAP"] {
   font-family: arial, sans-serif;
@@ -550,17 +550,6 @@ div[data-block_type="CR-X-H"] [data-type="table"] tr th.rborder {
 [data-type="asset_source"] {
   display: none;
 }
-/* for sample can likely delete/alter later */
-/*body#supp_win #manuscript > img {display: block; margin-left: auto;margin-right: auto;margin-top: 1em;} 
-body#supp_win #rightnav {display: none;}*/
-/* align left (compass doesn't matter) */
-/*[data-caption-compass][align="left"] {margin: 0;position: absolute;margin-left: -285px;width: 285px;}
-[data-caption-compass][align="left"] [data-type="figure_text"] {width: 255px;}*/
-/* figures in examples */
-/*[data-caption-compass][align="left"] {margin-left: -305px;}
-[data-block_type="EXP"] [data-caption-compass="NW"],[data-block_type="EXP"] [data-caption-compass="SW"],[data-block_type="EXP"] [data-caption-compass="W"] {margin-left: -305px;}
-[data-block_type="EXP"] [data-caption-compass] {background-color: white;}
-[data-caption-compass="S"] > [data-type="figure_text"] {margin-top: .8em;}*/
 /* def boxes */
 [data-block_type="BX1"] {
   background-color: #E9F6F7;
@@ -700,6 +689,10 @@ span[data-math^="math_"] {color: inherit;}
   color: #67003c;
   font-family: arial;
   font-weight: bold;
+  cursor: pointer;
+}
+[data-block_type="EXP"] [data-block_type="EXP-TXT-first"] [data-block_type="EXP-T-ri"]:hover {
+  text-decoration: underline;
 }
 [data-block_type="EXP"] [data-block_type="EXP-TXT-first"] p {
   position: relative;
@@ -791,7 +784,7 @@ span[data-math^="math_"] {color: inherit;}
 }
 /* use your knowledge */
 [data-block_type="EXR"] {
-  background-image: url("../asset/css/bgexampletop.png");
+  background-image: url("../asset/css/bgknowledgetop.png");
   background-position: left top;
   background-repeat: no-repeat;
   margin-left: -285px;
@@ -822,9 +815,9 @@ span[data-math^="math_"] {color: inherit;}
   display: none;
 }
 [data-block_type="EXR"] > [data-type="box_inner"] [data-block_type="EXR-H"] {
-  background-image: url("../asset/css/bgexampletitle.png");
+  background-image: url("../asset/css/bgknowledgetitle.png");
   background-repeat: repeat-y;
-  color: #004377;
+  color: #006288;
   font-family: arial, sans-serif;
   font-weight: bold;
   font-size: .9em;
@@ -845,18 +838,22 @@ span[data-math^="math_"] {color: inherit;}
   position: relative;
 }
 [data-block_type="EXR"] > [data-type="box_inner"] [data-type="question"] [data-block_type="EXR-QUE-N-ri"] {
-  color: #004377;
+  color: #006288;
   position: absolute;
   left: -2em;
   font-weight: bold;
   cursor: pointer;
 }
 [data-block_type="EXR"] > [data-type="box_inner"] [data-type="question"] [data-block_type="EXR-QUE-T-ri"] {
-  color: #004377;
+  color: #006288;
   font-weight: bold;
   cursor: pointer;
 }
 [data-block_type="EXR"] > [data-type="box_inner"] [data-type="question"] [data-block_type="EXR-QUE-NL-first"] {
+  text-align: justify;
+}
+[data-block_type="EXR"] > [data-type="box_inner"] [data-type="question"] [data-block_type="EXR-QUE-NL-first"] p {
+  margin-top: -15px;
   text-align: justify;
 }
 [data-block_type="EXR"] > [data-type="box_inner"] [data-type="question"] [data-type="table"] {
@@ -885,6 +882,9 @@ span[data-math^="math_"] {color: inherit;}
   border: 0;
 }
 /* tables */
+[data-type="table"][data-block_type="TABLE"] [data-type="table_caption"] {
+  cursor: pointer;
+}
 [data-type="table"] table tr.tborder {
   border-top: 1px solid #006288 !important;
 }
@@ -917,17 +917,57 @@ span[data-math^="math_"] {color: inherit;}
 }
 span[data_href] {
   font-weight: bold;
-  text-decoration: underline;
   cursor: pointer;
+}
+span[data_href]:hover {
+  text-decoration: underline;
 }
 /* supp wins examples */
 .supp_win button.readon_button {
   display: none;
 }
-/* temporary and can be removed */
-/*[data-block_type*="image15"] {cursor: pointer;}
-[data-block_type*="image15"]:hover {text-decoration: underline;}
-[data-block_type*="image25"] {cursor: pointer;}
-[data-block_type*="image25"]:hover {text-decoration: underline;}
-[data-block_type*="image35"] {cursor: pointer;}
-[data-block_type*="image35"]:hover {text-decoration: underline;}*/
+[data-type="question"] img[src="asset/global_images/BPSapplet-icon.jpg"] {
+  float: left;
+  margin-right: 6px;
+  margin-top: 7px;
+  width: 29px;
+}
+[data-block_type="Applet icon"] {
+  left: 217px;
+  position: absolute;
+}
+[data-block_type="Applet icon"] img[src="asset/global_images/BPSapplet-icon.jpg"] {
+  float: none;
+}
+[data-block_type="Caution icon"] {
+  left: 217px;
+  position: absolute;
+}
+img[src="asset/global_images/Gear_Icon_9e.jpg"] {
+  float: left;
+  margin-right: 6px;
+  margin-top: 7px;
+}
+/* turn on page numbering */
+#print_page_box {
+  display: block;
+}
+[data-block_type="page_start"] {
+  display: block;
+  background-color: #336699 !important;
+  border-radius: 5px !important;
+  color: white !important;
+  font-family: sans-serif !important;
+  font-size: 15px !important;
+  left: auto !important;
+  margin: 0 !important;
+  padding: 4px !important;
+  position: absolute !important;
+  text-indent: 0 !important;
+}
+[data-block_type="page_start"][data-margin-content="right"] {
+  left: 10px !important;
+}
+[data-block_type="page_start"][data-margin-content="left"] {
+  left: 10px !important;
+}

@@ -532,9 +532,13 @@
     <Content Include="ebook\asset\ch1\supp_wins\tables\table_1_1.html" />
     <Content Include="ebook\asset\ch1\supp_wins\tables\table_1_2.html" />
     <Content Include="ebook\asset\ch1\supp_wins\tables\table_1_3.html" />
+    <Content Include="ebook\asset\css\bgknowledgetitle.png" />
+    <Content Include="ebook\asset\css\bgknowledgetop.png" />
+    <Content Include="ebook\asset\global_images\BPSapplet-icon.jpg" />
     <Content Include="ebook\asset\global_images\BPScaution-icon.jpg" />
     <Content Include="ebook\asset\global_images\chapter_vertical.jpg" />
     <Content Include="ebook\asset\global_images\chap_title_underbars.jpg" />
+    <Content Include="ebook\asset\global_images\Gear_Icon_9e.jpg" />
     <Content Include="ebook\asset\pics\print_page_menu_icon.png" />
     <Content Include="ebook\asset\supp_win.css">
       <DependentUpon>supp_win.less</DependentUpon>
@@ -574,6 +578,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="xml\addDataFilename.pl" />
+    <Content Include="xml\ips9e-ch01.xml" />
     <Content Include="xml\math2js.pl" />
     <None Include="xml\xsd\digfir_manuscript.xsd">
       <SubType>Designer</SubType>

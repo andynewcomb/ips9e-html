@@ -33,7 +33,8 @@ var suppwins_Player_subtype = Player_subtype.extend({
          // in-text links
          $('span[data_href^="figure_"], [data_href^="exercise_"],[data_href^="example_"],[data_href^="table_"]').unbind(); //intext references
          // links in features
-         $('[data-block_type="h1"] [data-block_type="EXP-N"]').unbind(); //example titles
+         $('[data-block_type="h1"] [data-block_type="EXP-N"]').unbind(); //example numbers
+         $('[data-block_type="h1"] [data-block_type="EXP-T-ri"]').unbind(); //example titles
          $('[data-block_type="TABLE"] [data-type="table_caption"]').unbind(); //table captions
          $('[data-type="question"] [data-block_type="BX2-QUE-N-ri"]').unbind(); // Titles for "Now it's your turn" exercises
          $('[data-type="question"] [data-block_type="CR-X-NL-N-ri"]').unbind(); // Titles for end of chapter exercises
@@ -52,10 +53,17 @@ var suppwins_Player_subtype = Player_subtype.extend({
          //jquery to remove section links
 
          // add relative paths for inline links
-         $('span[data_href^="figure_"]').click(function() {
+         $('span[data_href^="figure_"]').click(function () {
              var filename = $(this).attr('data_href');
              var ch = filename.replace(/figure_(\d+).*/i, "$1");
              var supp_win = "../../../ch" + ch + "/supp_wins/figures/" + filename;
+             pop_content(supp_win, "1015px", "700px");
+         });
+         // add relative paths for table references in the text
+         $('span[data_href^="table_"]').click(function () {
+             var filename = $(this).attr('data_href');
+             var ch = filename.replace(/table_(\d+).*/i, "$1");
+             var supp_win = "../../../ch" + ch + "/supp_wins/tables/" + filename;
              pop_content(supp_win, "1015px", "700px");
          });
          // add links on exercise references in the text
@@ -82,7 +90,7 @@ var suppwins_Player_subtype = Player_subtype.extend({
          // adjust global images relative to supp_wins directory
          $('img[src^="asset/global_images"]').each(function () {
              var path = $(this).attr('src');
-             path = path.replace(/asset/, "../../../global_images");
+             path = path.replace(/asset/, "../../..");
              $(this).attr('src', path);
          });
 
@@ -96,8 +104,7 @@ var suppwins_Player_subtype = Player_subtype.extend({
 
 
     // IF NOT FIGURE SUPPLEMENTAL WINDOW CODE, enable click events
-         if (($('[data-type="section"] > [data-type="figure"]').length == 0) &&
-             (($('[data-type="section"] > [data-block_type="FIGURE"]').length == 0))) {
+    if ($('#manuscript.figure').length == 0) {
          // add link on the figure image
         //$('[data-caption-compass]  > .compassImg img').click(function () {
         //    var fignum = $(this).attr('src').replace(/fig_([\d_]+)/i, "$1");
@@ -120,40 +127,34 @@ var suppwins_Player_subtype = Player_subtype.extend({
         // add link on the figure image
         $('[data-type="figure"] img').click(function () {
             var filename = $(this).parent('[data-type="figure"]').attr("data-filename");
-            var supp_win = "../../" + filename;
+            var supp_win = "../figures/" + filename;
             pop_content(supp_win, "1015px", "700px");
         });
+        // Numbered Tables
+        // Number in caption of table needs linking, along with title EXCEPT in table supp wins
+        if ($('#manuscript.table').length == 0) {
+            $('[data-block_type="TABLE"] [data-type="table_caption"]').click(function () {
+                var filename = $(this).closest('[data-type="table"]').attr("data-filename");
+                var supp_win = "../tables/" + filename;
+                pop_content(supp_win, "1020px", "500px");
+            });
+        }
 
-         } else {
-             // place caption above figure image in number figure supplemental windows
-             var figImg = $('[data-type="figure"] img');
-             var figText = $('[data-block_type="FIGURE"] [data-type="figure_text"]');
-             if (figText.length > 0) {
-                 figText.insertBefore(figImg);
-             }
+    // Figure supplemental window code
+        } else {
+            // place caption above figure image in number figure supplemental windows
+            var figImg = $('[data-type="figure"] img');
+            var figText = $('[data-block_type="FIGURE"] [data-type="figure_text"]');
+            if (figText.length > 0) {
+                figText.insertBefore(figImg);
+            }
 
              var scale = 1.15;
              figImg.css('width', 'auto');
              var w = parseInt(figImg.css('width'));
              var neww = w * scale;
              figImg.css('width', neww );
-         }
-
-    
-        // EXERCISE SUPPLEMENTAL WINDOW CODE
-        // wrap in BX2 box for styling -- scc9e
-        // $('[data-type="section"][data-block_type="h1"] > [data-type="question"]').wrap('<div data-type="box" data-block_type="BX2"></div>');
-
-        // Figure supp windows
-        // size of figures in the supplemental windows should be 15% larger than main page
-            //$('[data-type="section"] > [data-type="figure"] > img').each(function() {
-            //    var scale = 1.15;
-            //    var image = $(this); //update... this will accidentally find <img> in caption too.
-            //    var natimg = document.getElementsByTagName("img")[0];
-            //    var natWidth = natimg.naturalWidth;
-            //    var w = natWidth * scale;
-            //    image.css({ width: w });
-            //});
+        }
 
      } // end initialize2
 

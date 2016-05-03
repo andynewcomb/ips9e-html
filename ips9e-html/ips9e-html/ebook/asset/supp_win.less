@@ -26,26 +26,39 @@
                 cursor: auto !important;
                 margin-left: 0;
             }
-        }    
+        }
+        span[data-block_type="FG-N-ri"] {
+            cursor: auto;
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
     &.table {
         margin: 2em;
         [data-type="section"] {
             margin: 2em !important;
+            [data-type="table"][data-block_type="TABLE"] [data-type="table_caption"] {
+                cursor: auto;
+            }
         }
     }
     &.example {
-        margin: 0;          // no room for more
         [data-type="section"] {
-            margin: 0 !important;
             [data-block_type="EXP"] {
-                margin-left: 1px !important;
-                width: 999px !important;
                 [data-block_type="EXP-N"] {
+		            cursor: auto;
 	                &:hover {
-		                cursor: auto;
 		                text-decoration: none;
 	                }
+                }
+                [data-block_type="EXP-TXT-first"] {
+                    [data-block_type="EXP-T-ri"] {
+                        cursor: auto;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
                 }
             }
         }
@@ -66,15 +79,21 @@
 
 [data-type="question"] {
     margin-top: 2em;
-    width: 629px;
-    text-align: justify;
+    width: 700px; // 629px for h1 exercises
+    text-align: left; // justify; somewhere?
+    [data-block_type^="EXR-QUE"] {
+        width: 629px;
+    }
     h3 {
         display: none;
     }
     img[src*="global_images"] {
         float: left;
         margin-right: 10px;
-        width: 73px;
+        //width: 73px;
+        &[src*="applet"] {
+            width: 29px;
+        }
     }
     ol {
         list-style-type: none;
@@ -87,9 +106,9 @@
 
 // destyle questions
 [data-block_type="BX2-QUE-N-ri"] {
+	cursor: auto;
 	&:hover {
-		    cursor: auto;
-		    text-decoration: none;
+		text-decoration: none;
 	}
 }
 
@@ -133,9 +152,9 @@
 div[data-type="section"][data-block_type="CR-X-H-v1"] {
     [data-type="question"] {
         [data-block_type="CR-X-NL-N-ri"] {
+		    cursor: auto;
 	        &:hover {
-		            cursor: auto;
-		            text-decoration: none;
+		        text-decoration: none;
 	        }
         }
     }
