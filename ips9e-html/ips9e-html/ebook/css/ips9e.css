@@ -208,11 +208,14 @@ div[data-block_type="h1"] [data-type="table"][data-block_type="TABLE"] [data-typ
 }
 div[data-block_type="h1"] [data-type="table"][data-block_type="TABLE"] [data-type="table_text"] [data-type="table_caption"] [data-block_type="TBN-N"] {
   color: white;
-  background-color: #004377;
-  padding: 2px 6px;
+  background-color: #006288;
+  background-image: url("../asset/global_images/numtablebg.jpg");
+  display: inline-block;
+  width: 112px;
+  padding-left: 12px;
 }
 div[data-block_type="h1"] [data-type="table"][data-block_type="TABLE"] [data-type="table_text"] [data-type="table_caption"] [data-block_type="TBN-T"] {
-  color: #004377;
+  color: #006288;
   padding: 2px 6px;
 }
 div[data-block_type="h1"] [data-type="table"][data-block_type="TABLE"] table {
@@ -343,11 +346,14 @@ div[data-block_type="SR-X-H"] [data-type="table"][data-block_type="TABLE"] [data
 }
 div[data-block_type="SR-X-H"] [data-type="table"][data-block_type="TABLE"] [data-type="table_text"] [data-type="table_caption"] [data-block_type="TBN-N"] {
   color: white;
-  background-color: #004377;
-  padding: 2px 6px;
+  background-color: #006288;
+  background-image: url("../asset/global_images/numtablebg.jpg");
+  display: inline-block;
+  width: 112px;
+  padding-left: 12px;
 }
 div[data-block_type="SR-X-H"] [data-type="table"][data-block_type="TABLE"] [data-type="table_text"] [data-type="table_caption"] [data-block_type="TBN-T"] {
-  color: #004377;
+  color: #006288;
   padding: 2px 6px;
 }
 div[data-block_type="SR-X-H"] [data-type="table"][data-block_type="TABLE"] table {
@@ -429,11 +435,14 @@ div[data-block_type="CR-X-H"] [data-type="table"][data-block_type="TABLE"] [data
 }
 div[data-block_type="CR-X-H"] [data-type="table"][data-block_type="TABLE"] [data-type="table_text"] [data-type="table_caption"] [data-block_type="TBN-N"] {
   color: white;
-  background-color: #004377;
-  padding: 2px 6px;
+  background-color: #006288;
+  background-image: url("../asset/global_images/numtablebg.jpg");
+  display: inline-block;
+  width: 112px;
+  padding-left: 12px;
 }
 div[data-block_type="CR-X-H"] [data-type="table"][data-block_type="TABLE"] [data-type="table_text"] [data-type="table_caption"] [data-block_type="TBN-T"] {
-  color: #004377;
+  color: #006288;
   padding: 2px 6px;
 }
 div[data-block_type="CR-X-H"] [data-type="table"][data-block_type="TABLE"] table {
@@ -752,11 +761,14 @@ span[data-math^="math_"] {color: inherit;}
 }
 [data-block_type="EXP"] [data-type="table"][data-block_type="TABLE"] [data-type="table_text"] [data-type="table_caption"] [data-block_type="TBN-N"] {
   color: white;
-  background-color: #004377;
-  padding: 2px 6px;
+  background-color: #006288;
+  background-image: url("../asset/global_images/numtablebg.jpg");
+  display: inline-block;
+  width: 112px;
+  padding-left: 12px;
 }
 [data-block_type="EXP"] [data-type="table"][data-block_type="TABLE"] [data-type="table_text"] [data-type="table_caption"] [data-block_type="TBN-T"] {
-  color: #004377;
+  color: #006288;
   padding: 2px 6px;
 }
 [data-block_type="EXP"] [data-type="table"][data-block_type="TABLE"] table {
@@ -894,6 +906,8 @@ span[data-math^="math_"] {color: inherit;}
 /* tables */
 [data-type="table"][data-block_type="TABLE"] [data-type="table_caption"] {
   cursor: pointer;
+  font-size: .8em;
+  font-weight: bold;
 }
 [data-type="table"] table tr.tborder {
   border-top: 1px solid #006288 !important;

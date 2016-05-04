@@ -234,12 +234,15 @@ div[data-block_type="h1"] {
                 // table number
                 [data-block_type="TBN-N"] {
                     color: white;
-                    background-color: @dk-blue;
-                    padding: 2px 6px;
+                    background-color: @bullet-blue;
+                    background-image:url("../asset/global_images/numtablebg.jpg");
+                    display: inline-block;
+                    width: 112px;
+                    padding-left: 12px;
                 }
                 // table title
                 [data-block_type="TBN-T"] {
-                    color: @dk-blue;
+                    color: @bullet-blue;
                     padding: 2px 6px;
                     //background-color: @lt-blue;
                 }
@@ -372,12 +375,15 @@ div[data-block_type="SR-X-H"]  {
                 // table number
                 [data-block_type="TBN-N"] {
                     color: white;
-                    background-color: @dk-blue;
-                    padding: 2px 6px;
+                    background-color: @bullet-blue;
+                    background-image:url("../asset/global_images/numtablebg.jpg");
+                    display: inline-block;
+                    width: 112px;
+                    padding-left: 12px;
                 }
                 // table title
                 [data-block_type="TBN-T"] {
-                    color: @dk-blue;
+                    color: @bullet-blue;
                     padding: 2px 6px;
                     //background-color: @lt-blue;
                 }
@@ -483,12 +489,15 @@ div[data-block_type="CR-X-H"]  {
                 // table number
                 [data-block_type="TBN-N"] {
                     color: white;
-                    background-color: @dk-blue;
-                    padding: 2px 6px;
+                    background-color: @bullet-blue;
+                    background-image:url("../asset/global_images/numtablebg.jpg");
+                    display: inline-block;
+                    width: 112px;
+                    padding-left: 12px;
                 }
                 // table title
                 [data-block_type="TBN-T"] {
-                    color: @dk-blue;
+                    color: @bullet-blue;
                     padding: 2px 6px;
                     //background-color: @lt-blue;
                 }
@@ -865,12 +874,15 @@ span[data-math^="math_"] {color: inherit;}
                 // table number
                 [data-block_type="TBN-N"] {
                     color: white;
-                    background-color: @dk-blue;
-                    padding: 2px 6px;
+                    background-color: @bullet-blue;
+                    background-image:url("../asset/global_images/numtablebg.jpg");
+                    display: inline-block;
+                    width: 112px;
+                    padding-left: 12px;
                 }
                 // table title
                 [data-block_type="TBN-T"] {
-                    color: @dk-blue;
+                    color: @bullet-blue;
                     padding: 2px 6px;
                     //background-color: @lt-blue;
                 }
@@ -1017,6 +1029,8 @@ span[data-math^="math_"] {color: inherit;}
 [data-type="table"] {
     &[data-block_type="TABLE"] [data-type="table_caption"] {
         cursor: pointer;
+        font-size:.8em;
+        font-weight:bold;
     }
     table {
 	    tr {

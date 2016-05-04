@@ -14,28 +14,28 @@
       <list id="ips9e-ch01-list-01" type="unordered" block_type="simple">
         <li id="ips9e-ch01-li-01">
           <p id="ips9e-ch01-p-03" block_type="CO-TOC-h1">
-            <link href="ips9e_ch1_2.html" target="_blank">
+            <link href="ips9e_ch1_2.html" target="_pop">
               <phrase>1.1</phrase> Data
             </link>
           </p>
         </li>
         <li id="ips9e-ch01-li-02">
           <p id="ips9e-ch01-p-04" block_type="CO-TOC-h1">
-            <link href="ips9e_ch1_5.html" target="_blank">
+            <link href="ips9e_ch1_5.html" target="_pop">
               <phrase>1.2</phrase> Displaying Distributions with Graphs
             </link>
           </p>
         </li>
         <li id="ips9e-ch01-li-03">
           <p id="ips9e-ch01-p-05" block_type="CO-TOC-h1">
-            <link href="ips9e_ch1_8.html" target="_blank">
+            <link href="ips9e_ch1_8.html" target="_pop">
               <phrase>1.3</phrase> Describing Distributions with Numbers
             </link>
           </p>
         </li>
         <li id="ips9e-ch01-li-04">
           <p id="ips9e-ch01-p-06" block_type="CO-TOC-h1">
-            <link href="ips9e_ch1_11.html" target="_blank">
+            <link href="ips9e_ch1_11.html" target="_pop">
               <phrase>1.4</phrase> Density Curves and Normal Distributions
             </link>
           </p>
@@ -49,13 +49,13 @@
       <em>Statistics is the science of learning from data.</em> Data are numerical or qualitative descriptions of the objects that we want to study. In this chapter, we will master the art of examining data.
     </p>
     <p id="ips9e-ch01-p-09" block_type="CO-TXT">
-      We begin in <link href="ips9e_ch1_2.html" target="_blank">Section 1.1</link> with some basic ideas about data. We will learn about the different types of data that are collected and how data sets are organized.
+      We begin in <link href="ips9e_ch1_2.html" target="_pop">Section 1.1</link> with some basic ideas about data. We will learn about the different types of data that are collected and how data sets are organized.
     </p>
     <p id="ips9e-ch01-p-10" block_type="CO-TXT">
-      <link href="ips9e_ch1_5.html" target="_blank">Section 1.2</link> starts our process of learning from data by looking at graphs. These visual displays give us a picture of the overall patterns in a set of data. We have excellent software tools that help us make these graphs. However, it takes a little experience and a lot of judgment to study the graphs carefully and to explain what they tell us about our data.
+      <link href="ips9e_ch1_5.html" target="_pop">Section 1.2</link> starts our process of learning from data by looking at graphs. These visual displays give us a picture of the overall patterns in a set of data. We have excellent software tools that help us make these graphs. However, it takes a little experience and a lot of judgment to study the graphs carefully and to explain what they tell us about our data.
     </p>
     <p id="ips9e-ch01-p-11" block_type="CO-TXT">
-      <link href="ips9e_ch1_8.html" target="_blank">Section 1.3</link> continues our process of learning from data by computing numerical summaries. These sets of numbers describe key characteristics of the patterns that we saw in our graphical summaries.
+      <link href="ips9e_ch1_8.html" target="_pop">Section 1.3</link> continues our process of learning from data by computing numerical summaries. These sets of numbers describe key characteristics of the patterns that we saw in our graphical summaries.
     </p>
     <p id="ips9e-ch01-p-12" block_type="CO-TXT">The final section in this chapter helps us make the transition from data summaries to statistical models that are used to draw conclusions and to make predictions. Specifically, we learn about using density curves to describe a set of data and are introduced to the Normal distributions. These distributions can be used to describe many sets of data that we will encounter. They also play a fundamental role in many of the methods of statistical analysis.</p>
   </section>
@@ -194,7 +194,7 @@
     <p id="ips9e-ch01-p-46" block_type="TXT">
       Another important part of the description of any quantitative variable is its unit of measurement. For both RegPrice and DiscPrice, the <termref term="unit of measurement">
         <strong>unit of measurement</strong>
-      </termref><phrase block_type="MN-GL-term">unit of</br>measurement</phrase> is clearly dollars. In other settings, it may not be as obvious. For example, if we were measuring heights of children, we might choose to use either inches or centimeters. The units of measurement are an important part of the description of a quantitative variable.
+      </termref><phrase block_type="MN-GL-term">unit of<br/>measurement</phrase> is clearly dollars. In other settings, it may not be as obvious. For example, if we were measuring heights of children, we might choose to use either inches or centimeters. The units of measurement are an important part of the description of a quantitative variable.
     </p>
     <p id="ips9e-ch01-p-47" block_type="level_2_title">
       <phrase block_type="h2">Key characteristics of a data set</phrase>
@@ -621,7 +621,7 @@
     <p id="ips9e-ch01-p-135" block_type="TXT-ni">
       Statistical tools and ideas help us examine data to describe their main features. This examination is called <termref term="exploratory data analysis">
         <strong>exploratory data analysis</strong>
-      </termref><phrase block_type="MN-GL-term">exploratory data analysis</phrase>. Like an explorer crossing unknown lands, we want first to simply describe what we see. Here are two basic strategies that help us organize our exploration of a set of data:
+      </termref><phrase block_type="MN-GL-term">exploratory<br/>analysis</phrase>. Like an explorer crossing unknown lands, we want first to simply describe what we see. Here are two basic strategies that help us organize our exploration of a set of data:
     </p>
     <p id="ips9e_page_9" block_type="page_start" data-margin-content="right">9</p>
     <list id="ips9e-ch01-list-13" type="unordered" block_type="bullet">
@@ -645,7 +645,7 @@
     <p id="ips9e-ch01-p-140" block_type="TXT-ni">
       The values of a categorical variable are labels for the categories, such as &#8220;yes&#8221; and &#8220;no.&#8221; The <termref term="distribution of a categorical variable">
         <strong>distribution of a categorical variable</strong></termref>
-      <phrase block_type="MN-GL-term">distribution of a categorical variable</phrase> lists the categories and gives either the <termref term="count"><strong>count</strong></termref>
+      <phrase block_type="MN-GL-term">distribution of a <br/>categorical variable</phrase> lists the categories and gives either the <termref term="count"><strong>count</strong></termref>
       <phrase block_type="MN-GL-term">count</phrase> or the <termref term="percent"><strong>percent</strong></termref>
       <phrase block_type="MN-GL-term">percent</phrase> of cases that fall in each category. An alternative to the percent is the <termref term="proportion"><strong>proportion</strong></termref>
       <phrase block_type="MN-GL-term">proportion</phrase>, the count divided by the sum of the counts. Note that the percent is simply the proportion times 100.
@@ -1506,7 +1506,7 @@
       </p>
     </box>
     <p id="ips9e-ch01-p-260" block_type="TXT">
-      In <link href="ips9e_ch1_8.html" target="_blank">Section 1.3</link>, we will learn how to describe center and spread numerically. For now, we can describe the center of a distribution by its <em>midpoint</em>, the value with roughly half the observations taking smaller values and half taking larger values. We can describe the spread of a distribution by giving the <em>smallest and largest values.</em> Stemplots and histograms display the shape of a distribution in the same way. Just imagine a stemplot turned on its side so that the larger values lie to the right.
+      In <link href="ips9e_ch1_8.html" target="_pop">Section 1.3</link>, we will learn how to describe center and spread numerically. For now, we can describe the center of a distribution by its <em>midpoint</em>, the value with roughly half the observations taking smaller values and half taking larger values. We can describe the spread of a distribution by giving the <em>smallest and largest values.</em> Stemplots and histograms display the shape of a distribution in the same way. Just imagine a stemplot turned on its side so that the larger values lie to the right.
     </p>
     <p id="ips9e-ch01-p-261" block_type="TXT">Some things to look for in describing shape are</p>
     <list id="ips9e-ch01-list-18" type="unordered" block_type="bullet">
@@ -3387,7 +3387,7 @@
       <phrase block_type="h2">Measuring center: The median</phrase>
     </p>
     <p id="ips9e-ch01-p-455" block_type="TXT-ni">
-      We used the midpoint of a distribution as an informal measure of center in <link href="ips9e_ch1_5.html" target="_blank">Section 1.2</link>. The <em>median</em> is the formal version of the midpoint, with a specific rule for calculation.
+      We used the midpoint of a distribution as an informal measure of center in <link href="ips9e_ch1_5.html" target="_pop">Section 1.2</link>. The <em>median</em> is the formal version of the midpoint, with a specific rule for calculation.
     </p>
     <box id="ips9e-ch01-box-90" numbered="false" block_type="BX1">
       <p id="ips9e-ch01-p-456" block_type="BX1-T">
@@ -3710,7 +3710,7 @@
       <phrase block_type="h2">The five-number summary and boxplots</phrase>
     </p>
     <p id="ips9e-ch01-p-518" block_type="TXT-ni">
-      In <link href="ips9e_ch1_5.html" target="_blank">Section 1.2</link>, we used the smallest and largest observations to indicate the spread of a distribution. These single observations tell us little about the distribution as a whole, but they give information about the tails of the distribution that is missing if we know only <phrase data-math="math_24"></phrase>, <em>M</em>, and <phrase data-math="math_25"></phrase>. To get a quick summary of both center and spread, use all five numbers.
+      In <link href="ips9e_ch1_5.html" target="_pop">Section 1.2</link>, we used the smallest and largest observations to indicate the spread of a distribution. These single observations tell us little about the distribution as a whole, but they give information about the tails of the distribution that is missing if we know only <phrase data-math="math_24"></phrase>, <em>M</em>, and <phrase data-math="math_25"></phrase>. To get a quick summary of both center and spread, use all five numbers.
     </p>
     <box id="ips9e-ch01-box-102" numbered="false" block_type="BX1">
       <p id="ips9e-ch01-p-519" block_type="BX1-T">THE FIVE-NUMBER SUMMARY</p>
@@ -6565,7 +6565,7 @@
         </li>
         <li id="ips9e-ch01-li-278">
           <p id="ips9e-ch01-p-1050" block_type="SR-X-QUE-NL-lvl2">
-            <phrase block_type="maker">(d)</phrase> Do you think that the data support the conventional wisdom? Explain your answer. Note that in <link href="ips9e-ch07-sec1-02" target="_blank">Section 7.2</link> we will learn formal statistical methods to answer this type of question.
+            <phrase block_type="maker">(d)</phrase> Do you think that the data support the conventional wisdom? Explain your answer. Note that in <link href="ips9e-ch07-sec1-02" target="_pop">Section 7.2</link> we will learn formal statistical methods to answer this type of question.
           </p>
         </li>
       </list>
