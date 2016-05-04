@@ -35,13 +35,20 @@
         }
     }
     &.table {
-        margin: 2em;
         [data-type="section"] {
-            margin: 2em !important;
+            margin:0;
+            width:auto;
             [data-type="table"][data-block_type="TABLE"] [data-type="table_caption"] {
                 cursor: auto;
             }
+            [data-type="table"][data-block_type="TABLE"] {
+                margin: 2em auto;            
+            }               
         }
+        [data-block_type="EXP"] {
+            background-image:none;
+        }
+
     }
     &.example {
         margin-left:-5px;
@@ -116,18 +123,7 @@
 	}
 }
 
-// destyle tables
-[data-type="section"][data-block_type="EXP"] {
-    background-image: none;
-    width: 1000px !important;
-    [data-type="table"][data-block_type="TABLE"] {
-        margin: 2em auto;
-        width: 100%;
-        table {
-            width: 100% !important;
-        }
-    }
-}
+
 
 @dk-blue: #004377;
 

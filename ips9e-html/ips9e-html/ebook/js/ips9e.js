@@ -79,7 +79,8 @@ var Player_subtype = Player_manuscript_type.extend({
         //TABLES
         // Adjust table widths according to the percentage specified in the "data-attr" attribute
 	$('div[data-type="table"]').each(function () {
-	    var twidth = $(this).attr('data-attr') * 6.75; // assuming 675px width of main content (not including page margins)
+	    var twidth = $(this).attr('data-attr') * 7.00; // assuming 675px width of main content (not including page margins)
+	    $(this).css('width', twidth);
 	    $(this).find('table').css('width', twidth);
 	});
 
