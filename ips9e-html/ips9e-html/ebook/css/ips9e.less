@@ -949,13 +949,21 @@ span[data-math^="math_"] {color: inherit;}
                 left: -2em;
                 font-weight: bold;
                 cursor: pointer;
+                z-index:1;
+                &:hover {
+                    text-decoration:underline;
+                }
             }
             // question title text
             [data-block_type="EXR-QUE-T-ri"] {
                 color: @bullet-blue;
                 font-weight: bold;
                 cursor: pointer;
+                &:hover {
+                    text-decoration:underline;
+                }
             }
+            
             [data-block_type="EXR-QUE-NL-first"] {
                 text-align: justify;
                 p {

@@ -110,6 +110,7 @@
   left: -2em;
   font-weight: bold;
   cursor: auto;
+  z-index: -1;
 }
 [data-type="question"] [data-block_type="EXR-QUE-T-ri"] {
   color: #004377;
