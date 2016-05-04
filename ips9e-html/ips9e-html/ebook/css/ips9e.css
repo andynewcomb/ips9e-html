@@ -307,6 +307,9 @@ div[data-block_type="SR-X-H"] [data-type="question"] [data-block_type="SR-X-QUE-
   font-weight: bold;
   cursor: pointer;
 }
+div[data-block_type="SR-X-H"] [data-type="question"] [data-block_type="SR-X-QUE-NL"] [data-block_type="SR-XH"]:hover {
+  text-decoration: underline;
+}
 div[data-block_type="SR-X-H"] [data-type="question"] ol[data-block_type="lower-alpha"] {
   list-style-type: none;
   margin: 8px 0;
@@ -395,6 +398,9 @@ div[data-block_type="CR-X-H"] [data-type="question"] [data-block_type="SR-X-QUE-
   color: #004377;
   font-weight: bold;
   cursor: pointer;
+}
+div[data-block_type="CR-X-H"] [data-type="question"] [data-block_type="SR-X-QUE-NL"] [data-block_type="SR-XH"]:hover {
+  text-decoration: underline;
 }
 div[data-block_type="CR-X-H"] [data-type="question"] ol[data-block_type="lower-alpha"] {
   list-style-type: none;
