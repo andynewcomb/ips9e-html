@@ -44,6 +44,7 @@
         }
     }
     &.example {
+        margin-left:-5px;
         [data-type="section"] {
             [data-block_type="EXP"] {
                 [data-block_type="EXP-N"] {
@@ -72,6 +73,9 @@
         }
         [data-block_type="SR-XH"] {
             cursor: auto;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }
@@ -139,6 +143,7 @@
         left: -2em;
         font-weight: bold;
         cursor: auto;
+        z-index:-1;
     }
     // question title text
     [data-block_type="EXR-QUE-T-ri"] {

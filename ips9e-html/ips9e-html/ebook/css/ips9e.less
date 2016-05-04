@@ -80,7 +80,7 @@ div[data-type="section"][data-block_type="chapter"] {
         position: absolute;
         left: 750px;
         top: 666px;
-        width: 300px;
+        width: 250px;
 
         h3 {
             display: none;
@@ -93,6 +93,10 @@ div[data-type="section"][data-block_type="chapter"] {
             [data-type="lh-link"] span {
                 position: absolute;
                 left: -7px;
+            }
+
+            a[data-type="lh-link"] {
+                color:#35ADB9;
             }
         }
     }
@@ -230,12 +234,15 @@ div[data-block_type="h1"] {
                 // table number
                 [data-block_type="TBN-N"] {
                     color: white;
-                    background-color: @dk-blue;
-                    padding: 2px 6px;
+                    background-color: @bullet-blue;
+                    background-image:url("../asset/global_images/numtablebg.jpg");
+                    display: inline-block;
+                    width: 112px;
+                    padding-left: 12px;
                 }
                 // table title
                 [data-block_type="TBN-T"] {
-                    color: @dk-blue;
+                    color: @bullet-blue;
                     padding: 2px 6px;
                     //background-color: @lt-blue;
                 }
@@ -314,7 +321,7 @@ div[data-block_type="SR-X-H"]  {
             color: @dk-blue;
             font-weight: bold;
             text-transform: uppercase;
-            font-family: "arial",sans-serif;
+            font-family: "arial",sans-serif;            
         }
         // "EXERCISES"
         span[data-block_type="SR-X-H"] {
@@ -337,6 +344,9 @@ div[data-block_type="SR-X-H"]  {
                 color: @dk-blue;
                 font-weight: bold;
                 cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
         ol[data-block_type="lower-alpha"] {
@@ -379,12 +389,15 @@ div[data-block_type="SR-X-H"]  {
                 // table number
                 [data-block_type="TBN-N"] {
                     color: white;
-                    background-color: @dk-blue;
-                    padding: 2px 6px;
+                    background-color: @bullet-blue;
+                    background-image:url("../asset/global_images/numtablebg.jpg");
+                    display: inline-block;
+                    width: 112px;
+                    padding-left: 12px;
                 }
                 // table title
                 [data-block_type="TBN-T"] {
-                    color: @dk-blue;
+                    color: @bullet-blue;
                     padding: 2px 6px;
                     //background-color: @lt-blue;
                 }
@@ -432,7 +445,7 @@ div[data-block_type="CR-X-H"]  {
             color: #35ADBB;
             font-weight: normal;
             text-transform: uppercase;
-            font-family: "arial",sans-serif;
+            font-family: "arial",sans-serif;            
         }
     }
     // questions
@@ -448,6 +461,9 @@ div[data-block_type="CR-X-H"]  {
                 color: @dk-blue;
                 font-weight: bold;
                 cursor: pointer;
+                &:hover {
+                   text-decoration: underline;
+                }
             }
         }
         ol[data-block_type="lower-alpha"] {
@@ -490,12 +506,15 @@ div[data-block_type="CR-X-H"]  {
                 // table number
                 [data-block_type="TBN-N"] {
                     color: white;
-                    background-color: @dk-blue;
-                    padding: 2px 6px;
+                    background-color: @bullet-blue;
+                    background-image:url("../asset/global_images/numtablebg.jpg");
+                    display: inline-block;
+                    width: 112px;
+                    padding-left: 12px;
                 }
                 // table title
                 [data-block_type="TBN-T"] {
-                    color: @dk-blue;
+                    color: @bullet-blue;
                     padding: 2px 6px;
                     //background-color: @lt-blue;
                 }
@@ -872,12 +891,15 @@ span[data-math^="math_"] {color: inherit;}
                 // table number
                 [data-block_type="TBN-N"] {
                     color: white;
-                    background-color: @dk-blue;
-                    padding: 2px 6px;
+                    background-color: @bullet-blue;
+                    background-image:url("../asset/global_images/numtablebg.jpg");
+                    display: inline-block;
+                    width: 112px;
+                    padding-left: 12px;
                 }
                 // table title
                 [data-block_type="TBN-T"] {
-                    color: @dk-blue;
+                    color: @bullet-blue;
                     padding: 2px 6px;
                     //background-color: @lt-blue;
                 }
@@ -956,13 +978,21 @@ span[data-math^="math_"] {color: inherit;}
                 left: -2em;
                 font-weight: bold;
                 cursor: pointer;
+                z-index:1;
+                &:hover {
+                    text-decoration:underline;
+                }
             }
             // question title text
             [data-block_type="EXR-QUE-T-ri"] {
                 color: @bullet-blue;
                 font-weight: bold;
                 cursor: pointer;
+                &:hover {
+                    text-decoration:underline;
+                }
             }
+            
             [data-block_type="EXR-QUE-NL-first"] {
                 text-align: justify;
                 p {
@@ -1016,6 +1046,8 @@ span[data-math^="math_"] {color: inherit;}
 [data-type="table"] {
     &[data-block_type="TABLE"] [data-type="table_caption"] {
         cursor: pointer;
+        font-size:.8em;
+        font-weight:bold;
     }
     table {
 	    tr {

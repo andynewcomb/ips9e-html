@@ -35,6 +35,9 @@
 #manuscript.table [data-type="section"] [data-type="table"][data-block_type="TABLE"] [data-type="table_caption"] {
   cursor: auto;
 }
+#manuscript.example {
+  margin-left: -5px;
+}
 #manuscript.example [data-type="section"] [data-block_type="EXP"] [data-block_type="EXP-N"] {
   cursor: auto;
 }
@@ -57,6 +60,9 @@
 }
 #manuscript.exercise [data-block_type="SR-XH"] {
   cursor: auto;
+}
+#manuscript.exercise [data-block_type="SR-XH"]:hover {
+  text-decoration: none;
 }
 [data-type="question"] {
   margin-top: 2em;
@@ -110,6 +116,7 @@
   left: -2em;
   font-weight: bold;
   cursor: auto;
+  z-index: -1;
 }
 [data-type="question"] [data-block_type="EXR-QUE-T-ri"] {
   color: #004377;
