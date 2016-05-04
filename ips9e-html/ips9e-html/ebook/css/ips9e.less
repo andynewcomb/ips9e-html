@@ -256,6 +256,17 @@ div[data-block_type="h1"] {
     [data-block_type="UL"] {
         margin: 10px 0;
     }
+    // question fill-justification only for "h1" sections
+    [data-type="question"] {
+        [data-block_type="EXR-QUE-NL-first"],
+        [data-block_type="EXR-QUE-NL-mid"],
+        [data-block_type="EXR-QUE-NL-last"] {
+            text-align: justify;
+        }
+        ol p {
+            text-align: left;
+        }
+    }
 }
 
 /* summary sections */

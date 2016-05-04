@@ -227,6 +227,14 @@ div[data-block_type="h1"] [data-type="table"][data-block_type="TABLE"] table td 
 div[data-block_type="h1"] [data-block_type="UL"] {
   margin: 10px 0;
 }
+div[data-block_type="h1"] [data-type="question"] [data-block_type="EXR-QUE-NL-first"],
+div[data-block_type="h1"] [data-type="question"] [data-block_type="EXR-QUE-NL-mid"],
+div[data-block_type="h1"] [data-type="question"] [data-block_type="EXR-QUE-NL-last"] {
+  text-align: justify;
+}
+div[data-block_type="h1"] [data-type="question"] ol p {
+  text-align: left;
+}
 /* summary sections */
 div[data-block_type="SR-H"] h2.section-title {
   font-size: 1.2em;
