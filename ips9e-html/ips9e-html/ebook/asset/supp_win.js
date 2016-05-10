@@ -106,28 +106,21 @@ var suppwins_Player_subtype = Player_subtype.extend({
     // IF NOT FIGURE SUPPLEMENTAL WINDOW CODE, enable click events
     if ($('#manuscript.figure').length == 0) {
          // add link on the figure image
-        //$('[data-caption-compass]  > .compassImg img').click(function () {
-        //    var fignum = $(this).attr('src').replace(/fig_([\d_]+)/i, "$1");
-        //    var supp_win = fignum.replace(/.*0?(\d+)_0?(\d+)\.jpg/, "../../../ch$1/supp_wins/figures/figure_$1_$2.html");
-        //    pop_content(supp_win, "1015px", "700px");
-        //});
+        $('[data-caption-compass]  > .compassImg img').click(function () {
+            var fignum = $(this).attr('src').replace(/fig_([\d_]+)/i, "$1");
+            var supp_win = fignum.replace(/.*0?(\d+)_0?(\d+)\.jpg/, "../../../ch$1/supp_wins/figures/figure_$1_$2.html");
+            pop_content(supp_win, "1015px", "700px");
+        });
         // add link on the figure image (sometimes img is not inside "compass"... occurs when caption in default place under figure)
-        //$('[data-caption-compass]  > img').click(function () {
-        //    var fignum = $(this).attr('src').replace(/fig_([\d_]+)/i, "$1");
-        //    var supp_win = fignum.replace(/.*0?(\d+)_0?(\d+)\.jpg/, "../../../ch$1/supp_wins/figures/figure_$1_$2.html");
-        //    pop_content(supp_win, "1015px", "700px");
-        //});
+        $('[data-caption-compass]  > img').click(function () {
+            var fignum = $(this).attr('src').replace(/fig_([\d_]+)/i, "$1");
+            var supp_win = fignum.replace(/.*0?(\d+)_0?(\d+)\.jpg/, "../../../ch$1/supp_wins/figures/figure_$1_$2.html");
+            pop_content(supp_win, "1015px", "700px");
+        });
         // add link on the figure number in caption
         $('[data-caption-compass] [data-block_type="FG-N-ri"]').click(function () {
             var fignum = $(this).text().replace(/FIGURE ([\d\.]+)/i, "$1");
             var supp_win = fignum.replace(/(\d+)\.(\d+)/, "../../../ch$1/supp_wins/figures/figure_$1_$2.html");
-            pop_content(supp_win, "1015px", "700px");
-        });
-        //UNNUMBERED FIGURE LINKS
-        // add link on the figure image
-        $('[data-type="figure"] img').click(function () {
-            var filename = $(this).parent('[data-type="figure"]').attr("data-filename");
-            var supp_win = "../figures/" + filename;
             pop_content(supp_win, "1015px", "700px");
         });
         // Numbered Tables

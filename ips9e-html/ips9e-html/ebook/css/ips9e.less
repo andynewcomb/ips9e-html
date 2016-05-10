@@ -37,6 +37,9 @@ p {
     margin-bottom: 0em;
     padding: 0;
 }
+// unnumbered figures won't be clickable
+div[data-block_type="UN-FIGURE"] img {cursor:default !important;}
+
 
 /* chapter opener sections */
 div[data-type="section"][data-block_type="chapter"] {

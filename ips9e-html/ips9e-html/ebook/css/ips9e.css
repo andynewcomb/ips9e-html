@@ -28,6 +28,9 @@ p {
   margin-bottom: 0em;
   padding: 0;
 }
+div[data-block_type="UN-FIGURE"] img {
+  cursor: default !important;
+}
 /* chapter opener sections */
 div[data-type="section"][data-block_type="chapter"] {
   margin: 0 299px 0 0;
