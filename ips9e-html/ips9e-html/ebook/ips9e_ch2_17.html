@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch2</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="79">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch02-sec1-06" level="1" data-print_page="136">
+<h2 class="section-title">
+<span data-type="number">79.7</span> <span data-type="title" data-title-for="ips9e-ch02-sec1-06">
+        2.6
+        Data Analysis for Two-Way Tables
+      </span>
+</h2>
+    
+    <div data-type="box" data-block_type="SP" id="ips9e-ch02-box-167"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-167"></h3>
+      <div data-block_type="SP-TXT-ni" id="ips9e-ch02-p-815"><p>When you complete this section, you will be able to:</p></div>
+      <ul data-block_type="bluebullet" id="ips9e-ch02-list-80">
+        <li><div data-block_type="SP-BL-first" id="ips9e-ch02-p-816"><p>
+            <span data-block_type="maker">•</span> Identify the row variable, the column variable, and the cells in a two-way table.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-817"><p>
+            <span data-block_type="maker">•</span> Find and interpret the joint distribution in a two-way table.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-818"><p>
+            <span data-block_type="maker">•</span> Find and interpret the marginal distributions in a two-way table.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-819"><p>
+            <span data-block_type="maker">•</span> Use the conditional distributions to describe the relationship displayed in a two-way table.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-820"><p>
+            <span data-block_type="maker">•</span> Determine the joint distribution, the marginal distributions, and the conditional distributions in a two-way table from software output.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-last" id="ips9e-ch02-p-821"><p>
+            <span data-block_type="maker">•</span> Interpret examples of Simpson’s paradox.
+          </p></div>
+        </li>
+      </ul>
+    </div></div>
+    <div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch02-box-168"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-168"></h3>
+      <div data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK" data-block_type="rl_dataset" id="ips9e-ch02-p-822"><p>
+        <span>LOOK BACK</span>
+      </p></div>
+      <div data-dataset="" data-block_type="rl_crunchit" id="ips9e-ch02-p-823"><p></p></div>
+      <div data-block_type="MN-NOT1" id="ips9e-ch02-p-824"><p>
+        quantitative and categorical variables, <span data-type="link" data-href="alias:page_3">p. 3</span>
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-825"><p>
+      When we study relationships between two variables, one of the first questions we ask is whether each variable is quantitative or categorical. For two quantitative variables, we use a scatterplot to examine the relationship, and we fit a line to the data if the relationship is approximately linear. If one of the variables is quantitative and the other is categorical, we can use the methods in <span data-type="link" data-href="ips9e-ch01.xml">Chapter 1</span> to describe the distribution of the quantitative variable for each value of the categorical variable. This leaves us with the situation where both variables are categorical. In this section, we discuss methods for studying these relationships.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-826"><p>
+      Some variables—such as sex, race, and occupation—are inherently categorical. Other categorical variables are created by grouping values of a quantitative variable into classes. Published data are often reported in grouped form to save space. To describe categorical data, we use the <em>counts</em> (frequencies) or <em>percents</em> (relative frequencies) of individuals that fall into various categories.
+    </p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-827"><p>
+      <span data-block_type="h2">The two-way table</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-828"><p>
+      A key idea in studying relationships between two variables is that both variables must be measured on the same individuals or cases. When both variables are categorical, the raw data are summarized in a <span data-type="termref" data-term="two-way table">
+        <strong>two-way table</strong>
+      </span><span data-block_type="MN-GL-term">two-way table</span> that gives counts of observations for each combination of values of the two categorical variables. Here is an example.
+    </p></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_137"><p>137</p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_33.html" id="ips9e-ch02-box-169"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-169"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-829"><p>EXAMPLE 2.33</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch02-p-830"><p>
+        <span data-block_type="EXP-T-ri">Is the calcium intake adequate?</span> Young children need calcium in their diet to support the growth of their bones. The Institute of Medicine provides guidelines for how much calcium should be consumed for people of different ages.<span data-type="termref" data-term="fn_ch2_fn23">
+          <sup>23</sup>
+        </span> One study examined whether or not a sample of children consumed an adequate amount of calcium, based on these guidelines. Because there are different requirements for children aged 5 to 10 years and for children aged 11 to 13 years of age, the children were classified into these two age groups. For each student, his or her calcium intake was classified as meeting or not meeting the requirement. There were 2029 children in the study. Here are the data:<span data-type="termref" data-term="fn_ch2_fn24">
+          <sup>24</sup>
+        </span>
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-170"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-170"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-831"><p>
+          <span>IOM</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp24603680"><p></p></div>
+      </div></div>
+      <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-17" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="75"><table><tbody>
+          <tr class="tborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="3">Two-way table for “met requirement” and age</th>
+          </tr>
+          <tr class="tborder">
+            <td> </td>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="2" class="bborder">Age (years)</th>
+          </tr>
+          <tr class="bborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">Met requirement</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">5 to 10</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">11 to 13</th>
+          </tr>
+          <tr>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">No</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">194</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">557</td>
+          </tr>
+          <tr class="bborder">
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">Yes</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">861</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">417</td>
+          </tr>
+        </tbody></table></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch02-p-832"><p>We see that 194 children aged 5 to 10 did not meet the calcium requirement, and 861 children aged 5 to 10 years met the calcium requirement.</p></div>
+    </div></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-171"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-171"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch02-p-833"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_2_113.html" id="ips9e-ch02-ques-113">
+<h3>Question
+			    <span data-type="number">79.113 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-834"><p>
+          <span data-block_type="EXR-QUE-N-ri">2.113</span> <span data-block_type="EXR-QUE-T-ri">Read the table.</span> Refer to the table in <span data-type="link" data-href="example_2_33.html">Example 2.33</span>. How many children aged 11 to 13 met the requirement? How many did not?
+        </p></div>
+      </div>
+    </div></div>
+    <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-172"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-172"></h3>
+      <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-835"><p>
+        <span>IOM</span>
+      </p></div>
+      <div data-dataset="" data-block_type="rl_crunchit" id="idp24631120"><p></p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-836"><p>
+      For the calcium requirement example, we could view age as an explanatory variable and “met requirement” as a response variable. This is why we put age in the columns (like the <em>x</em> axis in a scatterplot) and “met requirement” in the rows (like the <em>y</em> axis in a scatterplot). We call “met requirement” the <span data-type="termref" data-term="row variable">
+        <strong>row variable</strong>
+      </span><span data-block_type="MN-GL-term">row variable</span> because each horizontal row in the table describes whether or not the requirement was met. Age is the <span data-type="termref" data-term="column variable">
+        <strong>column variable</strong>
+      </span><span data-block_type="MN-GL-term">column variable</span> because each vertical column describes one age group. Each combination of values for these two variables is called a <span data-type="termref" data-term="cell">
+        <strong>cell</strong>
+      </span><span data-block_type="MN-GL-term">cell</span>. For example, the cell corresponding to children who are 5 to 10 years old and who have not met the requirement contains the number 194. This table is called a 2 × 2 table because there are two rows and two columns.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-837"><p>To describe relationships between two categorical variables, we compute different types of percents. Our job is easier if we expand the basic two-way table by adding various totals. We illustrate the idea with our calcium requirement example.</p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_34.html" id="ips9e-ch02-box-173"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-173"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-838"><p>EXAMPLE 2.34</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch02-p-839"><p>
+        <span data-block_type="EXP-T-ri">Add the margins to the table.</span> We expand the table in <span data-type="link" data-href="example_2_33.html">Example 2.33</span> by adding the totals for each row, for each column, and the total number of all the observations. Here is the result:
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-174"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-174"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-840"><p>
+          <span>IOM</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp24648240"><p></p></div>
+      </div></div>
+      <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-18" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="85"><table><tbody>
+          <tr class="tborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="4">Two-way table for “met requirement” and age</th>
+          </tr>
+          <tr class="tborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center"></th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="2" class="bborder">Age (years)</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center"></th>
+          </tr>
+          <tr class="bborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">Met requirement</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">5 to 10</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">11 to 13</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">Total</th>
+          </tr>
+          <tr>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">No</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">194</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">557</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">751</td>
+          </tr>
+          <tr class="bborder">
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">Yes</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">861</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">417</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">1278</td>
+          </tr>
+          <tr class="bborder">
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">Total</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">1055</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">974</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">2029</td>
+          </tr>
+        </tbody></table></div>
+      <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_138"><p>138</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch02-p-841"><p>In this study there were 1055 children aged 5 to 10. The total number of children who did not meet the calcium requirement is 751, and the total number of children in the study is 2029.</p></div>
+    </div></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-175"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-175"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch02-p-842"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_2_114.html" id="ips9e-ch02-ques-114">
+<h3>Question
+			    <span data-type="number">79.114 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-843"><p>
+          <span data-block_type="EXR-QUE-N-ri">2.114</span> <span data-block_type="EXR-QUE-T-ri">Read the margins of the table.</span> How many children aged 11 to 13 were subjects in the calcium requirement study? What is the total number of children who met the calcium requirement?
+        </p></div>
+      </div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-844"><p>
+      In this example, be sure that you understand how the table is obtained from the raw data. Think about a data file with one line per subject. There would be 2029 lines or records in this data set. In the two-way table, each individual is counted once and only once. As a result, the sum of the counts in the table is the total number of individuals in the data set. <em>Most errors in the use of categorical-data methods come from a misunderstanding of how these tables are constructed.</em>
+    </p></div>
+    <div data-block_type="Caution icon" id="ips9e-ch02-p-845"><p>
+      <img id="" src="images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+    </p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-846"><p>
+      <span data-block_type="h2">Joint distribution</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-847"><p>
+      We are now ready to compute some proportions that help us understand the data in a two-way table. Suppose that we are interested in the children aged 5 to 10 years who do not meet the calcium requirement. The proportion of these is simply 194 divided by 2029, or 0.0956. We would estimate that 9.56% of children in the population from which this sample was drawn are 5- to 10-year-olds who do not meet the calcium requirement. For each cell, we can compute a proportion by dividing the cell entry by the total sample size. The collection of these proportions is the <span data-type="termref" data-term="joint distribution">
+        <strong>joint distribution</strong>
+      </span><span data-block_type="MN-GL-term">joint distribution</span> of the two categorical variables.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_35.html" id="ips9e-ch02-box-176"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-176"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-848"><p>EXAMPLE 2.35</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch02-p-849"><p>
+        <span data-block_type="EXP-T-ri">The joint distribution.</span> For the calcium requirement example, the joint distribution of age “met requirement” and age is
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-177"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-177"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-850"><p>
+          <span>IOM</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp24697424"><p></p></div>
+      </div></div>
+      <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-19" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="75"><table><tbody>
+          <tr class="tborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="3">Joint distribution of “met requirement” and age</th>
+          </tr>
+          <tr class="tborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center"> </th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="2" class="bborder">Age (years)</th>
+          </tr>
+          <tr class="bborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">Met requirement</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">5 to 10</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">11 to 13</th>
+          </tr>
+          <tr>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">No</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="char">0.0956</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="char">0.2745</td>
+          </tr>
+          <tr class="bborder">
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">Yes</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="char">0.4243</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="char">0.2055</td>
+          </tr>
+        </tbody></table></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch02-p-851"><p>Because this is a distribution, the sum of the proportions should be 1. For this example the sum is 0.9999. The difference is due to roundoff error.</p></div>
+    </div></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-178"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-178"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch02-p-852"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_2_115.html" id="ips9e-ch02-ques-115">
+<h3>Question
+			    <span data-type="number">79.115 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-853"><p>
+          <span data-block_type="EXR-QUE-N-ri">2.115</span> <span data-block_type="EXR-QUE-T-ri">Explain the computation.</span> Explain how the entry for the children aged 5 to 10 who met the calcium requirement in <span data-type="link" data-href="example_2_35.html">Example 2.35</span> is computed from the table in <span data-type="link" data-href="example_2_34.html">Example 2.34</span>.
+        </p></div>
+        <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-179"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-179"></h3>
+          <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-854"><p>
+            <span>IOM</span>
+          </p></div>
+          <div data-dataset="" data-block_type="rl_crunchit" id="idp24726864"><p></p></div>
+        </div></div>
+      </div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-855"><p>How might we use the information in the joint distribution for this example? Suppose that we were to develop an outreach unit to increase the consumption of calcium. The distribution suggests that the older students should be targeted if we have to make a choice because of limited funds. Children who are 11 to 13 years old and do not meet the calcium requirement are 27.45 of the total; however, children who are 5 to 10 years old and do not meet the requirement are only 9.56 of the total. For other uses of these data, we may need to calculate different numerical summaries. Let’s look at the distribution of age.</p></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_139"><p>139</p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-856"><p>
+      <span data-block_type="h2">Marginal distributions</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-857"><p>
+      When we examine the distribution of a single variable in a two-way table, we are looking at a <span data-type="termref" data-term="marginal distribution">
+        <strong>marginal distribution</strong>
+      </span><span data-block_type="MN-GL-term">marginal distribution</span>. There are two marginal distributions, one for each categorical variable in the two-way table. They are very easy to compute.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_36.html" id="ips9e-ch02-box-180"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-180"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-858"><p>EXAMPLE 2.36</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch02-p-859"><p>
+        <span data-block_type="EXP-T-ri">The marginal distribution of age.</span> Look at the table in <span data-type="link" data-href="example_2_34.html">Example 2.34</span>. The total numbers of children aged 5 to 10 and children aged 11 to 13 are given in the bottom row, labeled “Total.” Our sample has 1055 children aged 5 to 10 and 974 children aged 11 to 13. To find the marginal distribution of age, we simply divide these numbers by the total sample size, 2029. The marginal distribution of age is
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-181"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-181"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-860"><p>
+          <span>IOM</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp24743920"><p></p></div>
+      </div></div>
+      <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-20" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="65"><table><tbody>
+          <tr class="tborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="3">Marginal distribution of age</th>
+          </tr>
+          <tr class="tborder">
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center"> </td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">
+              <strong>5 to 10</strong>
+            </td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">
+              <strong>11 to 13</strong>
+            </td>
+          </tr>
+          <tr class="tborder">
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">Proportion</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">0.52</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">0.48</td>
+          </tr>
+        </tbody></table></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch02-p-861"><p>Note that the proportions sum to 1; there is no roundoff error.</p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-862"><p>Often, we prefer to use percents rather than proportions. Here is the marginal distribution of age described with percents:</p></div>
+    <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-21" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="65"><table><tbody>
+        <tr class="tborder">
+          <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="3">Marginal distribution of age</th>
+        </tr>
+        <tr class="tborder">
+          <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center"> </td>
+          <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">
+            <strong>5 to 10</strong>
+          </td>
+          <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">
+            <strong>11 to 13</strong>
+          </td>
+        </tr>
+        <tr class="tborder">
+          <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">Percent</td>
+          <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">52%</td>
+          <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">48%</td>
+        </tr>
+      </tbody></table></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-863"><p>Which form do you prefer?</p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-864"><p>The percent of children in each age group is approximately the same. This is interesting because the first category includes six ages (5, 6, 7, 8, 9, and 10); whereas the second includes only three ages (11, 12, and 13). Recall that the age categories were chosen in this way because the Institute of Medicine defined the calcium requirement differently for these age groups. In this study, the children were selected from grades 4, 5, and 6. The distribution of ages within these grades explains the marginal distribution of age for our sample.</p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-865"><p>The other marginal distribution for this example is the distribution of “met requirement.”</p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_37.html" id="ips9e-ch02-box-182"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-182"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-866"><p>EXAMPLE 2.37</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch02-p-867"><p>
+        <span data-block_type="EXP-T-ri">The marginal distribution of “met requirement.”</span> Here is the marginal distribution of “met requirement,” in percents:
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-183"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-183"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-868"><p>
+          <span>IOM</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp24781744"><p></p></div>
+      </div></div>
+      <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-22" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="65"><table><tbody>
+          <tr class="tborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="3">Marginal distribution of “met requirement”</th>
+          </tr>
+          <tr class="tborder">
+            <td> </td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">
+              <strong>No</strong>
+            </td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">
+              <strong>Yes</strong>
+            </td>
+          </tr>
+          <tr class="tborder">
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">Percent</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">37.01%</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">62.99%</td>
+          </tr>
+        </tbody></table></div>
+    </div></div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_140"><p>140</p></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-184"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-184"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch02-p-869"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_2_116.html" id="ips9e-ch02-ques-116">
+<h3>Question
+			    <span data-type="number">79.116 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-870"><p>
+          <span data-block_type="EXR-QUE-N-ri">2.116</span> <span data-block_type="EXR-QUE-T-ri">Explain the marginal distribution.</span> Explain how the marginal distribution of “met requirement” given in <span data-type="link" data-href="example_2_37.html">Example 2.37</span> is computed from the entries in the table given in <span data-type="link" data-href="example_2_34.html">Example 2.34</span>.
+        </p></div>
+      </div>
+    </div></div>
+    <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-185"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-185"></h3>
+      <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-871"><p>
+        <span>IOM</span>
+      </p></div>
+      <div data-dataset="" data-block_type="rl_crunchit" id="idp24805312"><p></p></div>
+    </div></div>
+    <div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch02-box-186"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-186"></h3>
+      <div data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK" data-block_type="rl_dataset" id="ips9e-ch02-p-872"><p>
+        <span>LOOK BACK</span>
+      </p></div>
+      <div data-dataset="" data-block_type="rl_crunchit" id="ips9e-ch02-p-873"><p></p></div>
+      <div data-block_type="MN-NOT1" id="ips9e-ch02-p-874"><p>
+        bar graphs and pie charts, <span data-type="link" data-href="alias:page_9">p. 9</span>
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-875"><p>Each marginal distribution from a two-way table is a distribution for a single categorical variable. We can use a bar graph or a pie chart to display such a distribution. For our two-way table, we will be content with numerical summaries: for example, 52% of the children are aged 5 to 10, and 37% of the children are not meeting their calcium requirement. When we have more rows or columns, the graphical displays are particularly useful.</p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-876"><p>
+      <span data-block_type="h2">Describing relations in two-way tables</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-877"><p>
+      The table in <span data-type="link" data-href="example_2_34.html">Example 2.34</span> contains much more information than the two marginal distributions of age alone and “met requirement” alone. We need to do a little more work to examine the relationship. <em>Relationships among categorical variables are described by calculating appropriate percents from the counts given.</em> What percents do you think we should use to describe the relationship between age and meeting the calcium requirement?
+    </p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_38.html" id="ips9e-ch02-box-187"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-187"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-878"><p>EXAMPLE 2.38</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-879"><p>
+        <span data-block_type="EXP-T-ri">Meeting the calcium requirement for children aged 5 to 10.</span> What percent of the children aged 5 to 10 in our sample met the calcium requirement? This is the count of the children who are 5 to 10 years old and who met the calcium requirement as a percent of the number of children who are 5 to 10 years old:
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-188"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-188"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-880"><p>
+          <span>IOM</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp24824032"><p></p></div>
+      </div></div>
+      <div data-block_type="EQ" id="ips9e-ch02-p-881"><p>
+        <span data-math="math_51"></span>
+      </p></div>
+    </div></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-189"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-189"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch02-p-882"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_2_117.html" id="ips9e-ch02-ques-117">
+<h3>Question
+			    <span data-type="number">79.117 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-883"><p>
+          <span data-block_type="EXR-QUE-N-ri">2.117</span> <span data-block_type="EXR-QUE-T-ri">Find the percent.</span> Refer to the table in <span data-type="link" data-href="example_2_34.html">Example 2.34</span> (page 137). Show that the percent of children 11 to 13 years old who met the calcium requirement is 43%.
+        </p></div>
+      </div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-190"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-190"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-884"><p>
+          <span>IOM</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp24835200"><p></p></div>
+      </div></div>
+    </div></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-885"><p>
+      <span data-block_type="h2">Conditional distributions</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-886"><p>
+      In <span data-type="link" data-href="example_2_38.html">Example 2.38</span>, we looked at the children aged 5 to 10 alone and examined the distribution of the other categorical variable, “met requirement.” Another way to say this is that we <em>conditioned</em> on the value of age, 5 to 10 years old. Similarly, we can condition on the value of age being 11 to 13 years old. When we condition on the value of one variable and calculate the distribution of the other variable, we obtain a <span data-type="termref" data-term="conditional distribution">
+        <strong>conditional distribution</strong>
+      </span><span data-block_type="MN-GL-term">conditional distribution</span>. Note that in <span data-type="link" data-href="example_2_38.html">Example 2.38</span>, we calculated only the percent for children aged 5 to 10 years. The complete conditional distribution gives the proportions or percents for all possible values of the conditioning variable.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_39.html" id="ips9e-ch02-box-191"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-191"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-887"><p>EXAMPLE 2.39</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-888"><p>
+        <span data-block_type="EXP-T-ri">Conditional distribution of “met requirement” for children aged 5 to 10.</span> For children aged 5 to 10 years, the conditional distribution of the “met requirement” variable in terms of percents is
+      </p></div>
+      <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_141"><p>141</p></div>
+      <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-23" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="55"><table><tbody>
+          <tr class="tborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="3">
+              Conditional distribution of “met<br>requirement” for children aged 5 to 10
+            </th>
+          </tr>
+          <tr class="tborder">
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">
+              <strong>No</strong>
+            </td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">
+              <strong>Yes</strong>
+            </td>
+          </tr>
+          <tr class="tborder">
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">Percent</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">18.39%</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">81.61%</td>
+          </tr>
+        </tbody></table></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-192"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-192"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-889"><p>
+          <span>IOM</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp15425760"><p></p></div>
+      </div></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch02-p-890"><p>Note that we have included the percents for both of the possible values, Yes and No, of the “met requirement” variable. These percents sum to 100%.</p></div>
+    </div></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-193"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-193"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch02-p-891"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_2_118.html" id="ips9e-ch02-ques-118">
+<h3>Question
+			    <span data-type="number">79.118 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-892"><p>
+          <span data-block_type="EXR-QUE-N-ri">2.118</span> <span data-block_type="EXR-QUE-T-ri">A conditional distribution.</span> Perform the calculations to show that the conditional distribution of “met requirement” for children aged 11 to 13 years is
+        </p></div>
+        <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-24" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="60"><table><tbody>
+            <tr class="tborder">
+              <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="3">
+                Conditional distribution of “met requirement”<br>for children aged 11 to 13
+              </th>
+            </tr>
+            <tr class="tborder">
+              <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">
+                <strong>No</strong>
+              </td>
+              <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">
+                <strong>Yes</strong>
+              </td>
+            </tr>
+            <tr class="tborder">
+              <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">Percent</td>
+              <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">57.19%</td>
+              <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center" class="bborder">42.81%</td>
+            </tr>
+          </tbody></table></div>
+        <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-194"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-194"></h3>
+          <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-893"><p>
+            <span>IOM</span>
+          </p></div>
+          <div data-dataset="" data-block_type="rl_crunchit" id="idp15447552"><p></p></div>
+        </div></div>
+      </div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-894"><p>
+      Comparing the conditional distributions (Example 2.39 and <span data-type="link" data-href="exercise_2_118.html">Exercise 2.118</span>) reveals the nature of the association between age and meeting the calcium requirement. In this set of data, the older children are more likely to fail to meet the calcium requirement.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-895"><p>
+      Bar graphs can help us to see relationships between two categorical variables. No single graph (such as a scatterplot) portrays the form of the relationship between categorical variables, and no single numerical measure (such as the correlation) summarizes the strength of an association. Bar graphs are flexible enough to be helpful, but you must think about what comparisons you want to display. For numerical measures, we must rely on well-chosen percents or on more advanced statistical methods.<span data-type="termref" data-term="fn_ch2_fn25">
+        <sup>25</sup>
+      </span>
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-896"><p>
+      <em>A two-way table contains a great deal of information in compact form. Making that information clear almost always requires finding percents. You must decide which percents you need.</em> Of course, we prefer to use software to compute the joint, marginal, and conditional distributions.
+    </p></div>
+    <div data-block_type="Caution icon" id="ips9e-ch02-p-897"><p>
+      <img id="" src="images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+    </p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_40.html" id="ips9e-ch02-box-195"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-195"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-898"><p>EXAMPLE 2.40</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-899"><p>
+        <span data-block_type="EXP-T-ri">Software output.</span> <span data-type="link" data-href="figure_2_28.html">Figure 2.28</span> gives computer output for the data in <span data-type="link" data-href="example_2_33.html">Example 2.33</span> using Minitab, SPSS, and JMP. There are minor variations among software packages, but these outputs are typical of what is usually produced. Each cell in the 2 × 2 table has four entries. These are the count (the number of observations in the cell), the conditional distributions for rows and columns, and the joint distribution. Note that all of these are expressed as percents rather than proportions. Marginal totals and distributions are given in the rightmost column and the bottom row.
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-196"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-196"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="IOM" data-block_type="rl_dataset" id="ips9e-ch02-p-900"><p>
+          <span>IOM</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp15465872"><p></p></div>
+      </div></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-901"><p>
+      Most software packages order the row and column labels numerically or alphabetically. In general, it is better to use words rather than numbers for the column labels. This sometimes involves some additional work, but it avoids the kind of confusion that can result when you forget the real values associated with each numerical value. You should verify that the entries in <span data-type="link" data-href="figure_2_28.html">Figure 2.28</span> correspond to the calculations that we performed in <span data-type="link" data-href="example_2_34.html">Examples 2.34</span> through <span data-type="link" data-href="example_2_39.html">2.39</span>. In addition, verify the calculations for the conditional distributions of age for each value of “met requirement.”
+    </p></div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_142"><p>142</p></div>
+    <div data-type="figure" data-caption-compass="NW" data-filename="figure_2_28.html" data-figure-id="ips9e-ch02-fig-28" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+      
+      <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_28a.jpg" data-figure-id="ips9e-ch02-fig-28" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_28b.jpg" data-figure-id="ips9e-ch02-fig-28" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_28c.jpg" data-figure-id="ips9e-ch02-fig-28" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 79.28: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 2.28</span>
+        <span data-block_type="FG-CAP">
+          Computer output for the calcium requirement study, <span data-type="link" data-href="example_2_40.html">Example 2.40</span>: (a) Minitab; (b) SPSS; (c) JMP.
+        </span>
+      </span>
+</div>
+    </div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_143"><p>143</p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-902"><p>
+      The JMP output in <span data-type="link" data-href="figure_2_28.html">Figure 2.28</span> includes a graphical display of the data called a <span data-type="termref" data-term="mosaic plot">
+        <strong>mosaic plot</strong>
+      </span><span data-block_type="MN-GL-term">mosaic plot</span>. The sizes of the four boxes display the joint distribution. The narrow bar to the right shows the marginal distribution of Met and the widths of the vertical bars show the marginal distribution of age. The conditional distribution of Met for each Age is represented in each of these vertical bars by the heights of the blue and red sections. Notice that they always add to one.
+    </p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-903"><p>
+      <span data-block_type="h2">Simpson’s paradox</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-904"><p>As is the case with quantitative variables, the effects of lurking variables can strongly influence relationships between two categorical variables. Here is an example that demonstrates the surprises that can await the unsuspecting consumer of data.</p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_41.html" id="ips9e-ch02-box-197"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-197"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-905"><p>EXAMPLE 2.41</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-906"><p>
+        <span data-block_type="EXP-T-ri">Which customer service representative is better?</span> A customer service center has a goal of resolving customer questions in 10 minutes or less. Here are the records for two representatives:
+      </p></div>
+      <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_144"><p>144</p></div>
+      <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-25" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="50"><table><tbody>
+          <tr class="tborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center"></th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="2" class="bborder">Representative</th>
+          </tr>
+          <tr class="bborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">Goal met</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">Alexis</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">Peyton</th>
+          </tr>
+          <tr>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">Yes</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">172</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">118</td>
+          </tr>
+          <tr class="bborder">
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">No</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">28</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">82</td>
+          </tr>
+          <tr class="bborder">
+            <td data-block_type="CR-X-QUE-NL-TB1-TXT" align="center">Total</td>
+            <td data-block_type="CR-X-QUE-NL-TB1-TXT" align="center">200</td>
+            <td data-block_type="CR-X-QUE-NL-TB1-TXT" align="center">200</td>
+          </tr>
+        </tbody></table></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-198"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-198"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="CUSTSER" data-block_type="rl_dataset" id="ips9e-ch02-p-907"><p>
+          <span>CUSTSER</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp15515520"><p></p></div>
+      </div></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch02-p-908"><p>Alexis has met the goal 172 times out of 200, a success rate of 86%. For Peyton, the success rate is 118 out of 200, or 59%. Alexis clearly has the better success rate.</p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-909"><p>Let’s look at the data in a little more detail. The data summarized come from two different weeks in the year.</p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_42.html" id="ips9e-ch02-box-199"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-199"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-910"><p>EXAMPLE 2.42</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-911"><p>
+        <span data-block_type="EXP-T-ri">Look at the data more carefully.</span> Here are the counts broken down by week:
+      </p></div>
+      <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-26" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="90"><table><tbody>
+          <tr class="tborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center"> </th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="2" class="bborder">Week 1</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center" colspan="2" class="bborder">Week 2</th>
+          </tr>
+          <tr class="bborder">
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">Goal met</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">Alexis</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">Peyton</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">Alexis</th>
+            <th data-block_type="CR-X-QUE-NL-TB1-COLHD" align="center">Peyton</th>
+          </tr>
+          <tr>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">Yes</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">162</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">19</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">10</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">99</td>
+          </tr>
+          <tr class="bborder">
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">No</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">18</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">1</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">10</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">81</td>
+          </tr>
+          <tr class="bborder">
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">Total</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">180</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">20</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">20</td>
+            <td data-block_type="SR-X-QUE-NL-TB1-TXT" align="center">180</td>
+          </tr>
+        </tbody></table></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-200"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-200"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="CUSTSER" data-block_type="rl_dataset" id="ips9e-ch02-p-912"><p>
+          <span>CUSTSER</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp15552944"><p></p></div>
+      </div></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch02-p-913"><p>For Week 1, Alexis met the goal 90% of the time (162/180), while Peyton met the goal 95% of the time (19/20). Peyton had the better performance in Week 1. What about Week 2? Here, Alexis met the goal 50% of the time (10/20), while the success rate for Peyton was 55% (99/180). Peyton again had the better performance. How does this analysis compare with the analysis that combined the counts for the two weeks? That analysis clearly showed that Alexis had the better performance, 86% versus 59%.</p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-914"><p>These results can be explained by a lurking variable, Week. The first week was during a period when the product had been in use for several months. Most of the calls to the customer service center concerned problems that had been encountered before. The representatives were trained to answer these questions and usually had no trouble in meeting the goal of resolving the problems quickly. On the other hand, the second week occurred shortly after the release of a new version of the product. Most of the calls during this week concerned new problems that the representatives had not yet encountered. Many more of these questions took longer than the 10-minute goal to resolve.</p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-915"><p>Look at the totals in the bottom row of the detailed table. During the first week, when calls were easy to resolve, Alexis handled 180 calls and Peyton handled 20. The situation was exactly the opposite during the second week, when the calls were difficult to resolve. There were 20 calls for Alexis and 180 for Peyton.</p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-916"><p>
+      The original two-way table, which did not take account of week, was misleading. This example illustrates <em>Simpson’s paradox.</em>
+    </p></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_145"><p>145</p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-201"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-201"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch02-p-917"><p>SIMPSON’S PARADOX</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-918"><p>
+        An association or comparison that holds for all of several groups can reverse direction when the data are combined to form a single group. This reversal is called <strong>Simpson’s paradox</strong>.
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-919"><p>
+      The lurking variables in our Simpson’s paradox example, Week and problem difficulty, are categorical. That is, they break the observations into groups by workweek. <em>Simpson’s paradox is an extreme form of the fact that observed associations can be misleading when there are lurking variables.</em>
+    </p></div>
+    <div data-block_type="Caution icon" id="ips9e-ch02-p-920"><p>
+      <img id="" src="images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-921"><p>
+      The data in <span data-type="link" data-href="example_2_42.html">Example 2.42</span> are given in a <span data-type="termref" data-term="three-way table">
+        <strong>three-way table</strong>
+      </span><span data-block_type="MN-GL-term">three-way table</span> that reports counts for each combination of three categorical variables: week, representative, and whether or not the goal was met. In our example, we constructed the three-way table by constructing two two-way tables for representative by goal, one for each week. The original table in <span data-type="link" data-href="example_2_41.html">Example 2.41</span> can be obtained by adding the corresponding counts for these two tables. This process is called <span data-type="termref" data-term="aggregating">
+        <strong>aggregating</strong>
+      </span><span data-block_type="MN-GL-term">aggregation</span> the data. When we aggregated data in <span data-type="link" data-href="example_2_41.html">Example 2.41</span>, we ignored the variable week, which then became a lurking variable. <em>Conclusions that seem obvious when we look only at aggregated data can become quite different when the data are examined in more detail.</em>
+    </p></div>
+    <div data-block_type="Caution icon" id="ips9e-ch02-p-922"><p>
+      <img id="" src="images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+    </p></div>
+  </div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch2.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('57325eed757a2ef770000001');
+});
+    //-->
+</script>
+</body>
+</html>
+

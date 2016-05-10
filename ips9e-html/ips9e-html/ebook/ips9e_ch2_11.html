@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch2</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="79">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch02-sec1-04" level="1" data-print_page="107">
+<h2 class="section-title">
+<span data-type="number">79.5</span> <span data-type="title" data-title-for="ips9e-ch02-sec1-04">
+        2.4
+        Least-Squares Regression
+      </span>
+</h2>
+    
+    <div data-type="box" data-block_type="SP" id="ips9e-ch02-box-91"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-91"></h3>
+      <div data-block_type="SP-TXT-ni" id="ips9e-ch02-p-405"><p>When you complete this section, you will be able to:</p></div>
+      <ul data-block_type="bluebullet" id="ips9e-ch02-list-47">
+        <li><div data-block_type="SP-BL-first" id="ips9e-ch02-p-406"><p>
+            <span data-block_type="maker">•</span> Draw a straight line on a scatterplot of a set of data, given the equation of the line.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-407"><p>
+            <span data-block_type="maker">•</span> Predict a value of the response variable <em>y</em> for a given value of the explanatory variable <em>x</em> using a regression equation.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-408"><p>
+            <span data-block_type="maker">•</span> Explain the meaning of the term <em>least squares</em>.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-409"><p>
+            <span data-block_type="maker">•</span> Calculate the equation of a least-squares regression line from the means and standard deviations of the explanatory and response variables and their correlation.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-410"><p>
+            <span data-block_type="maker">•</span> Read the output of statistical software to find the equation of the least-squares regression line and the value of <em>r</em><sup>2</sup>.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-last" id="ips9e-ch02-p-411"><p>
+            <span data-block_type="maker">•</span> Explain the meaning of <em>r</em><sup>2</sup> in the regression setting.
+          </p></div>
+        </li>
+      </ul>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-412"><p>
+      Correlation measures the direction and strength of the linear (straight-line) relationship between two quantitative variables. If a scatterplot shows a linear relationship, we would like to summarize this overall pattern by drawing a line on the scatterplot. A <em>regression line</em> summarizes the relationship between two variables, but only in a specific setting: when one of the variables helps explain or predict the other. That is, regression describes a relationship between an explanatory variable and a response variable.
+    </p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-92"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-92"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch02-p-413"><p>REGRESSION LINE</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-414"><p>
+        A <strong>regression line</strong> is a straight line that describes how a response variable <em>y</em> changes as an explanatory variable <em>x</em> changes. We often use a regression line to <strong>predict</strong> the value of <em>y</em> for a given value of <em>x</em>. Regression, unlike correlation, requires that we have an explanatory variable and a response variable.
+      </p></div>
+    </div></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_19.html" id="ips9e-ch02-box-93"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-93"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-415"><p>EXAMPLE 2.19</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-416"><p>
+        <span data-block_type="EXP-T-ri">Fidgeting and fat gain.</span> Does fidgeting keep you slim? Some people don’t gain weight even when they overeat. Perhaps fidgeting and other “nonexercise activity” (NEA) explains why—the body might spontaneously increase nonexercise activity when fed more. Researchers deliberately overfed 16 healthy young adults for eight weeks. They measured fat gain (in kilograms) and, as an explanatory variable, increase in energy use (in calories) from activity other than deliberate exercise—fidgeting, daily living, and the like. Here are the data:<span data-type="termref" data-term="fn_ch2_fn17">
+          <sup>17</sup>
+        </span>
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-94"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-94"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET" data-block_type="rl_dataset" id="ips9e-ch02-p-417"><p>
+          <span>FIDGET</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp14997376"><p></p></div>
+      </div></div>
+      <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_108"><p>108</p></div>
+      <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-07" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="100"><table><tbody>
+          <tr class="tborder">
+            <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">NEA increase (cal)</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">−94</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">−57</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">−29</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">135</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">143</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">151</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">245</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">355</td>
+          </tr>
+          <tr>
+            <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Fat gain (kg)</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">4.2</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">3.0</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">3.7</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">2.7</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">3.2</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">3.6</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">2.4</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">1.3</td>
+          </tr>
+          <tr class="tborder">
+            <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">NEA increase (cal)</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">392</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">473</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">486</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">535</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">571</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">580</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">620</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">690</td>
+          </tr>
+          <tr class="bborder">
+            <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Fat gain (kg)</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">3.8</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">1.7</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">1.6</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">2.2</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">1.0</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">0.4</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">2.3</td>
+            <td data-block_type="EXP-TB1-TXT" align="center">1.1</td>
+          </tr>
+        </tbody></table></div>
+      <div data-block_type="EXP-last" id="ips9e-ch02-p-418"><p>
+        <span data-type="link" data-href="figure_2_16.html">Figure 2.16</span> is a scatterplot of these data. The plot shows a moderately strong negative linear association with no outliers. The correlation is <em>r</em> = −0.7786. People with larger increases in nonexercise activity do indeed gain less fat. A line drawn through the points will describe the overall pattern well.
+      </p></div>
+      <div data-type="figure" data-caption-compass="S" data-filename="figure_2_16.html" data-figure-id="ips9e-ch02-fig-16" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+        
+        <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_16.jpg" data-figure-id="ips9e-ch02-fig-16" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+        <div data-type="figure_text">
+<span data-type="number">Figure 79.16: </span><span data-type="caption">
+          <span data-block_type="FG-N-ri">Figure 2.16</span>
+          <span data-block_type="FG-CAP">
+            Fat gain after eight weeks of overeating plotted against the increase in nonexercise activity over the same period, <span data-type="link" data-href="example_2_19.html">Example 2.19</span>.
+          </span>
+        </span>
+</div>
+      </div>
+    </div></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-419"><p>
+      <span data-block_type="h2">Fitting a line to data</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-420"><p>
+      When a scatterplot displays a linear pattern, we can describe the overall pattern by drawing a straight line through the points. Of course, no straight line passes exactly through all the points. <span data-type="termref" data-term="Fitting a line">
+        <strong>Fitting a line</strong>
+      </span><span data-block_type="MN-GL-term">fitting a line</span> to data means drawing a line that comes as close as possible to the points. The equation of a line fitted to the data gives a concise description of the relationship between the response variable <em>y</em> and the explanatory variable <em>x</em>. It is the numerical summary that supports the scatterplot, our graphical summary.
+    </p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-95"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-95"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch02-p-421"><p>STRAIGHT LINES</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-422"><p>
+        Suppose that <em>y</em> is a response variable (plotted on the vertical axis) and <em>x</em> is an explanatory variable (plotted on the horizontal axis). A straight line relating <em>y</em> to <em>x</em> has an equation of the form
+      </p></div>
+      <div data-block_type="BX1-EQ" id="ips9e-ch02-p-423"><p>
+        <em>y</em> = <em>b</em><sub>0</sub> + <em>b</em><sub>1</sub><em>x</em>
+      </p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch02-p-424"><p>
+        In this equation, <em>b</em><sub>1</sub> is the <strong>slope</strong>, the amount by which <em>y</em> changes when <em>x</em> increases by one unit. The number <em>b</em><sub>0</sub> is the <strong>intercept</strong>, the value of <em>y</em> when <em>x</em> = 0.
+      </p></div>
+    </div></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_109"><p>109</p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-425"><p>
+      In practice, we will use software to obtain values of <em>b</em><sub>0</sub> and <em>b</em><sub>1</sub> for a given set of data.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_20.html" id="ips9e-ch02-box-96"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-96"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-426"><p>EXAMPLE 2.20</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-427"><p>
+        <span data-block_type="EXP-T-ri">Regression line for fat gain.</span> Any straight line describing the nonexercise activity data has the form
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-428"><p>
+        fat gain = <em>b</em><sub>0</sub> + (b<sub>1</sub> × NEA increase)
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-97"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-97"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET" data-block_type="rl_dataset" id="ips9e-ch02-p-429"><p>
+          <span>FIDGET</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp15083248"><p></p></div>
+      </div></div>
+      <div data-block_type="EXP-last" id="ips9e-ch02-p-430"><p>
+        In <span data-type="link" data-href="figure_2_17.html">Figure 2.17</span>, we have drawn the regression line with the equation
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-431"><p>fat gain = 3.505 − (0.00344 × NEA increase)</p></div>
+      <div data-type="figure" data-caption-compass="S" data-filename="figure_2_17.html" data-figure-id="ips9e-ch02-fig-17" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+        
+        <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_17.jpg" data-figure-id="ips9e-ch02-fig-17" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+        <div data-type="figure_text">
+<span data-type="number">Figure 79.17: </span><span data-type="caption">
+          <span data-block_type="FG-N-ri">Figure 2.17</span>
+          <span data-block_type="FG-CAP">
+            A regression line fitted to the nonexercise activity data and used to predict fat gain for an NEA increase of 400 calories, <span data-type="link" data-href="example_2_20.html">Examples 2.20</span> and <span data-type="link" data-href="example_2_21.html">2.21</span>.
+          </span>
+        </span>
+</div>
+      </div>
+      <div data-block_type="EXP-last" id="ips9e-ch02-p-432"><p>
+        The figure shows that this line fits the data well. The slope <em>b</em><sub>1</sub> = −0.00344 tells us that fat gained goes down by 0.00344 kilogram for each added calorie of NEA increase.
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-433"><p>
+      The slope <em>b</em><sub>1</sub> of a line <em>y</em> = <em>b</em><sub>0</sub> + <em>b</em><sub>1</sub><em>x</em> is the <em>average chang</em>e in the response <em>y</em> as the explanatory variable <em>x</em> changes. The slope of a regression line is an important numerical description of the relationship between the two variables. For <span data-type="link" data-href="example_2_20.html">Example 2.20</span>, the intercept, <em>b</em><sub>0</sub> = 3.505 kilograms. This value is the estimated fat gain if NEA does not change. When we substitute the value zero for the NEA increase, the regression equation gives 3.505 (the intercept) as the predicted value of the fat gain.
+    </p></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-98"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-98"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch02-p-434"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_2_61.html" id="ips9e-ch02-ques-61">
+<h3>Question
+			    <span data-type="number">79.61 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first-1" id="ips9e-ch02-p-435"><p>
+          <span data-block_type="EXR-QUE-N-ri">2.61</span> <span data-block_type="EXR-QUE-T-ri">Plot the line.</span> Make a plot of the data in <span data-type="link" data-href="example_2_19.html">Example 2.19</span> and plot the line
+        </p></div>
+        <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-99"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-99"></h3>
+          <div data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET" data-block_type="rl_dataset" id="ips9e-ch02-p-436"><p>
+            <span>FIDGET</span>
+          </p></div>
+          <div data-dataset="" data-block_type="rl_crunchit" id="idp15112352"><p></p></div>
+        </div></div>
+        <div data-block_type="EXP-EQ" id="ips9e-ch02-p-437"><p>fat gain = 4.505 − (0.00344 × NEA increase)</p></div>
+        <div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch02-p-438"><p>on your sketch. Explain why this line does not give a good fit to the data.</p></div>
+      </div>
+    </div></div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_110"><p>110</p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-439"><p>
+      <span data-block_type="h2">Prediction</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-440"><p>
+      We can use a regression line to <span data-type="termref" data-term="predict">
+        <strong>predict</strong>
+      </span><span data-block_type="MN-GL-term">prediction</span> the response <em>y</em> for a specific value of the explanatory variable <em>x</em>. We can interpret the prediction as the <em>average</em> value of <em>y</em> corresponding to a collection of cases at the particular value of <em>x</em> or as our best guess at the value of <em>y</em> for an <em>individual</em> with the particular value of <em>x</em>.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_21.html" id="ips9e-ch02-box-100"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-100"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-441"><p>EXAMPLE 2.21</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-442"><p>
+        <span data-block_type="EXP-T-ri">Prediction for fat gain.</span> Based on the linear pattern, we want to predict the fat gain for an individual whose NEA increases by 400 calories when she overeats. To use the fitted line to predict fat gain, go “up and over” on the graph in <span data-type="link" data-href="figure_2_17.html">Figure 2.17</span>. From 400 calories on the <em>x</em> axis, go up to the fitted line and over to the <em>y</em> axis. The graph shows that the predicted gain in fat is a bit more than 2 kilograms.
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-101"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-101"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET" data-block_type="rl_dataset" id="ips9e-ch02-p-443"><p>
+          <span>FIDGET</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp15133216"><p></p></div>
+      </div></div>
+      <div data-block_type="EXP-last" id="ips9e-ch02-p-444"><p>
+        If we have the equation of the line, it is faster and more accurate to substitute <em>x</em> = 400 in the equation. The predicted fat gain is
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-445"><p>fat gain = 3.505 − (0.00344 × 400) = 2.13 kilograms</p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-446"><p>
+      The accuracy of predictions from a regression line depends on how much scatter about the line the data show. In <span data-type="link" data-href="figure_2_17.html">Figure 2.17</span>, fat gains for similar increases in NEA show a spread of 1 or 2 kilograms. The regression line summarizes the pattern but gives only roughly accurate predictions.
+    </p></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-102"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-102"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch02-p-447"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_2_62.html" id="ips9e-ch02-ques-62">
+<h3>Question
+			    <span data-type="number">79.62 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-448"><p>
+          <span data-block_type="EXR-QUE-N-ri">2.62</span> <span data-block_type="EXR-QUE-T-ri">Predict the fat gain.</span> Use the regression equation in <span data-type="link" data-href="example_2_20.html">Example 2.20</span> to predict the fat gain for a person whose NEA increases by 250 calories.
+        </p></div>
+      </div>
+    </div></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_22.html" id="ips9e-ch02-box-103"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-103"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-449"><p>EXAMPLE 2.22</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-450"><p>
+        <span data-block_type="EXP-T-ri">Is this prediction reasonable?</span> Can we predict the fat gain for someone whose nonexercise activity increases by 1500 calories when she overeats? We can certainly substitute 1500 calories into the equation of the line. The prediction is
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-451"><p>fat gain = 3.505 − (0.00344 × 1500) = −1.66 kilograms</p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch02-p-452"><p>
+        That is, we predict that this individual loses fat when she overeats. This prediction is not trustworthy. Look again at <span data-type="link" data-href="figure_2_17.html">Figure 2.17</span>. An NEA increase of 1500 calories is far outside the range of our data. We can’t say whether increases this large ever occur, or whether the relationship remains linear at such extreme values. Predicting fat gain when NEA increases by 1500 calories <em>extrapolates</em> the relationship beyond what the data show.
+      </p></div>
+    </div></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-104"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-104"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch02-p-453"><p>EXTRAPOLATION</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-454"><p>
+        <strong>Extrapolation</strong> is the use of a regression line for prediction far outside the range of values of the explanatory variable <em>x</em> used to obtain the line. Such predictions are often not accurate and should be avoided.
+      </p></div>
+    </div></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_111"><p>111</p></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-105"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-105"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch02-p-455"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_2_63.html" id="ips9e-ch02-ques-63">
+<h3>Question
+			    <span data-type="number">79.63 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-456"><p>
+          <span data-block_type="EXR-QUE-N-ri">2.63</span> <span data-block_type="EXR-QUE-T-ri">Would you use the regression equation to predict?</span> Consider the following values for NEA increase: −300, 300, 600, 800. For each, decide whether you would use the regression equation in <span data-type="link" data-href="example_2_20.html">Example 2.20</span> to predict fat gain or whether you would be concerned that the prediction would not be trustworthy because of extrapolation. Give reasons for your answers.
+        </p></div>
+      </div>
+    </div></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-457"><p>
+      <span data-block_type="h2">Least-squares regression</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-458"><p>
+      Different people might draw different lines by eye on a scatterplot. This is especially true when the points are widely scattered. We need a way to draw a regression line that doesn’t depend on our guess as to where the line should go. No line will pass exactly through all the points, but we want one that is as close as possible. We will use the line to predict <em>y</em> from <em>x</em>, so we want a line that is as close as possible to the points in the <em>vertical</em> direction. That’s because the prediction errors we make are errors in <em>y</em>, which is the vertical direction in the scatterplot.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-459"><p>
+      The line in <span data-type="link" data-href="figure_2_17.html">Figure 2.17</span> predicts 2.13 kilograms of fat gain for an increase in nonexercise activity of 400 calories. If the actual fat gain turns out to be 2.3 kilograms, the error is
+    </p></div>
+    <div data-block_type="EQ" id="ips9e-ch02-p-460"><p>error = observed gain − predicted gain</p></div>
+    <div data-block_type="EQ" id="ips9e-ch02-p-461"><p>= 2.3 − 2.13 = 0.17 kilogram</p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-462"><p>
+      Errors are positive if the observed response lies above the line and negative if the response lies below the line. We want a regression line that makes these prediction errors as small as possible. <span data-type="link" data-href="figure_2_18.html">Figure 2.18</span> illustrates the idea. For clarity, the plot shows only three of the points from <span data-type="link" data-href="figure_2_17.html">Figure 2.17</span>, along with the line, on an expanded scale. The line passes below two of the points and above one of them. The vertical distances of the data points from the line appear as vertical line segments. A “good” regression line makes these distances as small as possible. There are many ways to make “as small as possible” precise. The most common is the <em>least-squares</em> idea. The line in <span data-type="link" data-href="figure_2_17.html">Figures 2.17</span> and <span data-type="link" data-href="figure_2_18.html">2.18</span> is, in fact, the least-squares regression line.
+    </p></div>
+    <div data-type="figure" data-caption-compass="NW" data-filename="figure_2_18.html" data-figure-id="ips9e-ch02-fig-18" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+      
+      <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_18.jpg" data-figure-id="ips9e-ch02-fig-18" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 79.18: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 2.18</span>
+        <span data-block_type="FG-CAP">
+          The least-squares idea: make the errors in predicting <em>y</em> as small as possible by minimizing the sum of their squares.
+        </span>
+      </span>
+</div>
+    </div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_112"><p>112</p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-106"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-106"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch02-p-463"><p>LEAST-SQUARES REGRESSION LINE</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-464"><p>
+        The <strong>least-squares regression line of y on x</strong> is the line that makes the sum of the squares of the vertical distances of the data points from the line as small as possible.
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-465"><p>
+      Here is the least-squares idea expressed as a mathematical problem. We represent <em>n</em> observations on two variables <em>x</em> and <em>y</em> as
+    </p></div>
+    <div data-block_type="EQ" id="ips9e-ch02-p-466"><p>
+      (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), (<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>), . . ., (<em>x</em><sub>n</sub>, <em>y</em><sub>n</sub>)
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-467"><p>
+      If we draw a line <em>y</em> = <em>b</em><sub>0</sub> + <em>b</em><sub>1</sub><em>x</em> through the scatterplot of these observations, the line predicts the value of <em>y</em> corresponding to <em>x</em><sub>i</sub> as <span data-math="math_7"></span>. We write <span data-math="math_8"></span> (read “y-hat”) in the equation of a regression line to emphasize that the line gives a <em>predicted</em> response <span data-math="math_9"></span> for any <em>x</em>. The predicted response will usually not be exactly the same as the actually <em>observed</em> response <em>y</em>. The method of least squares chooses the line that makes the sum of the squares of these errors as small as possible. To find this line, we must find the values of the intercept <em>b</em><sub>0</sub> and the slope <em>b</em><sub>1</sub> that minimize
+    </p></div>
+    <div data-block_type="EQ" id="ips9e-ch02-p-468"><p>
+      <span data-math="math_10"></span>
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-469"><p>
+      for the given observations <em>x</em><sub>1</sub> and <em>y</em><sub>1</sub>. For the NEA data, for example, we must find the <em>b</em><sub>0</sub> and <em>b</em><sub>1</sub> that minimize
+    </p></div>
+    <div data-block_type="normal" id="ips9e-ch02-p-470"><p>
+      <span data-math="math_11"></span>
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-471"><p>These values are the intercept and slope of the least-squares line.</p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-472"><p>
+      You will use software or a calculator with a regression function to find the equation of the least-squares regression line from data on <em>x</em> and <em>y</em>. Therefore, we will give the equation of the least-squares line in a form that helps our understanding but is not efficient for calculation.
+    </p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-107"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-107"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch02-p-473"><p>EQUATION OF THE LEAST-SQUARES REGRESSION LINE</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-474"><p>
+        We have data on an explanatory variable <em>x</em> and a response variable <em>y</em> for <em>n</em> individuals. The means and standard deviations of the sample data are <span data-math="math_12"></span> and <em>s</em><sub>x</sub> for <em>x</em> and <span data-math="math_13"></span> and <em>s</em><sub>y</sub> for <em>y</em>, and the correlation between <em>x</em> and <em>y</em> is <em>r</em>. The <strong>equation of the least-squares regression line</strong> of <em>y</em> on <em>x</em> is
+      </p></div>
+      <div data-block_type="BX1-EQ" id="ips9e-ch02-p-475"><p>
+        <span data-math="math_14"></span>
+      </p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch02-p-476"><p>
+        with <strong>slope</strong>
+      </p></div>
+      <div data-block_type="BX1-EQ" id="ips9e-ch02-p-477"><p>
+        <span data-math="math_15"></span>
+      </p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch02-p-478"><p>
+        and <strong>intercept</strong>
+      </p></div>
+      <div data-block_type="BX1-EQ" id="ips9e-ch02-p-479"><p>
+        <span data-math="math_16"></span>
+      </p></div>
+    </div></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_113"><p>113</p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_23.html" id="ips9e-ch02-box-108"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-108"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-480"><p>EXAMPLE 2.23</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-481"><p>
+        <span data-block_type="EXP-T-ri">Check the calculations.</span> Verify from the data in <span data-type="link" data-href="example_2_19.html">Example 2.19</span> that the mean and standard deviation of the 16 increases in NEA are
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-482"><p>
+        <span data-math="math_17"></span>
+      </p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch02-p-483"><p>The mean and standard deviation of the 16 fat gains are</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-484"><p>
+        <span data-math="math_18"></span>
+      </p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch02-p-485"><p>
+        The correlation between fat gain and NEA increase is <em>r</em> = −0.7786. Therefore, the least-squares regression line of fat gain <em>y</em> on NEA increase <em>x</em> has slope
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-486"><p>
+        <span data-math="math_19"></span>
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-487"><p>
+        <span data-math="math_20"></span>
+      </p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch02-p-488"><p>and intercept</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-489"><p>
+        <span data-math="math_21"></span>
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-490"><p>
+        <span data-math="math_22"></span>
+      </p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch02-p-491"><p>The equation of the least-squares line is</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-492"><p>
+        <span data-math="math_23"></span>
+      </p></div>
+      <div data-block_type="Caution icon" id="ips9e-ch02-p-493"><p>
+        <img id="" src="images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+      </p></div>
+      <div data-block_type="EXP-last" id="ips9e-ch02-p-494"><p>
+        <em>When doing calculations like this by hand, you may need to carry extra decimal places in the preliminary calculations to get accurate values of the slope and intercept</em>. Using software or a calculator with a regression function eliminates this worry.
+      </p></div>
+    </div></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-495"><p>
+      <span data-block_type="h2">Interpreting the regression line</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-496"><p>
+      The slope <em>b</em><sub>1</sub> = −0.00344 kilograms per calorie in <span data-type="link" data-href="example_2_23.html">Example 2.23</span> is the change in fat gain as NEA increases. The units “kilograms of fat gained per calorie of NEA” come from the units of <em>y</em> (kilograms) and <em>x</em> (calories). Although the correlation does not change when we change the units of measurement, the equation of the least-squares line does change. The slope in grams per calorie would be 1000 times as large as the slope in kilograms per calorie because there are 1000 grams in a kilogram. The small value of the slope, <em>b</em><sub>1</sub> = −0.00344, does not mean that the effect of increased NEA on fat gain is small—it just reflects the choice of kilograms as the unit for fat gain. <em>The slope and intercept of the least-squares line depend on the units of measurement—you can’t conclude anything from their size</em>.
+    </p></div>
+    <div data-block_type="Caution icon" id="ips9e-ch02-p-497"><p>
+      <img id="" src="images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+    </p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_24.html" id="ips9e-ch02-box-109"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-109"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-498"><p>EXAMPLE 2.24</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-499"><p>
+        <span data-block_type="EXP-T-ri">Regression using software.</span> <span data-type="link" data-href="figure_2_19.html">Figure 2.19</span> displays the basic regression output for the nonexercise activity data from three statistical software packages. Other software produces very similar output. You can find the slope and intercept of the least-squares line, calculated to more decimal places than we need, in each output. The software also provides information that we do not yet need, including some that we trimmed from <span data-type="link" data-href="figure_2_19.html">Figure 2.19</span>.
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-110"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-110"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET" data-block_type="rl_dataset" id="ips9e-ch02-p-500"><p>
+          <span>FIDGET</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp15276576"><p></p></div>
+      </div></div>
+    </div></div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_114"><p>114</p></div>
+    <div data-type="figure" data-caption-compass="S" data-filename="figure_2_19.html" data-figure-id="ips9e-ch02-fig-19" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+      
+      <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_19a.jpg" data-figure-id="ips9e-ch02-fig-19" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_19b.jpg" data-figure-id="ips9e-ch02-fig-19" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_19c.jpg" data-figure-id="ips9e-ch02-fig-19" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 79.19: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 2.19</span>
+        <span data-block_type="FG-CAP">Regression results for the nonexercise activity data from three statistical software packages: (a) SPSS; (b) Minitab; (c) JMP. Other software produces similar output.</span>
+      </span>
+</div>
+    </div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-501"><p>Part of the art of using software is to ignore the extra information that is almost always present. Look for the results that you need. Once you understand a statistical method, you can read output from almost any software.</p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-502"><p>
+      <span data-block_type="h2">Facts about least-squares regression</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-503"><p>Regression is one of the most common statistical settings, and least squares is the most common method for fitting a regression line to data. Here are some facts about least-squares regression lines.</p></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_115"><p>115</p></div>
+    <div data-block_type="ULF" id="ips9e-ch02-p-504"><p>
+      <strong>Fact 1.</strong> There is a close connection between correlation and the slope of the least-squares line. The slope is
+    </p></div>
+    <div data-block_type="EQ" id="ips9e-ch02-p-505"><p>
+      <span data-math="math_24"></span>
+    </p></div>
+    <div data-block_type="UL" id="ips9e-ch02-p-506"><p>
+      This equation says that along the regression line, <strong>a change of one standard deviation in x corresponds to a change of r standard deviations in y</strong>. When the variables are perfectly correlated (<em>r</em> = 1 or <em>r</em> = −1), the change in the predicted response <span data-math="math_25"></span> is the same (in standard deviation units) as the change in <em>x</em>. Otherwise, because −1 ≤ <em>r ≤</em> 1, the change in <span data-math="math_26"></span> is less than the change in <em>x</em>. As the correlation grows less strong, the prediction <em>y</em> moves less in response to changes in <em>x</em>. Note that if the correlation is zero, then the slope of the least-squares regression line will be zero.
+    </p></div>
+    <div data-block_type="UL" id="ips9e-ch02-p-507"><p>
+      <strong>Fact 2. The least-squares regression line always passes through the point</strong> <span data-math="math_27"></span> on the graph of <em>y</em> against <em>x</em>. So, the least-squares regression line of <em>y</em> on <em>x</em> is the line with slope <span data-math="math_28"></span> that passes through the point <span data-math="math_29"></span>. We can describe regression entirely in terms of the basic descriptive measures <span data-math="math_30"></span>.
+    </p></div>
+    <div data-block_type="ULL" id="ips9e-ch02-p-508"><p>
+      <strong>Fact 3. The distinction between explanatory and response variables is essential in regression.</strong> Least-squares regression looks at the distances of the data points from the line only in the <em>y</em> direction. If we reverse the roles of the two variables, we get a different least-squares regression line.
+    </p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-509"><p>
+      <span data-block_type="h2">Correlation and regression</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-510"><p>
+      Least-squares regression looks at the distances of the data points from the line only in the <em>y</em> direction. So the two variables <em>x</em> and <em>y</em> play different roles in regression.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_2_25.html" id="ips9e-ch02-box-111"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-111"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch02-p-511"><p>EXAMPLE 2.25</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-512"><p>
+        <span data-block_type="EXP-T-ri">Fidgeting and fat gain.</span> <span data-type="link" data-href="figure_2_20.html">Figure 2.20</span> is a scatterplot of the fidgeting and fat gain data described in <span data-type="link" data-href="example_2_19.html">Example 2.19</span> (page 107). There is a negative linear relationship. The two lines on the plot are the two least-squares regression lines. The regression line using nonexercise activity to predict fat gain is blue. The regression line using fat gain to predict nonexercise activity is red. <em>Regression of fat gain on nonexercise activity and regression of nonexercise activity on fat gain give different lines</em>. In the regression setting, you must decide which variable is explanatory.
+      </p></div>
+      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-112"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-112"></h3>
+        <div data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET" data-block_type="rl_dataset" id="ips9e-ch02-p-513"><p>
+          <span>FIDGET</span>
+        </p></div>
+        <div data-dataset="" data-block_type="rl_crunchit" id="idp15321952"><p></p></div>
+      </div></div>
+      <div data-type="figure" data-caption-compass="SW" data-filename="figure_2_20.html" data-figure-id="ips9e-ch02-fig-20" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+        
+        <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_20.jpg" data-figure-id="ips9e-ch02-fig-20" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+        <div data-type="figure_text">
+<span data-type="number">Figure 79.20: </span><span data-type="caption">
+          <span data-block_type="FG-N-ri">Figure 2.20</span>
+          <span data-block_type="FG-CAP">
+            Scatterplot of fat gain versus nonexercise activity for 16 subjects from <span data-type="link" data-href="example_2_8.html">Example 2.8</span>. The two lines are the two least-squares regression lines, using nonexercise activity to predict fat gain (blue) and using fat gain to predict nonexercise activity (red), <span data-type="link" data-href="example_2_25.html">Example 2.25</span>.
+          </span>
+        </span>
+</div>
+      </div>
+    </div></div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_116"><p>116</p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-514"><p>
+      Even though the correlation <em>r</em> ignores the distinction between explanatory and response variables, there is a close connection between correlation and regression. We saw that the slope of the least-squares line involves <em>r</em>. Another connection between correlation and regression is even more important. In fact, the numerical value of <em>r</em> as a measure of the strength of a linear relationship is best interpreted by thinking about regression. Here is the fact we need.
+    </p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-113"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-113"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch02-p-515"><p>
+        <em>r</em><sup>2</sup> IN REGRESSION
+      </p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-516"><p>
+        The <strong>
+          square of the correlation, <em>r</em>
+        </strong><sup>2</sup>, is the fraction of the variation in the values of <em>y</em> that is explained by the least-squares regression of <em>y</em> on <em>x</em>.
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-517"><p>
+      The correlation between NEA increase and fat gain for the 16 subjects in <span data-type="link" data-href="example_2_19.html">Example 2.19</span> (page 107) is <em>r</em> = −0.7786. Because <em>r</em><sup>2</sup> = 0.6062, the straight-line relationship between NEA and fat gain explains about 61% of the vertical scatter in fat gains in <span data-type="link" data-href="figure_2_17.html">Figure 2.17</span> (page 109).
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-518"><p>
+      When you report a regression, give <em>r</em><sup>2</sup> as a measure of how successfully the regression explains the response. All three software outputs in <span data-type="link" data-href="figure_2_19.html">Figure 2.19</span> include <em>r</em><sup>2</sup>, either in decimal form or as a percent.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-519"><p>
+      When you see a correlation, square it to get a better feel for the strength of the association. Perfect correlation (<em>r</em> = −1 or <em>r</em> = 1) means that the points lie exactly on a line. Then <em>r</em><sup>2</sup> = 1 and all the variation in one variable is accounted for by the linear relationship with the other variable. If <em>r</em> = −0.7 or <em>r</em> = 0.7, <em>r</em><sup>2</sup> = 0.49 and about half the variation is accounted for by the linear relationship. In the <em>r</em><sup>2</sup> scale, correlation ±0.7 is about halfway between 0 and ±1.
+    </p></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-114"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-114"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch02-p-520"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_2_64.html" id="ips9e-ch02-ques-64">
+<h3>Question
+			    <span data-type="number">79.64 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-521"><p>
+          <span data-block_type="EXR-QUE-N-ri">2.64</span> <span data-block_type="EXR-QUE-T-ri">What fraction of the variation is explained?</span> Consider the following correlations: −0.9, −0.5, −0.2, 0, 0.2, 0.5, and 0.9. For each, give the fraction of the variation in <em>y</em> that is explained by the least-squares regression of <em>y</em> on <em>x</em>. Summarize what you have found from performing these calculations.
+        </p></div>
+      </div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-522"><p>
+      The use of <em>r</em><sup>2</sup> to describe the success of regression in explaining the response <em>y</em> is very common. It rests on the fact that there are two sources of variation in the responses <em>y</em> in a regression setting. <span data-type="link" data-href="figure_2_17.html">Figure 2.17</span> (page 109) gives a rough visual picture of the two sources. The first reason for the variation in fat gains is that there is a relationship between fat gain <em>y</em> and increase in NEA <em>x</em>. As <em>x</em> increases from −94 to 690 calories among the 16 subjects, it pulls fat gain <em>y</em> with it along the regression line in the figure. The linear relationship explains this part of the variation in fat gains.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-523"><p>
+      The fat gains do not lie exactly on the line, however, but are scattered above and below it. This is the second source of variation in <em>y</em>, and the regression line tells us nothing about how large it is. The dashed lines in <span data-type="link" data-href="figure_2_17.html">Figure 2.17</span> show a rough average for <em>y</em> when we fix a value of <em>x</em>. We use <em>r</em><sup>2</sup> to measure variation along the line as a fraction of the total variation in the fat gains. In <span data-type="link" data-href="figure_2_17.html">Figure 2.17</span>, about 61% of the variation in fat gains among the 16 subjects is due to the straight-line relationship between <em>y</em> and <em>x</em>. The remaining 39% is vertical scatter in the observed responses remaining after the line has fixed the predicted responses.
+    </p></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_117"><p>117</p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch02-p-524"><p>
+      <span data-block_type="h2">
+        Another view of <em>r</em><sup>2</sup>
+      </span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch02-p-525"><p>
+      Here is a more specific interpretation of <em>r</em><sup>2</sup>. The fat gains <em>y</em> in <span data-type="link" data-href="figure_2_17.html">Figure 2.17</span> range from 0.4 to 4.2 kilograms. The variance of these responses, a measure of how variable they are, is
+    </p></div>
+    <div data-block_type="EQ" id="ips9e-ch02-p-526"><p>
+      variance of observed values <em>y</em> = 1.297
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-527"><p>
+      Much of this variability is due to the fact that as <em>x</em> increases from −94 to 690 calories, it pulls <em>y</em> along with it. If the only variability in the observed responses were due to the straight-line dependence of fat gain on NEA, the observed gains would lie exactly on the regression line. That is, they would be the same as the predicted gains <span data-math="math_31"></span>. We can compute the predicted gains by substituting the NEA values for each subject into the equation of the least-squares line. Their variance describes the variability in the predicted responses. The result is
+    </p></div>
+    <div data-block_type="EQ" id="ips9e-ch02-p-528"><p>
+      <span data-math="math_32"></span>
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-529"><p>
+      This is what the variance would be if the responses fell exactly on the line; that is, if the linear relationship explained 100% of the observed variation in <em>y</em>. Because the responses don’t fall exactly on the line, the variance of the predicted values is smaller than the variance of the observed values. Here is the fact we need:
+    </p></div>
+    <div data-block_type="EQ" id="ips9e-ch02-p-530"><p>
+      <span data-math="math_33"></span>
+    </p></div>
+    <div data-block_type="EQ" id="ips9e-ch02-p-531"><p>
+      <span data-math="math_34"></span>
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-532"><p>
+      This fact is always true. The squared correlation gives the variance that the responses would have if there were no scatter about the least-squares line as a fraction of the variance of the actual responses. This is the exact meaning of “fraction of variation explained” as an interpretation of <em>r</em><sup>2</sup>.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch02-p-533"><p>These connections with correlation are special properties of least-squares regression. They are not true for other methods of fitting a line to data. One reason that least squares is the most common method for fitting a regression line to data is that it has many convenient special properties.</p></div>
+  </div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch2.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('57325eed757a2ef770000001');
+});
+    //-->
+</script>
+</body>
+</html>
+

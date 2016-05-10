@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch4</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="215">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch04-sec1-05" level="1" data-print_page="264">
+<h2 class="section-title">
+<span data-type="number">215.5</span> <span data-type="title" data-title-for="ips9e-ch04-sec1-05">4.5 General Probability Rules
+</span>
+</h2>
+    
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_264"><p>264</p></div>
+    <div data-type="box" data-block_type="SP" id="ips9e-ch04-box-80"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-80"></h3>
+      <div data-block_type="SP-TXT-ni" id="ips9e-ch04-p-778"><p>When you complete this section, you will be able to:</p></div>
+      <ul data-block_type="bluebullet" id="ips9e-ch04-list-55">
+        <li><div data-block_type="SP-BL-first" id="ips9e-ch04-p-779"><p>
+            <span data-block_type="maker">•</span> Apply the five rules of probability.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch04-p-780"><p>
+            <span data-block_type="maker">•</span> Apply the general addition rule for unions of two or more events.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch04-p-781"><p>
+            <span data-block_type="maker">•</span> Find conditional probabilities.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch04-p-782"><p>
+            <span data-block_type="maker">•</span> Apply the multiplication rule.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch04-p-783"><p>
+            <span data-block_type="maker">•</span> Use a tree diagram to find probabilities.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-mid" id="ips9e-ch04-p-784"><p>
+            <span data-block_type="maker">•</span> Use Bayes’s rule to find probabilities.
+          </p></div>
+        </li>
+        <li><div data-block_type="SP-BL-last" id="ips9e-ch04-p-785"><p>
+            <span data-block_type="maker">•</span> Determine whether or not two events that both have positive probability are independent.
+          </p></div>
+        </li>
+      </ul>
+    </div></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch04-p-786"><p>Our study of probability has concentrated on random variables and their distributions. Now we return to the laws that govern any assignment of probabilities. The purpose of learning more laws of probability is to be able to give probability models for more complex random phenomena. We have already met and used five rules.</p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-81"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-81"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch04-p-787"><p>PROBABILITY RULES</p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch04-p-788"><p>
+        <strong>Rule 1.</strong> 0 ≤ <em>P</em>(<em>A</em>) ≤ 1 for any event <em>A</em>
+      </p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch04-p-789"><p>
+        <strong>Rule 2.</strong> <em>P</em>(<em>S</em>) = 1
+      </p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch04-p-790"><p>
+        <strong>Rule 3. Addition rule:</strong> If <em>A</em> and <em>B</em> are <strong>disjoint</strong> events, then
+      </p></div>
+      <div data-block_type="BX1-EQ" id="ips9e-ch04-p-791"><p>
+        <em>P</em>(<em>A</em> or <em>B</em>) = <em>P</em>(<em>A</em>) + <em>P</em>(<em>B</em>)
+      </p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch04-p-792"><p>
+        <strong>Rule 4. Complement rule:</strong> For any event <em>A</em>,
+      </p></div>
+      <div data-block_type="BX1-EQ" id="ips9e-ch04-p-793"><p>
+        <em>P</em>(<em>
+          A<sup>c</sup>
+        </em>) = 1 − <em>P</em>(<em>A</em>)
+      </p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch04-p-794"><p>
+        <strong>Rule 5. Multiplication rule:</strong> If <em>A</em> and <em>B</em> are <strong>independent</strong> events, then
+      </p></div>
+      <div data-block_type="BX1-EQ" id="ips9e-ch04-p-795"><p>
+        <em>P</em>(<em>A</em> and <em>B</em>) = <em>P</em>(<em>A</em>)<em>P</em>(<em>B</em>)
+      </p></div>
+    </div></div>
+    <div data-block_type="level_2_title" id="ips9e-ch04-p-796"><p>
+      <span data-block_type="h2">General addition rules</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch04-p-797"><p>
+      Probability has the property that if <em>A</em> and <em>B</em> are disjoint events, then <em>P</em>(<em>A</em> or <em>B</em>) = <em>P</em>(<em>A</em>)+<em>P</em>(<em>B</em>). What if there are more than two events or if the events are not disjoint? These circumstances are covered by more general addition rules for probability.
+    </p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-82"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-82"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch04-p-798"><p>UNION</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-799"><p>
+        The <strong>union</strong> of any collection of events is the event that at least one of the collection occurs.
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-800"><p>
+      For two events <em>A</em> and <em>B</em>, the union is the event {<em>A</em> or <em>B</em>} that <em>A</em> or <em>B</em> or both occur. From the addition rule for two disjoint events, we can obtain rules for more general unions. Suppose first that we have several events—say, <em>A</em>, <em>B</em>, and <em>C</em>—that are disjoint in pairs. That is, no two can occur simultaneously. The Venn diagram in <span data-type="link" data-href="figure_4_15.html">Figure 4.15</span> illustrates three disjoint events. The addition rule for two disjoint events extends to the following law.
+    </p></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_265"><p>265</p></div>
+    <div data-type="figure" data-caption-compass="SW" data-filename="figure_4_15.html" data-figure-id="ips9e-ch04-fig-20" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="images/17MOOREIPS-MSE_9e_fig_04_15.jpg" data-figure-id="ips9e-ch04-fig-20" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 215.15: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 4.15</span>
+        <span data-block_type="FG-CAP">
+          The addition rule for disjoint events: <em>P</em>(<em>A</em> or <em>B</em> or <em>C</em>) = <em>P</em>(<em>A</em>) + <em>P</em>(<em>B</em>) + <em>P</em>(<em>C</em>) when events <em>A</em>, <em>B</em>, and <em>C</em> are disjoint.
+        </span>
+      </span>
+</div>
+    </div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-83"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-83"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch04-p-801"><p>ADDITION RULE FOR DISJOINT EVENTS</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-802"><p>
+        If events <em>A</em>, <em>B</em>, and <em>C</em> are disjoint in the sense that no two have any outcomes in common, then
+      </p></div>
+      <div data-block_type="BX1-EQ" id="ips9e-ch04-p-803"><p>
+        <em>P</em>(one or more of <em>A</em>,<em>B</em>,<em>C</em>) = <em>P</em>(<em>A</em>) + <em>P</em>(<em>B</em>) + <em>P</em>(<em>C</em>)
+      </p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-804"><p>This rule extends to any number of disjoint events.</p></div>
+    </div></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_4_40.html" id="ips9e-ch04-box-84"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-84"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch04-p-805"><p>EXAMPLE 4.40</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-806"><p>
+        <span data-block_type="EXP-T-ri">Probabilities as areas.</span> Generate a random number <em>X</em> between 0 and 1. What is the probability that the first digit after the decimal point will be a 3, a 6, or a 9? The random number <em>X</em> is a continuous random variable whose density curve has constant height 1 between 0 and 1 and is 0 elsewhere. The event that the first digit of <em>X</em> is odd is the union of five disjoint events. These events are
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-807"><p>
+        0.30 ≤ <em>X</em> &lt; 0.40
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-808"><p>
+        0.60 ≤ <em>X</em> &lt; 0.70
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-809"><p>
+        0.90 ≤ <em>X</em> &lt; 1.00
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-810"><p>
+        <span data-type="link" data-href="figure_4_16.html">Figure 4.16</span> illustrates the probabilities of these events as areas under the density curve. Each area is 0.1. Therefore, the union of the three has probability equal to the sum, or 0.3.
+      </p></div>
+    </div></div>
+    <div data-type="figure" data-caption-compass="NW" data-filename="figure_4_16.html" data-figure-id="ips9e-ch04-fig-21" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="images/17MOOREIPS-MSE_9e_fig_04_16.jpg" data-figure-id="ips9e-ch04-fig-21" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 215.16: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 4.16</span>
+        <span data-block_type="FG-CAP">
+          The probability that the first digit after the decimal point of a random number is a 3, a 6, or a 9 is the sum of the probabilities of the three disjoint events shown, <span data-type="link" data-href="example_4_40.html">Example 4.40</span>.
+        </span>
+      </span>
+</div>
+    </div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_266"><p>266</p></div>
+    <div data-type="figure" data-caption-compass="SW" data-filename="figure_4_17.html" data-figure-id="ips9e-ch04-fig-22" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="images/17MOOREIPS-MSE_9e_fig_04_17.jpg" data-figure-id="ips9e-ch04-fig-22" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 215.17: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 4.17</span>
+        <span data-block_type="FG-CAP">
+          The union of two events that are not disjoint. The general addition rule says that <em>P</em>(<em>A</em> or <em>B</em>) = <em>P</em>(<em>A</em>) + <em>P</em>(<em>B</em>) − <em>P</em>(<em>A</em> and <em>B</em>).
+        </span>
+      </span>
+</div>
+    </div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-85"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-85"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch04-p-811"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_4_89.html" id="ips9e-ch04-ques-89">
+<h3>Question
+			    <span data-type="number">215.90 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-812"><p>
+          <span data-block_type="EXR-QUE-N-ri">4.89</span> <span data-block_type="EXR-QUE-T-ri">Probability that you roll a 3 or a 4 or a 5.</span> If you roll a die, the probability of each of the six possible outcomes (1, 2, 3, 4, 5, 6) is 1/6. What is the probability that you roll a 3 or a 4 or a 5?
+        </p></div>
+      </div>
+    </div></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch04-p-813"><p>
+      If events <em>A</em> and <em>B</em> are not disjoint, they can occur simultaneously. The probability of their union is then <em>less</em> than the sum of their probabilities. As <span data-type="link" data-href="figure_4_17.html">Figure 4.17</span> suggests, the outcomes common to both are counted twice when we add probabilities, so we must subtract this probability once. Here is the addition rule for the union of any two events, disjoint or not.
+    </p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-86"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-86"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch04-p-814"><p>GENERAL ADDITION RULE FOR UNIONS OF TWO EVENTS</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-815"><p>
+        For any two events <em>A</em> and <em>B</em>,
+      </p></div>
+      <div data-block_type="BX1-EQ" id="ips9e-ch04-p-816"><p>
+        <em>P</em>(<em>A</em> or <em>B</em>) = <em>P</em>(<em>A</em>) + <em>P</em>(<em>B</em>) − <em>P</em>(<em>A</em> and <em>B</em>)
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-817"><p>
+      If <em>A</em> and <em>B</em> are disjoint, the event {<em>A</em> and <em>B</em>} that both occur has no outcomes in it. This <em>empty event</em> is the complement of the sample space <em>S</em> and must have probability 0. So the general addition rule includes Rule 3, the addition rule for disjoint events.
+    </p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_4_41.html" id="ips9e-ch04-box-87"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-87"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch04-p-818"><p>EXAMPLE 4.41</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-819"><p>
+        <span data-block_type="EXP-T-ri">Adequate sleep and exercise.</span> Suppose that 40% of adults get enough sleep and 46% exercise regularly. What is the probability that an adult gets enough sleep or exercises regularly? To find this probability, we also need to know the percent who get enough sleep and exercise. Let’s assume that 24% do both.
+      </p></div>
+      <div data-type="figure" data-figure-id="ips9e-ch04-fig-23" data-block_type="UN-FIGURE" data-layout-align="left" data-layout-width="small" data-layout-border="false">
+        
+        <img id="" src="images/17MOOREIPS-MSE_9e_P_04_05.jpg" data-figure-id="ips9e-ch04-fig-23" data-layout-width="small" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+        <div data-type="asset_source">
+          <span data-block_type="PHCR">© Randy Faris/Corbis</span>
+        </div>
+      </div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-820"><p>
+        We will use the notation of the general addition rule for unions of two events. Let <em>A</em> be the event that an adult gets enough sleep, and let <em>B</em> be the event that a person exercises regularly. We are given that <em>P</em>(<em>A</em>) = 0.40, <em>P</em>(<em>B</em>) = 0.46, and <em>P</em>(<em>A</em> and <em>B</em>) = 0.24. Therefore,
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-821"><p>
+        <em>P</em>(<em>A</em> or <em>B</em>) = <em>P</em>(<em>A</em>) + <em>P</em>(<em>B</em>) − <em>P</em>(<em>A</em> and <em>B</em>)
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-822"><p>= 0.40 + 0.46 − 0.24</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-823"><p>= 0.62</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-824"><p>The probability that an adult gets enough sleep or exercises regularly is 0.62, or 62%.</p></div>
+    </div></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-88"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-88"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch04-p-825"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_4_90.html" id="ips9e-ch04-ques-90">
+<h3>Question
+			    <span data-type="number">215.91 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-826"><p>
+          <span data-block_type="EXR-QUE-N-ri">4.90</span> <span data-block_type="EXR-QUE-T-ri">Probability that your roll is even or greater than 5.</span> If you roll a die, the probability of each of the six possible outcomes (1, 2, 3, 4, 5, 6) is 1/6. What is the probability that your roll is even or greater than 5?
+        </p></div>
+      </div>
+    </div></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_267"><p>267</p></div>
+    <div data-type="figure" data-caption-compass="SW" data-filename="figure_4_18.html" data-figure-id="ips9e-ch04-fig-24" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+      
+      <img id="" src="images/17MOOREIPS-MSE_9e_fig_04_18.jpg" data-figure-id="ips9e-ch04-fig-24" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+      <div data-type="figure_text">
+<span data-type="number">Figure 215.18: </span><span data-type="caption">
+        <span data-block_type="FG-N-ri">Figure 4.18</span>
+        <span data-block_type="FG-CAP">
+          Venn diagram and probabilities, <span data-type="link" data-href="example_4_41.html">Example 4.41</span>.
+        </span>
+      </span>
+</div>
+    </div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-827"><p>
+      Venn diagrams are a great help in finding probabilities for unions because you can just think of adding and subtracting areas. <span data-type="link" data-href="figure_4_18.html">Figure 4.18</span> shows some events and their probabilities for <span data-type="link" data-href="example_4_41.html">Example 4.41</span>. What is the probability that an adult gets adequate sleep and does not exercise?
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-828"><p>The Venn diagram shows that the probability that an adult gets adequate sleep minus the probability that an adult gets adequate sleep and exercises regularly is 0.40 − 0.24 = 0.16. Similarly, the probability that an adult does not get adequate sleep and exercises regularly is 0.46 − 0.24 = 0.22. The four probabilities that appear in the figure add to 1 because they refer to four disjoint events whose union is the entire sample space.</p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch04-p-829"><p>
+      <span data-block_type="h2">Conditional probability</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch04-p-830"><p>The probability we assign to an event can change if we know that some other event has occurred. This idea is the key to many applications of probability.</p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_4_42.html" id="ips9e-ch04-box-89"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-89"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch04-p-831"><p>EXAMPLE 4.42</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-832"><p>
+        <span data-block_type="EXP-T-ri">Probability of being dealt an ace.</span> Doyle is a professional poker player. He stares at the dealer, who prepares to deal. What is the probability that the card dealt to Doyle is a heart? There are 52 cards in the deck. Because the deck was carefully shuffled, the next card dealt is equally likely to be any of the cards that Doyle has not seen. Thirteen of the 52 cards are hearts. So
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-833"><p>
+        <span data-math="math_73"></span>
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-834"><p>
+        This calculation assumes that Doyle knows nothing about any cards already dealt. Suppose now that he is looking at four cards already in his hand and that they are all hearts. He knows nothing about the other 48 cards except that exactly nine (13 − 4) hearts are among them. Doyle’s probability of being dealt a heart <em>given what he knows</em> is now
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-835"><p>
+        <span data-math="math_74"></span>
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-836"><p>Knowing that there are four hearts among the four cards Doyle can see changes the probability that the next card dealt is a heart.</p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-837"><p>
+      The new notation <em>P</em>(<em>A</em> | <em>B</em>) is a <span data-type="termref" data-term="conditional probability">
+        <strong>conditional probability</strong>
+      </span><span data-block_type="MN-GL-term">conditional probability</span>. That is, it gives the probability of one event (the next card dealt is an ace) under the condition that we know another event (exactly one of the four visible cards is an ace). You can read the bar | as “given the information that.”
+    </p></div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_268"><p>268</p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-90"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-90"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch04-p-838"><p>MULTIPLICATION RULE</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-839"><p>
+        The probability that both of two events <em>A</em> and <em>B</em> happen together can be found by
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-840"><p>
+        <em>P</em>(<em>A</em> and <em>B</em>) = <em>P</em>(<em>A</em>)<em>P</em>(<em>B</em> | <em>A</em>)
+      </p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-841"><p>
+        Here <em>P</em>(<em>B</em> | <em>A</em>) is the conditional probability that <em>B</em> occurs, given the information that <em>A</em> occurs.
+      </p></div>
+    </div></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-91"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-91"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch04-p-842"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_4_91.html" id="ips9e-ch04-ques-91">
+<h3>Question
+			    <span data-type="number">215.92 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-843"><p>
+          <span data-block_type="EXR-QUE-N-ri">4.91</span> <span data-block_type="EXR-QUE-T-ri">The probability of a heart.</span> Refer to <span data-type="link" data-href="example_4_42.html">Example 4.42</span>. Suppose that none of the four cards in Doyle’s hand are hearts. What is the probability that the next card dealt to him is a heart?
+        </p></div>
+      </div>
+    </div></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_4_43.html" id="ips9e-ch04-box-92"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-92"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch04-p-844"><p>EXAMPLE 4.43</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-845"><p>
+        <span data-block_type="EXP-T-ri">Downloading music from the Internet.</span> The multiplication rule is just common sense made formal. For example, suppose that 30% of Internet users download music files, and 70% of downloaders say they don’t care if the music is copyrighted. So the percent of Internet users who download music (event <em>A</em>) <em>and</em> don’t care about copyright (event <em>B</em>) is 70% of the 30% who download, or
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-846"><p>(0.7)(0.3) = 0.21 = 21%</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-847"><p>The multiplication rule expresses this as</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-848"><p>
+        <em>P</em>(<em>A</em> and <em>B</em>) = <em>P</em>(<em>A</em>) × <em>P</em>(<em>B</em> | <em>A</em>)
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-849"><p>= (0.3)(0.7) = 0.21</p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-850"><p>Here is another example that uses conditional probability.</p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_4_44.html" id="ips9e-ch04-box-93"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-93"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch04-p-851"><p>EXAMPLE 4.44</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-852"><p>
+        <span data-block_type="EXP-T-ri">Probability of a favorable draw.</span> Doyle is still at the poker table. At the moment, he has two cards and they are both hearts. He has seen 24 cards and none of other players have any hearts. What is the chance that the next three cards he draws will be hearts? The full deck of 52 cards contains 13 hearts. Therefore, 11 of the unseen cards are hearts. There are 28 (52 − 24) unseen cards. To find Doyle’s probability of drawing three hearts, we first calculate
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-853"><p>
+        <span data-math="math_75"></span>
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-856"><p>
+        Doyle finds both probabilities by counting cards. The probability that the first card drawn is a heart is 11/28 because 11 of the 28 unseen cards are hearts. If the first card is a heart, that leaves 10 hearts among the 27 remaining cards. So the <em>conditional</em> probability of another diamond is 10/27. The multiplication rule now says that
+      </p></div>
+      <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_269"><p>269</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-857"><p>
+        <span data-math="math_76"></span>
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-858"><p>We again apply the multiplication rule for the third card. The probability that the next three draws are hearts is equal to the probability that the first two draws are hearts times the probability that the third card is a heart given that the first two draws are hearts. This probability is</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-859"><p>
+        <span data-math="math_77"></span>
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-860"><p>It is very unlikely that Doyle’s next three cards will be hearts, even though his hearts are the only ones that he has seen.</p></div>
+    </div></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-94"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-94"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch04-p-861"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_4_92.html" id="ips9e-ch04-ques-92">
+<h3>Question
+			    <span data-type="number">215.93 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-862"><p>
+          <span data-block_type="EXR-QUE-N-ri">4.92</span> <span data-block_type="EXR-QUE-T-ri">The probability that the next two cards are hearts.</span> In the setting of <span data-type="link" data-href="example_4_44.html">Example 4.44</span>, suppose that Doyle’s third card is a heart, so he now has three hearts, and that none of the five additional cards that he sees are hearts What is the probability that the next two cards dealt to Doyle will be hearts?
+        </p></div>
+      </div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-863"><p>
+      If <em>P</em>(<em>A</em>) and <em>P</em>(<em>A</em> and <em>B</em>) are given, we can rearrange the multiplication rule to produce a <em>definition</em> of the conditional probability <em>P</em>(<em>B</em> | <em>A</em>) in terms of unconditional probabilities.
+    </p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-95"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-95"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch04-p-864"><p>DEFINITION OF CONDITIONAL PROBABILITY</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-865"><p>
+        When <em>P</em>(<em>A</em>) &gt; 0, the <strong>conditional probability</strong> of <em>B</em> given <em>A</em> is
+      </p></div>
+      <div data-block_type="BX1-EQ" id="ips9e-ch04-p-866"><p>
+        <span data-math="math_78"></span>
+      </p></div>
+    </div></div>
+    <div data-block_type="Caution icon" id="ips9e-ch04-p-867"><p>
+      <img id="" src="images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-868"><p>
+      <em>Be sure to keep in mind the distinct roles in P</em>(<em>B</em> | <em>A</em>) <em>of the event B whose probability we are computing and the event A that represents the information we are given.</em> The conditional probability <em>P</em>(<em>B</em> | <em>A</em>) makes no sense if the event <em>A</em> can never occur, so we require that <em>P</em>(<em>A</em>) &gt; 0 whenever we talk about <em>P</em>(<em>B</em> | <em>A</em>).
+    </p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_4_45.html" id="ips9e-ch04-box-96"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-96"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch04-p-869"><p>EXAMPLE 4.45</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-870"><p>
+        <span data-block_type="EXP-T-ri">College students.</span> Here is the distribution of U.S. college students classified by age and full-time or part-time status:
+      </p></div>
+      <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-30" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="70"><table><tbody>
+          <tr class="tborder">
+            <th data-block_type="EXP-TB1-COLHD" align="center">Age (years)</th>
+            <th data-block_type="EXP-TB1-COLHD" align="char">Full-time</th>
+            <th data-block_type="EXP-TB1-COLHD" align="char">Part-time</th>
+          </tr>
+          <tr class="tborder">
+            <td data-block_type="EXP-TB1-TXT" align="center">15 to 19</td>
+            <td data-block_type="EXP-TB1-TXT" align="char">0.21</td>
+            <td data-block_type="EXP-TB1-TXT" align="char">0.02</td>
+          </tr>
+          <tr>
+            <td data-block_type="EXP-TB1-TXT" align="center">20 to 24</td>
+            <td data-block_type="EXP-TB1-TXT" align="char">0.32</td>
+            <td data-block_type="EXP-TB1-TXT" align="char">0.07</td>
+          </tr>
+          <tr>
+            <td data-block_type="EXP-TB1-TXT" align="center">25 to 34</td>
+            <td data-block_type="EXP-TB1-TXT" align="char">0.10</td>
+            <td data-block_type="EXP-TB1-TXT" align="char">0.10</td>
+          </tr>
+          <tr class="bborder">
+            <td data-block_type="EXP-TB1-TXT" align="center">30 and over</td>
+            <td data-block_type="EXP-TB1-TXT" align="char">0.05</td>
+            <td data-block_type="EXP-TB1-TXT" align="char">0.13</td>
+          </tr>
+        </tbody></table></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-871"><p>
+        Let’s compute the probability that a student is aged 20 to 24, given that the student is full-time. We know that the probability that a student is part-time <em>and</em> aged 20 to 24 is 0.32 from the table of probabilities. But what we want here is a conditional probability, given that a student is full-time. Rather than asking about age among all students, we restrict our attention to the subpopulation of students who are full-time. Let
+      </p></div>
+      <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_270"><p>270</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-872"><p>
+        <em>A</em> = the student is between 20 and 24 years of age
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-873"><p>
+        <em>B</em> = the student is a full-time student
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-874"><p>Our formula is</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-875"><p>
+        <span data-math="math_79"></span>
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-876"><p>
+        We read <em>P</em>(<em>A</em> and <em>B</em>) = 0.32 from the table as we mentioned previously. What about <em>P</em>(<em>B</em>)? This is the probability that a student is full-time. Notice that there are four groups of students in our table that fit this description. To find the probability needed, we add the entries:
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-877"><p>
+        <em>P</em>(<em>B</em>) = 0.21 + 0.32 + 0.10 + 0.05 = 0.68
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-878"><p>We are now ready to complete the calculation of the conditional probability:</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-879"><p>
+        <span data-math="math_80"></span>
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-881"><p>= 0.47</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-882"><p>The probability that a student is 20 to 24 years of age, given that the student is full-time, is 0.47.</p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-883"><p>Here is another way to give the information in the last sentence of this example: 47% of full-time college students are 20 to 24 years old. Which way do you prefer?</p></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-97"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-97"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch04-p-884"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_4_93.html" id="ips9e-ch04-ques-93">
+<h3>Question
+			    <span data-type="number">215.94 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-885"><p>
+          <span data-block_type="EXR-QUE-N-ri">4.93</span> <span data-block_type="EXR-QUE-T-ri">What rule did we use?</span> In <span data-type="link" data-href="example_4_45.html">Example 4.45</span>, we calculated <em>P</em>(<em>B</em>). What rule did we use for this calculation? Explain why this rule applies in this setting.
+        </p></div>
+      </div>
+      <div data-type="question" data-block_type="exercise_4_94.html" id="ips9e-ch04-ques-94">
+<h3>Question
+			    <span data-type="number">215.95 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-886"><p>
+          <span data-block_type="EXR-QUE-N-ri">4.94</span> <span data-block_type="EXR-QUE-T-ri">Find the conditional probability.</span> Refer to <span data-type="link" data-href="example_4_45.html">Example 4.45</span>. What is the probability that a student is part-time, given that the student is 20 to 24 years old? Explain in your own words the difference between this calculation and the one that we did in <span data-type="link" data-href="example_4_45.html">Example 4.45</span>.
+        </p></div>
+      </div>
+    </div></div>
+    <div data-block_type="level_2_title" id="ips9e-ch04-p-887"><p>
+      <span data-block_type="h2">General multiplication rules</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch04-p-888"><p>
+      The definition of conditional probability reminds us that, in principle, all probabilities—including conditional probabilities—can be found from the assignment of probabilities to events that describe random phenomena. More often, however, conditional probabilities are part of the information given to us in a probability model, and the multiplication rule is used to compute <em>P</em>(<em>A</em> and <em>B</em>). This rule extends to more than two events.
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-889"><p>
+      The union of a collection of events is the event that <em>any</em> of them occur. Here is the corresponding term for the event that <em>all</em> of them occur.
+    </p></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_271"><p>271</p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-98"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-98"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch04-p-890"><p>INTERSECTION</p></div>
+      <div data-block_type="BX1-TXT" id="ips9e-ch04-p-891"><p>
+        The <strong>intersection</strong> of any collection of events is the event that <em>all</em> the events occur.
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-892"><p>
+      To extend the multiplication rule to the probability that all of several events occur, the key is to condition each event on the occurrence of <em>all</em> the preceding events. For example, the intersection of three events <em>A</em>, <em>B</em>, and <em>C</em> has probability
+    </p></div>
+    <div data-block_type="EQ" id="ips9e-ch04-p-893"><p>
+      <em>P</em>(<em>A</em> and <em>B</em> and <em>C</em>) = <em>P</em>(<em>A</em>)<em>P</em>(<em>B</em> | <em>A</em>)<em>P</em>(<em>C</em> | <em>A</em> and <em>B</em>)
+    </p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_4_46.html" id="ips9e-ch04-box-99"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-99"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch04-p-894"><p>EXAMPLE 4.46</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-895"><p>
+        <span data-block_type="EXP-T-ri">High school athletes and professional careers.</span> Only 5% of male high school basketball, baseball, and football players go on to play at the college level. Of these, only 1.7% enter major league professional sports. About 40% of the athletes who compete in college and then reach the pros have a career of more than three years. Define these events:
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-896"><p>
+        <em>A</em> = {competes in college}
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-897"><p>
+        <em>B</em> = {competes professionally}
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-898"><p>
+        <em>C</em> = {pro career longer than 3 years}
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-899"><p>What is the probability that a high school athlete competes in college and then goes on to have a pro career of more than three years? We know that</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-900"><p>
+        <em>P</em>(<em>A</em>) = 0.05
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-901"><p>
+        <em>P</em>(<em>B</em> | <em>A</em>) = 0.017
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-902"><p>
+        <em>P</em>(<em>C</em> | <em>A</em> and <em>B</em>) = 0.4
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-903"><p>Therefore, the probability we want is</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-904"><p>
+        <em>P</em>(<em>A</em> and <em>B</em> and <em>C</em>) = <em>P</em>(<em>A</em>)<em>P</em>(<em>B</em> | <em>A</em>)<em>P</em>(<em>C</em> | <em>A</em> and <em>B</em>)
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-905"><p>= 0.05 × 0.017 × 0.4 = 0.00034</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-906"><p>Only about 3 of every 10,000 high school athletes can expect to compete in college and have a professional career of more than three years. High school students would be wise to concentrate on studies rather than on unrealistic hopes of fortune from pro sports.</p></div>
+    </div></div>
+    <div data-block_type="level_2_title" id="ips9e-ch04-p-907"><p>
+      <span data-block_type="h2">Tree diagrams</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch04-p-908"><p>Probability problems often require us to combine several of the basic rules into a more elaborate calculation. Here is an example that illustrates how to solve problems that have several stages.</p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_4_47.html" id="ips9e-ch04-box-100"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-100"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch04-p-909"><p>EXAMPLE 4.47</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-910"><p>
+        <span data-block_type="EXP-T-ri">Online chat rooms.</span> Online chat rooms are dominated by the young. Teens are the biggest users. If we look only at adult Internet users (aged 18 and over), 47% of the 18 to 29 age group chat, as do 21% of the 30 to 49 age group and just 7% of those 50 and over. To learn what percent of all Internet users participate in chat, we also need the age breakdown of users. Here it is: 29% of adult Internet users are 18 to 29 years old (event <em>A</em><sub>1</sub>), another 47% are 30 to 49 (event <em>A</em><sub>2</sub>), and the remaining 24% are 50 and over (event <em>A</em><sub>3</sub>).
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-911"><p>
+        What is the probability that a randomly chosen adult user of the Internet participates in chat rooms (event <em>C</em>)? To find out, use the <span data-type="termref" data-term="tree diagram">
+          <strong>tree diagram</strong>
+        </span><span data-block_type="MN-GL-term">tree diagram</span> in <span data-type="link" data-href="figure_4_19.html">Figure 4.19</span> to organize your thinking. Each segment in the tree is one stage of the problem. Each complete branch shows a path through the two stages. The probability written on each segment is the conditional probability of an Internet user following that segment, given that he or she has reached the node from which it branches.
+      </p></div>
+      <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_272"><p>272</p></div>
+      <div data-type="figure" data-caption-compass="SW" data-filename="figure_4_19.html" data-figure-id="ips9e-ch04-fig-25" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+        
+        <img id="" src="images/17MOOREIPS-MSE_9e_fig_04_19.jpg" data-figure-id="ips9e-ch04-fig-25" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+        <div data-type="figure_text">
+<span data-type="number">Figure 215.19: </span><span data-type="caption">
+          <span data-block_type="FG-N-ri">Figure 4.19</span>
+          <span data-block_type="FG-CAP">
+            Tree diagram, <span data-type="link" data-href="example_4_47.html">Example 4.47</span>. The probability <em>P</em>(<em>C</em>) is the sum of the probabilities of the three branches marked with asterisks (*).
+          </span>
+        </span>
+</div>
+      </div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-912"><p>Starting at the left, an Internet user falls into one of the three age groups. The probabilities of these groups</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-913"><p>
+        <em>P</em>(<em>A</em><sub>1</sub>) = 0.29  <em>P</em>(<em>A</em><sub>2</sub>) = 0.47  <em>P</em>(<em>A</em><sub>3</sub>) = 0.24
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-914"><p>
+        mark the leftmost branches in the tree. Conditional on being 18 to 29 years old, the probability of participating in chat is <em>P</em>(<em>C</em> | <em>A</em><sub>1</sub>) = 0.47. So the conditional probability of <em>not</em> participating is
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-915"><p>
+        <em>P</em>(<em>
+          C<sup>c</sup>
+        </em> | <em>A</em><sub>1</sub>) = 1 − 0.47 = 0.53
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-916"><p>
+        These conditional probabilities mark the paths branching out from the <em>A</em><sub>1</sub> node in <span data-type="link" data-href="figure_4_19.html">Figure 4.19</span>. The other two age group nodes similarly lead to two branches marked with the conditional probabilities of chatting or not. The probabilities on the branches from any node add to 1 because they cover all possibilities, given that this node was reached.
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-917"><p>
+        There are three disjoint paths to <em>C</em>, one for each age group. By the addition rule, <em>P</em>(<em>C</em>) is the sum of their probabilities. The probability of reaching <em>C</em> through the 18 to 29 age group is
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-918"><p>
+        <em>P</em>(<em>C</em> and <em>A</em><sub>1</sub>) = <em>P</em>(<em>A</em><sub>1</sub>)<em>P</em>(<em>C</em> | <em>A</em><sub>1</sub>)
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-919"><p>= 0.29 × 0.47 = 0.1363</p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-920"><p>
+        Follow the paths to <em>C</em> through the other two age groups. The probabilities of these paths are
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-921"><p>
+        <em>P</em>(<em>C</em> and <em>A</em><sub>2</sub>) = <em>P</em>(<em>A</em><sub>2</sub>)<em>P</em>(<em>C</em> | <em>A</em><sub>2</sub>) = (0.47)(0.21) = 0.0987
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-922"><p>
+        <em>P</em>(<em>C</em> and <em>A</em><sub>3</sub>) = <em>P</em>(<em>A</em><sub>3</sub>)<em>P</em>(<em>C</em> | <em>A</em><sub>3</sub>) = (0.24)(0.07) = 0.0168
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-923"><p>The final result is</p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-924"><p>
+        <em>P</em>(<em>C</em>) = 0.1363 + 0.0987 + 0.0168 = 0.2518
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-925"><p>About 25% of all adult Internet users take part in chat rooms.</p></div>
+    </div></div>
+    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_273"><p>273</p></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-926"><p>
+      It takes longer to explain a tree diagram than it does to use it. Once you have understood a problem well enough to draw the tree, the rest is easy. Tree diagrams combine the addition and multiplication rules. The multiplication rule says that the probability of reaching the end of any complete branch is the product of the probabilities written on its segments. The probability of any outcome, such as the event <em>C</em> that an adult Internet user takes part in chat rooms, is then found by adding the probabilities of all branches that are part of that event.
+    </p></div>
+    <div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-101"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-101"></h3>
+      <div data-block_type="EXR-H" id="ips9e-ch04-p-927"><p>USE YOUR KNOWLEDGE</p></div>
+      <div data-type="question" data-block_type="exercise_4_95.html" id="ips9e-ch04-ques-95">
+<h3>Question
+			    <span data-type="number">215.96 </span><span data-type="title"></span>
+</h3>
+        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-928"><p>
+          <span data-block_type="EXR-QUE-N-ri">4.95</span> <span data-block_type="EXR-QUE-T-ri">Draw a tree diagram.</span> Refer to Doyle’s chances of five hearts in <span data-type="link" data-href="example_4_44.html">Example 4.44</span> (page 268). Draw a tree diagram to describe the outcomes for the three cards that he will be dealt. At the first stage, his draw can be a heart or a nonheart. At the second and third stages, he has the same possible outcomes but the probabilities are different.
+        </p></div>
+      </div>
+    </div></div>
+    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_274"><p>274</p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch04-p-929"><p>
+      <span data-block_type="h2">Bayes’s rule</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch04-p-930"><p>There is another kind of probability question that we might ask in the context of thinking about online chat. What percent of adult chat room participants are aged 18 to 29?</p></div>
+    <div data-type="box" data-block_type="EXP" data-filename="example_4_48.html" id="ips9e-ch04-box-102"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-102"></h3>
+      <div data-block_type="EXP-N" id="ips9e-ch04-p-931"><p>EXAMPLE 4.48</p></div>
+      <div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-932"><p>
+        <span data-block_type="EXP-T-ri">Conditional versus unconditional probabilities.</span> In the notation of <span data-type="link" data-href="example_4_47.html">Example 4.47</span>, this is the conditional probability <em>P</em>(<em>A</em><sub>1</sub> | <em>C</em>). Start from the definition of conditional probability and then apply the results of <span data-type="link" data-href="example_4_47.html">Example 4.47</span>:
+      </p></div>
+      <div data-block_type="EXP-EQ" id="ips9e-ch04-p-933"><p>
+        <span data-math="math_81"></span>
+      </p></div>
+      <div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-935"><p>More than half of adult chat room participants are between 18 and 29 years old. Compare this conditional probability with the original information (unconditional) that 29% of adult Internet users are between 18 and 29 years old. Knowing that a person chats increases the probability that he or she is young.</p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-936"><p>
+      We know the probabilities <em>P</em>(<em>A</em><sub>1</sub>), <em>P</em>(<em>A</em><sub>2</sub>), and <em>P</em>(<em>A</em><sub>3</sub>) that give the age distribution of adult Internet users. We also know the conditional probabilities <em>P</em>(<em>C</em> | <em>A</em><sub>1</sub>), <em>P</em>(<em>C</em> | <em>A</em><sub>2</sub>), and <em>P</em>(<em>C</em> | <em>A</em><sub>3</sub>) that a person from each age group chats. <span data-type="link" data-href="example_4_47.html">Example 4.47</span> shows how to use this information to calculate <em>P</em>(<em>C</em>). The method can be summarized in a single expression that adds the probabilities of the three paths to <em>C</em> in the tree diagram:
+    </p></div>
+    <div data-block_type="EQ" id="ips9e-ch04-p-937"><p>
+      <em>P</em>(<em>C</em>) = <em>P</em>(<em>A</em><sub>1</sub>)<em>P</em>(<em>C</em> | <em>A</em><sub>1</sub>) + <em>P</em>(<em>A</em><sub>2</sub>)<em>P</em>(<em>C</em> | <em>A</em><sub>2</sub>) + <em>P</em>(<em>A</em><sub>3</sub>)<em>P</em>(<em>C</em> | <em>A</em><sub>3</sub>)
+    </p></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-938"><p>
+      In <span data-type="link" data-href="example_4_48.html">Example 4.48</span>, we calculated the “reverse” conditional probability <em>P</em>(<em>A</em><sub>1</sub> | <em>C</em>). The denominator 0.2518 in that example came from the previous expression. Put in this general notation, we have another probability law.
+    </p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-103"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-103"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch04-p-939"><p>BAYES’S RULE</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-940"><p>
+        Suppose that <em>A</em><sub>1</sub>, <em>A</em><sub>2</sub>, . . . , <em>
+          A<sub>k</sub>
+        </em> are disjoint events whose probabilities are not 0 and add to exactly 1. That is, any outcome is in exactly one of these events. Then if <em>C</em> is any other event whose probability is not 0 or 1,
+      </p></div>
+      <div data-block_type="BX1-EQ" id="ips9e-ch04-p-941"><p>
+        <span data-math="math_82"></span>
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-942"><p>
+      The numerator in Bayes’s rule is always one of the terms in the sum that makes up the denominator. The rule is named after Thomas Bayes, who wrestled with arguing from outcomes like <em>C</em> back to the <em>
+        A<sub>i</sub>
+      </em> in a book published in 1763. It is far better to think your way through problems like <span data-type="link" data-href="example_4_47.html">Examples 4.47</span> and <span data-type="link" data-href="example_4_48.html">4.48</span> than to memorize these formal expressions.
+    </p></div>
+    <div data-block_type="level_2_title" id="ips9e-ch04-p-943"><p>
+      <span data-block_type="h2">Independence again</span>
+    </p></div>
+    <div data-block_type="TXT-ni" id="ips9e-ch04-p-944"><p>
+      The conditional probability <em>P</em>(<em>B</em> | <em>A</em>) is generally not equal to the unconditional probability <em>P</em>(<em>B</em>). That is because the occurrence of event <em>A</em> generally gives us some additional information about whether or not event <em>B</em> occurs. If knowing that <em>A</em> occurs gives no additional information about <em>B</em>, then <em>A</em> and <em>B</em> are independent events. The formal definition of independence is expressed in terms of conditional probability.
+    </p></div>
+    <div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-104"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-104"></h3>
+      <div data-block_type="BX1-T" id="ips9e-ch04-p-945"><p>INDEPENDENT EVENTS</p></div>
+      <div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-946"><p>
+        Two events <em>A</em> and <em>B</em> that both have positive probability are <strong>independent</strong> if
+      </p></div>
+      <div data-block_type="BX1-EQ" id="ips9e-ch04-p-947"><p>
+        <em>P</em>(<em>B</em> | <em>A</em>) = <em>P</em>(<em>B</em>)
+      </p></div>
+    </div></div>
+    <div data-block_type="TXT" id="ips9e-ch04-p-948"><p>
+      This definition makes precise the informal description of independence given in <span data-type="link" data-href="ips9e-ch04-sec1-02">Section 4.2</span>. We now see that the multiplication rule for independent events, <em>P</em>(<em>A</em> and <em>B</em>) = <em>P</em>(<em>A</em>)<em>P</em>(<em>B</em>), is a special case of the general multiplication rule, <em>P</em>(<em>A</em> and <em>B</em>) = <em>P</em>(<em>A</em>)<em>P</em>(<em>B | A</em>), just as the addition rule for disjoint events is a special case of the general addition rule.
+    </p></div>
+  </div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch4.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('5732604a757a2e2770000002');
+});
+    //-->
+</script>
+</body>
+</html>
+
