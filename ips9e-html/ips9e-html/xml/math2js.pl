@@ -18,7 +18,7 @@ use strict;
 binmode(STDIN, ":utf8");
 binmode(STDOUT, ":utf8");
 
-my $baseXMLfile = "ips9e-ch01.xml"; #-------------------------> identify digfir file here
+my $baseXMLfile = "ips9e-ch02.xml"; #-------------------------> identify digfir file here
 my $nomathXML_file = "math/${baseXMLfile}_no_math.xml";
 my $mathXMLfile = "math/math_only_$baseXMLfile";
 my $mathJSfile = "math/mathjax_$baseXMLfile.js";
@@ -36,7 +36,7 @@ my $temp_line;
 # get digfir XML files content
 my $xml_contents;
 
- open my $FH, "<$baseXMLfile" or die;
+ open my $FH, "<data-filename/${baseXMLfile}_datahref.xml" or die;
  # $/ = undef;
  while (<$FH>) {
    $xml_contents .= $_;
