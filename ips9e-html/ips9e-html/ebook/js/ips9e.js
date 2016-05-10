@@ -119,10 +119,8 @@ var Player_subtype = Player_manuscript_type.extend({
         //chapter references
         //assumes a specific xml filename was used by vendor in the <link> tag
         //assumes link to the first section in the chapter
-	$('a[href^="scc9e-ch"][href$=".xml"]').each(function () {
-	    var newhref = $(this).attr('href').replace(/.*ch0?(\d+).*/i, "scc9e_ch$1_1.html");
-	    //certain chapters have parts as the first section, so in those cases, adjust the url to link to the second section
-	    if (/ch(1|10|17|21)_/.test(newhref)) { newhref = newhref.replace(/(.*)_1.html/, "$1_2.html"); }
+	$('a[href^="ips9e-ch"][href$=".xml"]').each(function () {
+	    var newhref = $(this).attr('href').replace(/.*ch0?(\d+).*/i, "ips9e_ch$1_1.html");
 	    $(this).attr('href', newhref);
 	});
 

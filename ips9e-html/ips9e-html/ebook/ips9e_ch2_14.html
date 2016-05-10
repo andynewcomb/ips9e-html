@@ -17,553 +17,354 @@
     
     </head>
 <body class="noUi">
-<div id="manuscript" data-chapter-number="79">
+<div id="manuscript" data-chapter-number="2">
     <div data-type="section" data-block_type="h1" id="ips9e-ch02-sec1-05" level="1" data-print_page="123">
 <h2 class="section-title">
-<span data-type="number">79.6</span> <span data-type="title" data-title-for="ips9e-ch02-sec1-05">
-        2.5
-        Cautions about Correlation and Regression
-      </span>
+<span data-type="number">2.6</span> <span data-type="title" data-title-for="ips9e-ch02-sec1-05"><span data-block_type="h1-N-ri">2.5</span> <span data-block_type="h1">Cautions about Correlation and Regression</span>
+</span>
 </h2>
-    
-    <div data-type="box" data-block_type="SP" id="ips9e-ch02-box-138"><div data-type="box_inner">
+
+<div data-type="box" data-block_type="SP" id="ips9e-ch02-box-138"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-138"></h3>
-      <div data-block_type="SP-TXT-ni" id="ips9e-ch02-p-639"><p>When you complete this section, you will be able to:</p></div>
-      <ul data-block_type="bluebullet" id="ips9e-ch02-list-66">
-        <li><div data-block_type="SP-BL-first" id="ips9e-ch02-p-640"><p>
-            <span data-block_type="maker">•</span> Calculate the residuals for a set of data using the equation of the least-squares regression line and the observed values of the explanatory variable.
-          </p></div>
-        </li>
-        <li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-641"><p>
-            <span data-block_type="maker">•</span> Use a plot of the residuals versus the explanatory variable to assess the fit of a regression line.
-          </p></div>
-        </li>
-        <li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-642"><p>
-            <span data-block_type="maker">•</span> Identify outliers and influential observations by examining scatterplots and residual plots.
-          </p></div>
-        </li>
-        <li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-643"><p>
-            <span data-block_type="maker">•</span> Identify lurking variables that can influence the interpretation of relationships between two variables.
-          </p></div>
-        </li>
-        <li><div data-block_type="SP-BL-last" id="ips9e-ch02-p-644"><p>
-            <span data-block_type="maker">•</span> Explain the difference between association and causality when interpreting the relationship between two variables.
-          </p></div>
-        </li>
-      </ul>
-    </div></div>
-    <div data-block_type="TXT-ni" id="ips9e-ch02-p-645"><p>Correlation and regression are among the most common statistical tools. They are used in more elaborate form to study relationships among many variables, a situation in which we cannot see the essentials by studying a single scatterplot. We need a firm grasp of the use and limitations of these tools, both now and as a foundation for more advanced statistics.</p></div>
-    <div data-block_type="level_2_title" id="ips9e-ch02-p-646"><p>
-      <span data-block_type="h2">Residuals</span>
-    </p></div>
-    <div data-block_type="TXT-ni" id="ips9e-ch02-p-647"><p>
-      A regression line describes the overall pattern of a linear relationship between an explanatory variable and a response variable. Deviations from the overall pattern are also important. In the regression setting, we see deviations by looking at the scatter of the data points about the regression line. The vertical distances from the points to the least-squares regression line are as small as possible in the sense that they have the smallest possible sum of squares. Because they represent “leftover” variation in the response after fitting the regression line, these distances are called <em>residuals</em>.
-    </p></div>
-    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_124"><p>124</p></div>
-    <div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-139"><div data-type="box_inner">
+<div data-block_type="SP-TXT-ni" id="ips9e-ch02-p-639"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bluebullet" id="ips9e-ch02-list-66">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch02-p-640"><p><span data-block_type="maker">•</span> Calculate the residuals for a set of data using the equation of the least-squares regression line and the observed values of the explanatory variable.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-641"><p><span data-block_type="maker">•</span> Use a plot of the residuals versus the explanatory variable to assess the fit of a regression line.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-642"><p><span data-block_type="maker">•</span> Identify outliers and influential observations by examining scatterplots and residual plots.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch02-p-643"><p><span data-block_type="maker">•</span> Identify lurking variables that can influence the interpretation of relationships between two variables.</p></div></li>
+<li><div data-block_type="SP-BL-last" id="ips9e-ch02-p-644"><p><span data-block_type="maker">•</span> Explain the difference between association and causality when interpreting the relationship between two variables.</p></div></li>
+</ul>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch02-p-645"><p>Correlation and regression are among the most common statistical tools. They are used in more elaborate form to study relationships among many variables, a situation in which we cannot see the essentials by studying a single scatterplot. We need a firm grasp of the use and limitations of these tools, both now and as a foundation for more advanced statistics.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch02-p-646"><p><span data-block_type="h2">Residuals</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch02-p-647"><p>A regression line describes the overall pattern of a linear relationship between an explanatory variable and a response variable. Deviations from the overall pattern are also important. In the regression setting, we see deviations by looking at the scatter of the data points about the regression line. The vertical distances from the points to the least-squares regression line are as small as possible in the sense that they have the smallest possible sum of squares. Because they represent “leftover” variation in the response after fitting the regression line, these distances are called <em>residuals</em>.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_124"><p>124</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-139"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-139"></h3>
-      <div data-block_type="BX1-T" id="ips9e-ch02-p-648"><p>RESIDUALS</p></div>
-      <div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-649"><p>
-        A <strong>residual</strong> is the difference between an observed value of the response variable and the value predicted by the regression line. That is,
-      </p></div>
-      <div data-block_type="BX1-EQ" id="ips9e-ch02-p-650"><p>
-        residual = observed <em>y</em> − predicted <em>y</em>
-      </p></div>
-      <div data-block_type="BX1-EQ" id="ips9e-ch02-p-651"><p>
-        = <em>y</em> − <span data-math="math_46"></span>
-      </p></div>
-    </div></div>
-    <div data-type="box" data-block_type="EXP" data-filename="example_2_26.html" id="ips9e-ch02-box-140"><div data-type="box_inner">
+<div data-block_type="BX1-T" id="ips9e-ch02-p-648"><p>RESIDUALS</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-649"><p>A <strong>residual</strong> is the difference between an observed value of the response variable and the value predicted by the regression line. That is,</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch02-p-650"><p>residual = observed <em>y</em> − predicted <em>y</em></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch02-p-651"><p>= <em>y</em> − <span data-math="math_48"></span></p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_2_26.html" id="ips9e-ch02-box-140"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-140"></h3>
-      <div data-block_type="EXP-N" id="ips9e-ch02-p-652"><p>EXAMPLE 2.26</p></div>
-      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-653"><p>
-        <span data-block_type="EXP-T-ri">Residuals for fat gain.</span> <span data-type="link" data-href="example_2_19.html">Example 2.19</span> (page 107) describes measurements on 16 young people who volunteered to overeat for eight weeks. Those whose nonexercise activity (NEA) spontaneously rose substantially gained less fat than others. <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(a) is a scatterplot of these data. The pattern is linear. The least-squares line is
-      </p></div>
-      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-141"><div data-type="box_inner">
+<div data-block_type="EXP-N" id="ips9e-ch02-p-652"><p>EXAMPLE 2.26</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-653"><p><span data-block_type="EXP-T-ri">Residuals for fat gain.</span> <span data-type="link" data-href="example_2_19.html">Example 2.19</span> (page 107) describes measurements on 16 young people who volunteered to overeat for eight weeks. Those whose nonexercise activity (NEA) spontaneously rose substantially gained less fat than others. <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(a) is a scatterplot of these data. The pattern is linear. The least-squares line is</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-141"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-141"></h3>
-        <div data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET" data-block_type="rl_dataset" id="ips9e-ch02-p-654"><p>
-          <span>FIDGET</span>
-        </p></div>
-        <div data-dataset="" data-block_type="rl_crunchit" id="idm82880"><p></p></div>
-      </div></div>
-      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-655"><p>fat gain = 3.505 − (0.00344 × NEA increase)</p></div>
-      <div data-block_type="EXP-last" id="ips9e-ch02-p-656"><p>One subject’s NEA rose by 135 calories. That subject gained 2.7 kilograms of fat. The predicted gain for 135 calories is</p></div>
-      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-657"><p>
-        <span data-math="math_47"></span> = 3.505 − (0.00344 × 135)= 3.04 kg
-      </p></div>
-      <div data-block_type="EXP-last" id="ips9e-ch02-p-658"><p>The residual for this subject is, therefore,</p></div>
-      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-659"><p>
-        residual = observed <em>y</em> − predicted <em>y</em>
-      </p></div>
-      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-660"><p>
-        = <em>y</em> − <span data-math="math_48"></span>
-      </p></div>
-      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-661"><p>= 2.7 − 3.04 = −0.34 kg</p></div>
-    </div></div>
-    <div data-type="figure" data-caption-compass="S" data-filename="figure_2_23.html" data-figure-id="ips9e-ch02-fig-23" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
-      
-      <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_23a.jpg" data-figure-id="ips9e-ch02-fig-23" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-      <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_23b.jpg" data-figure-id="ips9e-ch02-fig-23" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-      <div data-type="figure_text">
-<span data-type="number">Figure 79.23: </span><span data-type="caption">
-        <span data-block_type="FG-N-ri">Figure 2.23</span>
-        <span data-block_type="FG-CAP">
-          (a) Scatterplot of fat gain versus increase in nonexercise activity, with the least-squares regression line, <span data-type="link" data-href="example_2_26.html">Example 2.26</span>. (b) Residual plot for the regression displayed in panel (a); the line at <em>y</em> = 0 marks the mean of the residuals.
-        </span>
-      </span>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET" data-block_type="rl_dataset" id="ips9e-ch02-p-654"><p><span>FIDGET</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm26709408"><p></p></div>
+</div></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch02-p-655"><p>fat gain = 3.505 − (0.00344 × NEA increase)</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch02-p-656"><p>One subject’s NEA rose by 135 calories. That subject gained 2.7 kilograms of fat. The predicted gain for 135 calories is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch02-p-657"><p><span data-math="math_49"></span> = 3.505 − (0.00344 × 135)= 3.04 kg</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch02-p-658"><p>The residual for this subject is, therefore,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch02-p-659"><p>residual = observed <em>y</em> − predicted <em>y</em></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch02-p-660"><p>= <em>y</em> − <span data-math="math_50"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch02-p-661"><p>= 2.7 − 3.04 = −0.34 kg</p></div>
+</div></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_2_23.html" data-figure-id="ips9e-ch02-fig-23" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_23a.jpg" data-figure-id="ips9e-ch02-fig-23" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<img id="" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_23b.jpg" data-figure-id="ips9e-ch02-fig-23" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 2.23: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 2.23</span> <span data-block_type="FG-CAP">(a) Scatterplot of fat gain versus increase in nonexercise activity, with the least-squares regression line, <span data-type="link" data-href="example_2_26.html">Example 2.26</span>. (b) Residual plot for the regression displayed in panel (a); the line at <em>y</em> = 0 marks the mean of the residuals.</span></span>
 </div>
-    </div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-662"><p>Most regression software will calculate and store residuals for you.</p></div>
-    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_125"><p>125</p></div>
-    <div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-142"><div data-type="box_inner">
+</div>
+<div data-block_type="TXT" id="ips9e-ch02-p-662"><p>Most regression software will calculate and store residuals for you.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_125"><p>125</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-142"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-142"></h3>
-      <div data-block_type="EXR-H" id="ips9e-ch02-p-663"><p>USE YOUR KNOWLEDGE</p></div>
-      <div data-type="question" data-block_type="exercise_2_92.html" id="ips9e-ch02-ques-92">
+<div data-block_type="EXR-H" id="ips9e-ch02-p-663"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_2_92.html" id="ips9e-ch02-ques-92">
 <h3>Question
-			    <span data-type="number">79.92 </span><span data-type="title"></span>
+			    <span data-type="number">2.92 </span><span data-type="title"></span>
 </h3>
-        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-664"><p>
-          <span data-block_type="EXR-QUE-N-ri">2.92</span> <span data-block_type="EXR-QUE-T-ri">Find the predicted value and the residual.</span> Let’s say that we have an individual in the NEA data set who has NEA increase equal to 250 calories and fat gain equal to 2.4 kg. Find the predicted value of fat gain for this individual and then calculate the residual. Explain why this residual is negative.
-        </p></div>
-      </div>
-    </div></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-665"><p>
-      Because the residuals show how far the data fall from our regression line, examining the residuals helps us assess how well the line describes the data. Although residuals can be calculated from any model fit to the data, the residuals from the least-squares line have a special property: <strong>the mean of the least-squares residuals is always zero</strong>.
-    </p></div>
-    <div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-143"><div data-type="box_inner">
-<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-143"></h3>
-      <div data-block_type="EXR-H" id="ips9e-ch02-p-666"><p>USE YOUR KNOWLEDGE</p></div>
-      <div data-type="question" data-block_type="exercise_2_93.html" id="ips9e-ch02-ques-93">
-<h3>Question
-			    <span data-type="number">79.93 </span><span data-type="title"></span>
-</h3>
-        <div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-667"><p>
-          <span data-block_type="EXR-QUE-N-ri">2.93</span> <span data-block_type="EXR-QUE-T-ri">Find the sum of the residuals.</span> Here are the 16 residuals for the NEA data rounded to two decimal places:
-        </p></div>
-        <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-12" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="75"><table><tbody>
-            <tr>
-              <td data-block_type="EXP-TB1-TXT" align="char">0.37</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">−0.70</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">0.10</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">−0.34</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">0.19</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">0.61</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">−0.26</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">−0.98</td>
-            </tr>
-            <tr>
-              <td data-block_type="EXP-TB1-TXT" align="char">1.64</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">−0.18</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">−0.23</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">0.54</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">−0.54</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">−1.11</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">0.93</td>
-              <td data-block_type="EXP-TB1-TXT" align="char">−0.03</td>
-            </tr>
-          </tbody></table></div>
-        <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-144"><div data-type="box_inner">
-<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-144"></h3>
-          <div data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET" data-block_type="rl_dataset" id="ips9e-ch02-p-668"><p>
-            <span>FIDGET</span>
-          </p></div>
-          <div data-dataset="" data-block_type="rl_crunchit" id="idm23776"><p></p></div>
-        </div></div>
-        <div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch02-p-669"><p>
-          <span data-block_type="maker">Find</span> the sum of these residuals. Note that the sum is not exactly zero because of roundoff error.
-        </p></div>
-      </div>
-    </div></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-670"><p>
-      You can see the residuals in the scatterplot of <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(a) by looking at the vertical deviations of the points from the line. The <em>residual plot</em> in <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(b) makes it easier to study the residuals by plotting them against the explanatory variable, increase in NEA.
-    </p></div>
-    <div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-145"><div data-type="box_inner">
-<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-145"></h3>
-      <div data-block_type="BX1-T" id="ips9e-ch02-p-671"><p>RESIDUAL PLOTS</p></div>
-      <div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-672"><p>
-        A <strong>residual plot</strong> is a scatterplot of the regression residuals against the explanatory variable. Residual plots help us assess the fit of a regression line.
-      </p></div>
-    </div></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-673"><p>
-      Because the mean of the residuals is always zero, the horizontal line at zero in <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(b) helps orient us. This line (residual = 0) corresponds to the fitted line in <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(a). The residual plot magnifies the deviations from the line to make patterns easier to see. If the regression line catches the overall pattern of the data, there should be <em>no pattern</em> in the residuals. That is, the residual plot should show an unstructured horizontal band centered at zero. The residuals in <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(b) do have this irregular scatter.
-    </p></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-674"><p>
-      You can see the same thing in the scatterplot of <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(a) and the residual plot of <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(b). It’s just a bit easier in the residual plot. Deviations from an irregular horizontal pattern point out ways in which the regression line fails to catch the overall pattern. Here is an example.
-    </p></div>
-    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_126"><p>126</p></div>
-    <div data-type="box" data-block_type="EXP" data-filename="example_2_27.html" id="ips9e-ch02-box-146"><div data-type="box_inner">
-<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-146"></h3>
-      <div data-block_type="EXP-N" id="ips9e-ch02-p-675"><p>EXAMPLE 2.27</p></div>
-      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-676"><p>
-        <span data-block_type="EXP-T-ri">Patterns in birthrate and Internet user residuals.</span> In <span data-type="link" data-href="exercise_2_34.html">Exercise 2.34</span> (page 99) we used a scatterplot to study the relationship between birthrate and Internet users for 106 countries. In this scatterplot, <span data-type="link" data-href="figure_2_13.html">Figure 2.13</span>, we see that there are many countries with low numbers of Internet users. In addition, the relationship between births and Internet users appears to be curved. For low values of Internet users, there is a clear relationship, while for higher values, the curve becomes relatively flat.
-      </p></div>
-      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-147"><div data-type="box_inner">
-<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-147"></h3>
-        <div data-url="asset/datasets/Data_Icon.jpg" data-file="INBIRTH" data-block_type="rl_dataset" id="ips9e-ch02-p-677"><p>
-          <span>INBIRTH</span>
-        </p></div>
-        <div data-dataset="" data-block_type="rl_crunchit" id="idp23969664"><p></p></div>
-      </div></div>
-      <div data-block_type="EXP-last" id="ips9e-ch02-p-678"><p>
-        <span data-type="link" data-href="figure_2_24.html">Figure 2.24</span>(a) gives the data with the least-squares regression line, and <span data-type="link" data-href="figure_2_24.html">Figure 2.24</span>(b) plots the residuals. Look at the right part of <span data-type="link" data-href="figure_2_24.html">Figure 2.24</span>(b), where the values of Internet users are high. Here we see that the residuals tend to be positive.
-      </p></div>
-      <div data-type="figure" data-caption-compass="S" data-filename="figure_2_24.html" data-figure-id="ips9e-ch02-fig-24" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
-        
-        <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_24a.jpg" data-figure-id="ips9e-ch02-fig-24" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-        <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_24b.jpg" data-figure-id="ips9e-ch02-fig-24" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-        <div data-type="figure_text">
-<span data-type="number">Figure 79.24: </span><span data-type="caption">
-          <span data-block_type="FG-N-ri">Figure 2.24</span>
-          <span data-block_type="FG-CAP">
-            (a) Scatterplot of birthrate versus Internet users, with the least-squares regression line, <span data-type="link" data-href="example_2_27.html">Example 2.27</span>. (b) Residual plot for the regression displayed in panel (a); the line at <em>y</em> = 0 marks the mean of the residuals.
-          </span>
-        </span>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-664"><p><span data-block_type="EXR-QUE-N-ri">2.92</span> <span data-block_type="EXR-QUE-T-ri">Find the predicted value and the residual.</span> Let’s say that we have an individual in the NEA data set who has NEA increase equal to 250 calories and fat gain equal to 2.4 kg. Find the predicted value of fat gain for this individual and then calculate the residual. Explain why this residual is negative.</p></div>
 </div>
-      </div>
-    </div></div>
-    <div data-block_type="Caution icon" id="ips9e-ch02-p-679"><p>
-      <img id="" src="images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
-    </p></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-680"><p>
-      The residual pattern in <span data-type="link" data-href="figure_2_24.html">Figure 2.24</span>(b) is characteristic of a simple curved relationship. <em>There are many ways in which a relationship can deviate from a linear pattern</em>. We now have an important tool for examining these deviations. Use it frequently and carefully when you study relationships.
-    </p></div>
-    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_127"><p>127</p></div>
-    <div data-type="table" data-filename="table_2_2.html" data-block_type="TABLE" id="ips9e-ch02-tab-02" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="100">
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-665"><p>Because the residuals show how far the data fall from our regression line, examining the residuals helps us assess how well the line describes the data. Although residuals can be calculated from any model fit to the data, the residuals from the least-squares line have a special property: <strong>the mean of the least-squares residuals is always zero</strong>.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch02-box-143"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-143"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch02-p-666"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_2_93.html" id="ips9e-ch02-ques-93">
+<h3>Question
+			    <span data-type="number">2.93 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch02-p-667"><p><span data-block_type="EXR-QUE-N-ri">2.93</span> <span data-block_type="EXR-QUE-T-ri">Find the sum of the residuals.</span> Here are the 16 residuals for the NEA data rounded to two decimal places:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch02-untab-12" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="75"><table><tbody>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="char">0.37</td>
+<td data-block_type="EXP-TB1-TXT" align="char">−0.70</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.10</td>
+<td data-block_type="EXP-TB1-TXT" align="char">−0.34</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.19</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.61</td>
+<td data-block_type="EXP-TB1-TXT" align="char">−0.26</td>
+<td data-block_type="EXP-TB1-TXT" align="char">−0.98</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="char">1.64</td>
+<td data-block_type="EXP-TB1-TXT" align="char">−0.18</td>
+<td data-block_type="EXP-TB1-TXT" align="char">−0.23</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.54</td>
+<td data-block_type="EXP-TB1-TXT" align="char">−0.54</td>
+<td data-block_type="EXP-TB1-TXT" align="char">−1.11</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.93</td>
+<td data-block_type="EXP-TB1-TXT" align="char">−0.03</td>
+</tr>
+</tbody></table></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-144"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-144"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET" data-block_type="rl_dataset" id="ips9e-ch02-p-668"><p><span>FIDGET</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm26651872"><p></p></div>
+</div></div>
+<div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch02-p-669"><p><span data-block_type="maker">Find</span> the sum of these residuals. Note that the sum is not exactly zero because of roundoff error.</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-670"><p>You can see the residuals in the scatterplot of <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(a) by looking at the vertical deviations of the points from the line. The <em>residual plot</em> in <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(b) makes it easier to study the residuals by plotting them against the explanatory variable, increase in NEA.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-145"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-145"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch02-p-671"><p>RESIDUAL PLOTS</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-672"><p>A <strong>residual plot</strong> is a scatterplot of the regression residuals against the explanatory variable. Residual plots help us assess the fit of a regression line.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-673"><p>Because the mean of the residuals is always zero, the horizontal line at zero in <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(b) helps orient us. This line (residual = 0) corresponds to the fitted line in <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(a). The residual plot magnifies the deviations from the line to make patterns easier to see. If the regression line catches the overall pattern of the data, there should be <em>no pattern</em> in the residuals. That is, the residual plot should show an unstructured horizontal band centered at zero. The residuals in <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(b) do have this irregular scatter.</p></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-674"><p>You can see the same thing in the scatterplot of <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(a) and the residual plot of <span data-type="link" data-href="figure_2_23.html">Figure 2.23</span>(b). It’s just a bit easier in the residual plot. Deviations from an irregular horizontal pattern point out ways in which the regression line fails to catch the overall pattern. Here is an example.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_126"><p>126</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_2_27.html" id="ips9e-ch02-box-146"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-146"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch02-p-675"><p>EXAMPLE 2.27</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-676"><p><span data-block_type="EXP-T-ri">Patterns in birthrate and Internet user residuals.</span> In <span data-type="link" data-href="exercise_2_34.html">Exercise 2.34</span> (page 99) we used a scatterplot to study the relationship between birthrate and Internet users for 106 countries. In this scatterplot, <span data-type="link" data-href="figure_2_13.html">Figure 2.13</span>, we see that there are many countries with low numbers of Internet users. In addition, the relationship between births and Internet users appears to be curved. For low values of Internet users, there is a clear relationship, while for higher values, the curve becomes relatively flat.</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-147"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-147"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="INBIRTH" data-block_type="rl_dataset" id="ips9e-ch02-p-677"><p><span>INBIRTH</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm26626784"><p></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch02-p-678"><p><span data-type="link" data-href="figure_2_24.html">Figure 2.24</span>(a) gives the data with the least-squares regression line, and <span data-type="link" data-href="figure_2_24.html">Figure 2.24</span>(b) plots the residuals. Look at the right part of <span data-type="link" data-href="figure_2_24.html">Figure 2.24</span>(b), where the values of Internet users are high. Here we see that the residuals tend to be positive.</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_2_24.html" data-figure-id="ips9e-ch02-fig-24" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_24a.jpg" data-figure-id="ips9e-ch02-fig-24" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<img id="" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_24b.jpg" data-figure-id="ips9e-ch02-fig-24" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 2.24: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 2.24</span> <span data-block_type="FG-CAP">(a) Scatterplot of birthrate versus Internet users, with the least-squares regression line, <span data-type="link" data-href="example_2_27.html">Example 2.27</span>. (b) Residual plot for the regression displayed in panel (a); the line at <em>y</em> = 0 marks the mean of the residuals.</span></span>
+</div>
+</div>
+</div></div>
+<div data-block_type="Caution icon" id="ips9e-ch02-p-679"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-680"><p>The residual pattern in <span data-type="link" data-href="figure_2_24.html">Figure 2.24</span>(b) is characteristic of a simple curved relationship. <em>There are many ways in which a relationship can deviate from a linear pattern</em>. We now have an important tool for examining these deviations. Use it frequently and carefully when you study relationships.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_127"><p>127</p></div>
+<div data-type="table" data-filename="table_2_2.html" data-block_type="TABLE" id="ips9e-ch02-tab-02" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="100">
 <div data-type="table_text">
-<span data-type="number">Table : </span><span data-type="table_caption">
-        <span data-block_type="TBN-N">TABLE 2.2</span>
-        <span data-block_type="TBN-T">Two Measures of Glucose Level in Diabetics</span>
-      </span>
+<span data-type="number">Table : </span><span data-type="table_caption"><span data-block_type="TBN-N">TABLE 2.2</span> <span data-block_type="TBN-T">Two Measures of Glucose Level in Diabetics</span></span>
 </div>
 <table><tbody>
-        <tr>
-          <th data-block_type="EXP-TB1-COLHD" align="center">Subject</th>
-          <th data-block_type="EXP-TB1-COLHD" align="char">
-            HbA1c<br>(%)
-          </th>
-          <th data-block_type="EXP-TB1-COLHD" align="center" class="rborder">
-            FPG<br>(mg/ml)
-          </th>
-          <th data-block_type="EXP-TB1-COLHD" align="center">Subject</th>
-          <th data-block_type="EXP-TB1-COLHD" align="char">
-            HbA1c<br>(%)
-          </th>
-          <th data-block_type="EXP-TB1-COLHD" align="center" class="rborder">
-            FPG<br>(mg/ml)
-          </th>
-          <th data-block_type="EXP-TB1-COLHD" align="center">Subject</th>
-          <th data-block_type="EXP-TB1-COLHD" align="char">
-            HbA1c<br>(%)
-          </th>
-          <th data-block_type="EXP-TB1-COLHD" align="center">
-            FPG<br>(mg/ml)
-          </th>
-        </tr>
-        <tr class="tborder">
-          <td data-block_type="EXP-TB1-TXT" align="center">1</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">6.1</td>
-          <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">141</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">7</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">7.5</td>
-          <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">96</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">13</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">10.6</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">103</td>
-        </tr>
-        <tr>
-          <td data-block_type="EXP-TB1-TXT" align="center">2</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">6.3</td>
-          <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">158</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">8</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">7.7</td>
-          <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">78</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">14</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">10.7</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">172</td>
-        </tr>
-        <tr>
-          <td data-block_type="EXP-TB1-TXT" align="center">3</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">6.4</td>
-          <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">112</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">9</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">7.9</td>
-          <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">148</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">15</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">10.7</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">359</td>
-        </tr>
-        <tr>
-          <td data-block_type="EXP-TB1-TXT" align="center">4</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">6.8</td>
-          <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">153</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">10</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">8.7</td>
-          <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">172</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">16</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">11.2</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">145</td>
-        </tr>
-        <tr>
-          <td data-block_type="EXP-TB1-TXT" align="center">5</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">7.0</td>
-          <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">134</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">11</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">9.4</td>
-          <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">200</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">17</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">13.7</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">147</td>
-        </tr>
-        <tr>
-          <td data-block_type="EXP-TB1-TXT" align="center">6</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">7.1</td>
-          <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">95</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">12</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">10.4</td>
-          <td data-block_type="EXP-TB1-TXT" align="center" class="rborder">271</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">18</td>
-          <td data-block_type="EXP-TB1-TXT" align="char">19.3</td>
-          <td data-block_type="EXP-TB1-TXT" align="center">255</td>
-        </tr>
-      </tbody></table>
+<tr>
+<th data-block_type="EXP-TB1-COLHD" align="center">Subject</th>
+<th data-block_type="EXP-TB1-COLHD" align="char">HbA1c<br>(%)</th>
+<th data-block_type="EXP-TB1-COLHD" align="center" class="rborder">FPG<br>(mg/ml)</th>
+<th data-block_type="EXP-TB1-COLHD" align="center">Subject</th>
+<th data-block_type="EXP-TB1-COLHD" align="char">HbA1c<br>(%)</th>
+<th data-block_type="EXP-TB1-COLHD" align="center" class="rborder">FPG<br>(mg/ml)</th>
+<th data-block_type="EXP-TB1-COLHD" align="center">Subject</th>
+<th data-block_type="EXP-TB1-COLHD" align="char">HbA1c<br>(%)</th>
+<th data-block_type="EXP-TB1-COLHD" align="center">FPG<br>(mg/ml)</th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">1</td>
+<td data-block_type="EXP-TB1-TXT" align="char">6.1</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">141</td>
+<td data-block_type="EXP-TB1-TXT" align="center">7</td>
+<td data-block_type="EXP-TB1-TXT" align="char">7.5</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">96</td>
+<td data-block_type="EXP-TB1-TXT" align="center">13</td>
+<td data-block_type="EXP-TB1-TXT" align="char">10.6</td>
+<td data-block_type="EXP-TB1-TXT" align="center">103</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">2</td>
+<td data-block_type="EXP-TB1-TXT" align="char">6.3</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">158</td>
+<td data-block_type="EXP-TB1-TXT" align="center">8</td>
+<td data-block_type="EXP-TB1-TXT" align="char">7.7</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">78</td>
+<td data-block_type="EXP-TB1-TXT" align="center">14</td>
+<td data-block_type="EXP-TB1-TXT" align="char">10.7</td>
+<td data-block_type="EXP-TB1-TXT" align="center">172</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">3</td>
+<td data-block_type="EXP-TB1-TXT" align="char">6.4</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">112</td>
+<td data-block_type="EXP-TB1-TXT" align="center">9</td>
+<td data-block_type="EXP-TB1-TXT" align="char">7.9</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">148</td>
+<td data-block_type="EXP-TB1-TXT" align="center">15</td>
+<td data-block_type="EXP-TB1-TXT" align="char">10.7</td>
+<td data-block_type="EXP-TB1-TXT" align="center">359</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">4</td>
+<td data-block_type="EXP-TB1-TXT" align="char">6.8</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">153</td>
+<td data-block_type="EXP-TB1-TXT" align="center">10</td>
+<td data-block_type="EXP-TB1-TXT" align="char">8.7</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">172</td>
+<td data-block_type="EXP-TB1-TXT" align="center">16</td>
+<td data-block_type="EXP-TB1-TXT" align="char">11.2</td>
+<td data-block_type="EXP-TB1-TXT" align="center">145</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">5</td>
+<td data-block_type="EXP-TB1-TXT" align="char">7.0</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">134</td>
+<td data-block_type="EXP-TB1-TXT" align="center">11</td>
+<td data-block_type="EXP-TB1-TXT" align="char">9.4</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">200</td>
+<td data-block_type="EXP-TB1-TXT" align="center">17</td>
+<td data-block_type="EXP-TB1-TXT" align="char">13.7</td>
+<td data-block_type="EXP-TB1-TXT" align="center">147</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">6</td>
+<td data-block_type="EXP-TB1-TXT" align="char">7.1</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">95</td>
+<td data-block_type="EXP-TB1-TXT" align="center">12</td>
+<td data-block_type="EXP-TB1-TXT" align="char">10.4</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">271</td>
+<td data-block_type="EXP-TB1-TXT" align="center">18</td>
+<td data-block_type="EXP-TB1-TXT" align="char">19.3</td>
+<td data-block_type="EXP-TB1-TXT" align="center">255</td>
+</tr>
+</tbody></table>
 </div>
-    <div data-block_type="level_2_title" id="ips9e-ch02-p-681"><p>
-      <span data-block_type="h2">Outliers and influential observations</span>
-    </p></div>
-    <div data-block_type="TXT-ni" id="ips9e-ch02-p-682"><p>When you look at scatterplots and residual plots, look for striking individual points as well as for an overall pattern. Here is an example of data that contain some unusual cases.</p></div>
-    <div data-type="box" data-block_type="EXP" data-filename="example_2_28.html" id="ips9e-ch02-box-148"><div data-type="box_inner">
+<div data-block_type="level_2_title" id="ips9e-ch02-p-681"><p><span data-block_type="h2">Outliers and influential observations</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch02-p-682"><p>When you look at scatterplots and residual plots, look for striking individual points as well as for an overall pattern. Here is an example of data that contain some unusual cases.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_2_28.html" id="ips9e-ch02-box-148"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-148"></h3>
-      <div data-block_type="EXP-N" id="ips9e-ch02-p-683"><p>EXAMPLE 2.28</p></div>
-      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-684"><p>
-        <span data-block_type="EXP-T-ri">Diabetes and blood sugar.</span> People with diabetes must manage their blood sugar levels carefully. They measure their fasting plasma glucose (FPG) several times a day with a glucose meter. Another measurement, made at regular medical checkups, is called HbA1c. This is roughly the percent of red blood cells that have a glucose molecule attached. It measures average exposure to glucose over a period of several months.
-      </p></div>
-      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-149"><div data-type="box_inner">
+<div data-block_type="EXP-N" id="ips9e-ch02-p-683"><p>EXAMPLE 2.28</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-684"><p><span data-block_type="EXP-T-ri">Diabetes and blood sugar.</span> People with diabetes must manage their blood sugar levels carefully. They measure their fasting plasma glucose (FPG) several times a day with a glucose meter. Another measurement, made at regular medical checkups, is called HbA1c. This is roughly the percent of red blood cells that have a glucose molecule attached. It measures average exposure to glucose over a period of several months.</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-149"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-149"></h3>
-        <div data-url="asset/datasets/Data_Icon.jpg" data-file="HBA1C" data-block_type="rl_dataset" id="ips9e-ch02-p-685"><p>
-          <span>HBA1C</span>
-        </p></div>
-        <div data-dataset="" data-block_type="rl_crunchit" id="idp24075232"><p></p></div>
-      </div></div>
-      <div data-block_type="EXP-last" id="ips9e-ch02-p-686"><p>
-        This diagnostic test is becoming widely used and is sometimes called A1c by health care professionals. <span data-type="link" data-href="table_2_2.html">Table 2.2</span> gives data on both HbA1c and FPG for 18 diabetics five months after they completed a diabetes education class.<span data-type="termref" data-term="fn_ch2_fn21">
-          <sup>21</sup>
-        </span>
-      </p></div>
-      <div data-type="figure" data-caption-compass="S" data-filename="figure_2_25.html" data-figure-id="ips9e-ch02-fig-25" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
-        
-        <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_25a.jpg" data-figure-id="ips9e-ch02-fig-25" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-        <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_25b.jpg" data-figure-id="ips9e-ch02-fig-25" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-        <div data-type="figure_text">
-<span data-type="number">Figure 79.25: </span><span data-type="caption">
-          <span data-block_type="FG-N-ri">Figure 2.25</span>
-          <span data-block_type="FG-CAP">
-            (a) Scatterplot of fasting plasma glucose against HbA1c (which measures long-term blood glucose), with the least-squares regression line, <span data-type="link" data-href="example_2_28.html">Example 2.28</span>. (b) Residual plot for the regression of fasting plasma glucose on HbA1c. Subject 15 is an outlier in fasting plasma glucose. Subject 18 is an outlier in HbA1c that may be influential but does not have a large residual.
-          </span>
-        </span>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="HBA1C" data-block_type="rl_dataset" id="ips9e-ch02-p-685"><p><span>HBA1C</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm26523360"><p></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch02-p-686"><p>This diagnostic test is becoming widely used and is sometimes called A1c by health care professionals. <span data-type="link" data-href="table_2_2.html">Table 2.2</span> gives data on both HbA1c and FPG for 18 diabetics five months after they completed a diabetes education class.<span data-type="termref" data-term="fn_ch2_fn21"><sup>21</sup></span></p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_2_25.html" data-figure-id="ips9e-ch02-fig-25" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_25a.jpg" data-figure-id="ips9e-ch02-fig-25" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<img id="" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_25b.jpg" data-figure-id="ips9e-ch02-fig-25" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 2.25: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 2.25</span> <span data-block_type="FG-CAP">(a) Scatterplot of fasting plasma glucose against HbA1c (which measures long-term blood glucose), with the least-squares regression line, <span data-type="link" data-href="example_2_28.html">Example 2.28</span>. (b) Residual plot for the regression of fasting plasma glucose on HbA1c. Subject 15 is an outlier in fasting plasma glucose. Subject 18 is an outlier in HbA1c that may be influential but does not have a large residual.</span></span>
 </div>
-      </div>
-      <div data-block_type="EXP-last" id="ips9e-ch02-p-687"><p>
-        Because both FPG and HbA1c measure blood glucose, we expect a positive association. The scatterplot in <span data-type="link" data-href="figure_2_25.html">Figure 2.25</span>(a) shows a surprisingly weak relationship, with correlation <em>r</em> = 0.4819. The line on the plot is the least-squares regression line for predicting FPG from HbA1c. Its equation is
-      </p></div>
-      <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_128"><p>128</p></div>
-      <div data-block_type="EXP-EQ" id="ips9e-ch02-p-688"><p>
-        <span data-math="math_49"></span>
-      </p></div>
-      <div data-block_type="EXP-last" id="ips9e-ch02-p-689"><p>It appears that one-time measurements of FPG can vary quite a bit among people with similar long-term levels, as measured by HbA1c. This is why A1c is an important diagnostic test.</p></div>
-    </div></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-690"><p>
-      Two unusual cases are marked in <span data-type="link" data-href="figure_2_25.html">Figure 2.25</span>(a). Subjects 15 and 18 are unusual in different ways. Subject 15 has dangerously high FPG and lies far from the regression line in the <em>y</em> direction. Subject 18 is close to the line but far out in the <em>x</em> direction. The residual plot in <span data-type="link" data-href="figure_2_25.html">Figure 2.25</span>(b) confirms that Subject 15 has a large residual and that Subject 18 does not.
-    </p></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-691"><p>
-      Points that are outliers in the <em>x</em> direction, like Subject 18, can have a strong influence on the position of the regression line. Least-squares lines make the sum of squares of the vertical distances to the points as small as possible. A point that is extreme in the <em>x</em> direction with no other points near it pulls the line toward itself.
-    </p></div>
-    <div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-150"><div data-type="box_inner">
+</div>
+<div data-block_type="EXP-last" id="ips9e-ch02-p-687"><p>Because both FPG and HbA1c measure blood glucose, we expect a positive association. The scatterplot in <span data-type="link" data-href="figure_2_25.html">Figure 2.25</span>(a) shows a surprisingly weak relationship, with correlation <em>r</em> = 0.4819. The line on the plot is the least-squares regression line for predicting FPG from HbA1c. Its equation is</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_128"><p>128</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch02-p-688"><p><span data-math="math_51"></span></p></div>
+<div data-block_type="EXP-last" id="ips9e-ch02-p-689"><p>It appears that one-time measurements of FPG can vary quite a bit among people with similar long-term levels, as measured by HbA1c. This is why A1c is an important diagnostic test.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-690"><p>Two unusual cases are marked in <span data-type="link" data-href="figure_2_25.html">Figure 2.25</span>(a). Subjects 15 and 18 are unusual in different ways. Subject 15 has dangerously high FPG and lies far from the regression line in the <em>y</em> direction. Subject 18 is close to the line but far out in the <em>x</em> direction. The residual plot in <span data-type="link" data-href="figure_2_25.html">Figure 2.25</span>(b) confirms that Subject 15 has a large residual and that Subject 18 does not.</p></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-691"><p>Points that are outliers in the <em>x</em> direction, like Subject 18, can have a strong influence on the position of the regression line. Least-squares lines make the sum of squares of the vertical distances to the points as small as possible. A point that is extreme in the <em>x</em> direction with no other points near it pulls the line toward itself.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-150"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-150"></h3>
-      <div data-block_type="BX1-T" id="ips9e-ch02-p-692"><p>OUTLIERS AND INFLUENTIAL OBSERVATIONS IN REGRESSION</p></div>
-      <div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-693"><p>
-        An <strong>outlier</strong> is an observation that lies outside the overall pattern of the other observations. Points that are outliers in the <em>y</em> direction of a scatterplot have large regression residuals, but other outliers need not have large residuals.
-      </p></div>
-      <div data-block_type="BX1-TXT" id="ips9e-ch02-p-694"><p>
-        An observation is <strong>influential</strong> for a statistical calculation if removing it would markedly change the result of the calculation. Points that are outliers in the <em>x</em> direction of a scatterplot are often influential for the least-squares regression line.
-      </p></div>
-    </div></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-695"><p>
-      Influence is a matter of degree—how much does a calculation change when we remove an observation? It is difficult to assess influence on a regression line without actually doing the regression both with and without the suspicious observation. A point that is an outlier in <em>x</em> is often influential. But if the point happens to lie close to the regression line calculated from the other observations, then its presence will move the line only a little and the point will not be influential.
-    </p></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-696"><p>
-      The influence of a point that is an outlier in <em>y</em> depends on whether there are many other points with similar values of <em>x</em> that hold the line in place. <span data-type="link" data-href="figure_2_25.html">Figures 2.25(a)</span> and <span data-type="link" data-href="figure_2_25.html">(b)</span> identify two unusual observations. How influential are they?
-    </p></div>
-    <div data-type="box" data-block_type="EXP" data-filename="example_2_29.html" id="ips9e-ch02-box-151"><div data-type="box_inner">
+<div data-block_type="BX1-T" id="ips9e-ch02-p-692"><p>OUTLIERS AND INFLUENTIAL OBSERVATIONS IN REGRESSION</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-693"><p>An <strong>outlier</strong> is an observation that lies outside the overall pattern of the other observations. Points that are outliers in the <em>y</em> direction of a scatterplot have large regression residuals, but other outliers need not have large residuals.</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch02-p-694"><p>An observation is <strong>influential</strong> for a statistical calculation if removing it would markedly change the result of the calculation. Points that are outliers in the <em>x</em> direction of a scatterplot are often influential for the least-squares regression line.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-695"><p>Influence is a matter of degree—how much does a calculation change when we remove an observation? It is difficult to assess influence on a regression line without actually doing the regression both with and without the suspicious observation. A point that is an outlier in <em>x</em> is often influential. But if the point happens to lie close to the regression line calculated from the other observations, then its presence will move the line only a little and the point will not be influential.</p></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-696"><p>The influence of a point that is an outlier in <em>y</em> depends on whether there are many other points with similar values of <em>x</em> that hold the line in place. <span data-type="link" data-href="figure_2_25.html">Figures 2.25(a)</span> and <span data-type="link" data-href="figure_2_25.html">(b)</span> identify two unusual observations. How influential are they?</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_2_29.html" id="ips9e-ch02-box-151"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-151"></h3>
-      <div data-block_type="EXP-N" id="ips9e-ch02-p-697"><p>EXAMPLE 2.29</p></div>
-      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-698"><p>
-        <span data-block_type="EXP-T-ri">Influential observations.</span> Subjects 15 and 18 both influence the correlation between FPG and HbA1c, in opposite directions. Subject 15 weakens the linear pattern; if we drop this point, the correlation increases from <em>r</em> = 0.4819 to <em>r</em> = 0.5684. Subject 18 extends the linear pattern; if we omit this subject, the correlation drops from <em>r</em> = 0.4819 to <em>r</em> = 0.3837.
-      </p></div>
-      <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-152"><div data-type="box_inner">
+<div data-block_type="EXP-N" id="ips9e-ch02-p-697"><p>EXAMPLE 2.29</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-698"><p><span data-block_type="EXP-T-ri">Influential observations.</span> Subjects 15 and 18 both influence the correlation between FPG and HbA1c, in opposite directions. Subject 15 weakens the linear pattern; if we drop this point, the correlation increases from <em>r</em> = 0.4819 to <em>r</em> = 0.5684. Subject 18 extends the linear pattern; if we omit this subject, the correlation drops from <em>r</em> = 0.4819 to <em>r</em> = 0.3837.</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch02-box-152"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-152"></h3>
-        <div data-url="asset/datasets/Data_Icon.jpg" data-file="HBA1C" data-block_type="rl_dataset" id="ips9e-ch02-p-699"><p>
-          <span>HBA1C</span>
-        </p></div>
-        <div data-dataset="" data-block_type="rl_crunchit" id="idp24119904"><p></p></div>
-      </div></div>
-      <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_129"><p>129</p></div>
-      <div data-block_type="EXP-last" id="ips9e-ch02-p-700"><p>
-        To assess influence on the least-squares line, we recalculate the line leaving out a suspicious point. <span data-type="link" data-href="figure_2_26.html">Figure 2.26</span> shows three least-squares lines. The solid line is the regression line of FPG on HbA1c based on all 18 subjects. This is the same line that appears in <span data-type="link" data-href="figure_2_25.html">Figure 2.25</span>(a). The dotted line is calculated from all subjects except Subject 18. You see that point 18 does pull the line down toward itself. But the influence of Subject 18 is not very large—the dotted and solid lines are close together for HbA1c values between 6 and 14, the range of all except Subject 18.
-      </p></div>
-      <div data-type="figure" data-caption-compass="S" data-filename="figure_2_26.html" data-figure-id="ips9e-ch02-fig-26" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
-        
-        <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_26.jpg" data-figure-id="ips9e-ch02-fig-26" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-        <div data-type="figure_text">
-<span data-type="number">Figure 79.26: </span><span data-type="caption">
-          <span data-block_type="FG-N-ri">Figure 2.26</span>
-          <span data-block_type="FG-CAP">
-            Three regression lines for predicting fasting plasma glucose from HbA1c, <span data-type="link" data-href="example_2_29.html">Example 2.29</span>. The solid line uses all 18 subjects. The dotted line leaves out Subject 18. The dashed line leaves out Subject 15. “Leaving one out” calculations are the surest way to assess influence.
-          </span>
-        </span>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="HBA1C" data-block_type="rl_dataset" id="ips9e-ch02-p-699"><p><span>HBA1C</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm26480432"><p></p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_129"><p>129</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch02-p-700"><p>To assess influence on the least-squares line, we recalculate the line leaving out a suspicious point. <span data-type="link" data-href="figure_2_26.html">Figure 2.26</span> shows three least-squares lines. The solid line is the regression line of FPG on HbA1c based on all 18 subjects. This is the same line that appears in <span data-type="link" data-href="figure_2_25.html">Figure 2.25</span>(a). The dotted line is calculated from all subjects except Subject 18. You see that point 18 does pull the line down toward itself. But the influence of Subject 18 is not very large—the dotted and solid lines are close together for HbA1c values between 6 and 14, the range of all except Subject 18.</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_2_26.html" data-figure-id="ips9e-ch02-fig-26" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_26.jpg" data-figure-id="ips9e-ch02-fig-26" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 2.26: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 2.26</span> <span data-block_type="FG-CAP">Three regression lines for predicting fasting plasma glucose from HbA1c, <span data-type="link" data-href="example_2_29.html">Example 2.29</span>. The solid line uses all 18 subjects. The dotted line leaves out Subject 18. The dashed line leaves out Subject 15. “Leaving one out” calculations are the surest way to assess influence.</span></span>
 </div>
-      </div>
-      <div data-block_type="EXP-last" id="ips9e-ch02-p-701"><p>
-        The dashed line omits Subject 15, the outlier in <em>y</em>. Comparing the solid and dashed lines, we see that Subject 15 pulls the regression line up. The influence is again not large, but it exceeds the influence of Subject 18.
-      </p></div>
-    </div></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-702"><p>
-      We did not need the distinction between outliers and influential observations in <span data-type="link" data-href="ips9e-ch01.xml">Chapter 1</span>. A single large salary that pulls up the mean salary <span data-math="math_50"></span> for a group of workers is an outlier because it lies far above the other salaries. It is also influential because the mean changes when it is removed. In the regression setting, however, not all outliers are influential. Because influential observations draw the regression line toward themselves, we may not be able to spot them by looking for large residuals.
-    </p></div>
-    <div data-block_type="level_2_title" id="ips9e-ch02-p-703"><p>
-      <span data-block_type="h2">Beware of the lurking variable</span>
-    </p></div>
-    <div data-block_type="TXT-ni" id="ips9e-ch02-p-704"><p>Correlation and regression are powerful tools for measuring the association between two variables and for expressing the dependence of one variable on the other. These tools must be used with an awareness of their limitations. We have seen that</p></div>
-    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_130"><p>130</p></div>
-    <ul data-block_type="bullet" id="ips9e-ch02-list-67">
-      <li><div data-block_type="BL-first" id="ips9e-ch02-p-705"><p>
-          <span data-block_type="maker">•</span> Correlation measures <em>only linear association</em>, and fitting a straight line makes sense only when the overall pattern of the relationship is linear. Always plot your data before calculating.
-        </p></div>
-      </li>
-      <li><div data-block_type="BL" id="ips9e-ch02-p-706"><p>
-          <span data-block_type="maker">•</span> <em>Extrapolation</em> (using a fitted model far outside the range of the data that we used to fit it) often produces unreliable predictions.
-        </p></div>
-      </li>
-      <li><div data-block_type="BL-last" id="ips9e-ch02-p-707"><p>
-          <span data-block_type="maker">•</span> Correlation and least-squares regression are <em>not resistant</em>. Always plot your data and look for potentially influential points.
-        </p></div>
-      </li>
-    </ul>
-    <div data-block_type="TXT" id="ips9e-ch02-p-708"><p>
-      Another caution is even more important: the relationship between two variables can often be understood only by taking other variables into account. <em>Lurking variables</em> can make a correlation or regression misleading.
-    </p></div>
-    <div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-153"><div data-type="box_inner">
+</div>
+<div data-block_type="EXP-last" id="ips9e-ch02-p-701"><p>The dashed line omits Subject 15, the outlier in <em>y</em>. Comparing the solid and dashed lines, we see that Subject 15 pulls the regression line up. The influence is again not large, but it exceeds the influence of Subject 18.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-702"><p>We did not need the distinction between outliers and influential observations in <span data-type="link" data-href="ips9e-ch01.xml">Chapter 1</span>. A single large salary that pulls up the mean salary <span data-math="math_52"></span> for a group of workers is an outlier because it lies far above the other salaries. It is also influential because the mean changes when it is removed. In the regression setting, however, not all outliers are influential. Because influential observations draw the regression line toward themselves, we may not be able to spot them by looking for large residuals.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch02-p-703"><p><span data-block_type="h2">Beware of the lurking variable</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch02-p-704"><p>Correlation and regression are powerful tools for measuring the association between two variables and for expressing the dependence of one variable on the other. These tools must be used with an awareness of their limitations. We have seen that</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_130"><p>130</p></div>
+<ul data-block_type="bullet" id="ips9e-ch02-list-67">
+<li><div data-block_type="BL-first" id="ips9e-ch02-p-705"><p><span data-block_type="maker">•</span> Correlation measures <em>only linear association</em>, and fitting a straight line makes sense only when the overall pattern of the relationship is linear. Always plot your data before calculating.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch02-p-706"><p><span data-block_type="maker">•</span> <em>Extrapolation</em> (using a fitted model far outside the range of the data that we used to fit it) often produces unreliable predictions.</p></div></li>
+<li><div data-block_type="BL-last" id="ips9e-ch02-p-707"><p><span data-block_type="maker">•</span> Correlation and least-squares regression are <em>not resistant</em>. Always plot your data and look for potentially influential points.</p></div></li>
+</ul>
+<div data-block_type="TXT" id="ips9e-ch02-p-708"><p>Another caution is even more important: the relationship between two variables can often be understood only by taking other variables into account. <em>Lurking variables</em> can make a correlation or regression misleading.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-153"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-153"></h3>
-      <div data-block_type="BX1-T" id="ips9e-ch02-p-709"><p>LURKING VARIABLE</p></div>
-      <div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-710"><p>
-        A <strong>lurking variable</strong> is a variable that is not among the explanatory or response variables in a study and yet may influence the interpretation of relationships among those variables.
-      </p></div>
-    </div></div>
-    <div data-type="box" data-block_type="EXP" data-filename="example_2_30.html" id="ips9e-ch02-box-154"><div data-type="box_inner">
+<div data-block_type="BX1-T" id="ips9e-ch02-p-709"><p>LURKING VARIABLE</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-710"><p>A <strong>lurking variable</strong> is a variable that is not among the explanatory or response variables in a study and yet may influence the interpretation of relationships among those variables.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_2_30.html" id="ips9e-ch02-box-154"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-154"></h3>
-      <div data-block_type="EXP-N" id="ips9e-ch02-p-711"><p>EXAMPLE 2.30</p></div>
-      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-712"><p>
-        <span data-block_type="EXP-T-ri">Discrimination in medical treatment?</span> Studies show that men who complain of chest pain are more likely to get detailed tests and aggressive treatment such as bypass surgery than are women with similar complaints. Is this association between sex and treatment due to discrimination?
-      </p></div>
-      <div data-block_type="EXP-last" id="ips9e-ch02-p-713"><p>Perhaps not. Men and women develop heart problems at different ages—women are, on the average, between 10 and 15 years older than men. Aggressive treatments are more risky for older patients, so doctors may hesitate to recommend them. Lurking variables—the patient’s age and condition—may explain the relationship between sex and doctors’ decisions.</p></div>
-    </div></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-714"><p>Here is an example of a different type of lurking variable.</p></div>
-    <div data-type="box" data-block_type="EXP" data-filename="example_2_31.html" id="ips9e-ch02-box-155"><div data-type="box_inner">
+<div data-block_type="EXP-N" id="ips9e-ch02-p-711"><p>EXAMPLE 2.30</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-712"><p><span data-block_type="EXP-T-ri">Discrimination in medical treatment?</span> Studies show that men who complain of chest pain are more likely to get detailed tests and aggressive treatment such as bypass surgery than are women with similar complaints. Is this association between sex and treatment due to discrimination?</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch02-p-713"><p>Perhaps not. Men and women develop heart problems at different ages—women are, on the average, between 10 and 15 years older than men. Aggressive treatments are more risky for older patients, so doctors may hesitate to recommend them. Lurking variables—the patient’s age and condition—may explain the relationship between sex and doctors’ decisions.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-714"><p>Here is an example of a different type of lurking variable.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_2_31.html" id="ips9e-ch02-box-155"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-155"></h3>
-      <div data-block_type="EXP-N" id="ips9e-ch02-p-715"><p>EXAMPLE 2.31</p></div>
-      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-716"><p>
-        <span data-block_type="EXP-T-ri">Gas and electricity bills.</span> A single-family household receives bills for gas and electricity each month. The 12 observations for a recent year are plotted with the least-squares regression line in <span data-type="link" data-href="figure_2_27.html">Figure 2.27</span>. We have arbitrarily chosen to put the electricity bill on the <em>x</em> axis and the gas bill on the <em>y</em> axis. There is a clear negative association. Does this mean that a high electricity bill causes the gas bill to be low and vice versa?
-      </p></div>
-      <div data-block_type="EXP-last" id="ips9e-ch02-p-717"><p>To understand the association in this example, we need to know a little more about the two variables. In this household, heating is done by gas and cooling is done by electricity. Therefore, in the winter months the gas bill will be relatively high and the electricity bill will be relatively low. The pattern is reversed in the summer months. The association that we see in this example is due to a lurking variable: time of year.</p></div>
-    </div></div>
-    <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_131"><p>131</p></div>
-    <div data-type="figure" data-caption-compass="S" data-filename="figure_2_27.html" data-figure-id="ips9e-ch02-fig-27" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
-      
-      <img id="" src="images/17MOOREIPS-MSE_9e_fig_02_27.jpg" data-figure-id="ips9e-ch02-fig-27" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
-      <div data-type="figure_text">
-<span data-type="number">Figure 79.27: </span><span data-type="caption">
-        <span data-block_type="FG-N-ri">Figure 2.27</span>
-        <span data-block_type="FG-CAP">
-          Scatterplot with least-squares regression line for predicting a household’s monthly charges for gas using its monthly charges for electricity, <span data-type="link" data-href="example_2_31.html">Example 2.31</span>.
-        </span>
-      </span>
+<div data-block_type="EXP-N" id="ips9e-ch02-p-715"><p>EXAMPLE 2.31</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-716"><p><span data-block_type="EXP-T-ri">Gas and electricity bills.</span> A single-family household receives bills for gas and electricity each month. The 12 observations for a recent year are plotted with the least-squares regression line in <span data-type="link" data-href="figure_2_27.html">Figure 2.27</span>. We have arbitrarily chosen to put the electricity bill on the <em>x</em> axis and the gas bill on the <em>y</em> axis. There is a clear negative association. Does this mean that a high electricity bill causes the gas bill to be low and vice versa?</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch02-p-717"><p>To understand the association in this example, we need to know a little more about the two variables. In this household, heating is done by gas and cooling is done by electricity. Therefore, in the winter months the gas bill will be relatively high and the electricity bill will be relatively low. The pattern is reversed in the summer months. The association that we see in this example is due to a lurking variable: time of year.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_131"><p>131</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_2_27.html" data-figure-id="ips9e-ch02-fig-27" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_27.jpg" data-figure-id="ips9e-ch02-fig-27" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 2.27: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 2.27</span> <span data-block_type="FG-CAP">Scatterplot with least-squares regression line for predicting a household’s monthly charges for gas using its monthly charges for electricity, <span data-type="link" data-href="example_2_31.html">Example 2.31</span>.</span></span>
 </div>
-    </div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-718"><p>
-      Correlations that are due to lurking variables are sometimes called “nonsense correlations.” The correlation is real. What is nonsense is the suggestion that the variables are directly related so that changing one of the variables <em>causes</em> changes in the other. The question of causation is important enough to merit separate treatment in <span data-type="link" data-href="ips9e-ch02-sec1-07">Section 2.7</span>. For now, just <em>remember that an association between two variables x and y can reflect many types of relationships among x, y, and one or more lurking variables</em>.
-    </p></div>
-    <div data-block_type="Caution icon" id="ips9e-ch02-p-719"><p>
-      <img id="" src="images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
-    </p></div>
-    <div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-156"><div data-type="box_inner">
+</div>
+<div data-block_type="TXT" id="ips9e-ch02-p-718"><p>Correlations that are due to lurking variables are sometimes called “nonsense correlations.” The correlation is real. What is nonsense is the suggestion that the variables are directly related so that changing one of the variables <em>causes</em> changes in the other. The question of causation is important enough to merit separate treatment in <span data-type="link" data-href="ips9e_ch2_20.html" data-target="_pop">Section 2.7</span>. For now, just <em>remember that an association between two variables x and y can reflect many types of relationships among x, y, and one or more lurking variables</em>.</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch02-p-719"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch02-box-156"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-156"></h3>
-      <div data-block_type="BX1-T" id="ips9e-ch02-p-720"><p>ASSOCIATION DOES NOT IMPLY CAUSATION</p></div>
-      <div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-721"><p>
-        An association between an explanatory variable <em>x</em> and a response variable <em>y</em>, even if it is very strong, is not by itself good evidence that changes in <em>x</em> actually cause changes in <em>y</em>.
-      </p></div>
-    </div></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-722"><p>
-      Lurking variables sometimes create a correlation between <em>x</em> and <em>y</em>, as in <span data-type="link" data-href="example_2_30.html">Examples 2.30</span> and <span data-type="link" data-href="example_2_31.html">2.31</span>. <em>When you observe an association between two variables, always ask yourself if the relationship that you see might be due to a lurking variable</em>. As in <span data-type="link" data-href="example_2_31.html">Example 2.31</span>, time is often a likely candidate.
-    </p></div>
-    <div data-block_type="Caution icon" id="ips9e-ch02-p-723"><p>
-      <img id="" src="images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
-    </p></div>
-    <div data-block_type="level_2_title" id="ips9e-ch02-p-724"><p>
-      <span data-block_type="h2">Beware of correlations based on averaged data</span>
-    </p></div>
-    <div data-block_type="TXT-ni" id="ips9e-ch02-p-725"><p>Regression or correlation studies sometimes work with averages or other measures that combine information from many individuals. For example, if we plot the average height of young children against their age in months, we will see a very strong positive association with correlation near 1. But individual children of the same age vary a great deal in height. A plot of height against age for individual children will show much more scatter and lower correlation than the plot of average height against age.</p></div>
-    <div data-block_type="TXT" id="ips9e-ch02-p-726"><p>
-      <em>A correlation based on averages over many individuals is usually higher than the correlation between the same variables based on data for individuals</em>. This fact reminds us again of the importance of noting exactly what variables a statistical study involves.
-    </p></div>
-    <div data-block_type="Caution icon" id="ips9e-ch02-p-727"><p>
-      <img id="" src="images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
-    </p></div>
-    <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_132"><p>132</p></div>
-    <div data-block_type="level_2_title" id="ips9e-ch02-p-728"><p>
-      <span data-block_type="h2">Beware of restricted ranges</span>
-    </p></div>
-    <div data-block_type="TXT-ni" id="ips9e-ch02-p-729"><p>
-      The range of values for the explanatory variable in a regression can have a large impact on the strength of the relationship. For example, if we use age as a predictor of reading ability for a sample of students in the third grade, we will probably see little or no relationship. However, if our sample includes students from grades 1 through 8, we would expect to see a relatively strong relationship. We call this phenomenon the <span data-type="termref" data-term="restricted-range problem">
-        <strong>restricted-range problem</strong>
-      </span><span data-block_type="MN-GL-term">restricted-range problem</span>.
-    </p></div>
-    <div data-type="box" data-block_type="EXP" data-filename="example_2_32.html" id="ips9e-ch02-box-157"><div data-type="box_inner">
+<div data-block_type="BX1-T" id="ips9e-ch02-p-720"><p>ASSOCIATION DOES NOT IMPLY CAUSATION</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch02-p-721"><p>An association between an explanatory variable <em>x</em> and a response variable <em>y</em>, even if it is very strong, is not by itself good evidence that changes in <em>x</em> actually cause changes in <em>y</em>.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-722"><p>Lurking variables sometimes create a correlation between <em>x</em> and <em>y</em>, as in <span data-type="link" data-href="example_2_30.html">Examples 2.30</span> and <span data-type="link" data-href="example_2_31.html">2.31</span>. <em>When you observe an association between two variables, always ask yourself if the relationship that you see might be due to a lurking variable</em>. As in <span data-type="link" data-href="example_2_31.html">Example 2.31</span>, time is often a likely candidate.</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch02-p-723"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="level_2_title" id="ips9e-ch02-p-724"><p><span data-block_type="h2">Beware of correlations based on averaged data</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch02-p-725"><p>Regression or correlation studies sometimes work with averages or other measures that combine information from many individuals. For example, if we plot the average height of young children against their age in months, we will see a very strong positive association with correlation near 1. But individual children of the same age vary a great deal in height. A plot of height against age for individual children will show much more scatter and lower correlation than the plot of average height against age.</p></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-726"><p><em>A correlation based on averages over many individuals is usually higher than the correlation between the same variables based on data for individuals</em>. This fact reminds us again of the importance of noting exactly what variables a statistical study involves.</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch02-p-727"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_132"><p>132</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch02-p-728"><p><span data-block_type="h2">Beware of restricted ranges</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch02-p-729"><p>The range of values for the explanatory variable in a regression can have a large impact on the strength of the relationship. For example, if we use age as a predictor of reading ability for a sample of students in the third grade, we will probably see little or no relationship. However, if our sample includes students from grades 1 through 8, we would expect to see a relatively strong relationship. We call this phenomenon the <span data-type="termref" data-term="restricted-range problem"><strong>restricted-range problem</strong></span><span data-block_type="MN-GL-term">restricted-range problem</span>.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_2_32.html" id="ips9e-ch02-box-157"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-157"></h3>
-      <div data-block_type="EXP-N" id="ips9e-ch02-p-730"><p>EXAMPLE 2.32</p></div>
-      <div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-731"><p>
-        <span data-block_type="EXP-T-ri">A test for job applicants.</span> Your company gives a test of cognitive ability to job applicants before deciding whom to hire. Your boss has asked you to use company records to see if this test really helps predict the performance ratings of employees. The restricted-range problem may make it difficult to see a strong relationship between test scores and performance ratings. The current employees were selected by a mechanism that is likely to result in scores that tend to be higher than those of the entire pool of applicants.
-      </p></div>
-    </div></div>
-    <div data-type="box" data-block_type="BX2" id="ips9e-ch02-box-158"><div data-type="box_inner">
+<div data-block_type="EXP-N" id="ips9e-ch02-p-730"><p>EXAMPLE 2.32</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch02-p-731"><p><span data-block_type="EXP-T-ri">A test for job applicants.</span> Your company gives a test of cognitive ability to job applicants before deciding whom to hire. Your boss has asked you to use company records to see if this test really helps predict the performance ratings of employees. The restricted-range problem may make it difficult to see a strong relationship between test scores and performance ratings. The current employees were selected by a mechanism that is likely to result in scores that tend to be higher than those of the entire pool of applicants.</p></div>
+</div></div>
+<div data-type="box" data-block_type="BX2" id="ips9e-ch02-box-158"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch02-box-158"></h3>
-      <div data-block_type="BX2-H" id="ips9e-ch02-p-732"><p>BEYOND THE BASICS</p></div>
-      <div data-block_type="BX2-T" id="ips9e-ch02-p-733"><p>Data Mining</p></div>
-      <div data-block_type="BX2-TXT-ni" id="ips9e-ch02-p-734"><p>
-        <span data-type="link" data-href="ips9e-ch01.xml">Chapters 1</span> and <span data-type="link" data-href="ips9e-ch02.xml">2</span> of this text are devoted to the important aspect of statistics called <em>exploratory data analysis</em> (EDA). We use graphs and numerical summaries to examine data, searching for patterns and paying attention to striking deviations from the patterns we find. In discussing regression, we advanced to using the pattern we find (in this case, a linear pattern) for prediction.
-      </p></div>
-      <div data-block_type="BX2-TXT-3" id="ips9e-ch02-p-735"><p>
-        Suppose now that we have a truly enormous database, such as all purchases recorded by the cash register scanners of a national retail chain during the past week. Surely this treasure chest of data contains patterns that might guide business decisions. If we could see clearly the types of activewear preferred in large California cities and compare the preferences of small Midwest cities —right now, not at the end of the season—we might improve profits in both parts of the country by matching stock with demand. This sounds much like EDA, and indeed it is. Exploring really large databases in the hope of finding useful patterns is called <span data-type="termref" data-term="data mining">
-          <strong>data mining</strong>
-        </span><span data-block_type="MN-GL-term">data mining</span>. Here are some distinctive features of data mining:
-      </p></div>
-      <ul data-block_type="bullet" id="ips9e-ch02-list-68">
-        <li><div data-block_type="BX2-BL" id="ips9e-ch02-p-736"><p>
-            <span data-block_type="maker">•</span> When you have terrabytes of data, even straightforward calculations and graphics become very time-consuming. So efficient algorithms are very important.
-          </p></div>
-        </li>
-        <li><div data-block_type="BX2-BL" id="ips9e-ch02-p-737"><p>
-            <span data-block_type="maker">•</span> The structure of the database and the process of storing the data (the fashionable term is <em>data warehousing</em>), perhaps by unifying data scattered across many departments of a large corporation, require careful consideration.
-          </p></div>
-        </li>
-        <li><div data-block_type="BX2-BL" id="ips9e-ch02-p-738"><p>
-            <span data-block_type="maker">•</span> Data mining requires automated tools that work based on only vague queries by the user. The process is too complex to do step-by-step as we have done in EDA.
-          </p></div>
-        </li>
-      </ul>
-      <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_133"><p>133</p></div>
-      <div data-block_type="TXT" id="ips9e-ch02-p-739"><p>All these features point to the need for sophisticated computer science as a basis for data mining. Indeed, data mining is often viewed as a part of computer science. Yet many statistical ideas and tools—mostly tools for dealing with multidimensional data, not the sort of thing that appears in a first statistics course—are very helpful. Like many other modern developments, data mining crosses the boundaries of traditional fields of study.</p></div>
-      <div data-block_type="TXT" id="ips9e-ch02-p-740"><p>Do remember that the perils we associate with blind use of correlation and regression are yet more perilous in data mining, where the fog of an immense database can prevent clear vision. Extrapolation, ignoring lurking variables, and confusing association with causation are traps for the unwary data miner.</p></div>
-    </div></div>
-  </div>
+<div data-block_type="BX2-H" id="ips9e-ch02-p-732"><p>BEYOND THE BASICS</p></div>
+<div data-block_type="BX2-T" id="ips9e-ch02-p-733"><p>Data Mining</p></div>
+<div data-block_type="BX2-TXT-ni" id="ips9e-ch02-p-734"><p><span data-type="link" data-href="ips9e-ch01.xml">Chapters 1</span> and <span data-type="link" data-href="ips9e-ch02.xml">2</span> of this text are devoted to the important aspect of statistics called <em>exploratory data analysis</em> (EDA). We use graphs and numerical summaries to examine data, searching for patterns and paying attention to striking deviations from the patterns we find. In discussing regression, we advanced to using the pattern we find (in this case, a linear pattern) for prediction.</p></div>
+<div data-block_type="BX2-TXT-3" id="ips9e-ch02-p-735"><p>Suppose now that we have a truly enormous database, such as all purchases recorded by the cash register scanners of a national retail chain during the past week. Surely this treasure chest of data contains patterns that might guide business decisions. If we could see clearly the types of activewear preferred in large California cities and compare the preferences of small Midwest cities —right now, not at the end of the season—we might improve profits in both parts of the country by matching stock with demand. This sounds much like EDA, and indeed it is. Exploring really large databases in the hope of finding useful patterns is called <span data-type="termref" data-term="data mining"><strong>data mining</strong></span><span data-block_type="MN-GL-term">data mining</span>. Here are some distinctive features of data mining:</p></div>
+<ul data-block_type="bullet" id="ips9e-ch02-list-68">
+<li><div data-block_type="BX2-BL" id="ips9e-ch02-p-736"><p><span data-block_type="maker">•</span> When you have terrabytes of data, even straightforward calculations and graphics become very time-consuming. So efficient algorithms are very important.</p></div></li>
+<li><div data-block_type="BX2-BL" id="ips9e-ch02-p-737"><p><span data-block_type="maker">•</span> The structure of the database and the process of storing the data (the fashionable term is <em>data warehousing</em>), perhaps by unifying data scattered across many departments of a large corporation, require careful consideration.</p></div></li>
+<li><div data-block_type="BX2-BL" id="ips9e-ch02-p-738"><p><span data-block_type="maker">•</span> Data mining requires automated tools that work based on only vague queries by the user. The process is too complex to do step-by-step as we have done in EDA.</p></div></li>
+</ul>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_133"><p>133</p></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-739"><p>All these features point to the need for sophisticated computer science as a basis for data mining. Indeed, data mining is often viewed as a part of computer science. Yet many statistical ideas and tools—mostly tools for dealing with multidimensional data, not the sort of thing that appears in a first statistics course—are very helpful. Like many other modern developments, data mining crosses the boundaries of traditional fields of study.</p></div>
+<div data-block_type="TXT" id="ips9e-ch02-p-740"><p>Do remember that the perils we associate with blind use of correlation and regression are yet more perilous in data mining, where the fog of an immense database can prevent clear vision. Extrapolation, ignoring lurking variables, and confusing association with causation are traps for the unwary data miner.</p></div>
+</div></div>
+</div>
 <!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
 <br class="clear" />
 <!-- end of material in original view -->
