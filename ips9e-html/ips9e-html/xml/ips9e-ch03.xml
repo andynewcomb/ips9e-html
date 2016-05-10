@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manuscript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://www.w3.org/1998/Math/MathML" manuscript-id="03" name="" title="Moore_Chapter_03" xsi:noNamespaceSchemaLocation="xsd/digfir_manuscript.xsd">
-<chapter id="ips9e-ch03" number="3" title="Chapter 3: Producing Data" start-numbering-at="3" numbered="true">
+<chapter id="ips9e-ch03" number="3" title="Chapter 3: Producing Data" start-numbering-at="163" numbered="true">
 <section id="ips9e-ch03-sec-01" block_type="chapter" title="Producing Data" numbered="false" level="1" print_page="163">
 <p id="ips9e-ch03-p-01" block_type="CN">3</p>
 <p id="ips9e-ch03-p-02" block_type="CT">Producing Data</p>
 <p id="ips9e_page_163" block_type="page_start" data-margin-content="right">163</p>
 <figure id="ips9e-ch03-unfig-01" block_type="C-H-graphic" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="false"/>
-<image asset-id="ips9e-ch03-img-01" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_CO03.jpg"/>
+<image asset-id="ips9e-ch03-img-01" alt="image" src="images/17MOOREIPS-MSE_9e_CO03.jpg"/>
 <asset_source><phrase block_type="CO_PHCR">Thinkstock</phrase></asset_source>
 </figure>
 <box id="ips9e-ch03-box-01" numbered="false" block_type="chap_outline" title="CHAPTER OUTLINE">
@@ -81,7 +81,7 @@
 <p id="ips9e_page_166" block_type="page_start" data-margin-content="left">166</p>
 <figure id="ips9e-ch03-fig-01" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="3.1" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch03-img-02" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_01.jpg"/>
+<image asset-id="ips9e-ch03-img-02" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_01.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 3.1</phrase> <phrase block_type="FG-CAP">Websites of government statistical offices are prime sources of data. Here is a page from the website of the National Center for Education Statistics. (Source: U.S. Department of Education Institute of Education Sciences National Center for Education Statistics)</phrase></caption>
 </figure>
 <p id="ips9e-ch03-p-39" block_type="TXT">Many nations have a single national statistical office, such as Statistics Canada (<strong><link href="http://statcan.gc.ca">statcan.gc.ca</link></strong>) and Mexico&#8217;s INEGI (<strong><link href="http://inegi.org.mx">inegi.org.mx</link></strong>). More than 70 different U.S. agencies collect data. You can reach most of them through the U.S. government&#8217;s FedStats site (<strong><link href="http://fedstats.sites.usa.gov">fedstats.sites.usa.gov</link></strong>).</p>
@@ -257,7 +257,7 @@
 <p id="ips9e-ch03-p-133" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Repeated exposure to advertising.</phrase> What are the effects of repeated exposure to an advertising message? The answer may depend both on the length of the ad and on how often it is repeated. An experiment investigated this question using undergraduate students as <em>subjects.</em> All subjects viewed a 40-minute television program that included ads for a digital camera. Some subjects saw a 30-second commercial; others, a 90-second version. The same commercial was shown either one, three, or five times during the program.</p>
 <figure id="ips9e-ch03-unfig-02" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="left" width="small" border="false"/>
-<image asset-id="ips9e-ch03-img-03" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_P_03_01.jpg"/>
+<image asset-id="ips9e-ch03-img-03" alt="image" src="images/17MOOREIPS-MSE_9e_P_03_01.jpg"/>
 <asset_source><phrase block_type="PHCR">Alamy</phrase></asset_source>
 </figure>
 <p id="ips9e-ch03-p-134" block_type="EXP-mid">This experiment has two <em>factors</em>: length of the commercial, with two levels, and repetitions, with three levels. The six combinations of one level of each factor form six <em>treatments.</em> <link href="figure_3_2.html">Figure 3.2</link> shows the layout of the treatments. After viewing the TV program, all the subjects answered questions about their recall of the ad, their attitude toward the camera, and their intention to purchase it. These are the <em>outcomes.</em></p>
@@ -265,7 +265,7 @@
 <p id="ips9e_page_173" block_type="page_start" data-margin-content="right">173</p>
 <figure id="ips9e-ch03-fig-02" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="3.2" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="small" border="false"/>
-<image asset-id="ips9e-ch03-img-04" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_02.jpg"/>
+<image asset-id="ips9e-ch03-img-04" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_02.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 3.2</phrase> <phrase block_type="FG-CAP">The treatments in the study of advertising, <link href="example_3_9.html">Example 3.9</link>. Combining the levels of the two factors forms six treatments.</phrase></caption>
 </figure>
 <p id="ips9e-ch03-p-135" block_type="TXT"><link href="example_3_9.html">Example 3.9</link> shows how experiments allow us to study the combined effects of more than one factor. The interaction of several factors can produce effects that cannot be predicted from looking at the effects of each factor alone. Perhaps longer commercials increase interest in a product, and more commercials also increase interest, but if we both make a commercial longer and show it more often, viewers get annoyed and their interest in the product drops. The two-factor experiment in <link href="example_3_9.html">Example 3.9</link> will help us find out.</p>
@@ -324,13 +324,13 @@
 <p id="ips9e-ch03-p-166" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Which smartphone should be marketed?</phrase> Two teams have each prepared a prototype for a new smartphone. Before deciding which one will be marketed, the smartphones will be evaluated by college students. Forty students will receive a new phone. They will use it for two weeks and then answer some questions about how well they like the phone. The 40 students will be randomized, with 20 receiving each phone.</p>
 <figure id="ips9e-ch03-unfig-03" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="left" width="small" border="false"/>
-<image asset-id="ips9e-ch03-img-06" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_P_03_02.jpg"/>
+<image asset-id="ips9e-ch03-img-06" alt="image" src="images/17MOOREIPS-MSE_9e_P_03_02.jpg"/>
 <asset_source><phrase block_type="PHCR">Xaume Olleros/Bloomberg via Getty Images</phrase></asset_source>
 </figure>
 <p id="ips9e-ch03-p-167" block_type="EXP-mid">This experiment has a single factor (prototype) with two levels. The researchers must divide the 40 student subjects into two groups of 20. To do this in a completely unbiased fashion, put the names of the 40 students in a hat, mix them up, and draw 20. These students will receive Phone 1, and the remaining 20 will receive Phone 2. <link href="figure_3_3.html">Figure 3.3</link> outlines the design of this experiment.</p>
 <figure id="ips9e-ch03-fig-03" block_type="FIGURE" data-caption-compass="S" numbered="true" number="3.3" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch03-img-07" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_03.jpg"/>
+<image asset-id="ips9e-ch03-img-07" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_03.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 3.3</phrase> <phrase block_type="FG-CAP">Outline of a randomized comparative experiment, <link href="example_3_11.html">Example 3.11</link>.</phrase></caption>
 </figure>
 </box>
@@ -380,15 +380,15 @@
 </box>
 <figure id="ips9e-ch03-fig-04" block_type="FIGURE" data-caption-compass="S" numbered="true" number="3.4" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch03-img-09a" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_04a.jpg"/>
-<image asset-id="ips9e-ch03-img-09b" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_04b.jpg"/>
-<image asset-id="ips9e-ch03-img-09c" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_04c.jpg"/>
-<image asset-id="ips9e-ch03-img-09d" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_04d.jpg"/>
+<image asset-id="ips9e-ch03-img-09a" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_04a.jpg"/>
+<image asset-id="ips9e-ch03-img-09b" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_04b.jpg"/>
+<image asset-id="ips9e-ch03-img-09c" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_04c.jpg"/>
+<image asset-id="ips9e-ch03-img-09d" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_04d.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 3.4</phrase> <phrase block_type="FG-CAP">Randomization of 10 experimental units using an Excel spreadsheet, <link href="example_3_12.html">Example 3.12</link>: (a) labels; (b) random numbers; (c) sorted list of labels; (d) labels with group assignments.</phrase></caption>
 </figure>
 <p id="ips9e_page_179" block_type="page_start" data-margin-content="right">179</p>
 <p id="ips9e-ch03-p-196" block_type="TXT">If you want to save the uniform numbers that you generated in your file, you should copy them to another column using the &#8220;paste values&#8221; option before you perform the sort. Note that we have added a column called Group to the spreadsheet, which gives the group to which each subject is assigned. With this variable included, we can now sort the file on ID and delete the column with the random numbers. The result is shown in <link href="figure_3_4.html">Figure 3.4(d)</link>. The spreadsheet in this form can now be used as a template for entering data.</p>
-<p id="ips9e-ch03-p-197" block_type="level_2_title"><phrase block_type="h2">Randomization using random digits</phrase> </p>
+<p id="ips9e-ch03-p-197" block_type="level_2_title"><phrase block_type="h2">Randomization using random digits</phrase></p>
 <p id="ips9e-ch03-p-198" block_type="TXT-3">You can randomize without software by using a <em>table of random digits.</em> Thinking about random digits helps you to understand randomization even if you will use software in practice. <link href="table_b.html">Table B</link> at the back of the book is a table of random digits.</p>
 <box id="ips9e-ch03-box-34" numbered="false" block_type="BX1">
 <p id="ips9e-ch03-p-199" block_type="BX1-T">RANDOM DIGITS</p>
@@ -424,7 +424,7 @@
 <p id="ips9e_page_181" block_type="page_start" data-margin-content="right">181</p>
 <figure id="ips9e-ch03-fig-05" block_type="FIGURE" data-caption-compass="S" numbered="true" number="3.5" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch03-img-10" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_05.jpg"/>
+<image asset-id="ips9e-ch03-img-10" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_05.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 3.5</phrase> <phrase block_type="FG-CAP">Outline of a completely randomized design comparing six treatments, <link href="example_3_14.html">Example 3.14</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch03-p-220" block_type="EXP-mid">To carry out the random assignment, label the 150 students 001 to 150. (Three digits are needed to label 150 subjects.) Using Excel, we would generate a uniform random variable for each label and sort the file as we did in <link href="example_3_12.html">Example 3.12</link>. The first 25 students in this sorted file will receive Treatment 1, the next 25 will receive Treatment 2, etc.</p>
@@ -478,7 +478,7 @@
 <p id="ips9e-ch03-p-251" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Blocking in a cancer experiment.</phrase> The progress of a type of cancer differs in women and men. A clinical experiment to compare three therapies for this cancer then treats sex as a blocking variable. Two separate randomizations are done, one assigning the female subjects to the treatments and the other assigning the male subjects. <link href="figure_3_6.html">Figure 3.6</link> outlines the design of this experiment. Note that there is no randomization involved in making up the blocks. They are groups of subjects who differ in some way (sex in this case) that is apparent before the experiment begins.</p>
 <figure id="ips9e-ch03-fig-06" block_type="FIGURE" data-caption-compass="S" numbered="true" number="3.6" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch03-img-14" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_06.jpg"/>
+<image asset-id="ips9e-ch03-img-14" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_06.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 3.6</phrase> <phrase block_type="FG-CAP">Outline of a block design, <link href="example_3_18.html">Example 3.18</link>. The blocks consist of male and female subjects. The treatments are the three therapies for cancer.</phrase></caption>
 </figure>
 </box>
@@ -663,7 +663,7 @@
 <p id="ips9e-ch03-p-339" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">The Reading Recovery program.</phrase> The Reading Recovery (RR) program has specially trained teachers work one-on-one with at-risk first-grade students to help them learn to read. A study was designed to examine the relationship between the RR teachers&#8217; beliefs about their ability to motivate students and the progress of the students whom they teach.<termref term="fn_ch3_fn13"><sup>13</sup></termref> The Reading Recovery International Data Evaluation Center website (<strong><link href="http://www.idecweb.us">www.idecweb.us</link></strong>) says that there are 13,823 RR teachers. The researchers send a questionnaire to a random sample of 200 of these. The population consists of all 13,823 RR teachers, and the sample is the 200 that were randomly selected.</p>
 <figure id="ips9e-ch03-unfig-04" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="left" width="small" border="false"/>
-<image asset-id="ips9e-ch03-img-23" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_P_03_03.jpg"/>
+<image asset-id="ips9e-ch03-img-23" alt="image" src="images/17MOOREIPS-MSE_9e_P_03_03.jpg"/>
 <asset_source><phrase block_type="PHCR">hartcreations/iStockphoto</phrase></asset_source>
 </figure>
 </box>
@@ -724,9 +724,9 @@
 <p id="ips9e_page_192" block_type="page_start" data-margin-content="left">192</p>
 <figure id="ips9e-ch03-fig-07" block_type="FIGURE" data-caption-compass="S" numbered="true" number="3.7" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="false"/>
-<image asset-id="ips9e-ch03-img-24a" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_07a.jpg"/>
-<image asset-id="ips9e-ch03-img-24b" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_07b.jpg"/>
-<image asset-id="ips9e-ch03-img-24c" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_07c.jpg"/>
+<image asset-id="ips9e-ch03-img-24a" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_07a.jpg"/>
+<image asset-id="ips9e-ch03-img-24b" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_07b.jpg"/>
+<image asset-id="ips9e-ch03-img-24c" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_07c.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 3.7</phrase> <phrase block_type="FG-CAP">Selection of a simple random sample of countries from the population of 189 countries, <link href="example_3_23.html">Example 3.23</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch03-p-375" block_type="EXP-mid"><link href="figure_3_7.html">Figure 3.7(c)</link> shows the file after we sort on the uniform random numbers in column C. Our sample is the first 25 countries in the sorted file. The first three selected are Chile (CHL), Belgium (BEL), and the Solomon Islands (SLB). Note that Excel does not display the last two digits for Belarus (BLR) because they are zero.</p>
@@ -816,7 +816,7 @@
 <p id="ips9e-ch03-p-397" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Select an SRS of countries using JMP.</phrase> Refer to <link href="example_3_23.html">Example 3.23</link>, where we selected an SRS of countries from a population of 189 countries. Also see <link href="example_3_24.html">Example 3.24</link>, where we used the random digits in <link href="table_b.html">Table B</link> to select the SRS. We can also use JMP to select an SRS. The output for the first 17 countries selected is displayed in <link href="figure_3_8.html">Figure 3.8</link>. JMP provides a file with the selected countries with all columns in the original data file. Note that the selected files are listed in the order that they appear in the original file, which is alphabetically in this case.</p>
 <figure id="ips9e-ch03-fig-08" block_type="FIGURE" data-caption-compass="S" numbered="true" number="3.8" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch03-img-26" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_08.jpg"/>
+<image asset-id="ips9e-ch03-img-26" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_08.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 3.8</phrase> <phrase block_type="FG-CAP">JMP output for selecting an SRS of 25 countries from a population of 189 countries, <link href="example_3_25.html">Example 3.25</link>.</phrase></caption>
 </figure>
 </box>
@@ -867,7 +867,7 @@
 </box>
 <figure id="ips9e-ch03-fig-09" block_type="FIGURE" data-caption-compass="S" numbered="true" number="3.9" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch03-img-27" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_09.jpg"/>
+<image asset-id="ips9e-ch03-img-27" alt="image" src="images/17MOOREIPS-MSE_9e_fig_03_09.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 3.9</phrase> <phrase block_type="FG-CAP">Part of the home page for the General Social Survey (GSS). The GSS has assessed attitudes on a wide variety of topics since 1972. Its continuity over time makes the GSS a valuable source for studies of changing attitudes. (Source: GSS)</phrase></caption>
 </figure>
 <p id="ips9e_page_198" block_type="page_start" data-margin-content="left">198</p>
@@ -886,9 +886,9 @@
 <td align="center" block_type="EXP-MCL">2009</td>
 <td align="center" block_type="EXP-MCL">2012</td>
 </tr>
-<tr class="tborder">
+<tr class="tborder bborder">
 <td align="center" block_type="EXP-MCL" class="rborder">Nonresponse rate</td>
-<td align="center" block_type="EXP-MCL">64&#37; </td>
+<td align="center" block_type="EXP-MCL">64&#37;</td>
 <td align="center" block_type="EXP-MCL">72&#37;</td>
 <td align="center" block_type="EXP-MCL">75&#37;</td>
 <td align="center" block_type="EXP-MCL">79&#37;</td>
@@ -920,7 +920,7 @@
 <p id="ips9e-ch03-p-444" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Estimate the number of least flycatchers.</phrase> You are interested in the number of least flycatchers migrating along a major route in the north-central United States. You set up &#8220;mist nets&#8221; that capture the birds but do not harm them. The birds caught in the net are fitted with a small aluminum leg band and released. Last year, you banded and released 200 least flycatchers. This year, you repeat the process. Your net catches 120 least flycatchers, 12 of which have tags from last year&#8217;s catch.</p>
 <figure id="ips9e-ch03-unfig-05" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="left" width="small" border="false"/>
-<image asset-id="ips9e-ch03-img-29" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_P_03_04.jpg"/>
+<image asset-id="ips9e-ch03-img-29" alt="image" src="images/17MOOREIPS-MSE_9e_P_03_04.jpg"/>
 <asset_source><phrase block_type="PHCR">&#169; blickwinkel/Alamy Stock Photo</phrase></asset_source>
 </figure>
 <p id="ips9e-ch03-p-445" block_type="EXP-mid">The proportion of your second sample that have bands should estimate the proportion in the entire population that are banded. So if <em>N</em> is the unknown number of least flycatchers, we should have approximately</p>
@@ -1104,7 +1104,7 @@
 </list>
 </question>
 <question id="ips9e-ch03-ques-65">
-<p id="ips9e-ch03-p-506" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch03-img-33" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">3.65 Systematic random samples versus simple random samples.</phrase> The previous exercise introduces systematic random samples. Explain carefully why a systematic random sample <em>does</em> give every individual the same chance to be chosen but is <em>not</em> a simple random sample. </p>
+<p id="ips9e-ch03-p-506" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch03-img-33" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">3.65 Systematic random samples versus simple random samples.</phrase> The previous exercise introduces systematic random samples. Explain carefully why a systematic random sample <em>does</em> give every individual the same chance to be chosen but is <em>not</em> a simple random sample.</p>
 </question>
 <question id="ips9e-ch03-ques-66">
 <p id="ips9e-ch03-p-507" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">3.66 Random digit telephone dialing.</phrase> An opinion poll in California uses random digit dialing to choose telephone numbers at random. Numbers are selected separately within each California area code. The size of the sample in each area code is proportional to the population living there.</p>
@@ -1358,7 +1358,7 @@
 <p id="ips9e-ch03-p-583" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">The Tuskegee study.</phrase> In the 1930s, syphilis was common among black men in the rural South, a group that had almost no access to medical care. The Public Health Service Tuskegee study recruited 399 poor black sharecroppers with syphilis and 201 others without the disease in order to observe how syphilis progressed when no treatment was given. Beginning in 1943, penicillin became available to treat syphilis. The study subjects were not treated. In fact, the Public Health Service prevented any treatment until word leaked out and forced an end to the study in the 1970s.</p>
 <figure id="ips9e-ch03-unfig-06" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="left" width="small" border="false"/>
-<image asset-id="ips9e-ch03-img-34" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_P_03_05.jpg"/>
+<image asset-id="ips9e-ch03-img-34" alt="image" src="images/17MOOREIPS-MSE_9e_P_03_05.jpg"/>
 <asset_source><phrase block_type="PHCR">National Archives and Records Administration NARA</phrase></asset_source>
 </figure>
 <p id="ips9e-ch03-p-584" block_type="EXP-mid">The Tuskegee study is an extreme example of investigators following their own interests and ignoring the well-being of their subjects. A 1996 review said, &#8220;It has come to symbolize racism in medicine, ethical misconduct in human research, paternalism by physicians, and government abuse of vulnerable people.&#8221; In 1997, President Clinton formally apologized to the surviving participants in a White House ceremony.<termref term="fn_ch3_fn26"><sup>26</sup></termref></p>
