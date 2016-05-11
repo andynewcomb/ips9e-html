@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<title>Example</title>
+<link href = "../../../../css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/ips9e_ch4.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../supp_win.css" media="screen" rel="stylesheet" type="text/css" >
+</head>
+<body id="supp_win">
+<div id="manuscript" class="example">
+<div data-type="section" data-block_type="h1">
+<div data-type="box" data-block_type="EXP" data-filename="example_4_47.html" id="ips9e-ch04-box-100"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-100"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-909"><p>EXAMPLE 4.47</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-910"><p><span data-block_type="EXP-T-ri">Online chat rooms.</span> Online chat rooms are dominated by the young. Teens are the biggest users. If we look only at adult Internet users (aged 18 and over), 47% of the 18 to 29 age group chat, as do 21% of the 30 to 49 age group and just 7% of those 50 and over. To learn what percent of all Internet users participate in chat, we also need the age breakdown of users. Here it is: 29% of adult Internet users are 18 to 29 years old (event <em>A</em><sub>1</sub>), another 47% are 30 to 49 (event <em>A</em><sub>2</sub>), and the remaining 24% are 50 and over (event <em>A</em><sub>3</sub>).</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-911"><p>What is the probability that a randomly chosen adult user of the Internet participates in chat rooms (event <em>C</em>)? To find out, use the <span data-type="termref" data-term="tree diagram"><strong>tree diagram</strong></span><span data-block_type="MN-GL-term">tree diagram</span> in <span data-type="link" data-href="figure_4_19.html">Figure 4.19</span> to organize your thinking. Each segment in the tree is one stage of the problem. Each complete branch shows a path through the two stages. The probability written on each segment is the conditional probability of an Internet user following that segment, given that he or she has reached the node from which it branches.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_272"><p>272</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_4_19.html" data-figure-id="ips9e-ch04-fig-25" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_19.jpg" data-figure-id="ips9e-ch04-fig-25" data-layout-width="medium" data-mmtype="image" data-mmsrc data-attr alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 4.19: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 4.19</span> <span data-block_type="FG-CAP">Tree diagram, <span data-type="link" data-href="example_4_47.html">Example 4.47</span>. The probability <em>P</em>(<em>C</em>) is the sum of the probabilities of the three branches marked with asterisks (*).</span></span>
+</div>
+</div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-912"><p>Starting at the left, an Internet user falls into one of the three age groups. The probabilities of these groups</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-913"><p><em>P</em>(<em>A</em><sub>1</sub>) = 0.29&#8195; <em>P</em>(<em>A</em><sub>2</sub>) = 0.47&#8195; <em>P</em>(<em>A</em><sub>3</sub>) = 0.24</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-914"><p>mark the leftmost branches in the tree. Conditional on being 18 to 29 years old, the probability of participating in chat is <em>P</em>(<em>C</em> | <em>A</em><sub>1</sub>) = 0.47. So the conditional probability of <em>not</em> participating is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-915"><p><em>P</em>(<em>C<sup>c</sup></em> | <em>A</em><sub>1</sub>) = 1 &#8722; 0.47 = 0.53</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-916"><p>These conditional probabilities mark the paths branching out from the <em>A</em><sub>1</sub> node in <span data-type="link" data-href="figure_4_19.html">Figure 4.19</span>. The other two age group nodes similarly lead to two branches marked with the conditional probabilities of chatting or not. The probabilities on the branches from any node add to 1 because they cover all possibilities, given that this node was reached.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-917"><p>There are three disjoint paths to <em>C</em>, one for each age group. By the addition rule, <em>P</em>(<em>C</em>) is the sum of their probabilities. The probability of reaching <em>C</em> through the 18 to 29 age group is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-918"><p><em>P</em>(<em>C</em> and <em>A</em><sub>1</sub>) = <em>P</em>(<em>A</em><sub>1</sub>)<em>P</em>(<em>C</em> | <em>A</em><sub>1</sub>)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-919"><p>= 0.29 &#215; 0.47 = 0.1363</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-920"><p>Follow the paths to <em>C</em> through the other two age groups. The probabilities of these paths are</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-921"><p><em>P</em>(<em>C</em> and <em>A</em><sub>2</sub>) = <em>P</em>(<em>A</em><sub>2</sub>)<em>P</em>(<em>C</em> | <em>A</em><sub>2</sub>) = (0.47)(0.21) = 0.0987</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-922"><p><em>P</em>(<em>C</em> and <em>A</em><sub>3</sub>) = <em>P</em>(<em>A</em><sub>3</sub>)<em>P</em>(<em>C</em> | <em>A</em><sub>3</sub>) = (0.24)(0.07) = 0.0168</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-923"><p>The final result is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-924"><p><em>P</em>(<em>C</em>) = 0.1363 + 0.0987 + 0.0168 = 0.2518</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-925"><p>About 25% of all adult Internet users take part in chat rooms.</p></div>
+</div></div>
+</div>
+</div>
+<script type = "text/javascript" src="../../../../js/utilities.js"></script>
+<script type = "text/javascript" src="../../../../js/query_types.js"></script>
+<script type = "text/javascript" src="../../../../js/player.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery_extensions.js"></script>
+<script type = "text/javascript" src="../../../../js/swfobject.js"></script>
+<script type = "text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type = "text/javascript" src="../../../../js/digfir_ebook_fw.js"></script>
+<script type = "text/javascript" src="../../../../js/ips9e.js"></script>
+<script type = "text/javascript" src="../../../../js/ips9e_ch4.js"></script>
+<script type = "text/javascript" src="../../../supp_win.js"></script>
+<script type = "text/javascript">
+
+//<!--
+$(window).ready(function ()
+    {
+        player.initialize('52c6e83c757a2ef70c000000');
+    });
+//-->
+</script>
+</body>
+</html>

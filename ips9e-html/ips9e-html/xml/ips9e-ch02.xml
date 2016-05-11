@@ -451,8 +451,8 @@
 <li id="ips9e-ch02-li-61"><p id="ips9e-ch02-p-216" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(d)</phrase> A more complicated relationship. Explain the relationship.</p></li>
 </list>
 </question>
-<question id="ips9e-ch02-ques-17">
 <p id="ips9e_page_97" block_type="page_start" data-margin-content="right">97</p>
+<question id="ips9e-ch02-ques-17" block_type="exercise_2_17.html">
 <p id="ips9e-ch02-p-217" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.17 What&#8217;s wrong?</phrase> Explain what is wrong with each of the following:</p>
 <list id="ips9e-ch02-list-15" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-62"><p id="ips9e-ch02-p-218" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> If two variables are negatively associated, then low values of one variable are associated with low values of the other variable.</p></li>
@@ -1105,7 +1105,7 @@
 <li id="ips9e-ch02-li-146"><p id="ips9e-ch02-p-371" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Does the correlation give a good numerical summary of the relationship between these two variables? Explain your answer.</p></li>
 </list>
 </question>
-<question id="ips9e-ch02-ques-51">
+<question id="ips9e-ch02-ques-51" block_type="exercise_2_51.html">
 <p id="ips9e_page_106" block_type="page_start" data-margin-content="left">106</p>
 <p id="ips9e-ch02-p-372" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.51 Decay in the log scale.</phrase> Refer to the previous exercise and to <link href="exercise_2_33.html">Exercise 2.33</link> (page 99), where the counts were transformed by a log.</p>
 <box id="ips9e-ch02-box-85" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="DECAY"><phrase>DECAY</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>

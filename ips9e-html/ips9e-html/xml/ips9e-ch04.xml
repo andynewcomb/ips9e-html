@@ -2520,9 +2520,7 @@
 <li id="ips9e-ch04-li-237"><p id="ips9e-ch04-p-1028" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Are the events &#8220;vehicle is a light truck&#8221; and &#8220;vehicle is imported&#8221; independent? Justify your answer.</p></li>
 </list>
 </question>
-<question id="ips9e-ch04-p-1029a">
 <p id="ips9e-ch04-p-1029" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH"><em>Genetic counseling.</em></phrase> <em>Conditional probabilities and Bayes&#8217;s rule are a basis for counseling people who may have genetic defects that can be passed to their children. <link href="exercise_4_121.html">Exercises 4.121</link>, <link href="exercise_4_112.html">4.112</link>, and <link href="exercise_4_123.html">4.123</link> concern genetic counseling settings.</em></p>
-</question>
 <question id="ips9e-ch04-ques-121" block_type="exercise_4_121.html">
 <p id="ips9e-ch04-p-1030" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.121 Albinism.</phrase> People with albinism have little pigment in their skin, hair, and eyes. The gene that governs albinism has two forms (called alleles), which we denote by <em>a</em> and <em>A</em>. Each person has a pair of these genes, one inherited from each parent. A child inherits one of each parent&#8217;s two alleles independently with probability 0.5. Albinism is a recessive trait, so a person is albino only if the inherited pair is <em>aa</em>.</p>
 <list id="ips9e-ch04-list-69" type="ordered" block_type="lower-alpha">
