@@ -143,7 +143,8 @@
 </box>
 <p id="ips9e-ch03-p-69" block_type="TXT">An observational study, even one based on a carefully chosen sample, is a poor way to determine what will happen if we change something. The best way to see the effects of a change is to do an <termref term="intervention"><strong>intervention</strong></termref><phrase block_type="MN-GL-term">intervention</phrase>&#8212;where we actually impose the change. When our goal is to understand cause and effect, experiments are the only source of fully convincing data.</p>
 <p id="ips9e-ch03-p-70" block_type="TXT">Confounding occurs when an explanatory variable is related to one or more other variables that have an influence on the response variable. When this happens, we sometimes attribute a relationship to an explanatory when the effect is fully or partly due to the confounding variables.</p>
-<box id="ips9e-ch03-box-16" block_type="MN-NOT-H"><p id="ips9e-ch03-p-71" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch03-p-72" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch03-box-16" block_type="MN-NOT-H">
+<image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch03-p-73" block_type="RNM">confounding, <link href="alias:page_150">p. 150</link></p>
 <p id="ips9e-ch03-p-74" block_type="RNM">explanatory variable, <link href="alias:page_82">p. 82</link></p>
 </box>
@@ -159,7 +160,8 @@
 <question id="ips9e-ch03-ques-10" block_type="exercise_3_10.html">
 <p id="ips9e-ch03-p-81" block_type="EXR-QUE-NL-first"><phrase block_type="EXR-QUE-N-ri">3.10</phrase> <phrase block_type="EXR-QUE-T-ri">Software for teaching creative writing.</phrase> An educational software company wants to compare the effectiveness of its computer animation for teaching creative writing with that of a textbook presentation. The company tests the creative-writing skills of a number of second-year college students and then randomly divides them into two groups. One group uses the animation, and the other studies the text. The company retests all the students and compares the increase in creative-writing skills in the two groups. Is this an experiment? Why or why not? What are the explanatory and response variables?</p>
 </question>
-<box id="ips9e-ch03-box-19" block_type="MN-NOT-H"><p id="ips9e-ch03-p-82" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch03-p-83" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch03-box-19" block_type="MN-NOT-H">
+<image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch03-p-84" block_type="RNM">response variable, <link href="alias:page_82">p. 82</link></p>
 </box>
 <question id="ips9e-ch03-ques-11" block_type="exercise_3_11.html">
@@ -247,7 +249,8 @@
 <p id="ips9e-ch03-p-127" block_type="EXP-mid">The Tennessee STAR program was an experiment on the effects of class size. It has been called &#8220;one of the most important educational investigations ever carried out.&#8221; The <em>subjects</em> were 6385 students who were beginning kindergarten. Each student was assigned to one of three <em>treatments</em>: regular class (22 to 25 students) with one teacher, regular class (22 to 25 students) with a teacher and a full-time teacher&#8217;s aide, and small class (13 to 17 students). These treatments are levels of a single <em>factor</em>, the type of class. The students stayed in the same type of class for four years, then all returned to regular classes. In later years, students from the small classes had higher scores on the <em>outcomes</em>, standard tests. The benefits of small classes were greatest for minority students.<termref term="fn_ch3_fn8"><sup>8</sup></termref></p>
 </box>
 <p id="ips9e-ch03-p-128" block_type="TXT"><link href="example_3_8.html">Example 3.8</link> illustrates the big advantage of experiments over observational studies. <strong>In principle</strong>, <strong>experiments can give good evidence for causation</strong>. In an experiment, we study the specific factors we are interested in while controlling the effects of <strong>lurking variables</strong>. All the students in the Tennessee STAR program followed the usual curriculum at their schools. Because students were assigned to different class types within their schools, school resources and family backgrounds were not confounded with class type. The only systematic difference was the type of class. When students from the small classes did better than those in the other two types, we can be confident that class size made the difference.</p>
-<box id="ips9e-ch03-box-23" block_type="MN-NOT-H"><p id="ips9e-ch03-p-129" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch03-p-130" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch03-box-23" block_type="MN-NOT-H">
+<image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch03-p-131" block_type="RNM">lurking variables, <link href="alias:page_130">p. 130</link></p>
 </box>
 <box id="ips9e-ch03-box-24" numbered="false" block_type="EXP" data-filename="example_3_9.html">
@@ -367,7 +370,8 @@
 <p id="ips9e_page_178" block_type="page_start" data-margin-content="left">178</p>
 <p id="ips9e-ch03-p-187" block_type="level_2_title"><phrase block_type="h2">Randomization using software</phrase></p>
 <p id="ips9e-ch03-p-188" block_type="TXT-ni">Here is an example of one way to do the randomization using Excel. We start with a spreadsheet that has 10 rows corresponding to 10 subjects to be randomized to treatment or placebo.</p>
-<box id="ips9e-ch03-box-32" block_type="MN-NOT-H"><p id="ips9e-ch03-p-189" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch03-p-190" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch03-box-32" block_type="MN-NOT-H">
+<image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch03-p-191" block_type="RNM">uniform distribution, <link href="alias:page_71">p. 71</link></p>
 </box>
 <p id="ips9e-ch03-p-192" block_type="TXT">The basic idea is that we generate a uniform random variable for each subject. In Excel, we use the RAND() function for this step. Then we sort the spreadsheet by the column with the uniform numbers and select the first five labels to be the treatment group and the remaining labels to be the placebo controls.</p>
@@ -690,7 +694,8 @@
 <p id="ips9e-ch03-p-353" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Sampling pieces of steel.</phrase> A mill produces large coils of thin steel for use in manufacturing home appliances. The quality engineer wants to submit a sample of 5-centimeter squares to detailed laboratory examination. She asks a technician to cut a sample of 10 such squares. Wanting to provide &#8220;good&#8221; pieces of steel, the technician carefully avoids the visible defects in the coil material when cutting the sample. The laboratory results are wonderful, but the customers complain about the material they are receiving.</p>
 </box>
 <p id="ips9e-ch03-p-354" block_type="TXT">In <link href="example_3_22.html">Example 3.22</link>, the sample was selected in a manner that guaranteed that it would not be representative of the entire population. This sampling scheme displays <em>bias,</em> or systematic error, in favoring some parts of the population over others.</p>
-<box id="ips9e-ch03-box-50" block_type="MN-NOT-H"><p id="ips9e-ch03-p-355" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch03-p-356" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch03-box-50" block_type="MN-NOT-H">
+<image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch03-p-357" block_type="RNM">bias, <link href="alias:page_74">p. 74</link></p>
 </box>
 <p id="ips9e-ch03-p-358" block_type="TXT">Online polls use <em>voluntary response samples,</em> a particularly common form of biased sample. The sample who respond are not representative of the population at large. People who take the trouble to respond to an open invitation are not representative of the entire population.</p>

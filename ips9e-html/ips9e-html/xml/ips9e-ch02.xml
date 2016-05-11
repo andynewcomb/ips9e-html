@@ -945,7 +945,8 @@
 <p id="ips9e-ch02-p-303" block_type="BX1-EQ"><phrase data-math="math_3"></phrase></p>
 </box>
 <p id="ips9e-ch02-p-304" block_type="TXT">As always, the summation sign <phrase data-math="math_4"></phrase> means &#8220;add these terms for all the individuals.&#8221; The formula for the correlation <em>r</em> is a bit complex. It helps us see what correlation is but is not convenient for actually calculating <em>r</em>. In practice, you should use software or a calculator that computes <em>r</em> from the values of <em>x</em> and <em>y</em> pairs.</p>
-<box id="ips9e-ch02-box-71" block_type="MN-NOT-H"><p id="ips9e-ch02-p-305" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch02-p-306" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch02-box-71" block_type="MN-NOT-H">
+<image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch02-p-307" block_type="MN-NOT1">standardize, <link href="alias:page_59">p. 59</link></p>
 </box>
 <p id="ips9e-ch02-p-308" block_type="TXT">The formula for <em>r</em> begins by standardizing the observations. Suppose, for example, that <em>x</em> is height in centimeters and <em>y</em> is weight in kilograms and that we have height and weight measurements for <em>n</em> people. Then <phrase data-math="math_5"></phrase> and <em>s</em><sub>x</sub> are the mean and standard deviation of the <em>n</em> heights, both in centimeters. The value</p>
@@ -986,7 +987,8 @@
 <li id="ips9e-ch02-li-126"><p id="ips9e-ch02-p-330" block_type="BL"><phrase block_type="maker">&#8226;</phrase> Correlation measures the strength of only the linear relationship between two variables. <em>Correlation does not describe curved relationships between variables, no matter how strong they are</em>.</p></li>
 <li id="ips9e-ch02-li-127"><p id="ips9e-ch02-p-331" block_type="BL-last"><phrase block_type="maker">&#8226;</phrase> <em>Like the mean and standard deviation, the correlation is not resistant: r is strongly affected by a few outlying observations</em>. Use <em>r</em> with caution when outliers appear in the scatterplot.</p></li>
 </list>
-<box id="ips9e-ch02-box-75" block_type="MN-NOT-H"><p id="ips9e-ch02-p-332" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch02-p-333" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch02-box-75" block_type="MN-NOT-H">
+<image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch02-p-334" block_type="MN-NOT1">standardize, <link href="alias:page_30">p. 30</link></p>
 </box>
 <p id="ips9e-ch02-p-335" block_type="TXT">The scatterplots in <link href="figure_2_15.html">Figure 2.15</link> illustrate how values of <em>r</em> closer to 1 or <em>&#8722;</em>1 correspond to stronger linear relationships. To make the essential meaning of <em>r</em> clear, the standard deviations of both variables in these plots are equal, and the horizontal and vertical scales are the same. In general, it is not so easy to guess the value of <em>r</em> from the appearance of a scatterplot. Remember that changing the plotting scales in a scatterplot may mislead our eyes, but it does not change the standardized values of the variables and, therefore, cannot change the correlation. To explore how extreme observations can influence <em>r</em>, use the <em>Correlation and Regression</em> applet available on the text website. Also, see <link href="exercise_2_56.html">Exercises 2.56</link> and <link href="exercise_2_57.html">2.57</link> (page 106).</p>
@@ -2510,7 +2512,8 @@
 <li id="ips9e-ch02-li-300"><p id="ips9e-ch02-p-821" block_type="SP-BL-last"><phrase block_type="maker">&#8226;</phrase> Interpret examples of Simpson&#8217;s paradox.</p></li>
 </list>
 </box>
-<box id="ips9e-ch02-box-168" block_type="MN-NOT-H"><p id="ips9e-ch02-p-822" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch02-p-823" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch02-box-168" block_type="MN-NOT-H">
+<image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch02-p-824" block_type="MN-NOT1">quantitative and categorical variables, <link href="alias:page_3">p. 3</link></p>
 </box>
 <p id="ips9e-ch02-p-825" block_type="TXT-ni">When we study relationships between two variables, one of the first questions we ask is whether each variable is quantitative or categorical. For two quantitative variables, we use a scatterplot to examine the relationship, and we fit a line to the data if the relationship is approximately linear. If one of the variables is quantitative and the other is categorical, we can use the methods in <link href="ips9e-ch01.xml">Chapter 1</link> to describe the distribution of the quantitative variable for each value of the categorical variable. This leaves us with the situation where both variables are categorical. In this section, we discuss methods for studying these relationships.</p>
@@ -2729,7 +2732,8 @@
 </question>
 </box>
 <box id="ips9e-ch02-box-185" block_type="rl_linkbox"><p id="ips9e-ch02-p-871" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="IOM"><phrase>IOM</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
-<box id="ips9e-ch02-box-186" block_type="MN-NOT-H"><p id="ips9e-ch02-p-872" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch02-p-873" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch02-box-186" block_type="MN-NOT-H">
+<image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch02-p-874" block_type="MN-NOT1">bar graphs and pie charts, <link href="alias:page_9">p. 9</link></p>
 </box>
 <p id="ips9e-ch02-p-875" block_type="TXT">Each marginal distribution from a two-way table is a distribution for a single categorical variable. We can use a bar graph or a pie chart to display such a distribution. For our two-way table, we will be content with numerical summaries: for example, 52&#37; of the children are aged 5 to 10, and 37&#37; of the children are not meeting their calcium requirement. When we have more rows or columns, the graphical displays are particularly useful.</p>

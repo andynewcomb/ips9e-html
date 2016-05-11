@@ -521,7 +521,8 @@
 </box>
 <p id="ips9e-ch04-p-233" block_type="TXT">The multiplication rule <em>P</em>(<em>A</em> and <em>B</em>) &#61; <em>P</em>(<em>A</em>)<em>P</em>(<em>B</em>) holds if <em>A</em> and <em>B</em> are independent but not otherwise. The addition rule <em>P</em>(<em>A</em> or <em>B</em>) &#61; <em>P</em>(<em>A</em>) &#43; <em>P</em>(<em>B</em>) holds if <em>A</em> and <em>B</em> are disjoint but not otherwise. Resist the temptation to use these simple formulas when the circumstances that justify them are not present. <em>You must also be certain not to confuse disjointness and independence. Disjoint events cannot be independent.</em> If <em>A</em> and <em>B</em> are disjoint, then the fact that <em>A</em> occurs tells us that <em>B</em> cannot occur&#8212;look again at <link href="figure_4_2.html">Figure 4.2</link> (page 224). Unlike disjointness or complements, independence cannot be pictured by a Venn diagram because it involves the probabilities of the events rather than just the outcomes that make up the events. However, it could be displayed in a mosaic plot.</p>
 <p id="ips9e-ch04-p-234" block_type="Caution icon"><image asset-id="ips9e-ch04-img-14" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
-<box id="ips9e-ch04-box-39" block_type="MN-NOT-H"><p id="ips9e-ch04-p-235" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch04-p-236" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch04-box-39" block_type="MN-NOT-H">
+  <image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch04-p-237" block_type="RNM">mosaic plot, <link href="alias:page_143">p. 143</link></p>
 </box>
 <p id="ips9e_page_231" block_type="page_start" data-margin-content="right">231</p>
@@ -976,7 +977,8 @@
 <p id="ips9e-ch04-p-389" block_type="TXT">You can visualize such a random number by thinking of a spinner (<link href="figure_4_8.html">Figure 4.8</link>) that turns freely on its axis and slowly comes to a stop. The pointer can come to rest anywhere on a circle that is marked from 0 to 1. The sample space is now an entire interval of numbers:</p>
 <p id="ips9e-ch04-p-390" block_type="EQ"><em>S</em> &#61; {all numbers <em>x</em> such that 0 &#8804; <em>x</em> &#8804; 1}</p>
 <p id="ips9e-ch04-p-391" block_type="TXT">How can we assign probabilities to events such as {0.3 &#8804; <em>x</em> &#8804; 0.7}? As in the case of selecting a random digit, we would like all possible outcomes to be equally likely. But we cannot assign probabilities to each individual value of <em>x</em> and then sum because there are too many possible values. Instead, we use a new way of assigning probabilities directly to events&#8212;as <em>areas under a density curve.</em> Any density curve has area exactly 1 underneath it, corresponding to total probability 1.</p>
-<box id="ips9e-ch04-box-49" block_type="MN-NOT-H"><p id="ips9e-ch04-p-392" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch04-p-393" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch04-box-49" block_type="MN-NOT-H">
+  <image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch04-p-394" block_type="RNM">density curve, <link href="alias:page_51">p. 51</link></p>
 </box>
 <box id="ips9e-ch04-box-50" numbered="false" block_type="EXP" data-filename="example_4_25.html">
@@ -1024,7 +1026,8 @@
 <p id="ips9e-ch04-p-416" block_type="TXT-ni">The density curves that are most familiar to us are the Normal curves. Because any density curve describes an assignment of probabilities, <em>Normal distributions are probability distributions.</em> Recall that <em>N</em>(<em>&#956;</em>, <em>&#963;</em>) is our shorthand for the Normal distribution having mean <em>&#956;</em> and standard deviation <em>&#963;</em>. In the language of random variables, if <em>X</em> has the <em>N</em>(<em>&#956;</em>, <em>&#963;</em>) distribution, then the standardized variable</p>
 <p id="ips9e-ch04-p-417" block_type="EQ"><phrase data-math="math_8"></phrase></p>
 <p id="ips9e-ch04-p-418" block_type="TXT-ni">is a standard Normal random variable having the distribution <em>N</em>(0,1).</p>
-<box id="ips9e-ch04-box-53" block_type="MN-NOT-H"><p id="ips9e-ch04-p-419" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch04-p-420" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch04-box-53" block_type="MN-NOT-H">
+  <image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch04-p-421" block_type="RNM">Normal distributions, <link href="alias:page_56">p. 56</link></p>
 </box>
 <box id="ips9e-ch04-box-54" numbered="false" block_type="EXP" data-filename="example_4_26.html">
@@ -1489,7 +1492,8 @@
 <p id="ips9e-ch04-p-591" block_type="BX1-TXT"><strong>Rule 3.</strong> If <em>X</em> and <em>Y</em> are random variables, then</p>
 <p id="ips9e-ch04-p-592" block_type="BX1-EQ"><em>&#956;</em><em><sub>X</sub></em><sub>&#8722;</sub><em><sub>Y</sub></em> &#61; <em>&#956;<sub>X</sub></em> &#8722; <em>&#956;<sub>Y</sub></em></p>
 </box>
-<box id="ips9e-ch04-box-67" block_type="MN-NOT-H"><p id="ips9e-ch04-p-593" block_type="rl_dataset" data-url="asset/datasets/arrow icon.jpg" data-file="LOOK BACK"><phrase>LOOK BACK</phrase></p><p id="ips9e-ch04-p-594" block_type="rl_crunchit" data-dataset=""/>
+<box id="ips9e-ch04-box-67" block_type="MN-NOT-H">
+  <image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch04-p-595" block_type="RNM">linear transformation, <link href="alias:page_44">p. 44</link></p>
 </box>
 <p id="ips9e-ch04-p-596" block_type="TXT-ni">Note that <em>a</em> &#43; <em>bX</em> is a linear transformation of the random variable <em>X</em>.</p>
