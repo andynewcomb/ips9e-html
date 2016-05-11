@@ -101,12 +101,12 @@ var Player_subtype = Player_manuscript_type.extend({
 
 	//if image needs caption "West" (to the left of table) flip caption and image so that caption comes first
 	//and place extra div around img
-	$('[data-block_type="h1"] [data-caption-compass*="W"]').each(function() {
+	$('[data-caption-compass*="W"],').each(function() {
 		caption = $(this).find('div[data-type="figure_text"]');
 		$(this).prepend(caption);
 		$(this).remove('img + div[data-type="figure_text"]');
 	});
-	$('[data-block_type="h1"] [data-caption-compass*="W"] > img').wrap("<div class='compassImg'></div>");
+	$('[data-caption-compass*="W"] > img').wrap("<div class='compassImg'></div>");
 
 
         //All the links to exercises/examples/figures/tables/chapters/sections/pages shall be done here

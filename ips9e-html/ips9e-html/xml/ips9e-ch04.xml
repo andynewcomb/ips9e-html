@@ -47,7 +47,7 @@
 <p id="ips9e_page_217" block_type="page_start" data-margin-content="right">217</p>
 <p id="ips9e-ch04-p-20" block_type="Applet icon"><image asset-id="ips9e-ch04-img-03" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/></p>
 <p id="ips9e-ch04-p-21" block_type="TXT">The <em>Probability</em> applet on the text website animates <link href="figure_4_1.html">Figure 4.1</link>. It allows you to choose the probability of a head and simulate any number of tosses of a coin with that probability. Try it. You will see that the proportion of heads gradually settles down close to the chosen probability. Equally important, you will also see that the proportion in a small or moderate number of tosses can be far from this probability. <em>Probability describes only what happens in the long run. Most people expect chance outcomes to show more short-term regularity than is actually true.</em></p>
-<p id="ips9e-ch04-p-22" block_type="Caution icon"><image asset-id="ips9e-ch04-img-04" alt="image" src="asset/global_asset/global_images/BPScaution-icon.jpg"/></p>
+<p id="ips9e-ch04-p-22" block_type="Caution icon"><image asset-id="ips9e-ch04-img-04" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
 <box id="ips9e-ch04-box-04" numbered="false" block_type="EXP" data-filename="example_4_2.html">
 <p id="ips9e-ch04-p-23" block_type="EXP-N">EXAMPLE 4.2</p>
 <p id="ips9e-ch04-p-24" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Significance testing and Type I errors.</phrase> In <link href="ips9e-ch06.xml">Chapter 6</link>, we will learn about significance testing and Type I errors. When we perform a significance test, we have the possibility of making a Type I error under certain circumstances. The significance-testing procedure is set up so that the probability of making this kind of error is small, usually 5&#37;. If we perform a large number of significance tests under this set of circumstances, the proportion of times that we will make a Type I error is 0.05.</p>
@@ -227,6 +227,7 @@
 <p id="ips9e-ch04-p-117" block_type="level_2_title"><phrase block_type="h2">Probability rules</phrase></p>
 <p id="ips9e-ch04-p-118" block_type="TXT-ni">Formal probability uses mathematical notation to state Facts 1 through 4 more concisely. We use capital letters near the beginning of the alphabet to denote events. If <em>A</em> is any event, we write its probability as <em>P</em>(<em>A</em>). Here are our probability facts in formal language. As you apply these rules, remember that they are just another form of intuitively true facts about long-run proportions.</p>
 <p id="ips9e_page_224" block_type="page_start" data-margin-content="left">224</p>
+  <box block_type="sidebyside">
 <figure id="ips9e-ch04-fig-04" block_type="FIGURE" data-caption-compass="S" numbered="true" number="4.2" mmtype="image" mmsrc="" attr="" data-filename="figure_4_2.html">
 <layout align="center" width="medium" border="false"/>
 <image asset-id="ips9e-ch04-img-08" alt="image" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_02.jpg"/>
@@ -237,6 +238,7 @@
 <image asset-id="ips9e-ch04-img-09" alt="image" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_03.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 4.3</phrase> <phrase block_type="FG-CAP">Venn diagram showing the complement <em>A<sup>c</sup></em> of an event <em>A</em>. The complement consists of all outcomes that are not in <em>A</em>.</phrase></caption>
 </figure>
+    </box>
 <box id="ips9e-ch04-box-18" numbered="false" block_type="BX1">
 <p id="ips9e-ch04-p-120" block_type="BX1-T">PROBABILITY RULES</p>
 <p id="ips9e-ch04-p-121" block_type="BX1-TXT"><strong>Rule 1.</strong> The probability <em>P</em>(<em>A</em>) of any event <em>A</em> satisfies 0 &#8804; <em>P</em>(<em>A</em>) &#8804; 1.</p>
@@ -522,7 +524,7 @@
 <p id="ips9e-ch04-p-233" block_type="TXT">The multiplication rule <em>P</em>(<em>A</em> and <em>B</em>) &#61; <em>P</em>(<em>A</em>)<em>P</em>(<em>B</em>) holds if <em>A</em> and <em>B</em> are independent but not otherwise. The addition rule <em>P</em>(<em>A</em> or <em>B</em>) &#61; <em>P</em>(<em>A</em>) &#43; <em>P</em>(<em>B</em>) holds if <em>A</em> and <em>B</em> are disjoint but not otherwise. Resist the temptation to use these simple formulas when the circumstances that justify them are not present. <em>You must also be certain not to confuse disjointness and independence. Disjoint events cannot be independent.</em> If <em>A</em> and <em>B</em> are disjoint, then the fact that <em>A</em> occurs tells us that <em>B</em> cannot occur&#8212;look again at <link href="figure_4_2.html">Figure 4.2</link> (page 224). Unlike disjointness or complements, independence cannot be pictured by a Venn diagram because it involves the probabilities of the events rather than just the outcomes that make up the events. However, it could be displayed in a mosaic plot.</p>
 <p id="ips9e-ch04-p-234" block_type="Caution icon"><image asset-id="ips9e-ch04-img-14" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
 <box id="ips9e-ch04-box-39" block_type="MN-NOT-H">
-  <image src="asset/global_images/lookbackicon.jpg"/>
+  
 <p id="ips9e-ch04-p-237" block_type="RNM">mosaic plot, <link href="alias:page_143">p. 143</link></p>
 </box>
 <p id="ips9e_page_231" block_type="page_start" data-margin-content="right">231</p>
@@ -710,7 +712,7 @@
 </list>
 </question>
 <question id="ips9e-ch04-ques-30" block_type="exercise_4_30.html">
-<p id="ips9e-ch04-p-306" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-15" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.30 Loaded dice.</phrase> There are many ways to produce crooked dice. To <em>load</em> a die so that 6 comes up too often and 1 (which is opposite 6) comes up too seldom, add a bit of lead to the filling of the spot on the 1 face. Because the spot is solid plastic, this works even with transparent dice. If a die is loaded so that 6 comes up with probability 0.24 and the probabilities of the 2, 3, 4, and 5 faces are not affected, what is the assignment of probabilities to the six faces?</p>
+<p id="ips9e-ch04-p-306" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-15" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.30 Loaded dice.</phrase> There are many ways to produce crooked dice. To <em>load</em> a die so that 6 comes up too often and 1 (which is opposite 6) comes up too seldom, add a bit of lead to the filling of the spot on the 1 face. Because the spot is solid plastic, this works even with transparent dice. If a die is loaded so that 6 comes up with probability 0.24 and the probabilities of the 2, 3, 4, and 5 faces are not affected, what is the assignment of probabilities to the six faces?</p>
 </question>
 <question id="ips9e-ch04-ques-31" block_type="exercise_4_31.html">
 <p id="ips9e-ch04-p-307" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.31 Rh blood types.</phrase> Human blood is typed as O, A, B, or AB and also as Rh-positive or Rh-negative. ABO type and Rh-factor type are independent because they are governed by different genes. In the American population, 84&#37; of people are Rh-positive. Use the information about ABO type in <link href="exercise_4_25.html">Exercise 4.25</link> to give the probability distribution of blood type (ABO and Rh) for a randomly chosen American.</p>
@@ -741,12 +743,11 @@
 <p id="ips9e-ch04-p-318" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.35 Universal blood donors.</phrase> People with type O-negative blood are universal donors. That is, any patient can receive a transfusion of O-negative blood. Only 7&#37; of the American population have O-negative blood. If eight people appear at random to give blood, what is the probability that at least one of them is a universal donor?</p>
 </question>
 <question id="ips9e-ch04-ques-36" block_type="exercise_4_36.html">
-<p id="ips9e-ch04-p-319" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-16" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.36 Axioms of probability.</phrase> Show that any assignment of probabilities to events that obeys Rules 2 and 3 on <link href="alias:page_224">page 224</link> automatically obeys the complement rule (Rule 4). This implies that a mathematical treatment of probability can start from just Rules 1, 2, and 3. These rules are sometimes called <em>axioms</em> of probability.</p>
+<p id="ips9e-ch04-p-319" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-16" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.36 Axioms of probability.</phrase> Show that any assignment of probabilities to events that obeys Rules 2 and 3 on <link href="alias:page_224">page 224</link> automatically obeys the complement rule (Rule 4). This implies that a mathematical treatment of probability can start from just Rules 1, 2, and 3. These rules are sometimes called <em>axioms</em> of probability.</p>
 </question>
 <question id="ips9e-ch04-ques-37" block_type="exercise_4_37.html">
-<p id="ips9e-ch04-p-320" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-17" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.37 Independence of complements.</phrase> Show that if events <em>A</em> and <em>B</em> obey the multiplication rule, <em>P</em>(A and B) &#61; <em>P</em>(<em>A</em>)<em>P</em>(<em>B</em>), then <em>A</em> and the complement <em>B<sup>c</sup></em> of <em>B</em> also obey the multiplication rule, <em>P</em>(<em>A</em> and <em>B<sup>c</sup></em>) &#61; <em>P</em>(<em>A</em>)<em>P</em>(<em>B<sup>c</sup></em>). That is, if events <em>A</em> and <em>B</em> are independent, then <em>A</em> and <em>B<sup>c</sup></em> are also independent. (<em>Hint:</em> Start by drawing a Venn diagram and noticing that the events &#8220;<em>A</em> and <em>B</em>&#8221; and &#8220;<em>A</em> and <em>B<sup>c</sup></em>&#8221; are disjoint.)</p>
+<p id="ips9e-ch04-p-320" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-17" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.37 Independence of complements.</phrase> Show that if events <em>A</em> and <em>B</em> obey the multiplication rule, <em>P</em>(A and B) &#61; <em>P</em>(<em>A</em>)<em>P</em>(<em>B</em>), then <em>A</em> and the complement <em>B<sup>c</sup></em> of <em>B</em> also obey the multiplication rule, <em>P</em>(<em>A</em> and <em>B<sup>c</sup></em>) &#61; <em>P</em>(<em>A</em>)<em>P</em>(<em>B<sup>c</sup></em>). That is, if events <em>A</em> and <em>B</em> are independent, then <em>A</em> and <em>B<sup>c</sup></em> are also independent. (<em>Hint:</em> Start by drawing a Venn diagram and noticing that the events &#8220;<em>A</em> and <em>B</em>&#8221; and &#8220;<em>A</em> and <em>B<sup>c</sup></em>&#8221; are disjoint.)</p>
 </question>
-<question id="ips9e-ch04-ques-37a">
 <p id="ips9e-ch04-p-321" block_type="SR-X-TXT-ni"><phrase block_type="SR-XH"><em>Mendelian inheritance.</em></phrase> <em>Some traits of plants and animals depend on inheritance of a single gene. This is called Mendelian inheritance, after Gregor Mendel (1822&#8211;1884). <link href="exercise_4_38.html">Exercises 4.38</link> through <link href="exercise_4_41.html">4.41</link> are based on the following information about Mendelian inheritance of blood type.</em></p>
 <p id="ips9e-ch04-p-322" block_type="SR-X-TXT-ni"><em>Each of us has an ABO blood type, which describes whether two characteristics, called A and B, are present. Every one of us has two blood type alleles (gene forms), one inherited from our mother and one from our father. Each of these alleles can be A, B, or O. Which two we inherit determines our blood type. Here is a table that shows what our blood type is for each combination of two alleles:</em></p>
 <table id="ips9e-ch04-tab-08" numbered="false" block_type="UN-TABLE" attr="60">
@@ -782,7 +783,6 @@
 </tbody>
 </table>
 <p id="ips9e-ch04-p-323" block_type="SR-X-TXT-ni"><em>We inherit each of a parent&#8217;s two alleles with probability 0.5. We inherit independently from our mother and father.</em></p>
-</question>
 <p id="ips9e_page_235" block_type="page_start" data-margin-content="right">235</p>
 <question id="ips9e-ch04-ques-38" block_type="exercise_4_38.html">
 <p id="ips9e-ch04-p-324" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.38 Blood types of children.</phrase> Emily and Michael both have alleles O and O.</p>
@@ -976,11 +976,11 @@
 <p id="ips9e_page_240" block_type="page_start" data-margin-content="left">240</p>
 <p id="ips9e-ch04-p-389" block_type="TXT">You can visualize such a random number by thinking of a spinner (<link href="figure_4_8.html">Figure 4.8</link>) that turns freely on its axis and slowly comes to a stop. The pointer can come to rest anywhere on a circle that is marked from 0 to 1. The sample space is now an entire interval of numbers:</p>
 <p id="ips9e-ch04-p-390" block_type="EQ"><em>S</em> &#61; {all numbers <em>x</em> such that 0 &#8804; <em>x</em> &#8804; 1}</p>
-<p id="ips9e-ch04-p-391" block_type="TXT">How can we assign probabilities to events such as {0.3 &#8804; <em>x</em> &#8804; 0.7}? As in the case of selecting a random digit, we would like all possible outcomes to be equally likely. But we cannot assign probabilities to each individual value of <em>x</em> and then sum because there are too many possible values. Instead, we use a new way of assigning probabilities directly to events&#8212;as <em>areas under a density curve.</em> Any density curve has area exactly 1 underneath it, corresponding to total probability 1.</p>
 <box id="ips9e-ch04-box-49" block_type="MN-NOT-H">
-  <image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch04-p-394" block_type="RNM">density curve, <link href="alias:page_51">p. 51</link></p>
 </box>
+  <p id="ips9e-ch04-p-391" block_type="TXT">How can we assign probabilities to events such as {0.3 &#8804; <em>x</em> &#8804; 0.7}? As in the case of selecting a random digit, we would like all possible outcomes to be equally likely. But we cannot assign probabilities to each individual value of <em>x</em> and then sum because there are too many possible values. Instead, we use a new way of assigning probabilities directly to events&#8212;as <em>areas under a density curve.</em> Any density curve has area exactly 1 underneath it, corresponding to total probability 1.</p>
+
 <box id="ips9e-ch04-box-50" numbered="false" block_type="EXP" data-filename="example_4_25.html">
 <p id="ips9e-ch04-p-395" block_type="EXP-N">EXAMPLE 4.25</p>
 <p id="ips9e-ch04-p-396" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Uniform random numbers.</phrase> The random number generator will spread its output uniformly across the entire interval from 0 to 1 as we allow it to generate a long sequence of numbers. The results of many trials are represented by the density curve of a <termref term="uniform distribution"><strong>uniform distribution</strong></termref>
@@ -1023,13 +1023,14 @@
 <p id="ips9e-ch04-p-413" block_type="TXT">To be consistent, the probability of an outcome <em>exactly</em> equal to 0.8 must be 0. Because there is no probability exactly at <em>X</em> &#61; 0.8, the two events {<em>X</em> > 0.8} and {<em>X</em> &#8805; 0.8} have the same probability. <em>We can ignore the distinction between</em> > <em>and</em> &#8805; <em>when finding probabilities for continuous (but not discrete) random variables.</em></p>
 <p id="ips9e-ch04-p-414" block_type="Caution icon"><image asset-id="ips9e-ch04-img-24" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch04-p-415" block_type="level_2_title"><phrase block_type="h2">Normal distributions as probability distributions</phrase></p>
-<p id="ips9e-ch04-p-416" block_type="TXT-ni">The density curves that are most familiar to us are the Normal curves. Because any density curve describes an assignment of probabilities, <em>Normal distributions are probability distributions.</em> Recall that <em>N</em>(<em>&#956;</em>, <em>&#963;</em>) is our shorthand for the Normal distribution having mean <em>&#956;</em> and standard deviation <em>&#963;</em>. In the language of random variables, if <em>X</em> has the <em>N</em>(<em>&#956;</em>, <em>&#963;</em>) distribution, then the standardized variable</p>
-<p id="ips9e-ch04-p-417" block_type="EQ"><phrase data-math="math_8"></phrase></p>
-<p id="ips9e-ch04-p-418" block_type="TXT-ni">is a standard Normal random variable having the distribution <em>N</em>(0,1).</p>
 <box id="ips9e-ch04-box-53" block_type="MN-NOT-H">
-  <image src="asset/global_images/lookbackicon.jpg"/>
+  
 <p id="ips9e-ch04-p-421" block_type="RNM">Normal distributions, <link href="alias:page_56">p. 56</link></p>
 </box>
+  <p id="ips9e-ch04-p-416" block_type="TXT-ni">The density curves that are most familiar to us are the Normal curves. Because any density curve describes an assignment of probabilities, <em>Normal distributions are probability distributions.</em> Recall that <em>N</em>(<em>&#956;</em>, <em>&#963;</em>) is our shorthand for the Normal distribution having mean <em>&#956;</em> and standard deviation <em>&#963;</em>. In the language of random variables, if <em>X</em> has the <em>N</em>(<em>&#956;</em>, <em>&#963;</em>) distribution, then the standardized variable</p>
+<p id="ips9e-ch04-p-417" block_type="EQ"><phrase data-math="math_8"></phrase></p>
+<p id="ips9e-ch04-p-418" block_type="TXT-ni">is a standard Normal random variable having the distribution <em>N</em>(0,1).</p>
+
 <box id="ips9e-ch04-box-54" numbered="false" block_type="EXP" data-filename="example_4_26.html">
 <p id="ips9e-ch04-p-422" block_type="EXP-N">EXAMPLE 4.26</p>
 <p id="ips9e-ch04-p-423" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Texting while driving.</phrase> Texting while driving can be dangerous, but young people want to remain connected. Suppose that 26&#37; of teen drivers text while driving. If we take a sample of 500 teen drivers, what percent would we expect to say that they text while driving?<termref term="fn_ch4_fn11"><sup>11</sup></termref></p>
@@ -1191,7 +1192,7 @@
 </list>
 </question>
 <question id="ips9e-ch04-ques-56" block_type="exercise_4_56.html">
-<p id="ips9e-ch04-p-478" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-26" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.56 Nonstandard dice.</phrase> Nonstandard dice can produce interesting distributions of outcomes. You have two balanced, six-sided dice. One is a standard die, with faces having one, two, three, four, five, and six spots. The other die has three faces with one spot and three faces with six spots. Find the probability distribution for the total number of spots <em>Y</em> on the up-faces when you roll these two dice.</p>
+<p id="ips9e-ch04-p-478" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-26" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.56 Nonstandard dice.</phrase> Nonstandard dice can produce interesting distributions of outcomes. You have two balanced, six-sided dice. One is a standard die, with faces having one, two, three, four, five, and six spots. The other die has three faces with one spot and three faces with six spots. Find the probability distribution for the total number of spots <em>Y</em> on the up-faces when you roll these two dice.</p>
 </question>
 <question id="ips9e-ch04-ques-57" block_type="exercise_4_57.html">
 <p id="ips9e-ch04-p-479" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.57 Spell-checking software.</phrase> Spell-checking software catches &#8220;nonword errors,&#8221; which are strings of letters that are not words, as when &#8220;the&#8221; is typed as &#8220;eth.&#8221; When undergraduates are asked to write a 250-word essay (without spell-checking), the number <em>X</em> of nonword errors has the following distribution:</p>
@@ -1241,7 +1242,7 @@
 </list>
 </question>
 <question id="ips9e-ch04-ques-60" block_type="exercise_4_60.html">
-<p id="ips9e-ch04-p-494" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-27" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.60 The sum of two uniform random numbers.</phrase> Generate <em>two</em> random numbers between 0 and 1 and take <em>Y</em> to be their sum. Then <em>Y</em> is a continuous random variable that can take any value between 0 and 2. The density curve of <em>Y</em> is the triangle shown in <link href="figure_4_12.html">Figure 4.12</link>.</p>
+<p id="ips9e-ch04-p-494" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-27" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.60 The sum of two uniform random numbers.</phrase> Generate <em>two</em> random numbers between 0 and 1 and take <em>Y</em> to be their sum. Then <em>Y</em> is a continuous random variable that can take any value between 0 and 2. The density curve of <em>Y</em> is the triangle shown in <link href="figure_4_12.html">Figure 4.12</link>.</p>
 <list id="ips9e-ch04-list-43" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch04-li-138"><p id="ips9e-ch04-p-495" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Verify by geometry that the area under this curve is 1.</p></li>
 <li id="ips9e-ch04-li-139"><p id="ips9e-ch04-p-496" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> What is the probability that <em>Y</em> is less than 1? [Sketch the density curve, shade the area that represents the probability, then find that area. Do this for part (c) also.]</p></li>
@@ -1493,7 +1494,7 @@
 <p id="ips9e-ch04-p-592" block_type="BX1-EQ"><em>&#956;</em><em><sub>X</sub></em><sub>&#8722;</sub><em><sub>Y</sub></em> &#61; <em>&#956;<sub>X</sub></em> &#8722; <em>&#956;<sub>Y</sub></em></p>
 </box>
 <box id="ips9e-ch04-box-67" block_type="MN-NOT-H">
-  <image src="asset/global_images/lookbackicon.jpg"/>
+  
 <p id="ips9e-ch04-p-595" block_type="RNM">linear transformation, <link href="alias:page_44">p. 44</link></p>
 </box>
 <p id="ips9e-ch04-p-596" block_type="TXT-ni">Note that <em>a</em> &#43; <em>bX</em> is a linear transformation of the random variable <em>X</em>.</p>
@@ -1523,7 +1524,7 @@
 </tbody>
 </table>
 <figure id="ips9e-ch04-fig-19" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
-<layout align="right" width="small" border="false"/>
+<layout align="left" width="small" border="false"/>
 <image asset-id="ips9e-ch04-img-33" alt="image" src="asset/ch4/17MOOREIPS-MSE_9e_P_04_04.jpg"/>
 <asset_source><phrase block_type="PHCR">skynesher/iStockphoto</phrase></asset_source>
 </figure>
@@ -2000,7 +2001,7 @@
 <p id="ips9e-ch04-p-765" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.81 Calcium supplements and calcium in the diet.</phrase> Refer to <link href="example_4_39.html">Example 4.39</link> (page 260). Suppose that people who have high intakes of calcium in their diets are more compliant than those who have low intakes. What effect would this have on the calculation of the standard deviation for the total calcium intake? Explain your answer.</p>
 </question>
 <question id="ips9e-ch04-ques-82" block_type="exercise_4_82.html">
-<p id="ips9e-ch04-p-766" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-37" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.82 Toss a four-sided die twice.</phrase> Role-playing games like <em>Dungeons &#38; Dragons</em> use many different types of dice. Suppose that a four-sided die has faces marked 1, 2, 3, and 4. The intelligence of a character is determined by rolling this die twice and adding 1 to the sum of the spots. The faces are equally likely, and the two rolls are independent. What is the average (mean) intelligence for such characters? How spread out are their intelligences, as measured by the standard deviation of the distribution?</p>
+<p id="ips9e-ch04-p-766" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-37" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.82 Toss a four-sided die twice.</phrase> Role-playing games like <em>Dungeons &#38; Dragons</em> use many different types of dice. Suppose that a four-sided die has faces marked 1, 2, 3, and 4. The intelligence of a character is determined by rolling this die twice and adding 1 to the sum of the spots. The faces are equally likely, and the two rolls are independent. What is the average (mean) intelligence for such characters? How spread out are their intelligences, as measured by the standard deviation of the distribution?</p>
 </question>
 <question id="ips9e-ch04-ques-83" block_type="exercise_4_83.html">
 <p id="ips9e-ch04-p-767" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.83 Means and variances of sums.</phrase> The rules for means and variances allow you to find the mean and variance of a sum of random variables without first finding the distribution of the sum, which is usually much harder to do.</p>
@@ -2011,7 +2012,7 @@
 </list>
 </question>
 <question id="ips9e-ch04-ques-84" block_type="exercise_4_84.html">
-<p id="ips9e-ch04-p-771" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-38" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.84 What happens when the correlation is 1?</phrase> We know that variances add if the random variables involved are uncorrelated (<em>&#961;</em> &#61; 0), but not otherwise. The opposite extreme is perfect positive correlation (<em>&#961;</em> &#61; 1). Show by using the general addition rule for variances that, in this case, the standard deviations add. That is, <phrase data-math="math_72"></phrase> if <em>&#961;<sub>XY</sub></em> &#61; 1.</p>
+<p id="ips9e-ch04-p-771" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-38" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.84 What happens when the correlation is 1?</phrase> We know that variances add if the random variables involved are uncorrelated (<em>&#961;</em> &#61; 0), but not otherwise. The opposite extreme is perfect positive correlation (<em>&#961;</em> &#61; 1). Show by using the general addition rule for variances that, in this case, the standard deviations add. That is, <phrase data-math="math_72"></phrase> if <em>&#961;<sub>XY</sub></em> &#61; 1.</p>
 </question>
 <question id="ips9e-ch04-ques-85" block_type="exercise_4_85.html">
 <p id="ips9e-ch04-p-772" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.85 Will you assume independence?</phrase> In which of the following games of chance would you be willing to assume independence of <em>X</em> and <em>Y</em> in making a probability model? Explain your answer in each case.</p>
@@ -2604,7 +2605,7 @@
 </list>
 </question>
 <question id="ips9e-ch04-ques-127" block_type="exercise_4_127.html">
-<p id="ips9e-ch04-p-1047" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-46" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.127 A different transformation.</phrase> Refer to the previous exercise. Now let <em>Y</em> &#61; 5<em>X</em><sup>2</sup> &#8722;1.</p>
+<p id="ips9e-ch04-p-1047" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-46" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.127 A different transformation.</phrase> Refer to the previous exercise. Now let <em>Y</em> &#61; 5<em>X</em><sup>2</sup> &#8722;1.</p>
 <list id="ips9e-ch04-list-72" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch04-li-246"><p id="ips9e-ch04-p-1048" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Find the distribution of <em>Y</em>.</p></li>
 <li id="ips9e-ch04-li-247"><p id="ips9e-ch04-p-1049" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Find the mean and standard deviation for the distribution of <em>Y</em>.</p></li>
@@ -2729,7 +2730,7 @@
 <p id="ips9e-ch04-p-1072" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.134 Wine tasting.</phrase> In the setting of the previous exercise, Taster 1&#8217;s rating for a wine is 3. What is the conditional probability that Taster 2&#8217;s rating is higher than 3?</p>
 </question>
 <question id="ips9e-ch04-ques-135" block_type="exercise_4_135.html">
-<p id="ips9e-ch04-p-1073" block_type="SR-X-QUE-NL"><image asset-id="" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.135 Lottery tickets.</phrase> Michael buys a ticket in the Tri-State Pick 3 lottery every day, always betting on 812. He will win something if the winning number contains 8, 1, and 2 in any order. Each day, Michael has probability 0.006 of winning, and he wins (or not) independently of other days because a new drawing is held each day. What is the probability that Michael&#8217;s first winning ticket comes on the 10th day?</p>
+<p id="ips9e-ch04-p-1073" block_type="SR-X-QUE-NL"><image asset-id="" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.135 Lottery tickets.</phrase> Michael buys a ticket in the Tri-State Pick 3 lottery every day, always betting on 812. He will win something if the winning number contains 8, 1, and 2 in any order. Each day, Michael has probability 0.006 of winning, and he wins (or not) independently of other days because a new drawing is held each day. What is the probability that Michael&#8217;s first winning ticket comes on the 10th day?</p>
 </question>
 <question id="ips9e-ch04-ques-136" block_type="exercise_4_136.html">
 <p id="ips9e-ch04-p-1074" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.136 Higher education at two-year and four-year institutions.</phrase> The following table gives the counts of U.S. institutions of higher education classified as public or private and as two-year or four-year:<termref term="fn_ch4_fn20"><sup>20</sup></termref></p>
@@ -2781,7 +2782,7 @@
 <p id="ips9e-ch04-p-1077" block_type="SR-X-QUE-NL-lvl2">Draw a tree diagram with the first stage showing the point rolled and the second stage showing whether the point is again rolled before a 7 is rolled. Include a first-stage branch showing the outcome that a point is not established. In this case, the amount bet is zero and the distribution of the winnings is the special random variable that has <em>P</em> (<em>X</em> &#61; 0) &#61; 1. For the combined betting system where the player always makes a &#36;10 odds bet when it is available, show that the game is fair.</p>
 </question>
 <question id="ips9e-ch04-ques-138" block_type="exercise_4_138.html">
-<p id="ips9e-ch04-p-1078" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-47" alt="image" src="images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.138 Sample surveys for sensitive issues.</phrase> It is difficult to conduct sample surveys on sensitive issues because many people will not answer questions if the answers might embarrass them. <strong>Randomized response</strong> is an effective way to guarantee anonymity while collecting information on topics such as student cheating or sexual behavior. Here is the idea. To ask a sample of students whether they have plagiarized a term paper while in college, have each student toss a coin in private. If the coin lands heads <em>and</em> they have not plagiarized, they are to answer No. Otherwise, they are to give Yes as their answer. Only the student knows whether the answer reflects the truth or just the coin toss, but the researchers can use a proper random sample with follow-up for nonresponse and other good sampling practices.</p>
+<p id="ips9e-ch04-p-1078" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch04-img-47" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">4.138 Sample surveys for sensitive issues.</phrase> It is difficult to conduct sample surveys on sensitive issues because many people will not answer questions if the answers might embarrass them. <strong>Randomized response</strong> is an effective way to guarantee anonymity while collecting information on topics such as student cheating or sexual behavior. Here is the idea. To ask a sample of students whether they have plagiarized a term paper while in college, have each student toss a coin in private. If the coin lands heads <em>and</em> they have not plagiarized, they are to answer No. Otherwise, they are to give Yes as their answer. Only the student knows whether the answer reflects the truth or just the coin toss, but the researchers can use a proper random sample with follow-up for nonresponse and other good sampling practices.</p>
 <p id="ips9e-ch04-p-1079" block_type="SR-X-QUE-NL-lvl2">Suppose that, in fact, the probability is 0.3 that a randomly chosen student has plagiarized a paper. Draw a tree diagram in which the first stage is tossing the coin and the second is the truth about plagiarism. The outcome at the end of each branch is the answer given to the randomized-response question. What is the probability of a No answer in the randomized-response poll? If the probability of plagiarism were 0.2, what would be the probability of a No response on the poll? Now suppose that you get 39&#37; No answers in a randomized-response poll of a large sample of students at your college. What do you estimate to be the percent of the population who have plagiarized a paper?</p>
 </question>
 <p id="ips9e_page_280" block_type="page_start" data-margin-content="left">280</p>

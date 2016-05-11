@@ -197,7 +197,7 @@
 <box id="ips9e-ch02-box-17" numbered="false" block_type="EXP" data-filename="example_2_8.html">
 <p id="ips9e-ch02-p-97" block_type="EXP-N">EXAMPLE 2.8</p>
 <figure id="ips9e-ch02-unfig-03" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
-<layout align="right" width="small" border="false"/>
+<layout align="left" width="small" border="false"/>
 <image asset-id="ips9e-ch02-img-05" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_P_02_02.jpg"/>
 <asset_source>&#169; Kristoffer Tripplaar/Alamy</asset_source>
 </figure>
@@ -793,7 +793,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-37" block_type="exercise_2_37.html">
-<p id="ips9e-ch02-p-286" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-24" alt="image" src="images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.37 Body mass and metabolic rate.</phrase> Metabolic rate, the rate at which the body consumes energy, is important in studies of weight gain, dieting, and exercise. The following table gives data on the lean body mass and resting metabolic rate for 12 women and 7 men who are subjects in a study of dieting. Lean body mass, given in kilograms, is a person&#8217;s weight leaving out all fat. Metabolic rate is measured in calories burned per 24 hours, the same calories used to describe the energy content of foods. The researchers believe that lean body mass is an important influence on metabolic rate.</p>
+<p id="ips9e-ch02-p-286" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-24" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.37 Body mass and metabolic rate.</phrase> Metabolic rate, the rate at which the body consumes energy, is important in studies of weight gain, dieting, and exercise. The following table gives data on the lean body mass and resting metabolic rate for 12 women and 7 men who are subjects in a study of dieting. Lean body mass, given in kilograms, is a person&#8217;s weight leaving out all fat. Metabolic rate is measured in calories burned per 24 hours, the same calories used to describe the energy content of foods. The researchers believe that lean body mass is an important influence on metabolic rate.</p>
 <box id="ips9e-ch02-box-68" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="BMASS"><phrase>BMASS</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-04" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
@@ -946,7 +946,6 @@
 </box>
 <p id="ips9e-ch02-p-304" block_type="TXT">As always, the summation sign <phrase data-math="math_4"></phrase> means &#8220;add these terms for all the individuals.&#8221; The formula for the correlation <em>r</em> is a bit complex. It helps us see what correlation is but is not convenient for actually calculating <em>r</em>. In practice, you should use software or a calculator that computes <em>r</em> from the values of <em>x</em> and <em>y</em> pairs.</p>
 <box id="ips9e-ch02-box-71" block_type="MN-NOT-H">
-<image src="asset/global_images/lookbackicon.jpg"/>
 <p id="ips9e-ch02-p-307" block_type="MN-NOT1">standardize, <link href="alias:page_59">p. 59</link></p>
 </box>
 <p id="ips9e-ch02-p-308" block_type="TXT">The formula for <em>r</em> begins by standardizing the observations. Suppose, for example, that <em>x</em> is height in centimeters and <em>y</em> is weight in kilograms and that we have height and weight measurements for <em>n</em> people. Then <phrase data-math="math_5"></phrase> and <em>s</em><sub>x</sub> are the mean and standard deviation of the <em>n</em> heights, both in centimeters. The value</p>
@@ -988,7 +987,7 @@
 <li id="ips9e-ch02-li-127"><p id="ips9e-ch02-p-331" block_type="BL-last"><phrase block_type="maker">&#8226;</phrase> <em>Like the mean and standard deviation, the correlation is not resistant: r is strongly affected by a few outlying observations</em>. Use <em>r</em> with caution when outliers appear in the scatterplot.</p></li>
 </list>
 <box id="ips9e-ch02-box-75" block_type="MN-NOT-H">
-<image src="asset/global_images/lookbackicon.jpg"/>
+
 <p id="ips9e-ch02-p-334" block_type="MN-NOT1">standardize, <link href="alias:page_30">p. 30</link></p>
 </box>
 <p id="ips9e-ch02-p-336" block_type="Applet icon"><image asset-id="ips9e-ch02-img-29" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/></p>
@@ -1143,14 +1142,14 @@
 <p id="ips9e-ch02-p-385" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.55 Compare domestic with imported.</phrase> In <link href="exercise_2_31.html">Exercise 2.31</link> (page 99), you compared domestic beers with imported beers with respect to the relationship between calories and percent alcohol. In that exercise, you used scatterplots to make the comparison. Compute the correlations for these two categories of beer and write a new summary of the comparison using correlations in addition to the scatterplots.</p>
 <box id="ips9e-ch02-box-88" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="BEERD, BEERI"><phrase>BEERD, BEERI</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
-<question id="ips9e-ch02-ques-56" block_type="exercise_2_56.html">>
+<question id="ips9e-ch02-ques-56" block_type="exercise_2_56.html">
 <p id="ips9e-ch02-p-387" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-30" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">2.56 Use the applet.</phrase> Go to the <em>Correlation and Regression</em> applet. Click on the scatterplot to create a group of 12 points in the lower-right corner of the scatterplot with a strong straight-line negative pattern (correlation about &#8722;0.9).</p>
 <list id="ips9e-ch02-list-43" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-156"><p id="ips9e-ch02-p-388" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Add one point at the upper left that is in line with the first 12. How does the correlation change?</p></li>
 <li id="ips9e-ch02-li-157"><p id="ips9e-ch02-p-389" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Drag this last point down until it is opposite the group of 12 points. How small can you make the correlation? Can you make the correlation positive? <em>A single outlier can greatly strengthen or weaken a correlation. Always plot your data to check for outlying points</em>.</p></li>
 </list>
 </question>
-<question id="ips9e-ch02-ques-57" block_type="exercise_2_57.html">>
+<question id="ips9e-ch02-ques-57" block_type="exercise_2_57.html">
 <p id="ips9e-ch02-p-391" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-31" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">2.57 Use the applet.</phrase> You are going to use the <em>Correlation and Regression</em> applet to make different scatterplots with 12 points that have correlation close to 0.8. <em>Many patterns can have the same correlation. Always plot your data before you trust a correlation</em>.</p>
 <list id="ips9e-ch02-list-44" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-158"><p id="ips9e-ch02-p-392" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Stop after adding the first two points. What is the value of the correlation? Why does it have this value no matter where the two points are located?</p></li>
@@ -1227,7 +1226,7 @@
 <p id="ips9e-ch02-p-416" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Fidgeting and fat gain.</phrase> Does fidgeting keep you slim? Some people don&#8217;t gain weight even when they overeat. Perhaps fidgeting and other &#8220;nonexercise activity&#8221; (NEA) explains why&#8212;the body might spontaneously increase nonexercise activity when fed more. Researchers deliberately overfed 16 healthy young adults for eight weeks. They measured fat gain (in kilograms) and, as an explanatory variable, increase in energy use (in calories) from activity other than deliberate exercise&#8212;fidgeting, daily living, and the like. Here are the data:<termref term="fn_ch2_fn17"><sup>17</sup></termref></p>
 <box id="ips9e-ch02-box-94" block_type="rl_linkbox"><p id="ips9e-ch02-p-417" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET"><phrase>FIDGET</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <p id="ips9e_page_108" block_type="page_start" data-margin-content="left">108</p>
-<table id="ips9e-ch02-untab-07" numbered="false" block_type="UN-TABLE" attr="100">
+<table id="ips9e-ch02-untab-07" numbered="false" block_type="UN-TABLE" attr="97">
 <tbody>
 <tr class="tborder">
 <td align="center" block_type="EXP-TB1-TXT" class="rborder">NEA increase (cal)</td>
@@ -1644,21 +1643,21 @@
 <li id="ips9e-ch02-li-223"><p id="ips9e-ch02-p-604" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(d)</phrase> Does the software output tell you that the relationship is linear and not, for example, curved? Explain your answer.</p></li>
 </list>
 <p id="ips9e_page_121" block_type="page_start" data-margin-content="right">121</p>
+</question>
 <figure id="ips9e-ch02-fig-21" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.21" mmtype="image" mmsrc="" attr="" data-filename="figure_2_21.html">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="ips9e-ch02-img-41" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_21.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.21</phrase> <phrase block_type="FG-CAP">SPSS output for predicting number of undergraduate college students using population for the 50 states, <link href="exercise_2_78.html">Exercise 2.78</link>.</phrase></caption>
 </figure>
+  <question id="ips9e-ch02-ques-79" block_type="exercise_2_79.html">
+<p id="ips9e-ch02-p-605" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.79 College students by state without the four largest states.</phrase> Refer to <link href="exercise_2_76.html">Exercise 2.76</link>, where you eliminated the four largest states that have populations greater than 15 million. <link href="figure_2_22.html">Figure 2.22</link> gives software output for these data. Answer the questions in the previous exercise for the data set with the 46 states.</p>
+<box id="ips9e-ch02-box-129" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="COL46"><phrase>COL46</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
+</question>
 <figure id="ips9e-ch02-fig-22" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.22" mmtype="image" mmsrc="" attr="" data-filename="figure_2_22.html">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="ips9e-ch02-img-42" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_22.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.22</phrase> <phrase block_type="FG-CAP">SPSS output for predicting number of undergraduate college students using population, with the four largest states deleted, <link href="exercise_2_79.html">Exercise 2.79</link>.</phrase></caption>
 </figure>
-</question>
-<question id="ips9e-ch02-ques-79" block_type="exercise_2_79.html">
-<p id="ips9e-ch02-p-605" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.79 College students by state without the four largest states.</phrase> Refer to <link href="exercise_2_76.html">Exercise 2.76</link>, where you eliminated the four largest states that have populations greater than 15 million. <link href="figure_2_22.html">Figure 2.22</link> gives software output for these data. Answer the questions in the previous exercise for the data set with the 46 states.</p>
-<box id="ips9e-ch02-box-129" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="COL46"><phrase>COL46</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
-</question>
 <question id="ips9e-ch02-ques-80" block_type="exercise_2_80.html">
 <p id="ips9e-ch02-p-606" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.80 Data generated by software.</phrase> The following 20 observations on <em>Y</em> and <em>X</em> were generated by a computer program.</p>
 <box id="ips9e-ch02-box-130" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="GENDATA"><phrase>GENDATA</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
@@ -1758,7 +1757,7 @@
 <li id="ips9e-ch02-li-230"><p id="ips9e-ch02-p-616" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Find the equation of the least-squares regression line for these data.</p></li>
 <li id="ips9e-ch02-li-231"><p id="ips9e-ch02-p-617" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Find the value of <em>r</em><sup>2</sup> and interpret it in the regression context.</p>
 <p id="ips9e_page_122" block_type="page_start" data-margin-content="left">122</p>
-<table id="ips9e-ch02-tab-01" numbered="false" block_type="TABLE" caption-placement="Top" attr="100" data-filename="table_2_1.html">
+<table id="ips9e-ch02-tab-01" numbered="false" block_type="TABLE" caption-placement="Top" attr="115" data-filename="table_2_1.html">
 <table_caption><phrase block_type="TBN-N">TABLE 2.1</phrase> <phrase block_type="TBN-T">Four Data Sets for Exploring Correlation and Regression</phrase></table_caption>
 <tbody>
 <tr>
@@ -1957,11 +1956,11 @@
 <box id="ips9e-ch02-box-137" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="BMASS"><phrase>BMASS</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <p id="ips9e_page_123" block_type="page_start" data-margin-content="right">123</p>
-<question id="ips9e-ch02-ques-89" block_type="exercise_2_89.html">>
+<question id="ips9e-ch02-ques-89" block_type="exercise_2_89.html">
 <p id="ips9e-ch02-p-636" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-43" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">2.89 Use an applet for progress in math scores.</phrase> Go to the <em>Two-Variable Statistical Calculator</em>. Enter the data for the progress in math scores from <link href="exercise_2_86.html">Exercise 2.86</link> using the &#8220;User-entered data&#8221; option in the &#8220;Data&#8221; tab. Explore the data by clicking the other tabs in the applet. Using only the only the results provided by the applet, write a short report summarizing the analysis of these data.</p>
 </question>
 <question id="ips9e-ch02-ques-90" block_type="exercise_2_90.html">
-<p id="ips9e-ch02-p-637" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-44" alt="image" src="images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.90 A property of the least-squares regression line.</phrase> Use the equation for the least-squares regression line to show that this line always passes through the point (<phrase data-math="math_46"></phrase>, <phrase data-math="math_47"></phrase>).</p>
+<p id="ips9e-ch02-p-637" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-44" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.90 A property of the least-squares regression line.</phrase> Use the equation for the least-squares regression line to show that this line always passes through the point (<phrase data-math="math_46"></phrase>, <phrase data-math="math_47"></phrase>).</p>
 </question>
 <question id="ips9e-ch02-ques-91" block_type="exercise_2_91.html">
 <p id="ips9e-ch02-p-638" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.91 Class attendance and grades.</phrase> A study of class attendance and grades among first-year students at a state university showed that, in general, students who missed a higher percent of their classes earned lower grades. Class attendance explained 16&#37; of the variation in grade index among the students. What is the numerical value of the correlation between percent of classes attended and grade index?</p>
@@ -2227,12 +2226,13 @@
 <p id="ips9e-ch02-p-720" block_type="BX1-T">ASSOCIATION DOES NOT IMPLY CAUSATION</p>
 <p id="ips9e-ch02-p-721" block_type="BX1-TXT-ni">An association between an explanatory variable <em>x</em> and a response variable <em>y</em>, even if it is very strong, is not by itself good evidence that changes in <em>x</em> actually cause changes in <em>y</em>.</p>
 </box>
-<p id="ips9e-ch02-p-722" block_type="TXT">Lurking variables sometimes create a correlation between <em>x</em> and <em>y</em>, as in <link href="example_2_30.html">Examples 2.30</link> and <link href="example_2_31.html">2.31</link>. <em>When you observe an association between two variables, always ask yourself if the relationship that you see might be due to a lurking variable</em>. As in <link href="example_2_31.html">Example 2.31</link>, time is often a likely candidate.</p>
 <p id="ips9e-ch02-p-723" block_type="Caution icon"><image asset-id="ips9e-ch02-img-55" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+  <p id="ips9e-ch02-p-722" block_type="TXT">Lurking variables sometimes create a correlation between <em>x</em> and <em>y</em>, as in <link href="example_2_30.html">Examples 2.30</link> and <link href="example_2_31.html">2.31</link>. <em>When you observe an association between two variables, always ask yourself if the relationship that you see might be due to a lurking variable</em>. As in <link href="example_2_31.html">Example 2.31</link>, time is often a likely candidate.</p>
+
 <p id="ips9e-ch02-p-724" block_type="level_2_title"><phrase block_type="h2">Beware of correlations based on averaged data</phrase></p>
 <p id="ips9e-ch02-p-725" block_type="TXT-ni">Regression or correlation studies sometimes work with averages or other measures that combine information from many individuals. For example, if we plot the average height of young children against their age in months, we will see a very strong positive association with correlation near 1. But individual children of the same age vary a great deal in height. A plot of height against age for individual children will show much more scatter and lower correlation than the plot of average height against age.</p>
-<p id="ips9e-ch02-p-726" block_type="TXT"><em>A correlation based on averages over many individuals is usually higher than the correlation between the same variables based on data for individuals</em>. This fact reminds us again of the importance of noting exactly what variables a statistical study involves.</p>
 <p id="ips9e-ch02-p-727" block_type="Caution icon"><image asset-id="ips9e-ch02-img-56" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+  <p id="ips9e-ch02-p-726" block_type="TXT"><em>A correlation based on averages over many individuals is usually higher than the correlation between the same variables based on data for individuals</em>. This fact reminds us again of the importance of noting exactly what variables a statistical study involves.</p>
 <p id="ips9e_page_132" block_type="page_start" data-margin-content="left">132</p>
 <p id="ips9e-ch02-p-728" block_type="level_2_title"><phrase block_type="h2">Beware of restricted ranges</phrase></p>
 <p id="ips9e-ch02-p-729" block_type="TXT-ni">The range of values for the explanatory variable in a regression can have a large impact on the strength of the relationship. For example, if we use age as a predictor of reading ability for a sample of students in the third grade, we will probably see little or no relationship. However, if our sample includes students from grades 1 through 8, we would expect to see a relatively strong relationship. We call this phenomenon the <termref term="restricted-range problem"><strong>restricted-range problem</strong></termref><phrase block_type="MN-GL-term">restricted-range problem</phrase>.</p>
@@ -2270,9 +2270,9 @@
 <section-metadata><section-title><phrase block_type="SR-XH">SECTION 2.5</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></section-title></section-metadata>
 <p id="ips9e-ch02-p-747" block_type="SR-X-TXT-ni"><em>For <link href="exercise_2_92.html">Exercise 2.92</link>, see page 125; and for <link href="exercise_2_93.html">Exercise 2.93</link> see page 125.</em></p>
 <question id="ips9e-ch02-ques-94" block_type="exercise_2_94.html">
-<p id="ips9e-ch02-p-748" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.94 Bone strength.</phrase> <link href="exercise_2_24.html">Exercise 2.24</link> (page 97) gives the bone strengths of the dominant and the nondominant arms for 15 men who were controls in a study. The least-squares regression line for these data is</p>
+<p id="ips9e-ch02-p-748" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.94 Bone strength.</phrase> <link href="exercise_2_24.html">Exercise 2.24</link> (page 97) gives the bone strengths of the dominant and the nondominant arms for 15 men who were controls in a study. The least-squares regression line for these data is</p>
 <p id="ips9e-ch02-p-749" block_type="CR-X-QUE-NL-EQ">dominant = 2.74 &#43; (0.936 &#215; nondominant)</p>
-<p id="ips9e-ch02-p-750" block_type="SR-X-QUE-NL-1">Here are the data for four cases:</p>
+<p id="ips9e-ch02-p-750" block_type="SR-X-QUE-NL">Here are the data for four cases:</p>
 <table id="ips9e-ch02-untab-13" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
 <tr class="tborder">
@@ -2301,13 +2301,13 @@
 </tr>
 </tbody>
 </table>
-<p id="ips9e-ch02-p-751" block_type="SR-X-QUE-NL-1">Calculate the residuals for these four cases.</p>
+<p id="ips9e-ch02-p-751" block_type="SR-X-QUE-NL">Calculate the residuals for these four cases.</p>
 <box id="ips9e-ch02-box-159" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="ARMSTR"><phrase>ARMSTR</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <question id="ips9e-ch02-ques-95" block_type="exercise_2_95.html">
-<p id="ips9e-ch02-p-752" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.95 Bone strength for baseball players.</phrase> Refer to the previous exercise. Similar data for baseball players is given in <link href="exercise_2_25.html">Exercise 2.25</link> (page 98). The equation of the least-squares line for the baseball players is</p>
+<p id="ips9e-ch02-p-752" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.95 Bone strength for baseball players.</phrase> Refer to the previous exercise. Similar data for baseball players is given in <link href="exercise_2_25.html">Exercise 2.25</link> (page 98). The equation of the least-squares line for the baseball players is</p>
 <p id="ips9e-ch02-p-753" block_type="CR-X-QUE-NL-EQ">dominant = 0.886 &#43; (1.373 &#215; nondominant)</p>
-<p id="ips9e-ch02-p-754" block_type="SR-X-QUE-NL-1">Here are the data for the first four cases:</p>
+<p id="ips9e-ch02-p-754" block_type="SR-X-QUE-NL">Here are the data for the first four cases:</p>
 <table id="ips9e-ch02-untab-14" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
 <tr class="tborder">
@@ -2336,12 +2336,12 @@
 </tr>
 </tbody>
 </table>
-<p id="ips9e-ch02-p-755" block_type="SR-X-QUE-NL-1">Calculate the residuals for these four cases.</p>
+<p id="ips9e-ch02-p-755" block_type="SR-X-QUE-NL">Calculate the residuals for these four cases.</p>
 <box id="ips9e-ch02-box-160" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="ARMSTR"><phrase>ARMSTR</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <p id="ips9e_page_134" block_type="page_start" data-margin-content="left">134</p>
 <question id="ips9e-ch02-ques-96" block_type="exercise_2_96.html">
-<p id="ips9e-ch02-p-756" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.96 Least-squares regression for radioactive decay.</phrase> Refer to <link href="exercise_2_32.html">Exercise 2.32</link> (page 99) for the data on radioactive decay of barium-137m. Here are the data:</p>
+<p id="ips9e-ch02-p-756" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.96 Least-squares regression for radioactive decay.</phrase> Refer to <link href="exercise_2_32.html">Exercise 2.32</link> (page 99) for the data on radioactive decay of barium-137m. Here are the data:</p>
 <box id="ips9e-ch02-box-161" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="DECAY"><phrase>DECAY</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-15" numbered="false" block_type="UN-TABLE" attr="60">
 <tbody>
@@ -2364,13 +2364,13 @@
 <list id="ips9e-ch02-list-70" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-261"><p id="ips9e-ch02-p-757" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Using the least-squares regression equation</p>
 <p id="ips9e-ch02-p-758" block_type="CR-X-QUE-NL-EQ">count = 602.8 &#8722; (74.7 &#215; time)</p>
-<p id="ips9e-ch02-p-759" block_type="SR-X-QUE-NL-1">and the observed data, find the residuals for the counts.</p></li>
+<p id="ips9e-ch02-p-759" block_type="SR-X-QUE-NL">and the observed data, find the residuals for the counts.</p></li>
 <li id="ips9e-ch02-li-262"><p id="ips9e-ch02-p-760" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Plot the residuals versus time.</p></li>
 <li id="ips9e-ch02-li-263"><p id="ips9e-ch02-p-761" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(c)</phrase> Write a short paragraph assessing the fit of the least-squares regression line to these data based on your interpretation of the residual plot.</p></li>
 </list>
 </question>
 <question id="ips9e-ch02-ques-97" block_type="exercise_2_97.html">
-<p id="ips9e-ch02-p-762" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.97 Least-squares regression for the log counts.</phrase> Refer to <link href="exercise_2_33.html">Exercise 2.33</link> (page 99), where you analyzed the radioactive decay of barium-137m data using log counts. Here are the data:</p>
+<p id="ips9e-ch02-p-762" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.97 Least-squares regression for the log counts.</phrase> Refer to <link href="exercise_2_33.html">Exercise 2.33</link> (page 99), where you analyzed the radioactive decay of barium-137m data using log counts. Here are the data:</p>
 <box id="ips9e-ch02-box-162" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="DECAY"><phrase>DECAY</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-16" numbered="false" block_type="UN-TABLE" attr="85">
 <tbody>
@@ -2393,13 +2393,13 @@
 <list id="ips9e-ch02-list-71" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-264"><p id="ips9e-ch02-p-763" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Using the least-squares regression equation</p>
 <p id="ips9e-ch02-p-764" block_type="CR-X-QUE-NL-EQ">log count = 6.593 &#8722; (0.2606 &#215; time)</p>
-<p id="ips9e-ch02-p-765" block_type="SR-X-QUE-NL-1">and the observed data, find the residuals for the counts.</p></li>
+<p id="ips9e-ch02-p-765" block_type="SR-X-QUE-NL">and the observed data, find the residuals for the counts.</p></li>
 <li id="ips9e-ch02-li-265"><p id="ips9e-ch02-p-766" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Plot the residuals versus time.</p></li>
 <li id="ips9e-ch02-li-266"><p id="ips9e-ch02-p-767" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(c)</phrase> Write a short paragraph assessing the fit of the least-squares regression line to these data based on your interpretation of the residual plot.</p></li>
 </list>
 </question>
 <question id="ips9e-ch02-ques-98" block_type="exercise_2_98.html">
-<p id="ips9e-ch02-p-768" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.98 College students by state.</phrase> Refer to <link href="exercise_2_75.html">Exercise 2.75</link> (page 119), where you examined the relationship between the number of undergraduate college students and the populations for the 50 states.</p>
+<p id="ips9e-ch02-p-768" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.98 College students by state.</phrase> Refer to <link href="exercise_2_75.html">Exercise 2.75</link> (page 119), where you examined the relationship between the number of undergraduate college students and the populations for the 50 states.</p>
 <box id="ips9e-ch02-box-163" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="COLLEGE"><phrase>COLLEGE</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-72" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-267"><p id="ips9e-ch02-p-769" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Make a scatterplot of the data with the least-squares regression line.</p></li>
@@ -2411,11 +2411,11 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-99" block_type="exercise_2_99.html">
-<p id="ips9e-ch02-p-775" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.99 College students by state using logs.</phrase> Refer to the previous exercise. Answer parts (a) through (f) for that exercise using the logs of both variables. Write a short paragraph summarizing your findings and comparing them with those from the previous exercise.</p>
+<p id="ips9e-ch02-p-775" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.99 College students by state using logs.</phrase> Refer to the previous exercise. Answer parts (a) through (f) for that exercise using the logs of both variables. Write a short paragraph summarizing your findings and comparing them with those from the previous exercise.</p>
 <box id="ips9e-ch02-box-164" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="COLLEGE"><phrase>COLLEGE</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <question id="ips9e-ch02-ques-100" block_type="exercise_2_100.html">
-<p id="ips9e-ch02-p-776" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.100 Make some scatterplots.</phrase> For each of the following scenarios, make a scatterplot with 10 observations that show a moderate positive association, plus one that illustrates the unusual case. Explain each of your answers.</p>
+<p id="ips9e-ch02-p-776" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.100 Make some scatterplots.</phrase> For each of the following scenarios, make a scatterplot with 10 observations that show a moderate positive association, plus one that illustrates the unusual case. Explain each of your answers.</p>
 <list id="ips9e-ch02-list-73" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-273"><p id="ips9e-ch02-p-777" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> An outlier in <em>x</em> that is not influential for the regression.</p></li>
 <li id="ips9e-ch02-li-274"><p id="ips9e-ch02-p-778" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> An outlier in <em>x</em> that is influential for the regression.</p></li>
@@ -2424,7 +2424,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-101" block_type="exercise_2_101.html">
-<p id="ips9e-ch02-p-781" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.101 What&#8217;s wrong?</phrase> Each of the following statements contains an error. Describe each error and explain why the statement is wrong.</p>
+<p id="ips9e-ch02-p-781" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.101 What&#8217;s wrong?</phrase> Each of the following statements contains an error. Describe each error and explain why the statement is wrong.</p>
 <list id="ips9e-ch02-list-74" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-277"><p id="ips9e-ch02-p-782" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> An influential observation will always have a large residual.</p></li>
 <li id="ips9e-ch02-li-278"><p id="ips9e-ch02-p-783" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> High correlation is never present when there is causation.</p></li>
@@ -2432,7 +2432,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-102" block_type="exercise_2_102.html">
-<p id="ips9e-ch02-p-785" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.102 What&#8217;s wrong?</phrase> Each of the following statements contains an error. Describe each error and explain why the statement is wrong.</p>
+<p id="ips9e-ch02-p-785" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.102 What&#8217;s wrong?</phrase> Each of the following statements contains an error. Describe each error and explain why the statement is wrong.</p>
 <list id="ips9e-ch02-list-75" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-280"><p id="ips9e-ch02-p-786" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> If the residuals are all negative, this implies that there is a negative relationship between the response variable and the explanatory variable.</p></li>
 <li id="ips9e-ch02-li-281"><p id="ips9e-ch02-p-787" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> A strong negative relationship does not imply that there is an association between the explanatory variable and the response variable.</p></li>
@@ -2441,24 +2441,24 @@
 </question>
 <p id="ips9e_page_135" block_type="page_start" data-margin-content="right">135</p>
 <question id="ips9e-ch02-ques-103" block_type="exercise_2_103.html">
-<p id="ips9e-ch02-p-789" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.103 Internet use and babies.</phrase> <link href="exercise_2_34.html">Exercise 2.34</link> (page 99) explores the relationship between Internet use and birthrate for 106 countries. <link href="figure_2_13.html">Figure 2.13</link> (page 99) is a scatterplot of the data. It shows a negative association between these two variables. Do you think that this plot indicates that Internet use causes people to have fewer babies? Give another possible explanation for why these two variables are negatively associated.</p>
+<p id="ips9e-ch02-p-789" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.103 Internet use and babies.</phrase> <link href="exercise_2_34.html">Exercise 2.34</link> (page 99) explores the relationship between Internet use and birthrate for 106 countries. <link href="figure_2_13.html">Figure 2.13</link> (page 99) is a scatterplot of the data. It shows a negative association between these two variables. Do you think that this plot indicates that Internet use causes people to have fewer babies? Give another possible explanation for why these two variables are negatively associated.</p>
 <box id="ips9e-ch02-box-165" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="INBIRTH"><phrase>INBIRTH</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <question id="ips9e-ch02-ques-104" block_type="exercise_2_104.html">
-<p id="ips9e-ch02-p-790" block_type="SR-X-QUE-NL-1"><image asset-id="ips9e-ch02-img-57" alt="image" src="images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.104 A lurking variable.</phrase> The effect of a lurking variable can be surprising when individuals are divided into groups. In recent years, the mean SAT score of all high school seniors has increased. But the mean SAT score has decreased for students at each level of high school grades (A, B, C, and so on). Explain how grade inflation in high school (the lurking variable) can account for this pattern. <em>A relationship that holds for each group within a population need not hold for the population as a whole. In fact, the relationship can even change direction.</em></p>
+<p id="ips9e-ch02-p-790" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-57" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.104 A lurking variable.</phrase> The effect of a lurking variable can be surprising when individuals are divided into groups. In recent years, the mean SAT score of all high school seniors has increased. But the mean SAT score has decreased for students at each level of high school grades (A, B, C, and so on). Explain how grade inflation in high school (the lurking variable) can account for this pattern. <em>A relationship that holds for each group within a population need not hold for the population as a whole. In fact, the relationship can even change direction.</em></p>
 <p id="ips9e-ch02-p-791" block_type="Caution icon"><image asset-id="ips9e-ch02-img-58" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
 </question>
 <question id="ips9e-ch02-ques-105" block_type="exercise_2_105.html">
-<p id="ips9e-ch02-p-792" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.105 How&#8217;s your self-esteem?</phrase> People who do well tend to feel good about themselves. Perhaps helping people feel good about themselves will help them do better in their jobs and in life. For a time, raising self-esteem became a goal in many schools and companies. Can you think of explanations for the association between high self-esteem and good performance other than &#8220;Self-esteem causes better work&#8221;?</p>
+<p id="ips9e-ch02-p-792" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.105 How&#8217;s your self-esteem?</phrase> People who do well tend to feel good about themselves. Perhaps helping people feel good about themselves will help them do better in their jobs and in life. For a time, raising self-esteem became a goal in many schools and companies. Can you think of explanations for the association between high self-esteem and good performance other than &#8220;Self-esteem causes better work&#8221;?</p>
 </question>
 <question id="ips9e-ch02-ques-106" block_type="exercise_2_106.html">
-<p id="ips9e-ch02-p-793" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.106 Are big hospitals bad for you?</phrase> A study shows that there is a positive correlation between the size of a hospital (measured by its number of beds <em>x</em>) and the median number of days <em>y</em> that patients remain in the hospital. Does this mean that you can shorten a hospital stay by choosing a small hospital? Why?</p>
+<p id="ips9e-ch02-p-793" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.106 Are big hospitals bad for you?</phrase> A study shows that there is a positive correlation between the size of a hospital (measured by its number of beds <em>x</em>) and the median number of days <em>y</em> that patients remain in the hospital. Does this mean that you can shorten a hospital stay by choosing a small hospital? Why?</p>
 </question>
 <question id="ips9e-ch02-ques-107" block_type="exercise_2_107.html">
-<p id="ips9e-ch02-p-794" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.107 Does herbal tea help nursing-home residents?</phrase> A group of college students believes that herbal tea has remarkable powers. To test this belief, they make weekly visits to a local nursing home, where they visit with the residents and serve them herbal tea. The nursing-home staff reports that after several months many of the residents are healthier and more cheerful. We should commend the students for their good deeds but doubt that herbal tea helped the residents. Identify the explanatory and response variables in this informal study. Then explain what lurking variables account for the observed association.</p>
+<p id="ips9e-ch02-p-794" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.107 Does herbal tea help nursing-home residents?</phrase> A group of college students believes that herbal tea has remarkable powers. To test this belief, they make weekly visits to a local nursing home, where they visit with the residents and serve them herbal tea. The nursing-home staff reports that after several months many of the residents are healthier and more cheerful. We should commend the students for their good deeds but doubt that herbal tea helped the residents. Identify the explanatory and response variables in this informal study. Then explain what lurking variables account for the observed association.</p>
 </question>
 <question id="ips9e-ch02-ques-108" block_type="exercise_2_108.html">
-<p id="ips9e-ch02-p-795" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.108 Price and ounces.</phrase> In <link href="example_2_2.html">Example 2.2</link> (page 80) and <link href="exercise_2_3.html">Exercise 2.3</link> (page 82), we examined the relationship between the price and the size of a Mocha Frappuccino. The 12-ounce Tall drink costs &#36;3.95, the 16-ounce Grande is &#36;4.45, and the 24-ounce Venti is &#36;4.95.</p>
+<p id="ips9e-ch02-p-795" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.108 Price and ounces.</phrase> In <link href="example_2_2.html">Example 2.2</link> (page 80) and <link href="exercise_2_3.html">Exercise 2.3</link> (page 82), we examined the relationship between the price and the size of a Mocha Frappuccino. The 12-ounce Tall drink costs &#36;3.95, the 16-ounce Grande is &#36;4.45, and the 24-ounce Venti is &#36;4.95.</p>
 <list id="ips9e-ch02-list-76" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-283"><p id="ips9e-ch02-p-796" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Plot the data and describe the relationship. (Explain why you should plot size in ounces on the <em>x</em> axis.)</p></li>
 <li id="ips9e-ch02-li-284"><p id="ips9e-ch02-p-797" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Find the least-squares regression line for predicting the price using size. Add the line to your plot.</p></li>
@@ -2468,7 +2468,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-109" block_type="exercise_2_109.html">
-<p id="ips9e-ch02-p-802" block_type="SR-X-QUE-NL-1"><image asset-id="ips9e-ch02-img-59" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">2.109 Use the applet.</phrase> It isn&#8217;t easy to guess the position of the least-squares line by eye. Use the <em>Correlation and Regression</em> applet to compare a line you draw with the least-squares line. Click on the scatterplot to create a group of 15 points from lower left to upper right with a clear, positive straight-line pattern (correlation around 0.6). Click the &#8220;Draw line&#8221; button and use the mouse to draw a line through the middle of the cloud of points from lower left to upper right. Note the &#8220;thermometer&#8221; that appears above the plot. The red portion is the sum of the squared vertical distances from the points in the plot to the least-squares line. The green portion is the &#8220;extra&#8221; sum of squares for your line&#8212;it shows by how much your line misses the smallest possible sum of squares.</p>
+<p id="ips9e-ch02-p-802" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-59" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">2.109 Use the applet.</phrase> It isn&#8217;t easy to guess the position of the least-squares line by eye. Use the <em>Correlation and Regression</em> applet to compare a line you draw with the least-squares line. Click on the scatterplot to create a group of 15 points from lower left to upper right with a clear, positive straight-line pattern (correlation around 0.6). Click the &#8220;Draw line&#8221; button and use the mouse to draw a line through the middle of the cloud of points from lower left to upper right. Note the &#8220;thermometer&#8221; that appears above the plot. The red portion is the sum of the squared vertical distances from the points in the plot to the least-squares line. The green portion is the &#8220;extra&#8221; sum of squares for your line&#8212;it shows by how much your line misses the smallest possible sum of squares.</p>
 <list id="ips9e-ch02-list-77" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-288"><p id="ips9e-ch02-p-803" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> You drew a line by eye through the middle of the pattern. Yet the right-hand part of the bar is probably almost entirely green. What does that tell you?</p></li>
 <li id="ips9e-ch02-li-289"><p id="ips9e-ch02-p-804" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Now click the &#8220;Show least-squares line&#8221; box. Is the slope of the least-squares line smaller (the new line is less steep) or larger (line is steeper) than that of your line? If you repeat this exercise several times, you will consistently get the same result. <em>The least-squares line minimizes the vertical distances of the points from the line. It is not the line through the &#8220;middle&#8221; of the cloud of points</em>. This is one reason it is hard to draw a good regression line by eye.</p></li>
@@ -2476,18 +2476,18 @@
 <p id="ips9e-ch02-p-805" block_type="Caution icon"><image asset-id="ips9e-ch02-img-60" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
 </question>
 <question id="ips9e-ch02-ques-110" block_type="exercise_2_110.html">
-<p id="ips9e-ch02-p-807" block_type="SR-X-QUE-NL-1"><image asset-id="ips9e-ch02-img-61" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">2.110 Use the applet.</phrase> Go to the <em>Correlation and Regression</em> applet. Click on the scatterplot to create a group of 12 points in the lower-right corner of the scatterplot with a strong straight-line pattern (correlation about &#8722;0.8). Now click the &#8220;Show least-squares line&#8221; box to display the regression line.</p>
+<p id="ips9e-ch02-p-807" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-61" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">2.110 Use the applet.</phrase> Go to the <em>Correlation and Regression</em> applet. Click on the scatterplot to create a group of 12 points in the lower-right corner of the scatterplot with a strong straight-line pattern (correlation about &#8722;0.8). Now click the &#8220;Show least-squares line&#8221; box to display the regression line.</p>
 <list id="ips9e-ch02-list-78" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-290"><p id="ips9e-ch02-p-808" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Add one point at the upper left that is far from the other 12 points but exactly on the regression line. Why does this outlier have no effect on the line even though it changes the correlation?</p></li>
 <li id="ips9e-ch02-li-291"><p id="ips9e-ch02-p-809" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Now drag this last point down until it is opposite the group of 12 points. You see that one end of the least-squares line chases this single point, while the other end remains near the middle of the original group of 12. What makes the last point so influential?</p></li>
 </list>
 </question>
 <question id="ips9e-ch02-ques-111" block_type="exercise_2_111.html">
-<p id="ips9e-ch02-p-810" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.111 Education and income.</phrase> There is a strong positive correlation between years of education and income for economists employed by business firms. (In particular, economists with doctorates earn more than economists with only a bachelor&#8217;s degree.) There is also a strong positive correlation between years of education and income for economists employed by colleges and universities. But when all economists are considered, there is a <em>negative</em> correlation between education and income. The explanation for this is that business pays high salaries and employs mostly economists with bachelor&#8217;s degrees, while colleges pay lower salaries and employ mostly economists with doctorates. Sketch a scatterplot with two groups of cases (business and academic) that illustrates how a strong positive correlation within each group and a negative overall correlation can occur together.</p>
+<p id="ips9e-ch02-p-810" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.111 Education and income.</phrase> There is a strong positive correlation between years of education and income for economists employed by business firms. (In particular, economists with doctorates earn more than economists with only a bachelor&#8217;s degree.) There is also a strong positive correlation between years of education and income for economists employed by colleges and universities. But when all economists are considered, there is a <em>negative</em> correlation between education and income. The explanation for this is that business pays high salaries and employs mostly economists with bachelor&#8217;s degrees, while colleges pay lower salaries and employ mostly economists with doctorates. Sketch a scatterplot with two groups of cases (business and academic) that illustrates how a strong positive correlation within each group and a negative overall correlation can occur together.</p>
 </question>
 <p id="ips9e_page_136" block_type="page_start" data-margin-content="left">136</p>
 <question id="ips9e-ch02-ques-112" block_type="exercise_2_112.html">
-<p id="ips9e-ch02-p-811" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.112 Dangers of not looking at a plot.</phrase> <link href="table_2_1.html">Table 2.1</link> (page 122) presents four sets of data prepared by the statistician Frank Anscombe to illustrate the dangers of calculating without first plotting the data.<termref term="fn_ch2_fn22"><sup>22</sup></termref></p>
+<p id="ips9e-ch02-p-811" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.112 Dangers of not looking at a plot.</phrase> <link href="table_2_1.html">Table 2.1</link> (page 122) presents four sets of data prepared by the statistician Frank Anscombe to illustrate the dangers of calculating without first plotting the data.<termref term="fn_ch2_fn22"><sup>22</sup></termref></p>
 <box id="ips9e-ch02-box-166" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="ANSC"><phrase>ANSC</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-79" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-292"><p id="ips9e-ch02-p-812" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Use <em>x</em> to predict <em>y</em> for each of the four data sets. Find the predicted values and residuals for each of the four regression equations.</p></li>
@@ -2510,7 +2510,7 @@
 </list>
 </box>
 <box id="ips9e-ch02-box-168" block_type="MN-NOT-H">
-<image src="asset/global_images/lookbackicon.jpg"/>
+
 <p id="ips9e-ch02-p-824" block_type="MN-NOT1">quantitative and categorical variables, <link href="alias:page_3">p. 3</link></p>
 </box>
 <p id="ips9e-ch02-p-825" block_type="TXT-ni">When we study relationships between two variables, one of the first questions we ask is whether each variable is quantitative or categorical. For two quantitative variables, we use a scatterplot to examine the relationship, and we fit a line to the data if the relationship is approximately linear. If one of the variables is quantitative and the other is categorical, we can use the methods in <link href="ips9e-ch01.xml">Chapter 1</link> to describe the distribution of the quantitative variable for each value of the categorical variable. This leaves us with the situation where both variables are categorical. In this section, we discuss methods for studying these relationships.</p>
@@ -2520,7 +2520,7 @@
 <p id="ips9e_page_137" block_type="page_start" data-margin-content="right">137</p>
 <box id="ips9e-ch02-box-169" numbered="false" block_type="EXP" data-filename="example_2_33.html">
 <p id="ips9e-ch02-p-829" block_type="EXP-N">EXAMPLE 2.33</p>
-<p id="ips9e-ch02-p-830" block_type="EXP-TXT-ni"><phrase block_type="EXP-T-ri">Is the calcium intake adequate?</phrase> Young children need calcium in their diet to support the growth of their bones. The Institute of Medicine provides guidelines for how much calcium should be consumed for people of different ages.<termref term="fn_ch2_fn23"><sup>23</sup></termref> One study examined whether or not a sample of children consumed an adequate amount of calcium, based on these guidelines. Because there are different requirements for children aged 5 to 10 years and for children aged 11 to 13 years of age, the children were classified into these two age groups. For each student, his or her calcium intake was classified as meeting or not meeting the requirement. There were 2029 children in the study. Here are the data:<termref term="fn_ch2_fn24"><sup>24</sup></termref></p>
+<p id="ips9e-ch02-p-830" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Is the calcium intake adequate?</phrase> Young children need calcium in their diet to support the growth of their bones. The Institute of Medicine provides guidelines for how much calcium should be consumed for people of different ages.<termref term="fn_ch2_fn23"><sup>23</sup></termref> One study examined whether or not a sample of children consumed an adequate amount of calcium, based on these guidelines. Because there are different requirements for children aged 5 to 10 years and for children aged 11 to 13 years of age, the children were classified into these two age groups. For each student, his or her calcium intake was classified as meeting or not meeting the requirement. There were 2029 children in the study. Here are the data:<termref term="fn_ch2_fn24"><sup>24</sup></termref></p>
 <box id="ips9e-ch02-box-170" block_type="rl_linkbox"><p id="ips9e-ch02-p-831" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="IOM"><phrase>IOM</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-17" numbered="false" block_type="UN-TABLE" attr="75">
 <tbody>
@@ -2561,7 +2561,7 @@
 <p id="ips9e-ch02-p-837" block_type="TXT">To describe relationships between two categorical variables, we compute different types of percents. Our job is easier if we expand the basic two-way table by adding various totals. We illustrate the idea with our calcium requirement example.</p>
 <box id="ips9e-ch02-box-173" numbered="false" block_type="EXP" data-filename="example_2_34.html">
 <p id="ips9e-ch02-p-838" block_type="EXP-N">EXAMPLE 2.34</p>
-<p id="ips9e-ch02-p-839" block_type="EXP-TXT-ni"><phrase block_type="EXP-T-ri">Add the margins to the table.</phrase> We expand the table in <link href="example_2_33.html">Example 2.33</link> by adding the totals for each row, for each column, and the total number of all the observations. Here is the result:</p>
+<p id="ips9e-ch02-p-839" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Add the margins to the table.</phrase> We expand the table in <link href="example_2_33.html">Example 2.33</link> by adding the totals for each row, for each column, and the total number of all the observations. Here is the result:</p>
 <box id="ips9e-ch02-box-174" block_type="rl_linkbox"><p id="ips9e-ch02-p-840" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="IOM"><phrase>IOM</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-18" numbered="false" block_type="UN-TABLE" attr="85">
 <tbody>
@@ -2614,7 +2614,7 @@
 <p id="ips9e-ch02-p-847" block_type="TXT-ni">We are now ready to compute some proportions that help us understand the data in a two-way table. Suppose that we are interested in the children aged 5 to 10 years who do not meet the calcium requirement. The proportion of these is simply 194 divided by 2029, or 0.0956. We would estimate that 9.56&#37; of children in the population from which this sample was drawn are 5- to 10-year-olds who do not meet the calcium requirement. For each cell, we can compute a proportion by dividing the cell entry by the total sample size. The collection of these proportions is the <termref term="joint distribution"><strong>joint distribution</strong></termref><phrase block_type="MN-GL-term">joint distribution</phrase> of the two categorical variables.</p>
 <box id="ips9e-ch02-box-176" numbered="false" block_type="EXP" data-filename="example_2_35.html">
 <p id="ips9e-ch02-p-848" block_type="EXP-N">EXAMPLE 2.35</p>
-<p id="ips9e-ch02-p-849" block_type="EXP-TXT-ni"><phrase block_type="EXP-T-ri">The joint distribution.</phrase> For the calcium requirement example, the joint distribution of age &#8220;met requirement&#8221; and age is</p>
+<p id="ips9e-ch02-p-849" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">The joint distribution.</phrase> For the calcium requirement example, the joint distribution of age &#8220;met requirement&#8221; and age is</p>
 <box id="ips9e-ch02-box-177" block_type="rl_linkbox"><p id="ips9e-ch02-p-850" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="IOM"><phrase>IOM</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-19" numbered="false" block_type="UN-TABLE" attr="75">
 <tbody>
@@ -2657,7 +2657,7 @@
 <p id="ips9e-ch02-p-857" block_type="TXT-ni">When we examine the distribution of a single variable in a two-way table, we are looking at a <termref term="marginal distribution"><strong>marginal distribution</strong></termref><phrase block_type="MN-GL-term">marginal distribution</phrase>. There are two marginal distributions, one for each categorical variable in the two-way table. They are very easy to compute.</p>
 <box id="ips9e-ch02-box-180" numbered="false" block_type="EXP" data-filename="example_2_36.html">
 <p id="ips9e-ch02-p-858" block_type="EXP-N">EXAMPLE 2.36</p>
-<p id="ips9e-ch02-p-859" block_type="EXP-TXT-ni"><phrase block_type="EXP-T-ri">The marginal distribution of age.</phrase> Look at the table in <link href="example_2_34.html">Example 2.34</link>. The total numbers of children aged 5 to 10 and children aged 11 to 13 are given in the bottom row, labeled &#8220;Total.&#8221; Our sample has 1055 children aged 5 to 10 and 974 children aged 11 to 13. To find the marginal distribution of age, we simply divide these numbers by the total sample size, 2029. The marginal distribution of age is</p>
+<p id="ips9e-ch02-p-859" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">The marginal distribution of age.</phrase> Look at the table in <link href="example_2_34.html">Example 2.34</link>. The total numbers of children aged 5 to 10 and children aged 11 to 13 are given in the bottom row, labeled &#8220;Total.&#8221; Our sample has 1055 children aged 5 to 10 and 974 children aged 11 to 13. To find the marginal distribution of age, we simply divide these numbers by the total sample size, 2029. The marginal distribution of age is</p>
 <box id="ips9e-ch02-box-181" block_type="rl_linkbox"><p id="ips9e-ch02-p-860" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="IOM"><phrase>IOM</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-20" numbered="false" block_type="UN-TABLE" attr="65">
 <tbody>
@@ -2701,7 +2701,7 @@
 <p id="ips9e-ch02-p-865" block_type="TXT">The other marginal distribution for this example is the distribution of &#8220;met requirement.&#8221;</p>
 <box id="ips9e-ch02-box-182" numbered="false" block_type="EXP" data-filename="example_2_37.html">
 <p id="ips9e-ch02-p-866" block_type="EXP-N">EXAMPLE 2.37</p>
-<p id="ips9e-ch02-p-867" block_type="EXP-TXT-ni"><phrase block_type="EXP-T-ri">The marginal distribution of &#8220;met requirement.&#8221;</phrase> Here is the marginal distribution of &#8220;met requirement,&#8221; in percents:</p>
+<p id="ips9e-ch02-p-867" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">The marginal distribution of &#8220;met requirement.&#8221;</phrase> Here is the marginal distribution of &#8220;met requirement,&#8221; in percents:</p>
 <box id="ips9e-ch02-box-183" block_type="rl_linkbox"><p id="ips9e-ch02-p-868" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="IOM"><phrase>IOM</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-22" numbered="false" block_type="UN-TABLE" attr="65">
 <tbody>
@@ -2730,7 +2730,7 @@
 </box>
 <box id="ips9e-ch02-box-185" block_type="rl_linkbox"><p id="ips9e-ch02-p-871" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="IOM"><phrase>IOM</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <box id="ips9e-ch02-box-186" block_type="MN-NOT-H">
-<image src="asset/global_images/lookbackicon.jpg"/>
+
 <p id="ips9e-ch02-p-874" block_type="MN-NOT1">bar graphs and pie charts, <link href="alias:page_9">p. 9</link></p>
 </box>
 <p id="ips9e-ch02-p-875" block_type="TXT">Each marginal distribution from a two-way table is a distribution for a single categorical variable. We can use a bar graph or a pie chart to display such a distribution. For our two-way table, we will be content with numerical summaries: for example, 52&#37; of the children are aged 5 to 10, and 37&#37; of the children are not meeting their calcium requirement. When we have more rows or columns, the graphical displays are particularly useful.</p>
@@ -2799,8 +2799,9 @@
 </box>
 <p id="ips9e-ch02-p-894" block_type="TXT">Comparing the conditional distributions (Example 2.39 and <link href="exercise_2_118.html">Exercise 2.118</link>) reveals the nature of the association between age and meeting the calcium requirement. In this set of data, the older children are more likely to fail to meet the calcium requirement.</p>
 <p id="ips9e-ch02-p-895" block_type="TXT">Bar graphs can help us to see relationships between two categorical variables. No single graph (such as a scatterplot) portrays the form of the relationship between categorical variables, and no single numerical measure (such as the correlation) summarizes the strength of an association. Bar graphs are flexible enough to be helpful, but you must think about what comparisons you want to display. For numerical measures, we must rely on well-chosen percents or on more advanced statistical methods.<termref term="fn_ch2_fn25"><sup>25</sup></termref></p>
-<p id="ips9e-ch02-p-896" block_type="TXT"> <em>A two-way table contains a great deal of information in compact form. Making that information clear almost always requires finding percents. You must decide which percents you need.</em> Of course, we prefer to use software to compute the joint, marginal, and conditional distributions.</p>
 <p id="ips9e-ch02-p-897" block_type="Caution icon"><image asset-id="ips9e-ch02-img-63" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+  <p id="ips9e-ch02-p-896" block_type="TXT"> <em>A two-way table contains a great deal of information in compact form. Making that information clear almost always requires finding percents. You must decide which percents you need.</em> Of course, we prefer to use software to compute the joint, marginal, and conditional distributions.</p>
+
 <box id="ips9e-ch02-box-195" numbered="false" block_type="EXP" data-filename="example_2_40.html">
 <p id="ips9e-ch02-p-898" block_type="EXP-N">EXAMPLE 2.40</p>
 <p id="ips9e-ch02-p-899" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Software output.</phrase> <link href="figure_2_28.html">Figure 2.28</link> gives computer output for the data in <link href="example_2_33.html">Example 2.33</link> using Minitab, SPSS, and JMP. There are minor variations among software packages, but these outputs are typical of what is usually produced. Each cell in the 2 &#215; 2 table has four entries. These are the count (the number of observations in the cell), the conditional distributions for rows and columns, and the joint distribution. Note that all of these are expressed as percents rather than proportions. Marginal totals and distributions are given in the rightmost column and the bottom row.</p>
@@ -2926,7 +2927,7 @@
 <p id="ips9e_page_146" block_type="page_start" data-margin-content="left">146</p>
 <p id="ips9e-ch02-p-930" block_type="SR-X-TXT-ni"><em>For <link href="exercise_2_113.html">Exercise 2.113</link>, see page 137; for <link href="exercise_2_114.html">2.114</link>, see page 138; for <link href="exercise_2_115.html">2.115</link>, see page 138; for <link href="exercise_2_116.html">2.116</link>, see page 140; for <link href="exercise_2_117.html">2.117</link>, see page 140; and for <link href="exercise_2_118.html">2.118</link>, see page 141.</em></p>
 <question id="ips9e-ch02-ques-119" block_type="exercise_2_119.html">
-<p id="ips9e-ch02-p-931" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.119 Does driver&#8217;s ed help?</phrase> A study is planned to look at the effect of driver education programs on accidents. The driving records of all drivers under 18 in a given year will classify each driver as having taken a driver&#8217;s education course or not. The drivers will also classified with respect to the number of accidents that they had in the year after they received their license. The categories are zero, one, and two or more accidents.</p>
+<p id="ips9e-ch02-p-931" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.119 Does driver&#8217;s ed help?</phrase> A study is planned to look at the effect of driver education programs on accidents. The driving records of all drivers under 18 in a given year will classify each driver as having taken a driver&#8217;s education course or not. The drivers will also classified with respect to the number of accidents that they had in the year after they received their license. The categories are zero, one, and two or more accidents.</p>
 <list id="ips9e-ch02-list-82" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-308"><p id="ips9e-ch02-p-932" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> There are two variables in this study. Do you think one is an explanatory variable and the other is a response variable? Explain your answer.</p></li>
 <li id="ips9e-ch02-li-309"><p id="ips9e-ch02-p-933" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Sketch a two-way table that could be used to organize the data. Which variable is the row variable? Which variable is the column variable?</p></li>
@@ -2934,7 +2935,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-120" block_type="exercise_2_120.html">
-<p id="ips9e-ch02-p-935" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.120 Music and video games.</phrase> You are planning a study of undergraduates in which you will examine the relationship between listening to music and playing video games. The study subjects will be asked how much time they spend in each of these activities during a typical day. The choices for both activities will be a half hour or less, more than a half hour but less than an hour, and more than an hour.</p>
+<p id="ips9e-ch02-p-935" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.120 Music and video games.</phrase> You are planning a study of undergraduates in which you will examine the relationship between listening to music and playing video games. The study subjects will be asked how much time they spend in each of these activities during a typical day. The choices for both activities will be a half hour or less, more than a half hour but less than an hour, and more than an hour.</p>
 <list id="ips9e-ch02-list-83" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-311"><p id="ips9e-ch02-p-936" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> There are two variables in this study. Do you think one is an explanatory variable and the other is a response variable? Explain your answer.</p></li>
 <li id="ips9e-ch02-li-312"><p id="ips9e-ch02-p-937" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Sketch a two-way table that could be used to organize the data. Which variable is the row variable? Which variable is the column variable?</p></li>
@@ -2942,10 +2943,10 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-121" block_type="exercise_2_121.html">
-<p id="ips9e-ch02-p-939" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.121 Eight is enough.</phrase> A healthy body needs good food, and healthy teeth are needed to chew our food so that it can nourish our bodies. The U.S. Army has recognized this fact and requires recruits to pass a dental examination. If you wanted to be a soldier in the Spanish American War, which took place in 1898, you needed to have at least eight teeth. Here is the statement of the requirement:</p>
+<p id="ips9e-ch02-p-939" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.121 Eight is enough.</phrase> A healthy body needs good food, and healthy teeth are needed to chew our food so that it can nourish our bodies. The U.S. Army has recognized this fact and requires recruits to pass a dental examination. If you wanted to be a soldier in the Spanish American War, which took place in 1898, you needed to have at least eight teeth. Here is the statement of the requirement:</p>
 <box id="ips9e-ch02-box-202" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="TEETH"><phrase>TEETH</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
-<p id="ips9e-ch02-p-940" block_type="SR-X-QUE-NL-1"><em>Unless an applicant has at least four sound double teeth, one above and one below on each side of the mouth, and so opposed as to serve the purpose of mastication, he should be rejected.</em></p>
-<p id="ips9e-ch02-p-941" block_type="SR-X-QUE-NL-1">A study reported the rejection data for enlistment candidates classified by age. Here are the data:<termref term="fn_ch2_fn26"><sup>26</sup></termref></p>
+<p id="ips9e-ch02-p-940" block_type="SR-X-QUE-NL"><em>Unless an applicant has at least four sound double teeth, one above and one below on each side of the mouth, and so opposed as to serve the purpose of mastication, he should be rejected.</em></p>
+<p id="ips9e-ch02-p-941" block_type="SR-X-QUE-NL">A study reported the rejection data for enlistment candidates classified by age. Here are the data:<termref term="fn_ch2_fn26"><sup>26</sup></termref></p>
 <table id="ips9e-ch02-untab-27" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
 <tr class="tborder">
@@ -2989,7 +2990,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-122" block_type="exercise_2_122.html">
-<p id="ips9e-ch02-p-947" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.122 Survival and class on the Titanic.</phrase> In <link href="exercise_1_27.html">Exercise 1.27</link> (page 24), you created a graphical summary of the number of passengers who survived classified by the accommodations that they had on the ship: first, second, or third class. Let&#8217;s look at these data with a two-way table.</p>
+<p id="ips9e-ch02-p-947" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.122 Survival and class on the Titanic.</phrase> In <link href="exercise_1_27.html">Exercise 1.27</link> (page 24), you created a graphical summary of the number of passengers who survived classified by the accommodations that they had on the ship: first, second, or third class. Let&#8217;s look at these data with a two-way table.</p>
 <box id="ips9e-ch02-box-203" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="TITANIC"><phrase>TITANIC</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-85" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-319"><p id="ips9e-ch02-p-948" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Create a two-way table that you could use to explore the relationship between survival and class.</p></li>
@@ -2997,24 +2998,30 @@
 <li id="ips9e-ch02-li-321"><p id="ips9e-ch02-p-950" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(c)</phrase> Find the two marginal distributions. Write a brief summary explaining the major features of these distributions.</p></li>
 <li id="ips9e-ch02-li-322"><p id="ips9e-ch02-p-951" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(d)</phrase> Which conditional distribution would you choose to explain the relationship between these two variables? Explain your answer.</p>
 <p id="ips9e_page_147" block_type="page_start" data-margin-content="right">147</p>
-<figure id="ips9e-ch02-fig-29" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.29" mmtype="image" mmsrc="" attr="" data-filename="figure_2_29.html">
-<layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-69" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_29.jpg"/>
-<caption><phrase block_type="FG-N-ri">Figure 2.29</phrase> <phrase block_type="FG-CAP">Computer output for the lying to a teacher data, <link href="exercise_2_123.html">Exercise 2.123</link>.</phrase></caption>
-</figure></li>
+</li>
 <li id="ips9e-ch02-li-323"><p id="ips9e-ch02-p-952" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(e)</phrase> Find the conditional distribution that you chose in part (d) and, write a summary that includes your interpretation of the relationship based on this conditional distribution.</p></li>
 </list>
 </question>
 <question id="ips9e-ch02-ques-123" block_type="exercise_2_123.html">
-<p id="ips9e-ch02-p-953" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.123 Lying to a teacher.</phrase> One of the questions in a survey of high school students asked about lying to teachers.<termref term="fn_ch2_fn27"><sup>27</sup></termref> The data set LYING gives the numbers of students who said that they lied to a teacher about something significant at least once during the past year, classified by sex. <link href="figure_2_29.html">Figure 2.29</link> gives software output for these data. Use this output to analyze these data and write a report summarizing your work. Be sure to include a discussion of whether or not you consider this relationship to involve an explanatory variable and a response variable.</p>
+<p id="ips9e-ch02-p-953" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.123 Lying to a teacher.</phrase> One of the questions in a survey of high school students asked about lying to teachers.<termref term="fn_ch2_fn27"><sup>27</sup></termref> The data set LYING gives the numbers of students who said that they lied to a teacher about something significant at least once during the past year, classified by sex. <link href="figure_2_29.html">Figure 2.29</link> gives software output for these data. Use this output to analyze these data and write a report summarizing your work. Be sure to include a discussion of whether or not you consider this relationship to involve an explanatory variable and a response variable.</p>
 <box id="ips9e-ch02-box-204" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="LYING"><phrase>LYING</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
-<question id="ips9e-ch02-ques-124" block_type="exercise_2_124.html">
-<p id="ips9e-ch02-p-954" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.124 Trust and honesty in the workplace.</phrase> The students surveyed in the study described in the previous exercise were also asked whether they thought trust and honesty were essential in business and the workplace. <link href="figure_2_30.html">Figure 2.30</link> gives software output for these data. Use this output to analyze these data and write a report summarizing your work. Be sure to include a discussion of whether or not you consider this relationship to involve an explanatory variable and a response variable.</p>
+<figure id="ips9e-ch02-fig-29" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.29" mmtype="image" mmsrc="" attr="" data-filename="figure_2_29.html">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="ips9e-ch02-img-69" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_29.jpg"/>
+<caption><phrase block_type="FG-N-ri">Figure 2.29</phrase> <phrase block_type="FG-CAP">Computer output for the lying to a teacher data, <link href="exercise_2_123.html">Exercise 2.123</link>.</phrase></caption>
+</figure>
+  <question id="ips9e-ch02-ques-124" block_type="exercise_2_124.html">
+<p id="ips9e-ch02-p-954" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.124 Trust and honesty in the workplace.</phrase> The students surveyed in the study described in the previous exercise were also asked whether they thought trust and honesty were essential in business and the workplace. <link href="figure_2_30.html">Figure 2.30</link> gives software output for these data. Use this output to analyze these data and write a report summarizing your work. Be sure to include a discussion of whether or not you consider this relationship to involve an explanatory variable and a response variable.</p>
 <box id="ips9e-ch02-box-205" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="TRUST"><phrase>TRUST</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
+  <figure id="ips9e-ch02-fig-30" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.30" mmtype="image" mmsrc="" attr="" data-filename="figure_2_30.html">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="ips9e-ch02-img-70" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_30.jpg"/>
+<caption><phrase block_type="FG-N-ri">Figure 2.30</phrase> <phrase block_type="FG-CAP">Computer output for the trust and honesty in the workplace data, <link href="exercise_2_124.html">Exercise 2.124</link>.</phrase></caption>
+</figure>
 <question id="ips9e-ch02-ques-125" block_type="exercise_2_125.html">
-<p id="ips9e-ch02-p-955" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.125 Exercise and adequate sleep.</phrase> A survey of 656 boys and girls, who were 13 to 18 years old, asked about adequate sleep and other health-related behaviors. The recommended amount of sleep is six to eight hours per night.<termref term="fn_ch2_fn28"><sup>28</sup></termref> In the survey, 59&#37; of the respondents reported that they got less than this amount of sleep on school nights. An exercise scale was developed and used to classify the students as above or below the median in this domain. Here is the 2 &#215; 2 table of counts with students classified as getting or not getting adequate sleep and by the exercise variable:</p>
+<p id="ips9e-ch02-p-955" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.125 Exercise and adequate sleep.</phrase> A survey of 656 boys and girls, who were 13 to 18 years old, asked about adequate sleep and other health-related behaviors. The recommended amount of sleep is six to eight hours per night.<termref term="fn_ch2_fn28"><sup>28</sup></termref> In the survey, 59&#37; of the respondents reported that they got less than this amount of sleep on school nights. An exercise scale was developed and used to classify the students as above or below the median in this domain. Here is the 2 &#215; 2 table of counts with students classified as getting or not getting adequate sleep and by the exercise variable:</p>
 <box id="ips9e-ch02-box-206" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="SLEEP"><phrase>SLEEP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-28" numbered="false" block_type="UN-TABLE" attr="50">
 <tbody>
@@ -3039,11 +3046,7 @@
 </tr>
 </tbody>
 </table>
-<figure id="ips9e-ch02-fig-30" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.30" mmtype="image" mmsrc="" attr="" data-filename="figure_2_30.html">
-<layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-70" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_30.jpg"/>
-<caption><phrase block_type="FG-N-ri">Figure 2.30</phrase> <phrase block_type="FG-CAP">Computer output for the trust and honesty in the workplace data, <link href="exercise_2_124.html">Exercise 2.124</link>.</phrase></caption>
-</figure>
+
 <list id="ips9e-ch02-list-86" type="ordered" block_type="numbered">
 <li id="ips9e-ch02-li-324"><p id="ips9e-ch02-p-956" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Find the distribution of adequate sleep for the high exercisers.</p></li>
 <li id="ips9e-ch02-li-325"><p id="ips9e-ch02-p-957" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Do the same for the low exercisers.</p></li>
@@ -3051,7 +3054,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-126" block_type="exercise_2_126.html">
-<p id="ips9e-ch02-p-959" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.126 Adequate sleep and exercise.</phrase> Refer to the previous exercise.</p>
+<p id="ips9e-ch02-p-959" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.126 Adequate sleep and exercise.</phrase> Refer to the previous exercise.</p>
 <box id="ips9e-ch02-box-207" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="SLEEP"><phrase>SLEEP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-87" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-327"><p id="ips9e-ch02-p-960" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Find the distribution of exercise for those who get adequate sleep.</p></li>
@@ -3061,7 +3064,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-127" block_type="exercise_2_127.html">
-<p id="ips9e-ch02-p-964" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.127 Which hospital is safer?</phrase> Insurance companies and consumers are interested in the performance of hospitals. The government releases data about patient outcomes in hospitals that can be useful in making informed health care decisions. Here is a two-way table of data on the survival of patients after surgery in two hospitals. All patients undergoing surgery in a recent time period are included. &#8220;Survived&#8221; means that the patient lived at least six weeks following surgery.</p>
+<p id="ips9e-ch02-p-964" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.127 Which hospital is safer?</phrase> Insurance companies and consumers are interested in the performance of hospitals. The government releases data about patient outcomes in hospitals that can be useful in making informed health care decisions. Here is a two-way table of data on the survival of patients after surgery in two hospitals. All patients undergoing surgery in a recent time period are included. &#8220;Survived&#8221; means that the patient lived at least six weeks following surgery.</p>
 <box id="ips9e-ch02-box-208" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="HOSP"><phrase>HOSP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <p id="ips9e_page_148" block_type="page_start" data-margin-content="left">148</p>
 <table id="ips9e-ch02-untab-29" numbered="false" block_type="UN-TABLE" attr="70">
@@ -3088,10 +3091,10 @@
 </tr>
 </tbody>
 </table>
-<p id="ips9e-ch02-p-965" block_type="SR-X-QUE-NL-1">What percent of Hospital A patients died? What percent of Hospital B patients died? These are the numbers one might see reported in the media.</p>
+<p id="ips9e-ch02-p-965" block_type="SR-X-QUE-NL">What percent of Hospital A patients died? What percent of Hospital B patients died? These are the numbers one might see reported in the media.</p>
 </question>
 <question id="ips9e-ch02-ques-128" block_type="exercise_2_128.html">
-<p id="ips9e-ch02-p-966" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.128 Patients in &#8220;poor&#8221; or &#8220;good&#8221; condition.</phrase> Refer to the previous exercise. Not all surgery cases are equally serious, however. Patients are classified as being in either &#8220;poor&#8221; or &#8220;good&#8221; condition before surgery. Here are the data broken down by patient condition. The entries in the original two-way table are just the sums of the &#8220;poor&#8221; and &#8220;good&#8221; entries in this pair of tables.</p>
+<p id="ips9e-ch02-p-966" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.128 Patients in &#8220;poor&#8221; or &#8220;good&#8221; condition.</phrase> Refer to the previous exercise. Not all surgery cases are equally serious, however. Patients are classified as being in either &#8220;poor&#8221; or &#8220;good&#8221; condition before surgery. Here are the data broken down by patient condition. The entries in the original two-way table are just the sums of the &#8220;poor&#8221; and &#8220;good&#8221; entries in this pair of tables.</p>
 <box id="ips9e-ch02-box-209" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="HOSP"><phrase>HOSP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-30" numbered="false" block_type="UN-TABLE" attr="70">
 <tbody>
@@ -3157,7 +3160,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-129" block_type="exercise_2_129.html">
-<p id="ips9e-ch02-p-971" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.129 Complete the table.</phrase> Here are the row and column totals for a two-way table with two rows and two columns:</p>
+<p id="ips9e-ch02-p-971" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.129 Complete the table.</phrase> Here are the row and column totals for a two-way table with two rows and two columns:</p>
 <table id="ips9e-ch02-untab-32" numbered="false" block_type="UN-TABLE" attr="40">
 <tbody>
 <tr>
@@ -3177,10 +3180,10 @@
 </tr>
 </tbody>
 </table>
-<p id="ips9e-ch02-p-972" block_type="SR-X-QUE-NL-1">Find <em>two different</em> sets of counts <em>a</em>, <em>b</em>, <em>c</em>, and <em>d</em> for the body of the table that give these same totals. This shows that the relationship between two variables cannot be obtained from the two individual distributions of the variables.</p>
+<p id="ips9e-ch02-p-972" block_type="SR-X-QUE-NL">Find <em>two different</em> sets of counts <em>a</em>, <em>b</em>, <em>c</em>, and <em>d</em> for the body of the table that give these same totals. This shows that the relationship between two variables cannot be obtained from the two individual distributions of the variables.</p>
 </question>
 <question id="ips9e-ch02-ques-130" block_type="exercise_2_130.html">
-<p id="ips9e-ch02-p-973" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.130 Construct a table with no association.</phrase> Construct a 3 &#215; 4 table of counts where there is no apparent association between the row and column variables.</p>
+<p id="ips9e-ch02-p-973" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.130 Construct a table with no association.</phrase> Construct a 3 &#215; 4 table of counts where there is no apparent association between the row and column variables.</p>
 </question>
 </section>
 <section id="ips9e-ch02-sec1-07" block_type="h1" chapter="ch2" number="2.7" numbered="true" level="1" print_page="148">
@@ -3192,7 +3195,7 @@
 <li id="ips9e-ch02-li-336"><p id="ips9e-ch02-p-976" block_type="SP-BL-mid"><phrase block_type="maker">&#8226;</phrase> Apply the five criteria for establishing causation.</p></li>
 </list>
 </box>
-<box id="ips9e-ch02-box-211" block_type="FN" data-chapter="2" data-footnote-number="*"><p id="ips9e-ch02-p-977" block_type="FN">This section is optional.</p></box>
+<box id="ips9e-ch02-box-211" block_type="FN" data-chapter="2" data-footnote-number="*"><p id="ips9e-ch02-p-977" block_type="FN"><sup>*</sup>This section is optional.</p></box>
 <p id="ips9e-ch02-p-978" block_type="TXT-ni">In many studies of the relationship between two variables, the goal is to establish that changes in the explanatory variable <em>cause</em> changes in the response variable. Even when a strong association is present, however, the conclusion that this association is due to a causal link between the variables is often hard to justify. What ties between two variables (and others lurking in the background) can explain an observed association? What constitutes good evidence for causation? We begin our consideration of these questions with a set of observed associations. In each case, there is a clear association between variable <em>x</em> and variable <em>y</em>. Moreover, the association is positive whenever the direction makes sense.</p>
 <p id="ips9e-ch02-p-979" block_type="level_2_title"><phrase block_type="h2">Explaining association</phrase></p>
 <p id="ips9e_page_149" block_type="page_start" data-margin-content="right">149</p>
@@ -3200,18 +3203,18 @@
 <p id="ips9e-ch02-p-980" block_type="EXP-N">EXAMPLE 2.43</p>
 <p id="ips9e-ch02-p-981" block_type="EXP-TXT-ni"><phrase block_type="EXP-T-ri">Observed associations.</phrase> Here are some examples of observed association between <em>x</em> and <em>y</em>:</p>
 <list id="ips9e-ch02-list-90" type="ordered" block_type="numbered">
-<li id="ips9e-ch02-li-337"><p id="ips9e-ch02-p-982" block_type="SR-X-QUE-NL-1"><phrase block_type="maker">1.</phrase> <em>x</em> = mother&#8217;s body mass index</p>
-<p id="ips9e-ch02-p-983" block_type="SR-X-QUE-NL-1"><em>y</em> = daughter&#8217;s body mass index</p></li>
-<li id="ips9e-ch02-li-338"><p id="ips9e-ch02-p-984" block_type="SR-X-QUE-NL-1"><phrase block_type="maker">2.</phrase> <em>x</em> = amount of the artificial sweetener saccharin in a rat&#8217;s diet</p>
-<p id="ips9e-ch02-p-985" block_type="SR-X-QUE-NL-1"><em>y</em> = count of tumors in the rat&#8217;s bladder</p></li>
-<li id="ips9e-ch02-li-339"><p id="ips9e-ch02-p-986" block_type="SR-X-QUE-NL-1"><phrase block_type="maker">3.</phrase> <em>x</em> = a student&#8217;s SAT score as a high school senior</p>
-<p id="ips9e-ch02-p-987" block_type="SR-X-QUE-NL-1"><em>y</em> = a student&#8217;s first-year college grade point average</p></li>
-<li id="ips9e-ch02-li-340"><p id="ips9e-ch02-p-988" block_type="SR-X-QUE-NL-1"><phrase block_type="maker">4.</phrase> <em>x</em> = monthly flow of money into stock mutual funds</p>
-<p id="ips9e-ch02-p-989" block_type="SR-X-QUE-NL-1"><em>y</em> = monthly rate of return for the stock market</p></li>
-<li id="ips9e-ch02-li-341"><p id="ips9e-ch02-p-990" block_type="SR-X-QUE-NL-1"><phrase block_type="maker">5.</phrase> <em>x</em> = whether a person regularly attends religious services</p>
-<p id="ips9e-ch02-p-991" block_type="SR-X-QUE-NL-1"><em>y</em> = how long the person lives</p></li>
-<li id="ips9e-ch02-li-342"><p id="ips9e-ch02-p-992" block_type="SR-X-QUE-NL-1"><phrase block_type="maker">6.</phrase> <em>x</em> = the number of years of education a worker has</p>
-<p id="ips9e-ch02-p-993" block_type="SR-X-QUE-NL-1"><em>y</em> = the worker&#8217;s income</p></li>
+<li id="ips9e-ch02-li-337"><p id="ips9e-ch02-p-982" block_type="SR-X-QUE-NL"><phrase block_type="maker">1.</phrase> <em>x</em> = mother&#8217;s body mass index</p>
+<p id="ips9e-ch02-p-983" block_type="SR-X-QUE-NL"><em>y</em> = daughter&#8217;s body mass index</p></li>
+<li id="ips9e-ch02-li-338"><p id="ips9e-ch02-p-984" block_type="SR-X-QUE-NL"><phrase block_type="maker">2.</phrase> <em>x</em> = amount of the artificial sweetener saccharin in a rat&#8217;s diet</p>
+<p id="ips9e-ch02-p-985" block_type="SR-X-QUE-NL"><em>y</em> = count of tumors in the rat&#8217;s bladder</p></li>
+<li id="ips9e-ch02-li-339"><p id="ips9e-ch02-p-986" block_type="SR-X-QUE-NL"><phrase block_type="maker">3.</phrase> <em>x</em> = a student&#8217;s SAT score as a high school senior</p>
+<p id="ips9e-ch02-p-987" block_type="SR-X-QUE-NL"><em>y</em> = a student&#8217;s first-year college grade point average</p></li>
+<li id="ips9e-ch02-li-340"><p id="ips9e-ch02-p-988" block_type="SR-X-QUE-NL"><phrase block_type="maker">4.</phrase> <em>x</em> = monthly flow of money into stock mutual funds</p>
+<p id="ips9e-ch02-p-989" block_type="SR-X-QUE-NL"><em>y</em> = monthly rate of return for the stock market</p></li>
+<li id="ips9e-ch02-li-341"><p id="ips9e-ch02-p-990" block_type="SR-X-QUE-NL"><phrase block_type="maker">5.</phrase> <em>x</em> = whether a person regularly attends religious services</p>
+<p id="ips9e-ch02-p-991" block_type="SR-X-QUE-NL"><em>y</em> = how long the person lives</p></li>
+<li id="ips9e-ch02-li-342"><p id="ips9e-ch02-p-992" block_type="SR-X-QUE-NL"><phrase block_type="maker">6.</phrase> <em>x</em> = the number of years of education a worker has</p>
+<p id="ips9e-ch02-p-993" block_type="SR-X-QUE-NL"><em>y</em> = the worker&#8217;s income</p></li>
 </list>
 </box>
 <p id="ips9e-ch02-p-994" block_type="TXT-3"><strong>Explaining association: Causation</strong> <link href="figure_2_31.html">Figure 2.31</link> shows in outline form how a variety of underlying links between variables can explain association. The dashed double-arrow line represents an observed association between the variables <em>x</em> and <em>y</em>. Some associations are explained by a direct cause-and-effect link between these variables. The first diagram in <link href="figure_2_31.html">Figure 2.31</link> shows &#8220;<em>x</em> causes <em>y</em>&#8221; by a solid arrow running from <em>x</em> to <em>y</em>.</p>
@@ -3278,54 +3281,54 @@
 <section-metadata><section-title><phrase block_type="SR-XH">SECTION 2.7</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></section-title></section-metadata>
 <p id="ips9e_page_153" block_type="page_start" data-margin-content="right">153</p>
 <question id="ips9e-ch02-ques-131" block_type="exercise_2_131.html">
-<p id="ips9e-ch02-p-1028" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.131 Examples of association.</phrase> Give three examples of association: one due to causation, one due to common response, and one due to confounding. Use your examples to write a short paragraph explaining the differences among these three explanations for an observed association.</p>
+<p id="ips9e-ch02-p-1028" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.131 Examples of association.</phrase> Give three examples of association: one due to causation, one due to common response, and one due to confounding. Use your examples to write a short paragraph explaining the differences among these three explanations for an observed association.</p>
 </question>
 <question id="ips9e-ch02-ques-132" block_type="exercise_2_132.html">
-<p id="ips9e-ch02-p-1029" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.132 The five criteria for establishing causation.</phrase> Consider the five criteria for establishing causation. Explain how each of these, if not established seriously, weakens the case that an association is due to causation.</p>
+<p id="ips9e-ch02-p-1029" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.132 The five criteria for establishing causation.</phrase> Consider the five criteria for establishing causation. Explain how each of these, if not established seriously, weakens the case that an association is due to causation.</p>
 </question>
 <question id="ips9e-ch02-ques-133" block_type="exercise_2_133.html">
-<p id="ips9e-ch02-p-1030" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.133 Iron and anemia.</phrase> A lack of adequate iron in the diet is associated with anemia, a condition in which the body does not have enough red blood cells. However, anemia is also associated with malaria and infections with worms called helminths. Discuss these observed associations using the framework of <link href="figure_2_31.html">Figure 2.31</link>. (page 149)</p>
+<p id="ips9e-ch02-p-1030" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.133 Iron and anemia.</phrase> A lack of adequate iron in the diet is associated with anemia, a condition in which the body does not have enough red blood cells. However, anemia is also associated with malaria and infections with worms called helminths. Discuss these observed associations using the framework of <link href="figure_2_31.html">Figure 2.31</link>. (page 149)</p>
 </question>
 <question id="ips9e-ch02-ques-134" block_type="exercise_2_134.html">
-<p id="ips9e-ch02-p-1031" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.134 Stress and lack of sleep in college students.</phrase> Studies of college students have shown that stress and lack of sleep are associated. Do you think that lack of sleep causes stress or that stress causes lack of sleep? Write a short paragraph summarizing your opinions.</p>
+<p id="ips9e-ch02-p-1031" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.134 Stress and lack of sleep in college students.</phrase> Studies of college students have shown that stress and lack of sleep are associated. Do you think that lack of sleep causes stress or that stress causes lack of sleep? Write a short paragraph summarizing your opinions.</p>
 </question>
 <question id="ips9e-ch02-ques-135" block_type="exercise_2_135.html">
-<p id="ips9e-ch02-p-1032" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.135 Online courses.</phrase> Many colleges offer online versions of some courses that are also taught in the classroom. It often happens that the students who enroll in the online version do better than the classroom students on the course exams. This does not show that online instruction is more effective than classroom teaching because the people who sign up for online courses are often quite different from the classroom students. Suggest some student characteristics that you think could be confounded with online versus classroom. Use a diagram like <link href="figure_2_31.html">Figure 2.31</link>(c) to illustrate your ideas.</p>
+<p id="ips9e-ch02-p-1032" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.135 Online courses.</phrase> Many colleges offer online versions of some courses that are also taught in the classroom. It often happens that the students who enroll in the online version do better than the classroom students on the course exams. This does not show that online instruction is more effective than classroom teaching because the people who sign up for online courses are often quite different from the classroom students. Suggest some student characteristics that you think could be confounded with online versus classroom. Use a diagram like <link href="figure_2_31.html">Figure 2.31</link>(c) to illustrate your ideas.</p>
 </question>
 <question id="ips9e-ch02-ques-136" block_type="exercise_2_136.html">
-<p id="ips9e-ch02-p-1033" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.136 Marriage and income.</phrase> Data show that men who are married, and also divorced or widowed men, earn quite a bit more than men who have never been married. This does not mean that a man can raise his income by getting married. Suggest several lurking variables that you think are confounded with marital status and that help explain the association between marital status and income. Use a diagram like <link href="figure_2_31.html">Figure 2.31</link>(c) to illustrate your ideas.</p>
+<p id="ips9e-ch02-p-1033" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.136 Marriage and income.</phrase> Data show that men who are married, and also divorced or widowed men, earn quite a bit more than men who have never been married. This does not mean that a man can raise his income by getting married. Suggest several lurking variables that you think are confounded with marital status and that help explain the association between marital status and income. Use a diagram like <link href="figure_2_31.html">Figure 2.31</link>(c) to illustrate your ideas.</p>
 </question>
 <question id="ips9e-ch02-ques-137" block_type="exercise_2_137.html">
-<p id="ips9e-ch02-p-1034" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.137 Exercise and self-confidence.</phrase> A college fitness center offers an exercise program for staff members who choose to participate. The program assesses each participant&#8217;s fitness, using a treadmill test, and also administers a personality questionnaire. There is a moderately strong positive correlation between fitness score and score for self-confidence. Is this good evidence that improving fitness increases self-confidence? Explain why or why not.</p>
+<p id="ips9e-ch02-p-1034" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.137 Exercise and self-confidence.</phrase> A college fitness center offers an exercise program for staff members who choose to participate. The program assesses each participant&#8217;s fitness, using a treadmill test, and also administers a personality questionnaire. There is a moderately strong positive correlation between fitness score and score for self-confidence. Is this good evidence that improving fitness increases self-confidence? Explain why or why not.</p>
 </question>
 <question id="ips9e-ch02-ques-138" block_type="exercise_2_138.html">
-<p id="ips9e-ch02-p-1035" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.138 Computer chip manufacturing and miscarriages.</phrase> A study showed that women who work in the production of computer chips have abnormally high numbers of miscarriages. The union claimed that exposure to chemicals used in production caused the miscarriages. Another possible explanation is that these workers spend most of their work time standing up. Illustrate these relationships in a diagram like one of those in <link href="figure_2_31.html">Figure 2.31</link>.</p>
+<p id="ips9e-ch02-p-1035" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.138 Computer chip manufacturing and miscarriages.</phrase> A study showed that women who work in the production of computer chips have abnormally high numbers of miscarriages. The union claimed that exposure to chemicals used in production caused the miscarriages. Another possible explanation is that these workers spend most of their work time standing up. Illustrate these relationships in a diagram like one of those in <link href="figure_2_31.html">Figure 2.31</link>.</p>
 </question>
 <question id="ips9e-ch02-ques-139" block_type="exercise_2_139.html">
-<p id="ips9e-ch02-p-1036" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.139 Hospital size and length of stay.</phrase> A study shows that there is a positive correlation between the size of a hospital (measured by its number of beds <em>x</em>) and the median number of days <em>y</em> that patients remain in the hospital. Does this mean that you can shorten a hospital stay by choosing a small hospital? Use a diagram like one of those in <link href="figure_2_31.html">Figure 2.31</link> to explain the association.</p>
+<p id="ips9e-ch02-p-1036" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.139 Hospital size and length of stay.</phrase> A study shows that there is a positive correlation between the size of a hospital (measured by its number of beds <em>x</em>) and the median number of days <em>y</em> that patients remain in the hospital. Does this mean that you can shorten a hospital stay by choosing a small hospital? Use a diagram like one of those in <link href="figure_2_31.html">Figure 2.31</link> to explain the association.</p>
 </question>
 <question id="ips9e-ch02-ques-140" block_type="exercise_2_140.html">
-<p id="ips9e-ch02-p-1037" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.140 Watching TV and low grades.</phrase> Children who watch many hours of television get lower grades in school, on average, than those who watch less TV. Explain clearly why this fact does not show that watching TV <em>causes</em> poor grades. In particular, suggest some other variables that may be confounded with heavy TV viewing and may contribute to poor grades.</p>
+<p id="ips9e-ch02-p-1037" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.140 Watching TV and low grades.</phrase> Children who watch many hours of television get lower grades in school, on average, than those who watch less TV. Explain clearly why this fact does not show that watching TV <em>causes</em> poor grades. In particular, suggest some other variables that may be confounded with heavy TV viewing and may contribute to poor grades.</p>
 </question>
 <question id="ips9e-ch02-ques-141" block_type="exercise_2_141.html">
-<p id="ips9e-ch02-p-1038" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.141 Artificial sweeteners.</phrase> People who use artificial sweeteners in place of sugar tend to be heavier than people who use sugar. Does this mean that artificial sweeteners cause weight gain? Give a more plausible explanation for this association.</p>
+<p id="ips9e-ch02-p-1038" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.141 Artificial sweeteners.</phrase> People who use artificial sweeteners in place of sugar tend to be heavier than people who use sugar. Does this mean that artificial sweeteners cause weight gain? Give a more plausible explanation for this association.</p>
 </question>
 <question id="ips9e-ch02-ques-142" block_type="exercise_2_142.html">
-<p id="ips9e-ch02-p-1039" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.142 Exercise and mortality.</phrase> A sign in a fitness center says, &#8220;Mortality is halved for men over 65 who walk at least 2 miles a day.&#8221;</p>
+<p id="ips9e-ch02-p-1039" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.142 Exercise and mortality.</phrase> A sign in a fitness center says, &#8220;Mortality is halved for men over 65 who walk at least 2 miles a day.&#8221;</p>
 <list id="ips9e-ch02-list-93" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-352"><p id="ips9e-ch02-p-1040" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Mortality is eventually 100&#37; for everyone. What do you think &#8220;mortality is halved&#8221; means?</p></li>
 <li id="ips9e-ch02-li-353"><p id="ips9e-ch02-p-1041" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Assuming that the claim is true, explain why this fact does not show that exercise <em>causes</em> lower mortality.</p></li>
 </list>
 </question>
 <question id="ips9e-ch02-ques-143" block_type="exercise_2_143.html">
-<p id="ips9e-ch02-p-1042" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.143 Effect of a math skills refresher initiative.</phrase> Students enrolling in an elementary statistics course take a pretest that assesses their math skills. Those who receive low scores are given the opportunity to take three one-hour refresher sessions designed to review the basic math skills needed for the statistics course. Those who took the refresher sessions performed worse than those who did not on the final exam in the statistics course. Can you conclude that the refresher course has a negative impact on performance in the statistics course? Explain your answer.</p>
+<p id="ips9e-ch02-p-1042" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.143 Effect of a math skills refresher initiative.</phrase> Students enrolling in an elementary statistics course take a pretest that assesses their math skills. Those who receive low scores are given the opportunity to take three one-hour refresher sessions designed to review the basic math skills needed for the statistics course. Those who took the refresher sessions performed worse than those who did not on the final exam in the statistics course. Can you conclude that the refresher course has a negative impact on performance in the statistics course? Explain your answer.</p>
 </question>
 </section>
 <section id="ips9e-ch02-chapexer-01" block_type="CR-X-H" chapter="ch2" numbered="false" level="1" print_page="154">
 <section-metadata><section-title><phrase block_type="CR-X-N-ri">CHAPTER 2</phrase> <phrase block_type="CR-X-H">EXERCISES</phrase></section-title></section-metadata>
 <p id="ips9e_page_154" block_type="page_start" data-margin-content="left">154</p>
 <question id="ips9e-ch02-ques-144" block_type="exercise_2_144.html">
-<p id="ips9e-ch02-p-1043" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.144 Dwelling permits and sales for 23 countries.</phrase> The Organisation for Economic Co-operation and Development collects data on main economic indicators (MEIs) for many countries. Each variable is recorded as an index with the year 2000 serving as a base year. This means that the variable for each year is reported as a ratio of the value for the year divided by the value for 2000. Use of indices in this way makes it easier to compare values for different countries. <link href="table_2_3.html">Table 2.3</link> gives the values of three MEIs for 23 countries.<termref term="fn_ch2_fn31"><sup>31</sup></termref></p>
+<p id="ips9e-ch02-p-1043" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.144 Dwelling permits and sales for 23 countries.</phrase> The Organisation for Economic Co-operation and Development collects data on main economic indicators (MEIs) for many countries. Each variable is recorded as an index with the year 2000 serving as a base year. This means that the variable for each year is reported as a ratio of the value for the year divided by the value for 2000. Use of indices in this way makes it easier to compare values for different countries. <link href="table_2_3.html">Table 2.3</link> gives the values of three MEIs for 23 countries.<termref term="fn_ch2_fn31"><sup>31</sup></termref></p>
 <box id="ips9e-ch02-box-216" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="MEIS"><phrase>MEIS</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-94" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-354"><p id="ips9e-ch02-p-1044" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Make a scatterplot with sales as the response variable and permits issued for new dwellings as the explanatory variable. Describe the relationship. Are there any outliers or influential observations?</p></li>
@@ -3475,7 +3478,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-145" block_type="exercise_2_145.html">
-<p id="ips9e-ch02-p-1051" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.145 Dwelling permits and production.</phrase> Refer to the previous exercise.</p>
+<p id="ips9e-ch02-p-1051" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.145 Dwelling permits and production.</phrase> Refer to the previous exercise.</p>
 <box id="ips9e-ch02-box-217" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="MEIS"><phrase>MEIS</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-95" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-361"><p id="ips9e-ch02-p-1052" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Make a scatterplot with production as the response variable and permits issued for new dwellings as the explanatory variable. Describe the relationship. Are there any outliers or influential observations?</p></li>
@@ -3488,7 +3491,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-146" block_type="exercise_2_146.html">
-<p id="ips9e-ch02-p-1059" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.146 Sales and production.</phrase> Refer to the previous two exercises.</p>
+<p id="ips9e-ch02-p-1059" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.146 Sales and production.</phrase> Refer to the previous two exercises.</p>
 <box id="ips9e-ch02-box-218" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="MEIS"><phrase>MEIS</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-96" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-368"><p id="ips9e-ch02-p-1060" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Make a scatterplot with sales as the response variable and production as the explanatory variable. Describe the relationship. Are there any outliers or influential observations?</p></li>
@@ -3499,28 +3502,29 @@
 <li id="ips9e-ch02-li-373"><p id="ips9e-ch02-p-1065" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(f)</phrase> The Netherlands has an index of 109 for production. Find the residual for this country.</p></li>
 <li id="ips9e-ch02-li-374"><p id="ips9e-ch02-p-1066" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(g)</phrase> What percent of the variation in sales is explained by production? How does this value compare with the percents of variation that you calculated in the two previous exercises?</p></li>
 </list>
+</question>
+<p id="ips9e_page_155" block_type="page_start" data-margin-content="right">155</p>
+<question id="ips9e-ch02-ques-147" block_type="exercise_2_147.html">
+<p id="ips9e-ch02-p-1067" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.147 Population in Canadian provinces and territories.</phrase> Statistics Canada provides a great deal of demographic data organized in different ways.<termref term="fn_ch2_fn32"><sup>32</sup></termref> <link href="figure_2_32.html">Figure 2.32</link> gives the percent of the population aged 65 years and older and the percent aged 15 years and younger for each of the 13 Canadian provinces and territories. <link href="figure_2_33.html">Figure 2.33</link> is a scatterplot of the percent of the population over 65 versus the percent under 15.</p>
+<box id="ips9e-ch02-box-219" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="CANADAP"><phrase>CANADAP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
+<list id="ips9e-ch02-list-97" type="ordered" block_type="lower-alpha">
+<li id="ips9e-ch02-li-375"><p id="ips9e-ch02-p-1068" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Write a short paragraph explaining what the plot tells you about these two demographic groups in the 13 Canadian provinces and territories.</p>
+</li>
+<li id="ips9e-ch02-li-376"><p id="ips9e-ch02-p-1069" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Find the correlation between the percent of the population over 65 and the percent under 15. Does the correlation give a good numerical summary of the strength of this relationship? Explain your answer.</p></li>
+</list>
+</question>
 <figure id="ips9e-ch02-fig-32" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="2.32" mmtype="image" mmsrc="" attr="" data-filename="figure_2_32.html">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="ips9e-ch02-img-75" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_32.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.32</phrase> <phrase block_type="FG-CAP">Percent of the population over 65 years and percent of the population under 15 years in the 13 Canadian provinces and territories, <link href="exercise_2_147.html">Exercise 2.147</link>.</phrase></caption>
 </figure>
-</question>
-<p id="ips9e_page_155" block_type="page_start" data-margin-content="right">155</p>
-<question id="ips9e-ch02-ques-147" block_type="exercise_2_147.html">
-<p id="ips9e-ch02-p-1067" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.147 Population in Canadian provinces and territories.</phrase> Statistics Canada provides a great deal of demographic data organized in different ways.<termref term="fn_ch2_fn32"><sup>32</sup></termref> <link href="figure_2_32.html">Figure 2.32</link> gives the percent of the population aged 65 years and older and the percent aged 15 years and younger for each of the 13 Canadian provinces and territories. <link href="figure_2_33.html">Figure 2.33</link> is a scatterplot of the percent of the population over 65 versus the percent under 15.</p>
-<box id="ips9e-ch02-box-219" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="CANADAP"><phrase>CANADAP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
-<list id="ips9e-ch02-list-97" type="ordered" block_type="lower-alpha">
-<li id="ips9e-ch02-li-375"><p id="ips9e-ch02-p-1068" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Write a short paragraph explaining what the plot tells you about these two demographic groups in the 13 Canadian provinces and territories.</p>
-<figure id="ips9e-ch02-fig-33" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.33" mmtype="image" mmsrc="" attr="" data-filename="figure_2_33.html">
+  <figure id="ips9e-ch02-fig-33" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.33" mmtype="image" mmsrc="" attr="" data-filename="figure_2_33.html">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="ips9e-ch02-img-76" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_33.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.33</phrase> <phrase block_type="FG-CAP">Scatterplot of percent of the population over 65 years versus percent of the population under 15 years for the 13 Canadian provinces and territories, <link href="exercise_2_147.html">Exercise 2.147</link>.</phrase></caption>
-</figure></li>
-<li id="ips9e-ch02-li-376"><p id="ips9e-ch02-p-1069" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Find the correlation between the percent of the population over 65 and the percent under 15. Does the correlation give a good numerical summary of the strength of this relationship? Explain your answer.</p></li>
-</list>
-</question>
-<question id="ips9e-ch02-ques-148" block_type="exercise_2_148.html">
-<p id="ips9e-ch02-p-1070" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.148 Nunavut.</phrase> Refer to the previous exercise and <link href="figure_2_32.html">Figures 2.32</link> and <link href="figure_2_33.html">2.33</link>.</p>
+</figure>
+  <question id="ips9e-ch02-ques-148" block_type="exercise_2_148.html">
+<p id="ips9e-ch02-p-1070" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.148 Nunavut.</phrase> Refer to the previous exercise and <link href="figure_2_32.html">Figures 2.32</link> and <link href="figure_2_33.html">2.33</link>.</p>
 <box id="ips9e-ch02-box-220" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="CANADAP"><phrase>CANADAP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-98" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-377"><p id="ips9e-ch02-p-1071" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Do you think that Nunavut is an outlier?</p></li>
@@ -3530,7 +3534,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-149" block_type="exercise_2_149.html">
-<p id="ips9e-ch02-p-1075" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.149 Compare the provinces with the territories.</phrase> Refer to the previous exercise. The three Canadian territories are the Northwest Territories, Nunavut, and the Yukon Territories. All the other entries in <link href="figure_2_32.html">Figure 2.32</link> are provinces.</p>
+<p id="ips9e-ch02-p-1075" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.149 Compare the provinces with the territories.</phrase> Refer to the previous exercise. The three Canadian territories are the Northwest Territories, Nunavut, and the Yukon Territories. All the other entries in <link href="figure_2_32.html">Figure 2.32</link> are provinces.</p>
 <box id="ips9e-ch02-box-221" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="CANADAP"><phrase>CANADAP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-99" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-381"><p id="ips9e-ch02-p-1076" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Generate a scatterplot of the Canadian demographic data similar to <link href="figure_2_33.html">Figure 2.33</link> but with the points labeled &#8220;P&#8221; for provinces and &#8220;T&#8221; for territories.</p></li>
@@ -3538,7 +3542,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-150" block_type="exercise_2_150.html">
-<p id="ips9e-ch02-p-1078" block_type="SR-X-QUE-NL-1"><image asset-id="ips9e-ch02-img-77" alt="image" src="images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.150 Records for men and women in the 10K.</phrase> <link href="table_2_4.html">Table 2.4</link> shows the progress of world record times (in seconds) for the 10,000-meter run for both men and women.<termref term="fn_ch2_fn33"><sup>33</sup></termref></p>
+<p id="ips9e-ch02-p-1078" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-77" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.150 Records for men and women in the 10K.</phrase> <link href="table_2_4.html">Table 2.4</link> shows the progress of world record times (in seconds) for the 10,000-meter run for both men and women.<termref term="fn_ch2_fn33"><sup>33</sup></termref></p>
 <box id="ips9e-ch02-box-222" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="TENK"><phrase>TENK</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-tab-04" numbered="false" block_type="TABLE" caption-placement="Top" attr="100" data-filename="table_2_4.html">
 <table_caption><phrase block_type="TBN-N">TABLE 2.4</phrase> <phrase block_type="TBN-T">World Record Times for the 10,000-Meter Run</phrase></table_caption>
@@ -3716,7 +3720,7 @@
 </question>
 <p id="ips9e_page_156" block_type="page_start" data-margin-content="left">156</p>
 <question id="ips9e-ch02-ques-151" block_type="exercise_2_151.html">
-<p id="ips9e-ch02-p-1081" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.151 Remote deposit capture.</phrase> The Federal Reserve has called remote deposit capture (RDC) &#8220;the most important development the [U.S.] banking industry has seen in years.&#8221; This service allows users to scan checks and to transmit the scanned images to a bank for posting.<termref term="fn_ch2_fn34"><sup>34</sup></termref> In its annual survey of community banks, the American Bankers Association asked banks whether or not they offered this service.<termref term="fn_ch2_fn35"><sup>35</sup></termref> Here are the results classified by the asset size (in millions of dollars) of the bank:</p>
+<p id="ips9e-ch02-p-1081" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.151 Remote deposit capture.</phrase> The Federal Reserve has called remote deposit capture (RDC) &#8220;the most important development the [U.S.] banking industry has seen in years.&#8221; This service allows users to scan checks and to transmit the scanned images to a bank for posting.<termref term="fn_ch2_fn34"><sup>34</sup></termref> In its annual survey of community banks, the American Bankers Association asked banks whether or not they offered this service.<termref term="fn_ch2_fn35"><sup>35</sup></termref> Here are the results classified by the asset size (in millions of dollars) of the bank:</p>
 <box id="ips9e-ch02-box-223" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="RDCSIZE"><phrase>RDCSIZE</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-33" numbered="false" block_type="UN-TABLE" attr="50">
 <tbody>
@@ -3746,10 +3750,10 @@
 </tr>
 </tbody>
 </table>
-<p id="ips9e-ch02-p-1082" block_type="SR-X-QUE-NL-1">Summarize the results of this survey question numerically and graphically. Write a short paragraph explaining the relationship between the size of a bank, measured by assets, and whether or not RDC is offered.</p>
+<p id="ips9e-ch02-p-1082" block_type="SR-X-QUE-NL">Summarize the results of this survey question numerically and graphically. Write a short paragraph explaining the relationship between the size of a bank, measured by assets, and whether or not RDC is offered.</p>
 </question>
 <question id="ips9e-ch02-ques-152" block_type="exercise_2_152.html">
-<p id="ips9e-ch02-p-1083" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.152 How does RDC vary across the country?</phrase> The survey described in the previous exercise also classified community banks by region. Here is the 6 &#215; 2 table of counts:<termref term="fn_ch2_fn36"><sup>36</sup></termref></p>
+<p id="ips9e-ch02-p-1083" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.152 How does RDC vary across the country?</phrase> The survey described in the previous exercise also classified community banks by region. Here is the 6 &#215; 2 table of counts:<termref term="fn_ch2_fn36"><sup>36</sup></termref></p>
 <box id="ips9e-ch02-box-224" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="RDCREG"><phrase>RDCREG</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-34" numbered="false" block_type="UN-TABLE" attr="60">
 <tbody>
@@ -3794,10 +3798,10 @@
 </tr>
 </tbody>
 </table>
-<p id="ips9e-ch02-p-1084" block_type="SR-X-QUE-NL-1">Summarize the results of this survey question numerically and graphically. Write a short paragraph explaining the relationship between the location of a bank and whether or not RDC is offered.</p>
+<p id="ips9e-ch02-p-1084" block_type="SR-X-QUE-NL">Summarize the results of this survey question numerically and graphically. Write a short paragraph explaining the relationship between the location of a bank and whether or not RDC is offered.</p>
 </question>
 <question id="ips9e-ch02-ques-153" block_type="exercise_2_153.html">
-<p id="ips9e-ch02-p-1085" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.153 Fields of study for college students.</phrase> The following table gives the number of students (in thousands) graduating from college with degrees in several fields of study for seven countries:<termref term="fn_ch2_fn37"><sup>37</sup></termref></p>
+<p id="ips9e-ch02-p-1085" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.153 Fields of study for college students.</phrase> The following table gives the number of students (in thousands) graduating from college with degrees in several fields of study for seven countries:<termref term="fn_ch2_fn37"><sup>37</sup></termref></p>
 <box id="ips9e-ch02-box-225" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="FOS"><phrase>FOS</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-35" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
@@ -3871,7 +3875,7 @@
 </question>
 <p id="ips9e_page_157" block_type="page_start" data-margin-content="right">157</p>
 <question id="ips9e-ch02-ques-154" block_type="exercise_2_154.html">
-<p id="ips9e-ch02-p-1089" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.154 Fields of study by country for college students.</phrase> In the previous exercise you examined data on fields of study for graduating college students from seven countries.</p>
+<p id="ips9e-ch02-p-1089" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.154 Fields of study by country for college students.</phrase> In the previous exercise you examined data on fields of study for graduating college students from seven countries.</p>
 <box id="ips9e-ch02-box-226" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="FOS"><phrase>FOS</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-102" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-388"><p id="ips9e-ch02-p-1090" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Find the seven conditional distributions giving the distribution of graduates in the different fields of study for each country.</p></li>
@@ -3880,10 +3884,10 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-155" block_type="exercise_2_155.html">
-<p id="ips9e-ch02-p-1093" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.155 Graduation rates.</phrase> One of the factors used to evaluate undergraduate programs is the proportion of incoming students who graduate. This quantity, called the graduation rate, can be predicted by other variables such as the SAT or ACT scores and the high school records of the incoming students. One of the components that <em>U.S. News &#38; World Report</em> uses when evaluating colleges is the difference between the actual graduation rate and the rate predicted by a regression equation.<termref term="fn_ch2_fn38"><sup>38</sup></termref> In this chapter, we call this quantity the residual. Explain why the residual is a better measure to evaluate college graduation rates than the raw graduation rate.</p>
+<p id="ips9e-ch02-p-1093" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.155 Graduation rates.</phrase> One of the factors used to evaluate undergraduate programs is the proportion of incoming students who graduate. This quantity, called the graduation rate, can be predicted by other variables such as the SAT or ACT scores and the high school records of the incoming students. One of the components that <em>U.S. News &#38; World Report</em> uses when evaluating colleges is the difference between the actual graduation rate and the rate predicted by a regression equation.<termref term="fn_ch2_fn38"><sup>38</sup></termref> In this chapter, we call this quantity the residual. Explain why the residual is a better measure to evaluate college graduation rates than the raw graduation rate.</p>
 </question>
 <question id="ips9e-ch02-ques-156" block_type="exercise_2_156.html">
-<p id="ips9e-ch02-p-1094" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.156 Salaries and raises.</phrase> For this exercise, we consider a hypothetical employee who starts working in Year 1 with a salary of &#36;50,000. Each year her salary increases by approximately 5&#37;. By Year 20, she is earning &#36;126,000. The following table gives her salary for each year (in thousands of dollars):</p>
+<p id="ips9e-ch02-p-1094" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.156 Salaries and raises.</phrase> For this exercise, we consider a hypothetical employee who starts working in Year 1 with a salary of &#36;50,000. Each year her salary increases by approximately 5&#37;. By Year 20, she is earning &#36;126,000. The following table gives her salary for each year (in thousands of dollars):</p>
 <box id="ips9e-ch02-box-227" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="RAISES"><phrase>RAISES</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-36" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
@@ -3960,7 +3964,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-157" block_type="exercise_2_157.html">
-<p id="ips9e-ch02-p-1097" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.157 Look at the residuals.</phrase> Refer to the previous exercise. <link href="figure_2_35.html">Figure 2.35</link> is a plot of the residuals versus year.</p>
+<p id="ips9e-ch02-p-1097" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.157 Look at the residuals.</phrase> Refer to the previous exercise. <link href="figure_2_35.html">Figure 2.35</link> is a plot of the residuals versus year.</p>
 <box id="ips9e-ch02-box-228" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="RAISES"><phrase>RAISES</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-104" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-393"><p id="ips9e-ch02-p-1098" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Interpret the residual plot.</p></li>
@@ -3968,7 +3972,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-158" block_type="exercise_2_158.html">
-<p id="ips9e-ch02-p-1100" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.158 Try logs.</phrase> Refer to the previous two exercises. <link href="figure_2_36.html">Figure 2.36</link> is a scatterplot with the least-squares regression line for log salary versus year. For this model, <em>r</em><sup>2</sup> = 0.9995.</p>
+<p id="ips9e-ch02-p-1100" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.158 Try logs.</phrase> Refer to the previous two exercises. <link href="figure_2_36.html">Figure 2.36</link> is a scatterplot with the least-squares regression line for log salary versus year. For this model, <em>r</em><sup>2</sup> = 0.9995.</p>
 <box id="ips9e-ch02-box-229" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="RAISES"><phrase>RAISES</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-105" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-395"><p id="ips9e-ch02-p-1101" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Compare this plot with <link href="figure_2_34.html">Figure 2.34</link>. Write a short summary of the similarities and the differences.</p></li>
@@ -3987,7 +3991,7 @@
 </question>
 <p id="ips9e_page_158" block_type="page_start" data-margin-content="left">158</p>
 <question id="ips9e-ch02-ques-159" block_type="exercise_2_159.html">
-<p id="ips9e-ch02-p-1103" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.159 Make some predictions.</phrase> The individual whose salary we have been studying wants to do some financial planning. Specifically, she would like to predict her salary five years into the future, that is, for Year 25. She is willing to assume that her employment situation will be stable for the next five years and that it will be similar to the last 20 years.</p>
+<p id="ips9e-ch02-p-1103" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.159 Make some predictions.</phrase> The individual whose salary we have been studying wants to do some financial planning. Specifically, she would like to predict her salary five years into the future, that is, for Year 25. She is willing to assume that her employment situation will be stable for the next five years and that it will be similar to the last 20 years.</p>
 <box id="ips9e-ch02-box-230" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="RAISES"><phrase>RAISES</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-106" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-397"><p id="ips9e-ch02-p-1104" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Predict her salary for Year 25 using the least-squares regression equation constructed to predict salary from year.</p></li>
@@ -4003,7 +4007,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-160" block_type="exercise_2_160.html">
-<p id="ips9e-ch02-p-1109" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.160 Faculty salaries.</phrase> Here are the salaries for a sample of professors in a mathematics department at a large midwestern university for the academic years 2014&#8211;2015 and 2015&#8211;2016.</p>
+<p id="ips9e-ch02-p-1109" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.160 Faculty salaries.</phrase> Here are the salaries for a sample of professors in a mathematics department at a large midwestern university for the academic years 2014&#8211;2015 and 2015&#8211;2016.</p>
 <box id="ips9e-ch02-box-231" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="FACULTY"><phrase>FACULTY</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-37" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
@@ -4077,7 +4081,7 @@
 </question>
 <p id="ips9e_page_159" block_type="page_start" data-margin-content="right">159</p>
 <question id="ips9e-ch02-ques-161" block_type="exercise_2_161.html">
-<p id="ips9e-ch02-p-1113" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.161 Find the line and examine the residuals.</phrase> Refer to the previous exercise.</p>
+<p id="ips9e-ch02-p-1113" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.161 Find the line and examine the residuals.</phrase> Refer to the previous exercise.</p>
 <box id="ips9e-ch02-box-232" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="FACULTY"><phrase>FACULTY</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-108" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-405"><p id="ips9e-ch02-p-1114" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Find the least-squares regression line for predicting 2015&#8211;2016 salaries from 2014&#8211;2015 salaries.</p></li>
@@ -4085,7 +4089,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-162" block_type="exercise_2_162.html">
-<p id="ips9e-ch02-p-1116" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.162 Bigger raises for those earning less.</phrase> Refer to the previous two exercises. The 2014&#8211;2015 salaries do an excellent job of predicting the 2015&#8211;2016 salaries. Is there anything more that we can learn from these data? In this department, there is a tradition of giving higher-than-average percent raises to those whose salaries are lower. Let&#8217;s see if we can find evidence to support this idea in the data.</p>
+<p id="ips9e-ch02-p-1116" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.162 Bigger raises for those earning less.</phrase> Refer to the previous two exercises. The 2014&#8211;2015 salaries do an excellent job of predicting the 2015&#8211;2016 salaries. Is there anything more that we can learn from these data? In this department, there is a tradition of giving higher-than-average percent raises to those whose salaries are lower. Let&#8217;s see if we can find evidence to support this idea in the data.</p>
 <box id="ips9e-ch02-box-233" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="FACULTY"><phrase>FACULTY</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-109" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-407"><p id="ips9e-ch02-p-1117" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Compute the percent raise for each faculty member. Take the difference between the 2015&#8211;2016 salary and the 2014&#8211;2015 salary, divide by the 2014&#8211;2015 salary, and then multiply by 100. Make a scatterplot with raise as the response variable and the 2014&#8211;2015 salary as the explanatory variable. Describe the relationship that you see in your plot.</p></li>
@@ -4095,10 +4099,10 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-163" block_type="exercise_2_163.html">
-<p id="ips9e-ch02-p-1121" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.163 Firefighters and fire damage.</phrase> Someone says, &#8220;There is a strong positive correlation between the number of firefighters at a fire and the amount of damage the fire does. So sending lots of firefighters just causes more damage.&#8221; Explain why this reasoning is wrong.</p>
+<p id="ips9e-ch02-p-1121" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.163 Firefighters and fire damage.</phrase> Someone says, &#8220;There is a strong positive correlation between the number of firefighters at a fire and the amount of damage the fire does. So sending lots of firefighters just causes more damage.&#8221; Explain why this reasoning is wrong.</p>
 </question>
 <question id="ips9e-ch02-ques-164" block_type="exercise_2_164.html">
-<p id="ips9e-ch02-p-1122" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.164 Predicting text pages.</phrase> The editor of a statistics text would like to plan for the next edition. A key variable is the number of pages that will be in the final version. Text files are prepared by the authors using a word processor called LaTeX, and separate files contain figures and tables. For the previous edition of the text, the number of pages in the LaTeX files can easily be determined, as well as the number of pages in the final version of the text. Here are the data:</p>
+<p id="ips9e-ch02-p-1122" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.164 Predicting text pages.</phrase> The editor of a statistics text would like to plan for the next edition. A key variable is the number of pages that will be in the final version. Text files are prepared by the authors using a word processor called LaTeX, and separate files contain figures and tables. For the previous edition of the text, the number of pages in the LaTeX files can easily be determined, as well as the number of pages in the final version of the text. Here are the data:</p>
 <box id="ips9e-ch02-box-234" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="TEXTP"><phrase>TEXTP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-38" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
@@ -4160,7 +4164,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-165" block_type="exercise_2_165.html">
-<p id="ips9e-ch02-p-1127" block_type="SR-X-QUE-NL-1"><image asset-id="ips9e-ch02-img-82" alt="image" src="images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.165 Plywood strength.</phrase> How strong is a building material such as plywood? To be specific, support a 24-inch by 2-inch strip of plywood at both ends and apply force in the middle until the strip breaks. The modulus of rupture (MOR) is the force needed to break the strip. We would like to be able to predict MOR without actually breaking the wood. The modulus of elasticity (MOE) is found by bending the wood without breaking it. Both MOE and MOR are measured in pounds per square inch. Here are data for 32 specimens of the same type of plywood:<termref term="fn_ch2_fn39"><sup>39</sup></termref></p>
+<p id="ips9e-ch02-p-1127" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-82" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.165 Plywood strength.</phrase> How strong is a building material such as plywood? To be specific, support a 24-inch by 2-inch strip of plywood at both ends and apply force in the middle until the strip breaks. The modulus of rupture (MOR) is the force needed to break the strip. We would like to be able to predict MOR without actually breaking the wood. The modulus of elasticity (MOE) is found by bending the wood without breaking it. Both MOE and MOR are measured in pounds per square inch. Here are data for 32 specimens of the same type of plywood:<termref term="fn_ch2_fn39"><sup>39</sup></termref></p>
 <box id="ips9e-ch02-box-235" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="MOEMOR"><phrase>MOEMOR</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-39" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
@@ -4256,14 +4260,14 @@
 </tr>
 </tbody>
 </table>
-<p id="ips9e-ch02-p-1128" block_type="SR-X-QUE-NL-1">Can we use MOE to predict MOR accurately? Use the data to write a discussion of this question.</p>
+<p id="ips9e-ch02-p-1128" block_type="SR-X-QUE-NL">Can we use MOE to predict MOR accurately? Use the data to write a discussion of this question.</p>
 </question>
 <question id="ips9e-ch02-ques-166" block_type="exercise_2_166.html">
-<p id="ips9e-ch02-p-1129" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.166 Distribution of the residuals.</phrase> Some statistical methods require that the residuals from a regression line have a Normal distribution. The residuals for the nonexercise activity example are given in <link href="exercise_2_93.html">Exercise 2.93</link> (page 125). Is their distribution close to Normal? Make a Normal quantile plot to find out.</p>
+<p id="ips9e-ch02-p-1129" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.166 Distribution of the residuals.</phrase> Some statistical methods require that the residuals from a regression line have a Normal distribution. The residuals for the nonexercise activity example are given in <link href="exercise_2_93.html">Exercise 2.93</link> (page 125). Is their distribution close to Normal? Make a Normal quantile plot to find out.</p>
 <box id="ips9e-ch02-box-236" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="FIDGET"><phrase>FIDGET</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <question id="ips9e-ch02-ques-167" block_type="exercise_2_167.html">
-<p id="ips9e-ch02-p-1130" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.167 An example of Simpson&#8217;s paradox.</phrase> Mountain View University has professional schools in business and law. Here is a three-way table of applicants to these professional schools, categorized by sex, school, and admission decision:<termref term="fn_ch2_fn40"><sup>40</sup></termref></p>
+<p id="ips9e-ch02-p-1130" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.167 An example of Simpson&#8217;s paradox.</phrase> Mountain View University has professional schools in business and law. Here is a three-way table of applicants to these professional schools, categorized by sex, school, and admission decision:<termref term="fn_ch2_fn40"><sup>40</sup></termref></p>
 <box id="ips9e-ch02-box-237" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="ADMITS"><phrase>ADMITS</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-40" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
@@ -4310,7 +4314,7 @@
 </question>
 <p id="ips9e_page_160" block_type="page_start" data-margin-content="left">160</p>
 <question id="ips9e-ch02-ques-168" block_type="exercise_2_168.html">
-<p id="ips9e-ch02-p-1135" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.168 Simpson&#8217;s paradox and regression.</phrase> Simpson&#8217;s paradox occurs when a relationship between variables within groups of observations reverses when all of the data are combined. The phenomenon is usually discussed in terms of categorical variables, but it also occurs in other settings. Here is an example:</p>
+<p id="ips9e-ch02-p-1135" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.168 Simpson&#8217;s paradox and regression.</phrase> Simpson&#8217;s paradox occurs when a relationship between variables within groups of observations reverses when all of the data are combined. The phenomenon is usually discussed in terms of categorical variables, but it also occurs in other settings. Here is an example:</p>
 <box id="ips9e-ch02-box-238" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="SIMREG"><phrase>SIMREG</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-41" numbered="false" block_type="UN-TABLE" attr="85">
 <tbody>
@@ -4372,7 +4376,7 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-169" block_type="exercise_2_169.html">
-<p id="ips9e-ch02-p-1140" block_type="SR-X-QUE-NL-1"><image asset-id="ips9e-ch02-img-83" alt="image" src="images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.169 Class size and class level.</phrase> A university classifies its classes as either &#8220;small&#8221; (fewer than 40 students) or &#8220;large.&#8221; A dean sees that 62&#37; of Department A&#8217;s classes are small, while Department B has only 40&#37; small classes. She wonders if she should cut Department A&#8217;s budget and insist on larger classes. Department A responds to the dean by pointing out that classes for third- and fourth-year students tend to be smaller than classes for first- and second-year students. The following three-way table gives the counts of classes by department, size, and student audience. Write a short report for the dean that summarizes these data. Start by computing the percents of small classes in the two departments and include other numerical and graphical comparisons as needed. Here are the numbers of classes to be analyzed:</p>
+<p id="ips9e-ch02-p-1140" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-83" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.169 Class size and class level.</phrase> A university classifies its classes as either &#8220;small&#8221; (fewer than 40 students) or &#8220;large.&#8221; A dean sees that 62&#37; of Department A&#8217;s classes are small, while Department B has only 40&#37; small classes. She wonders if she should cut Department A&#8217;s budget and insist on larger classes. Department A responds to the dean by pointing out that classes for third- and fourth-year students tend to be smaller than classes for first- and second-year students. The following three-way table gives the counts of classes by department, size, and student audience. Write a short report for the dean that summarizes these data. Start by computing the percents of small classes in the two departments and include other numerical and graphical comparisons as needed. Here are the numbers of classes to be analyzed:</p>
 <box id="ips9e-ch02-box-239" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="CSIZE"><phrase>CSIZE</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-42" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
@@ -4430,7 +4434,7 @@
 </table>
 </question>
 <question id="ips9e-ch02-ques-170" block_type="exercise_2_170.html">
-<p id="ips9e-ch02-p-1141" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.170 More smokers live at least 20 more years!</phrase> You can see the headlines: &#8220;More smokers than nonsmokers live at least 20 more years after being contacted for study!&#8221; A medical study contacted randomly chosen people in a district in England. Here are data on the 1314 women contacted who were either current smokers or who had never smoked. The tables classify these women by their smoking status and age at the time of the survey and whether they were still alive 20 years later.<termref term="fn_ch2_fn41"><sup>41</sup></termref></p>
+<p id="ips9e-ch02-p-1141" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.170 More smokers live at least 20 more years!</phrase> You can see the headlines: &#8220;More smokers than nonsmokers live at least 20 more years after being contacted for study!&#8221; A medical study contacted randomly chosen people in a district in England. Here are data on the 1314 women contacted who were either current smokers or who had never smoked. The tables classify these women by their smoking status and age at the time of the survey and whether they were still alive 20 years later.<termref term="fn_ch2_fn41"><sup>41</sup></termref></p>
 <box id="ips9e-ch02-box-240" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="SMOKERS"><phrase>SMOKERS</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-43" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
@@ -4477,7 +4481,7 @@
 </question>
 <p id="ips9e_page_161" block_type="page_start" data-margin-content="right">161</p>
 <question id="ips9e-ch02-ques-171" block_type="exercise_2_171.html">
-<p id="ips9e-ch02-p-1145" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.171 Recycled product quality.</phrase> Recycling is supposed to save resources. Some people think recycled products are lower in quality than other products, a fact that makes recycling less practical. People who actually use a recycled product may have different opinions from those who don&#8217;t use it. Here are data on attitudes toward coffee filters made of recycled paper among people who do and don&#8217;t buy these filters:<termref term="fn_ch2_fn42"><sup>42</sup></termref></p>
+<p id="ips9e-ch02-p-1145" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.171 Recycled product quality.</phrase> Recycling is supposed to save resources. Some people think recycled products are lower in quality than other products, a fact that makes recycling less practical. People who actually use a recycled product may have different opinions from those who don&#8217;t use it. Here are data on attitudes toward coffee filters made of recycled paper among people who do and don&#8217;t buy these filters:<termref term="fn_ch2_fn42"><sup>42</sup></termref></p>
 <box id="ips9e-ch02-box-241" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="RECYCLE"><phrase>RECYCLE</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch02-untab-44" numbered="false" block_type="UN-TABLE" attr="85">
 <tbody>
@@ -4510,11 +4514,11 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-172" block_type="exercise_2_172.html">
-<p id="ips9e-ch02-p-1148" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.172 Survival and sex on the <em>Titanic</em>.</phrase> In <link href="exercise_2_122.html">Exercise 2.122</link>, you examined the relationship between survival and class on the <em>Titanic</em>. The data file TITANIC contains data on the sex of the <em>Titanic</em> passengers. Examine the relationship between survival and sex and write a short summary of your findings.</p>
+<p id="ips9e-ch02-p-1148" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.172 Survival and sex on the <em>Titanic</em>.</phrase> In <link href="exercise_2_122.html">Exercise 2.122</link>, you examined the relationship between survival and class on the <em>Titanic</em>. The data file TITANIC contains data on the sex of the <em>Titanic</em> passengers. Examine the relationship between survival and sex and write a short summary of your findings.</p>
 <box id="ips9e-ch02-box-242" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="TITANIC"><phrase>TITANIC</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <question id="ips9e-ch02-ques-173" block_type="exercise_2_173.html">
-<p id="ips9e-ch02-p-1149" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.173 Survival, class, and sex on the <em>Titanic</em>.</phrase> Refer to the previous exercise and <link href="exercise_2_122.html">Exercise 2.122</link> (page 146). When we looked at survival and class, we ignored sex. When we looked at survival and sex, we ignored class. Are we missing something interesting about these data when we choose this approach to the analysis? Here is one way to answer this question.</p>
+<p id="ips9e-ch02-p-1149" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.173 Survival, class, and sex on the <em>Titanic</em>.</phrase> Refer to the previous exercise and <link href="exercise_2_122.html">Exercise 2.122</link> (page 146). When we looked at survival and class, we ignored sex. When we looked at survival and sex, we ignored class. Are we missing something interesting about these data when we choose this approach to the analysis? Here is one way to answer this question.</p>
 <box id="ips9e-ch02-box-243" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="TITANIC"><phrase>TITANIC</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <list id="ips9e-ch02-list-115" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch02-li-428"><p id="ips9e-ch02-p-1150" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Create two separate two-way tables. One for survival and class for the women and another for survival and class for the men.</p></li>
@@ -4524,15 +4528,15 @@
 </list>
 </question>
 <question id="ips9e-ch02-ques-174" block_type="exercise_2_174.html">
-<p id="ips9e-ch02-p-1154" block_type="SR-X-QUE-NL-1"><image asset-id="ips9e-ch02-img-84" alt="image" src="images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.174 Blueberries and anthocyanins.</phrase> Refer to <link href="exercise_1_165.html">Exercises 1.165</link> and <link href="exercise_1_166.html">1.166</link> (page 77). <link href="figure_2_38.html">Figure 2.38</link> gives JMP output for examining the relationship between Antho2 and Antho1. Use this output to write a summary of this relationship using the methods and ideas that you learned in this chapter.</p>
+<p id="ips9e-ch02-p-1154" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-84" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.174 Blueberries and anthocyanins.</phrase> Refer to <link href="exercise_1_165.html">Exercises 1.165</link> and <link href="exercise_1_166.html">1.166</link> (page 77). <link href="figure_2_38.html">Figure 2.38</link> gives JMP output for examining the relationship between Antho2 and Antho1. Use this output to write a summary of this relationship using the methods and ideas that you learned in this chapter.</p>
 <box id="ips9e-ch02-box-244" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="BERRIES"><phrase>BERRIES</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <question id="ips9e-ch02-ques-175" block_type="exercise_2_175.html">
-<p id="ips9e-ch02-p-1155" block_type="SR-X-QUE-NL-1"><phrase block_type="SR-XH">2.175 Averaged date for blueberries and anthocyanins.</phrase> Refer to the previous exercise where you examined the relationship between Antho2 and Antho1. The variables Antho2M and Antho1M were computed by averaging Antho2 and Antho1 for values of Antho1 in the intervals (0, 0.5), [0.5, 1.0), [1.0, 1.5), [1.5, 2.0), [2.0, 2.5), [2.5, 3.0), and [3.0, 3.5). Analyze the relationship between Antho2M and Antho1M, and compare your results that you found in the previous exercise using Antho2 and Antho1. Summarize what the comparison tells you about relationships with averaged data.</p>
+<p id="ips9e-ch02-p-1155" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">2.175 Averaged date for blueberries and anthocyanins.</phrase> Refer to the previous exercise where you examined the relationship between Antho2 and Antho1. The variables Antho2M and Antho1M were computed by averaging Antho2 and Antho1 for values of Antho1 in the intervals (0, 0.5), [0.5, 1.0), [1.0, 1.5), [1.5, 2.0), [2.0, 2.5), [2.5, 3.0), and [3.0, 3.5). Analyze the relationship between Antho2M and Antho1M, and compare your results that you found in the previous exercise using Antho2 and Antho1. Summarize what the comparison tells you about relationships with averaged data.</p>
 <box id="ips9e-ch02-box-245" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="BERRIEM"><phrase>BERRIEM</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <question id="ips9e-ch02-ques-176" block_type="exercise_2_176.html">
-<p id="ips9e-ch02-p-1156" block_type="SR-X-QUE-NL-1"><image asset-id="ips9e-ch02-img-85" alt="image" src="images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.176 Restricting the range for blueberries and anthocyanins.</phrase> Refer to <link href="exercise_2_174.html">Exercise 2.174</link> where you examined the relationship between Antho2 and Antho1. The data file BERRIER was created from the data file BERRIES by excluding cases with values of Antho1 that are less than 1.5 and cases with values of Antho1 that are greater than 3. Analyze the relationship between Antho2 and Antho1 for this restricted range data set, and compare your results that you found in <link href="exercise_2_174.html">Exercise 2.174</link> for the complete data set. Summarize what the comparison tells you about relationships with a restricted range.</p>
+<p id="ips9e-ch02-p-1156" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch02-img-85" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/><phrase block_type="SR-XH">2.176 Restricting the range for blueberries and anthocyanins.</phrase> Refer to <link href="exercise_2_174.html">Exercise 2.174</link> where you examined the relationship between Antho2 and Antho1. The data file BERRIER was created from the data file BERRIES by excluding cases with values of Antho1 that are less than 1.5 and cases with values of Antho1 that are greater than 3. Analyze the relationship between Antho2 and Antho1 for this restricted range data set, and compare your results that you found in <link href="exercise_2_174.html">Exercise 2.174</link> for the complete data set. Summarize what the comparison tells you about relationships with a restricted range.</p>
 <box id="ips9e-ch02-box-246" block_type="rl_linkbox"><p block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="BERRIER"><phrase>BERRIER</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <p id="ips9e_page_162" block_type="page_start" data-margin-content="left">162</p>

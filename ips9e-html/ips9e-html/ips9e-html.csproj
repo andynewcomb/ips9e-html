@@ -729,6 +729,24 @@
     <Content Include="ebook\css\ips9e_ch1.min.css">
       <DependentUpon>ips9e_ch1.css</DependentUpon>
     </Content>
+    <Content Include="ebook\css\ips9e_ch2.css">
+      <DependentUpon>ips9e_ch2.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\ips9e_ch2.min.css">
+      <DependentUpon>ips9e_ch2.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\ips9e_ch3.css">
+      <DependentUpon>ips9e_ch3.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\ips9e_ch3.min.css">
+      <DependentUpon>ips9e_ch3.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\ips9e_ch4.css">
+      <DependentUpon>ips9e_ch4.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\ips9e_ch4.min.css">
+      <DependentUpon>ips9e_ch4.css</DependentUpon>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="docs\01_MooreIPS9e_13387_Ch01_01-78_2nd_Pass.pdf" />
     <Content Include="docs\02_MooreIPS9e_13387_Ch02_79-162_2nd_Pass.pdf" />
@@ -738,6 +756,9 @@
     </None>
     <Content Include="docs\03_MooreIPS9e_13387_Ch03_163-214_2nd_Pass.pdf" />
     <Content Include="docs\04_MooreIPS9e_13387_Ch04_215-280_2nd_Pass.pdf" />
+    <Content Include="ebook\css\ips9e_ch2.less" />
+    <Content Include="ebook\css\ips9e_ch3.less" />
+    <Content Include="ebook\css\ips9e_ch4.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
