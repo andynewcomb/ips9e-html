@@ -1,13 +1,13 @@
 <chapter id="mooreips9e-ch04-chapter-4" number="4" title="Chapter 4: Probability: The Study of Randomness" start-numbering-at="4" numbered="true">
 <section id="ips9e-ch04-sec-01" block_type="chapter" title="Probability: The Study of Randomness" numbered="false" level="1" print_page="215">
-<p id="ips9e-ch04-p-01" block_type="CN">4</p>
-<p id="ips9e-ch04-p-02" block_type="CT">Probability: The Study of Randomness</p>
 <p id="ips9e_page_215" block_type="page_start" data-margin-content="right">215</p>
 <figure id="ips9e-ch04-fig-01" block_type="C-H-graphic" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="false"/>
 <image asset-id="ips9e-ch04-img-01" alt="image" src="asset/ch4/17MOOREIPS-MSE_9e_CO04.jpg"/>
 <asset_source><phrase block_type="CO_PHCR">Jgroup/Dreamstime.com</phrase></asset_source>
 </figure>
+<p id="ips9e-ch04-p-02" block_type="CT">Probability: The Study of Randomness</p>
+<p id="ips9e-ch04-p-01" block_type="CN">4</p>
 <box id="ips9e-ch04-box-01" numbered="false" block_type="chap_outline" title="CHAPTER OUTLINE">
 <list id="ips9e-ch04-list-01" type="unordered" block_type="simple">
 <li id="ips9e-ch04-li-01"><p id="ips9e-ch04-p-03" block_type="CO-TOC-h1"><link href="ips9e_ch4_2.html" target="_pop"><phrase>4.1</phrase> Randomness</link></p></li>
@@ -898,7 +898,7 @@
 <p id="ips9e-ch04-p-363" block_type="TXT">We can use histograms to show probability distributions as well as distributions of data. <link href="figure_4_5.html">Figure 4.5</link> displays <termref term="probability histograms"><strong>probability histograms</strong></termref><phrase block_type="MN-GL-term">probability histogram</phrase> that compare the probability model for equally likely random digits (<link href="example_4_15.html">Example 4.15</link>, page 227) with the model given by Benford&#8217;s law (<link href="example_4_12.html">Example 4.12</link>, page 226). The height of each bar shows the probability of the outcome at its base. Because the heights are probabilities, they add to 1. As usual, all the bars in a histogram have the same width. So the areas also display the assignment of probability to outcomes. Think of these histograms as idealized pictures of the results of very many trials. The histograms make it easy to quickly compare the two distributions.</p>
 <figure id="ips9e-ch04-fig-09" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="4.5" mmtype="image" mmsrc="" attr="" data-filename="figure_4_5.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch04-img-18" alt="image" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_05ab.jpg"/>
+<image asset-id="ips9e-ch04-img-18" alt="image" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_05.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 4.5</phrase> <phrase block_type="FG-CAP">Probability histograms for (a) equally likely random digits 1 to 9 and (b) Benford&#8217;s law. The height of each bar shows the probability assigned to a single outcome.</phrase></caption>
 </figure>
 <p id="ips9e_page_238" block_type="page_start" data-margin-content="left">238</p>
@@ -986,7 +986,7 @@
 <p id="ips9e-ch04-p-397" block_type="EXP-TXT-ni">This density curve appears in red in <link href="figure_4_9.html">Figure 4.9</link>. It has height 1 over the interval from 0 to 1, and height 0 everywhere else. The area under the density curve is 1: the area of a square with base 1 and height 1. The probability of any event is the area under the density curve and above the event in question.</p>
 <figure id="ips9e-ch04-fig-13" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="4.9" mmtype="image" mmsrc="" attr="" data-filename="figure_4_9.html">
 <layout align="center" width="large" border="false"/>
-<image asset-id="ips9e-ch04-img-22" alt="image" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_09ab.jpg"/>
+<image asset-id="ips9e-ch04-img-22" alt="image" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_09.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 4.9</phrase> <phrase block_type="FG-CAP">Assigning probabilities for generating a random number between 0 and 1, <link href="example_4_25.html">Example 4.25</link>. The probability of any interval of numbers is the area above the interval and under the density curve.</phrase></caption>
 </figure>
 <p id="ips9e_page_241" block_type="page_start" data-margin-content="right">241</p>
@@ -1417,7 +1417,7 @@
 <p id="ips9e-ch04-p-547" block_type="TXT">What about continuous random variables? The probability distribution of a continuous random variable <em>X</em> is described by a density curve. <link href="ips9e-ch01.xml">Chapter 1</link> (page 54) showed how to find the mean of the distribution: it is the point at which the area under the density curve would balance if it were made out of solid material. The mean lies at the center of symmetric density curves such as the Normal curves. Exact calculation of the mean of a distribution with a skewed density curve requires advanced mathematics.<termref term="fn_ch4_fn13"><sup>13</sup></termref> The idea that the mean is the balance point of the distribution applies to discrete random variables as well, but in the discrete case, we have a formula that gives us this point.</p>
 <figure id="ips9e-ch04-fig-17" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="4.13" mmtype="image" mmsrc="" attr="" data-filename="figure_4_13.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch04-img-29" alt="image" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_13ab.jpg"/>
+<image asset-id="ips9e-ch04-img-29" alt="image" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_13.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 4.13</phrase> <phrase block_type="FG-CAP">Locating the mean of a discrete random variable on the probability histogram for (a) digits between 1 and 9 chosen at random; (b) digits between 1 and 9 chosen from records that obey Benford&#8217;s law.</phrase></caption>
 </figure>
 <p id="ips9e_page_250" block_type="page_start" data-margin-content="left">250</p>

@@ -40,7 +40,8 @@ p {
 }
 // unnumbered figures won't be clickable
 div[data-block_type="UN-FIGURE"] img {cursor:default !important;}
-
+// no borders by default on figures
+[data-type="figure"], [data-type="table"] {border:none;}
 
 /* chapter opener sections */
 div[data-type="section"][data-block_type="chapter"] {

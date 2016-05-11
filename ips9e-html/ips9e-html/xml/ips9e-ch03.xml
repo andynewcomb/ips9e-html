@@ -1,13 +1,13 @@
 <chapter id="ips9e-ch03" number="3" title="Chapter 3: Producing Data" start-numbering-at="3" numbered="true">
 <section id="ips9e-ch03-sec-01" block_type="chapter" title="Producing Data" numbered="false" level="1" print_page="163">
-<p id="ips9e-ch03-p-01" block_type="CN">3</p>
-<p id="ips9e-ch03-p-02" block_type="CT">Producing Data</p>
 <p id="ips9e_page_163" block_type="page_start" data-margin-content="right">163</p>
 <figure id="ips9e-ch03-unfig-01" block_type="C-H-graphic" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="false"/>
 <image asset-id="ips9e-ch03-img-01" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_CO03.jpg"/>
 <asset_source><phrase block_type="CO_PHCR">Thinkstock</phrase></asset_source>
 </figure>
+<p id="ips9e-ch03-p-02" block_type="CT">Producing Data</p>
+<p id="ips9e-ch03-p-01" block_type="CN">3</p>
 <box id="ips9e-ch03-box-01" numbered="false" block_type="chap_outline" title="CHAPTER OUTLINE">
 <list id="ips9e-ch03-list-01" type="unordered" block_type="simple">
 <li id="ips9e-ch03-li-01"><p id="ips9e-ch03-p-03" block_type="CO-TOC-h1"><link href="ips9e_ch3_2.html" target="_pop"><phrase>3.1</phrase> Sources of Data</link></p></li>
@@ -179,7 +179,7 @@
 <li id="ips9e-ch03-li-16"><p id="ips9e-ch03-p-91" block_type="BL-first"><phrase block_type="maker">&#8226;</phrase> <strong>Confounding</strong> occurs when the effects of two or more variables are related in such a way that we need to take care in assigning the effect on the response variable to one or to the other.</p></li>
 </list>
 </section>
-<section id="ips9e-ch03-exer1-01" block_type="SR-X-H" chapter="ch3" numbered="false" level="1" print_page="">
+<section id="ips9e-ch03-exer1-01" block_type="SR-X-H" chapter="ch3" numbered="false" level="1" print_page="170">
 <section-metadata><section-title><phrase block_type="SR-XH">SECTION 3.1</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></section-title></section-metadata>
 <p id="ips9e-ch03-p-92" block_type="SR-X-TXT-ni"><em>For <link href="exercise_3_1.html">Exercises 3.1</link> to <link href="exercise_3_4.html">3.4</link>, see pages 164&#8211;165; for <link href="exercise_3_5.html">Exercise 3.5</link>, see page 166; for <link href="exercise_3_6.html">Exercise 3.6</link>, see page 167; for <link href="exercise_3_7.html">Exercises 3.7</link> and <link href="exercise_3_9.html">3.9</link>, see pages 168&#8211;169; and for <link href="exercise_3_10.html">Exercises 3.10</link> and <link href="exercise_3_11.html">3.11</link>, see pages 169&#8211;170.</em></p>
 <p id="ips9e-ch03-p-93" block_type="SR-X-QUE-NL"><em>In several of the following exercises, you are asked to identify the type of data that is described. Possible answers include anecdotal data, available data, observational data that are from sample surveys, observational data that are not from sample surveys, and experimental data. It is possible for some data to be classified in more than one category.</em></p>
@@ -378,10 +378,7 @@
 </box>
 <figure id="ips9e-ch03-fig-04" block_type="FIGURE" data-caption-compass="S" numbered="true" number="3.4" mmtype="image" mmsrc="" attr="" data-filename="figure_3_4.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch03-img-09a" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_04a.jpg"/>
-<image asset-id="ips9e-ch03-img-09b" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_04b.jpg"/>
-<image asset-id="ips9e-ch03-img-09c" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_04c.jpg"/>
-<image asset-id="ips9e-ch03-img-09d" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_04d.jpg"/>
+<image asset-id="ips9e-ch03-img-09d" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_04.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 3.4</phrase> <phrase block_type="FG-CAP">Randomization of 10 experimental units using an Excel spreadsheet, <link href="example_3_12.html">Example 3.12</link>: (a) labels; (b) random numbers; (c) sorted list of labels; (d) labels with group assignments.</phrase></caption>
 </figure>
 <p id="ips9e_page_179" block_type="page_start" data-margin-content="right">179</p>
@@ -722,9 +719,7 @@
 <p id="ips9e_page_192" block_type="page_start" data-margin-content="left">192</p>
 <figure id="ips9e-ch03-fig-07" block_type="FIGURE" data-caption-compass="S" numbered="true" number="3.7" mmtype="image" mmsrc="" attr="" data-filename="figure_3_7.html">
 <layout align="center" width="large" border="false"/>
-<image asset-id="ips9e-ch03-img-24a" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_07a.jpg"/>
-<image asset-id="ips9e-ch03-img-24b" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_07b.jpg"/>
-<image asset-id="ips9e-ch03-img-24c" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_07c.jpg"/>
+<image asset-id="ips9e-ch03-img-24c" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_07.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 3.7</phrase> <phrase block_type="FG-CAP">Selection of a simple random sample of countries from the population of 189 countries, <link href="example_3_23.html">Example 3.23</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch03-p-375" block_type="EXP-mid"><link href="figure_3_7.html">Figure 3.7(c)</link> shows the file after we sort on the uniform random numbers in column C. Our sample is the first 25 countries in the sorted file. The first three selected are Chile (CHL), Belgium (BEL), and the Solomon Islands (SLB). Note that Excel does not display the last two digits for Belarus (BLR) because they are zero.</p>
@@ -944,7 +939,7 @@
 <li id="ips9e-ch03-li-120"><p id="ips9e-ch03-p-459" block_type="BL-first"><phrase block_type="maker">&#8226;</phrase> In human populations, even probability samples can suffer from bias due to <strong>undercoverage</strong> or <strong>nonresponse</strong>, from <strong>response bias</strong> due to the behavior of the interviewer or the respondent, or from misleading results due to <strong>poorly worded questions</strong>.</p></li>
 </list>
 </section>
-<section id="ips9e-ch03-exer1-03" block_type="SR-X-H" chapter="ch3" numbered="false" level="1" print_page="">
+<section id="ips9e-ch03-exer1-03" block_type="SR-X-H" chapter="ch3" numbered="false" level="1" print_page="200">
 <section-metadata><section-title><phrase block_type="SR-XH">SECTION 3.3</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></section-title></section-metadata>
 <p id="ips9e-ch03-p-460" block_type="SR-X-TXT-ni"><em>For <link href="exercise_3_44.html">Exercises 3.44</link> and <link href="exercise_3_45.html">3.45</link>, see pages 189&#8211;190; for <link href="exercise_3_46.html">Exercise 3.46</link>, see page 192; and for <link href="exercise_3_47.html">Exercises 3.47</link>, <link href="exercise_3_48.html">3.48</link>, and <link href="exercise_3_49.html">3.49</link>, see page 193.</em></p>
 <question id="ips9e-ch03-ques-50" block_type="exercise_3_50.html">

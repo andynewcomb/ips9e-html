@@ -1,13 +1,13 @@
 <chapter id="ips9e-ch02" number="2" title="Chapter 2: Looking at Data&#8212;Relationships" start-numbering-at="2" numbered="true">
 <section id="ips9e-ch02-sec-01" block_type="chapter" number="2" title="Looking at Data&#8212;Relationships" numbered="true" level="1" print_page="79">
-<p id="ips9e-ch02-p-01" block_type="CN">2</p>
-<p id="ips9e-ch02-p-02" block_type="CT">Looking at Data&#8212;Relationships</p>
 <p id="ips9e_page_79" block_type="page_start" data-margin-content="right">79</p>
 <figure id="ips9e-ch02-unfig-01" block_type="C-H-graphic" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="false"/>
 <image asset-id="ips9e-ch02-img-01" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_CO02.jpg"/>
 <asset_source>Yellow Dog Productions/Getty Images</asset_source>
 </figure>
+<p id="ips9e-ch02-p-02" block_type="CT">Looking at Data&#8212;Relationships</p>
+<p id="ips9e-ch02-p-01" block_type="CN">2</p>
 <box id="ips9e-ch02-box-01" numbered="false" block_type="chap_outline" title="CHAPTER OUTLINE">
 <list id="ips9e-ch02-list-01" type="unordered" block_type="simple">
 <li id="ips9e-ch02-li-01"><p id="ips9e-ch02-p-03" block_type="CO-TOC-h1"><link href="ips9e_ch2_2.html" target="_pop"><phrase>2.1</phrase> Relationships</link></p></li>
@@ -54,13 +54,14 @@
 <p id="ips9e-ch02-p-26" block_type="TXT">We use the term <em>associated</em> to describe the relationship between two variables, such as stress and access to resources to cope in <link href="example_2_1.html">Example 2.1</link>. Here is another example where two variables are associated.</p>
 <box id="ips9e-ch02-box-05" numbered="false" block_type="EXP" data-filename="example_2_2.html">
 <p id="ips9e-ch02-p-27" block_type="EXP-N">EXAMPLE 2.2</p>
-<p id="ips9e-ch02-p-28" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Size and price of a coffee beverage.</phrase> You visit a local Starbucks to buy a Mocha Frappuccino<sup>&#174;</sup>. The barista explains that this blended coffee beverage comes in three sizes and asks if you want a Tall, a Grande, or a Venti. The prices are &#36;3.95, &#36;4.45, and &#36;4.95, respectively. There is a clear association between the size of the Mocha Frappuccino and its price.</p>
-</box>
 <figure id="ips9e-ch02-unfig-02" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="left" width="small" border="false"/>
 <image asset-id="ips9e-ch02-img-03" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_P_02_01.jpg"/>
 <asset_source>Anthony Behar/Sipa USA/Sipa via AP Images</asset_source>
 </figure>
+  <p id="ips9e-ch02-p-28" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Size and price of a coffee beverage.</phrase> You visit a local Starbucks to buy a Mocha Frappuccino<sup>&#174;</sup>. The barista explains that this blended coffee beverage comes in three sizes and asks if you want a Tall, a Grande, or a Venti. The prices are &#36;3.95, &#36;4.45, and &#36;4.95, respectively. There is a clear association between the size of the Mocha Frappuccino and its price.</p>
+</box>
+
 <box id="ips9e-ch02-box-06" numbered="false" block_type="BX1">
 <p id="ips9e-ch02-p-29" block_type="BX1-T">ASSOCIATION BETWEEN VARIABLES</p>
 <p id="ips9e-ch02-p-30" block_type="BX1-TXT-ni">Two variables measured on the same cases are <strong>associated</strong> if knowing the values of one of the variables tells you something about the values of the other variable.</p>
@@ -124,11 +125,11 @@
 <p id="ips9e-ch02-p-61" block_type="BX1-T">KEY CHARACTERISTICS OF DATA FOR RELATIONSHIPS</p>
 <p id="ips9e-ch02-p-62" block_type="BX1-TXT">A description of the key characteristics of a data set that will be used to explore a relationship between two variables should include</p>
 <list id="ips9e-ch02-list-04" type="unordered" block_type="bullet">
-<li id="ips9e-ch02-li-13"><p id="ips9e-ch02-p-63" block_type="EXP-BL"><phrase block_type="maker">&#8226;</phrase> <keywords>Cases.</keywords> Identify the cases and how many there are in the data set.</p></li>
-<li id="ips9e-ch02-li-14"><p id="ips9e-ch02-p-64" block_type="EXP-BL"><phrase block_type="maker">&#8226;</phrase> <keywords>Categorical or quantitative.</keywords> Classify each variable as categorical or quantitative.</p></li>
-<li id="ips9e-ch02-li-15"><p id="ips9e-ch02-p-65" block_type="EXP-BL"><phrase block_type="maker">&#8226;</phrase> <keywords>Values.</keywords> Identify the possible values for each variable.</p></li>
-<li id="ips9e-ch02-li-16"><p id="ips9e-ch02-p-66" block_type="EXP-BL"><phrase block_type="maker">&#8226;</phrase> <keywords>Explanatory or response.</keywords> If appropriate, classify each variable as explanatory or response.</p></li>
-<li id="ips9e-ch02-li-17"><p id="ips9e-ch02-p-67" block_type="EXP-BL"><phrase block_type="maker">&#8226;</phrase> <keywords>Label.</keywords> Identify what is used as a label variable if one is present.</p></li>
+<li id="ips9e-ch02-li-13"><p id="ips9e-ch02-p-63" block_type="EXP-BL"><phrase block_type="maker">&#8226;</phrase> <strong>Cases.</strong> Identify the cases and how many there are in the data set.</p></li>
+<li id="ips9e-ch02-li-14"><p id="ips9e-ch02-p-64" block_type="EXP-BL"><phrase block_type="maker">&#8226;</phrase> <strong>Categorical or quantitative.</strong> Classify each variable as categorical or quantitative.</p></li>
+<li id="ips9e-ch02-li-15"><p id="ips9e-ch02-p-65" block_type="EXP-BL"><phrase block_type="maker">&#8226;</phrase> <strong>Values.</strong> Identify the possible values for each variable.</p></li>
+<li id="ips9e-ch02-li-16"><p id="ips9e-ch02-p-66" block_type="EXP-BL"><phrase block_type="maker">&#8226;</phrase> <strong>Explanatory or response.</strong> If appropriate, classify each variable as explanatory or response.</p></li>
+<li id="ips9e-ch02-li-17"><p id="ips9e-ch02-p-67" block_type="EXP-BL"><phrase block_type="maker">&#8226;</phrase> <strong>Label.</strong> Identify what is used as a label variable if one is present.</p></li>
 </list>
 </box>
 <p id="ips9e-ch02-p-68" block_type="TXT">Some of the statistical techniques in this chapter require us to distinguish explanatory from response variables; others make no use of this distinction. You will often see explanatory variables called <termref term="independent variables"><strong>independent variables</strong></termref><phrase block_type="MN-GL-term">independent variable</phrase> variable and response variables called <termref term="dependent variables"><strong>dependent variables</strong></termref><phrase block_type="MN-GL-term">dependent variable</phrase>. These terms express mathematical ideas; they are not statistical terms. The concept that underlies this language is that the response <em>depends</em> on explanatory variables. Because the words &#8220;independent&#8221; and &#8220;dependent&#8221; have other meanings in statistics that are unrelated to the explanatory-response distinction, we prefer to avoid those words.</p>
@@ -195,13 +196,13 @@
 </box>
 <box id="ips9e-ch02-box-17" numbered="false" block_type="EXP" data-filename="example_2_8.html">
 <p id="ips9e-ch02-p-97" block_type="EXP-N">EXAMPLE 2.8</p>
-<p id="ips9e-ch02-p-98" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Laundry detergents.</phrase> Consumers Union provides ratings on a large variety of consumer products. They use sophisticated testing methods as well as surveys of their members to create these ratings. The ratings are published in their magazine, <em>Consumer Reports</em>.<termref term="fn_ch2_fn4"><sup>4</sup></termref></p>
-<box id="ips9e-ch02-box-18" block_type="rl_linkbox"><p id="ips9e-ch02-p-99" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="LAUNDRY"><phrase>LAUNDRY</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <figure id="ips9e-ch02-unfig-03" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="right" width="small" border="false"/>
 <image asset-id="ips9e-ch02-img-05" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_P_02_02.jpg"/>
 <asset_source>&#169; Kristoffer Tripplaar/Alamy</asset_source>
 </figure>
+<p id="ips9e-ch02-p-98" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Laundry detergents.</phrase> Consumers Union provides ratings on a large variety of consumer products. They use sophisticated testing methods as well as surveys of their members to create these ratings. The ratings are published in their magazine, <em>Consumer Reports</em>.<termref term="fn_ch2_fn4"><sup>4</sup></termref></p>
+<box id="ips9e-ch02-box-18" block_type="rl_linkbox"><p id="ips9e-ch02-p-99" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="LAUNDRY"><phrase>LAUNDRY</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <p id="ips9e-ch02-p-100" block_type="EXP-last">One recent study rated 53 laundry detergents on a scale from 1 to 100. The scale summarizes washing performance under a variety of conditions. Price per load is given in cents.<termref term="fn_ch2_fn5"><sup>5</sup></termref> We will examine the relationship between rating and price per load for these laundry detergents. We expect that the higher-priced detergents will tend to have higher ratings.</p>
 </box>
 <box id="ips9e-ch02-box-19" numbered="false" block_type="EXR">
@@ -306,8 +307,7 @@
 <p id="ips9e_page_90" block_type="page_start" data-margin-content="left">90</p>
 <figure id="ips9e-ch02-fig-04" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="2.4" mmtype="image" mmsrc="" attr="" data-filename="figure_2_4.html">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-09" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_04a.jpg"/>
-<image asset-id="ips9e-ch02-img-10" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_04b.jpg"/>
+<image asset-id="ips9e-ch02-img-09" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_04.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.4</phrase> <phrase block_type="FG-CAP">State spending (in billions of dollars) and population (in millions) for the 50 U.S. states, <link href="example_2_11.html">Example 2.11</link>.</phrase></caption>
 </figure>
 <figure id="ips9e-ch02-fig-05" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="2.5" mmtype="image" mmsrc="" attr="" data-filename="figure_2_5.html">
@@ -405,8 +405,7 @@
 </box>
 <figure id="ips9e-ch02-fig-10" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.10" mmtype="image" mmsrc="" attr="" data-filename="figure_2_10.html">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-19" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_10a.jpg"/>
-<image asset-id="ips9e-ch02-img-20" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_10b.jpg"/>
+<image asset-id="ips9e-ch02-img-19" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_10.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.10</phrase> <phrase block_type="FG-CAP">Scatterplot of rating versus price per load (in cents), with smooth curves, <link href="example_2_16.html">Example 2.16</link>: (a) with a small value of the smoothing parameter; (b) with a higher value of the smoothing parameter.</phrase></caption>
 </figure>
 <p id="ips9e_page_95" block_type="page_start" data-margin-content="right">95</p>
@@ -1412,9 +1411,7 @@
 <p id="ips9e_page_114" block_type="page_start" data-margin-content="left">114</p>
 <figure id="ips9e-ch02-fig-19" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.19" mmtype="image" mmsrc="" attr="" data-filename="figure_2_19.html">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-37" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_19a.jpg"/>
-<image asset-id="ips9e-ch02-img-38" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_19b.jpg"/>
-<image asset-id="ips9e-ch02-img-39" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_19c.jpg"/>
+<image asset-id="ips9e-ch02-img-37" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_19.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.19</phrase> <phrase block_type="FG-CAP">Regression results for the nonexercise activity data from three statistical software packages: (a) SPSS; (b) Minitab; (c) JMP. Other software produces similar output.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-501" block_type="TXT">Part of the art of using software is to ignore the extra information that is almost always present. Look for the results that you need. Once you understand a statistical method, you can read output from almost any software.</p>
@@ -2006,8 +2003,7 @@
 </box>
 <figure id="ips9e-ch02-fig-23" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.23" mmtype="image" mmsrc="" attr="" data-filename="figure_2_23.html">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-45" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_23a.jpg"/>
-<image asset-id="ips9e-ch02-img-46" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_23b.jpg"/>
+<image asset-id="ips9e-ch02-img-46" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_23.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.23</phrase> <phrase block_type="FG-CAP">(a) Scatterplot of fat gain versus increase in nonexercise activity, with the least-squares regression line, <link href="example_2_26.html">Example 2.26</link>. (b) Residual plot for the regression displayed in panel (a); the line at <em>y</em> = 0 marks the mean of the residuals.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-662" block_type="TXT">Most regression software will calculate and store residuals for you.</p>
@@ -2066,8 +2062,7 @@
 <p id="ips9e-ch02-p-678" block_type="EXP-last"><link href="figure_2_24.html">Figure 2.24</link>(a) gives the data with the least-squares regression line, and <link href="figure_2_24.html">Figure 2.24</link>(b) plots the residuals. Look at the right part of <link href="figure_2_24.html">Figure 2.24</link>(b), where the values of Internet users are high. Here we see that the residuals tend to be positive.</p>
 <figure id="ips9e-ch02-fig-24" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.24" mmtype="image" mmsrc="" attr="" data-filename="figure_2_24.html">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-47" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_24a.jpg"/>
-<image asset-id="ips9e-ch02-img-48" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_24b.jpg"/>
+<image asset-id="ips9e-ch02-img-47" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_24.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.24</phrase> <phrase block_type="FG-CAP">(a) Scatterplot of birthrate versus Internet users, with the least-squares regression line, <link href="example_2_27.html">Example 2.27</link>. (b) Residual plot for the regression displayed in panel (a); the line at <em>y</em> = 0 marks the mean of the residuals.</phrase></caption>
 </figure>
 </box>
@@ -2165,8 +2160,7 @@
 <p id="ips9e-ch02-p-686" block_type="EXP-last">This diagnostic test is becoming widely used and is sometimes called A1c by health care professionals. <link href="table_2_2.html">Table 2.2</link> gives data on both HbA1c and FPG for 18 diabetics five months after they completed a diabetes education class.<termref term="fn_ch2_fn21"><sup>21</sup></termref></p>
 <figure id="ips9e-ch02-fig-25" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.25" mmtype="image" mmsrc="" attr="" data-filename="figure_2_25.html">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-50" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_25a.jpg"/>
-<image asset-id="ips9e-ch02-img-51" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_25b.jpg"/>
+<image asset-id="ips9e-ch02-img-51" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_25.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.25</phrase> <phrase block_type="FG-CAP">(a) Scatterplot of fasting plasma glucose against HbA1c (which measures long-term blood glucose), with the least-squares regression line, <link href="example_2_28.html">Example 2.28</link>. (b) Residual plot for the regression of fasting plasma glucose on HbA1c. Subject 15 is an outlier in fasting plasma glucose. Subject 18 is an outlier in HbA1c that may be influential but does not have a large residual.</phrase></caption>
 </figure>
 <p id="ips9e-ch02-p-687" block_type="EXP-last">Because both FPG and HbA1c measure blood glucose, we expect a positive association. The scatterplot in <link href="figure_2_25.html">Figure 2.25</link>(a) shows a surprisingly weak relationship, with correlation <em>r</em> = 0.4819. The line on the plot is the least-squares regression line for predicting FPG from HbA1c. Its equation is</p>
@@ -2815,9 +2809,7 @@
 <p id="ips9e_page_142" block_type="page_start" data-margin-content="left">142</p>
 <figure id="ips9e-ch02-fig-28" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="2.28" mmtype="image" mmsrc="" attr="" data-filename="figure_2_28.html">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-64" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_28a.jpg"/>
-<image asset-id="ips9e-ch02-img-65" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_28b.jpg"/>
-<image asset-id="ips9e-ch02-img-66" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_28c.jpg"/>
+<image asset-id="ips9e-ch02-img-64" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_28.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.28</phrase> <phrase block_type="FG-CAP">Computer output for the calcium requirement study, <link href="example_2_40.html">Example 2.40</link>: (a) Minitab; (b) SPSS; (c) JMP.</phrase></caption>
 </figure>
 <p id="ips9e_page_143" block_type="page_start" data-margin-content="right">143</p>
@@ -4545,8 +4537,7 @@
 <p id="ips9e_page_162" block_type="page_start" data-margin-content="left">162</p>
 <figure id="ips9e-ch02-fig-38" block_type="FIGURE" data-caption-compass="S" numbered="true" number="2.38" mmtype="image" mmsrc="" attr="" data-filename="figure_2_38.html">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="ips9e-ch02-img-86" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_38a.jpg"/>
-<image asset-id="ips9e-ch02-img-87" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_38b.jpg"/>
+<image asset-id="ips9e-ch02-img-86" alt="image" src="asset/ch2/17MOOREIPS-MSE_9e_fig_02_38.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 2.38</phrase> <phrase block_type="FG-CAP">Selected JMP output for examining the relationship between Antho2 and Antho1, <link href="exercise_2_174.html">Exercise 2.174</link>.</phrase></caption>
 </figure>
 </section>

@@ -32,6 +32,10 @@ p {
 div[data-block_type="UN-FIGURE"] img {
   cursor: default !important;
 }
+[data-type="figure"],
+[data-type="table"] {
+  border: none;
+}
 /* chapter opener sections */
 div[data-type="section"][data-block_type="chapter"] {
   margin: 0 299px 0 0;
