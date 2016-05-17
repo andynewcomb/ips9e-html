@@ -3671,7 +3671,7 @@ Minimum&#8195;<em>Q</em><sub>1</sub>&#8195;<em>M&#8195;Q</em><sub>3</sub><em>&#8
 <p id="ips9e-ch01-p-525" block_type="EXR-H">USE YOUR KNOWLEDGE</p>
 <question id="ips9e-ch01-ques-49" block_type="exercise_1_49.html">
 <p id="ips9e-ch01-p-526" block_type="EXR-QUE-NL-first">
-<phrase block_type="EXR-QUE-N-ri">1.49</phrase> <phrase block_type="EXR-QUE-T-ri">Verify the calculations.</phrase> Refer to the five-number summary and the mean for service center call lengths given in <link href="example_1_28.html">Example 1.28</link>. Verify these results. Do not use software for this exercise and be sure to show all your work.
+<phrase block_type="EXR-QUE-N-ri">1.49</phrase> <phrase block_type="EXR-QUE-T-ri">Verify the calculations.</phrase> Refer to the five-number summary and the mean for service center call lengths given in <link href="example_1_27.html">Example 1.27</link>. Verify these results. Do not use software for this exercise and be sure to show all your work.
 </p>
 <box id="ips9e-ch01-box-106" block_type="rl_linkbox">
 <p id="ips9e-ch01-p-527" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="CALLS80">
@@ -5099,7 +5099,7 @@ For <link href="exercise_1_43.html">Exercises 1.43</link> and <link href="exerci
 </question>
 <question id="ips9e-ch01-ques-79" block_type="exercise_1_79.html">
 <p id="ips9e-ch01-p-784" block_type="SR-X-QUE-NL">
-<phrase block_type="SR-XH">1.79 How does the median change?</phrase> The firm in <link href="exercise_1_77.html">Exercise 1.77</link> gives no raises to the clerks and junior accountants, while the owner&#8217;s take increases to &#36;500,000. How does this change affect the mean? How does it affect the median?
+<phrase block_type="SR-XH">1.79 How does the median change?</phrase> The firm in <link href="exercise_1_77.html">Exercise 1.77</link> gives no raises to the clerks and junior accountants, while the owner&#8217;s take increases to &#36;900,000. How does this change affect the mean? How does it affect the median?
 </p>
 </question>
 <question id="ips9e-ch01-ques-80" block_type="exercise_1_80.html">
@@ -5125,7 +5125,7 @@ For <link href="exercise_1_43.html">Exercises 1.43</link> and <link href="exerci
 </p>
 <box id="ips9e-ch01-box-158" block_type="rl_linkbox">
 <p id="ips9e-ch01-p-789" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="IQGPA">
-<phrase>IQGPA</phrase>
+<phrase>IQ</phrase>
 </p>
 <p block_type="rl_crunchit" data-dataset=""/>
 </box>
@@ -5154,7 +5154,7 @@ For <link href="exercise_1_43.html">Exercises 1.43</link> and <link href="exerci
 </question>
 <question id="ips9e-ch01-ques-84" block_type="exercise_1_84.html">
 <p id="ips9e-ch01-p-794" block_type="SR-X-QUE-NL">
-<image asset-id="ips9e-ch01-img-49" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">1.84 Mean and median for three observations.</phrase> In the <em>Mean and Median</em> applet, place four observations on the line by clicking below it, three close together near the center of the line and one somewhat to the right of these two.
+<image asset-id="ips9e-ch01-img-49" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">1.84 Mean and median for four observations.</phrase> In the <em>Mean and Median</em> applet, place four observations on the line by clicking below it, three close together near the center of the line and one somewhat to the right of these two.
 </p>
 <list id="ips9e-ch01-list-60" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch01-li-217">
@@ -5558,7 +5558,7 @@ The <strong>mean</strong> of a density curve is the balance point, at which the 
 <p id="ips9e-ch01-p-860" block_type="BX1-TXT">The median and mean are the same for a symmetric density curve. They both lie at the center of the curve. The mean of a skewed curve is pulled away from the median in the direction of the long tail.</p>
 </box>
 <p id="ips9e-ch01-p-861" block_type="TXT">
-A density curve is an idealized description of a distribution of data. For example, the density curve in <link href="figure_1_21.html">Figure 1.21</link> is exactly symmetric, but the histogram of vocabulary scores is only approximately symmetric. We therefore need to distinguish between the mean and standard deviation of the density curve and the numbers <phrase data-math="math_50"></phrase> and <em>s</em> computed from the actual observations. The usual notation for the mean of an idealized distribution is <termref term="&#956;">
+A density curve is an idealized description of a distribution of data. For example, the density curve in <link href="figure_1_21.html">Figure 1.21</link>(page 53) is exactly symmetric, but the histogram of vocabulary scores is only approximately symmetric. We therefore need to distinguish between the mean and standard deviation of the density curve and the numbers <phrase data-math="math_50"></phrase> and <em>s</em> computed from the actual observations. The usual notation for the mean of an idealized distribution is <termref term="&#956;">
 <strong>
 <em>&#956;</em>
 </strong></termref><phrase block_type="MN-GL-term">
@@ -6147,7 +6147,7 @@ Normal quantile plot of IQ scores, <link href="example_1_46.html">Example 1.46</
 </p>
 <box id="ips9e-ch01-box-187" block_type="rl_linkbox">
 <p id="ips9e-ch01-p-1003" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="TIME">
-<phrase>TIME</phrase>
+<phrase>TTS</phrase>
 </p>
 <p block_type="rl_crunchit" data-dataset=""/>
 </box>
@@ -7279,14 +7279,14 @@ Bosnia and<br/>Herzegovina
 </li>
 <li id="ips9e-ch01-li-321">
 <p id="ips9e-ch01-p-1150" block_type="SR-X-QUE-NL-lvl2">
-<phrase block_type="maker">(b)</phrase> Once you have defined leisure time, how will you measure Sally&#8217;s leisure time this week?
+<phrase block_type="maker">(b)</phrase> Once you have defined leisure time, how will you measure it?
 </p>
 </li>
 </list>
 </question>
 <question id="ips9e-ch01-ques-155" block_type="exercise_1_155.html">
 <p id="ips9e-ch01-p-1151" block_type="SR-X-QUE-NL">
-<image asset-id="ips9e-ch01-img-90" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.155 How much vitamin C do you need?</phrase> The Food and Nutrition Board of the Institute of Medicine, working in cooperation with scientists from Canada, have used scientific data to answer this question for a variety of vitamins and minerals.<termref term="fn_ch1_fn42"><sup>42</sup></termref> Their methodology assumes that needs, or requirements, follow a distribution. They have produced guidelines called dietary reference intakes for different gender-by-age combinations. For vitamin C, there are three dietary reference intakes: the estimated average requirement (EAR), which is the mean of the requirement distribution; the recommended dietary allowance (RDA), which is the intake that would be sufficient for 97&#37; to 98&#37; of the population; and the tolerable upper level (UL), the intake that is unlikely to pose health risks. For women aged 19 to 30 years, the EAR is 60 milligrams per day (mg/d), the RDA is 75 mg/d, and the UL is 2000 mg/d.<termref term="fn_ch1_fn43"><sup>43</sup></termref>
+<image asset-id="ips9e-ch01-img-90" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">1.155 How much vitamin C do you need?</phrase> The U.S. Food and Nutrition Board of the Institute of Medicine, working in cooperation with scientists from Canada, have used scientific data to answer this question for a variety of vitamins and minerals.<termref term="fn_ch1_fn42"><sup>42</sup></termref> Their methodology assumes that needs, or requirements, follow a distribution. They have produced guidelines called dietary reference intakes for different gender-by-age combinations. For vitamin C, there are three dietary reference intakes: the estimated average requirement (EAR), which is the mean of the requirement distribution; the recommended dietary allowance (RDA), which is the intake that would be sufficient for 97&#37; to 98&#37; of the population; and the tolerable upper level (UL), the intake that is unlikely to pose health risks. For women aged 19 to 30 years, the EAR is 60 milligrams per day (mg/d), the RDA is 75 mg/d, and the UL is 2000 mg/d.<termref term="fn_ch1_fn43"><sup>43</sup></termref>
 </p>
 <list id="ips9e-ch01-list-97" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch01-li-322">
