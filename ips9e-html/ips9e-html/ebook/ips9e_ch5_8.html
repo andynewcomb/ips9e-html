@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch5</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e_ch5.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="5">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch05-sec1-03" level="1" data-print_page="310">
+<h2 class="section-title">
+<span data-type="number">5.3</span> <span data-type="title" data-title-for="ips9e-ch05-sec1-03">5.3 Sampling Distributions for Counts and Proportions
+</span>
+</h2>
+
+<div data-type="box" data-block_type="SP" id="ips9e-ch05-box-038"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-038"></h3>
+<div data-block_type="SP-TXT-ni" id="ips9e-ch05-p-0425"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bullet" id="ips9e-ch05-list-038">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch05-p-0426"><p><span data-block_type="maker">•</span> Determine when a count <em>X</em> can be modeled using the binomial distribution.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch05-p-0427"><p><span data-block_type="maker">•</span> Determine when the sampling distribution of a count can be modeled using the binomial distribution.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch05-p-0428"><p><span data-block_type="maker">•</span> Calculate the mean and standard deviation of <em>X</em> when it has the <em>B</em>(<em>n</em>, <em>p</em>) distribution.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch05-p-0429"><p><span data-block_type="maker">•</span> Explain the difference between the sampling distribution of a count <em>X</em> and the sampling distribution of the sample proportion <span data-math="math_160"></span>.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch05-p-0430"><p><span data-block_type="maker">•</span> Determine when one can approximate the sampling distribution of a count using the Normal distribution.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch05-p-0431"><p><span data-block_type="maker">•</span> Determine when one can approximate the sampling distribution of the sample proportion using the Normal distribution.</p></div></li>
+<li><div data-block_type="SP-BL-last" id="ips9e-ch05-p-0432"><p><span data-block_type="maker">•</span> Use the Normal approximation for counts and proportions to perform probability calculations about the statistics.</p></div></li>
+</ul>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_311"><p>311</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0434"><p>In the previous section, we discussed the probability distribution of the sample mean, which meant a focus on population values that were quantitative. We will now shift our focus to population values that are categorical. Counts and proportions are common discrete statistics that describe categorical data.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idp313948928"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp313948928"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0436"><p>categorical variable, <span data-type="link" data-href="alias:page_3">p. 3</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0437"><p>In <span data-type="link" data-href="ips9e_ch5_2.html" data-target="_pop">Section 5.1</span> (pages 284–287), we discussed the use of simulation to study the sampling distribution of the sample proportion. In this section, we will use probability theory to more precisely describe the sampling distributions of the sample count and proportion. Let’s start with an example.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_15.html" id="ips9e-ch05-box-039"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-039"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0438"><p>EXAMPLE 5.15</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0439"><p><span data-block_type="EXP-T-ri">Work hours make it difficult to spend time with children.</span> A sample survey asks 1006 British parents whether they think long working hours are making it difficult to spend enough time with their children.<span data-type="termref" data-term="fn_ch5_fn11"><sup>11</sup></span> We would like to view the responses of these parents as representative of a larger population of British parents who hold similar beliefs. That is, we will view the responses of the sampled parents as an SRS from a population.</p></div>
+<div data-type="figure" data-figure-id="ips9e-ch05-fig-015" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_P_05_01.jpg" data-figure-id="ips9e-ch05-fig-015" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">Istockphoto/Thinkstock</span></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0440"><p>When there are only two possible outcomes for a random variable, we can summarize the results by giving the count for one of the possible outcomes. We let <em>n</em> represent the sample size, and we use <em>X</em> to represent the random variable that gives the count for the outcome of interest.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_16.html" id="ips9e-ch05-box-040"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-040"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0441"><p>EXAMPLE 5.16</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0442"><p><span data-block_type="EXP-T-ri">The random variable of interest.</span> In this sample survey of British parents, <em>n</em> = 1006. The parents in the sample were asked if they agree with the statement “These days, long working hours make it difficult for parents to spend enough time with their children.” The variable <em>X</em> is the number of parents who agreed with the statement. In this case, <em>X</em> = 755.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0443"><p>In our example, we chose the random variable <em>X</em> to be the number of parents who think that long working hours make it difficult to spend enough time with their children. We could have chosen <em>X</em> to be the number of parents who do not think that long working hours make it difficult to spend enough time with their children. The choice is yours. Often, we make the choice based on how we would like to describe the results in a summary. Which choice do you prefer in this case?</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idp313973520"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp313973520"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0445"><p>sample proportion, <span data-type="link" data-href="alias:page_199">p. 199</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0446"><p>When a random variable has only two possible outcomes, it is more common to use the sample proportion <span data-math="math_161"></span> as the summary rather than the count <em>X</em>.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_17.html" id="ips9e-ch05-box-041"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-041"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0447"><p>EXAMPLE 5.17</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0448"><p><span data-block_type="EXP-T-ri">The sample proportion.</span> The sample proportion of parents surveyed who think that long working hours make it difficult to spend enough time with their children is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0449"><p><span data-math="math_162"></span></p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_312"><p>312</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0451"><p>Notice that this summary takes into account the sample size <em>n</em>. We need to know <em>n</em> in order to properly interpret the meaning of the random variable <em>X</em>. For example, the conclusion we would draw about parent opinions in this survey would be quite different if we had observed <em>X</em> = 755 from a sample twice as large, <em>n</em> = 2012.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-042"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-042"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0452"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_43.html" id="ips9e-ch05-quest-0043">
+<h3>Question
+			    <span data-type="number">5.43 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0453"><p><span data-block_type="EXR-QUE-N-ri">5.43</span> <span data-block_type="EXR-QUE-T-ri">Sexual harassment in middle school.</span> A survey of 1391 students in grades 5 to 8 reports that 26% of the students say they have encountered some type of sexual harassment while at school.<span data-type="termref" data-term="fn_ch5_fn12"><sup>12</sup></span> Give the sample size <em>n</em>, the count <em>X</em>, and the sample proportion <span data-math="math_163"></span> for this survey.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_5_44.html" id="ips9e-ch05-quest-0044">
+<h3>Question
+			    <span data-type="number">5.44 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch05-p-0454"><p><span data-block_type="EXR-QUE-N-ri">5.44</span> <span data-block_type="EXR-QUE-T-ri">High school graduates who took a statistics course.</span> In a random sample of <em>n</em> = 4012 high school graduates, 10.8% reported that they had taken a statistics course.<span data-type="termref" data-term="fn_ch5_fn13"><sup>13</sup></span> Give the sample size <em>n</em>, the count <em>X</em>, and the sample proportion <span data-math="math_164"></span> for this setting.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_5_45.html" id="ips9e-ch05-quest-0045">
+<h3>Question
+			    <span data-type="number">5.45 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch05-p-0455"><p><span data-block_type="EXR-QUE-N-ri">5.45</span> <span data-block_type="EXR-QUE-T-ri">Use of the Internet to find a place to live.</span> A poll of 1500 college students asked whether or not they have used the Internet to find a place to live sometime within the past year. There were 1234 students who answered Yes; the other 266 answered No.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch05-list-039">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0456"><p><span data-block_type="maker">(a)</span> What is the sample size <em>n</em>?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0457"><p><span data-block_type="maker">(b)</span> Choose one of the two possible outcomes to define the random variable, <em>X</em>. Give a reason for your choice.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0458"><p><span data-block_type="maker">(c)</span> What is the value of the count <em>X</em>?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0459"><p><span data-block_type="maker">(d)</span> Find the sample proportion, <span data-math="math_165"></span>.</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0460"><p>Just like the sample mean, sample counts and sample proportions are commonly used statistics, and understanding their sampling distributions is important for statistical inference. These statistics, however, are discrete random variables, so their sampling distributions introduce us to a new family of probability distributions.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0461"><p><span data-block_type="h2">The binomial distributions for sample counts</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0462"><p>The distribution of a count <em>X</em> depends on how the data are produced. Here is a simple but common situation.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-043"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-043"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0463"><p>THE BINOMIAL SETTING</p></div>
+<ol data-block_type="numbered" id="ips9e-ch05-list-040">
+<li><div data-block_type="BX1-NLF" id="ips9e-ch05-p-0464"><p><span data-block_type="maker">1.</span> There is a fixed number of observations <em>n</em>.</p></div></li>
+<li><div data-block_type="BX1-NL-m" id="ips9e-ch05-p-0465"><p><span data-block_type="maker">2.</span> The <em>n</em> observations are all independent.</p></div></li>
+<li><div data-block_type="BX1-NL-m" id="ips9e-ch05-p-0466"><p><span data-block_type="maker">3.</span> Each observation falls into one of just two categories, which for convenience we call “success” and “failure.”</p></div></li>
+<li><div data-block_type="BX1-NL-L" id="ips9e-ch05-p-0467"><p><span data-block_type="maker">4.</span> The probability of a success, call it <em>p</em>, is the same for each observation.</p></div></li>
+</ol>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0468"><p>Think of tossing a coin <em>n</em> times as an example of the binomial setting. Each toss gives either heads or tails, and the outcomes of successive tosses are independent. If we call heads a success, then <em>p</em> is the probability of a head and remains the same as long as we toss the same coin. The number of heads we count is a random variable <em>X</em>. The distribution of <em>X</em> (and, more generally, the distribution of the count of successes in any binomial setting) is completely determined by the number of observations <em>n</em> and the success probability <em>p</em>.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_313"><p>313</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-044"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-044"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0470"><p>BINOMIAL DISTRIBUTIONS</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0471"><p>The distribution of the count <em>X</em> of successes in the binomial setting is called the <strong>binomial distribution</strong> with parameters <em>n</em> and <em>p</em>. The parameter <em>n</em> is the number of observations, and <em>p</em> is the probability of a success on any one observation. The possible values of <em>X</em> are the whole numbers from 0 to <em>n</em>. As an abbreviation, we say that the distribution of <em>X</em> is <em>B</em>(<em>n</em>, <em>p</em>).</p></div>
+</div></div>
+<div data-block_type="Caution icon" id="ips9e-ch05-p-0472"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0473"><p>The binomial distributions are an important class of discrete probability distributions. Later in this section, we will learn how to assign probabilities to outcomes and how to find the mean and standard deviation of binomial distributions. <em>The most important skill for using binomial distributions is the ability to recognize situations to which they do and do not apply.</em> This can be done by checking all the facets of the binomial setting.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_18.html" id="ips9e-ch05-box-045"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-045"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0474"><p>EXAMPLE 5.18</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0475"><p><span data-block_type="EXP-T-ri">Binomial examples?</span> <strong>(a)</strong> Genetics says that children receive genes from their parents independently. Each child of a particular pair of parents has probability 0.25 of having type O blood. If these parents have three children, the number who have type O blood is the count <em>X</em> of successes in three independent trials with probability 0.25 of a success on each trial. So <em>X</em> has the <em>B</em>(3, 0.25) distribution.</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0476"><p><strong>(b)</strong> Engineers define reliability as the probability that an item will perform its function under specific conditions for a specific period of time. Replacement heart valves made of animal tissue, for example, have probability 0.77 of performing well for 15 years.<span data-type="termref" data-term="fn_ch5_fn14"><sup>14</sup></span> The probability of failure within 15 years is, therefore, 0.23. It is reasonable to assume that valves in different patients fail (or not) independently of each other. The number of patients in a group of 500 who will need another valve replacement within 15 years has the <em>B</em>(500, 0.23) distribution.</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0477"><p><strong>(c)</strong> A multicenter trial is designed to assess a new surgical procedure. A total of 540 patients will undergo the procedure, and the count of patients <em>X</em> who suffer a major adverse cardiac event (MACE) within 30 days of surgery will be recorded. Because these patients will receive this procedure from different surgeons at different hospitals, it may not be true that the probability of a MACE is the same for each patient. Thus, <em>X</em> may not have the binomial distribution.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-046"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-046"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0478"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_46.html" id="ips9e-ch05-quest-0046">
+<h3>Question
+			    <span data-type="number">5.46 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0479"><p><span data-block_type="EXR-QUE-N-ri">5.46</span> <span data-block_type="EXR-QUE-T-ri">Genetics and blood types.</span> Genetics says that children receive genes from each of their parents independently. Suppose that each child of a particular pair of parents has probability 0.375 of having type AB blood. If these parents have three children, what is the distribution of the number who have type AB blood? Explain your answer.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_5_47.html" id="ips9e-ch05-quest-0047">
+<h3>Question
+			    <span data-type="number">5.47 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch05-p-0480"><p><span data-block_type="EXR-QUE-N-ri">5.47</span> <span data-block_type="EXR-QUE-T-ri">Tossing a coin.</span> Suppose you plan to toss a coin 20 times and record <em>X</em>, the number of heads that you observe. If the coin is fair (<em>p</em> = 0.5), what is the distribution of <em>X</em>? Also, explain why this distribution is also the sampling distribution of <em>X</em>.</p></div>
+</div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_314"><p>314</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0482"><p><span data-block_type="h2">Binomial distributions in statistical sampling</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0483"><p>The binomial distributions are important in statistics when we wish to make inferences about the proportion <em>p</em> of “successes” in a population. Here is a typical example.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_19.html" id="ips9e-ch05-box-047"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-047"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0484"><p>EXAMPLE 5.19</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0485"><p><span data-block_type="EXP-T-ri">Audits of financial records.</span> The financial records of businesses are often audited by state tax authorities to test compliance with tax laws. Suppose that for one retail business, 800 of the 10,000 sales are incorrectly classified as subject to state sales tax. It would be too time-consuming for authorities to examine all these sales. Instead, an auditor examines an SRS of sales records. Is the count <em>X</em> of misclassified records in an SRS of 150 records a binomial random variable?</p></div>
+<div data-type="figure" data-figure-id="ips9e-ch05-fig-016" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_P_05_02.jpg" data-figure-id="ips9e-ch05-fig-016" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">D. Hurst/Alamy</span></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0486"><p><em>Choosing an SRS from a population is not quite a binomial setting.</em> Removing one record in <span data-type="link" data-href="example_5_19.html">Example 5.19</span> changes the proportion of bad records in the remaining population, so the state of the second record chosen is not independent of the first. Because the population is large, however, removing a few items has a very small effect on the composition of the remaining population. Successive inspection results are very nearly independent. The population proportion of misclassified records is</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0487"><p><span data-math="math_166"></span></p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0488"><p>If the first record chosen is bad, the proportion of bad records remaining is 799/9999 = 0.079908. If the first record is good, the proportion of bad records left is 800/9999 = 0.080008. These proportions are so close to 0.08 that, for practical purposes, we can act as if removing one record has no effect on the proportion of misclassified records remaining. We act as if the count <em>X</em> of misclassified sales records in the audit sample has the binomial distribution <em>B</em>(150, 0.08).</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idp314088816"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp314088816"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0490"><p>stratified random sample, <span data-type="link" data-href="alias:page_194">p. 194</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0491"><p>Populations like the one described in <span data-type="link" data-href="example_5_19.html">Example 5.19</span> often contain a relatively small number of items with very large values. For this example, these values would be very large sale amounts and likely represent an important group of items to the auditor. An SRS taken from such a population will likely include very few items of this type. Therefore, it is common to use a stratified sample in settings like this. Strata are defined based on dollar value of the sale, and within each stratum, an SRS is taken. The results are then combined to obtain an estimate for the entire population.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-048"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-048"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0492"><p>SAMPLING DISTRIBUTION OF A COUNT</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0493"><p>A population contains proportion <em>p</em> of successes. If the population is much larger than the sample, the count <em>X</em> of successes in an SRS of size <em>n</em> has approximately the binomial distribution <em>B</em>(<em>n</em>, <em>p</em>).</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch05-p-0494"><p>The accuracy of this approximation improves as the size of the population increases relative to the size of the sample. As a rule of thumb, we will use the binomial sampling distribution for counts when the population is at least 20 times as large as the sample.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_315"><p>315</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0496"><p><span data-block_type="h2">Finding binomial probabilities</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0497"><p>We will later give a formula for the probability that a binomial random variable takes any of its values. In practice, you will rarely have to use this formula for calculations because some calculators and most statistical software packages will calculate binomial probabilities for you.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_20.html" id="ips9e-ch05-box-049"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-049"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0498"><p>EXAMPLE 5.20</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0499"><p><span data-block_type="EXP-T-ri">Probabilities for misclassified sales records.</span> In the audit setting of <span data-type="link" data-href="example_5_19.html">Example 5.19</span>, what is the probability that the audit finds exactly 10 misclassified sales records? What is the probability that the audit finds no more than 10 misclassified records? <span data-type="link" data-href="figure_5_14.html">Figure 5.14</span> shows the output from one statistical software system. You see that if the count <em>X</em> has the <em>B</em>(150, 0.08) distribution,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0500"><p><em>P</em>(<em>X</em> = 10) = 0.106959</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0501"><p><em>P</em>(<em>X</em> ≤ 10) = 0.338427</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_5_14.html" data-figure-id="ips9e-ch05-fig-017" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_14.jpg" data-figure-id="ips9e-ch05-fig-017" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.14: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.14</span> <span data-block_type="FG-CAP">Binomial probabilities, <span data-type="link" data-href="example_5_20.html">Example 5.20</span>: output from the Minitab statistical software.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0502"><p>It was easy to request these calculations in the software’s menus. For the TI-83/84 calculator, the functions binompdf and binomcdf would be used. In R, the functions dbinom and pbinom would be used. Typically, the output supplies more decimal places than we need and uses labels that may not be helpful (for example, “Probability Density Function” when the distribution is discrete, not continuous). But, as usual with software, we can ignore distractions and find the results we need.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0503"><p>If you do not have suitable computing facilities, you can still shorten the work of calculating binomial probabilities for some values of <em>n</em> and <em>p</em> by looking up probabilities in <span data-type="link" data-href="table_c.html">Table C</span> in the back of this book. The entries in the table are the probabilities <em>P</em>(<em>X</em> = <em>k</em>) of individual outcomes for a binomial random variable <em>X</em>.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_316"><p>316</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_21.html" id="ips9e-ch05-box-050"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-050"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0504"><p>EXAMPLE 5.21</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0506"><p><span data-block_type="EXP-T-ri">The probability histogram.</span> Suppose that the audit in <span data-type="link" data-href="example_5_19.html">Example 5.19</span> chose just 15 sales records. What is the probability that no more than one of the 15 is misclassified? The count <em>X</em> of misclassified records in the sample has approximately the <em>B</em>(15, 0.08) distribution. <span data-type="link" data-href="figure_5_15.html">Figure 5.15</span> is a probability histogram for this distribution. The distribution is strongly skewed. Although <em>X</em> can take any whole-number value from 0 to 15, the probabilities of values larger than 5 are so small that they do not appear in the histogram.</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_5_15.html" data-figure-id="ips9e-ch05-fig-018" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_15.jpg" data-figure-id="ips9e-ch05-fig-018" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.15: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.15</span> <span data-block_type="FG-CAP">Probability histogram for the binomial distribution with <em>n</em> = 15 and <em>p</em> = 0.08, <span data-type="link" data-href="example_5_21.html">Example 5.21</span>.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0507"><p>We want to calculate</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0508"><p><em>P</em>(<em>X</em> ≤ 1) = <em>P</em>(<em>X</em> = 0) + <em>P</em>(<em>X</em> = 1)</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch05-p-0509"><p>when <em>X</em> has the <em>B</em>(15, 0.08) distribution. To use <span data-type="link" data-href="table_c.html">Table C</span> for this calculation, look opposite <em>n</em> = 15 and under <em>p</em> = 0.08. The entries in the rows for each <em>k</em> are <em>P</em>(<em>X</em> = <em>k</em>). Blank cells in the table are 0 to four decimal places. You see that</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0510"><p><em>P</em>(<em>X</em> ≤ 1) = <em>P</em>(<em>X</em> = 0) + <em>P</em>(<em>X</em> = 1)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0511"><p>= 0.2863 + 0.3734 = 0.6597</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch05-tab-4" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="40"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-COLHD" align="center"></td>
+<td data-block_type="EXP-TB1-COLHD" align="center"></td>
+<td data-block_type="EXP-TB1-COLHD" align="char" class="lborder"><em>p</em></td>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center"><em>n</em></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><em>k</em></td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">.08</td>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">15</td>
+<td data-block_type="EXP-TB1-TXT" align="center">0</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">.2863</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center">1</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">.3734</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center">2</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">.2273</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center">3</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">.0857</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center">4</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">.0223</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center">5</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">.0043</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center">6</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">.0006</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center">7</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">.0001</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center">8</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder"></td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center">9</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder"></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0512"><p>About two-thirds of all samples will contain no more than 1 bad record. In fact, almost 29% of the samples will contain no bad records. The sample of size 15 cannot be trusted to provide adequate evidence about misclassified sales records. A larger number of observations is needed.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0513"><p>The values of <em>p</em> that appear in <span data-type="link" data-href="table_c.html">Table C</span> are all 0.5 or smaller. When the probability of a success is greater than 0.5, restate the problem in terms of the number of failures. The probability of a failure is less than 0.5 when the probability of a success exceeds 0.5. When using the table, always stop to ask whether you must count successes or failures.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_22.html" id="ips9e-ch05-box-051"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-051"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0514"><p>EXAMPLE 5.22</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0515"><p><span data-block_type="EXP-T-ri">Falling asleep in class.</span> In the survey of 4513 college students described in <span data-type="link" data-href="example_5_4.html">Example 5.4</span> (page 293), 46% of the respondents reported falling asleep in class due to poor sleep. You randomly sample 10 students in your dormitory, and eight state that they fell asleep in class during the last week due to poor sleep. Relative to the survey results, is this an unusually high number of students?</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_317"><p>317</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0517"><p>To answer this question, assume that the students’ actions (falling asleep or not) are independent, with the probability of falling asleep equal to 0.46. This independence assumption may not be reasonable if the students study and socialize together or if there is a loud student in the dormitory who keeps everyone up. We’ll assume this is not an issue here, so the number <em>X</em> of students who fell asleep in class out of 10 students has the <em>B</em>(10, 0.46) distribution.</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0518"><p>We want the probability of classifying at least eight students as having fallen asleep in class. Using software, we find</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0519"><p><em>P</em>(<em>X</em> ≥ 8) = <em>P</em>(<em>X</em> = 8) + <em>P</em>(<em>X</em> = 9) + <em>P</em>(<em>X</em> = 10)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0520"><p>= 0.0263 + 0.0050 + 0.0004 = 0.0317</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0521"><p>We would expect to find eight or more students falling asleep in class about 3% of the time or in fewer than one of every 30 surveys of 10 students. This is a pretty rare outcome and falls outside the range of the usual chance variation due to random sampling.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-052"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-052"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0522"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_48.html" id="ips9e-ch05-quest-0048">
+<h3>Question
+			    <span data-type="number">5.48 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0523"><p><span data-block_type="EXR-QUE-N-ri">5.48</span> <span data-block_type="EXR-QUE-T-ri">Free-throw shooting.</span> April is a college basketball player who makes 80% of her free throws. In a recent game, she had 10 free throws and missed three of them. How unusual is this outcome? Using software, calculator, or <span data-type="link" data-href="table_c.html">Table C</span>, compute 1 − <em>P</em>(<em>X</em> ≤ 2), where <em>X</em> is the number of free throws missed in 10 shots. Explain your answer.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_5_49.html" id="ips9e-ch05-quest-0049">
+<h3>Question
+			    <span data-type="number">5.49 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch05-p-0524"><p><span data-block_type="EXR-QUE-N-ri">5.49</span> <span data-block_type="EXR-QUE-T-ri">Find the probabilities.</span></p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch05-list-041">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0525"><p><span data-block_type="maker">(a)</span> Suppose that <em>X</em> has the <em>B</em>(8, 0.3) distribution. Use software, calculator, or <span data-type="link" data-href="table_c.html">Table C</span> to find <em>P</em>(<em>X</em> = 0) and <em>P</em>(<em>X</em> ≥ 6).</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0526"><p><span data-block_type="maker">(b)</span> Suppose that <em>X</em> has the <em>B</em>(8, 0.7) distribution. Use software, calculator, or <span data-type="link" data-href="table_c.html">Table C</span> to find <em>P</em>(<em>X</em> = 8) and <em>P</em>(X ≤ 2).</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0527"><p><span data-block_type="maker">(c)</span> Explain the relationship between your answers to parts (a) and (b) of this exercise.</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0528"><p><span data-block_type="h2">Binomial mean and standard deviation</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0529"><p>If a count <em>X</em> has the <em>B</em>(<em>n</em>, <em>p</em>) distribution, what are the mean <em>μ<sub>X</sub></em> and the standard deviation <em>σ<sub>X</sub></em>? We can guess the mean. If we expect 46% of the students to have fallen asleep in class due to poor sleep, the mean number in 10 students should be 46% of 10, or 4.6. That’s <em>μ<sub>X</sub></em> when <em>X</em> has the <em>B</em>(10, 0.46) distribution.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0530"><p>Intuition suggests more generally that the mean of the <em>B</em>(<em>n</em>, <em>p</em>) distribution should be <em>np</em>. Can we show that this is correct and also obtain a short formula for the standard deviation? Because binomial distributions are discrete probability distributions, we could find the mean and variance by using the definitions in <span data-type="link" data-href="ips9e-ch04-sec1-04">Section 4.4</span>. Here is an easier way.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idp314255920"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp314255920"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0532"><p>means and variances of random variables, <span data-type="link" data-href="alias:page_246">pp. 246</span>, <span data-type="link" data-href="alias:page_255">255</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0533"><p>A binomial random variable <em>X</em> is the count of successes in <em>n</em> independent observations that each have the same probability <em>p</em> of success. Let the random variable <em>S<sub>i</sub></em> indicate whether the <em>i</em>th observation is a success or failure by taking the values <em>S<sub>i </sub></em>= 1 if a success occurs and <em>S<sub>i </sub></em>= 0 if the outcome is a failure. The <em>S<sub>i</sub></em> are independent because the observations are, and each <em>S<sub>i</sub></em> has the same simple distribution:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch05-tab-5" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="40"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Outcome</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1</td>
+<td data-block_type="EXP-TB1-TXT" align="center">0</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="center"><em>p</em></td>
+<td data-block_type="EXP-TB1-TXT" align="center">1 − <em>p</em>
+</td>
+</tr>
+</tbody></table></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_318"><p>318</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idp314275904"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp314275904"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0535"><p>mean and variance of a discrete random variable, <span data-type="link" data-href="alias:page_236">p. 236</span></p></div>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0537"><p>From the definition of the mean of a discrete random variable, we know that the mean of each <em>S<sub>i</sub></em> is</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0538"><p><em>μ<sub>S</sub></em> = (1)(<em>p</em>) + (0)(1 − <em>p</em>) = <em>p</em></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0539"><p>Similarly, the definition of the variance shows that <span data-math="math_167"></span>. Because each <em>S<sub>i</sub></em> is 1 for a success and 0 for a failure, to find the total number of successes <em>X</em> we add the <em>S<sub>i</sub></em>’s:</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0540"><p><em>X</em> = <em>S</em><sub>1</sub> + <em>S</em><sub>2</sub> + · · · + <em>S<sub>n</sub></em></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0541"><p>Apply the addition rules for means and variances to this sum. To find the mean of <em>X</em> we add the means of the <em>S<sub>i</sub></em>’s:</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0542"><p><em>μ<sub>X</sub></em> = <em>μ<sub>S</sub></em><sub>1</sub> + <em>μ<sub>S</sub></em><sub>2</sub> + · · · + <em>μ<sub>Sn</sub></em></p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0543"><p>= <em>nμ<sub>S</sub></em> = <em>np</em></p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0544"><p>Similarly, the variance is <em>n</em> times the variance of a single <em>S</em>, so that <span data-math="math_168"></span>. The standard deviation <em>σ<sub>X</sub></em> is the square root of the variance. Here is the result.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-053"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-053"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0545"><p>BINOMIAL MEAN AND STANDARD DEVIATION</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0546"><p>If a count <em>X</em> has the binomial distribution <em>B</em>(<em>n</em>, <em>p</em>), then</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch05-p-0547"><p><em>μ<sub>X</sub></em> = <em>np</em></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch05-p-0548"><p><span data-math="math_169"></span></p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_23.html" id="ips9e-ch05-box-054"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-054"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0549"><p>EXAMPLE 5.23</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0550"><p><span data-block_type="EXP-T-ri">The Helsinki Heart Study.</span> The Helsinki Heart Study asked whether the anticholesterol drug gemfibrozil reduces heart attacks. In planning such an experiment, the researchers must be confident that the sample sizes are large enough to enable them to observe enough heart attacks. The Helsinki study planned to give gemfibrozil to about 2000 men aged 40 to 55 and a placebo to another 2000. The probability of a heart attack during the five-year period of the study for men this age is about 0.04. What are the mean and standard deviation of the number of heart attacks that will be observed in one group if the treatment does not change this probability?</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0551"><p>There are 2000 independent observations, each having probability <em>p</em> = 0.04 of a heart attack. The count <em>X</em> of heart attacks has the <em>B</em>(2000, 0.04) distribution, so that</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0552"><p><em>μ<sub>X</sub></em> = <em>np</em> = (2000)(0.04) = 80</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0553"><p><span data-math="math_170"></span></p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0554"><p>The expected number of heart attacks is large enough to permit conclusions about the effectiveness of the drug. In fact, there were 84 heart attacks among the 2035 men actually assigned to the placebo, quite close to the mean. The gemfibrozil group of 2046 men suffered only 56 heart attacks. This is evidence that the drug reduces the chance of a heart attack. In a later chapter, we will learn how to determine if this is strong enough evidence to conclude the drug is effective.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_319"><p>319</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-055"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-055"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0555"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_50.html" id="ips9e-ch05-quest-0050">
+<h3>Question
+			    <span data-type="number">5.50 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0557"><p><span data-block_type="EXR-QUE-N-ri">5.50</span> <span data-block_type="EXR-QUE-T-ri">Free-throw shooting.</span> Refer to <span data-type="link" data-href="exercise_5_48.html">Exercise 5.48</span>. If April takes 85 free throws in the upcoming season, what are the mean and standard deviation of the number of free throws made?</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_5_51.html" id="ips9e-ch05-quest-0051">
+<h3>Question
+			    <span data-type="number">5.51 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch05-p-0558"><p><span data-block_type="EXR-QUE-N-ri">5.51</span> <span data-block_type="EXR-QUE-T-ri">Find the mean and standard deviation</span></p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch05-list-042">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0559"><p><span data-block_type="maker">(a)</span> Suppose that <em>X</em> has the <em>B</em>(8, 0.3) distribution. Compute the mean and standard deviation of <em>X</em>.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0560"><p><span data-block_type="maker">(b)</span> Suppose that <em>X</em> has the <em>B</em>(8, 0.7) distribution. Compute the mean and standard deviation of <em>X</em>.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0561"><p><span data-block_type="maker">(c)</span> Explain the relationship between your answers to parts (a) and (b) of this exercise.</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0562"><p><span data-block_type="h2">Sample proportions</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0563"><p>What proportion of a company’s sales records have an incorrect sales tax classification? What percent of adults favor stronger laws restricting firearms? In statistical sampling, we often want to estimate the proportion <em>p</em> of “successes” in a population. Our estimator is the sample proportion of successes:</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idp314341664"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp314341664"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0565"><p>population proportion, <span data-type="link" data-href="alias:page_199">p. 199</span></p></div>
+</div></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0566"><p><span data-math="math_171"></span></p></div>
+<div data-block_type="Caution icon" id="ips9e-ch05-p-0568"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0569"><p><em>Be sure to distinguish between the proportion</em> <span data-math="math_172"></span> <em>and the count X.</em> The count takes whole-number values between 0 and <em>n</em>, but a proportion is always a number between 0 and 1. In the binomial setting, the count <em>X</em> has a binomial distribution. The proportion <span data-math="math_173"></span> does <em>not</em> have a binomial distribution. We can, however, do probability calculations about <span data-math="math_174"></span> by restating them in terms of the count <em>X</em> and using binomial methods. In <span data-type="link" data-href="example_5_11.html">Example 5.11</span> (pages 302–303), we took a similar approach for the sum, restating the problem in terms of the sample mean and then using the Normal distribution to calculate the probability.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_24.html" id="ips9e-ch05-box-056"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-056"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0570"><p>EXAMPLE 5.24</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0571"><p><span data-block_type="EXP-T-ri">Shopping online.</span> A survey by the Consumer Reports National Research Center revealed that 84% of all respondents were very satisfied with their online shopping experience.<span data-type="termref" data-term="fn_ch5_fn15"><sup>15</sup></span> It was also reported, however, that people over the age of 40 were generally more satisfied than younger respondents. You decide to take a nationwide random sample of 2500 college students and ask if they agree or disagree that “I am very satisfied with my online shopping experience.” Suppose that 60% of all college students would agree if asked this question. What is the probability that the sample proportion who agree is at least 58%?</p></div>
+<div data-type="figure" data-figure-id="ips9e-ch05-fig-019" data-block_type="UN-FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_P_05_03.jpg" data-figure-id="ips9e-ch05-fig-019" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">NetPhotos/Alamy</span></div>
+</div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0572"><p>The count <em>X</em> who agree has the binomial distribution <em>B</em>(2500, 0.6). The sample proportion <span data-math="math_175"></span> does <em>not</em> have a binomial distribution because it is not a count. But we can translate any question about a sample proportion <span data-math="math_176"></span> into a question about the count <em>X</em>. Because 58% of 2500 is 1450,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0573"><p><em>P</em>(<span data-math="math_177"></span> ≥ 0.58) = <em>P</em>(<em>X</em> ≥ 1450)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0574"><p>= <em>P</em>(<em>X</em> = 1450) + <em>P</em>(<em>X</em> = 1451) + · · · + <em>P</em>(<em>X</em> = 2500)</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_320"><p>320</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch05-p-0576"><p>This is a rather elaborate calculation. We must add more than 1000 binomial probabilities. Software tells us that <span data-math="math_178"></span>. But what do we do if we don’t have access to software?</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0577"><p>As a first step, find the mean and standard deviation of a sample proportion. We know the mean and standard deviation of a sample count, so apply the rules from <span data-type="link" data-href="ips9e-ch04-sec1-04">Section 4.4</span> for the mean and variance of a constant times a random variable. Here is the result.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idp314378000"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp314378000"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0579"><p>rules for means, <span data-type="link" data-href="alias:page_254">p. 254</span></p></div>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0580"><p>rules for variances, <span data-type="link" data-href="alias:page_258">p. 258</span></p></div>
+</div></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-057"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-057"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0581"><p>MEAN AND STANDARD DEVIATION OF A SAMPLE PROPORTION</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch05-p-0582"><p>Let <span data-math="math_179"></span> be the sample proportion of successes in an SRS of size <em>n</em> drawn from a large population having population proportion <em>p</em> of successes. The mean and standard deviation of <span data-math="math_180"></span> are</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch05-p-0583"><p><span data-math="math_181"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0585"><p>The formula for <span data-math="math_182"></span> is exactly correct in the binomial setting. It is approximately correct for an SRS from a large population. We will use it when the population is at least 20 times as large as the sample.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0586"><p>Let’s now use these formulas to calculate the mean and standard deviation for <span data-type="link" data-href="example_5_24.html">Example 5.24</span>.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_25.html" id="ips9e-ch05-box-058"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-058"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0587"><p>EXAMPLE 5.25</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0588"><p><span data-block_type="EXP-T-ri">The mean and the standard deviation.</span> The mean and standard deviation of the proportion of the survey respondents in <span data-type="link" data-href="example_5_24.html">Example 5.24</span> who are satisfied with their online clothes-shopping experience are</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0589"><p><span data-math="math_183"></span></p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-059"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-059"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0591"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_52.html" id="ips9e-ch05-quest-0052">
+<h3>Question
+			    <span data-type="number">5.52 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0592"><p><span data-block_type="EXR-QUE-N-ri">5.52</span> <span data-block_type="EXR-QUE-T-ri">Find the mean and the standard deviation.</span> If we toss a fair coin 150 times, the number of heads is a random variable that is binomial.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch05-list-043">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0593"><p><span data-block_type="maker">(a)</span> Find the mean and the standard deviation of the sample proportion of heads.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0594"><p><span data-block_type="maker">(b)</span> Is your answer to part (a) the same as the mean and the standard deviation of the sample count of heads in 150 throws? Explain your answer.</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0595"><p>The fact that the mean of <span data-math="math_184"></span> is <em>p</em> states in statistical language that the sample proportion <span data-math="math_185"></span> in an SRS is an <em>unbiased estimator</em> of the population proportion <em>p</em>. When a sample is drawn from a new population having a different value of the population proportion <em>p</em>, the sampling distribution of the unbiased estimator <span data-math="math_186"></span> changes so that its mean moves to the new value of <em>p</em>. We observed this fact empirically in <span data-type="link" data-href="ips9e_ch5_2.html" data-target="_pop">Section 5.1</span> and have now verified it from the laws of probability.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_321"><p>321</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0597"><p>The variability of <span data-math="math_187"></span> about its mean, as described by the variance or standard deviation, gets smaller as the sample size increases. So a sample proportion from a large sample will usually lie quite close to the population proportion <em>p</em>. We observed this in the simulation experiment on page 284 in <span data-type="link" data-href="ips9e_ch5_2.html" data-target="_pop">Section 5.1</span>. Now we have discovered exactly how the variability decreases: the standard deviation is <span data-math="math_188"></span>. Similar to what we observed in the previous section, the <span data-math="math_189"></span> in the denominator means that the sample size must be multiplied by 4 if we wish to divide the standard deviation in half.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0598"><p><span data-block_type="h2">Normal approximation for counts and proportions</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0599"><p>Using simulation, we discovered in <span data-type="link" data-href="ips9e_ch5_2.html" data-target="_pop">Section 5.1</span> that the sampling distribution of a sample proportion <span data-math="math_190"></span> is close to Normal. Now we know that the distribution of <span data-math="math_191"></span> is that of a binomial count divided by the sample size <em>n</em>. This seems at first to be a contradiction. To clear up the matter, look at <span data-type="link" data-href="figure_5_16.html">Figure 5.16</span>. This is a probability histogram of the exact distribution of the proportion of very satisfied shoppers <span data-math="math_192"></span>, based on the binomial distribution <em>B</em>(2500, 0.6). There are hundreds of narrow bars, one for each of the 2501 possible values of <span data-math="math_193"></span>. Most have probabilities too small to show in a graph. <em>The probability histogram looks very Normal!</em> In fact, both the count <em>X</em> and the sample proportion <span data-math="math_194"></span> are approximately Normal in large samples.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0600"><p>We also know this to be true as a result of the central limit theorem discussed in the previous section (<span data-type="link" data-href="alias:page_298">page 298</span>). Recall that we can consider the count <em>X</em> as a sum</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0601"><p><em>X</em> = <em>S</em><sub>1</sub> + <em>S</em><sub>2</sub> + · · · + <em>S<sub>n</sub></em></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0602"><p>of independent random variables <em>S<sub>i</sub></em> that take the value 1 if a success occurs on the <em>i</em>th trial and the value 0 otherwise. The proportion of successes <span data-math="math_195"></span> can then be thought of as the sample mean of the <em>S<sub>i</sub></em> and, like all sample means, is approximately Normal when <em>n</em> is large. Given that <span data-math="math_196"></span> is approximately Normal, the count will also be approximately Normal because it is just a constant <em>n</em> times <span data-math="math_197"></span>, an approximately Normal random variable.</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_5_16.html" data-figure-id="ips9e-ch05-fig-020" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_16.jpg" data-figure-id="ips9e-ch05-fig-020" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.16: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.16</span> <span data-block_type="FG-CAP">Probability histogram of the sample proportion <span data-math="math_198"></span> based on a binomial count with <em>n</em> = 2500 and <em>p</em> = 0.6. The distribution is very close to Normal.</span></span>
+</div>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_322"><p>322</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-060"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-060"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0604"><p>NORMAL APPROXIMATION FOR COUNTS AND PROPORTIONS</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch05-p-0605"><p>Draw an SRS of size <em>n</em> from a large population having population proportion <em>p</em> of successes. Let <em>X</em> be the count of successes in the sample and <span data-math="math_199"></span> be the sample proportion of successes. When <em>n</em> is large, the sampling distributions of these statistics are approximately Normal:</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch05-p-0606"><p><span data-math="math_200"></span></p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch05-p-0607"><p><span data-math="math_201"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0608"><p>As a rule of thumb, we will use this approximation for values of <em>n</em> and <em>p</em> that satisfy <span data-math="math_202"></span> and <span data-math="math_203"></span>.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0609"><p>These Normal approximations are easy to remember because they say that <span data-math="math_204"></span> and <em>X</em> are Normal, with their usual means and standard deviations. Whether or not you use the Normal approximations should depend on how accurate your calculations need to be. For most statistical purposes, great accuracy is not required. Our “rule of thumb” for use of the Normal approximations reflects this judgment.</p></div>
+<div data-block_type="Applet icon" id="ips9e-ch05-p-0610"><p><img id="" src="asset/global_images/BPSapplet-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0611"><p>The accuracy of the Normal approximations improves as the sample size <em>n</em> increases. They are most accurate for any fixed <em>n</em> when <em>p</em> is close to 1/2, and least accurate when <em>p</em> is near 0 or 1. You can compare binomial distributions with their Normal approximations by using the <em>Normal Approximation to Binomial</em> applet. This applet allows you to change <em>n</em> or <em>p</em> while watching the effect on the binomial probability histogram and the Normal curve that approximates it.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0612"><p><span data-type="link" data-href="figure_5_17.html">Figure 5.17</span> summarizes the distribution of a sample proportion in a form that emphasizes the big idea of a sampling distribution. Just as with <span data-type="link" data-href="figure_5_11.html">Figure 5.11</span> (page 294), the general framework for constructing a sampling distribution is shown on the left.</p></div>
+<ul data-block_type="bullet" id="ips9e-ch05-list-044">
+<li><div data-block_type="BL-first" id="ips9e-ch05-p-0613"><p><span data-block_type="maker">•</span> Take many random samples of size <em>n</em> from a population that contains proportion <em>p</em> of successes.</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_5_17.html" data-figure-id="ips9e-ch05-fig-021" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_17.jpg" data-figure-id="ips9e-ch05-fig-021" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.17: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.17</span> <span data-block_type="FG-CAP">The sampling distribution of a sample proportion <span data-math="math_205"></span> is approximately Normal with mean <em>p</em> and standard deviation <span data-math="math_206"></span>.</span></span>
+</div>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_323"><p>323</p></div>
+</li>
+<li><div data-block_type="BL" id="ips9e-ch05-p-0615"><p><span data-block_type="maker">•</span> Find the sample proportion <span data-math="math_207"></span> for each sample.</p></div></li>
+<li><div data-block_type="BL-last" id="ips9e-ch05-p-0616"><p><span data-block_type="maker">•</span> Collect all the <span data-math="math_208"></span>’s and display their distribution.</p></div></li>
+</ul>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0617"><p>The sampling distribution of <span data-math="math_209"></span> is shown on the right. Keep this figure in mind as you move toward statistical inference.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_26.html" id="ips9e-ch05-box-061"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-061"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0618"><p>EXAMPLE 5.26</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0619"><p><span data-block_type="EXP-T-ri">Compare the Normal approximation with the exact calculation.</span> Let’s compare the Normal approximation for the calculation of <span data-type="link" data-href="example_5_24.html">Example 5.24</span> with the exact calculation from software. We want to calculate <span data-math="math_210"></span> when the sample size is <span data-math="math_211"></span> and the population proportion is <span data-math="math_212"></span>. <span data-type="link" data-href="example_5_25.html">Example 5.25</span> shows that</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0620"><p><span data-math="math_213"></span></p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0622"><p>Act as if <span data-math="math_214"></span> were Normal with mean 0.6 and standard deviation 0.0098. The approximate probability, as illustrated in <span data-type="link" data-href="figure_5_18.html">Figure 5.18</span>, is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0623"><p><span data-math="math_215"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0624"><p>≐ <em>P</em>(<em>Z</em> ≥ −2.04) = 0.9793</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_5_18.html" data-figure-id="ips9e-ch05-fig-022" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_18.jpg" data-figure-id="ips9e-ch05-fig-022" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.18: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.18</span> <span data-block_type="FG-CAP">The Normal probability calculation, <span data-type="link" data-href="example_5_26.html">Example 5.26</span>.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0625"><p>That is, about 98% of all samples have a sample proportion that is at least 0.58. Because the sample was large, this Normal approximation is quite accurate. It misses the software value 0.9802 by only 0.0009.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_27.html" id="ips9e-ch05-box-062"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-062"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0626"><p>EXAMPLE 5.27</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0627"><p><span data-block_type="EXP-T-ri">Using the Normal approximation.</span> The audit described in <span data-type="link" data-href="example_5_19.html">Example 5.19</span> (page 314) examined an SRS of 150 sales records for compliance with sales tax laws. In fact, 8% of all the company’s sales records have an incorrect sales tax classification. The count <em>X</em> of bad records in the sample has approximately the <span data-math="math_216"></span> distribution.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_324"><p>324</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0629"><p>According to the Normal approximation to the binomial distributions, the count <em>X</em> is approximately Normal with mean and standard deviation</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0630"><p><span data-math="math_217"></span></p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0632"><p>The Normal approximation for the probability of no more than 10 misclassified records is the area to the left of <em>X</em> = 10 under the Normal curve. Using <span data-type="link" data-href="table_a.html">Table A</span>,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0633"><p><span data-math="math_218"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0634"><p>≐ <em>P</em>(<em>Z</em> ≤ −0.60) = 0.2743</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0635"><p>Software tells us that the actual binomial probability that no more than 10 of the records in the sample are misclassified is <span data-math="math_219"></span>. The Normal approximation is only roughly accurate. Because <span data-math="math_220"></span>, this combination of <em>n</em> and <em>p</em> is close to the border of the values for which we are willing to use the approximation.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0636"><p>The distribution of the count of bad records in a sample of 15 is distinctly non-Normal, as <span data-type="link" data-href="figure_5_15.html">Figure 5.15</span> (page 316) showed. When we increase the sample size to 150, however, the shape of the binomial distribution becomes roughly Normal. <span data-type="link" data-href="figure_5_19.html">Figure 5.19</span> displays the probability histogram of the binomial distribution with the density curve of the approximating Normal distribution superimposed. Both distributions have the same mean and standard deviation, and both the area under the histogram and the area under the curve are 1. The Normal curve fits the histogram reasonably well. Look closely: the histogram is slightly skewed to the right, a property that the symmetric Normal curve can’t match.</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_5_19.html" data-figure-id="ips9e-ch05-fig-023" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_19.jpg" data-figure-id="ips9e-ch05-fig-023" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.19: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.19</span> <span data-block_type="FG-CAP">Probability histogram and Normal approximation for the binomial distribution with <em>n</em> = 150 and <em>p</em> = 0.08, <span data-type="link" data-href="example_5_27.html">Example 5.27</span>.</span></span>
+</div>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_325"><p>325</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-063"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-063"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0637"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_53.html" id="ips9e-ch05-quest-0053">
+<h3>Question
+			    <span data-type="number">5.53 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0639"><p><span data-block_type="EXR-QUE-N-ri">5.53</span> <span data-block_type="EXR-QUE-T-ri">Use the Normal approximation.</span> Suppose that we toss a fair coin 150 times. Use the Normal approximation to find the probability that the sample proportion of heads is</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch05-list-045">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0640"><p><span data-block_type="maker">(a)</span> between 0.4 and 0.6.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0641"><p><span data-block_type="maker">(b)</span> between 0.45 and 0.55.</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0642"><p><span data-block_type="h2">The continuity correction</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0643"><p><span data-type="link" data-href="figure_5_20.html">Figure 5.20</span> illustrates an idea that greatly improves the accuracy of the Normal approximation to binomial probabilities. The binomial probability <span data-math="math_221"></span> is the area of the histogram bars for values 0 to 10. The bar for <span data-math="math_222"></span> actually extends from 9.5 to 10.5. Because the discrete binomial distribution puts probability only on whole numbers, the probabilities <span data-math="math_223"></span> and <span data-math="math_224"></span> are the same. The Normal distribution spreads probability continuously, so these two Normal probabilities are different. The Normal approximation is more accurate if we consider <span data-math="math_225"></span> to extend from 9.5 to 10.5, matching the bar in the probability histogram.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0644"><p>The event <span data-math="math_226"></span> includes the outcome <span data-math="math_227"></span>. <span data-type="link" data-href="figure_5_20.html">Figure 5.20</span> shades the area under the Normal curve that matches all the histogram bars for outcomes 0 to 10, bounded on the right not by 10, but by 10.5. So <span data-math="math_228"></span> is calculated as <span data-math="math_229"></span>. On the other hand, <span data-math="math_230"></span> excludes the outcome <span data-math="math_231"></span>, so we exclude the entire interval from 9.5 to 10.5 and calculate <span data-math="math_232"></span> from the Normal table. Here is the result of the Normal calculation in <span data-type="link" data-href="example_5_27.html">Example 5.27</span> improved in this way:</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0645"><p><span data-math="math_233"></span></p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0646"><p><span data-math="math_234"></span></p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0647"><p>≐ <em>P</em>(<em>Z</em> ≤ −0.45) = 0.3264</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0648"><p>The improved approximation misses the binomial probability by only 0.012. Acting as though a whole number occupies the interval from 0.5 below to 0.5 above the number is called the <span data-type="termref" data-term="continuity correction"><strong>continuity correction</strong></span><span data-block_type="MN-GL-term">continuity correction</span> to the Normal approximation. If you need accurate values for binomial probabilities, try to use software to do exact calculations. If no software is available, use the continuity correction unless <em>n</em> is very large. Because most statistical purposes do not require extremely accurate probability calculations, we do not emphasize use of the continuity correction.</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_5_20.html" data-figure-id="ips9e-ch05-fig-024" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_20.jpg" data-figure-id="ips9e-ch05-fig-024" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.20: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.20</span> <span data-block_type="FG-CAP">Area under the Normal approximation curve for the probability in <span data-type="link" data-href="example_5_27.html">Example 5.27</span>.</span></span>
+</div>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_326"><p>326</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0651"><p><span data-block_type="h2">Binomial formula</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0652"><p>We can find a formula for the probability that a binomial random variable takes any value by adding probabilities for the different ways of getting exactly that many successes in <em>n</em> observations. Here is the example we will use to show the idea.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_28.html" id="ips9e-ch05-box-064"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-064"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0653"><p>EXAMPLE 5.28</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0654"><p><span data-block_type="EXP-T-ri">Blood types of children.</span> Each child born to a particular set of parents has probability 0.25 of having blood type O. If these parents have five children, what is the probability that exactly two of them have type O blood?</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0655"><p>The count of children with type O blood is a binomial random variable <em>X</em> with <em>n</em> = 5 tries and probability <em>p</em> = 0.25 of a success on each try. We want <em>P</em>(<em>X</em> = 2).</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0656"><p>Because the method doesn’t depend on the specific example, we will use “S” for success and “F” for failure. In <span data-type="link" data-href="example_5_28.html">Example 5.28</span>, “S” would stand for type O blood. Do the work in two steps.</p></div>
+<div data-block_type="ULF" id="ips9e-ch05-p-0657"><p><em>Step 1:</em> Find the probability that a specific two of the five tries give successes—say, the first and the third. This is the outcome SFSFF. The multiplication rule for independent events tells us that</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0658"><p><em>P</em>(SFSFF) = <em>P</em>(S)<em>P</em>(F)<em>P</em>(S)<em>P</em>(F)<em>P</em>(F)</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0659"><p>= (0.25)(0.75)(0.25)(0.75)(0.75)</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0660"><p>= (0.25)<sup>2</sup>(0.75)<sup>3</sup></p></div>
+<div data-block_type="UL" id="ips9e-ch05-p-0661"><p><em>Step 2:</em> Observe that the probability of <em>any one</em> arrangement of two S’s and three F’s has this same probability. That’s true because we multiply together 0.25 twice and 0.75 three times whenever we have two S’s and three F’s. The probability that <em>X</em> = 2 is the probability of getting two S’s and three F’s in any arrangement whatsoever. Here are all the possible arrangements:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0662"><p>SSFFF SFSFF SFFSF SFFFS FSSFF</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0663"><p>FSFSF FSFFS FFSSF FFSFS FFFSS</p></div>
+<div data-block_type="ULL" id="ips9e-ch05-p-0664"><p>There are 10 of them, all with the same probability. The overall probability of two successes is, therefore,</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0665"><p><em>P</em>(<em>X</em> = 2) = 10(0.25)<sup>2</sup>(0.75)<sup>3</sup> = 0.2637</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0666"><p>The pattern of this calculation works for any binomial probability. To use it, we need to be able to count the number of arrangements of <em>k</em> successes in <em>n</em> observations without actually listing them. We use the following fact to do the counting.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_327"><p>327</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-065"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-065"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0668"><p>BINOMIAL COEFFICIENT</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0669"><p>The number of ways of arranging <em>k</em> successes among <em>n</em> observations is given by the <strong>binomial coefficient</strong></p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0670"><p><span data-math="math_235"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0671"><p>for <em>k</em> = 0, 1, 2, . . . , <em>n</em>.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0673"><p>The formula for binomial coefficients uses the <span data-type="termref" data-term="factorial"><strong>factorial</strong></span><span data-block_type="MN-GL-term">factorial</span> notation. The factorial <em>n</em>! for any positive whole number <em>n</em> is</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0674"><p><em>n</em>! = <em>n</em> × (<em>n</em> − 1) × (<em>n</em> − 2) × · · · × 3 × 2 × 1</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0675"><p>Also, 0! = 1. Notice that the larger of the two factorials in the denominator of a binomial coefficient will cancel much of the <em>n</em>! in the numerator. For example, the binomial coefficient we need for <span data-type="link" data-href="example_5_28.html">Example 5.28</span> is</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0676"><p><span data-math="math_236"></span></p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0679"><p>This agrees with our previous calculation.</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch05-p-0680"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0681"><p><em>The notation</em> <span data-math="math_237"></span> <em>is not related to the fraction</em> <span data-math="math_238"></span><em>.</em> A helpful way to remember its meaning is to read it as “binomial coefficient <em>n</em> choose <em>k</em>.” Binomial coefficients have many uses in mathematics, but we are interested in them only as an aid to finding binomial probabilities. The binomial coefficient <span data-math="math_239"></span> counts the number of ways in which <em>k</em> successes can be distributed among <em>n</em> observations. The binomial probability <span data-math="math_240"></span> is this count multiplied by the probability of any specific arrangement of the <em>k</em> successes. Here is the formula we seek.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-066"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-066"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0682"><p>BINOMIAL PROBABILITY</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0683"><p>If <em>X</em> has the binomial distribution <em>B</em>(<em>n</em>, <em>p</em>) with <em>n</em> observations and probability <em>p</em> of success on each observation, the possible values of <em>X</em> are 0, 1, 2, . . . , <em>n</em>. If <em>k</em> is any one of these values, the <strong>binomial probability</strong> is</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0684"><p><span data-math="math_241"></span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0685"><p>Here is an example of the use of the binomial probability formula.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_328"><p>328</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_29.html" id="ips9e-ch05-box-067"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-067"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0686"><p>EXAMPLE 5.29</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0688"><p><span data-block_type="EXP-T-ri">Using the binomial probability formula.</span> The number <em>X</em> of misclassified sales records in the auditor’s sample in <span data-type="link" data-href="example_5_21.html">Example 5.21</span> (page 316) has the <span data-math="math_242"></span> distribution. The probability of finding no more than one misclassified record is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0689"><p><span data-math="math_243"></span></p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0694"><p>The calculation used the facts that 0! = 1 and that <span data-math="math_244"></span> for any number <span data-math="math_245"></span>. The result agrees with that obtained from <span data-type="link" data-href="table_c.html">Table C</span> in <span data-type="link" data-href="example_5_21.html">Example 5.21</span>.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-068"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-068"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0695"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_54.html" id="ips9e-ch05-quest-0054">
+<h3>Question
+			    <span data-type="number">5.54 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0696"><p><span data-block_type="EXR-QUE-N-ri">5.54</span> <span data-block_type="EXR-QUE-T-ri">An unfair coin.</span> A coin is slightly bent, and as a result, the probability of a head is 0.53. Suppose that you toss the coin five times.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch05-list-046">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0697"><p><span data-block_type="maker">(a)</span> Use the binomial formula to find the probability of three or more heads.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0698"><p><span data-block_type="maker">(b)</span> Compare your answer with the one that you would obtain if the coin were fair.</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0699"><p><span data-block_type="h2">The Poisson distributions</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0700"><p>A count <em>X</em> has a binomial distribution when it is produced under the binomial setting. If one or more facets of this setting do not hold, the count <em>X</em> will have a different distribution. In this subsection, we discuss one of these distributions.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0701"><p>Frequently, we meet counts that are open-ended; that is, they are not based on a fixed number of <em>n</em> observations: the number of customers at a popular café between 12:00 <span data-block_type="small">P.M</span>. and 1:00 <span data-block_type="small">P.M</span>.; the number of dings on your car door; the number of reported pedestrian/bicyclist collisions on campus during the academic year. These are all counts that could be 0, 1, 2, 3, and so on indefinitely.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0702"><p>The Poisson distribution is another model for a count and can often be used in these open-ended situations. The count represents the number of events (call them “successes”) that occur in some fixed unit of measure such as a period of time or region of space. The Poisson distribution is appropriate under the following conditions.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-069"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-069"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0703"><p>THE POISSON SETTING</p></div>
+<ol data-block_type="numbered" id="ips9e-ch05-list-047">
+<li><div data-block_type="BX1-NLF" id="ips9e-ch05-p-0704"><p><span data-block_type="maker">1.</span> The number of successes that occur in two nonoverlapping units of measure are <strong>independent</strong>.</p></div></li>
+<li><div data-block_type="BX1-NL-m" id="ips9e-ch05-p-0705"><p><span data-block_type="maker">2.</span> The probability that a success will occur in a unit of measure is the same for all units of equal size and is proportional to the size of the unit.</p></div></li>
+<li><div data-block_type="BX1-NL-L" id="ips9e-ch05-p-0706"><p><span data-block_type="maker">3.</span> The probability that more than one event occurs in a unit of measure is negligible for very small-sized units. In other words, the events occur one at a time.</p></div></li>
+</ol>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_329"><p>329</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0708"><p>For binomial distributions, the important quantities were <em>n</em>, the fixed number of observations, and <em>p</em>, the probability of success on any given observation. For Poisson distributions, the only important quantity is the mean number of successes <em>μ</em> occurring per unit of measure.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-070"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-070"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0709"><p>POISSON DISTRIBUTION</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0710"><p>The distribution of the count <em>X</em> of successes in the Poisson setting is the <strong>Poisson distribution</strong> with <strong>mean</strong> <em>μ</em>. The parameter <em>μ</em> is the mean number of successes per unit of measure. The possible values of <em>X</em> are the whole numbers 0, 1, 2, 3, . . . . If <em>k</em> is any whole number, then<span data-type="termref" data-term="fn_ch5_fn01"><sup>*</sup></span></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch05-p-0711"><p><span data-math="math_246"></span></p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch05-p-0712"><p>The <strong>standard deviation</strong> of the distribution is <span data-math="math_247"></span></p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_30.html" id="ips9e-ch05-box-071"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-071"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0714"><p>EXAMPLE 5.30</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0715"><p><span data-block_type="EXP-T-ri">Number of dropped calls.</span> Suppose that the number of dropped calls on your cell phone varies, with an average of 2.1 calls per day. If we assume that the Poisson setting is reasonable for this situation, we can model the daily count of dropped calls <em>X</em> using the Poisson distribution with <span data-math="math_248"></span> What is the probability of having no more than two dropped calls tomorrow?</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0716"><p>We can calculate <span data-math="math_249"></span> either using software or the Poisson probability formula. Using the probability formula:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0717"><p><span data-math="math_250"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0718"><p><span data-math="math_251"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0719"><p>= 0.1225 + 0.2572 + 0.2700</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0720"><p>= 0.6497</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0721"><p>Using the R software, the probability is</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0722"><p>dpois(0,2.1) + dpois(1,2.1) + dpois(2,2.1)</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0723"><p>[1] 0.6496314</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0724"><p>These two answers differ slightly due to roundoff error in the hand calculation. There is roughly a 65% chance that you will have no more than two dropped calls tomorrow.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0725"><p>Similar to the binomial, Poisson probability calculations are rarely done by hand if the event includes numerous possible values for <em>X</em>. Most software provides functions to calculate <span data-math="math_252"></span> and the cumulative probabilities of the form <span data-math="math_253"></span>. These cumulative probability calculations make solving many problems less tedious. Here’s an example.</p></div>
+<div data-type="box" data-block_type="FN" data-chapter="5" data-footnote-number="*" id="ips9e-ch05-FN-001"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-FN-001"></h3>
+<div data-block_type="FN" id="ips9e-ch05-p-0726"><p>The <em>e</em> in the Poisson probability formula is a mathematical constant equal to 2.71828 to six decimal places. Many calculators have an <em>e<sup>x</sup></em> function.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_330"><p>330</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_31.html" id="ips9e-ch05-box-072"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-072"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0727"><p>EXAMPLE 5.31</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0729"><p><span data-block_type="EXP-T-ri">Counting software remote users.</span> Your university supplies online remote access to various software programs used in courses. Suppose that the number of students remotely accessing these programs in any given hour can be modeled by a Poisson distribution with <span data-math="math_254"></span>. What is the probability that more than 25 students will remotely access these programs in the next hour?</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0730"><p>Calculating this probability requires two steps.</p></div>
+<ol data-block_type="numbered" id="ips9e-ch05-list-048">
+<li><div data-block_type="EXP-BLF" id="ips9e-ch05-p-0731"><p><span data-block_type="maker">1.</span> Write <span data-math="math_255"></span> as an expression involving a cumulative probability:</p></div>
+<div data-block_type="EXP-BLF" id="ips9e-ch05-p-0732"><p><span data-math="math_256"></span></p></div>
+</li>
+<li><div data-block_type="EXP-BLF" id="ips9e-ch05-p-0733"><p><span data-block_type="maker">2.</span> Obtain <span data-math="math_257"></span> and subtract the value from 1. Again using R,</p></div></li>
+<li><div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0734"><p>1- ppois(25,17.2)</p></div></li>
+<li><div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0735"><p>[1] 0.02847261</p></div></li>
+</ol>
+<div data-block_type="EXP-last" id="ips9e-ch05-p-0736"><p>The probability that more than 25 students will use this remote access in the next hour is only 0.028. Relying on software to get the cumulative probability is much quicker and less prone to error than the method of <span data-type="link" data-href="example_5_30.html">Example 5.30</span>. For this case, that method would involve determining 26 probabilities and then summing their values.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0737"><p>Under the Poisson setting, this probability of 0.028 applies not only to the next hour, but also to any other hour in the future. The probability does not change because the units of measure are the same size and nonoverlapping.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-073"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-073"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0738"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_55.html" id="ips9e-ch05-quest-0055">
+<h3>Question
+			    <span data-type="number">5.55 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0739"><p><span data-block_type="EXR-QUE-N-ri">5.55</span> <span data-block_type="EXR-QUE-T-ri">Number of aphids.</span> The milkweed aphid is a common pest to many ornamental plants. Suppose that the number of aphids on a shoot of a Mexican butterfly weed follows a Poisson distribution with <em>μ</em> = 4.4 aphids.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch05-list-049">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0740"><p><span data-block_type="maker">(a)</span> What is the probability of observing exactly five aphids on a shoot?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0741"><p><span data-block_type="maker">(b)</span> What is the probability of observing five or fewer aphids on a shoot?</p></div></li>
+</ol>
+</div>
+<div data-type="question" data-block_type="exercise_5_56.html" id="ips9e-ch05-quest-0056">
+<h3>Question
+			    <span data-type="number">5.56 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch05-p-0742"><p><span data-block_type="EXR-QUE-N-ri">5.56</span> <span data-block_type="EXR-QUE-T-ri">Number of aphids, continued.</span> Refer to the previous exercise.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch05-list-050">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0743"><p><span data-block_type="maker">(a)</span> What proportion of shoots would you expect to have no aphids present?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0744"><p><span data-block_type="maker">(b)</span> If you do not observe any aphids on a shoot, is the probability that a nearby shoot has no aphids smaller than, equal to, or larger than your answer in part (a)? Explain your reasoning.</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0745"><p>If we add counts from successive nonoverlapping areas of equal size, we are just counting the successes in a larger area. That count still meets the conditions of the Poisson setting. However, because our unit of measure has doubled, the mean of this new count is twice as large. Put more formally, if <em>X</em> is a Poisson random variable with mean <span data-math="math_258"></span> and <em>Y</em> is a Poisson random variable with mean <span data-math="math_259"></span> and <em>Y</em> is independent of <em>X</em>, then <span data-math="math_260"></span> is a Poisson random variable with mean <span data-math="math_261"></span> This fact means that we can combine areas or look at a portion of an area and still use Poisson distributions to model the count.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_331"><p>331</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_32.html" id="ips9e-ch05-box-074"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-074"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0746"><p>EXAMPLE 5.32</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0748"><p><span data-block_type="EXP-T-ri">Number of potholes.</span> The Automobile Association (AA) in Britain had member volunteers make a 60-minute, two-mile walk around their neighborhoods and survey the condition of their roads and sidewalks. One outcome was the number of potholes, defined as being at least 2 inches deep and at least 6 inches in diameter, in their roads.<span data-type="termref" data-term="fn_ch5_fn16"><sup>16</sup></span> It was reported that Scotland averages 8.9 potholes per mile of road and London averages 4.9 potholes per mile of road. Suppose that the number of potholes per mile in each of these two regions follow the Poisson distribution. Then</p></div>
+<ul data-block_type="bullet" id="ips9e-ch05-list-051">
+<li><div data-block_type="EXP-BLF" id="ips9e-ch05-p-0749"><p><span data-block_type="maker">•</span> The number of potholes per 20 miles of road in Scotland is a Poisson random variable with mean <span data-math="math_262"></span></p></div></li>
+<li><div data-block_type="EXP-BLF" id="ips9e-ch05-p-0750"><p><span data-block_type="maker">•</span> The number of potholes per half mile of road in London is a Poisson random variable with mean <span data-math="math_263"></span></p></div></li>
+<li><div data-block_type="EXP-BLF" id="ips9e-ch05-p-0751"><p><span data-block_type="maker">•</span> The number of potholes per 500 miles of road in Scotland is a Poisson random variable with mean <span data-math="math_264"></span></p></div></li>
+<li><div data-block_type="EXP-BLF" id="ips9e-ch05-p-0752"><p><span data-block_type="maker">•</span> If we examined 2 miles of road in Scotland and 5 miles of road in London, the total number of potholes would be a Poisson random variable with mean <span data-math="math_265"></span></p></div></li>
+</ul>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0753"><p>When the mean of the Poisson distribution is large, it may be difficult to calculate Poisson probabilities using a calculator or software. Fortunately, when <em>μ</em> is large, Poisson probabilities can be approximated using the Normal distribution with mean <em>μ</em> and standard deviation <span data-math="math_266"></span>. Here is an example.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_33.html" id="ips9e-ch05-box-075"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-075"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0754"><p>EXAMPLE 5.33</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0755"><p><span data-block_type="EXP-T-ri">Number of snaps received.</span> In <span data-type="link" data-href="example_5_11.html">Example 5.11</span> (pages 302–303), it was reported that Snapchat has more than 100 million daily users who send over 400 million snaps a day. Suppose that the number of snaps you receive per day follows a Poisson distribution with mean 12. What is the probability that, over a week, you would receive more than 100 snaps?</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0756"><p>To answer this using software, we first compute the mean number of snaps sent per week. Because there are seven days in a week, the mean is <span data-math="math_267"></span> Plugging this into R tells us that there is slightly less than an 4% chance of receiving this many snaps:</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0757"><p>1-ppois(100,84)</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0758"><p>[1] 0.03891883</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0759"><p>For the Normal approximation we compute</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0760"><p><span data-math="math_268"></span></p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0764"><p>The approximation is quite accurate, differing from the actual probability by only 0.0012.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_332"><p>332</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0766"><p>While the Normal approximation is adequate for many practical purposes, we recommend using statistical software when possible so you can get exact Poisson probabilities.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0767"><p>There is one other approximation associated with the Poisson distribution that is worth mentioning. It is related to the binomial distribution. Previously, we recommended using the Normal distribution to approximate the binomial distribution when <em>n</em> and <em>p</em> satisfy <span data-math="math_269"></span> and <span data-math="math_270"></span>. In cases where <em>n</em> is large but <em>p</em> is so small that <span data-math="math_271"></span>, the Poisson distribution with <span data-math="math_272"></span> yields more accurate results. For example, suppose that you wanted to calculate <span data-math="math_273"></span> when <em>X</em> has the <span data-math="math_274"></span> distribution. Using R, the actual binomial probability and the Poisson approximation are</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0768"><p>pbinom(2,1000,.001)	ppois(2,1)</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0769"><p>[1] 0.9197907		[1] 0.9196986</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0770"><p>The Poisson approximation gives a very accurate probability calculation for the binomial distribution in this case.</p></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch5.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('573ba099757a2e274d000001');
+});
+    //-->
+</script>
+</body>
+</html>
+

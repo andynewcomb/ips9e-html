@@ -747,6 +747,12 @@
     <Content Include="ebook\css\ips9e_ch4.min.css">
       <DependentUpon>ips9e_ch4.css</DependentUpon>
     </Content>
+    <Content Include="ebook\css\ips9e_ch5.css">
+      <DependentUpon>ips9e_ch5.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\ips9e_ch5.min.css">
+      <DependentUpon>ips9e_ch5.css</DependentUpon>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="docs\01_MooreIPS9e_13387_Ch01_01-78_2nd_Pass.pdf" />
     <Content Include="docs\02_MooreIPS9e_13387_Ch02_79-162_2nd_Pass.pdf" />
@@ -759,6 +765,7 @@
     <Content Include="ebook\css\ips9e_ch2.less" />
     <Content Include="ebook\css\ips9e_ch3.less" />
     <Content Include="ebook\css\ips9e_ch4.less" />
+    <Content Include="ebook\css\ips9e_ch5.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -825,6 +832,10 @@
     <Content Include="xml\ips9e-ch03.xml" />
     <Content Include="xml\math\ips9e-ch01.xml_no_math.xml" />
     <Content Include="xml\math\mathjax_ips9e-ch01.xml.js" />
+    <Content Include="xml\math\mathjax_ips9e-ch02.xml.js" />
+    <Content Include="xml\math\mathjax_ips9e-ch03.xml.js" />
+    <Content Include="xml\math\mathjax_ips9e-ch04.xml.js" />
+    <Content Include="xml\math\mathjax_ips9e-ch05.xml.js" />
     <Content Include="xml\math\math_only_ips9e-ch01.xml" />
   </ItemGroup>
   <ItemGroup>

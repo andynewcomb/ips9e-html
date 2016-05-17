@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch5</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e_ch5.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="5">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch05-sec1-02" level="1" data-print_page="293">
+<h2 class="section-title">
+<span data-type="number">5.2</span> <span data-type="title" data-title-for="ips9e-ch05-sec1-02">5.2 The Sampling Distribution of a Sample Mean
+</span>
+</h2>
+
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_293"><p>293</p></div>
+<div data-type="box" data-block_type="SP" id="ips9e-ch05-box-014"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-014"></h3>
+<div data-block_type="SP-TXT-ni" id="ips9e-ch05-p-0165"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bullet" id="ips9e-ch05-list-014">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch05-p-0166"><p><span data-block_type="maker">•</span> Explain the difference between the sampling distribution of <span data-math="math_33"></span> and the population distribution.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch05-p-0167"><p><span data-block_type="maker">•</span> Determine the mean and standard deviation of <span data-math="math_34"></span> for an SRS of size <em>n</em> from a population with mean <em>μ</em> and standard deviation <em>σ</em>.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch05-p-0168"><p><span data-block_type="maker">•</span> Describe how much larger <em>n</em> has to be for an SRS to reduce the standard deviation of <span data-math="math_35"></span> by a certain factor.</p></div></li>
+<li><div data-block_type="SP-BL-last" id="ips9e-ch05-p-0169"><p><span data-block_type="maker">•</span> Utilize the central limit theorem to approximate the sampling distribution of <span data-math="math_36"></span> and perform probability calculations based on this approximation.</p></div></li>
+</ul>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0170"><p>A variety of statistics are used to describe quantitative data. The sample mean, median, and standard deviation are all examples of statistics based on quantitative data. Statistical theory describes the sampling distributions of these statistics. However, the general framework for constructing a sampling distribution is the same for all statistics. In this section, we will concentrate on the sample mean. Because sample means are just averages of observations, they are among the most frequently used statistics.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0171"><p>Suppose that you plan to survey 1000 undergraduates enrolled in four-year U.S. universities about their sleeping habits. The sampling distribution of the average hours of sleep per night describes what this average would be if many simple random samples of 1000 students were drawn from the population of students in the United States. In other words, it gives you an idea of what you are likely to see from your survey. It tells you whether you should expect this average to be near the population mean and whether the variation of the statistic is roughly ±2 hours or ±2 minutes.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0172"><p>Before constructing this distribution, however, we need to consider another set of probability distributions that also plays a role in statistical inference. Any quantity that can be measured on each member of a population is described by the distribution of its values for all members of the population. This is the context in which we first met distributions, as density curves that provide models for the overall pattern of data.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idm3329056"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idm3329056"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0174"><p>density curves, <span data-type="link" data-href="alias:page_51">p. 51</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0175"><p>Imagine choosing one individual at random from a population and measuring a quantity. The quantities obtained from repeated draws of one individual from a population have a probability distribution that is the distribution of the population.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_4.html" id="ips9e-ch05-box-015"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-015"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0176"><p>EXAMPLE 5.4</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0177"><p><span data-block_type="EXP-T-ri">Total sleep time of college students.</span> A recent survey describes the distribution of total sleep time among college students as approximately Normal with a mean of 6.78 hours and standard deviation of 1.24 hours.<span data-type="termref" data-term="fn_ch5_fn3"><sup>3</sup></span> Suppose that we select a college student at random and obtain his or her sleep time. This result is a random variable <em>X</em> because, prior to the random sampling, we don’t know the sleep time. We do know, however, that in repeated sampling, <em>X</em> will have the same <em>N</em>(6.78, 1.24) distribution that describes the pattern of sleep time in the entire population. We call <em>N</em>(6.78, 1.24) the <em>population distribution.</em></p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_294"><p>294</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-016"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-016"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0179"><p>POPULATION DISTRIBUTION</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0180"><p>The <strong>population distribution</strong> of a variable is the distribution of its values for all members of the population. The population distribution is also the probability distribution of the variable when we choose one individual at random from the population.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0181"><p>In this example, the population of all college students actually exists so that we can, in principle, draw an SRS of students from it. Sometimes, our population of interest does not actually exist. For example, suppose that we are interested in studying final-exam scores in a statistics course, and we have the scores of the 34 students who took the course last semester. For the purposes of statistical inference, we might want to consider these 34 students as part of a hypothetical population of similar students who would take this course. In this sense, these 34 students represent not only themselves, but also a larger population of similar students. The key idea is to think of the observations that you have as coming from a population with a probability distribution.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-017"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-017"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0182"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_17.html" id="ips9e-ch05-quest-0017">
+<h3>Question
+			    <span data-type="number">5.17 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0183"><p><span data-block_type="EXR-QUE-N-ri">5.17</span> <span data-block_type="EXR-QUE-T-ri">Time spent using apps on a mobile device.</span> Nielsen has installed, with permission, Mobile Netview 3 on approximately 5000 cell phones to gather information on mobile app usage among adults in the United States. Nielsen reported that 18–24 year olds spend an average of 37 hours and 6 minutes a month using mobile apps.<span data-type="termref" data-term="fn_ch5_fn4"><sup>4</sup></span> State the population that this survey describes, the statistic, and some likely values from the population distribution.</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0184"><p>Now that we have made the distinction between the population distributions and sampling distributions, we can proceed with an in-depth study of the sampling distribution of a sample mean <span data-math="math_37"></span>.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_5.html" id="ips9e-ch05-box-018"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-018"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0185"><p>EXAMPLE 5.5</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0186"><p><span data-block_type="EXP-T-ri">Sample means are approximately Normal.</span> <span data-type="link" data-href="figure_5_6.html">Figure 5.6</span> illustrates two striking facts about the sampling distribution of a sample mean. <span data-type="link" data-href="figure_5_6.html">Figure 5.6(a)</span> displays the distribution of student visit lengths (in minutes) to a statistics help room at a large midwestern university. Students visiting the help room were asked to sign in upon arrival and then sign out when leaving. During the school year, there were 1838 visits to the help room but only 1264 recorded visit lengths. This is because many visiting students forgot to sign out. We also omitted a few large outliers (visits lasting more than 10 hours).<span data-type="termref" data-term="fn_ch5_fn5"><sup>5</sup></span> The distribution is strongly skewed to the right. The population mean is <em>μ</em> = 61.28 minutes.</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_5_6.html" data-figure-id="ips9e-ch05-fig-007" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_06.jpg" data-figure-id="ips9e-ch05-fig-007" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.6: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.6</span> <span data-block_type="FG-CAP">(a) The distribution of visit lengths to a statistics help room during the school year, <span data-type="link" data-href="example_5_5.html">Example 5.5</span>. (b) The distribution of the sample means <span data-math="math_38"></span> for 500 random samples of size 60 from this population. The scales and histogram classes are exactly the same in both panels.</span></span>
+</div>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_295"><p>295</p></div>
+<div data-type="table" data-filename="table_5_1.html" data-block_type="TABLE" id="ips9e-ch05-tab-2" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="100">
+<div data-type="table_text">
+<span data-type="number">Table : </span><span data-type="table_caption"><span data-block_type="TBN-N">TABLE 5.1</span> <span data-block_type="TBN-T">Length (in Minutes) of 60 Visits to a Statistics Help Room</span></span>
+</div>
+<table><tbody>
+<tr>
+<td data-block_type="TBN-TXT" align="center">10</td>
+<td data-block_type="TBN-TXT" align="center">14</td>
+<td data-block_type="TBN-TXT" align="center">15</td>
+<td data-block_type="TBN-TXT" align="center">16</td>
+<td data-block_type="TBN-TXT" align="center">18</td>
+<td data-block_type="TBN-TXT" align="center">20</td>
+<td data-block_type="TBN-TXT" align="center">20</td>
+<td data-block_type="TBN-TXT" align="center">20</td>
+<td data-block_type="TBN-TXT" align="center">23</td>
+<td data-block_type="TBN-TXT" align="center">25</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">28</td>
+<td data-block_type="TBN-TXT" align="center">30</td>
+<td data-block_type="TBN-TXT" align="center">30</td>
+<td data-block_type="TBN-TXT" align="center">30</td>
+<td data-block_type="TBN-TXT" align="center">30</td>
+<td data-block_type="TBN-TXT" align="center">30</td>
+<td data-block_type="TBN-TXT" align="center">31</td>
+<td data-block_type="TBN-TXT" align="center">33</td>
+<td data-block_type="TBN-TXT" align="center">35</td>
+<td data-block_type="TBN-TXT" align="center">35</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">46</td>
+<td data-block_type="TBN-TXT" align="center">48</td>
+<td data-block_type="TBN-TXT" align="center">50</td>
+<td data-block_type="TBN-TXT" align="center">50</td>
+<td data-block_type="TBN-TXT" align="center">50</td>
+<td data-block_type="TBN-TXT" align="center">50</td>
+<td data-block_type="TBN-TXT" align="center">51</td>
+<td data-block_type="TBN-TXT" align="center">54</td>
+<td data-block_type="TBN-TXT" align="center">55</td>
+<td data-block_type="TBN-TXT" align="center">55</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">60</td>
+<td data-block_type="TBN-TXT" align="center">60</td>
+<td data-block_type="TBN-TXT" align="center">60</td>
+<td data-block_type="TBN-TXT" align="center">60</td>
+<td data-block_type="TBN-TXT" align="center">60</td>
+<td data-block_type="TBN-TXT" align="center">60</td>
+<td data-block_type="TBN-TXT" align="center">60</td>
+<td data-block_type="TBN-TXT" align="center">65</td>
+<td data-block_type="TBN-TXT" align="center">65</td>
+<td data-block_type="TBN-TXT" align="center">65</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">75</td>
+<td data-block_type="TBN-TXT" align="center">77</td>
+<td data-block_type="TBN-TXT" align="center">80</td>
+<td data-block_type="TBN-TXT" align="center">80</td>
+<td data-block_type="TBN-TXT" align="center">84</td>
+<td data-block_type="TBN-TXT" align="center">85</td>
+<td data-block_type="TBN-TXT" align="center">88</td>
+<td data-block_type="TBN-TXT" align="center">98</td>
+<td data-block_type="TBN-TXT" align="center">100</td>
+<td data-block_type="TBN-TXT" align="center">100</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">105</td>
+<td data-block_type="TBN-TXT" align="center">105</td>
+<td data-block_type="TBN-TXT" align="center">105</td>
+<td data-block_type="TBN-TXT" align="center">115</td>
+<td data-block_type="TBN-TXT" align="center">120</td>
+<td data-block_type="TBN-TXT" align="center">135</td>
+<td data-block_type="TBN-TXT" align="center">135</td>
+<td data-block_type="TBN-TXT" align="center">136</td>
+<td data-block_type="TBN-TXT" align="center">157</td>
+<td data-block_type="TBN-TXT" align="center">210</td>
+</tr>
+</tbody></table>
+</div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0188"><p><span data-type="link" data-href="table_5_1.html">Table 5.1</span> contains the lengths of a random sample of 60 visits from this population. The mean of these 60 visits is <span data-math="math_39"></span> = 63.45 minutes. If we were to take another sample of size 60, we would likely get a different value of <span data-math="math_40"></span>. This is because this new sample would contain a different set of visits. To find the sampling distribution of <span data-math="math_41"></span>, we take many SRSs of size 60 and calculate <span data-math="math_42"></span> for each sample. <span data-type="link" data-href="figure_5_6.html">Figure 5.6(b)</span> is the distribution of the values of <span data-math="math_43"></span> for 500 random samples. The scales and choice of classes are exactly the same as in <span data-type="link" data-href="figure_5_6.html">Figure 5.6(a)</span> so that we can make a direct comparison.</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch05-box-76"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-76"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="HELP60" data-block_type="rl_dataset" id="ips9e-ch05-p-0189"><p><span>HELP60</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm3217008"><p></p></div>
+</div></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0190"><p>The sample means are much less spread out than the individual visit lengths. What is more, the Normal quantile plot in <span data-type="link" data-href="figure_5_7.html">Figure 5.7</span> confirms that the distribution in <span data-type="link" data-href="figure_5_6.html">Figure 5.6(b)</span> is close to Normal.</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_5_7.html" data-figure-id="ips9e-ch05-fig-008" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_07.jpg" data-figure-id="ips9e-ch05-fig-008" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.7: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.7</span> <span data-block_type="FG-CAP">Normal quantile plot of the 500 sample means in <span data-type="link" data-href="figure_5_6.html">Figure 5.6(b)</span>. The distribution is close to Normal.</span></span>
+</div>
+</div>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0191"><p>This example illustrates two important facts about sample means that we will discuss in this section.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_296"><p>296</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-019"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-019"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0193"><p>FACTS ABOUT SAMPLE MEANS</p></div>
+<ol data-block_type="numbered" id="ips9e-ch05-list-015">
+<li><div data-block_type="BX1-NLF" id="ips9e-ch05-p-0194"><p><span data-block_type="maker">1.</span> Sample means are less variable than individual observations.</p></div></li>
+<li><div data-block_type="BX1-NL-L" id="ips9e-ch05-p-0195"><p><span data-block_type="maker">2.</span> Sample means are more Normal than individual observations.</p></div></li>
+</ol>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0196"><p>These two facts contribute to the popularity of sample means in statistical inference.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0197"><p><span data-block_type="h2">The mean and standard deviation of <span data-math="math_44"></span></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0198"><p>The sample mean <span data-math="math_45"></span> from a sample or an experiment is an estimate of the mean <em>μ</em> of the underlying population. The sampling distribution of <span data-math="math_46"></span> is determined by</p></div>
+<ul data-block_type="bullet" id="ips9e-ch05-list-016">
+<li><div data-block_type="BL-first" id="ips9e-ch05-p-0199"><p><span data-block_type="maker">•</span> the design used to produce the data,</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch05-p-0200"><p><span data-block_type="maker">•</span> the sample size <em>n</em>, and</p></div></li>
+<li><div data-block_type="BL-last" id="ips9e-ch05-p-0201"><p><span data-block_type="maker">•</span> the population distribution.</p></div></li>
+</ul>
+<div data-block_type="TXT" id="ips9e-ch05-p-0202"><p>Select an SRS of size <em>n</em> from a population, and measure a variable <em>X</em> on each individual in the sample. The <em>n</em> measurements are values of <em>n</em> random variables <em>X</em><sub>1</sub>, <em>X</em><sub>2</sub>, . . . , <em>X<sub>n</sub></em>. A single <em>X<sub>i</sub></em> is a measurement on one individual selected at random from the population and, therefore, has the distribution of the population. If the population is large relative to the sample, we can consider <em>X</em><sub>1</sub>, <em>X</em><sub>2 </sub>, . . . , <em>X<sub>n</sub></em> to be independent random variables, each having the same distribution. This is our probability model for measurements on each individual in an SRS.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0203"><p>The sample mean of an SRS of size <em>n</em> is</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0204"><p><span data-math="math_47"></span></p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idm3174112"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idm3174112"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0206"><p>rules for means, <span data-type="link" data-href="alias:page_254">p. 254</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0207"><p>If the population has mean <em>μ</em>, then <em>μ</em> is the mean of the distribution of each observation <em>X<sub>i</sub></em>. To get the mean of <span data-math="math_48"></span>, we use the rules for means of random variables. Specifically,</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0208"><p><span data-math="math_49"></span></p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idm3167616"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idm3167616"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0211"><p>rules for variances, <span data-type="link" data-href="alias:page_258">p. 258</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0212"><p>That is, <em>the mean of</em> <span data-math="math_50"></span> <em>is the same as the mean of the population.</em> The sample mean <span data-math="math_51"></span> is, therefore, an unbiased estimator of the unknown population mean <em>μ</em>.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0213"><p>The observations are independent, so the addition rule for variances also applies:</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0214"><p><span data-math="math_52"></span></p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_297"><p>297</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0218"><p>With <em>n</em> in the denominator, the variability of <span data-math="math_53"></span> about its mean decreases as the sample size grows. Thus, a sample mean from a large sample will usually be very close to the true population mean <em>μ</em>. Here is a summary of these facts.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-020"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-020"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0219"><p>MEAN AND STANDARD DEVIATION OF A SAMPLE MEAN</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0220"><p>Let <span data-math="math_54"></span> be the mean of an SRS of size <em>n</em> from a population having mean <em>μ</em> and standard deviation <em>σ</em>. The mean and standard deviation of <span data-math="math_55"></span> are</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch05-p-0221"><p><span data-math="math_56"></span></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch05-p-0222"><p><span data-math="math_57"></span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0223"><p>How precisely does a sample mean <span data-math="math_58"></span> estimate a population mean <em>μ</em>? Because the values of <span data-math="math_59"></span> vary from sample to sample, we must give an answer in terms of the sampling distribution. We know that <span data-math="math_60"></span> is an unbiased estimator of <em>μ</em>, so its values in repeated samples are not systematically too high or too low. Most samples will give an <span data-math="math_61"></span>-value close to <em>μ</em> if the sampling distribution is concentrated close to its mean <em>μ</em>. So the precision of estimation depends on the spread of the sampling distribution.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0224"><p>Because the standard deviation of <span data-math="math_62"></span> is <span data-math="math_63"></span>, the standard deviation of the statistic decreases in proportion to the square root of the sample size. This means, for example, that a sample size must be multiplied by 4 in order to divide the statistic’s standard deviation in half. By comparison, a sample size must be multiplied by 100 in order to reduce the standard deviation by a factor of 10.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_6.html" id="ips9e-ch05-box-021"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-021"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0225"><p>EXAMPLE 5.6</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0226"><p><span data-block_type="EXP-T-ri">Standard deviations for sample means of visit lengths.</span> The standard deviation of the population of visit lengths in <span data-type="link" data-href="figure_5_6.html">Figure 5.6(a)</span> (page 294) is <em>σ</em> = 41.84 minutes. The length of a single visit will often be far from the population mean. If we choose an SRS of 15 visits, the standard deviation of their mean length is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0227"><p><span data-math="math_64"></span></p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0228"><p>Averaging over more visits reduces the variability and makes it more likely that <span data-math="math_65"></span> is close to <em>μ</em>. Our sample size of 60 visits is 4 times 15, so the standard deviation will be half as large:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0229"><p><span data-math="math_66"></span></p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-022"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-022"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0230"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_18.html" id="ips9e-ch05-quest-0018">
+<h3>Question
+			    <span data-type="number">5.18 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0231"><p><span data-block_type="EXR-QUE-N-ri">5.18</span> <span data-block_type="EXR-QUE-T-ri">Find the mean and the standard deviation of the sampling distribution.</span> Compute the mean and standard deviation of the sampling distribution of the sample mean when you plan to take an SRS of size 64 from a population with mean 44 and standard deviation 16.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_5_19.html" id="ips9e-ch05-quest-0019">
+<h3>Question
+			    <span data-type="number">5.19 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch05-p-0232"><p><span data-block_type="EXR-QUE-N-ri">5.19</span> <span data-block_type="EXR-QUE-T-ri">The effect of increasing the sample size.</span> In the setting of the previous exercise, repeat the calculations for a sample size of 576. Explain the effect of the sample size increase on the mean and standard deviation of the sampling distribution.</p></div>
+</div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_298"><p>298</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0234"><p><span data-block_type="h2">The central limit theorem</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0235"><p>We have described the center and spread of the probability distribution of a sample mean <span data-math="math_67"></span>, but not its shape. The shape of the distribution of <span data-math="math_68"></span> depends on the shape of the population distribution. Here is one important case: if the population distribution is Normal, then so is the distribution of the sample mean.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-023"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-023"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0236"><p>SAMPLING DISTRIBUTION OF A SAMPLE MEAN</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0237"><p>If a population has the <em>N</em>(<em>μ</em>, <em>σ</em>) distribution, then the sample mean <span data-math="math_69"></span> of <em>n</em> independent observations has the <span data-math="math_70"></span> distribution.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0238"><p>This is a somewhat special result. Many population distributions are not Normal. The help room visit lengths in <span data-type="link" data-href="figure_5_6.html">Figure 5.6(a)</span>, for example, are strongly skewed. Yet <span data-type="link" data-href="figure_5_6.html">Figure 5.6(b)</span> and <span data-type="link" data-href="figure_5_7.html">5.7</span> show that means of samples of size 60 are close to Normal.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0239"><p>One of the most famous facts of probability theory says that, for large sample sizes, the distribution of <span data-math="math_71"></span> is close to a Normal distribution. This is true no matter what shape the population distribution has, as long as the population has a finite standard deviation <em>σ</em>. This is the <span data-type="termref" data-term="central limit theorem"><strong>central limit theorem</strong></span><span data-block_type="MN-GL-term">central limit theorem</span>. It is much more useful than the fact that the distribution of <span data-math="math_72"></span> is exactly Normal if the population is exactly Normal.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-024"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-024"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0241"><p>CENTRAL LIMIT THEOREM</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0242"><p>Draw an SRS of size <em>n</em> from any population with mean <em>μ</em> and finite standard deviation <em>σ</em>. When <em>n</em> is large, the sampling distribution of the sample mean <span data-math="math_73"></span> is approximately Normal:</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch05-p-0243"><p><span data-math="math_74"></span> is approximately <span data-math="math_75"></span></p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_7.html" id="ips9e-ch05-box-025"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-025"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0244"><p>EXAMPLE 5.7</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0245"><p><span data-block_type="EXP-T-ri">How close will the sample mean be to the population mean?</span> With the Normal distribution to work with, we can better describe how precisely a random sample of 60 visits estimates the mean length of all visits to the help room. The population standard deviation for the 1264 visits in the population of <span data-type="link" data-href="figure_5_6.html">Figure 5.6(a)</span> is <em>σ</em> = 41.84 minutes. From <span data-type="link" data-href="example_5_6.html">Example 5.6</span> we know <span data-math="math_76"></span> minutes. By the 95 part of the 68–95–99.7 rule, about 95% of all samples will have mean <span data-math="math_77"></span> within two standard deviations of <em>μ</em>, that is, within ±10.8 minutes of <em>μ</em>.</p></div>
+</div></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idm3087968"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idm3087968"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0247"><p>68–95–99.7 rule, <span data-type="link" data-href="alias:page_57">p. 57</span></p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-026"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-026"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0248"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_20.html" id="ips9e-ch05-quest-0020">
+<h3>Question
+			    <span data-type="number">5.20 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0249"><p><span data-block_type="EXR-QUE-N-ri">5.20</span> <span data-block_type="EXR-QUE-T-ri">Use the 68–95–99.7 rule.</span> You take an SRS of size 64 from a population with mean 82 and standard deviation 24. According to the central limit theorem, what is the approximate sampling distribution of the sample mean? Use the 95 part of the 68–95–99.7 rule to describe the variability of <span data-math="math_78"></span>.</p></div>
+</div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_299"><p>299</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0251"><p>For the sample size of <em>n</em> = 60 in <span data-type="link" data-href="example_5_7.html">Example 5.7</span>, the sample mean is not very precise. The population of help room visit lengths is very spread out, so the sampling distribution of <span data-math="math_79"></span> has a large standard deviation.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_8.html" id="ips9e-ch05-box-027"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-027"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0252"><p>EXAMPLE 5.8</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0253"><p><span data-block_type="EXP-T-ri">How can we reduce the standard deviation?</span> In the setting of <span data-type="link" data-href="example_5_7.html">Example 5.7</span>, if we want to reduce the standard deviation of <span data-math="math_80"></span> by a factor of 2, we must take a sample four times as large, <em>n</em> = 4 × 60, or 240. Then</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0254"><p><span data-math="math_81"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch05-p-0255"><p>For samples of size 240, about 95% of the sample means will be within twice 2.70, or 5.40 minutes, of the population mean <em>μ</em>.</p></div>
+</div></div>
+<div data-block_type="Caution icon" id="ips9e-ch05-p-0256"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0257"><p>The standard deviation computed in <span data-type="link" data-href="example_5_8.html">Example 5.8</span> is actually too large. This is due to the fact that the population size, <em>N</em> = 1264, is not at least 20 times larger than the sample size, <em>n</em> = 240. In these settings, it is better to adjust the standard deviation of <span data-math="math_82"></span> to reflect only the variance remaining in the population that is not in the sample. This is done by multiplying the unadjusted standard deviation by the <span data-type="termref" data-term="finite population correction factor"><strong>finite population correction factor</strong></span><span data-block_type="MN-GL-term">finite population correction factor</span>. This quantity is <span data-math="math_83"></span> and moves the standard deviation of <span data-math="math_84"></span> toward 0 as <em>n</em> moves toward <em>N</em>. Applying this correction to <span data-type="link" data-href="example_5_8.html">Example 5.8</span>, the standard deviation of <span data-math="math_85"></span> is reduced 10% to</p></div>
+<div data-block_type="EQ" id="ips9e-ch05-p-0259"><p><span data-math="math_86"></span></p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0260"><p>Thus, for samples of size 240, about 95% of the sample means will be within twice 2.43, or 4.86 minutes, of the population mean <em>μ</em>, rather than the 5.40 minutes reported in <span data-type="link" data-href="example_5_8.html">Example 5.8</span>.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-028"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-028"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0261"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_21.html" id="ips9e-ch05-quest-0021">
+<h3>Question
+			    <span data-type="number">5.21 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0262"><p><span data-block_type="EXR-QUE-N-ri">5.21</span> <span data-block_type="EXR-QUE-T-ri">The effect of increasing the sample size.</span> In the setting of <span data-type="link" data-href="exercise_5_20.html">Exercise 5.20</span>, suppose that we increase the sample size to 2304. Use the 95 part of the 68–95–99.7 rule to describe the variability of this sample mean. Compare your results with those you found in <span data-type="link" data-href="exercise_5_20.html">Exercise 5.20</span>.</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0263"><p><span data-type="link" data-href="example_5_8.html">Example 5.8</span> reminds us that if the population is very spread out, the <span data-math="math_87"></span> in the formula for the deviation of <span data-math="math_88"></span> implies that very large samples are needed to estimate the population mean precisely. The main point of the example, however, is that the central limit theorem allows us to use Normal probability calculations to answer questions about sample means even when the population distribution is not Normal.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0264"><p>How large a sample size <em>n</em> is needed for <span data-math="math_89"></span> to be close to Normal depends on the population distribution. More observations are required if the shape of the population distribution is far from Normal. For the very skewed visit length population, samples of size 60 are large enough. Further study would be needed to see if the distribution of <span data-math="math_90"></span> is close to Normal for smaller samples like <em>n</em> = 20 or <em>n</em> = 40. Here is a more detailed study of another skewed distribution.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_300"><p>300</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_9.html" id="ips9e-ch05-box-029"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-029"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0265"><p>EXAMPLE 5.9</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0267"><p><span data-block_type="EXP-T-ri">The central limit theorem in action.</span> <span data-type="link" data-href="figure_5_8.html">Figure 5.8</span> shows the central limit theorem in action for another very non-Normal population. <span data-type="link" data-href="figure_5_8.html">Figure 5.8(a)</span> displays the density curve of a single observation from the population. The distribution is strongly right-skewed, and the most probable outcomes are near 0. The mean <em>μ</em> of this distribution is 1, and its standard deviation <em>σ</em> is also 1. This particular continuous distribution is called an <span data-type="termref" data-term="exponential distribution"><strong>exponential distribution</strong></span><span data-block_type="MN-GL-term">exponential distribution</span>. Exponential distributions are used as models for how long an iPhone will function properly and for the time between snaps you receive on Snapchat.</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_5_8.html" data-figure-id="ips9e-ch05-fig-009" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_08a-d.jpg" data-figure-id="ips9e-ch05-fig-009" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.8: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.8</span> <span data-block_type="FG-CAP">The central limit theorem in action: the sampling distribution of sample means from a strongly non-Normal population becomes more Normal as the sample size increases, <span data-type="link" data-href="example_5_9.html">Example 5.9</span>. (a) The distribution of 1 observation. (b) The distribution of <span data-math="math_91"></span> for 2 observations. (c) The distribution of <span data-math="math_92"></span> for 10 observations. (d) The distribution of <span data-math="math_93"></span> for 25 observations.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0269"><p><span data-type="link" data-href="figure_5_8.html">Figure 5.8(b)</span>, <span data-type="link" data-href="figure_5_8.html">(c)</span>, and <span data-type="link" data-href="figure_5_8.html">(d)</span> are the density curves of the sample means of 2, 10, and 25 observations from this population. As <em>n</em> increases, the shape becomes more Normal. The mean remains at <em>μ</em> = 1, but the standard deviation decreases, taking the value <span data-math="math_94"></span>. The density curve for 10 observations is still somewhat skewed to the right but already resembles a Normal curve having <em>μ</em> = 1 and <span data-math="math_95"></span>. The density curve for <em>n</em> = 25 is yet more Normal. The contrast between the shape of the population distribution and of the distribution of the mean of 10 or 25 observations is striking.</p></div>
+</div></div>
+<div data-block_type="Applet icon" id="ips9e-ch05-p-0270"><p><img id="" src="asset/global_images/BPSapplet-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0271"><p>You can also use the <em>Central Limit Theorem</em> applet to study the sampling distribution of <span data-math="math_96"></span>. From one of three population distributions, 10,000 SRSs of a user-specified sample size <em>n</em> are generated, and a histogram of the sample means is constructed. You can then compare this estimated sampling distribution with the Normal curve that is based on the central limit theorem.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_301"><p>301</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_10.html" id="ips9e-ch05-box-030"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-030"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0273"><p>EXAMPLE 5.10</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0274"><p><span data-block_type="EXP-T-ri">Using the <em>Central Limit Theorem</em> applet.</span> In <span data-type="link" data-href="example_5_9.html">Example 5.9</span>, we considered sample sizes of <em>n</em> = 2, 10, and 25 from an exponential distribution. <span data-type="link" data-href="figure_5_9.html">Figure 5.9</span> shows a screenshot of the <em>Central Limit Theorem</em> applet for the exponential distribution when <em>n</em> = 10. The mean and standard deviation of this sampling distribution are 1 and <span data-math="math_97"></span>, respectively. From the 10,000 SRSs, the mean is estimated to be 1.001 and the estimated standard deviation is 0.319. These are both quite close to the true values. In <span data-type="link" data-href="figure_5_8.html">Figure 5.8(c)</span>, we saw that the density curve for 10 observations is still somewhat skewed to the right. We can see this same behavior in <span data-type="link" data-href="figure_5_9.html">Figure 5.9</span> when we compare the histogram with the Normal curve based on the central limit theorem.</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_5_9.html" data-figure-id="ips9e-ch05-fig-010" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_09.jpg" data-figure-id="ips9e-ch05-fig-010" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.9: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.9</span> <span data-block_type="FG-CAP">Screenshot of the <em>Central Limit Theorem</em> applet for the exponential distribution when <em>n</em> = 10, <span data-type="link" data-href="example_5_10.html">Example 5.10</span>.</span></span>
+</div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0275"><p>Try using the applet for the other sample sizes in <span data-type="link" data-href="example_5_9.html">Example 5.9</span>. You should get histograms shaped like the density curves shown in <span data-type="link" data-href="figure_5_8.html">Figure 5.8</span>. You can also consider other sample sizes by sliding <em>n</em> from 1 to 100. As you increase <em>n</em>, the shape of the histogram moves closer to the Normal curve that is based on the central limit theorem.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-031"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-031"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0276"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" id="ips9e-ch05-quest-0022">
+<h3>Question
+			    <span data-type="number">5.22 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0277"><p><img id="" src="asset/global_images/BPSapplet-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"> <span data-block_type="EXR-QUE-N-ri">5.22</span> <span data-block_type="EXR-QUE-T-ri">Use the <em>Central Limit Theorem</em> applet.</span> Let’s consider the uniform distribution between 0 and 10. For this distribution, all intervals of the same length between 0 and 10 are equally likely. This distribution has a mean of 5 and standard deviation of 2.89.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch05-list-017">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0279"><p><span data-block_type="maker">(a)</span> Approximate the population distribution by setting <em>n</em> = 1 and clicking the “Generate samples” button.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0280"><p><span data-block_type="maker">(b)</span> What are your estimates of the population mean and population standard deviation based on the 10,000 SRSs? Are these population estimates close to the true values?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0281"><p><span data-block_type="maker">(c)</span> Describe the shape of the histogram and compare it with the Normal curve.</p></div></li>
+</ol>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_302"><p>302</p></div>
+<div data-type="question" id="ips9e-ch05-quest-0023">
+<h3>Question
+			    <span data-type="number">5.23 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch05-p-0283"><p><img id="" src="asset/global_images/BPSapplet-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"> <span data-block_type="EXR-QUE-N-ri">5.23</span> <span data-block_type="EXR-QUE-T-ri">Use the <em>Central Limit Theorem</em> applet again.</span> Refer to the previous exercise. In the setting of <span data-type="link" data-href="example_5_9.html">Example 5.9</span>, let’s approximate the sampling distribution for samples of size <em>n</em> = 2, 10, and 25 observations.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch05-list-018">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0285"><p><span data-block_type="maker">(a)</span> For each sample size, compute the mean and standard deviation of <span data-math="math_98"></span>.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0286"><p><span data-block_type="maker">(b)</span> For each sample size, use the applet to approximate the sampling distribution. Report the estimated mean and standard deviation. Are they close to the true values calculated in part (a)?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0287"><p><span data-block_type="maker">(c)</span> For each sample size, compare the shape of the sampling distribution with the Normal curve based on the central limit theorem.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch05-p-0288"><p><span data-block_type="maker">(d)</span> For this population distribution, what sample size do you think is needed to make you feel comfortable using the central limit theorem to approximate the sampling distribution of <span data-math="math_99"></span>? Explain your answer.</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0289"><p>Now that we know that the sampling distribution of the sample mean <span data-math="math_100"></span> is approximately Normal for a sufficiently large <em>n</em>, let’s consider some probability calculations.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_11.html" id="ips9e-ch05-box-032"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-032"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0290"><p>EXAMPLE 5.11</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0291"><p><span data-block_type="EXP-T-ri">Time between snaps.</span> Snapchat has more than 100 million daily users sending well over 400 million snaps a day.<span data-type="termref" data-term="fn_ch5_fn6"><sup>6</sup></span> Suppose that the time <em>X</em> between snaps received is governed by the exponential distribution with mean <em>μ</em> = 15 minutes and standard deviation <em>σ</em> = 15 minutes. You record the next 50 times between snaps. What is the probability that their average exceeds 13 minutes?</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0292"><p>The central limit theorem says that the sample mean time <span data-math="math_101"></span> (in minutes) between snaps has approximately the Normal distribution with mean equal to the population mean <em>μ</em> = 15 minutes and standard deviation</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0293"><p><span data-math="math_102"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch05-p-0294"><p>The sampling distribution of <span data-math="math_103"></span> is, therefore, approximately <em>N</em>(15,2.12). <span data-type="link" data-href="figure_5_10.html">Figure 5.10</span> shows this Normal curve (solid) and also the actual density curve of <span data-math="math_104"></span> (dashed).</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0295"><p>The probability we want is <span data-math="math_105"></span>. This is the area to the right of 13 under the solid Normal curve in <span data-type="link" data-href="figure_5_10.html">Figure 5.10</span>. A Normal distribution calculation gives</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0296"><p><span data-math="math_106"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0297"><p>= <em>P</em> (<em>Z</em> &gt; −0.94) = 0.8264</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_303"><p>303</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_5_10.html" data-figure-id="ips9e-ch05-fig-011" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_10.jpg" data-figure-id="ips9e-ch05-fig-011" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.10: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.10</span> <span data-block_type="FG-CAP">The exact distribution (dashed) and the Normal approximation from the central limit theorem (solid) for the average time between snaps received, <span data-type="link" data-href="example_5_11.html">Example 5.11</span>.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch05-p-0299"><p>The exactly correct probability is the area under the dashed density curve in the figure. It is 0.8265. The central limit theorem Normal approximation is off by only about 0.0001.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0300"><p>We can also use this sampling distribution to talk about the total time between the 1st and 51st snap received.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_12.html" id="ips9e-ch05-box-033"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-033"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0301"><p>EXAMPLE 5.12</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0302"><p><span data-block_type="EXP-T-ri">Convert the results to the total time.</span> There are 50 time intervals between the 1st and 51st snap. According to the central limit theorem calculations in <span data-type="link" data-href="example_5_11.html">Example 5.11</span>,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0303"><p><span data-math="math_107"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch05-p-0304"><p>We know that the sample mean is the total time divided by 50, so the event <span data-math="math_108"></span> is the same as the event <span data-math="math_109"></span>. We can say that the probability is 0.8264 that the total time is 50(13.0) = 650 minutes (10.8 hours) or greater.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-034"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-034"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0305"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_24.html" id="ips9e-ch05-quest-0024">
+<h3>Question
+			    <span data-type="number">5.24 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first2digit" id="ips9e-ch05-p-0306"><p><span data-block_type="EXR-QUE-N-ri">5.24</span> <span data-block_type="EXR-QUE-T-ri">Find a probability.</span> Refer to <span data-type="link" data-href="example_5_11.html">Example 5.11</span>. Find the probability that the mean time between snaps is less than 15 minutes. The exact probability is 0.5188. Compare your answer with the exact one.</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0307"><p><span data-type="link" data-href="figure_5_11.html">Figure 5.11</span> summarizes the facts about the sampling distribution of <span data-math="math_110"></span> in a way that emphasizes the big idea of a sampling distribution. The general framework for constructing the sampling distribution of <span data-math="math_111"></span> is shown on the left.</p></div>
+<ul data-block_type="bullet" id="ips9e-ch05-list-019">
+<li><div data-block_type="BL-first" id="ips9e-ch05-p-0308"><p><span data-block_type="maker">•</span> Take many random samples of size <em>n</em> from a population with mean <em>μ</em> and standard deviation <em>σ</em>.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch05-p-0309"><p><span data-block_type="maker">•</span> Find the sample mean <span data-math="math_112"></span> for each sample.</p></div></li>
+<li><div data-block_type="BL-last" id="ips9e-ch05-p-0310"><p><span data-block_type="maker">•</span> Collect all the <span data-math="math_113"></span>’s and display their distribution.</p></div></li>
+</ul>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0311"><p>The sampling distribution of <span data-math="math_114"></span> is shown on the right. Keep this figure in mind as you go forward.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_304"><p>304</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_5_11.html" data-figure-id="ips9e-ch05-fig-012" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_11.jpg" data-figure-id="ips9e-ch05-fig-012" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.11: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.11</span> <span data-block_type="FG-CAP">The sampling distribution of a sample mean <span data-math="math_115"></span> has mean <em>μ</em> and standard deviation <span data-math="math_116"></span>. The sampling distribution is Normal if the population distribution is Normal; it is approximately Normal for large samples in any case.</span></span>
+</div>
+</div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0313"><p><span data-block_type="h2">A few more facts</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0314"><p>The central limit theorem is the big fact of probability theory in this section. Here are three additional facts related to our investigations that will be useful in describing methods of inference in later chapters.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0315"><p>The fact that the sample mean of an SRS from a Normal population has a Normal distribution is a special case of a more general fact: <strong>any linear combination of independent Normal random variables is also Normally distributed</strong>. That is, if <em>X</em> and <em>Y</em> are independent Normal random variables and <em>a</em> and <em>b</em> are any fixed numbers, <em>aX</em> + <em>bY</em> is also Normally distributed, and this is true for any number of Normal random variables. In particular, the sum or difference of independent Normal random variables has a Normal distribution. The mean and standard deviation of <em>aX</em> + <em>bY</em> are found as usual from the rules for means and variances. These facts are often used in statistical calculations. Here is an example.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idp54669440"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp54669440"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0317"><p>rules for means, <span data-type="link" data-href="alias:page_254">p. 254</span></p></div>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-0318"><p>rules for variances, <span data-type="link" data-href="alias:page_258">p. 258</span></p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_13.html" id="ips9e-ch05-box-035"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-035"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0319"><p>EXAMPLE 5.13</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0320"><p><span data-block_type="EXP-T-ri">Getting to and from campus.</span> You live off campus and take the shuttle, provided by your apartment complex, to and from campus. Your time on the shuttle in minutes varies from day to day. The time going to campus <em>X</em> has the <em>N</em>(20,4) distribution, and the time returning from campus <em>Y</em> varies according to the <em>N</em>(18, 8) distribution. If they vary independently, what is the probability that you will be on the shuttle for less time going to campus?</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0321"><p>The difference in times <em>X</em> − <em>Y</em> is Normally distributed, with mean and variance</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0322"><p><em>μ<sub>X</sub></em><sub>−</sub><em><sub>Y</sub></em> = <em>μ<sub>X</sub></em> − <em>μ<sub>Y</sub></em> = 20 − 18 = 2</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0323"><p><span data-math="math_117"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch05-p-0324"><p>Because <span data-math="math_118"></span>, <em>X</em> − Y has the <em>N</em>(2, 8.94) distribution. <span data-type="link" data-href="figure_5_12.html">Figure 5.12</span> illustrates the probability computation:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0325"><p><em>P</em>(<em>X</em> &lt; <em>Y</em>) = <em>P</em>(<em>X</em> − <em>Y</em> &lt; 0)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0326"><p><span data-math="math_119"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0327"><p>= <em>P</em>(<em>Z</em> &lt; −0.22) = 0.4129</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch05-p-0328"><p>Although, on average, it takes longer to go to campus than return, the trip to campus will take less time on roughly two of every five days.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_305"><p>305</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_5_12.html" data-figure-id="ips9e-ch05-fig-013" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_12.jpg" data-figure-id="ips9e-ch05-fig-013" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.12: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.12</span> <span data-block_type="FG-CAP">The Normal probability calculation, <span data-type="link" data-href="example_5_13.html">Example 5.13</span>. The difference in times going to campus and returning from campus (<em>X</em> − <em>Y</em> ) is Normal with mean 2 minutes and standard deviation 8.94 minutes.</span></span>
+</div>
+</div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0330"><p>The second useful fact is that <strong>more general versions of the central limit theorem say that the distribution of a sum or average of many small random quantities is close to Normal</strong>. This is true even if the quantities are not independent (as long as they are not too highly correlated) and even if they have different distributions (as long as no single random quantity is so large that it dominates the others). These more general versions of the central limit theorem suggest why the Normal distributions are common models for observed data. Any variable that is a sum of many small random influences will have approximately a Normal distribution.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0331"><p>Finally, <strong>the central limit theorem also applies to discrete random variables</strong>. An average of discrete random variables will never result in a continuous sampling distribution, but the Normal distribution often serves as a good approximation. In <span data-type="link" data-href="ips9e_ch5_8.html" data-target="_pop">Section 5.3</span>, we will discuss the sampling distribution and Normal approximation for counts and proportions. This Normal approximation is just an example of the central limit theorem applied to these discrete random variables.</p></div>
+<div data-type="box" data-block_type="BX2" id="ips9e-ch05-box-036"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-036"></h3>
+<div data-block_type="BX2-H" id="ips9e-ch05-p-0332"><p>BEYOND THE BASICS</p></div>
+<div data-block_type="BX2-T" id="ips9e-ch05-p-0333"><p>Weibull Distributions</p></div>
+<div data-block_type="BX2-TXT-ni" id="ips9e-ch05-p-0334"><p>Our discussion of sampling distributions so far has concentrated on the Normal model to approximate the sampling distribution of the sample mean <span data-math="math_120"></span>. This model is important in statistical practice because of the central limit theorem and the fact that sample means are among the most frequently used statistics. Simplicity also contributes to its popularity. The parameter <em>μ</em> is easy to understand, and to estimate it, we use a statistic <span data-math="math_121"></span> that is also easy to understand and compute.</p></div>
+<div data-block_type="BX2-TXT-ni" id="ips9e-ch05-p-0335"><p>There are, however, many other probability distributions that are used to model data in various circumstances. The time that a product, such as a computer hard drive, lasts before failing rarely has a Normal distribution. Earlier, we mentioned the use of the exponential distribution to model time to failure. Another class of continuous distributions, the <span data-type="termref" data-term="Weibull distributions"><strong>Weibull distributions</strong></span><span data-block_type="MN-GL-term">Weibull distributions</span>, is more commonly used in these situations.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_306"><p>306</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_14.html" id="ips9e-ch05-box-037"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-037"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0338"><p>EXAMPLE 5.14</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0339"><p><span data-block_type="EXP-T-ri">Weibull density curves.</span> <span data-type="link" data-href="figure_5_13.html">Figure 5.13</span> shows the density curves of three members of the Weibull family. Each describes a different type of distribution for the time to failure of a product.</p></div>
+<ol data-block_type="numbered" id="ips9e-ch05-list-020">
+<li><div data-block_type="BX1-NLF" id="ips9e-ch05-p-0340"><p><span data-block_type="maker">1.</span> The top curve in <span data-type="link" data-href="figure_5_13.html">Figure 5.13</span> is a model for <em>infant mortality.</em> This describes products that often fail immediately, prior to delivery to the customer. However, if the product does not fail right away, it will likely last a long time. For products like this, a manufacturer might test them and ship only the ones that do not fail immediately.</p></div></li>
+<li><div data-block_type="BX1-NL-L" id="ips9e-ch05-p-0341"><p><span data-block_type="maker">2.</span> The middle curve in <span data-type="link" data-href="figure_5_13.html">Figure 5.13</span> is a model for <em>early failure.</em> These products do not fail immediately, but many fail early in their lives after they are in the hands of customers. This is disastrous—the product or the process that makes it must be changed at once.</p></div></li>
+<li><div data-block_type="BX1-NL-L" id="ips9e-ch05-p-0342"><p><span data-block_type="maker">3.</span> The bottom curve in <span data-type="link" data-href="figure_5_13.html">Figure 5.13</span> is a model for <em>old-age wear-out.</em> Most of these products fail only when they begin to wear out, and then many fail at about the same age.</p></div></li>
+</ol>
+</div></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_5_13.html" data-figure-id="ips9e-ch05-fig-014" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_13.jpg" data-figure-id="ips9e-ch05-fig-014" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.13: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.13</span> <span data-block_type="FG-CAP">Density curves for three members of the Weibull family of distributions, <span data-type="link" data-href="example_5_14.html">Example 5.14</span>.</span></span>
+</div>
+</div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0343"><p>A manufacturer certainly wants to know to which of these classes a new product belongs. To find out, engineers operate a random sample of products until they fail. From the failure time data, we can estimate the parameter (called the “shape parameter”) that distinguishes among the three Weibull distributions in <span data-type="link" data-href="figure_5_13.html">Figure 5.13</span>. The shape parameter has no simple definition like that of a population proportion or mean, and it cannot be estimated by a simple statistic such as <span data-math="math_122"></span> or <span data-math="math_123"></span>.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0344"><p>Two things save the situation. First, statistical theory provides general approaches for finding good estimates of any parameter. These general methods not only tell us how to use <span data-math="math_124"></span> in the Normal settings, but also how to estimate the Weibull shape parameter. Second, software can calculate the estimate from data even though there is no algebraic formula that we can write for the estimate. Statistical practice often relies on both mathematical theory and methods of computation more elaborate than the ones we will meet in this book. Fortunately, big ideas such as sampling distributions carry over to more complicated situations.<span data-type="termref" data-term="fn_ch5_fn7"><sup>7</sup></span></p></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch5.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('573ba099757a2e274d000001');
+});
+    //-->
+</script>
+</body>
+</html>
+

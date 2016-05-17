@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<manifest id="ips9e" timestamp="1462923389" supp_win="0"><manuscript id="57224235757a2ef453000000" title="Chapter 1: Looking at Data&#x2014;Distributions" question-delivery-method="ARGA" number="1">
+<manifest id="ips9e" timestamp="1463527321" supp_win="0"><manuscript id="57224235757a2ef453000000" title="Chapter 1: Looking at Data&#x2014;Distributions" question-delivery-method="ARGA" number="1">
     <section title="Looking at Data&#x2014;Distributions" id="ips9e-ch01-sec-01" folder="false" filename="ips9e_ch1_1.html" dlapFilename="ips9e_ch1_1_dlap.xml" numquestions="0"/>
     <section number="1.1" id="ips9e-ch01-sec1-01" folder="false" filename="ips9e_ch1_2.html" dlapFilename="ips9e_ch1_2_dlap.xml" numquestions="0">
       <title><phrase block_type="h1-N-ri">1.1</phrase> <phrase block_type="h1">Data</phrase></title>
@@ -198,5 +198,37 @@
     </section>
     <section id="ips9e-ch04-chapexer1-01" folder="false" filename="ips9e_ch4_17.html" dlapFilename="ips9e_ch4_17_dlap.xml" numquestions="0">
       <title><phrase block_type="CR-X-N-ri">CHAPTER 4</phrase> <phrase block_type="CR-X-H">EXERCISES</phrase></title>
+    </section>
+  </manuscript><manuscript id="573ba099757a2e274d000001" title="Chapter 5: Sampling Distributions" question-delivery-method="ARGA" number="5">
+    <section title="Sampling Distributions" id="ips9e-ch05-sec-001" folder="false" filename="ips9e_ch5_1.html" dlapFilename="ips9e_ch5_1_dlap.xml" numquestions="0"/>
+    <section number="5.1" id="ips9e-ch05-sec1-01" folder="false" filename="ips9e_ch5_2.html" dlapFilename="ips9e_ch5_2_dlap.xml" numquestions="0">
+      <title>5.1 Toward Statistical Inference</title>
+    </section>
+    <section id="ips9e-ch05-sum1-01" folder="false" filename="ips9e_ch5_3.html" dlapFilename="ips9e_ch5_3_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 5.1</phrase> <phrase block_type="SR-H">SUMMARY</phrase></title>
+    </section>
+    <section id="ips9e-ch05-exer1-01" folder="false" filename="ips9e_ch5_4.html" dlapFilename="ips9e_ch5_4_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 5.1</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></title>
+    </section>
+    <section number="5.2" id="ips9e-ch05-sec1-02" folder="false" filename="ips9e_ch5_5.html" dlapFilename="ips9e_ch5_5_dlap.xml" numquestions="0">
+      <title>5.2 The Sampling Distribution of a Sample Mean</title>
+    </section>
+    <section id="ips9e-ch05-sum1-02" folder="false" filename="ips9e_ch5_6.html" dlapFilename="ips9e_ch5_6_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 5.2</phrase> <phrase block_type="SR-H">SUMMARY</phrase></title>
+    </section>
+    <section id="ips9e-ch05-exer1-02" folder="false" filename="ips9e_ch5_7.html" dlapFilename="ips9e_ch5_7_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 5.2</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></title>
+    </section>
+    <section number="5.3" id="ips9e-ch05-sec1-03" folder="false" filename="ips9e_ch5_8.html" dlapFilename="ips9e_ch5_8_dlap.xml" numquestions="0">
+      <title>5.3 Sampling Distributions for Counts and Proportions</title>
+    </section>
+    <section id="ips9e-ch05-sum1-03" folder="false" filename="ips9e_ch5_9.html" dlapFilename="ips9e_ch5_9_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 5.3</phrase> <phrase block_type="SR-H">SUMMARY</phrase></title>
+    </section>
+    <section id="ips9e-ch05-exer1-03" folder="false" filename="ips9e_ch5_10.html" dlapFilename="ips9e_ch5_10_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 5.3</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></title>
+    </section>
+    <section id="ips9e-ch05-chapexer1-01" folder="false" filename="ips9e_ch5_11.html" dlapFilename="ips9e_ch5_11_dlap.xml" numquestions="0">
+      <title><phrase block_type="CR-X-N-ri">CHAPTER 5</phrase> <phrase block_type="CR-X-H">EXERCISES</phrase></title>
     </section>
   </manuscript></manifest>
