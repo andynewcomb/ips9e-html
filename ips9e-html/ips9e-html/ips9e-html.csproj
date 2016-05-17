@@ -766,6 +766,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="xml\addDataFilename.pl" />
+    <Content Include="xml\data-filename\ips9e-ch02.xml_datahref.xml" />
+    <Content Include="xml\data-filename\ips9e-ch03.xml_datahref.xml" />
+    <Content Include="xml\data-filename\ips9e-ch04.xml_datahref.xml" />
     <Content Include="xml\ips9e-ch01.xml" />
     <Content Include="xml\ips9e-ch04.xml" />
     <Content Include="xml\math2js.pl" />
