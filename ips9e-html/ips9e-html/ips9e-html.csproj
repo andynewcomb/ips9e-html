@@ -771,6 +771,7 @@
     <Content Include="xml\data-filename\ips9e-ch04.xml_datahref.xml" />
     <Content Include="xml\ips9e-ch01.xml" />
     <Content Include="xml\ips9e-ch04.xml" />
+    <Content Include="xml\ips9e-ch05.xml" />
     <Content Include="xml\math2js.pl" />
     <None Include="xml\xsd\digfir_manuscript.xsd">
       <SubType>Designer</SubType>
