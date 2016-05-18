@@ -18,7 +18,7 @@ var Player_subtype = Player_manuscript_type.extend({
 
     //cfg_LH_externalTargetDefault: "_pop",
     //cfg_LH_internalTargetDefault: "_pop",
-    //cfg_LH_ebookTargetDefault: "_pop",
+    cfg_LH_ebookTargetDefault: "_pop",
     //cfg_LH_imageTargetDefault: "_blank",
 
     cfg_LH_useOpenContent: "on",

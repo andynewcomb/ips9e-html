@@ -24,8 +24,7 @@ var suppwins_Player_subtype = Player_subtype.extend({
 
          var pop_content = function (url, w, h) {
              var path = window.location.pathname;
-             var newWin = window.open(url, '_blank', 'width=' + w + ',height=' + h + ',menubar=0,location=0,scrollbars=yes', '');
-             newWin.moveTo(150, 150);
+             var newWin = window.open(url, '_blank', 'width=' + w + ',height=' + h + ',menubar=0,location=0,scrollbars=yes', '');    
          };
 
          //unbind all references to supplemental windows.
