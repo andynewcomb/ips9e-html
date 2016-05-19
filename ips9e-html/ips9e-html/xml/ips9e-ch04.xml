@@ -26,7 +26,7 @@
 <p id="ips9e-ch04-p-10" block_type="SP-TXT-ni">When you complete this section, you will be able to:</p>
 <list id="ips9e-ch04-list-02" type="unordered" block_type="bluebullet">
 <li id="ips9e-ch04-li-06"><p id="ips9e-ch04-p-11" block_type="SP-BL-first"><phrase block_type="maker">&#8226;</phrase> Identify random phenomena.</p></li>
-<li id="ips9e-ch04-li-07"><p id="ips9e-ch04-p-12" block_type="SP-BL-mid"><phrase block_type="maker">&#8226;</phrase> Interpret the term &#8220;probability&#8221; for particular examples.</p></li>
+<li id="ips9e-ch04-li-07"><p id="ips9e-ch04-p-12" block_type="SP-BL-mid"><phrase block_type="maker">&#8226;</phrase> Interpret the term <em>probability</em> for particular examples.</p></li>
 <li id="ips9e-ch04-li-08"><p id="ips9e-ch04-p-13" block_type="SP-BL-last"><phrase block_type="maker">&#8226;</phrase> Identify trials as independent or not.</p></li>
 </list>
 </box>
@@ -112,7 +112,7 @@
 </list>
 </question>
 <question id="ips9e-ch04-ques-03" block_type="exercise_4_3.html">
-<p id="ips9e-ch04-p-59" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.3 Interpret the probabilities.</phrase> Refer to the previous exercise. In each case, interpret the term &#8220;probability&#8221; for the phenomena that are random. For those that are not random, explain why the term &#8220;probability&#8221; does not apply.</p>
+<p id="ips9e-ch04-p-59" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.3 Interpret the probabilities.</phrase> Refer to the previous exercise. In each case, interpret the term <em>probability</em> for the phenomena that are random. For those that are not random, explain why the term <em>probability</em> does not apply.</p>
 </question>
 <question id="ips9e-ch04-ques-04" block_type="exercise_4_4.html">
 <p id="ips9e-ch04-p-60" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">4.4 Are the trials independent?</phrase> For each of the following situations, identify the trials as independent or not. Explain your answers.</p>
@@ -505,7 +505,7 @@
 <image asset-id="ips9e-ch04-img-12" alt="image" src="asset/ch4/17MOOREIPS-MSE_9e_P_04_03.jpg"/>
 <asset_source><phrase block_type="PHCR">Profimedia.CZ a.s./Alamy</phrase></asset_source>
 </figure>
-<p id="ips9e-ch04-p-220" block_type="EXP-TXT-ni">Each parent plant carries two genes for seed color, and each of these genes has probability 1/2 of being passed to a seed. The two genes that the seed receives, one from each parent, determine its color. The parents contribute their genes independently of each other.</p>
+<p id="ips9e-ch04-p-220" block_type="EXP-TXT-ni">Each parent plant carries two genes for seed color, and each of these genes has probability 0.5 of being passed to a seed. The two genes that the seed receives, one from each parent, determine its color. The parents contribute their genes independently of each other.</p>
 <p id="ips9e-ch04-p-221" block_type="EXP-TXT-ni">Suppose that both parents carry the <em>G</em> and the <em>Y</em> genes. The seed will be green if both parents contribute a <em>G</em> gene; otherwise, it will be yellow. If <em>M</em> is the event that the male contributes a <em>G</em> gene and <em>F</em> is the event that the female contributes a <em>G</em> gene, then the probability of a green seed is</p>
 <p id="ips9e-ch04-p-222" block_type="EXP-EQ"><em>P</em>(<em>M</em> and <em>F</em>) &#61; <em>P</em>(<em>M</em>) <em>P</em>(<em>F</em>)</p>
 <p id="ips9e-ch04-p-223" block_type="EXP-EQ">&#61; (0.5)(0.5) &#61; 0.25</p>
@@ -948,8 +948,7 @@
 <figure id="ips9e-ch04-fig-11" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="4.7" mmtype="image" mmsrc="" attr="" data-filename="figure_4_7.html">
 <layout align="center" width="medium" border="false"/>
 <image asset-id="ips9e-ch04-img-20" alt="image" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_07.jpg"/>
-<caption><phrase block_type="FG-N-ri">Figure 4.7</phrase> <phrase block_type="FG-CAP">Probability histogram for the number of heads in four tosses of a coin.</phrase></caption>
-</figure>
+<caption><phrase block_type="FG-N-ri">Figure 4.7</phrase> <phrase block_type="FG-CAP">Probability histogram for the number of heads in four tosses of a coin(<link href="example_4_23.html">Example 4.23</link>).</phrase></caption></figure>
 <p id="ips9e-ch04-p-377" block_type="TXT"><link href="figure_4_7.html">Figure 4.7</link> is a probability histogram for the distribution in <link href="example_4_23.html">Example 4.23</link>. The probability distribution is exactly symmetric. The probabilities (bar heights) are idealizations of the proportions after very many tosses of four coins. The actual distribution of proportions observed would be nearly symmetric but is unlikely to be exactly symmetric.</p>
 <box id="ips9e-ch04-box-47" numbered="false" block_type="EXP" data-filename="example_4_24.html">
 <p id="ips9e-ch04-p-378" block_type="EXP-N">EXAMPLE 4.24</p>
@@ -1580,7 +1579,7 @@
 </question>
 </box>
 <p id="ips9e-ch04-p-618" block_type="level_2_title"><phrase block_type="h2">The variance of a random variable</phrase></p>
-<p id="ips9e-ch04-p-619" block_type="TXT-ni">The mean is a measure of the center of a distribution. A basic numerical description requires, in addition, a measure of the spread or variability of the distribution. The variance and the standard deviation are the measures of spread that accompany the choice of the mean to measure center. Just as for the mean, we need a distinct symbol to distinguish the variance of a random variable from the variance <em>s</em><sup>2</sup> of a data set. We write the variance of a random variable <em>X</em> as <phrase data-math="math_44"></phrase>. Once again, the subscript reminds us which variable we have in mind. The definition of the variance <phrase data-math="math_45"></phrase> of a random variable is similar to the definition of the sample variance <em>s</em><sup>2</sup> given in <link href="ips9e-ch01.xml">Chapter 1</link>. That is, the variance is an average value of the squared deviation (<em>X</em> &#8722; <em>&#956;<sub>X</sub></em>)<sup>2</sup> of the variable <em>X</em> from its mean <em>&#956;<sub>X</sub></em>. As for the mean, the average we use is a weighted average in which each outcome is weighted by its probability in order to take account of outcomes that are not equally likely. Calculating this weighted average is straightforward for discrete random variables but requires advanced mathematics in the continuous case. Here is the definition.</p>
+<p id="ips9e-ch04-p-619" block_type="TXT-ni">The mean is a measure of the center of a distribution. A basic numerical description requires, in addition, a measure of the spread or variability of the distribution. The variance and the standard deviation are the measures of spread that accompany the choice of the mean to measure center. Just as for the mean, we need a distinct symbol to distinguish the variance of a random variable from the variance <em>s</em><sup>2</sup> of a data set. We write the variance of a random variable <em>X</em> as <phrase data-math="math_44"></phrase>. Once again, the subscript reminds us which variable we have in mind. The definition of the variance <phrase data-math="math_45"></phrase> of a random variable is similar to the definition of the variance <em>s</em><sup>2</sup> given in <link href="ips9e-ch01.xml">Chapter 1</link>(page 38). That is, the variance is an average value of the squared deviation (<em>X</em> &#8722; <em>&#956;<sub>X</sub></em>)<sup>2</sup> of the variable <em>X</em> from its mean <em>&#956;<sub>X</sub></em>. As for the mean, the average we use is a weighted average in which each outcome is weighted by its probability in order to take account of outcomes that are not equally likely. Calculating this weighted average is straightforward for discrete random variables but requires advanced mathematics in the continuous case. Here is the definition.</p>
 <p id="ips9e_page_256" block_type="page_start" data-margin-content="left">256</p>
 <box id="ips9e-ch04-box-71" numbered="false" block_type="BX1">
 <p id="ips9e-ch04-p-620" block_type="BX1-T">VARIANCE OF A DISCRETE RANDOM VARIABLE</p>
@@ -2141,13 +2140,13 @@
 <p id="ips9e-ch04-p-830" block_type="TXT-ni">The probability we assign to an event can change if we know that some other event has occurred. This idea is the key to many applications of probability.</p>
 <box id="ips9e-ch04-box-89" numbered="false" block_type="EXP" data-filename="example_4_42.html">
 <p id="ips9e-ch04-p-831" block_type="EXP-N">EXAMPLE 4.42</p>
-<p id="ips9e-ch04-p-832" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Probability of being dealt an ace.</phrase> Doyle is a professional poker player. He stares at the dealer, who prepares to deal. What is the probability that the card dealt to Doyle is a heart? There are 52 cards in the deck. Because the deck was carefully shuffled, the next card dealt is equally likely to be any of the cards that Doyle has not seen. Thirteen of the 52 cards are hearts. So</p>
+<p id="ips9e-ch04-p-832" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Probability of being dealt a heart.</phrase> Doyle is a professional poker player. He stares at the dealer, who prepares to deal. What is the probability that the card dealt to Doyle is a heart? There are 52 cards in the deck. Because the deck was carefully shuffled, the next card dealt is equally likely to be any of the cards that Doyle has not seen. Thirteen of the 52 cards are hearts. So</p>
 <p id="ips9e-ch04-p-833" block_type="EXP-EQ"><phrase data-math="math_73"></phrase></p>
 <p id="ips9e-ch04-p-834" block_type="EXP-TXT-ni">This calculation assumes that Doyle knows nothing about any cards already dealt. Suppose now that he is looking at four cards already in his hand and that they are all hearts. He knows nothing about the other 48 cards except that exactly nine (13 &#8722; 4) hearts are among them. Doyle&#8217;s probability of being dealt a heart <em>given what he knows</em> is now</p>
 <p id="ips9e-ch04-p-835" block_type="EXP-EQ"><phrase data-math="math_74"></phrase></p>
 <p id="ips9e-ch04-p-836" block_type="EXP-TXT-ni">Knowing that there are four hearts among the four cards Doyle can see changes the probability that the next card dealt is a heart.</p>
 </box>
-<p id="ips9e-ch04-p-837" block_type="TXT">The new notation <em>P</em>(<em>A</em> &#124; <em>B</em>) is a <termref term="conditional probability"><strong>conditional probability</strong></termref><phrase block_type="MN-GL-term">conditional probability</phrase>. That is, it gives the probability of one event (the next card dealt is an ace) under the condition that we know another event (exactly one of the four visible cards is an ace). You can read the bar &#124; as &#8220;given the information that.&#8221;</p>
+<p id="ips9e-ch04-p-837" block_type="TXT">The new notation <em>P</em>(<em>A</em> &#124; <em>B</em>) is a <termref term="conditional probability"><strong>conditional probability</strong></termref><phrase block_type="MN-GL-term">conditional probability</phrase>. That is, it gives the probability of one event (the next card dealt is a heart) under the condition that we know another event (exactly one of the four visible cards is a heart). You can read the bar &#124; as &#8220;given the information that.&#8221;</p>
 <p id="ips9e_page_268" block_type="page_start" data-margin-content="left">268</p>
 <box id="ips9e-ch04-box-90" numbered="false" block_type="BX1">
 <p id="ips9e-ch04-p-838" block_type="BX1-T">MULTIPLICATION RULE</p>
@@ -2335,7 +2334,7 @@
 <p id="ips9e-ch04-p-946" block_type="BX1-TXT-ni">Two events <em>A</em> and <em>B</em> that both have positive probability are <strong>independent</strong> if</p>
 <p id="ips9e-ch04-p-947" block_type="BX1-EQ"><em>P</em>(<em>B</em> &#124; <em>A</em>) &#61; <em>P</em>(<em>B</em>)</p>
 </box>
-<p id="ips9e-ch04-p-948" block_type="TXT">This definition makes precise the informal description of independence given in <link href="ips9e-ch04-sec1-02">Section 4.2</link>. We now see that the multiplication rule for independent events, <em>P</em>(<em>A</em> and <em>B</em>) &#61; <em>P</em>(<em>A</em>)<em>P</em>(<em>B</em>), is a special case of the general multiplication rule, <em>P</em>(<em>A</em> and <em>B</em>) &#61; <em>P</em>(<em>A</em>)<em>P</em>(<em>B &#124; A</em>), just as the addition rule for disjoint events is a special case of the general addition rule.</p>
+<p id="ips9e-ch04-p-948" block_type="TXT">This definition makes precise the informal description of independence given in <link href="ips9e-ch04-sec1-02">Section 4.2</link>(page 229). We now see that the multiplication rule for independent events, <em>P</em>(<em>A</em> and <em>B</em>) &#61; <em>P</em>(<em>A</em>)<em>P</em>(<em>B</em>), is a special case of the general multiplication rule, <em>P</em>(<em>A</em> and <em>B</em>) &#61; <em>P</em>(<em>A</em>)<em>P</em>(<em>B &#124; A</em>), just as the addition rule for disjoint events is a special case of the general addition rule.</p>
 </section>
 <section id="ips9e-ch04-sum1-05" block_type="SR-H" chapter="ch4" numbered="false" level="1" print_page="274">
 <section-metadata><section-title><phrase block_type="SR-XH">SECTION 4.5</phrase> <phrase block_type="SR-H">SUMMARY</phrase></section-title></section-metadata>

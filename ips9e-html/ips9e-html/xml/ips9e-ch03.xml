@@ -82,7 +82,7 @@
 <image asset-id="ips9e-ch03-img-02" alt="image" src="asset/ch3/17MOOREIPS-MSE_9e_fig_03_01.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 3.1</phrase> <phrase block_type="FG-CAP">Websites of government statistical offices are prime sources of data. Here is a page from the website of the National Center for Education Statistics. (Source: U.S. Department of Education Institute of Education Sciences National Center for Education Statistics)</phrase></caption>
 </figure>
-<p id="ips9e-ch03-p-39" block_type="TXT">Many nations have a single national statistical office, such as Statistics Canada (<strong><link href="http://statcan.gc.ca">statcan.gc.ca</link></strong>) and Mexico&#8217;s INEGI (<strong><link href="http://inegi.org.mx">inegi.org.mx</link></strong>). More than 70 different U.S. agencies collect data. You can reach most of them through the U.S. government&#8217;s FedStats site (<strong><link href="http://fedstats.sites.usa.gov">fedstats.sites.usa.gov</link></strong>).</p>
+<p id="ips9e-ch03-p-39" block_type="TXT">Many nations have a single national statistical office, such as Statistics Canada (<strong><link href="http://statcan.gc.ca">statcan.gc.ca</link></strong>) and Mexico&#8217;s INEGI (<strong><link href="http://www.inegi.org.mx">www.inegi.org.mx</link></strong>). More than 70 different U.S. agencies collect data. You can reach most of them through the U.S. government&#8217;s FedStats site (<strong><link href="http://fedstats.sites.usa.gov">fedstats.sites.usa.gov</link></strong>).</p>
 <box id="ips9e-ch03-box-08" numbered="false" block_type="EXR">
 <p id="ips9e-ch03-p-40" block_type="EXR-H">USE YOUR KNOWLEDGE</p>
 <question id="ips9e-ch03-ques-05" block_type="exercise_3_5.html">
@@ -183,7 +183,7 @@
 </section>
 <section id="ips9e-ch03-exer1-01" block_type="SR-X-H" chapter="ch3" numbered="false" level="1" print_page="170">
 <section-metadata><section-title><phrase block_type="SR-XH">SECTION 3.1</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></section-title></section-metadata>
-<p id="ips9e-ch03-p-92" block_type="SR-X-TXT-ni"><em>For <link href="exercise_3_1.html">Exercises 3.1</link> to <link href="exercise_3_4.html">3.4</link>, see pages 164&#8211;165; for <link href="exercise_3_5.html">Exercise 3.5</link>, see page 166; for <link href="exercise_3_6.html">Exercise 3.6</link>, see page 167; for <link href="exercise_3_7.html">Exercises 3.7</link> and <link href="exercise_3_9.html">3.9</link>, see pages 168&#8211;169; and for <link href="exercise_3_10.html">Exercises 3.10</link> and <link href="exercise_3_11.html">3.11</link>, see pages 169&#8211;170.</em></p>
+<p id="ips9e-ch03-p-92" block_type="SR-X-TXT-ni"><em>For <link href="exercise_3_1.html">Exercises 3.1</link> to <link href="exercise_3_4.html">3.4</link>, see pages 164&#8211;165; for <link href="exercise_3_5.html">Exercise 3.5</link>, see page 166; for <link href="exercise_3_6.html">Exercise 3.6</link>, see page 167; for <link href="exercise_3_7.html">Exercises 3.7</link> to <link href="exercise_3_9.html">3.9</link>, see pages 168&#8211;169; and for <link href="exercise_3_10.html">Exercises 3.10</link> and <link href="exercise_3_11.html">3.11</link>, see pages 169&#8211;170.</em></p>
 <p id="ips9e-ch03-p-93" block_type="SR-X-QUE-NL"><em>In several of the following exercises, you are asked to identify the type of data that is described. Possible answers include anecdotal data, available data, observational data that are from sample surveys, observational data that are not from sample surveys, and experimental data. It is possible for some data to be classified in more than one category.</em></p>
 <question id="ips9e-ch03-ques-12" block_type="exercise_3_12.html">
 <p id="ips9e-ch03-p-94" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">3.12 Not enough tuna.</phrase> You like to eat tuna fish sandwiches. Recently you have noticed that there does not seem to be as much tuna as you expect when you open the can. Identify the type of data that this represents, and describe how it can or cannot be used to reach a conclusion about the amount of tuna in cans of tuna fish. Is this an experiment? If yes, what is the treatment?</p>
@@ -591,11 +591,11 @@
 </list>
 </question>
 <question id="ips9e-ch03-ques-37" block_type="exercise_3_37.html">
-<p id="ips9e-ch03-p-302" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch03-img-16" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">3.37 Use the <em>Simple Random Sample</em> applet.</phrase> The <em>Simple Random Sample</em> applet allows you to randomly assign experimental units to more than two groups without difficulty. <link href="example_3_14.html">Example 3.14</link> (page 180) describes a randomized comparative experiment in which 150 students are randomly assigned to six groups of 25.</p>
+<p id="ips9e-ch03-p-302" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch03-img-16" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">3.37 Use the <em>Simple Random Sample</em> applet.</phrase> The <em>Simple Random Sample</em> applet allows you to randomly assign experimental units to more than two groups without difficulty. Consider a randomized comparative experiment in which 100 students are randomly assigned to four groups of 25.</p>
 <list id="ips9e-ch03-list-21" type="ordered" block_type="lower-alpha">
-<li id="ips9e-ch03-li-82"><p id="ips9e-ch03-p-303" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Use the applet to randomly choose 25 out of 150 students to form the first group. Which students are in this group?</p></li>
-<li id="ips9e-ch03-li-83"><p id="ips9e-ch03-p-304" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> The &#8220;population hopper&#8221; now contains the 125 students who were not chosen, in scrambled order. Click &#8220;Sample&#8221; again to choose 25 of these remaining students to make up the second group. Which students were chosen?</p></li>
-<li id="ips9e-ch03-li-84"><p id="ips9e-ch03-p-305" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(c)</phrase> Click &#8220;Sample&#8221; three more times to choose the third, fourth, and fifth groups. Don&#8217;t take the time to write down these groups. Check that there are only 25 students remaining in the &#8220;population hopper.&#8221; These subjects get Treatment 6. Which students are they?</p></li>
+<li id="ips9e-ch03-li-82"><p id="ips9e-ch03-p-303" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Use the applet to randomly choose 25 out of 100 students to form the first group. Which students are in this group?</p></li>
+<li id="ips9e-ch03-li-83"><p id="ips9e-ch03-p-304" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> The &#8220;population hopper&#8221; now contains the 75 students who were not chosen, in scrambled order. Click &#8220;Sample&#8221; again to choose 25 of these remaining students to make up the second group. Which students were chosen?</p></li>
+<li id="ips9e-ch03-li-84"><p id="ips9e-ch03-p-305" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(c)</phrase> Click &#8220;Sample&#8221; one more time to choose the third group. Don&#8217;t take the time to write down this group. Check that there are only 25 students remaining in the &#8220;population hopper.&#8221; These subjects get Treatment 4. Which students are they?</p></li>
 </list>
 </question>
 <question id="ips9e-ch03-ques-38" block_type="exercise_3_38.html">
@@ -736,7 +736,7 @@
 <p id="ips9e-ch03-p-375" block_type="EXP-mid"><link href="figure_3_7.html">Figure 3.7(c)</link> shows the file after we sort on the uniform random numbers in column C. Our sample is the first 25 countries in the sorted file. The first three selected are Chile (CHL), Belgium (BEL), and the Solomon Islands (SLB). Note that Excel does not display the last two digits for Belarus (BLR) because they are zero.</p>
 </box>
 <p id="ips9e-ch03-p-376" block_type="Applet icon"><image asset-id="ips9e-ch03-img-25" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/></p>
-<p id="ips9e-ch03-p-377" block_type="TXT">The <em>Simple Random Sample</em> applet on the text website is another convenient way to automate this task.</p>
+<p id="ips9e-ch03-p-377" block_type="TXT">The <em>Simple Random Sample</em> applet on the text website is another convenient way to select an SRS.</p>
 <box id="ips9e-ch03-box-55" numbered="false" block_type="EXR">
 <p id="ips9e-ch03-p-378" block_type="EXR-H">USE YOUR KNOWLEDGE</p>
 <question id="ips9e-ch03-ques-46" block_type="exercise_3_46.html">
@@ -1014,7 +1014,13 @@
 </list>
 </question>
 <question id="ips9e-ch03-ques-57" block_type="exercise_3_57.html">
-<p id="ips9e-ch03-p-492" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">3.57 Importance of students as customers.</phrase> A committee on community relations in a college town plans to survey local businesses about the importance of students as customers. From telephone book listings, the committee chooses 80 businesses at random. Of these, 46 return the questionnaire mailed by the committee. What is the population for this sample survey? What is the sample? What is the rate (percent) of nonresponse?</p>
+<p id="ips9e-ch03-p-492" block_type="SR-X-QUE-NL">
+<phrase block_type="SR-XH">3.57 Importance of students as customers.</phrase> A committee on community relations in a college town plans to survey local businesses about the importance of students as customers. From telephone book listings, the committee chooses 80 businesses at random. Of these, 46 return the questionnaire mailed by the committee.</p>
+<list id="ips9e-ch03-list-37_1" type="ordered" block_type="lower-alpha">
+<li id="ips9e-ch03-li-144_1"><p id="ips9e-ch03-p-492_1" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase>What is the population for this sample survey?</p></li>
+<li id="ips9e-ch03-li-144_2"><p id="ips9e-ch03-p-492_2" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase>What is the sample?</p></li>
+<li id="ips9e-ch03-li-144_3"><p id="ips9e-ch03-p-492_3" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(c)</phrase>What is the rate (percent) of nonresponse?</p></li>
+</list>
 </question>
 <question id="ips9e-ch03-ques-58" block_type="exercise_3_58.html">
 <p id="ips9e-ch03-p-493" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">3.58 Identify the populations.</phrase> For each of the following sampling situations, identify the population as exactly as possible. That is, say what kind of individuals the population consists of and say exactly which individuals fall in the population. If the information given is not complete, complete the description of the population in a reasonable way.</p>
@@ -1088,7 +1094,7 @@
 </table>
 </question>
 <question id="ips9e-ch03-ques-60" block_type="exercise_3_60.html">
-<p id="ips9e-ch03-p-499" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">3.60 Using GIS to identify mint field conditions.</phrase> A Geographic Information System (GIS) is to be used to distinguish different conditions in mint fields. Ground observations will be used to classify regions of each field as either healthy mint, diseased mint, or weed-infested mint. The GIS divides mint-growing areas into regions called pixels. An experimental area contains 200 pixels. For a random sample of 15 pixels, ground measurements will be made to determine the status of the mint, and these observations will be compared with information obtained by the GIS. Select the random sample. If you use <link href="table_b.html">Table B</link>, start at line 132 and choose only the first 15 pixels in the sample.</p>
+<p id="ips9e-ch03-p-499" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">3.60 Using GIS to identify mint field conditions.</phrase> A Geographic Information System (GIS) is to be used to distinguish different conditions in mint fields. Ground observations will be used to classify regions of each field as either healthy mint, diseased mint, or weed-infested mint. The GIS divides mint-growing areas into regions called pixels. An experimental area contains 100 pixels. For a random sample of 15 pixels, ground measurements will be made to determine the status of the mint, and these observations will be compared with information obtained by the GIS. Select the random sample. If you use <link href="table_b.html">Table B</link>, start at line 132 and choose only the first 15 pixels in the sample.</p>
 </question>
 <p id="ips9e_page_202" block_type="page_start" data-margin-content="left">202</p>
 <question id="ips9e-ch03-ques-61" block_type="exercise_3_61.html">
@@ -1470,11 +1476,12 @@
 </list>
 </question>
 <question id="ips9e-ch03-ques-87" block_type="exercise_3_87.html">
-<p id="ips9e-ch03-p-635" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">3.87 Political polls.</phrase> The presidential election campaign is in full swing, and the candidates have hired polling organizations to take regular polls to find out what the voters think about the issues. What information should the pollsters be required to give out?</p>
+<p id="ips9e-ch03-p-635" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">3.87 Political polls.</phrase> The presidential election campaign is in full swing, and the candidates have hired polling organizations to take regular polls to find out what the voters think about the issues.</p>
 <list id="ips9e-ch03-list-52" type="ordered" block_type="lower-alpha">
-<li id="ips9e-ch03-li-183"><p id="ips9e-ch03-p-636" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> What does the standard of informed consent require the pollsters to tell potential respondents?</p></li>
-<li id="ips9e-ch03-li-184"><p id="ips9e-ch03-p-637" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> The standards accepted by polling organizations also require giving respondents the name and address of the organization that carries out the poll. Why do you think this is required?</p></li>
-<li id="ips9e-ch03-li-185"><p id="ips9e-ch03-p-638" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(c)</phrase> The polling organization usually has a professional name such as &#8220;Samples Incorporated,&#8221; so respondents don&#8217;t know that the poll is being paid for by a political party or candidate. Would revealing the sponsor to respondents bias the poll? Should the sponsor always be announced whenever poll results are made public?</p></li>
+<li id="ips9e-ch03-li-183_0"><p id="ips9e-ch03-p-636_0" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase>What information should the pollsters be required to give out?</p></li>
+<li id="ips9e-ch03-li-183"><p id="ips9e-ch03-p-636" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> What does the standard of informed consent require the pollsters to tell potential respondents?</p></li>
+<li id="ips9e-ch03-li-184"><p id="ips9e-ch03-p-637" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(c)</phrase> The standards accepted by polling organizations also require giving respondents the name and address of the organization that carries out the poll. Why do you think this is required?</p></li>
+<li id="ips9e-ch03-li-185"><p id="ips9e-ch03-p-638" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(d)</phrase> The polling organization usually has a professional name such as &#8220;Samples Incorporated,&#8221; so respondents don&#8217;t know that the poll is being paid for by a political party or candidate. Would revealing the sponsor to respondents bias the poll? Should the sponsor always be announced whenever poll results are made public?</p></li>
 </list>
 </question>
 <question id="ips9e-ch03-ques-88" block_type="exercise_3_88.html">
