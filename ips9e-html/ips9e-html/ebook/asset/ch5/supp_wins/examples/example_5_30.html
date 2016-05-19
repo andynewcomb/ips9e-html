@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<title>Example 5.30</title>
+<link href = "../../../../css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/ips9e_ch5.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../supp_win.css" media="screen" rel="stylesheet" type="text/css" >
+</head>
+<body id="supp_win">
+<div id="manuscript" class="example">
+<div data-type="section" data-block_type="h1">
+<div data-type="box" data-block_type="EXP" data-filename="example_5_30.html" id="ips9e-ch05-box-071"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-071"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-0714"><p>EXAMPLE 5.30</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0715"><p><span data-block_type="EXP-T-ri">Number of dropped calls.</span> Suppose that the number of dropped calls on your cell phone varies, with an average of 2.1 calls per day. If we assume that the Poisson setting is reasonable for this situation, we can model the daily count of dropped calls <em>X</em> using the Poisson distribution with <span data-math="math_248"></span> What is the probability of having no more than two dropped calls tomorrow?</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0716"><p>We can calculate <span data-math="math_249"></span> either using software or the Poisson probability formula. Using the probability formula:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0717"><p><span data-math="math_250"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0718"><p><span data-math="math_251"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0719"><p>= 0.1225 + 0.2572 + 0.2700</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0720"><p>= 0.6497</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-0721"><p>Using the R software, the probability is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-0722"><p>dpois(0,2.1) + dpois(1,2.1) + dpois(2,2.1)<br>[1] 0.6496314</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-0724"><p>These two answers differ slightly due to roundoff error in the hand calculation. There is roughly a 65% chance that you will have no more than two dropped calls tomorrow.</p></div>
+</div></div>
+</div>
+</div>
+<script type = "text/javascript" src="../../../../js/utilities.js"></script>
+<script type = "text/javascript" src="../../../../js/query_types.js"></script>
+<script type = "text/javascript" src="../../../../js/player.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery_extensions.js"></script>
+<script type = "text/javascript" src="../../../../js/swfobject.js"></script>
+<script type = "text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type = "text/javascript" src="../../../../js/digfir_ebook_fw.js"></script>
+<script type = "text/javascript" src="../../../../js/ips9e.js"></script>
+<script type = "text/javascript" src="../../../../js/ips9e_ch5.js"></script>
+<script type = "text/javascript" src="../../../supp_win.js"></script>
+<script type = "text/javascript">
+
+//<!--
+$(window).ready(function ()
+    {
+        player.initialize('52c6e83c757a2ef70c000000');
+    });
+//-->
+</script>
+</body>
+</html>
