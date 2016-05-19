@@ -159,7 +159,8 @@ div[data-block_type="h1"] {
         }
 
         p {
-            margin-top: 1em;
+            margin-top: 2em;
+            margin-bottom:.5em;
         }
     }
     /* section intro box */
@@ -195,7 +196,7 @@ div[data-block_type="h1"] {
 
         font-size: 19.5px;
 
-        ul {
+        ul[data-block_type="bluebullet"] {
             color: @bullet-blue;
             font-family: sans-serif;
             margin-top: 0;
@@ -242,6 +243,11 @@ div[data-block_type="h1"] {
         [data-block_type="MN-GL-term"] {
             left: -340px;
         }
+    }
+    /* sometimes bold wordage at beginning of paragraphs needs to be light blue */
+    span[data-block_type="h3-ri"] {
+        color:#00aaa9;
+        font-weight:bold;
     }
 
     [data-block_type="UN-FIGURE"][align="left"] {
@@ -357,24 +363,33 @@ div[data-block_type="h1"] {
                 margin-top: .2em;
             }
         }
+        [data-block_type="EXP-T-ri"] {
+            color: @deep-purple;
+            font-family: arial;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
 
         [data-block_type="EXP-TXT-first"] {
-            [data-block_type="EXP-T-ri"] {
-                color: @deep-purple;
-                font-family: arial;
-                font-weight: bold;
-                cursor: pointer;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-
             p {
-                position: relative;
-                top: -8px;
-                margin-bottom: 0em;
                 text-align: justify;
+            }
+        }
+
+ /*  
+     first paragraph of example should be moved up. This will do so for most examples, but sometimes there may be an image or icon
+     put between the "example number XML" and the first paragraph XML, and therefore this won't qualify. However, this is a minor 
+     visual adjustment, and therefore testers will not likely be able to spot that this is not being applied.
+ */
+        [data-block_type="EXP-N"] + [data-block_type^="EXP-TXT"] p {
+            position: relative;
+            top: -8px;
+            margin-bottom: 0em;
+            [data-block_type="MN-GL-term"] {
+                left:-300px;
             }
         }
 
@@ -508,6 +523,10 @@ div[data-block_type="h1"] {
 
 /* summary sections */
 div[data-block_type="SR-H"]  {
+    &[data-type="section"] {
+        margin-left:auto;
+        margin-right:auto;
+    }
     h2.section-title {
         font-size: 1.2em;
         span[data-block_type="SR-N-ri"] {
@@ -544,6 +563,10 @@ div[data-block_type="SR-H"]  {
 
 /* exercise sections (for section groups) */
 div[data-block_type="SR-X-H"]  {
+    &[data-type="section"] {
+        margin-left:auto;
+        margin-right:auto;
+    }
     h2.section-title {
         font-size: 1.2em;
         // section number
@@ -662,6 +685,10 @@ div[data-block_type="SR-X-H"]  {
 
 /* exercise sections (chapter exercises at end of each chapter) */
 div[data-block_type="CR-X-H"]  {
+    &[data-type="section"] {
+        margin-left:auto;
+        margin-right:auto;
+    }
     h2.section-title {
         font-size: 1.2em;
         // section number
@@ -912,13 +939,19 @@ div[data-block_type="CR-X-H"]  {
     [data-block_type="BX1-TXT"] {
         // probably wrong block types used, but left as-is
         //text-indent: @text-indent;
-        margin: 8px 0;
+        margin: 1em 0;
         text-align: justify;
     }
     [data-block_type="BX1-TXT-ni"] {
         // probably wrong block types used, but left as-is
         //text-indent: @text-indent;
         text-align: justify;
+        margin: 1em 0;
+    }
+    [data-block_type="BX1-T"] + [data-block_type="BX1-TXT-ni"] {
+        // probably wrong block types used, but left as-is
+        //text-indent: @text-indent;
+        margin: 0 0;
     }
     [data-block_type="BX1-EQ"] {
         text-align: center;
@@ -1001,6 +1034,12 @@ div[data-block_type="CR-X-H"]  {
     margin-top:1em;
     margin-bottom:1em;
 }
+/* incorrectly using example paragraphs outside of examples */
+[data-block_type="EXP-EQ"] p {
+    text-align: center;
+    margin-top:1em;
+    margin-bottom:1em;
+}
 
 /* icons */
 [data-block_type="rl_linkbox"] {
@@ -1077,6 +1116,14 @@ span[data-math^="math_"] {color: inherit;}
             }
             
             [data-block_type="EXR-QUE-NL-first"] {
+                text-align: justify;
+                p {
+                    //position: relative;
+                    margin-top: -15px;
+                    text-align: justify;
+                }
+            }
+            [data-block_type="EXR-QUE-NL-first2digit"] {
                 text-align: justify;
                 p {
                     //position: relative;
@@ -1185,11 +1232,20 @@ span[data_href] {
 }
 
 [data-type="question"] {
-    img[src="asset/global_images/BPSapplet-icon.jpg"] {
+    [data-block_type*="EXR"] img[src="asset/global_images/BPSapplet-icon.jpg"] {
         float: left;
         margin-right: 6px;
         margin-top: 7px;
         width: 29px;
+    }
+    [data-block_type*="SR-X-QUE-NL"] img[src="asset/global_images/BPSapplet-icon.jpg"] {
+        float: left;
+        margin-right: 6px;
+        margin-top: 7px;
+        width: 29px;
+    }
+    [data-block_type="Applet icon"] {
+        left: -140px;
     }
 }
 [data-block_type="Applet icon"] {

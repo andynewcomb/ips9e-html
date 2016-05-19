@@ -82,12 +82,22 @@
 [data-type="question"] h3 {
   display: none;
 }
-[data-type="question"] img[src*="global_images"] {
+[data-type="question"] [data-block_type*="SR-X-QUE-NL"] img[src*="global_images"] {
   float: left;
   margin-right: 10px;
 }
-[data-type="question"] img[src*="global_images"][src*="applet"] {
+[data-type="question"] [data-block_type*="SR-X-QUE-NL"] img[src*="global_images"][src*="applet"] {
   width: 29px;
+}
+[data-type="question"] [data-block_type*="EXR"] img[src*="global_images"] {
+  float: left;
+  margin-right: 10px;
+}
+[data-type="question"] [data-block_type*="EXR"] img[src*="global_images"][src*="applet"] {
+  width: 29px;
+}
+[data-type="question"] [data-block_type="Applet icon"] {
+  left: 740px;
 }
 [data-type="question"] ol {
   list-style-type: none;

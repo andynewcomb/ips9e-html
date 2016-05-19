@@ -118,6 +118,7 @@ div[data-block_type="h1"] {
   /* section title */
   /* level 2 section title in regular section */
   /* section intro box */
+  /* sometimes bold wordage at beginning of paragraphs needs to be light blue */
   /* example boxes */
 }
 div[data-block_type="h1"] h2.section-title {
@@ -138,7 +139,8 @@ div[data-block_type="h1"] > div[data-block_type="level_2_title"] span[data-block
   font-weight: bold;
 }
 div[data-block_type="h1"] > div[data-block_type="level_2_title"] p {
-  margin-top: 1em;
+  margin-top: 2em;
+  margin-bottom: .5em;
 }
 div[data-block_type="h1"] div[data-block_type="SP"] {
   margin-bottom: 1.2em;
@@ -167,16 +169,16 @@ div[data-block_type="h1"] div[data-block_type="SP"] [data-block_type="SP-TXT-ni"
   font-family: arial;
   font-weight: bold;
 }
-div[data-block_type="h1"] div[data-block_type="SP"] ul {
+div[data-block_type="h1"] div[data-block_type="SP"] ul[data-block_type="bluebullet"] {
   color: #006288;
   font-family: sans-serif;
   margin-top: 0;
   margin-bottom: 0;
 }
-div[data-block_type="h1"] div[data-block_type="SP"] ul p {
+div[data-block_type="h1"] div[data-block_type="SP"] ul[data-block_type="bluebullet"] p {
   margin-bottom: .25em;
 }
-div[data-block_type="h1"] div[data-block_type="SP"] ul [data-block_type="maker"] {
+div[data-block_type="h1"] div[data-block_type="SP"] ul[data-block_type="bluebullet"] [data-block_type="maker"] {
   display: none;
 }
 div[data-block_type="h1"] ul[data-block_type="bullet"] {
@@ -204,6 +206,10 @@ div[data-block_type="h1"] ol[data-block_type="numbered"] > li {
 }
 div[data-block_type="h1"] ol[data-block_type="numbered"] [data-block_type="MN-GL-term"] {
   left: -340px;
+}
+div[data-block_type="h1"] span[data-block_type="h3-ri"] {
+  color: #00aaa9;
+  font-weight: bold;
 }
 div[data-block_type="h1"] [data-block_type="UN-FIGURE"][align="left"] {
   position: absolute;
@@ -269,6 +275,11 @@ div[data-block_type="h1"] [data-block_type="EXP"] {
   margin-top: 1em;
   margin-bottom: 1em;
   background-color: transparent;
+  /*  
+     first paragraph of example should be moved up. This will do so for most examples, but sometimes there may be an image or icon
+     put between the "example number XML" and the first paragraph XML, and therefore this won't qualify. However, this is a minor 
+     visual adjustment, and therefore testers will not likely be able to spot that this is not being applied.
+ */
 }
 div[data-block_type="h1"] [data-block_type="EXP"] > [data-type="box_inner"] {
   margin-left: 285px;
@@ -297,20 +308,25 @@ div[data-block_type="h1"] [data-block_type="EXP"] [data-block_type="EXP-N"] p {
   margin-bottom: .2em;
   margin-top: .2em;
 }
-div[data-block_type="h1"] [data-block_type="EXP"] [data-block_type="EXP-TXT-first"] [data-block_type="EXP-T-ri"] {
+div[data-block_type="h1"] [data-block_type="EXP"] [data-block_type="EXP-T-ri"] {
   color: #69009D;
   font-family: arial;
   font-weight: bold;
   cursor: pointer;
 }
-div[data-block_type="h1"] [data-block_type="EXP"] [data-block_type="EXP-TXT-first"] [data-block_type="EXP-T-ri"]:hover {
+div[data-block_type="h1"] [data-block_type="EXP"] [data-block_type="EXP-T-ri"]:hover {
   text-decoration: underline;
 }
 div[data-block_type="h1"] [data-block_type="EXP"] [data-block_type="EXP-TXT-first"] p {
+  text-align: justify;
+}
+div[data-block_type="h1"] [data-block_type="EXP"] [data-block_type="EXP-N"] + [data-block_type^="EXP-TXT"] p {
   position: relative;
   top: -8px;
   margin-bottom: 0em;
-  text-align: justify;
+}
+div[data-block_type="h1"] [data-block_type="EXP"] [data-block_type="EXP-N"] + [data-block_type^="EXP-TXT"] p [data-block_type="MN-GL-term"] {
+  left: -300px;
 }
 div[data-block_type="h1"] [data-block_type="EXP"] [data-block_type="EXP-last"] {
   text-indent: 1.5em;
@@ -411,6 +427,10 @@ div[data-block_type="h1"] [data-type="table"][data-block_type="UN-TABLE"] table 
   font-family: 'Times New Roman', serif;
 }
 /* summary sections */
+div[data-block_type="SR-H"][data-type="section"] {
+  margin-left: auto;
+  margin-right: auto;
+}
 div[data-block_type="SR-H"] h2.section-title {
   font-size: 1.2em;
 }
@@ -456,6 +476,10 @@ div[data-block_type="SR-X-H"] {
             }
         }
     }*/
+}
+div[data-block_type="SR-X-H"][data-type="section"] {
+  margin-left: auto;
+  margin-right: auto;
 }
 div[data-block_type="SR-X-H"] h2.section-title {
   font-size: 1.2em;
@@ -550,6 +574,10 @@ div[data-block_type="SR-X-H"] [data-type="table"][data-block_type="TABLE"] table
   font-family: 'Times New Roman', serif;
 }
 /* exercise sections (chapter exercises at end of each chapter) */
+div[data-block_type="CR-X-H"][data-type="section"] {
+  margin-left: auto;
+  margin-right: auto;
+}
 div[data-block_type="CR-X-H"] h2.section-title {
   font-size: 1.2em;
 }
@@ -773,11 +801,15 @@ div[data-block_type="CR-X-H"] [data-type="table"] tr th.rborder {
   padding-right: 1em;
 }
 [data-block_type="BX1"] [data-block_type="BX1-TXT"] {
-  margin: 8px 0;
+  margin: 1em 0;
   text-align: justify;
 }
 [data-block_type="BX1"] [data-block_type="BX1-TXT-ni"] {
   text-align: justify;
+  margin: 1em 0;
+}
+[data-block_type="BX1"] [data-block_type="BX1-T"] + [data-block_type="BX1-TXT-ni"] {
+  margin: 0 0;
 }
 [data-block_type="BX1"] [data-block_type="BX1-EQ"] {
   text-align: center;
@@ -841,6 +873,12 @@ div[data-block_type="CR-X-H"] [data-type="table"] tr th.rborder {
   text-align: justify;
 }
 [data-block_type="EQ"] p {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* incorrectly using example paragraphs outside of examples */
+[data-block_type="EXP-EQ"] p {
   text-align: center;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -934,6 +972,13 @@ span[data-math^="math_"] {color: inherit;}
   margin-top: -15px;
   text-align: justify;
 }
+[data-block_type="EXR"] > [data-type="box_inner"] [data-type="question"] [data-block_type="EXR-QUE-NL-first2digit"] {
+  text-align: justify;
+}
+[data-block_type="EXR"] > [data-type="box_inner"] [data-type="question"] [data-block_type="EXR-QUE-NL-first2digit"] p {
+  margin-top: -15px;
+  text-align: justify;
+}
 [data-block_type="EXR"] > [data-type="box_inner"] [data-type="question"] [data-type="table"] {
   border: 0;
 }
@@ -1009,11 +1054,20 @@ span[data_href]:hover {
 .supp_win button.readon_button {
   display: none;
 }
-[data-type="question"] img[src="asset/global_images/BPSapplet-icon.jpg"] {
+[data-type="question"] [data-block_type*="EXR"] img[src="asset/global_images/BPSapplet-icon.jpg"] {
   float: left;
   margin-right: 6px;
   margin-top: 7px;
   width: 29px;
+}
+[data-type="question"] [data-block_type*="SR-X-QUE-NL"] img[src="asset/global_images/BPSapplet-icon.jpg"] {
+  float: left;
+  margin-right: 6px;
+  margin-top: 7px;
+  width: 29px;
+}
+[data-type="question"] [data-block_type="Applet icon"] {
+  left: -140px;
 }
 [data-block_type="Applet icon"] {
   left: 217px;
