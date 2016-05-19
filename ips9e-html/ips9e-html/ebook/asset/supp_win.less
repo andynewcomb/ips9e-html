@@ -99,13 +99,25 @@
     h3 {
         display: none;
     }
-    img[src*="global_images"] {
+    [data-block_type*="SR-X-QUE-NL"] img[src*="global_images"] {
         float: left;
         margin-right: 10px;
         //width: 73px;
         &[src*="applet"] {
             width: 29px;
         }
+    }
+
+    [data-block_type*="EXR"] img[src*="global_images"] {
+        float: left;
+        margin-right: 10px;
+        //width: 73px;
+        &[src*="applet"] {
+            width: 29px;
+        }
+    }
+    [data-block_type="Applet icon"] {
+        left: 740px;
     }
     ol {
         list-style-type: none;
@@ -114,6 +126,7 @@
             margin: 8px 0;
         }
     }
+    
 }
 
 // destyle questions

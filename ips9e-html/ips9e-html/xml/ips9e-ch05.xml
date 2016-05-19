@@ -1,13 +1,13 @@
 <chapter id="ips9e-ch05" number="5" title="Chapter 5: Sampling Distributions" start-numbering-at="5" numbered="true">
 <section id="ips9e-ch05-sec-001" block_type="chapter" title="Sampling Distributions" numbered="false" level="1" print_page="281">
-<p id="ips9e-ch05-p-01" block_type="CN">5</p>
-<p id="ips9e-ch05-p-02" block_type="CT">Sampling Distributions</p>
 <p id="ips9e_page_281" block_type="page_start" data-margin-content="right">281</p>
 <figure id="ips9e-ch05-fig-001" block_type="C-H-graphic" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="false"/>
 <image asset-id="ips9e-ch05-img-001" alt="image" src="asset/ch5/17MOOREIPS-MSE_9e_CO05.jpg"/>
 <asset_source><phrase block_type="CO_PHCR">Jose Luis Pelaez Inc/Getty Images</phrase></asset_source>
 </figure>
+<p id="ips9e-ch05-p-02" block_type="CT">Sampling Distributions</p>
+<p id="ips9e-ch05-p-01" block_type="CN">5</p>
 <box id="ips9e-ch05-box-01" numbered="false" block_type="chap_outline" title="CHAPTER OUTLINE">
 <list id="ips9e-ch05-list-01" type="unordered" block_type="simple">
 <li id="ips9e-ch05-li-01"><p id="ips9e-ch05-p-04" block_type="CO-TOC-h1"><link href="ips9e_ch5_2.html" target="_pop"><phrase>5.1</phrase> Toward Statistical Inference</link></p></li>
@@ -26,7 +26,7 @@
 <p id="ips9e_page_282" block_type="page_start" data-margin-content="left">282</p>
 <box id="ips9e-ch05-box-001" numbered="false" block_type="SP">
 <p id="ips9e-ch05-p-013" block_type="SP-TXT-ni">When you complete this section, you will be able to:</p>
-<list id="ips9e-ch05-list-001" type="unordered" block_type="bullet">
+<list id="ips9e-ch05-list-001" type="unordered" block_type="bluebullet">
 <li id="ips9e-ch05-li-001"><p id="ips9e-ch05-p-014" block_type="SP-BL-first"><phrase block_type="maker">&#8226;</phrase> Identify parameters, populations, statistics, and samples and the relationships among these items.</p></li>
 <li id="ips9e-ch05-li-002"><p id="ips9e-ch05-p-015" block_type="SP-BL-first"><phrase block_type="maker">&#8226;</phrase> Use simulation to study a sampling distribution.</p></li>
 <li id="ips9e-ch05-li-003"><p id="ips9e-ch05-p-016" block_type="SP-BL-first"><phrase block_type="maker">&#8226;</phrase> Interpret and use a sampling distribution to describe a property of a statistic.</p></li>
@@ -76,7 +76,7 @@
 <p id="ips9e-ch05-p-052" block_type="TXT">In practice, it is too expensive to take many samples from a large population such as all undergraduates enrolled in four-year colleges and universities. But we can imitate taking many samples by using random digits from a table or computer software to emulate chance behavior. This is called <termref term="simulation"><strong>simulation</strong></termref><phrase block_type="MN-GL-term">simulation</phrase>.</p>
 <box id="ips9e-ch05-box-005" numbered="false" block_type="EXP" data-filename="example_5_2.html">
 <p id="ips9e-ch05-p-054" block_type="EXP-N">EXAMPLE 5.2</p>
-<p id="ips9e-ch05-p-055" block_type="EXP-TXT-ni"><phrase block_type="EXP-T-ri">Simulate a random sample.</phrase> Let&#8217;s simulate drawing simple random samples (SRSs) of size 100 from the population of undergraduates. Suppose that, in fact, 90&#37; of the population owns a cell phone. Then the true value of the parameter we want to estimate is <em>p</em> = 0.9. (Of course, we would not sample in practice if we already knew that <em>p</em> = 0.9. We are sampling here to understand how the statistic <phrase data-math="math_7"></phrase> behaves.)</p>
+<p id="ips9e-ch05-p-055" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Simulate a random sample.</phrase> Let&#8217;s simulate drawing simple random samples (SRSs) of size 100 from the population of undergraduates. Suppose that, in fact, 90&#37; of the population owns a cell phone. Then the true value of the parameter we want to estimate is <em>p</em> = 0.9. (Of course, we would not sample in practice if we already knew that <em>p</em> = 0.9. We are sampling here to understand how the statistic <phrase data-math="math_7"></phrase> behaves.)</p>
 <box block_type="MN-NOT-H">
 <p id="ips9e-ch05-p-057" block_type="MN-NOT1">random digits, <link href="alias:page_179">p. 179</link></p>
 </box>
@@ -129,7 +129,7 @@
 <box id="ips9e-ch05-box-007" numbered="false" block_type="EXP" data-filename="example_5_3.html">
 <p id="ips9e-ch05-p-066" block_type="EXP-N">EXAMPLE 5.3</p>
 <p id="ips9e-ch05-p-067" block_type="EXP-TXT-ni"><phrase block_type="EXP-T-ri">Take many random samples.</phrase> <link href="figure_5_1.html">Figure 5.1</link> illustrates the process of choosing many samples and finding the statistic <phrase data-math="math_13"></phrase> for each one. Follow the flow of the figure from the population at the left, to choosing an SRS and finding the <phrase data-math="math_14"></phrase> for this sample, to collecting together the <phrase data-math="math_15"></phrase>&#8217;s from many samples. The histogram at the right of the figure shows the distribution of the values of <phrase data-math="math_16"></phrase> from 1000 separate SRSs of size 100 drawn from a population with <em>p</em> = 0.9.</p>
-<box block_type="MN-NOT-H">
+<box id="idm20882784" block_type="MN-NOT-H">
 <p id="ips9e-ch05-p-069" block_type="MN-NOT1">histogram, <link href="alias:page_14">p. 14</link></p>
 </box>
 <figure id="ips9e-ch05-fig-002" block_type="FIGURE" data-caption-compass="S" numbered="true" number="5.1" mmtype="image" mmsrc="" attr="" data-filename="figure_5_1.html">
@@ -169,7 +169,7 @@
 </list>
 <p id="ips9e-ch05-p-082" block_type="TXT-ni">Although these results describe just two sets of simulations, they reflect facts that are true whenever we use random sampling.</p>
 <p id="ips9e-ch05-p-083" block_type="level_2_title"><phrase block_type="h2">Bias and variability</phrase></p>
-<p id="ips9e-ch05-p-084" block_type="TXT-ni">Our simulations show that a sample of size 1200 will almost always give an estimate <phrase data-math="math_26"></phrase> that is close to the truth about the population. <link href="figure_5_2.html">Figure 5.2</link> illustrates this fact for just one value of the population proportion ( <em>p</em> = 0.9), but it is true for any proportion. That is a primary reason <em>Student Monitor</em> uses a sample of size of 1200. There is more sampling variability the smaller the sample size. Samples of size 100, for example, might give an estimate of 83&#37; or 97&#37; when the truth is 90&#37;.</p>
+<p id="ips9e-ch05-p-084" block_type="TXT-ni">Our simulations show that a sample of size 1200 will almost always give an estimate <phrase data-math="math_26"></phrase> that is close to the truth about the population. <link href="figure_5_2.html">Figure 5.2</link> illustrates this fact for just one value of the population proportion (<em>p</em> = 0.9), but it is true for any proportion. That is a primary reason <em>Student Monitor</em> uses a sample of size of 1200. There is more sampling variability the smaller the sample size. Samples of size 100, for example, might give an estimate of 83&#37; or 97&#37; when the truth is 90&#37;.</p>
 <p id="ips9e-ch05-p-085" block_type="TXT">Thinking about <link href="figure_5_1.html">Figure 5.1</link> and <link href="figure_5_2.html">5.2</link> helps us restate the idea of bias when we use a statistic like <phrase data-math="math_27"></phrase> to estimate a parameter like <em>p</em>. It also reminds us that variability matters as much as bias.</p>
 <box id="ips9e-ch05-box-010" numbered="false" block_type="BX1">
 <p id="ips9e-ch05-p-086" block_type="BX1-T">BIAS AND VARIABILITY</p>
@@ -182,7 +182,7 @@
 <p id="ips9e_page_288" block_type="page_start" data-margin-content="left">288</p>
 <figure id="ips9e-ch05-fig-005" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="5.4" mmtype="image" mmsrc="" attr="" data-filename="figure_5_4.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch05-img-005" alt="image" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_04a-d.jpg"/>
+<image asset-id="ips9e-ch05-img-005" alt="image" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_04.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 5.4</phrase> <phrase block_type="FG-CAP">Bias and variability in shooting arrows at a target. Bias means the shots do not center around the bull&#8217;s-eye. Variability means that the shots are scattered.</phrase></caption>
 </figure>
 <box id="ips9e-ch05-box-011" numbered="false" block_type="BX1">
@@ -213,11 +213,11 @@
 <p id="ips9e-ch05-p-0110" block_type="level_2_title"><phrase block_type="h2">Why randomize?</phrase></p>
 <p id="ips9e-ch05-p-0111" block_type="TXT-ni">Why randomize? The act of randomizing guarantees that the results of analyzing our data are subject to the laws of probability. The behavior of statistics is described by a sampling distribution. The form of the distribution is known and, in many cases, is approximately Normal. Often, the center of the distribution lies at the true parameter value so that the notion that randomization eliminates bias is made more explicit. The spread of the distribution describes the variability of the statistic and can be made as small as we wish by choosing a large enough sample. In a randomized experiment, we can reduce variability by choosing larger groups of subjects for each treatment.</p>
 <p id="ips9e-ch05-p-0112" block_type="TXT">These facts are at the heart of formal statistical inference. The remainder of this chapter has much to say in more technical language about sampling distributions. Later chapters describe the way statistical conclusions are based on them. What any user of statistics must understand is that all the technical talk has its basis in a simple question: <em>What would happen if the sample or the experiment were repeated many times?</em> The reasoning applies not only to an SRS, but also to the complex sampling designs actually used by opinion polls and other national sample surveys. The same conclusions hold as well for randomized experimental designs. The details vary with the design, but the basic facts are true whenever randomization is used to produce data.</p>
-<p id="ips9e-ch05-p-0113" block_type="Caution icon"><image asset-id="ips9e-ch05-img-006" alt="image" src="asset/global_asset/global_images/BPScaution-icon.jpg"/></p>
+<p id="ips9e-ch05-p-0113" block_type="Caution icon"><image asset-id="ips9e-ch05-img-006" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch05-p-0114" block_type="TXT">Remember that proper statistical design is not the only aspect of a good sample or experiment. <em>The sampling distribution shows only how a statistic varies due to the operation of chance in randomization. It reveals nothing about possible bias due to undercoverage or nonresponse in a sample or to lack of realism in an experiment.</em> The actual error in estimating a parameter by a statistic can be much larger than the sampling distribution suggests. What is worse, there is no way to say how large the added error is. The real world is less orderly than statistics textbooks imply.</p>
 <p id="ips9e-ch05-p-0115" block_type="TXT">In the next two sections, we will study the sampling distributions of two common statistics, the sample mean and the sample proportion. The focus will be on the important features of these distributions so that we can quickly describe and use them in the later chapters on statistical inference. We will see that, in each case, the sampling distribution depends on <strong>both</strong> the population and the way we collect the data from the population.</p>
 </section>
-<section id="ips9e-ch05-sum1-01" block_type="h1" chapter="ch5" numbered="false" level="1" print_page="290">
+<section id="ips9e-ch05-sum1-01" block_type="SR-H" chapter="ch5" numbered="false" level="1" print_page="290">
 <section-metadata><section-title><phrase block_type="SR-XH">SECTION 5.1</phrase> <phrase block_type="SR-H">SUMMARY</phrase></section-title></section-metadata>
 <list id="ips9e-ch05-list-004" type="unordered" block_type="bullet">
 <li id="ips9e-ch05-li-016"><p id="ips9e-ch05-p-0116" block_type="SR-blf"><phrase block_type="maker">&#8226;</phrase> A number that describes a population is a <strong>parameter</strong>. A number that describes a sample (is computed from the sample data) is a <strong>statistic</strong>. The purpose of sampling or experimentation is usually <strong>inference</strong>: use sample statistics to make statements about unknown population parameters.</p></li>
@@ -227,7 +227,7 @@
 <li id="ips9e-ch05-li-020"><p id="ips9e-ch05-p-0120" block_type="SR-BL-last"><phrase block_type="maker">&#8226;</phrase> Properly chosen statistics from randomized data production designs have no bias resulting from the way the sample is selected or the way the experimental units are assigned to treatments. We can reduce the variability of the statistic by increasing the size of the sample or the size of the experimental groups.</p></li>
 </list>
 </section>
-<section id="ips9e-ch05-exer1-01" block_type="h1" chapter="ch5" numbered="false" level="1" print_page="291">
+<section id="ips9e-ch05-exer1-01" block_type="SR-X-H" chapter="ch5" numbered="false" level="1" print_page="291">
 <section-metadata><section-title><phrase block_type="SR-XH">SECTION 5.1</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></section-title></section-metadata>
 <p id="ips9e-ch05-p-0121" block_type="SR-X-TXT-ni"><em>For <link href="exercise_5_1.html">Exercise 5.1</link>, see page 283; for <link href="exercise_5_2.html">Exercise 5.2</link>, see page 284; for <link href="exercise_5_3.html">Exercise 5.3</link>, see page 286; and for <link href="exercise_5_4.html">Exercises 5.4</link> and <link href="exercise_5_5.html">5.5</link>, see page 289.</em></p>
 <question id="ips9e-ch05-quest-006" block_type="exercise_5_6.html"><p id="ips9e-ch05-p-0122" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">5.6 Web polls.</phrase> If you connect to the website <strong><link href="http://peopleschoice.com/pca/polls/polls.jsp">peopleschoice.com/pca/polls/polls.jsp</link></strong>, you are given the opportunity to vote on various entertainment questions. Can you apply the ideas about populations and samples to these polls? Explain why or why not.</p>
@@ -275,7 +275,7 @@
 <question id="ips9e-ch05-quest-0013" block_type="exercise_5_13.html"><p id="ips9e-ch05-p-0147" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch05-img-007" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="SR-XH">5.13 Constructing sampling distributions.</phrase> The <em>Probability</em> applet simulates tossing a coin, with the advantage that you can choose the true long-term proportion, or probability, of a head. Suppose that we have a population in which proportion <em>p</em> = 0.4 (the parameter) plan to vote in the next election. Tossing a coin with probability <em>p</em> = 0.4 of a head simulates this situation: each head is a person who plans to vote, and each tail is a person who does not. Set the &#8220;Probability of heads&#8221; in the applet to 0.4 and the number of tosses to 25. This simulates an SRS of size 25 from this population. By alternating between &#8220;Toss&#8221; and &#8220;Reset,&#8221; you can take many samples quickly.</p>
 <figure id="ips9e-ch05-fig-006" block_type="FIGURE" data-caption-compass="S" numbered="true" number="5.5" mmtype="image" mmsrc="" attr="" data-filename="figure_5_5.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch05-img-008" alt="image" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_05a-d.jpg"/>
+<image asset-id="ips9e-ch05-img-008" alt="image" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_05.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 5.5</phrase> <phrase block_type="FG-CAP">Determine which of these sampling distributions displays high or low bias and high or low variability, <link href="exercise_5_12.html">Exercise 5.12</link>.</phrase></caption>
 </figure>
 <list id="ips9e-ch05-list-010" type="ordered" block_type="lower-alpha">
@@ -312,7 +312,7 @@
 <p id="ips9e_page_293" block_type="page_start" data-margin-content="right">293</p>
 <box id="ips9e-ch05-box-014" numbered="false" block_type="SP">
 <p id="ips9e-ch05-p-0165" block_type="SP-TXT-ni">When you complete this section, you will be able to:</p>
-<list id="ips9e-ch05-list-014" type="unordered" block_type="bullet">
+<list id="ips9e-ch05-list-014" type="unordered" block_type="bluebullet">
 <li id="ips9e-ch05-li-051"><p id="ips9e-ch05-p-0166" block_type="SP-BL-first"><phrase block_type="maker">&#8226;</phrase> Explain the difference between the sampling distribution of <phrase data-math="math_33"></phrase> and the population distribution.</p></li>
 <li id="ips9e-ch05-li-052"><p id="ips9e-ch05-p-0167" block_type="SP-BL-mid"><phrase block_type="maker">&#8226;</phrase> Determine the mean and standard deviation of <phrase data-math="math_34"></phrase> for an SRS of size <em>n</em> from a population with mean <em>&#956;</em> and standard deviation <em>&#963;</em>.</p></li>
 <li id="ips9e-ch05-li-053"><p id="ips9e-ch05-p-0168" block_type="SP-BL-mid"><phrase block_type="maker">&#8226;</phrase> Describe how much larger <em>n</em> has to be for an SRS to reduce the standard deviation of <phrase data-math="math_35"></phrase> by a certain factor.</p></li>
@@ -322,7 +322,7 @@
 <p id="ips9e-ch05-p-0170" block_type="TXT-ni">A variety of statistics are used to describe quantitative data. The sample mean, median, and standard deviation are all examples of statistics based on quantitative data. Statistical theory describes the sampling distributions of these statistics. However, the general framework for constructing a sampling distribution is the same for all statistics. In this section, we will concentrate on the sample mean. Because sample means are just averages of observations, they are among the most frequently used statistics.</p>
 <p id="ips9e-ch05-p-0171" block_type="TXT">Suppose that you plan to survey 1000 undergraduates enrolled in four-year U.S. universities about their sleeping habits. The sampling distribution of the average hours of sleep per night describes what this average would be if many simple random samples of 1000 students were drawn from the population of students in the United States. In other words, it gives you an idea of what you are likely to see from your survey. It tells you whether you should expect this average to be near the population mean and whether the variation of the statistic is roughly &#177;2 hours or &#177;2 minutes.</p>
 <p id="ips9e-ch05-p-0172" block_type="TXT">Before constructing this distribution, however, we need to consider another set of probability distributions that also plays a role in statistical inference. Any quantity that can be measured on each member of a population is described by the distribution of its values for all members of the population. This is the context in which we first met distributions, as density curves that provide models for the overall pattern of data.</p>
-<box block_type="MN-NOT-H">
+<box id="idp861696" block_type="MN-NOT-H">
 <p id="ips9e-ch05-p-0174" block_type="MN-NOT1">density curves, <link href="alias:page_51">p. 51</link></p>
 </box>
 <p id="ips9e-ch05-p-0175" block_type="TXT">Imagine choosing one individual at random from a population and measuring a quantity. The quantities obtained from repeated draws of one individual from a population have a probability distribution that is the distribution of the population.</p>
@@ -509,10 +509,11 @@
 <box id="ips9e-ch05-box-025" numbered="false" block_type="EXP" data-filename="example_5_7.html">
 <p id="ips9e-ch05-p-0244" block_type="EXP-N">EXAMPLE 5.7</p>
 <p id="ips9e-ch05-p-0245" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">How close will the sample mean be to the population mean?</phrase> With the Normal distribution to work with, we can better describe how precisely a random sample of 60 visits estimates the mean length of all visits to the help room. The population standard deviation for the 1264 visits in the population of <link href="figure_5_6.html">Figure 5.6(a)</link> is <em>&#963;</em> = 41.84 minutes. From <link href="example_5_6.html">Example 5.6</link> we know <phrase data-math="math_76"></phrase> minutes. By the 95 part of the 68&#8211;95&#8211;99.7 rule, about 95&#37; of all samples will have mean <phrase data-math="math_77"></phrase> within two standard deviations of <em>&#956;</em>, that is, within &#177;10.8 minutes of <em>&#956;</em>.</p>
-</box>
-<box block_type="MN-NOT-H">
+<box id="idm6224800" block_type="MN-NOT-H">
 <p id="ips9e-ch05-p-0247" block_type="MN-NOT1">68&#8211;95&#8211;99.7 rule, <link href="alias:page_57">p. 57</link></p>
 </box>
+  </box>
+
 <box id="ips9e-ch05-box-026" numbered="false" block_type="EXR">
 <p id="ips9e-ch05-p-0248" block_type="EXR-H">USE YOUR KNOWLEDGE</p>
 <question id="ips9e-ch05-quest-0020" block_type="exercise_5_20.html"><p id="ips9e-ch05-p-0249" block_type="EXR-QUE-NL-first2digit"><phrase block_type="EXR-QUE-N-ri">5.20</phrase> <phrase block_type="EXR-QUE-T-ri">Use the 68&#8211;95&#8211;99.7 rule.</phrase> You take an SRS of size 64 from a population with mean 82 and standard deviation 24. According to the central limit theorem, what is the approximate sampling distribution of the sample mean? Use the 95 part of the 68&#8211;95&#8211;99.7 rule to describe the variability of <phrase data-math="math_78"></phrase>.</p>
@@ -527,7 +528,7 @@
 <p id="ips9e-ch05-p-0255" block_type="EXP-TXT-ni">For samples of size 240, about 95&#37; of the sample means will be within twice 2.70, or 5.40 minutes, of the population mean <em>&#956;</em>.</p>
 </box>
 <p id="ips9e-ch05-p-0256" block_type="Caution icon"><image asset-id="ips9e-ch05-img-013" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
-<p id="ips9e-ch05-p-0257" block_type="TXT">The standard deviation computed in <link href="example_5_8.html">Example 5.8</link> is actually too large. This is due to the fact that the population size, <em>N</em> = 1264, is not at least 20 times larger than the sample size, <em>n</em> = 240. In these settings, it is better to adjust the standard deviation of <phrase data-math="math_82"></phrase> to reflect only the variance remaining in the population that is not in the sample. This is done by multiplying the unadjusted standard deviation by the <termref term="finite population correction factor"><strong>finite population correction factor</strong></termref><phrase block_type="MN-GL-term">finite population correction factor</phrase>. This quantity is <phrase data-math="math_83"></phrase> and moves the standard deviation of <phrase data-math="math_84"></phrase> toward 0 as <em>n</em> moves toward <em>N</em>. Applying this correction to <link href="example_5_8.html">Example 5.8</link>, the standard deviation of <phrase data-math="math_85"></phrase> is reduced 10&#37; to</p>
+<p id="ips9e-ch05-p-0257" block_type="TXT">The standard deviation computed in <link href="example_5_8.html">Example 5.8</link> is actually too large. This is due to the fact that the population size, <em>N</em> = 1264, is not at least 20 times larger than the sample size, <em>n</em> = 240. In these settings, it is better to adjust the standard deviation of <phrase data-math="math_82"></phrase> to reflect only the variance remaining in the population that is not in the sample. This is done by multiplying the unadjusted standard deviation by the <termref term="finite population correction factor"><strong>finite population correction factor</strong></termref><phrase block_type="MN-GL-term">finite population<br/>correction factor</phrase>. This quantity is <phrase data-math="math_83"></phrase> and moves the standard deviation of <phrase data-math="math_84"></phrase> toward 0 as <em>n</em> moves toward <em>N</em>. Applying this correction to <link href="example_5_8.html">Example 5.8</link>, the standard deviation of <phrase data-math="math_85"></phrase> is reduced 10&#37; to</p>
 <p id="ips9e-ch05-p-0259" block_type="EQ"><phrase data-math="math_86"></phrase></p>
 <p id="ips9e-ch05-p-0260" block_type="TXT">Thus, for samples of size 240, about 95&#37; of the sample means will be within twice 2.43, or 4.86 minutes, of the population mean <em>&#956;</em>, rather than the 5.40 minutes reported in <link href="example_5_8.html">Example 5.8</link>.</p>
 <box id="ips9e-ch05-box-028" numbered="false" block_type="EXR">
@@ -543,7 +544,7 @@
 <p id="ips9e-ch05-p-0267" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">The central limit theorem in action.</phrase> <link href="figure_5_8.html">Figure 5.8</link> shows the central limit theorem in action for another very non-Normal population. <link href="figure_5_8.html">Figure 5.8(a)</link> displays the density curve of a single observation from the population. The distribution is strongly right-skewed, and the most probable outcomes are near 0. The mean <em>&#956;</em> of this distribution is 1, and its standard deviation <em>&#963;</em> is also 1. This particular continuous distribution is called an <termref term="exponential distribution"><strong>exponential distribution</strong></termref><phrase block_type="MN-GL-term">exponential distribution</phrase>. Exponential distributions are used as models for how long an iPhone will function properly and for the time between snaps you receive on Snapchat.</p>
 <figure id="ips9e-ch05-fig-009" block_type="FIGURE" data-caption-compass="S" numbered="true" number="5.8" mmtype="image" mmsrc="" attr="" data-filename="figure_5_8.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch05-img-014" alt="image" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_08a-d.jpg"/>
+<image asset-id="ips9e-ch05-img-014" alt="image" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_08.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 5.8</phrase> <phrase block_type="FG-CAP">The central limit theorem in action: the sampling distribution of sample means from a strongly non-Normal population becomes more Normal as the sample size increases, <link href="example_5_9.html">Example 5.9</link>. (a) The distribution of 1 observation. (b) The distribution of <phrase data-math="math_91"></phrase> for 2 observations. (c) The distribution of <phrase data-math="math_92"></phrase> for 10 observations. (d) The distribution of <phrase data-math="math_93"></phrase> for 25 observations.</phrase></caption>
 </figure>
 <p id="ips9e-ch05-p-0269" block_type="EXP-mid"><link href="figure_5_8.html">Figure 5.8(b)</link>, <link href="figure_5_8.html">(c)</link>, and <link href="figure_5_8.html">(d)</link> are the density curves of the sample means of 2, 10, and 25 observations from this population. As <em>n</em> increases, the shape becomes more Normal. The mean remains at <em>&#956;</em> = 1, but the standard deviation decreases, taking the value <phrase data-math="math_94"></phrase>. The density curve for 10 observations is still somewhat skewed to the right but already resembles a Normal curve having <em>&#956;</em> = 1 and <phrase data-math="math_95"></phrase>. The density curve for <em>n</em> = 25 is yet more Normal. The contrast between the shape of the population distribution and of the distribution of the mean of 10 or 25 observations is striking.</p>
@@ -563,7 +564,8 @@
 <p id="ips9e-ch05-p-0275" block_type="TXT">Try using the applet for the other sample sizes in <link href="example_5_9.html">Example 5.9</link>. You should get histograms shaped like the density curves shown in <link href="figure_5_8.html">Figure 5.8</link>. You can also consider other sample sizes by sliding <em>n</em> from 1 to 100. As you increase <em>n</em>, the shape of the histogram moves closer to the Normal curve that is based on the central limit theorem.</p>
 <box id="ips9e-ch05-box-031" numbered="false" block_type="EXR">
 <p id="ips9e-ch05-p-0276" block_type="EXR-H">USE YOUR KNOWLEDGE</p>
-<question id="ips9e-ch05-quest-0022"><p id="ips9e-ch05-p-0277" block_type="EXR-QUE-NL-first2digit"><image asset-id="ips9e-ch05-img-017" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="EXR-QUE-N-ri">5.22</phrase> <phrase block_type="EXR-QUE-T-ri">Use the <em>Central Limit Theorem</em> applet.</phrase> Let&#8217;s consider the uniform distribution between 0 and 10. For this distribution, all intervals of the same length between 0 and 10 are equally likely. This distribution has a mean of 5 and standard deviation of 2.89.</p>
+<question id="ips9e-ch05-quest-0022" block_type="exercise_5_22.html"><p id="ips9e-ch05-p-0277" block_type="EXR-QUE-NL-first"><phrase block_type="EXR-QUE-N-ri">5.22</phrase> <phrase block_type="EXR-QUE-T-ri">Use the <em>Central Limit Theorem</em> applet.</phrase> Let&#8217;s consider the uniform distribution between 0 and 10. For this distribution, all intervals of the same length between 0 and 10 are equally likely. This distribution has a mean of 5 and standard deviation of 2.89.</p>
+<p id="ips9e-ch05-p-0276a" block_type="Applet icon"><image asset-id="ips9e-ch05-img-015a" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/></p>
 <list id="ips9e-ch05-list-017" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch05-li-060"><p id="ips9e-ch05-p-0279" block_type="EXR-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Approximate the population distribution by setting <em>n</em> = 1 and clicking the &#8220;Generate samples&#8221; button.</p></li>
 <li id="ips9e-ch05-li-061"><p id="ips9e-ch05-p-0280" block_type="EXR-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> What are your estimates of the population mean and population standard deviation based on the 10,000 SRSs? Are these population estimates close to the true values?</p></li>
@@ -571,8 +573,9 @@
 </list>
 </question>
 <p id="ips9e_page_302" block_type="page_start" data-margin-content="left">302</p>
-<question id="ips9e-ch05-quest-0023"><p id="ips9e-ch05-p-0283" block_type="EXR-QUE-NL-last"><image asset-id="ips9e-ch05-img-018" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="EXR-QUE-N-ri">5.23</phrase> <phrase block_type="EXR-QUE-T-ri">Use the <em>Central Limit Theorem</em> applet again.</phrase> Refer to the previous exercise. In the setting of <link href="example_5_9.html">Example 5.9</link>, let&#8217;s approximate the sampling distribution for samples of size <em>n</em> = 2, 10, and 25 observations.</p>
-<list id="ips9e-ch05-list-018" type="ordered" block_type="lower-alpha">
+<question id="ips9e-ch05-quest-0023" block_type="exercise_5_23.html"><p id="ips9e-ch05-p-0283" block_type="EXR-QUE-NL-last"><phrase block_type="EXR-QUE-N-ri">5.23</phrase> <phrase block_type="EXR-QUE-T-ri">Use the <em>Central Limit Theorem</em> applet again.</phrase> Refer to the previous exercise. In the setting of <link href="example_5_9.html">Example 5.9</link>, let&#8217;s approximate the sampling distribution for samples of size <em>n</em> = 2, 10, and 25 observations.</p>
+<p id="ips9e-ch05-p-0276b" block_type="Applet icon"><image asset-id="ips9e-ch05-img-015b" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/></p>
+  <list id="ips9e-ch05-list-018" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch05-li-063"><p id="ips9e-ch05-p-0285" block_type="EXR-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> For each sample size, compute the mean and standard deviation of <phrase data-math="math_98"></phrase>.</p></li>
 <li id="ips9e-ch05-li-064"><p id="ips9e-ch05-p-0286" block_type="EXR-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> For each sample size, use the applet to approximate the sampling distribution. Report the estimated mean and standard deviation. Are they close to the true values calculated in part (a)?</p></li>
 <li id="ips9e-ch05-li-065"><p id="ips9e-ch05-p-0287" block_type="EXR-QUE-NL-lvl2"><phrase block_type="maker">(c)</phrase> For each sample size, compare the shape of the sampling distribution with the Normal curve based on the central limit theorem.</p></li>
@@ -625,11 +628,12 @@
 </figure>
 <p id="ips9e-ch05-p-0313" block_type="level_2_title"><phrase block_type="h2">A few more facts</phrase></p>
 <p id="ips9e-ch05-p-0314" block_type="TXT-ni">The central limit theorem is the big fact of probability theory in this section. Here are three additional facts related to our investigations that will be useful in describing methods of inference in later chapters.</p>
-<p id="ips9e-ch05-p-0315" block_type="TXT">The fact that the sample mean of an SRS from a Normal population has a Normal distribution is a special case of a more general fact: <strong>any linear combination of independent Normal random variables is also Normally distributed</strong>. That is, if <em>X</em> and <em>Y</em> are independent Normal random variables and <em>a</em> and <em>b</em> are any fixed numbers, <em>aX</em> + <em>bY</em> is also Normally distributed, and this is true for any number of Normal random variables. In particular, the sum or difference of independent Normal random variables has a Normal distribution. The mean and standard deviation of <em>aX</em> + <em>bY</em> are found as usual from the rules for means and variances. These facts are often used in statistical calculations. Here is an example.</p>
-<box block_type="MN-NOT-H">
+<box id="idm6021264" block_type="MN-NOT-H">
 <p id="ips9e-ch05-p-0317" block_type="MN-NOT1">rules for means, <link href="alias:page_254">p. 254</link></p>
 <p id="ips9e-ch05-p-0318" block_type="MN-NOT1">rules for variances, <link href="alias:page_258">p. 258</link></p>
 </box>
+  <p id="ips9e-ch05-p-0315" block_type="TXT">The fact that the sample mean of an SRS from a Normal population has a Normal distribution is a special case of a more general fact: <strong>any linear combination of independent Normal random variables is also Normally distributed</strong>. That is, if <em>X</em> and <em>Y</em> are independent Normal random variables and <em>a</em> and <em>b</em> are any fixed numbers, <em>aX</em> + <em>bY</em> is also Normally distributed, and this is true for any number of Normal random variables. In particular, the sum or difference of independent Normal random variables has a Normal distribution. The mean and standard deviation of <em>aX</em> + <em>bY</em> are found as usual from the rules for means and variances. These facts are often used in statistical calculations. Here is an example.</p>
+
 <box id="ips9e-ch05-box-035" numbered="false" block_type="EXP" data-filename="example_5_13.html">
 <p id="ips9e-ch05-p-0319" block_type="EXP-N">EXAMPLE 5.13</p>
 <p id="ips9e-ch05-p-0320" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Getting to and from campus.</phrase> You live off campus and take the shuttle, provided by your apartment complex, to and from campus. Your time on the shuttle in minutes varies from day to day. The time going to campus <em>X</em> has the <em>N</em>(20,4) distribution, and the time returning from campus <em>Y</em> varies according to the <em>N</em>(18, 8) distribution. If they vary independently, what is the probability that you will be on the shuttle for less time going to campus?</p>
@@ -674,7 +678,7 @@
 <p id="ips9e-ch05-p-0343" block_type="TXT">A manufacturer certainly wants to know to which of these classes a new product belongs. To find out, engineers operate a random sample of products until they fail. From the failure time data, we can estimate the parameter (called the &#8220;shape parameter&#8221;) that distinguishes among the three Weibull distributions in <link href="figure_5_13.html">Figure 5.13</link>. The shape parameter has no simple definition like that of a population proportion or mean, and it cannot be estimated by a simple statistic such as <phrase data-math="math_122"></phrase> or <phrase data-math="math_123"></phrase>.</p>
 <p id="ips9e-ch05-p-0344" block_type="TXT">Two things save the situation. First, statistical theory provides general approaches for finding good estimates of any parameter. These general methods not only tell us how to use <phrase data-math="math_124"></phrase> in the Normal settings, but also how to estimate the Weibull shape parameter. Second, software can calculate the estimate from data even though there is no algebraic formula that we can write for the estimate. Statistical practice often relies on both mathematical theory and methods of computation more elaborate than the ones we will meet in this book. Fortunately, big ideas such as sampling distributions carry over to more complicated situations.<termref term="fn_ch5_fn7"><sup>7</sup></termref></p>
 </section>
-<section id="ips9e-ch05-sum1-02" block_type="h1" chapter="ch5" numbered="false" level="1" print_page="307">
+<section id="ips9e-ch05-sum1-02" block_type="SR-H" chapter="ch5" numbered="false" level="1" print_page="307">
 <section-metadata><section-title><phrase block_type="SR-XH">SECTION 5.2</phrase> <phrase block_type="SR-H">SUMMARY</phrase></section-title></section-metadata>
 <p id="ips9e_page_307" block_type="page_start" data-margin-content="right">307</p>
 <list id="ips9e-ch05-list-021" type="unordered" block_type="bullet">
@@ -686,7 +690,7 @@
 <li id="ips9e-ch05-li-079"><p id="ips9e-ch05-p-0352" block_type="SR-BL-last"><phrase block_type="maker">&#8226;</phrase> Linear combinations of independent Normal random variables have Normal distributions. In particular, if the population has a Normal distribution, so does <phrase data-math="math_131"></phrase>.</p></li>
 </list>
 </section>
-<section id="ips9e-ch05-exer1-02" block_type="h1" chapter="ch5" numbered="false" level="1" print_page="307">
+<section id="ips9e-ch05-exer1-02" block_type="SR-X-H" chapter="ch5" numbered="false" level="1" print_page="307">
 <section-metadata><section-title><phrase block_type="SR-XH">SECTION 5.2</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></section-title></section-metadata>
 <p id="ips9e-ch05-p-0353" block_type="SR-TXT-ni"><em>For <link href="exercise_5_17.html">Exercise 5.17</link>, see page 294; for <link href="exercise_5_18.html">Exercises 5.18</link> and <link href="exercise_5_19.html">5.19</link>, see page 297; for <link href="exercise_5_20.html">Exercise 5.20</link>, see page 298; for <link href="exercise_5_21.html">Exercise 5.21</link>, see page 299; for <link href="exercise_5_22.html">Exercises 5.22</link> and <link href="exercise_5_23.html">5.23</link>, see pages 301&#8211;302; and for <link href="exercise_5_24.html">Exercise 5.24</link>, see page 303.</em></p>
 <question id="ips9e-ch05-quest-0025" block_type="exercise_5_25.html"><p id="ips9e-ch05-p-0354" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">5.25 What is wrong?</phrase> Explain what is wrong in each of the following statements.</p>
@@ -845,7 +849,7 @@
 <section-metadata><section-title>5.3 Sampling Distributions for Counts and Proportions</section-title></section-metadata>
 <box id="ips9e-ch05-box-038" numbered="false" block_type="SP">
 <p id="ips9e-ch05-p-0425" block_type="SP-TXT-ni">When you complete this section, you will be able to:</p>
-<list id="ips9e-ch05-list-038" type="unordered" block_type="bullet">
+<list id="ips9e-ch05-list-038" type="unordered" block_type="bluebullet">
 <li id="ips9e-ch05-li-129"><p id="ips9e-ch05-p-0426" block_type="SP-BL-first"><phrase block_type="maker">&#8226;</phrase> Determine when a count <em>X</em> can be modeled using the binomial distribution.</p></li>
 <li id="ips9e-ch05-li-130"><p id="ips9e-ch05-p-0427" block_type="SP-BL-mid"><phrase block_type="maker">&#8226;</phrase> Determine when the sampling distribution of a count can be modeled using the binomial distribution.</p></li>
 <li id="ips9e-ch05-li-131"><p id="ips9e-ch05-p-0428" block_type="SP-BL-mid"><phrase block_type="maker">&#8226;</phrase> Calculate the mean and standard deviation of <em>X</em> when it has the <em>B</em>(<em>n</em>, <em>p</em>) distribution.</p></li>
@@ -856,16 +860,17 @@
 </list>
 </box>
 <p id="ips9e_page_311" block_type="page_start" data-margin-content="right">311</p>
-<p id="ips9e-ch05-p-0434" block_type="TXT-ni">In the previous section, we discussed the probability distribution of the sample mean, which meant a focus on population values that were quantitative. We will now shift our focus to population values that are categorical. Counts and proportions are common discrete statistics that describe categorical data.</p>
 <box block_type="MN-NOT-H">
 <p id="ips9e-ch05-p-0436" block_type="MN-NOT1">categorical variable, <link href="alias:page_3">p. 3</link></p>
 </box>
+  <p id="ips9e-ch05-p-0434" block_type="TXT-ni">In the previous section, we discussed the probability distribution of the sample mean, which meant a focus on population values that were quantitative. We will now shift our focus to population values that are categorical. Counts and proportions are common discrete statistics that describe categorical data.</p>
+
 <p id="ips9e-ch05-p-0437" block_type="TXT">In <link href="ips9e_ch5_2.html" target="_pop">Section 5.1</link> (pages 284&#8211;287), we discussed the use of simulation to study the sampling distribution of the sample proportion. In this section, we will use probability theory to more precisely describe the sampling distributions of the sample count and proportion. Let&#8217;s start with an example.</p>
 <box id="ips9e-ch05-box-039" numbered="false" block_type="EXP" data-filename="example_5_15.html">
 <p id="ips9e-ch05-p-0438" block_type="EXP-N">EXAMPLE 5.15</p>
 <p id="ips9e-ch05-p-0439" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Work hours make it difficult to spend time with children.</phrase> A sample survey asks 1006 British parents whether they think long working hours are making it difficult to spend enough time with their children.<termref term="fn_ch5_fn11"><sup>11</sup></termref> We would like to view the responses of these parents as representative of a larger population of British parents who hold similar beliefs. That is, we will view the responses of the sampled parents as an SRS from a population.</p>
 <figure id="ips9e-ch05-fig-015" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
-<layout align="center" width="medium" border="false"/>
+<layout align="left" width="medium" border="false"/>
 <image asset-id="ips9e-ch05-img-0026" alt="image" src="asset/ch5/17MOOREIPS-MSE_9e_P_05_01.jpg"/>
 <asset_source><phrase block_type="PHCR">Istockphoto/Thinkstock</phrase></asset_source>
 </figure>
@@ -876,7 +881,7 @@
 <p id="ips9e-ch05-p-0442" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">The random variable of interest.</phrase> In this sample survey of British parents, <em>n</em> = 1006. The parents in the sample were asked if they agree with the statement &#8220;These days, long working hours make it difficult for parents to spend enough time with their children.&#8221; The variable <em>X</em> is the number of parents who agreed with the statement. In this case, <em>X</em> = 755.</p>
 </box>
 <p id="ips9e-ch05-p-0443" block_type="TXT">In our example, we chose the random variable <em>X</em> to be the number of parents who think that long working hours make it difficult to spend enough time with their children. We could have chosen <em>X</em> to be the number of parents who do not think that long working hours make it difficult to spend enough time with their children. The choice is yours. Often, we make the choice based on how we would like to describe the results in a summary. Which choice do you prefer in this case?</p>
-<box block_type="MN-NOT-H">
+<box id="idp2792976" block_type="MN-NOT-H">
 <p id="ips9e-ch05-p-0445" block_type="MN-NOT1">sample proportion, <link href="alias:page_199">p. 199</link></p>
 </box>
 <p id="ips9e-ch05-p-0446" block_type="TXT">When a random variable has only two possible outcomes, it is more common to use the sample proportion <phrase data-math="math_161"></phrase> as the summary rather than the count <em>X</em>.</p>
@@ -942,7 +947,7 @@
 <p id="ips9e-ch05-p-0484" block_type="EXP-N">EXAMPLE 5.19</p>
 <p id="ips9e-ch05-p-0485" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Audits of financial records.</phrase> The financial records of businesses are often audited by state tax authorities to test compliance with tax laws. Suppose that for one retail business, 800 of the 10,000 sales are incorrectly classified as subject to state sales tax. It would be too time-consuming for authorities to examine all these sales. Instead, an auditor examines an SRS of sales records. Is the count <em>X</em> of misclassified records in an SRS of 150 records a binomial random variable?</p>
 <figure id="ips9e-ch05-fig-016" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
-<layout align="center" width="medium" border="false"/>
+<layout align="left" width="medium" border="false"/>
 <image asset-id="ips9e-ch05-img-0028" alt="image" src="asset/ch5/17MOOREIPS-MSE_9e_P_05_02.jpg"/>
 <asset_source><phrase block_type="PHCR">D. Hurst/Alamy</phrase></asset_source>
 </figure>
@@ -950,7 +955,7 @@
 <p id="ips9e-ch05-p-0486" block_type="TXT"><em>Choosing an SRS from a population is not quite a binomial setting.</em> Removing one record in <link href="example_5_19.html">Example 5.19</link> changes the proportion of bad records in the remaining population, so the state of the second record chosen is not independent of the first. Because the population is large, however, removing a few items has a very small effect on the composition of the remaining population. Successive inspection results are very nearly independent. The population proportion of misclassified records is</p>
 <p id="ips9e-ch05-p-0487" block_type="EQ"><phrase data-math="math_166"></phrase></p>
 <p id="ips9e-ch05-p-0488" block_type="TXT">If the first record chosen is bad, the proportion of bad records remaining is 799/9999 = 0.079908. If the first record is good, the proportion of bad records left is 800/9999 = 0.080008. These proportions are so close to 0.08 that, for practical purposes, we can act as if removing one record has no effect on the proportion of misclassified records remaining. We act as if the count <em>X</em> of misclassified sales records in the audit sample has the binomial distribution <em>B</em>(150, 0.08).</p>
-<box block_type="MN-NOT-H">
+<box id="idp2908320" block_type="MN-NOT-H">
 <p id="ips9e-ch05-p-0490" block_type="MN-NOT1">stratified random sample, <link href="alias:page_194">p. 194</link></p>
 </box>
 <p id="ips9e-ch05-p-0491" block_type="TXT">Populations like the one described in <link href="example_5_19.html">Example 5.19</link> often contain a relatively small number of items with very large values. For this example, these values would be very large sale amounts and likely represent an important group of items to the auditor. An SRS taken from such a population will likely include very few items of this type. Therefore, it is common to use a stratified sample in settings like this. Strata are defined based on dollar value of the sale, and within each stratum, an SRS is taken. The results are then combined to obtain an estimate for the entire population.</p>
@@ -979,17 +984,13 @@
 <box id="ips9e-ch05-box-050" numbered="false" block_type="EXP" data-filename="example_5_21.html">
 <p id="ips9e-ch05-p-0504" block_type="EXP-N">EXAMPLE 5.21</p>
 <p id="ips9e-ch05-p-0506" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">The probability histogram.</phrase> Suppose that the audit in <link href="example_5_19.html">Example 5.19</link> chose just 15 sales records. What is the probability that no more than one of the 15 is misclassified? The count <em>X</em> of misclassified records in the sample has approximately the <em>B</em>(15, 0.08) distribution. <link href="figure_5_15.html">Figure 5.15</link> is a probability histogram for this distribution. The distribution is strongly skewed. Although <em>X</em> can take any whole-number value from 0 to 15, the probabilities of values larger than 5 are so small that they do not appear in the histogram.</p>
-<figure id="ips9e-ch05-fig-018" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="5.15" mmtype="image" mmsrc="" attr="" data-filename="figure_5_15.html">
+<figure id="ips9e-ch05-fig-018" block_type="FIGURE" data-caption-compass="S" numbered="true" number="5.15" mmtype="image" mmsrc="" attr="" data-filename="figure_5_15.html">
 <layout align="center" width="medium" border="false"/>
 <image asset-id="ips9e-ch05-img-0030" alt="image" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_15.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 5.15</phrase> <phrase block_type="FG-CAP">Probability histogram for the binomial distribution with <em>n</em> = 15 and <em>p</em> = 0.08, <link href="example_5_21.html">Example 5.21</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch05-p-0507" block_type="EXP-mid">We want to calculate</p>
-<p id="ips9e-ch05-p-0508" block_type="EXP-EQ"><em>P</em>(<em>X</em> &#8804; 1) = <em>P</em>(<em>X</em> = 0) + <em>P</em>(<em>X</em> = 1)</p>
-<p id="ips9e-ch05-p-0509" block_type="EXP-TXT-ni">when <em>X</em> has the <em>B</em>(15, 0.08) distribution. To use <link href="table_c.html">Table C</link> for this calculation, look opposite <em>n</em> = 15 and under <em>p</em> = 0.08. The entries in the rows for each <em>k</em> are <em>P</em>(<em>X</em> = <em>k</em>). Blank cells in the table are 0 to four decimal places. You see that</p>
-<p id="ips9e-ch05-p-0510" block_type="EXP-EQ"><em>P</em>(<em>X</em> &#8804; 1) = <em>P</em>(<em>X</em> = 0) + <em>P</em>(<em>X</em> = 1)</p>
-<p id="ips9e-ch05-p-0511" block_type="EXP-EQ">= 0.2863 + 0.3734 = 0.6597</p>
-<table id="ips9e-ch05-tab-4" numbered="false" block_type="UN-TABLE" attr="40">
+<table id="ips9e-ch05-tab-4" numbered="false" block_type="UN-TABLE" attr="20">
 <tbody>
 <tr class="tborder">
 <td align="center" block_type="EXP-TB1-COLHD"></td>
@@ -1053,6 +1054,11 @@
 </tr>
 </tbody>
 </table>
+  <p id="ips9e-ch05-p-0508" block_type="EXP-EQ"><em>P</em>(<em>X</em> &#8804; 1) = <em>P</em>(<em>X</em> = 0) + <em>P</em>(<em>X</em> = 1)</p>
+<p id="ips9e-ch05-p-0509" block_type="EXP-TXT-ni">when <em>X</em> has the <em>B</em>(15, 0.08) distribution. To use <link href="table_c.html">Table C</link> for this calculation, look opposite <em>n</em> = 15 and under <em>p</em> = 0.08. The entries in the rows for each <em>k</em> are <em>P</em>(<em>X</em> = <em>k</em>). Blank cells in the table are 0 to four decimal places. You see that</p>
+<p id="ips9e-ch05-p-0510" block_type="EXP-EQ"><em>P</em>(<em>X</em> &#8804; 1) = <em>P</em>(<em>X</em> = 0) + <em>P</em>(<em>X</em> = 1)</p>
+<p id="ips9e-ch05-p-0511" block_type="EXP-EQ">= 0.2863 + 0.3734 = 0.6597</p>
+
 <p id="ips9e-ch05-p-0512" block_type="EXP-mid">About two-thirds of all samples will contain no more than 1 bad record. In fact, almost 29&#37; of the samples will contain no bad records. The sample of size 15 cannot be trusted to provide adequate evidence about misclassified sales records. A larger number of observations is needed.</p>
 </box>
 <p id="ips9e-ch05-p-0513" block_type="TXT">The values of <em>p</em> that appear in <link href="table_c.html">Table C</link> are all 0.5 or smaller. When the probability of a success is greater than 0.5, restate the problem in terms of the number of failures. The probability of a failure is less than 0.5 when the probability of a success exceeds 0.5. When using the table, always stop to ask whether you must count successes or failures.</p>
@@ -1080,10 +1086,11 @@
 </box>
 <p id="ips9e-ch05-p-0528" block_type="level_2_title"><phrase block_type="h2">Binomial mean and standard deviation</phrase></p>
 <p id="ips9e-ch05-p-0529" block_type="TXT-ni">If a count <em>X</em> has the <em>B</em>(<em>n</em>, <em>p</em>) distribution, what are the mean <em>&#956;<sub>X</sub></em> and the standard deviation <em>&#963;<sub>X</sub></em>? We can guess the mean. If we expect 46&#37; of the students to have fallen asleep in class due to poor sleep, the mean number in 10 students should be 46&#37; of 10, or 4.6. That&#8217;s <em>&#956;<sub>X</sub></em> when <em>X</em> has the <em>B</em>(10, 0.46) distribution.</p>
-<p id="ips9e-ch05-p-0530" block_type="TXT">Intuition suggests more generally that the mean of the <em>B</em>(<em>n</em>, <em>p</em>) distribution should be <em>np</em>. Can we show that this is correct and also obtain a short formula for the standard deviation? Because binomial distributions are discrete probability distributions, we could find the mean and variance by using the definitions in <link href="ips9e-ch04-sec1-04">Section 4.4</link>. Here is an easier way.</p>
 <box block_type="MN-NOT-H">
 <p id="ips9e-ch05-p-0532" block_type="MN-NOT1">means and variances of random variables, <link href="alias:page_246">pp. 246</link>, <link href="alias:page_255">255</link></p>
 </box>
+  <p id="ips9e-ch05-p-0530" block_type="TXT">Intuition suggests more generally that the mean of the <em>B</em>(<em>n</em>, <em>p</em>) distribution should be <em>np</em>. Can we show that this is correct and also obtain a short formula for the standard deviation? Because binomial distributions are discrete probability distributions, we could find the mean and variance by using the definitions in <link href="ips9e-ch04-sec1-04">Section 4.4</link>. Here is an easier way.</p>
+
 <p id="ips9e-ch05-p-0533" block_type="TXT">A binomial random variable <em>X</em> is the count of successes in <em>n</em> independent observations that each have the same probability <em>p</em> of success. Let the random variable <em>S<sub>i</sub></em> indicate whether the <em>i</em>th observation is a success or failure by taking the values <em>S<sub>i </sub></em>= 1 if a success occurs and <em>S<sub>i </sub></em>= 0 if the outcome is a failure. The <em>S<sub>i</sub></em> are independent because the observations are, and each <em>S<sub>i</sub></em> has the same simple distribution:</p>
 <table id="ips9e-ch05-tab-5" numbered="false" block_type="UN-TABLE" attr="40">
 <tbody>
@@ -1139,10 +1146,11 @@
 </question>
 </box>
 <p id="ips9e-ch05-p-0562" block_type="level_2_title"><phrase block_type="h2">Sample proportions</phrase></p>
-<p id="ips9e-ch05-p-0563" block_type="TXT-ni">What proportion of a company&#8217;s sales records have an incorrect sales tax classification? What percent of adults favor stronger laws restricting firearms? In statistical sampling, we often want to estimate the proportion <em>p</em> of &#8220;successes&#8221; in a population. Our estimator is the sample proportion of successes:</p>
 <box block_type="MN-NOT-H">
 <p id="ips9e-ch05-p-0565" block_type="MN-NOT1">population proportion, <link href="alias:page_199">p. 199</link></p>
 </box>
+  <p id="ips9e-ch05-p-0563" block_type="TXT-ni">What proportion of a company&#8217;s sales records have an incorrect sales tax classification? What percent of adults favor stronger laws restricting firearms? In statistical sampling, we often want to estimate the proportion <em>p</em> of &#8220;successes&#8221; in a population. Our estimator is the sample proportion of successes:</p>
+
 <p id="ips9e-ch05-p-0566" block_type="EQ"><phrase data-math="math_171"></phrase></p>
 <p id="ips9e-ch05-p-0568" block_type="Caution icon"><image asset-id="ips9e-ch05-img-0031" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch05-p-0569" block_type="TXT"><em>Be sure to distinguish between the proportion</em> <phrase data-math="math_172"></phrase> <em>and the count X.</em> The count takes whole-number values between 0 and <em>n</em>, but a proportion is always a number between 0 and 1. In the binomial setting, the count <em>X</em> has a binomial distribution. The proportion <phrase data-math="math_173"></phrase> does <em>not</em> have a binomial distribution. We can, however, do probability calculations about <phrase data-math="math_174"></phrase> by restating them in terms of the count <em>X</em> and using binomial methods. In <link href="example_5_11.html">Example 5.11</link> (pages 302&#8211;303), we took a similar approach for the sum, restating the problem in terms of the sample mean and then using the Normal distribution to calculate the probability.</p>
@@ -1150,7 +1158,7 @@
 <p id="ips9e-ch05-p-0570" block_type="EXP-N">EXAMPLE 5.24</p>
 <p id="ips9e-ch05-p-0571" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Shopping online.</phrase> A survey by the Consumer Reports National Research Center revealed that 84&#37; of all respondents were very satisfied with their online shopping experience.<termref term="fn_ch5_fn15"><sup>15</sup></termref> It was also reported, however, that people over the age of 40 were generally more satisfied than younger respondents. You decide to take a nationwide random sample of 2500 college students and ask if they agree or disagree that &#8220;I am very satisfied with my online shopping experience.&#8221; Suppose that 60&#37; of all college students would agree if asked this question. What is the probability that the sample proportion who agree is at least 58&#37;?</p>
 <figure id="ips9e-ch05-fig-019" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="">
-<layout align="center" width="medium" border="false"/>
+<layout align="left" width="medium" border="false"/>
 <image asset-id="ips9e-ch05-img-0032" alt="image" src="asset/ch5/17MOOREIPS-MSE_9e_P_05_03.jpg"/>
 <asset_source><phrase block_type="PHCR">NetPhotos/Alamy</phrase></asset_source>
 </figure>
@@ -1160,11 +1168,12 @@
 <p id="ips9e_page_320" block_type="page_start" data-margin-content="left">320</p>
 <p id="ips9e-ch05-p-0576" block_type="EXP-TXT-ni">This is a rather elaborate calculation. We must add more than 1000 binomial probabilities. Software tells us that <phrase data-math="math_178"></phrase>. But what do we do if we don&#8217;t have access to software?</p>
 </box>
-<p id="ips9e-ch05-p-0577" block_type="TXT">As a first step, find the mean and standard deviation of a sample proportion. We know the mean and standard deviation of a sample count, so apply the rules from <link href="ips9e-ch04-sec1-04">Section 4.4</link> for the mean and variance of a constant times a random variable. Here is the result.</p>
 <box block_type="MN-NOT-H">
 <p id="ips9e-ch05-p-0579" block_type="MN-NOT1">rules for means, <link href="alias:page_254">p. 254</link></p>
 <p id="ips9e-ch05-p-0580" block_type="MN-NOT1">rules for variances, <link href="alias:page_258">p. 258</link></p>
 </box>
+  <p id="ips9e-ch05-p-0577" block_type="TXT">As a first step, find the mean and standard deviation of a sample proportion. We know the mean and standard deviation of a sample count, so apply the rules from <link href="ips9e-ch04-sec1-04">Section 4.4</link> for the mean and variance of a constant times a random variable. Here is the result.</p>
+
 <box id="ips9e-ch05-box-057" numbered="false" block_type="BX1">
 <p id="ips9e-ch05-p-0581" block_type="BX1-T">MEAN AND STANDARD DEVIATION OF A SAMPLE PROPORTION</p>
 <p id="ips9e-ch05-p-0582" block_type="BX1-TXT">Let <phrase data-math="math_179"></phrase> be the sample proportion of successes in an SRS of size <em>n</em> drawn from a large population having population proportion <em>p</em> of successes. The mean and standard deviation of <phrase data-math="math_180"></phrase> are</p>
@@ -1360,8 +1369,7 @@
 <p id="ips9e-ch05-p-0719" block_type="EXP-EQ">= 0.1225 + 0.2572 + 0.2700</p>
 <p id="ips9e-ch05-p-0720" block_type="EXP-EQ">= 0.6497</p>
 <p id="ips9e-ch05-p-0721" block_type="EXP-TXT-first">Using the R software, the probability is</p>
-<p id="ips9e-ch05-p-0722" block_type="EXP-TXT-first">dpois(0,2.1) &#43; dpois(1,2.1) &#43; dpois(2,2.1)</p>
-<p id="ips9e-ch05-p-0723" block_type="EXP-TXT-first">[1] 0.6496314</p>
+<p id="ips9e-ch05-p-0722" block_type="EXP-EQ">dpois(0,2.1) &#43; dpois(1,2.1) &#43; dpois(2,2.1)<br/>[1] 0.6496314</p>
 <p id="ips9e-ch05-p-0724" block_type="EXP-mid">These two answers differ slightly due to roundoff error in the hand calculation. There is roughly a 65&#37; chance that you will have no more than two dropped calls tomorrow.</p>
 </box>
 <p id="ips9e-ch05-p-0725" block_type="TXT">Similar to the binomial, Poisson probability calculations are rarely done by hand if the event includes numerous possible values for <em>X</em>. Most software provides functions to calculate <phrase data-math="math_252"></phrase> and the cumulative probabilities of the form <phrase data-math="math_253"></phrase>. These cumulative probability calculations make solving many problems less tedious. Here&#8217;s an example.</p>
@@ -1413,8 +1421,7 @@
 <p id="ips9e-ch05-p-0754" block_type="EXP-N">EXAMPLE 5.33</p>
 <p id="ips9e-ch05-p-0755" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Number of snaps received.</phrase> In <link href="example_5_11.html">Example 5.11</link> (pages 302&#8211;303), it was reported that Snapchat has more than 100 million daily users who send over 400 million snaps a day. Suppose that the number of snaps you receive per day follows a Poisson distribution with mean 12. What is the probability that, over a week, you would receive more than 100 snaps?</p>
 <p id="ips9e-ch05-p-0756" block_type="EXP-mid">To answer this using software, we first compute the mean number of snaps sent per week. Because there are seven days in a week, the mean is <phrase data-math="math_267"></phrase> Plugging this into R tells us that there is slightly less than an 4&#37; chance of receiving this many snaps:</p>
-<p id="ips9e-ch05-p-0757" block_type="EXP-TXT-first">1-ppois(100,84)</p>
-<p id="ips9e-ch05-p-0758" block_type="EXP-TXT-first">[1] 0.03891883</p>
+<p id="ips9e-ch05-p-0757" block_type="EXP-EQ">1-ppois(100,84)<br/>[1] 0.03891883</p>
 <p id="ips9e-ch05-p-0759" block_type="EXP-mid">For the Normal approximation we compute</p>
 <p id="ips9e-ch05-p-0760" block_type="EXP-EQ"><phrase data-math="math_268"></phrase></p>
 <p id="ips9e-ch05-p-0764" block_type="EXP-TXT-first">The approximation is quite accurate, differing from the actual probability by only 0.0012.</p>
@@ -1422,11 +1429,11 @@
 <p id="ips9e_page_332" block_type="page_start" data-margin-content="left">332</p>
 <p id="ips9e-ch05-p-0766" block_type="TXT-ni">While the Normal approximation is adequate for many practical purposes, we recommend using statistical software when possible so you can get exact Poisson probabilities.</p>
 <p id="ips9e-ch05-p-0767" block_type="TXT">There is one other approximation associated with the Poisson distribution that is worth mentioning. It is related to the binomial distribution. Previously, we recommended using the Normal distribution to approximate the binomial distribution when <em>n</em> and <em>p</em> satisfy <phrase data-math="math_269"></phrase> and <phrase data-math="math_270"></phrase>. In cases where <em>n</em> is large but <em>p</em> is so small that <phrase data-math="math_271"></phrase>, the Poisson distribution with <phrase data-math="math_272"></phrase> yields more accurate results. For example, suppose that you wanted to calculate <phrase data-math="math_273"></phrase> when <em>X</em> has the <phrase data-math="math_274"></phrase> distribution. Using R, the actual binomial probability and the Poisson approximation are</p>
-<p id="ips9e-ch05-p-0768" block_type="TXT-ni">pbinom(2,1000,.001)	ppois(2,1)</p>
-<p id="ips9e-ch05-p-0769" block_type="TXT-ni">[1] 0.9197907		[1] 0.9196986</p>
+<p id="ips9e-ch05-p-0768" block_type="TXT-ni"><phrase block_type="DevL">pbinom(2,1000,.001)</phrase>	ppois(2,1)</p>
+<p id="ips9e-ch05-p-0769" block_type="TXT-ni"><phrase block_type="DevL">[1] 0.9197907</phrase> [1] 0.9196986</p>
 <p id="ips9e-ch05-p-0770" block_type="TXT-ni">The Poisson approximation gives a very accurate probability calculation for the binomial distribution in this case.</p>
 </section>
-<section id="ips9e-ch05-sum1-03" block_type="h1" chapter="ch5" numbered="false" level="1" print_page="332">
+<section id="ips9e-ch05-sum1-03" block_type="SR-H" chapter="ch5" numbered="false" level="1" print_page="332">
 <section-metadata><section-title><phrase block_type="SR-XH">SECTION 5.3</phrase> <phrase block_type="SR-H">SUMMARY</phrase></section-title></section-metadata>
 <list id="ips9e-ch05-list-052" type="unordered" block_type="bullet">
 <li id="ips9e-ch05-li-176"><p id="ips9e-ch05-p-0771" block_type="SR-blf"><phrase block_type="maker">&#8226;</phrase> A <strong>count</strong> <em>X</em> of successes has the <strong>binomial distribution</strong> <em>B</em>(<em>n</em>, <em>p</em>) in the <strong>binomial setting</strong>: there are <em>n</em> trials, all independent, each resulting in a success or a failure, and each having the same probability <em>p</em> of a success.</p></li>
@@ -1434,7 +1441,7 @@
 <li id="ips9e-ch05-li-178"><p id="ips9e-ch05-p-0773" block_type="SR-Bl"><phrase block_type="maker">&#8226;</phrase> The <strong>sample proportion</strong> of successes <phrase data-math="math_275"></phrase> is an estimator of the population proportion <em>p</em>. It does not have a binomial distribution, but we can do probability calculations about <phrase data-math="math_276"></phrase> by restating them in terms of <em>X</em>.</p></li>
 <li id="ips9e-ch05-li-179"><p id="ips9e-ch05-p-0774" block_type="SR-Bl"><phrase block_type="maker">&#8226;</phrase> <strong>Binomial probabilities</strong> are most easily found by software. There is an exact formula that is practical for calculations when <em>n</em> is small. <link href="table_c.html">Table C</link> contains binomial probabilities for some values of <em>n</em> and <em>p</em>. For large <em>n</em>, you can use the Normal approximation.</p></li>
 <li id="ips9e-ch05-li-180"><p id="ips9e-ch05-p-0775" block_type="SR-Bl"><phrase block_type="maker">&#8226;</phrase> The mean and standard deviation of a <strong>binomial count</strong> <em>X</em> and a <strong>sample proportion</strong> <phrase data-math="math_277"></phrase> are</p>
-<p id="ips9e-ch05-p-0776" block_type="TXT-ni"><em>&#956;<sub>X</sub></em> = <em>np</em>&#8195;&#8195;&#8195;&#8195;&#8195; <phrase data-math="math_278"></phrase></p>
+<p id="ips9e-ch05-p-0776" block_type="EQ"><em>&#956;<sub>X</sub></em> = <em>np</em>&#8195;&#8195;&#8195;&#8195;&#8195; <phrase data-math="math_278"></phrase></p>
 <p id="ips9e-ch05-p-0777" block_type="TXT-ni"><phrase data-math="math_279"></phrase></p></li>
 </list>
 <p id="ips9e-ch05-p-0778" block_type="SR-TXT">The sample proportion <phrase data-math="math_280"></phrase> is, therefore, an unbiased estimator of the population proportion <em>p</em>.</p>
@@ -1465,7 +1472,7 @@
 </list>
 <p id="ips9e-ch05-p-0796" block_type="SR-TXT">Sums of independent Poisson random variables also have the Poisson distribution. For example, in a Poisson model with mean <em>&#956;</em> per unit of measure, the count of successes in <em>a</em> units is a Poisson random variable with mean <em>a&#956;</em>.</p>
 </section>
-<section id="ips9e-ch05-exer1-03" block_type="h1" chapter="ch5" numbered="false" level="1" print_page="333">
+<section id="ips9e-ch05-exer1-03" block_type="SR-X-H" chapter="ch5" numbered="false" level="1" print_page="333">
 <section-metadata><section-title><phrase block_type="SR-XH">SECTION 5.3</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></section-title></section-metadata>
 <p id="ips9e-ch05-p-0797" block_type="SR-X-TXT-ni"><em>For <link href="exercise_5_43.html">Exercises 5.43</link>, <link href="exercise_5_44.html">5.44</link>, and <link href="exercise_5_45.html">5.45</link>, see page 312; for <link href="exercise_5_46.html">Exercises 5.46</link> and <link href="exercise_5_47.html">5.47</link>, see page 313; for <link href="exercise_5_48.html">Exercises 5.48</link> and <link href="exercise_5_49.html">5.49</link>, see page 317; for <link href="exercise_5_50.html">Exercises 5.50</link> and <link href="exercise_5_51.html">5.51</link>, see page 319; for <link href="exercise_5_52.html">Exercise 5.52</link>, see page 320; for <link href="exercise_5_53.html">Exercise 5.53</link>, see page 325; for <link href="exercise_5_54.html">Exercise 5.54</link>, see page 328; and for <link href="exercise_5_55.html">Exercises 5.55</link> and <link href="exercise_5_56.html">5.56</link>, see page 330.</em></p>
 <p id="ips9e-ch05-p-0798" block_type="SR-X-TXT-ni"><em>Most binomial probability calculations required in these exercises can be done by using <link href="table_c.html">Table C</link> or the Normal approximation. Your instructor may request that you use the binomial probability formula or software. In exercises requiring the Normal approximation, you should use the continuity correction if you studied that topic.</em></p>
@@ -1651,7 +1658,7 @@
 </list>
 </question>
 </section>
-<section id="ips9e-ch05-chapexer1-01" block_type="h1" chapter="ch5" numbered="false" level="1" print_page="338">
+<section id="ips9e-ch05-chapexer1-01" block_type="CR-X-H" chapter="ch5" numbered="false" level="1" print_page="338">
 <section-metadata><section-title><phrase block_type="CR-X-N-ri">CHAPTER 5</phrase> <phrase block_type="CR-X-H">EXERCISES</phrase></section-title></section-metadata>
 <p id="ips9e_page_338" block_type="page_start" data-margin-content="left">338</p>
 <question id="ips9e-ch05-quest-0084" block_type="exercise_5_84.html"><p id="ips9e-ch05-p-0906" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">5.84 The cost of Internet access.</phrase> In Canada, households spent an average of &#36;80.63 CDN monthly for high-speed broadband access.<termref term="fn_ch5_fn24"><sup>24</sup></termref> Assume that the standard deviation is &#36;27.32. If you ask an SRS of 500 Canadian households with high-speed broadband access how much they pay, what is the probability that the average amount will exceed &#36;85?</p>
