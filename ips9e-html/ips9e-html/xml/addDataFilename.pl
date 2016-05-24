@@ -18,7 +18,10 @@ binmode(STDOUT, ":utf8");
 # my $baseXMLfile = "ips9e-ch05.xml"; #-------------------------> identify digfir XML file here
 # my $baseXMLfile = "ips9e-ch06.xml"; #-------------------------> identify digfir XML file here
 # my $baseXMLfile = "ips9e-ch07.xml"; #-------------------------> identify digfir XML file here
- my $baseXMLfile = "ips9e-ch05.xml"; #-------------------------> identify digfir XML file here
+# my $baseXMLfile = "ips9e-ch05.xml"; #-------------------------> identify digfir XML file here
+ my $baseXMLfile = "ips9e-ch06.xml"; #-------------------------> identify digfir XML file here
+# my $baseXMLfile = "ips9e-ch05.xml"; #-------------------------> identify digfir XML file here
+# my $baseXMLfile = "ips9e-ch05.xml"; #-------------------------> identify digfir XML file here
 # my $baseXMLfile = "ips9e-ch09.xml"; #-------------------------> identify digfir XML file here
 # my $baseXMLfile = "ips9e-ch10.xml"; #-------------------------> identify digfir XML file here
 # my $baseXMLfile = "ips9e-ch11.xml"; #-------------------------> identify digfir XML file here
@@ -60,7 +63,7 @@ $xml_contents =~ s/(<table[^>]*block_type="TABLE"[^>]*)(>.*?<phrase block_type="
 
 
 # figures (numbered)
-$xml_contents =~ s/(<figure[^>]*block_type="FIGURE"[^>]*)(>.*?<phrase block_type="FG-N-ri">Figure (\d+)\.(\d+))/$1 data-filename="figure_${chapter}_$4.html"$2/gs;
+$xml_contents =~ s/(<figure[^>]*block_type="FIGURE"[^>]*)(>.*?<phrase block_type="FG-N-ri">Figure (\d+)\.(\d+))/$1 data-filename="figure_${chapter}_$4.html"$2/gsi;
 
 # figures (unnumbered)
 $xml_contents =~ s/(<figure[^>]*block_type="UN-FIGURE"[^>]*)(>.*?<image[^>]*src="asset\/ch\d+\/(.*?)\.jpg")/$1 data-filename="$3.html"$2/gs;
