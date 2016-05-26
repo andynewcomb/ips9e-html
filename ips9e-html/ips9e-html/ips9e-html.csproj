@@ -933,6 +933,12 @@
     <Content Include="ebook\css\ips9e_ch5.min.css">
       <DependentUpon>ips9e_ch5.css</DependentUpon>
     </Content>
+    <Content Include="ebook\css\ips9e_ch6.css">
+      <DependentUpon>ips9e_ch6.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\ips9e_ch6.min.css">
+      <DependentUpon>ips9e_ch6.css</DependentUpon>
+    </Content>
     <Content Include="ebook\ips9e_ch2_1.html" />
     <Content Include="ebook\ips9e_ch2_10.html" />
     <Content Include="ebook\ips9e_ch2_11.html" />
@@ -987,10 +993,37 @@
     <Content Include="ebook\ips9e_ch4_7.html" />
     <Content Include="ebook\ips9e_ch4_8.html" />
     <Content Include="ebook\ips9e_ch4_9.html" />
+    <Content Include="ebook\ips9e_ch5_1.html" />
+    <Content Include="ebook\ips9e_ch5_10.html" />
+    <Content Include="ebook\ips9e_ch5_11.html" />
+    <Content Include="ebook\ips9e_ch5_2.html" />
+    <Content Include="ebook\ips9e_ch5_3.html" />
+    <Content Include="ebook\ips9e_ch5_4.html" />
+    <Content Include="ebook\ips9e_ch5_5.html" />
+    <Content Include="ebook\ips9e_ch5_6.html" />
+    <Content Include="ebook\ips9e_ch5_7.html" />
+    <Content Include="ebook\ips9e_ch5_8.html" />
+    <Content Include="ebook\ips9e_ch5_9.html" />
+    <Content Include="ebook\ips9e_ch6_1.html" />
+    <Content Include="ebook\ips9e_ch6_10.html" />
+    <Content Include="ebook\ips9e_ch6_11.html" />
+    <Content Include="ebook\ips9e_ch6_12.html" />
+    <Content Include="ebook\ips9e_ch6_13.html" />
+    <Content Include="ebook\ips9e_ch6_14.html" />
+    <Content Include="ebook\ips9e_ch6_15.html" />
+    <Content Include="ebook\ips9e_ch6_2.html" />
+    <Content Include="ebook\ips9e_ch6_3.html" />
+    <Content Include="ebook\ips9e_ch6_4.html" />
+    <Content Include="ebook\ips9e_ch6_5.html" />
+    <Content Include="ebook\ips9e_ch6_6.html" />
+    <Content Include="ebook\ips9e_ch6_7.html" />
+    <Content Include="ebook\ips9e_ch6_8.html" />
+    <Content Include="ebook\ips9e_ch6_9.html" />
     <Content Include="ebook\js\ips9e_ch2.js" />
     <Content Include="ebook\js\ips9e_ch3.js" />
     <Content Include="ebook\js\ips9e_ch4.js" />
     <Content Include="ebook\js\ips9e_ch5.js" />
+    <Content Include="ebook\js\ips9e_ch6.js" />
     <Content Include="packages.config" />
     <Content Include="docs\01_MooreIPS9e_13387_Ch01_01-78_2nd_Pass.pdf" />
     <Content Include="docs\02_MooreIPS9e_13387_Ch02_79-162_2nd_Pass.pdf" />
@@ -1004,6 +1037,7 @@
     <Content Include="ebook\css\ips9e_ch3.less" />
     <Content Include="ebook\css\ips9e_ch4.less" />
     <Content Include="ebook\css\ips9e_ch5.less" />
+    <Content Include="ebook\css\ips9e_ch6.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1017,6 +1051,7 @@
     <Content Include="xml\ips9e-ch01.xml" />
     <Content Include="xml\ips9e-ch04.xml" />
     <Content Include="xml\ips9e-ch05.xml" />
+    <Content Include="xml\ips9e-ch06.xml" />
     <Content Include="xml\math2js.pl" />
     <None Include="xml\xsd\digfir_manuscript.xsd">
       <SubType>Designer</SubType>

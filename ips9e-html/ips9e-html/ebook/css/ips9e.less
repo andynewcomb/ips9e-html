@@ -713,7 +713,7 @@ div[data-block_type="CR-X-H"]  {
         h3 {
             display: none;
         }
-        [data-block_type="SR-X-QUE-NL"] {
+        [data-block_type="SR-X-QUE-NL"], [data-block_type="CR-X-QUE-NL"] {
             // question number/title
             [data-block_type="SR-XH"] {
                 color: @dk-blue;
@@ -824,6 +824,14 @@ div[data-block_type="CR-X-H"]  {
 			    border-right: 1px solid @chap_exer_tbl_red !important;
 		    }
         }
+    }
+    [data-block_type="CR-Ext"] {
+        margin:1em;
+    }
+    [data-block_type="CR-EQ"] {
+        text-align:center;
+        margin-top:.5em;
+        margin-bottom:.5em;
     }
 }
 
@@ -1244,8 +1252,22 @@ span[data_href] {
         margin-top: 7px;
         width: 29px;
     }
+    [data-block_type*="CR-X-QUE-NL"] img[src="asset/global_images/BPSapplet-icon.jpg"] {
+        float: left;
+        margin-right: 6px;
+        margin-top: 7px;
+        width: 29px;
+    }
     [data-block_type="Applet icon"] {
         left: -140px;
+    }
+    [data-block_type="SR-Eq"] {
+        text-align:center;
+    }
+    [data-block_type="EXR-EQ"] {
+        text-align:center;
+        margin-top:1em;
+        margin-bottom:1em;
     }
 }
 [data-block_type="Applet icon"] {

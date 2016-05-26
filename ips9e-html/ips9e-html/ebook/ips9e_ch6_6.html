@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch6</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e_ch6.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="6">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch06-sec1-02" level="1" data-print_page="361">
+<h2 class="section-title">
+<span data-type="number">6.2</span> <span data-type="title" data-title-for="ips9e-ch06-sec1-02">6.2 Tests of Significance
+</span>
+</h2>
+
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_361"><p>361</p></div>
+<div data-type="box" data-block_type="SP" id="ips9e-ch06-box-028"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-028"></h3>
+<div data-block_type="SP-TXT-ni" id="ips9e-ch06-p-279"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bluebullet" id="ips9e-ch06-list-025">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch06-p-280"><p><span data-block_type="maker">•</span> Outline the four steps common to all tests of significance.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch06-p-281"><p><span data-block_type="maker">•</span> Formulate the null and alternative hypotheses of a significance test.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch06-p-282"><p><span data-block_type="maker">•</span> Describe a common form for the test statistic in terms of the parameter estimate, its standard deviation, and the hypothesized value.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch06-p-283"><p><span data-block_type="maker">•</span> Define what a <em>P</em>-value is and explain whether a small <em>P</em>-value provides evidence for or against the null hypothesis.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch06-p-284"><p><span data-block_type="maker">•</span> Draw a conclusion from a test of significance based on the test’s <em>P</em>-value and significance level <em>α</em>.</p></div></li>
+<li><div data-block_type="SP-BL-last" id="ips9e-ch06-p-285"><p><span data-block_type="maker">•</span> Describe the relationship between a level <em>α</em> two-sided significance test for <em>μ</em> and the 1 − <em>α</em> confidence interval.</p></div></li>
+</ul>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-286"><p>The confidence interval is appropriate when our goal is to estimate population parameters. The second common type of inference is directed at a quite different goal: to assess the evidence provided by the data in favor of some claim about the population parameters.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-287"><p><span data-block_type="h2">The reasoning of significance tests</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-288"><p>A significance test is a formal procedure for comparing observed data with a hypothesis whose truth we want to assess. The hypothesis is a statement about the population parameters. The results of a test are expressed in terms of a probability that measures how well the data and the hypothesis agree. We use the following examples to illustrate these concepts.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_8.html" id="ips9e-ch06-box-029"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-029"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-289"><p>EXAMPLE 6.8</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-290"><p><span data-block_type="EXP-T-ri">Scholarship amount by borrower status.</span> One purpose of Sallie Mae’s annual study described in <span data-type="link" data-href="example_6_4.html">Example 6.4</span> (page 350) is to allow comparisons of different subgroups. For example, in the latest report, 980 of the 1593 participants (61.5%) did not borrow any money to pay for college. The average scholarship amount among these participants was $3925. The average scholarship among those who did borrow was $4350. The difference of $425 is fairly large, but we know that these numbers are estimates of the population means. If we took different samples, we would get different estimates.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-291"><p>Can we conclude from these data that the average scholarship amounts in these two groups are different? One way to answer this question is to compute the probability of obtaining a difference as large or larger than the observed $425 assuming that, in fact, there is no difference in the population means. This probability is 0.23. Because this probability is not particularly small, we conclude that observing a difference of $425 is not very surprising when the population means are equal. The data do not provide enough evidence for us to conclude that the average scholarship amount for borrowers and non-borrowers differ.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-292"><p>Here is an example with a different conclusion.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_362"><p>362</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_9.html" id="ips9e-ch06-box-030"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-030"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-293"><p>EXAMPLE 6.9</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-294"><p><span data-block_type="EXP-T-ri">Parent income contribution by school type.</span> Sallie Mae’s study also reports that the parents’ current income contribution among undergraduates going to a four-year public or four-year private college. The parents’ contribution averages $4444 among undergraduates at public colleges, while it is $6083 among undergraduates at private schools. Do parents pay more of their current income for undergraduates going to private schools? The observed difference is $1639, but as we learned in the previous example, an observed difference in means is not necessarily sufficient for us to conclude that the population means are different.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-295"><p>Again, we answer this question with a probability calculated under the assumption that there is <em>no difference in the population means</em>. The probability is 0.0003 of observing a difference in mean contributions that is $1639 or more when there really is no difference. Because this probability is so small, we have sufficient evidence in the data to conclude that the average current income contribution of parents is higher for undergraduates going to a private school than undergraduates going to a public school.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-296"><p>What are the key steps in these examples?</p></div>
+<ul data-block_type="bullet" id="ips9e-ch06-list-026">
+<li><div data-block_type="BL-first" id="ips9e-ch06-p-297"><p><span data-block_type="maker">•</span> We started each with a question about the difference between two means. In <span data-type="link" data-href="example_6_8.html">Example 6.8</span>, we compare borrowers with nonborrowers. In <span data-type="link" data-href="example_6_9.html">Example 6.9</span>, we compare undergraduates attending private and public four-year colleges. In both cases, we ask whether or not the data are compatible with “no difference,” that is, a difference of $0.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch06-p-298"><p><span data-block_type="maker">•</span> Next we compared the difference given by the data, $425 in the first case and $1639 in the second, with the value assumed in the question, $0.</p></div></li>
+<li><div data-block_type="BL-last" id="ips9e-ch06-p-299"><p><span data-block_type="maker">•</span> The results of the comparisons are probabilities, 0.23 in the first case and 0.0003 in the second.</p></div></li>
+</ul>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-300"><p>The 0.23 probability is not particularly small, so we have limited evidence to question the possibility that the true difference is zero. In the second case, however, the probability is very small. Something that happens with probability 0.0003 occurs only about 3 times out of 10,000. In this case we have two possible explanations:</p></div>
+<ol data-block_type="numbered" id="ips9e-ch06-list-027">
+<li><div data-block_type="NLF" id="ips9e-ch06-p-301"><p><span data-block_type="maker">1.</span> We have observed something that is very unusual.</p></div></li>
+<li><div data-block_type="NLL" id="ips9e-ch06-p-302"><p><span data-block_type="maker">2.</span> The assumption that underlies the calculation, no difference in mean balance, is not true.</p></div></li>
+</ol>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-303"><p>Because this probability is so small, we prefer the second conclusion: the average current income contribution from parents for undergraduates attending public colleges and for undergraduates attending private colleges is different, with the private school group contribution higher than that of the public school group.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-304"><p>The probabilities in <span data-type="link" data-href="example_6_8.html">Examples 6.8</span> and <span data-type="link" data-href="example_6_9.html">6.9</span> are measures of the compatibility of the data (a difference in means of $425 and $1639) with the <em>null hypothesis</em> that there is no difference in the true means. <span data-type="link" data-href="figure_6_7.html">Figure 6.7</span> and <span data-type="link" data-href="figure_6_8.html">6.8</span> compare the two results graphically. For each, a Normal curve centered at 0 is the sampling distribution. You can see from <span data-type="link" data-href="figure_6_7.html">Figure 6.7</span> that we should not be particularly surprised to observe the difference $425, but the difference $1639 in <span data-type="link" data-href="figure_6_8.html">Figure 6.8</span> is clearly an unusual observation. We will now consider some of the formal aspects of significance testing.</p></div>
+<div data-type="box" data-block_type="sidebyside" id="idm372064"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idm372064"></h3>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_6_7.html" data-figure-id="ips9e-ch06-fig-007" data-block_type="FIGURE" data-layout-align="left" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_07.jpg" data-figure-id="ips9e-ch06-fig-007" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.7: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 6.7</span> <span data-block_type="FG-CAP">Comparison of the sample mean in <span data-type="link" data-href="example_6_8.html">Example 6.8</span> with the null hypothesized value 0.</span></span>
+</div>
+</div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_6_8.html" data-figure-id="ips9e-ch06-fig-008" data-block_type="FIGURE" data-layout-align="right" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_08.jpg" data-figure-id="ips9e-ch06-fig-008" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.8: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 6.8</span> <span data-block_type="FG-CAP">Comparison of the sample mean in <span data-type="link" data-href="example_6_9.html">Example 6.9</span> with the null hypothesized value 0.</span></span>
+</div>
+</div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_363"><p>363</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-305"><p><span data-block_type="h2">Stating hypotheses</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-306"><p>In <span data-type="link" data-href="example_6_8.html">Examples 6.8</span> and <span data-type="link" data-href="example_6_9.html">6.9</span>, we asked whether the difference in the observed means is reasonable if, in fact, there is no difference in the population means. To answer this, we begin by supposing that the statement following the “if” in the previous sentence is true. In other words, we suppose that the true difference is $0. We then ask whether the data provide evidence against the supposition we have made. If so, we have evidence in favor of an effect (the means are different) we are seeking. Often, the first step in a test of significance is to state a claim that we will try to find evidence <em>against.</em></p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch06-box-031"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-031"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch06-p-307"><p>NULL HYPOTHESIS</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch06-p-308"><p>The statement being tested in a test of significance is called the <strong>null hypothesis</strong>. The test of significance is designed to assess the strength of the evidence against the null hypothesis. Usually, the null hypothesis is a statement of “no effect” or “no difference.”</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-309"><p>We abbreviate “null hypothesis” as <em>H</em><sub>0</sub>. A null hypothesis is a statement about the population parameters. For example, our null hypothesis for <span data-type="link" data-href="example_6_8.html">Example 6.8</span> is</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-310"><p><em>H</em><sub>0</sub>: there is no difference in the population means</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_364"><p>364</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-311"><p>or equivalently,</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-312"><p><em>H</em><sub>0</sub>: the difference in population means is zero</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-313"><p>Note that the null hypothesis refers to the <em>population</em> means for all undergraduates, including those for whom we do not have data.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-314"><p>It is convenient also to give a name to the statement we hope or suspect is true instead of <em>H</em><sub>0</sub>. This is called the <span data-type="termref" data-term="alternative hypothesis"><strong>alternative hypothesis</strong></span><span data-block_type="MN-GL-term">alternative hypothesis</span> and is abbreviated as <em>H<sub>a</sub></em>. In <span data-type="link" data-href="example_6_8.html">Example 6.8</span>, the alternative hypothesis states that the means are different. We write this as</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-315"><p><em>H<sub>a</sub></em>: the population means are not the same</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-316"><p>or equivalently,</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-317"><p><em>H<sub>a</sub></em>: the difference in population means is not zero</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch06-p-318"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-319"><p><em>Hypotheses always refer to some populations or a model, not to a particular outcome. For this reason, we must state H</em><sub>0</sub> <em>and H<sub>a</sub> in terms of population parameters.</em></p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-320"><p>Because <em>H<sub>a</sub></em> expresses the effect that we hope to find evidence <em>for,</em> we will sometimes begin with <em>H<sub>a</sub></em> and then set up <em>H</em><sub>0</sub> as the statement that the hoped-for effect is not present. Stating <em>H<sub>a</sub></em>, however, is often the more difficult task. It is not always clear, in particular, whether <em>H<sub>a</sub></em> should be <span data-type="termref" data-term="one-sided or two-sided"><strong>one-sided</strong> or <strong>two-sided</strong></span><span data-block_type="MN-GL-term">one-sided or two-sided alternatives</span>, which refers to whether a parameter differs from its null hypothesis value in a specific direction or in either direction.</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch06-p-321"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-322"><p>The alternative hypothesis should express the hopes or suspicions we bring to the data. <em>It is cheating to first look at the data and then frame H<sub>a</sub> to fit what the data show.</em> If you do not have a specific direction firmly in mind in advance, you must use a two-sided alternative. Moreover, some users of statistics argue that we should always use a two-sided alternative.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch06-box-032"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-032"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch06-p-323"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_6_38.html" id="ips9e-ch06-quest-038">
+<h3>Question
+			    <span data-type="number">6.38 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch06-p-324"><p><span data-block_type="EXR-QUE-N-ri">6.38</span> <span data-block_type="EXR-QUE-T-ri">Dining court survey.</span> The dining court closest to your university residence has been redesigned. A survey is planned to assess whether or not students think that the new design is an improvement. It will contain eight questions; a seven-point scale will be used for the answers, with scores less than 4 favoring the previous design and scores greater than 4 favoring the new design (to varying degrees). The average of these eight questions will be used as the student’s response. State the null and alternative hypotheses you would use for examining whether or not the new design is viewed more favorably.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_6_39.html" id="ips9e-ch06-quest-039">
+<h3>Question
+			    <span data-type="number">6.39 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch06-p-325"><p><span data-block_type="EXR-QUE-N-ri">6.39</span> <span data-block_type="EXR-QUE-T-ri">DXA scanners.</span> A dual-energy X-ray absorptiometry (DXA) scanner is used to measure bone mineral density for people who may be at risk for osteoporosis. One researcher believes that her scanner is not giving accurate readings. To assess this, the researcher uses an object called a “phantom” that has known mineral density <em>μ</em> = 1.4 grams per square centimeter. The researcher scans the phantom 10 times and compares the sample mean reading <span data-math="math_77"></span> with the theoretical mean <em>μ</em> using a significance test. State the null and alternative hypotheses for this test.</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-326"><p><span data-block_type="h2">Test statistics</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-327"><p>We will learn the form of significance tests in a number of common situations. Here are some principles that apply to most tests and that help in understanding these tests:</p></div>
+<ul data-block_type="bullet" id="ips9e-ch06-list-028">
+<li><div data-block_type="BL-first" id="ips9e-ch06-p-328"><p><span data-block_type="maker">•</span> The test is based on a statistic that estimates the parameter that appears in the hypotheses. Usually, this is the same estimate we would use in a confidence interval for the parameter. When <em>H</em><sub>0</sub> is true, we expect the estimate to take a value near the parameter value specified by <em>H</em><sub>0</sub>. We call this specified value the hypothesized value.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch06-p-329"><p><span data-block_type="maker">•</span> Values of the estimate far from the hypothesized value give evidence against <em>H</em><sub>0</sub>. The alternative hypothesis determines which directions count against <em>H</em><sub>0</sub>.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_365"><p>365</p></div>
+</li>
+<li><div data-block_type="BL-last" id="ips9e-ch06-p-330"><p><span data-block_type="maker">•</span> To assess how far the estimate is from the hypothesized value, standardize the estimate. In many common situations the test statistic has the form</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-331"><p><span data-math="math_78"></span></p></div>
+</li>
+</ul>
+<div data-block_type="TXT" id="ips9e-ch06-p-332"><p>A <span data-type="termref" data-term="test statistic"><strong>test statistic</strong></span><span data-block_type="MN-GL-term">test statistic</span> measures compatibility between the null hypothesis and the data. We use it for the probability calculation that we need for our test of significance. It is a random variable with a distribution that we know.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-333"><p>Let’s return to our comparison of the scholarship amount among borrowers and nonborrowers and specify the hypotheses as well as calculate the test statistic.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_10.html" id="ips9e-ch06-box-033"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-033"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-334"><p>EXAMPLE 6.10</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-335"><p><span data-block_type="EXP-T-ri">Average scholarship amount of borrowers and nonborrowers: The hypotheses.</span> In <span data-type="link" data-href="example_6_8.html">Example 6.8</span>, the hypotheses are stated in terms of the difference in the average scholarship amount between borrowers and nonborrowers:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-336"><p><em>H</em><sub>0</sub>: there is no difference in the population means</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-337"><p><em>H<sub>a</sub></em>: there is a difference in the population means</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-338"><p>Because <em>H<sub>a</sub></em> is two-sided, large values of both positive and negative differences count as evidence against the null hypothesis.</p></div>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-339"><p>We can also state the null hypothesis as <em>H</em><sub>0</sub>: the true mean difference is 0. This statement makes it more clear that the hypothesized value for this comparison of average scholarship amounts is 0.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_11.html" id="ips9e-ch06-box-034"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-034"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-340"><p>EXAMPLE 6.11</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-341"><p><span data-block_type="EXP-T-ri">Average scholarship amount of borrowers and nonborrowers: The test statistic.</span> In <span data-type="link" data-href="example_6_8.html">Example 6.8</span>, the estimate of the difference is $425. Using methods that we will discuss in detail later, we can determine that the standard deviation of the estimate is $353. For this problem the test statistic is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-342"><p><span data-math="math_79"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-343"><p>For our data,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-344"><p><span data-math="math_80"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-345"><p>We have observed a sample estimate that is one and one-fifth standard deviations away from the hypothesized value of the parameter.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-346"><p>Because the sample sizes are sufficiently large for us to conclude that the distribution of the sample estimate is approximately Normal, the standardized test statistic <em>z</em> will have approximately the <em>N</em>(0, 1) distribution. We will use facts about the Normal distribution in what follows.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch06-box-035"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-035"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch06-p-347"><p>Normal distribution, <span data-type="link" data-href="alias:page_56">p. 56</span></p></div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-348"><p><span data-block_type="h2"><em>P</em>-values</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-349"><p>If all test statistics were Normal, we could base our conclusions on the value of the <em>z</em> test statistic. In fact, the Supreme Court of the United States has said that “two or three standard deviations” (<em>z</em> = 2 or 3) is its criterion for rejecting <em>H</em><sub>0</sub> (see <span data-type="link" data-href="exercise_6_44.html">Exercise 6.44</span> on page 370), and this is the criterion used in most applications involving the law. But because not all test statistics are Normal, we use the language of probability to express the meaning of a test statistic.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_366"><p>366</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-350"><p>A test of significance finds the probability of getting an outcome <em>as extreme or more extreme than the actually observed outcome.</em> “Extreme” means “far from what we would expect if <em>H</em><sub>0</sub> were true.” The direction or directions that count as “far from what we would expect” are determined by <em>H<sub>a</sub></em> and <em>H</em><sub>0</sub>.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch06-box-036"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-036"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch06-p-351"><p><em>P</em>-VALUE</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch06-p-352"><p>The probability, assuming <em>H</em><sub>0</sub> is true, that the test statistic would take a value as extreme or more extreme than that actually observed is called the <strong><em>P</em>-value</strong> of the test. The smaller the <em>P</em>-value, the stronger the evidence against <em>H</em><sub>0</sub> provided by the data.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-353"><p>The key to calculating the <em>P</em>-value is the sampling distribution of the test statistic. For the problems we consider in this chapter, we need only the standard Normal distribution for the test statistic <em>z</em>.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-354"><p>In <span data-type="link" data-href="example_6_8.html">Example 6.8</span>, we want to know if the average scholarship amount for borrowers differs from the average scholarship amount for non-borrowers. The difference we calculated based on our sample is $425, which corresponds to 1.20 standard deviations away from zero—that is, <em>z</em> = 1.20. Because we are using a two-sided alternative for this problem, the evidence against <em>H</em><sub>0</sub> is measured by the probability that we observe a value of <em>Z</em> as extreme or more extreme than 1.20.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_12.html" id="ips9e-ch06-box-037"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-037"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-355"><p>EXAMPLE 6.12</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-356"><p><span data-block_type="EXP-T-ri">Average scholarship amount of borrowers and nonborrowers: The <em>P</em>-value.</span> In <span data-type="link" data-href="example_6_11.html">Example 6.11</span>, we found that the test statistic for testing</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-357"><p><em>H</em><sub>0</sub>: the true mean difference is 0</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-358"><p>versus</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-359"><p><em>H<sub>a</sub></em>: there is a difference in the population means</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-360"><p>is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-361"><p><span data-math="math_81"></span></p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-362"><p>If <em>H</em><sub>0</sub> is true, then <em>z</em> is a single observation from the standard Normal, <em>N</em>(0, 1), distribution. <span data-type="link" data-href="figure_6_9.html">Figure 6.9</span> illustrates this calculation. The <em>P</em>-value is the probability of observing a value of <em>Z</em> at least as extreme as the one that we observed, <em>z</em> = 1.20. From <span data-type="link" data-href="table_a.html">Table A</span>, our table of standard Normal probabilities, we find</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-363"><p><em>P</em>(<em>Z</em> ≥ 1.20) = 1 − 0.8849 = 0.1151</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-364"><p>The probability for being extreme in the negative direction is the same:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-365"><p><em>P</em>(<em>Z</em> ≤ −1.20) = 0.1151</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-366"><p>So the <em>P</em>-value is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-367"><p><em>P</em> = 2<em>P</em>(<em>Z</em> ≥ 1.20) = 2(0.1151) = 0.2302</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_367"><p>367</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_6_9.html" data-figure-id="ips9e-ch06-fig-009" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_09.jpg" data-figure-id="ips9e-ch06-fig-009" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.9: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 6.9</span> <span data-block_type="FG-CAP">The <em>P</em>-value, <span data-type="link" data-href="example_6_12.html">Example 6.12</span>. The <em>P</em>-value is the probability (when <em>H</em><sub>0</sub> is true) that <span data-math="math_82"></span> takes a value as extreme or more extreme than the actual observed value, <em>z</em> = 1.20. Because the alternative hypothesis is two-sided, we use both tails of the distribution.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-368"><p>This is the value that we reported on <span data-type="link" data-href="alias:page_361">page 361</span>. There is a 23% chance of observing a difference as extreme as the $425 in our sample if the true population difference is zero. This <em>P</em>-value tells us that our outcome is not particularly extreme. In other words, the data do not provide substantial evidence for us to doubt the validity of the null hypothesis.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch06-box-038"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-038"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch06-p-369"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_6_40.html" id="ips9e-ch06-quest-040">
+<h3>Question
+			    <span data-type="number">6.40 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch06-p-370"><p><span data-block_type="EXR-QUE-N-ri">6.40</span> <span data-block_type="EXR-QUE-T-ri">Normal curve and the <em>P</em>-value.</span> A test statistic for a two-sided significance test for a population mean is <em>z</em> =2.47. Sketch a standard Normal curve and mark this value of <em>z</em> on it. Find the <em>P</em>-value and shade the appropriate areas under the curve to illustrate your calculations.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_6_41.html" id="ips9e-ch06-quest-041">
+<h3>Question
+			    <span data-type="number">6.41 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch06-p-371"><p><span data-block_type="EXR-QUE-N-ri">6.41</span> <span data-block_type="EXR-QUE-T-ri">More on the Normal curve and the <em>P</em>-value.</span> A test statistic for a two-sided significance test for a population mean is <em>z</em> = −1.57. Sketch a standard Normal curve and mark this value of <em>z</em> on it. Find the <em>P</em>-value and shade the appropriate areas under the curve to illustrate your calculations.</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-372"><p><span data-block_type="h2">Statistical significance</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-373"><p>We started our discussion of the reasoning of significance tests with the statement of null and alternative hypotheses. We then learned that a test statistic is the tool used to examine the compatibility of the observed data with the null hypothesis. Finally, we translated the test statistic into a <em>P</em>-value to quantify the evidence against <em>H</em><sub>0</sub>. One important final step is needed: to state our conclusion.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-374"><p>We can compare the <em>P</em>-value we calculated with a fixed value that we regard as decisive. This amounts to announcing in advance how much evidence against <em>H</em><sub>0</sub> we will require to reject <em>H</em><sub>0</sub>. The decisive value is called the <span data-type="termref" data-term="significance level"><strong>significance level</strong></span><span data-block_type="MN-GL-term">significance level</span>. It is commonly denoted by <em>α</em> (the Greek letter alpha). If we choose <em>α</em> = 0.05, we are requiring that the data give evidence against <em>H</em><sub>0</sub> so strong that it would happen no more than 5% of the time (1 time in 20) when <em>H</em><sub>0</sub> is true. If we choose <em>α</em> = 0.01, we are insisting on stronger evidence against <em>H</em><sub>0</sub>, evidence so strong that it would appear only 1% of the time (1 time in 100) if <em>H</em><sub>0</sub> is in fact true.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_368"><p>368</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch06-box-039"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-039"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch06-p-375"><p>STATISTICAL SIGNIFICANCE</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch06-p-376"><p>If the <em>P</em>-value is as small or smaller than <em>α</em>, we say that the data are <strong>statistically significant at level</strong> <em>α</em>.</p></div>
+</div></div>
+<div data-block_type="Caution icon" id="ips9e-ch06-p-377"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-378"><p><em>“Significant” in the statistical sense does not mean “important.”</em> The original meaning of the word is “signifying something.” In statistics, the term is used to indicate only that the evidence against the null hypothesis has reached the standard set by <em>α</em>. For example, significance at level 0.01 is often expressed by the statement “The results were significant (<em>P</em> &lt; 0.01).” Here, <em>P</em> stands for the <em>P</em>-value. The <em>P</em>-value is more informative than a statement of significance because we can then assess significance at any level we choose. For example, a result with <em>P</em> = 0.03 is significant at the <em>α</em> = 0.05 level but is not significant at the <em>α</em> = 0.01 level. We discuss this in more detail at the end of this section.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_13.html" id="ips9e-ch06-box-040"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-040"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-379"><p>EXAMPLE 6.13</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-380"><p><span data-block_type="EXP-T-ri">Average scholarship amount of borrowers and nonborrowers: The conclusion.</span> In <span data-type="link" data-href="example_6_12.html">Example 6.12</span>, we found that the <em>P</em>-value is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-381"><p><em>P</em> = 2<em>P</em>(<em>Z</em> ≥ 1.20) = 2(0.1151) = 0.2302</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-382"><p>There is an 23% chance of observing a difference as extreme as the $425 in our sample if the true population difference is zero. Because this <em>P</em>-value is larger than the <em>α</em> = 0.05 significance level, we conclude that our test result is not significant. We could report the result as “the data fail to provide evidence that would cause us to conclude that there is a difference in average scholarship amount between borrowers and nonborrowers (<em>z</em> = 1.20, <em>P</em> = 0.23).”</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-383"><p>This statement does not mean that we conclude that the null hypothesis is true, only that the level of evidence we require to reject the null hypothesis is not met. Our criminal court system follows a similar procedure in which a defendant is presumed innocent (<em>H</em><sub>0</sub>) until proven guilty. If the level of evidence presented is not strong enough for the jury to find the defendant guilty beyond a reasonable doubt, the defendant is acquitted. Acquittal does not imply innocence, only that the degree of evidence was not strong enough to prove guilt.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-384"><p>If the <em>P</em>-value is small, we reject the null hypothesis. Here is the conclusion for our second example.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_14.html" id="ips9e-ch06-box-041"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-041"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-385"><p>EXAMPLE 6.14</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-386"><p><span data-block_type="EXP-T-ri">Parent income contribution by school type: The conclusion.</span> In <span data-type="link" data-href="example_6_9.html">Example 6.9</span>, we found that the difference in the average parent current income contribution between undergraduates going to a private college versus public college was $1639. Because the cost of tuition at a private college is typically higher than the cost at a public college,<span data-type="termref" data-term="fn_ch6_fn14"><sup>14</sup></span> we had a prior expectation that the parental current income contribution would be higher for undergraduates going to a private college. It is appropriate to use a one-sided alternative in this situation. So, our hypotheses are</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_369"><p>369</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-387"><p><em>H</em><sub>0</sub>: the true mean difference is 0</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-388"><p>versus</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-389"><p><em>H<sub>a</sub></em>: the difference between the average parent income contribution of undergraduates at a private college and public college is positive</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-390"><p>The standard deviation is $428 (again, we defer details regarding this calculation), and the test statistic is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-391"><p><span data-math="math_83"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-392"><p>= 3.81</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-393"><p>Because only positive differences in parental contributions count against the null hypothesis, the one-sided alternative leads to the calculation of the <em>P</em>-value using the upper tail of the Normal distribution. In <span data-type="link" data-href="table_a.html">Table A</span>, the largest <em>z</em> is 3.49. This means that for <em>z</em> = 3.81, <em>P</em> &lt; 0.0002. Using software, we can be more precise. The <em>P</em>-value is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-394"><p><em>P</em> = <em>P</em>(<em>Z</em> ≥ 3.81)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-395"><p>= 0.0001</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-396"><p>The calculation is illustrated in <span data-type="link" data-href="figure_6_10.html">Figure 6.10</span>. There is about a 1-in-10,000 chance of observing a difference as large or larger than the $1639 in our sample if the true population difference is zero. This <em>P</em>-value tells us that our outcome is extremely rare. We conclude that the null hypothesis must be false. Because the observed difference is positive, here is one way to report the result: “The data clearly show that the average parent income contribution for undergraduates at a private college is larger than the average parent income contribution for undergraduates at a public college (<em>z</em> = 3.81, <em>P</em> = 0.0001).”</p></div>
+</div></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_6_10.html" data-figure-id="ips9e-ch06-fig-010" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_10.jpg" data-figure-id="ips9e-ch06-fig-010" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.10: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 6.10</span> <span data-block_type="FG-CAP">The <em>P</em>-value, <span data-type="link" data-href="example_6_14.html">Example 6.14</span>. The <em>P</em>-value is the probability (when <em>H</em><sub>0</sub> is true) that <span data-math="math_84"></span> takes a value as extreme or more extreme than the actual observed value, <em>z</em> = 3.81. We look at only the right tail because we are considering the one-sided (&gt;) alternative.</span></span>
+</div>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_370"><p>370</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch06-box-042"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-042"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch06-p-397"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_6_42.html" id="ips9e-ch06-quest-042">
+<h3>Question
+			    <span data-type="number">6.42 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch06-p-398"><p><span data-block_type="EXR-QUE-N-ri">6.42</span> <span data-block_type="EXR-QUE-T-ri">Finding significant <em>z</em>-scores.</span> Consider a two-sided significance test for a population mean.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch06-list-029">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-399"><p><span data-block_type="maker">(a)</span> Sketch a Normal curve similar to that shown in <span data-type="link" data-href="figure_6_9.html">Figure 6.9</span> (page 367), but find the value <em>z</em> such that <em>P</em> = 0.05.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-400"><p><span data-block_type="maker">(b)</span> Based on your curve from part (a), what values of the <em>z</em> statistic are statistically significant at the <em>α</em> = 0.05 level?</p></div></li>
+</ol>
+</div>
+<div data-type="question" data-block_type="exercise_6_43.html" id="ips9e-ch06-quest-043">
+<h3>Question
+			    <span data-type="number">6.43 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch06-p-401"><p><span data-block_type="EXR-QUE-N-ri">6.43</span> <span data-block_type="EXR-QUE-T-ri">More on finding significant <em>z</em>-scores.</span> Consider a one-sided significance test for a population mean, where the alternative is “greater than.”</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch06-list-030">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-402"><p><span data-block_type="maker">(a)</span> Sketch a Normal curve similar to that shown in <span data-type="link" data-href="figure_6_10.html">Figure 6.10</span>, but find the value <em>z</em> such that <em>P</em> = 0.05.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-403"><p><span data-block_type="maker">(b)</span> Based on your curve from part (a), what values of the <em>z</em> statistic are statistically significant at the <em>α</em> = 0.05 level?</p></div></li>
+</ol>
+</div>
+<div data-type="question" data-block_type="exercise_6_44.html" id="ips9e-ch06-quest-044">
+<h3>Question
+			    <span data-type="number">6.44 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch06-p-404"><p><span data-block_type="EXR-QUE-N-ri">6.44</span> <span data-block_type="EXR-QUE-T-ri">The Supreme Court speaks.</span> The Supreme Court has said that <em>z-</em>scores beyond 2 or 3 are generally convincing statistical evidence. For a two-sided test, what significance level corresponds to <em>z</em> = 2? To <em>z</em> = 3?</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-405"><p>A test of significance is a process for assessing the significance of the evidence provided by data against a null hypothesis. <strong>The four steps common to all tests of significance are as follows:</strong></p></div>
+<ol data-block_type="numbered" id="ips9e-ch06-list-031">
+<li><div data-block_type="NLF" id="ips9e-ch06-p-406"><p><span data-block_type="maker">1.</span> State the <em>null hypothesis H</em><sub>0</sub> and the <em>alternative hypothesis H<sub>a</sub></em>. The test is designed to assess the strength of the evidence against <em>H</em><sub>0</sub>; <em>H<sub>a</sub></em> is the statement that we will accept if the evidence enables us to reject <em>H</em><sub>0</sub>.</p></div></li>
+<li><div data-block_type="NLM" id="ips9e-ch06-p-407"><p><span data-block_type="maker">2.</span> Calculate the value of the <em>test statistic</em> on which the test will be based. This statistic usually measures how far the data are from <em>H</em><sub>0</sub>.</p></div></li>
+<li><div data-block_type="NLM" id="ips9e-ch06-p-408"><p><span data-block_type="maker">3.</span> Find the <em>P-value</em> for the observed data. This is the probability, calculated assuming that <em>H</em><sub>0</sub> is true, that the test statistic will weigh against <em>H</em><sub>0</sub> at least as strongly as it does for these data.</p></div></li>
+<li><div data-block_type="NLL" id="ips9e-ch06-p-409"><p><span data-block_type="maker">4.</span> State a conclusion. One way to do this is to choose a <em>significance level α</em>, how much evidence against <em>H</em><sub>0</sub> you regard as decisive. If the <em>P</em>-value is less than or equal to <em>α</em>, you conclude that the alternative hypothesis is true; if it is greater than <em>α</em>, you conclude that the data do not provide sufficient evidence to reject the null hypothesis. Your conclusion is a sentence or two that summarizes what you have found by using a test of significance.</p></div></li>
+</ol>
+<div data-block_type="TXT" id="ips9e-ch06-p-410"><p>We will learn the details of many tests of significance in the following chapters. The proper test statistic is determined by the hypotheses and the data collection design. We use computer software or a calculator to find its numerical value and the <em>P</em>-value. The computer will not formulate your hypotheses for you, however. Nor will it decide if significance testing is appropriate or help you to interpret the <em>P</em>-value that it presents to you. These steps require judgment based on a sound understanding of this type of inference.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_371"><p>371</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-411"><p><span data-block_type="h2">Tests for a population mean</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-412"><p>Our discussion has focused on the reasoning of statistical tests, and we have outlined the key ideas for one type of procedure. Our examples focused on the comparison of two population means. Here is a summary for a test about one population mean.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-413"><p>We want to test the hypothesis that a parameter has a specified value. This is the null hypothesis. For a test of a population mean <em>μ</em>, the null hypothesis is</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-414"><p><em>H</em><sub>0</sub>: the true population mean is equal to <em>μ</em><sub>0</sub></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-415"><p>which often is expressed as</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-416"><p><em>H</em><sub>0</sub>: <em>μ</em> = <em>μ</em><sub>0</sub></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-417"><p>where <em>μ</em><sub>0</sub> is the hypothesized value of <em>μ</em> that we would like to examine.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-418"><p>The test is based on data summarized as an estimate of the parameter. For a population mean this is the sample mean <span data-math="math_85"></span>. Our test statistic measures the difference between the sample estimate and the hypothesized parameter in terms of standard deviations of the test statistic:</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-419"><p><span data-math="math_86"></span></p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch06-box-043"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-043"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch06-p-420"><p>distribution of sample mean, <span data-type="link" data-href="alias:page_298">p. 298</span></p></div>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-421"><p>Recall from <span data-type="link" data-href="ips9e-ch05.xml">Chapter 5</span> that the standard deviation of <span data-math="math_87"></span> is <span data-math="math_88"></span>. Therefore, the test statistic is</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-422"><p><span data-math="math_89"></span></p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch06-box-044"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-044"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch06-p-423"><p>central limit theorem, <span data-type="link" data-href="alias:page_298">p. 298</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-424"><p>Again recall from <span data-type="link" data-href="ips9e-ch05.xml">Chapter 5</span> that, if the population is Normal, then <span data-math="math_90"></span> will be Normal and <em>z</em> will have the standard Normal distribution when <em>H</em><sub>0</sub> is true. By the central limit theorem, both distributions will be approximately Normal when the sample size is large even if the population is not Normal. We’ll assume that we’re in one of these two settings for now.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-425"><p>Suppose that we have calculated a test statistic <em>z</em> = 1.7. If the alternative is one-sided on the high side, then the <em>P</em>-value is the probability that a standard Normal random variable <em>Z</em> takes a value as large or larger than the observed 1.7. That is,</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-426"><p><em>P</em> = <em>P</em>(<em>Z</em> ≥ 1.7)</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-427"><p>= 1 − <em>P</em>(<em>Z</em> &lt; 1.7)</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-428"><p>= 1 − 0.9554</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-429"><p>= 0.0446</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-430"><p>Similar reasoning applies when the alternative hypothesis states that the true <em>μ</em> lies below the hypothesized <em>μ</em><sub>0</sub> (one-sided). When <em>H<sub>a</sub></em> states that <em>μ</em> is simply unequal to <em>μ</em><sub>0</sub> (two-sided), values of <em>z</em> away from zero in either direction count against the null hypothesis. The <em>P</em>-value is the probability that a standard Normal <em>Z</em> is at least as far from zero as the observed <em>z</em>. Again, if the test statistic is <em>z</em> = 1.7, the two-sided <em>P</em>-value is the probability that <em>Z</em> ≤ −1.7 or <em>Z</em> ≥ 1.7. Because the standard Normal distribution is symmetric, we calculate this probability by finding <em>P</em>(<em>Z</em> ≥ 1.7) and <em>doubling</em> it:</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-431"><p><em>P</em>(<em>Z</em> ≤ −1.7 or <em>Z</em> ≥ 1.7) = 2<em>P</em>(<em>Z</em> ≥ 1.7)</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-432"><p>= 2(1 − 0.9554) = 0.0892</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_372"><p>372</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-433"><p>We would make exactly the same calculation if we observed <em>z</em> = −1.7. It is the absolute value |<em>z</em>| that matters, not whether <em>z</em> is positive or negative. Here is a statement of the test in general terms.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch06-box-045"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-045"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch06-p-434"><p><em>z</em> TEST FOR A POPULATION MEAN</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch06-p-435"><p>To test the hypothesis <strong><em>H</em><sub>0</sub>: <em>μ</em> = <em>μ</em><sub>0</sub></strong> based on an SRS of size <em>n</em> from a population with unknown mean <em>μ</em> and known standard deviation <em>σ</em>, compute the <strong>test statistic</strong></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch06-p-436"><p><span data-math="math_91"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch06-p-437"><p>In terms of a standard Normal random variable <em>Z</em>, the <em>P</em>-value for a test of <em>H</em><sub>0</sub> against</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch06-p-438"><p><em>H<sub>a</sub></em>: <em>μ</em> &gt; <em>μ</em><sub>0</sub>  is  <em>P</em>(<em>Z</em> ≥ <em>z</em>)  <img id="" src="asset/ch6/17MOOREIPS-MSE_9e_UNfig_06_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch06-p-439"><p><em>H<sub>a</sub></em>: <em>μ</em> &lt; <em>μ</em><sub>0</sub>  is  <em>P</em>(<em>Z</em> ≤ <em>z</em>)  <img id="" src="asset/ch6/17MOOREIPS-MSE_9e_UNfig_06_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch06-p-440"><p><em>H<sub>a</sub></em>: <em>μ</em> ≠ <em>μ</em><sub>0</sub>  is  2<em>P</em>(<em>Z</em> ≥ |<em>z</em>|) <img id="" src="asset/ch6/17MOOREIPS-MSE_9e_UNfig_06_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch06-p-441"><p>These <em>P</em>-values are exact if the population distribution is Normal and are approximately correct for large <em>n</em> in other cases.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_15.html" id="ips9e-ch06-box-046"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-046"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-442"><p>EXAMPLE 6.15</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-443"><p><span data-block_type="EXP-T-ri">Energy intake from sugar-sweetened beverages.</span> Consumption of sugar-sweetened beverages (SSBs) has been positively associated with weight gain and obesity and negatively associated with the intake of important micronutrients. One study used data from the National Health and Nutrition Examination Survey (NHANES) to estimate SSB consumption among adolescents (aged 12 to 19 years). More than 2400 individuals provided data for this study.<span data-type="termref" data-term="fn_ch6_fn15"><sup>15</sup></span> The mean consumption was 298 calories per day.</p></div>
+<div data-type="figure" data-filename="17MOOREIPS-MSE_9e_P_06_02.html" data-figure-id="ips9e-ch06-unfig-003" data-block_type="UN-FIGURE" data-layout-align="left" data-layout-width="small" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_P_06_02.jpg" data-figure-id="ips9e-ch06-unfig-003" data-layout-width="small" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">Joe Raedle/Getty Images</span></div>
+</div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-444"><p>You survey 100 students at your large university and find the average consumption of SSBs per day to be 262 calories. Is there evidence that the average calories per day from SSBs at your university differs from this large U.S. survey average?</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-445"><p>The null hypothesis is “no difference” from the published mean <em>μ</em><sub>0</sub> = 298. The alternative is two-sided because you did not have a particular direction in mind before examining the data. So the hypotheses about the unknown mean <em>μ</em> of the students at your university are</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-446"><p><em>H</em><sub>0</sub>: <em>μ</em> = 298</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-447"><p><em>H<sub>a</sub></em>: <em>μ</em> ≠ 298</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-448"><p>As usual in this chapter, we make the unrealistic assumption that the population standard deviation is known. In this case, we’ll use the standard deviation from the large national study, <em>σ</em> = 435 calories.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_373"><p>373</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-449"><p>We compute the test statistic:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-450"><p><span data-math="math_92"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-451"><p>= −0.83</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-452"><p><span data-type="link" data-href="figure_6_11.html">Figure 6.11</span> illustrates the <em>P</em>-value, which is the probability that a standard Normal variable <em>Z</em> takes a value at least 0.83 away from zero. From <span data-type="link" data-href="table_a.html">Table A</span>, we find that this probability is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-453"><p><em>P</em> = 2<em>P</em>(<em>Z</em> ≥ 0.83) = 2(1 − 0.7967) = 0.4066</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_6_11.html" data-figure-id="ips9e-ch06-fig-011" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_11.jpg" data-figure-id="ips9e-ch06-fig-011" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.11: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 6.11</span> <span data-block_type="FG-CAP">Sketch of the <em>P</em>-value calculation for the two-sided test, <span data-type="link" data-href="example_6_15.html">Example 6.15</span>. The test statistic is <em>z</em> = −0.83.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-454"><p>That is, if the population mean were 298, more than 40% of the time an SRS of size 100 from the students at your university would have a mean consumption from SSBs at least as far from 298 as that of this sample. The observed <span data-math="math_93"></span> is, therefore, not strong evidence that the student population mean at your university differs from that of the large population of adolescents.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-455"><p>This <em>z</em> test requires that the 100 students in the sample are an SRS from the population of students at your university. We will assume that the students in the sample were selected in a proper random manner. We’ll also assume that <em>n</em> = 100 is sufficiently large that we can rely on the central limit theorem to assure us that the <em>P</em>-value based on the Normal distribution will be a good approximation.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-456"><p>The data in <span data-type="link" data-href="example_6_15.html">Example 6.15</span> do <em>not</em> establish that the mean consumption <em>μ</em> for the students at your university is 298 calories. We sought evidence that <em>μ</em> differed from 298 and failed to find convincing evidence. That is all we can say. No doubt the mean amount at your university is not exactly equal to 298 calories. A large enough sample would give evidence of the difference, even if it is very small.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-457"><p>Tests of significance assess the evidence <em>against H</em><sub>0</sub>. If the evidence is strong, we can confidently reject <em>H</em><sub>0</sub> in favor of the alternative. <em>Failing to find evidence against H</em><sub>0</sub> <em>means only that the data are consistent with H</em><sub>0</sub>, <em>not that we have clear evidence that H</em><sub>0</sub> <em>is true.</em></p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_374"><p>374</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_16.html" id="ips9e-ch06-box-047"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-047"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-458"><p>EXAMPLE 6.16</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-459"><p><span data-block_type="EXP-T-ri">Significance test of the mean SATM score.</span> In a discussion of SAT Mathematics (SATM) scores, someone comments: “Because only a select minority of California high school students take the test, the scores overestimate the ability of typical high school seniors. I think that if all seniors took the test, the mean score would be no more than 485.” You do not agree with this claim and decide to use the SRS of 500 seniors from <span data-type="link" data-href="example_6_3.html">Example 6.3</span> (page 344) to assess the degree of evidence against it. Those 500 seniors had a mean SATM score of <span data-math="math_94"></span>. Is this strong enough evidence to conclude that this person’s claim is wrong?</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-460"><p>Because the claim states that the mean is “no more than 485,” the alternative hypothesis is one-sided. The hypotheses are</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-461"><p><em>H</em><sub>0</sub>: <em>μ</em> = 485</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-462"><p><em>H<sub>a</sub></em>: <em>μ</em> &gt; 485</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-463"><p>As we did in the discussion following <span data-type="link" data-href="example_6_3.html">Example 6.3</span>, we assume that <em>σ</em> = 100. The <em>z</em> statistic is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-464"><p><span data-math="math_95"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-465"><p>= 2.24</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-466"><p>Because <em>H<sub>a</sub></em> is one-sided on the high side, large values of <em>z</em> count against <em>H</em><sub>0</sub>. From <span data-type="link" data-href="table_a.html">Table A</span>, we find that the <em>P</em>-value is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-467"><p><em>P</em> = <em>P</em>(<em>Z</em> ≥ 2.24) = 1 − 0.9875 = 0.0125</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-468"><p><span data-type="link" data-href="figure_6_12.html">Figure 6.12</span> illustrates this <em>P</em>-value. A mean score as large as that observed would occur roughly 12 times in 1000 samples if the population mean were 485. This is convincing evidence that the mean SATM score for all California high school seniors is higher than 485. You can confidently tell this person that his or her claim is incorrect.</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_6_12.html" data-figure-id="ips9e-ch06-fig-012" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_12.jpg" data-figure-id="ips9e-ch06-fig-012" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.12: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 6.12</span> <span data-block_type="FG-CAP">Sketch of the <em>P</em>-value calculation for the one-sided test, <span data-type="link" data-href="example_6_16.html">Example 6.16</span>. The test statistic is <em>z</em> = 2.24.</span></span>
+</div>
+</div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch06-box-048"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-048"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch06-p-469"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_6_45.html" id="ips9e-ch06-quest-045">
+<h3>Question
+			    <span data-type="number">6.45 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch06-p-470"><p><span data-block_type="EXR-QUE-N-ri">6.45</span> <span data-block_type="EXR-QUE-T-ri">Computing the test statistic and <em>P</em>-value.</span> You will perform a significance test of <em>H</em><sub>0</sub>: <em>μ</em> = 30 based on an SRS of <em>n</em> = 49. Assume that <em>σ</em> = 14.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch06-list-032">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-471"><p><span data-block_type="maker">(a)</span> If <span data-math="math_96"></span>, what is the test statistic <em>z</em>?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-472"><p><span data-block_type="maker">(b)</span> What is the <em>P</em>-value if <em>H<sub>a</sub></em>: <em>μ</em> &gt; 30?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-473"><p><span data-block_type="maker">(c)</span> What is the <em>P</em>-value if <em>H<sub>a</sub></em>: <em>μ</em> ≠ 30?</p></div></li>
+</ol>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_375"><p>375</p></div>
+<div data-type="question" data-block_type="exercise_6_46.html" id="ips9e-ch06-quest-046">
+<h3>Question
+			    <span data-type="number">6.46 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch06-p-474"><p><span data-block_type="EXR-QUE-N-ri">6.46</span> <span data-block_type="EXR-QUE-T-ri">Testing a random number generator.</span> Statistical software often has a “random number generator” that is supposed to produce numbers uniformly distributed between 0 and 1. If this is true, the numbers generated come from a population with <em>μ</em> = 0.5. A command to generate 100 random numbers gives outcomes with mean <span data-math="math_97"></span> and <em>s</em> = 0.286. Because the sample is reasonably large, take the population standard deviation also to be <em>σ</em> = 0.286. Do we have evidence that the mean of all numbers produced by this software is not 0.5?</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-475"><p><span data-block_type="h2">Two-sided significance tests and confidence intervals</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-476"><p>Recall the basic idea of a confidence interval, discussed in <span data-type="link" data-href="ips9e_ch6_3.html">Section 6.1</span>. We constructed an interval that would include the true value of <em>μ</em> with a specified probability <em>C</em>. Suppose that we use a 95% confidence interval (<em>C</em> = 0.95). Then the values of <em>μ</em><sub>0</sub> that are not in our interval would seem to be incompatible with the data. This sounds like a significance test with <em>α</em> = 0.05 (or 5%) as our standard for drawing a conclusion. The following examples demonstrate that this is correct.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_17.html" id="ips9e-ch06-box-049"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-049"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-477"><p>EXAMPLE 6.17</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-478"><p><span data-block_type="EXP-T-ri">Water quality testing.</span> The Deely Laboratory is a drinking-water testing and analysis service. One of the common contaminants it tests for is lead. Lead enters drinking water through corrosion of plumbing materials, such as lead pipes, fixtures, and solder. The service knows that their analysis procedure is unbiased but not perfectly precise, so the laboratory analyzes each water sample three times and reports the mean result. The repeated measurements follow a Normal distribution quite closely. The standard deviation of this distribution is a property of the analytic procedure and is known to be <em>σ</em> = 0.25 parts per billion (ppb).</p></div>
+<div data-type="figure" data-filename="17MOOREIPS-MSE_9e_P_06_03.html" data-figure-id="ips9e-ch06-unfig-004" data-block_type="UN-FIGURE" data-layout-align="left" data-layout-width="small" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_P_06_03.jpg" data-figure-id="ips9e-ch06-unfig-004" data-layout-width="small" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">Voisin/ Phanie/Science Source</span></div>
+</div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-480"><p>The Deely Laboratory has been asked by a university to evaluate a claim that the drinking water in the Student Union has a lead concentration above the Environmental Protection Agency’s (EPA) action level of 15 ppb. Because the true concentration of the sample is the mean <em>μ</em> of the population of repeated analyses, the hypotheses are</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-481"><p><em>H</em><sub>0</sub>: <em>μ</em> = 15</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-482"><p><em>H<sub>a</sub></em>: <em>μ</em> ≠ 15</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-483"><p>We use the two-sided alternative here because there is no prior evidence to substantiate a one-sided alternative. The lab chooses the 1% level of significance, <em>α</em> = 0.01.</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch06-box-050"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-050"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="PBTEST" data-block_type="rl_dataset" id="ips9e-ch06-p-479"><p><span>PBTEST</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm10067088"><p></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-484"><p>Three analyses of one specimen give concentrations</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-485"><p>15.84 15.33 15.58</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-486"><p>The sample mean of these readings is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-487"><p><span data-math="math_98"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-488"><p>The test statistic is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-489"><p><span data-math="math_99"></span></p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_376"><p>376</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-490"><p>Because the alternative is two-sided, the <em>P</em>-value is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-491"><p><em>P</em> = 2<em>P</em>(<em>Z</em> ≥ 4.02)</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-492"><p>We cannot find this probability in <span data-type="link" data-href="table_a.html">Table A</span>. The largest value of <em>z</em> in that table is 3.49. All that we can say from <span data-type="link" data-href="table_a.html">Table A</span> is that <em>P</em> is less than 2<em>P</em>(<em>Z</em> ≥ 3.49) = 2(1−0.9998) = 0.0004. Software or a calculator could be used to give an accurate value of the <em>P</em>-value. However, because the <em>P</em>-value is clearly less than the lab’s standard of 1%, we reject <em>H</em><sub>0</sub>. Because <span data-math="math_100"></span> is larger than 15.00, we can conclude that the true concentration level of lead in this one specimen is higher than the EPA’s action level.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-493"><p>We can compute a 99% confidence interval for the same data to get a likely range for the actual mean concentration <em>μ</em> of this specimen.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_18.html" id="ips9e-ch06-box-051"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-051"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-494"><p>EXAMPLE 6.18</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-496"><p><span data-block_type="EXP-T-ri">99% confidence interval for the mean concentration.</span> The 99% confidence interval for <em>μ</em> in <span data-type="link" data-href="example_6_17.html">Example 6.17</span> is</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch06-box-052"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-052"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="PBTEST" data-block_type="rl_dataset" id="ips9e-ch06-p-495"><p><span>PBTEST</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm10039872"><p></p></div>
+</div></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-497"><p><span data-math="math_101"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-498"><p>= 15.58 ± 0.37</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-499"><p>= (15.21, 15.95)</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-500"><p>The hypothesized value <em>μ</em><sub>0</sub> = 15.00 in <span data-type="link" data-href="example_6_17.html">Example 6.17</span> falls outside the confidence interval we computed in <span data-type="link" data-href="example_6_18.html">Example 6.18</span>. In other words, it is in the region we are 99% confident that <em>μ</em> is <em>not</em> in. Thus, we can reject</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-501"><p><em>H</em><sub>0</sub>: <em>μ</em> = 15.00</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-502"><p>at the 1% significance level. On the other hand, we cannot reject</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-503"><p><em>H</em><sub>0</sub>: <em>μ</em> = 15.30</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-504"><p>at the 1% level in favor of the two-sided alternative <em>H<sub>a</sub></em>: <em>μ</em> ≠ 15.30, because 15.30 lies inside the 99% confidence interval for <em>μ</em>. <span data-type="link" data-href="figure_6_13.html">Figure 6.13</span> illustrates both cases.</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_6_13.html" data-figure-id="ips9e-ch06-fig-013" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_13.jpg" data-figure-id="ips9e-ch06-fig-013" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.13: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 6.13</span> <span data-block_type="FG-CAP">The link between two-sided significance tests and confidence intervals. For the study described in <span data-type="link" data-href="example_6_17.html">Examples 6.17</span> and <span data-type="link" data-href="example_6_18.html">6.18</span>, values of <em>μ</em> falling outside a 99% confidence interval can be rejected at the 1% significance level; values falling inside the interval cannot be rejected. This holds for any significance level <em>α</em> and 1 − <em>α</em> confidence interval.</span></span>
+</div>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_377"><p>377</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-505"><p>The calculation in <span data-type="link" data-href="example_6_17.html">Example 6.17</span> for a 1% significance test is very similar to the calculation for a 99% confidence interval. In fact, a two-sided test at significance level <em>α</em> can be carried out directly from a confidence interval with confidence level <em>C</em> = 1 − <em>α</em>.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch06-box-053"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-053"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch06-p-506"><p>TWO-SIDED SIGNIFICANCE TESTS AND CONFIDENCE INTERVALS</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch06-p-507"><p>A level <em>α</em> two-sided significance test rejects a hypothesis <em>H</em><sub>0</sub>: <em>μ</em> = <em>μ</em><sub>0</sub> exactly when the value <em>μ</em><sub>0</sub> falls outside a level 1 − <em>α</em> confidence interval for <em>μ</em>.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch06-box-054"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-054"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch06-p-508"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_6_47.html" id="ips9e-ch06-quest-047">
+<h3>Question
+			    <span data-type="number">6.47 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch06-p-509"><p><span data-block_type="EXR-QUE-N-ri">6.47</span> <span data-block_type="EXR-QUE-T-ri">Two-sided significance tests and confidence intervals.</span> The <em>P</em>-value for a two-sided test of the null hypothesis <em>H</em><sub>0</sub>: <em>μ</em> = 30 is 0.037.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch06-list-033">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-510"><p><span data-block_type="maker">(a)</span> Does the 95% confidence interval include the value 30? Explain.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-511"><p><span data-block_type="maker">(b)</span> Does the 99% confidence interval include the value 30? Explain.</p></div></li>
+</ol>
+</div>
+<div data-type="question" data-block_type="exercise_6_48.html" id="ips9e-ch06-quest-048">
+<h3>Question
+			    <span data-type="number">6.48 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch06-p-512"><p><span data-block_type="EXR-QUE-N-ri">6.48</span> <span data-block_type="EXR-QUE-T-ri">More on two-sided tests and confidence intervals.</span> A 95% confidence interval for a population mean is (29, 58).</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch06-list-034">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-513"><p><span data-block_type="maker">(a)</span> Can you reject the null hypothesis that <em>μ</em> = 50 against the two-sided alternative at the 5% significance level? Explain.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-514"><p><span data-block_type="maker">(b)</span> Can you reject the null hypothesis that <em>μ</em> = 60 against the two-sided alternative at the 5% significance level? Explain.</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-515"><p><span data-block_type="h2">The <em>P</em>-value versus a statement of significance</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-516"><p>The observed result in <span data-type="link" data-href="example_6_17.html">Example 6.17</span> was <em>z</em> = 4.02. The conclusion that this result is significant at the 1% level does not tell the whole story. The observed <em>z</em> is far beyond the <em>z</em> corresponding to 1%, and the evidence against <em>H</em><sub>0</sub> is far stronger than 1% significance suggests. The actual <em>P</em>-value</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-517"><p>2<em>P</em>(<em>Z</em> ≥ 4.02) = 0.000058</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-518"><p>gives a better sense of how strong the evidence is. <em>The P-value is the smallest level α at which the data are significant.</em> Knowing the <em>P</em>-value allows us to assess significance at any level.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_19.html" id="ips9e-ch06-box-055"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-055"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-519"><p>EXAMPLE 6.19</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-520"><p><span data-block_type="EXP-T-ri">Test of the mean SATM score: Significance.</span> In <span data-type="link" data-href="example_6_16.html">Example 6.16</span>, we tested the hypotheses</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-521"><p><em>H</em><sub>0</sub>: <em>μ</em> = 485</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-522"><p><em>H<sub>a</sub></em>: <em>μ</em> &gt; 485</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-523"><p>concerning the mean SAT Mathematics score <em>μ</em> of California high school seniors. The test had the <em>P</em>-value <em>P</em> = 0.0125. This result is significant at the <em>α</em> = 0.05 level because 0.0125 ≤ 0.05. It is not significant at the <em>α</em> = 0.01 level, because the <em>P</em>-value is larger than 0.01. See <span data-type="link" data-href="figure_6_14.html">Figure 6.14</span>.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_378"><p>378</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_6_14.html" data-figure-id="ips9e-ch06-fig-014" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_14.jpg" data-figure-id="ips9e-ch06-fig-014" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.14: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 6.14</span> <span data-block_type="FG-CAP">Link between the <em>P</em>-value and the significance level <em>α</em>. An outcome with <em>P</em>-value <em>P</em> is significant at all levels <em>α</em> at or above <em>P</em> and is not significant at smaller levels <em>α</em>.</span></span>
+</div>
+</div>
+<div data-block_type="TXT" id="ips9e-ch06-p-524"><p>A <em>P</em>-value is more informative than a reject-or-not finding at a fixed significance level. But assessing significance at a fixed level <em>α</em> is easier because no probability calculation is required. You need only look up a number in a table. A value <em>z</em>* with a specified area to its right under the standard Normal curve is called a <span data-type="termref" data-term="critical value"><strong>critical value</strong></span><span data-block_type="MN-GL-term">critical value</span> of the standard Normal distribution. Because the practice of statistics almost always employs computer software or a calculator that calculates <em>P</em>-values automatically, the use of tables of critical values is becoming outdated. We include the usual tables of critical values (such as <span data-type="link" data-href="table_d.html">Table D</span>) at the end of the book for learning purposes and to rescue students without good computing facilities. The tables can be used directly to carry out fixed <em>α</em> tests. They also allow us to approximate <em>P</em>-values quickly without a probability calculation. The following example illustrates the use of <span data-type="link" data-href="table_d.html">Table D</span> to find an approximate <em>P</em>-value.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_20.html" id="ips9e-ch06-box-056"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-056"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-525"><p>EXAMPLE 6.20</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-526"><p><span data-block_type="EXP-T-ri">Average scholarship amount of borrowers and nonborrowers: Assessing significance.</span> In <span data-type="link" data-href="example_6_11.html">Example 6.11</span> (page 365), we found the test statistic <em>z</em> = 1.20 for testing the null hypothesis that there was no difference in the mean scholarship amount between borrowers and nonborrowers. The alternative was two-sided. Under the null hypothesis, <em>z</em> has a standard Normal distribution, and from the last row in <span data-type="link" data-href="table_d.html">Table D</span>, we can see that there is a 95% chance that <em>z</em> is between ±1.96. Therefore, we reject <em>H</em><sub>0</sub> in favor of <em>H<sub>a</sub></em> whenever <em>z</em> is outside this range. Because our calculated value is 1.20, we are within the range and we do not reject the null hypothesis at the 5% level of significance.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch06-box-057"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-057"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch06-p-527"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_6_49.html" id="ips9e-ch06-quest-049">
+<h3>Question
+			    <span data-type="number">6.49 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch06-p-528"><p><span data-block_type="EXR-QUE-N-ri">6.49</span> <span data-block_type="EXR-QUE-T-ri"><em>P</em>-value and the significance level.</span> The <em>P</em>-value for a significance test is 0.033.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch06-list-035">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-529"><p><span data-block_type="maker">(a)</span> Do you reject the null hypothesis at level <em>α</em> = 0.05?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-530"><p><span data-block_type="maker">(b)</span> Do you reject the null hypothesis at level <em>α</em> = 0.01?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-531"><p><span data-block_type="maker">(c)</span> Explain how you determined your answers to parts (a) and (b).</p></div></li>
+</ol>
+</div>
+<div data-type="question" data-block_type="exercise_6_50.html" id="ips9e-ch06-quest-050">
+<h3>Question
+			    <span data-type="number">6.50 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch06-p-532"><p><span data-block_type="EXR-QUE-N-ri">6.50</span> <span data-block_type="EXR-QUE-T-ri">More on <em>P</em>-value and the significance level.</span> The <em>P</em>-value for a significance test is 0.069.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch06-list-036">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-533"><p><span data-block_type="maker">(a)</span> Do you reject the null hypothesis at level <em>α</em> = 0.05?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-534"><p><span data-block_type="maker">(b)</span> Do you reject the null hypothesis at level <em>α</em> = 0.01?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-535"><p><span data-block_type="maker">(c)</span> Explain how you determined your answers to parts (a) and (b).</p></div></li>
+</ol>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_379"><p>379</p></div>
+<div data-type="question" data-block_type="exercise_6_51.html" id="ips9e-ch06-quest-051">
+<h3>Question
+			    <span data-type="number">6.51 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch06-p-536"><p><span data-block_type="EXR-QUE-N-ri">6.51</span> <span data-block_type="EXR-QUE-T-ri">One-sided and two-sided <em>P</em>-values.</span> The <em>P</em>-value for a two-sided significance test is 0.076.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch06-list-037">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-537"><p><span data-block_type="maker">(a)</span> State the <em>P</em>-values for the two one-sided tests.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch06-p-538"><p><span data-block_type="maker">(b)</span> What additional information do you need to properly assign these <em>P</em>-values to the &gt; and &lt; (one-sided) alternatives?</p></div></li>
+</ol>
+</div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch6.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('5745e10e757a2e4744000000');
+});
+    //-->
+</script>
+</body>
+</html>
+
