@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<manifest id="ips9e" timestamp="1463527321" supp_win="0"><manuscript id="57224235757a2ef453000000" title="Chapter 1: Looking at Data&#x2014;Distributions" question-delivery-method="ARGA" number="1">
+<manifest id="ips9e" timestamp="1464198130" supp_win="0"><manuscript id="57224235757a2ef453000000" title="Chapter 1: Looking at Data&#x2014;Distributions" question-delivery-method="ARGA" number="1">
     <section title="Looking at Data&#x2014;Distributions" id="ips9e-ch01-sec-01" folder="false" filename="ips9e_ch1_1.html" dlapFilename="ips9e_ch1_1_dlap.xml" numquestions="0"/>
     <section number="1.1" id="ips9e-ch01-sec1-01" folder="false" filename="ips9e_ch1_2.html" dlapFilename="ips9e_ch1_2_dlap.xml" numquestions="0">
       <title><phrase block_type="h1-N-ri">1.1</phrase> <phrase block_type="h1">Data</phrase></title>
@@ -230,5 +230,49 @@
     </section>
     <section id="ips9e-ch05-chapexer1-01" folder="false" filename="ips9e_ch5_11.html" dlapFilename="ips9e_ch5_11_dlap.xml" numquestions="0">
       <title><phrase block_type="CR-X-N-ri">CHAPTER 5</phrase> <phrase block_type="CR-X-H">EXERCISES</phrase></title>
+    </section>
+  </manuscript><manuscript id="5745e10e757a2e4744000000" title="Chapter 6: Introduction to Inference" question-delivery-method="ARGA" number="6">
+    <section title="Introduction to Inference" id="ips9e-ch06-sec-001" folder="false" filename="ips9e_ch6_1.html" dlapFilename="ips9e_ch6_1_dlap.xml" numquestions="0"/>
+    <section id="ips9e-ch06-sec1-01" folder="false" filename="ips9e_ch6_2.html" dlapFilename="ips9e_ch6_2_dlap.xml" numquestions="0">
+      <title>Overview of Inference</title>
+    </section>
+    <section number="6.1" id="idp6191440" folder="false" filename="ips9e_ch6_3.html" dlapFilename="ips9e_ch6_3_dlap.xml" numquestions="0">
+      <title>6.1 Estimating with Confidence</title>
+    </section>
+    <section id="ips9e-ch06-sum1-001" folder="false" filename="ips9e_ch6_4.html" dlapFilename="ips9e_ch6_4_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 6.1</phrase> <phrase block_type="SR-H">SUMMARY</phrase></title>
+    </section>
+    <section id="ips9e-ch06-exer1-001" folder="false" filename="ips9e_ch6_5.html" dlapFilename="ips9e_ch6_5_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 6.1</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></title>
+    </section>
+    <section number="6.2" id="ips9e-ch06-sec1-02" folder="false" filename="ips9e_ch6_6.html" dlapFilename="ips9e_ch6_6_dlap.xml" numquestions="0">
+      <title>6.2 Tests of Significance</title>
+    </section>
+    <section id="ips9e-ch06-sum1-002" folder="false" filename="ips9e_ch6_7.html" dlapFilename="ips9e_ch6_7_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 6.2</phrase> <phrase block_type="SR-H">SUMMARY</phrase></title>
+    </section>
+    <section id="ips9e-ch06-exer1-002" folder="false" filename="ips9e_ch6_8.html" dlapFilename="ips9e_ch6_8_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 6.2</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></title>
+    </section>
+    <section number="6.3" id="ips9e-ch06-sec1-03" folder="false" filename="ips9e_ch6_9.html" dlapFilename="ips9e_ch6_9_dlap.xml" numquestions="0">
+      <title>6.3 Use and Abuse of Tests</title>
+    </section>
+    <section id="ips9e-ch06-sum1-003" folder="false" filename="ips9e_ch6_10.html" dlapFilename="ips9e_ch6_10_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 6.3</phrase> <phrase block_type="SR-H">SUMMARY</phrase></title>
+    </section>
+    <section id="ips9e-ch06-exer1-003" folder="false" filename="ips9e_ch6_11.html" dlapFilename="ips9e_ch6_11_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 6.3</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></title>
+    </section>
+    <section number="6.4" id="ips9e-ch06-sec1-04" folder="false" filename="ips9e_ch6_12.html" dlapFilename="ips9e_ch6_12_dlap.xml" numquestions="0">
+      <title>6.4 Power and Inference as a Decision</title>
+    </section>
+    <section id="ips9e-ch06-sum1-004" folder="false" filename="ips9e_ch6_13.html" dlapFilename="ips9e_ch6_13_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 6.4</phrase> <phrase block_type="SR-H">SUMMARY</phrase></title>
+    </section>
+    <section id="ips9e-ch06-exer1-004" folder="false" filename="ips9e_ch6_14.html" dlapFilename="ips9e_ch6_14_dlap.xml" numquestions="0">
+      <title><phrase block_type="SR-XH">SECTION 6.4</phrase> <phrase block_type="SR-X-H">EXERCISES</phrase></title>
+    </section>
+    <section id="ips9e-ch06-chapexer1-01" folder="false" filename="ips9e_ch6_15.html" dlapFilename="ips9e_ch6_15_dlap.xml" numquestions="0">
+      <title><phrase block_type="CR-X-N-ri">CHAPTER 6</phrase> <phrase block_type="CR-X-H">EXERCISES</phrase></title>
     </section>
   </manuscript></manifest>
