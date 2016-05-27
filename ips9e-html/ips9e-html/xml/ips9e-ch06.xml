@@ -18,7 +18,7 @@
 </box>
 <p id="ips9e-ch06-p-007" block_type="CO-h1"><phrase block_type="section_title">Introduction</phrase></p>
 <p id="ips9e-ch06-p-008" block_type="CO-TXT-ni">Statistical inference draws conclusions about a population or process from sample data. It also provides a statement of how much confidence we can place in our conclusions. Although there are numerous methods for inference, there are only a few general types of statistical inference. This chapter introduces the two most common types: <em>confidence intervals</em> and <em>tests of significance</em>.</p>
-<p id="ips9e-ch06-p-009" block_type="CO-TXT">Because the underlying reasoning for these two types of inference remains the same across different settings, this chapter considers just one simple setting that is closely related to our study of the sampling distributions of <phrase data-math="math_1"></phrase> in <link href="ips9e_ch5_3.html">Section 5.2</link> (page 293): inference about the mean of a large population whose standard deviation is known. This setting, although unrealistic, allows us to focus on the underlying rationale of statistical inference rather than the calculations.</p>
+<p id="ips9e-ch06-p-009" block_type="CO-TXT">Because the underlying reasoning for these two types of inference remains the same across different settings, this chapter considers just one simple setting that is closely related to our study of the sampling distributions of <phrase data-math="math_1"></phrase> in <link href="ips9e_ch5_5.html">Section 5.2</link> (page 293): inference about the mean of a large population whose standard deviation is known. This setting, although unrealistic, allows us to focus on the underlying rationale of statistical inference rather than the calculations.</p>
 <p id="ips9e-ch06-p-010" block_type="CO-TXT">Later chapters present inference methods to use in most of the settings we met in learning to explore data. In fact, there are libraries&#8212;both of books and of computer software&#8212;full of more elaborate statistical techniques. Informed use of any of these methods, however, requires a firm understanding of the underlying reasoning. That is the goal of this chapter. A computer or calculator will do the arithmetic, but <em>you must exercise sound judgment based on understanding.</em></p>
 </section>
   
@@ -163,7 +163,7 @@
 <p id="ips9e-ch06-p-076" block_type="TXT">When generating single samples, the data for the latest SRS are shown below the confidence interval. The spread in these data reflects the spread of the population distribution. This spread is assumed known, and it does not change with sample size. What does change, as you vary <em>n</em>, is the margin of error, since it reflects the uncertainty in the estimate of <em>&#956;</em>. As you increase <em>n</em>, you&#8217;ll find that the span of the interval gets smaller.</p>
 <box id="ips9e-ch06-box-014" numbered="false" block_type="EXR">
 <p id="ips9e-ch06-p-077" block_type="EXR-H">USE YOUR KNOWLEDGE</p>
-  <question id="ips9e-ch06-quest-004">
+<question id="ips9e-ch06-quest-004" block_type="exercise_6_4.html">
 <p id="ips9e-ch06-p-078" block_type="EXR-QUE-NL-first"><phrase block_type="EXR-QUE-N-ri">6.4</phrase> <phrase block_type="EXR-QUE-T-ri">Generating a single confidence interval.</phrase> Using the default settings in the <em>Confidence Interval</em> applet (95&#37; confidence level and <em>n</em> = 20), click &#8220;Sample&#8221; to choose an SRS and display its confidence interval.</p>
 <p id="ips9e-ch06-p-074a" block_type="Applet icon"><image asset-id="ips9e-ch06-img-007" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/></p>
   <list id="ips9e-ch06-list-006" type="ordered" block_type="lower-alpha">
@@ -172,7 +172,7 @@
 </list>
 </question>
 <p id="ips9e_page_348" block_type="page_start" data-margin-content="left">348</p>
-<question id="ips9e-ch06-quest-005">
+<question id="ips9e-ch06-quest-005" block_type="exercise_6_5.html">
 <p id="ips9e-ch06-p-081" block_type="EXR-QUE-NL-last"><phrase block_type="EXR-QUE-N-ri">6.5</phrase> <phrase block_type="EXR-QUE-T-ri">80&#37; confidence intervals.</phrase> The idea of an 80&#37; confidence interval is that the interval captures the true parameter value in 80&#37; of all samples. That&#8217;s not high enough confidence for practical use, but 80&#37; hits and 20&#37; misses make it easy to see how a confidence interval behaves in repeated samples from the same population.</p>
 <p id="ips9e-ch06-p-074b" block_type="Applet icon"><image asset-id="ips9e-ch06-img-007" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/></p>
   <list id="ips9e-ch06-list-007" type="ordered" block_type="lower-alpha">
@@ -246,7 +246,6 @@
 <p id="ips9e-ch06-p-114" block_type="EXP-N">EXAMPLE 6.5</p>
 <p id="ips9e-ch06-p-115" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">How sample size affects the confidence interval.</phrase> As in <link href="example_6_4.html">Example 6.4</link>, the sample mean of the college savings fund contribution is &#36;1768 and the population standard deviation is &#36;1483. Suppose that the sample size is only 177 but still large enough for us to rely on the central limit theorem. In this case, the margin of error for 95&#37; confidence is</p>
 <p id="ips9e-ch06-p-116" block_type="EXP-EQ"><phrase data-math="math_50"></phrase></p>
-<p id="ips9e-ch06-p-117" block_type="EXP-EQ">= 111.47</p>
 <p id="ips9e-ch06-p-118" block_type="EXP-TXT-ni">and the approximate 95&#37; confidence interval is</p>
 <p id="ips9e-ch06-p-119" block_type="EXP-EQ"><phrase data-math="math_51"></phrase></p>
 <p id="ips9e-ch06-p-120" block_type="EXP-EQ">= (1657, 1879)</p>
@@ -287,7 +286,6 @@
 <p id="ips9e-ch06-p-137" block_type="EXP-N">EXAMPLE 6.6</p>
 <p id="ips9e-ch06-p-138" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">How the confidence level affects the confidence interval.</phrase> Suppose that for the college saving fund contribution data in <link href="example_6_4.html">Example 6.4</link> (page 350), we wanted 99&#37; confidence. <link href="table_d.html">Table D</link> tells us that for 99&#37; confidence, <em>z</em>* = 2.576. The margin of error for 99&#37; confidence based on 1593 observations is</p>
 <p id="ips9e-ch06-p-139" block_type="EXP-EQ"><phrase data-math="math_56"></phrase></p>
-<p id="ips9e-ch06-p-140" block_type="EXP-EQ">= 95.71</p>
 <p id="ips9e-ch06-p-141" block_type="EXP-TXT-ni">and the 99&#37; confidence interval is</p>
 <p id="ips9e-ch06-p-142" block_type="EXP-EQ"><phrase data-math="math_57"></phrase></p>
 <p id="ips9e-ch06-p-143" block_type="EXP-EQ">= (1672, 1864)</p>
@@ -350,7 +348,7 @@
 <li id="ips9e-ch06-li-027"><p id="ips9e-ch06-p-178" block_type="BL"><phrase block_type="maker">&#8226;</phrase> Because <phrase data-math="math_64"></phrase> is not a resistant measure, outliers can have a large effect on the confidence interval. <em>You should search for outliers and try to correct them or justify their removal before computing the interval</em>. If the outliers cannot be removed, ask your statistical consultant about procedures that are not sensitive to outliers.</p></li>
 <li id="ips9e-ch06-li-028"><p id="ips9e-ch06-p-179" block_type="BL"><phrase block_type="maker">&#8226;</phrase> If the sample size is small and the population is not Normal, the true confidence level will be different from the value <em>C</em> used in computing the interval. <em>Prior to any calculations, examine your data carefully for skewness and other signs of non-Normality.</em> Remember though that the interval relies only on the distribution of <phrase data-math="math_65"></phrase>, which even for quite small sample sizes is much closer to Normal than is the distribution of the individual observations. When <em>n</em> &#x2265; 15, the confidence level is not greatly disturbed by non-Normal populations unless extreme outliers or quite strong skewness are present. Our college fund contribution data in <link href="example_6_4.html">Example 6.4</link> are very likely skewed, but because of the large sample size, we are confident that the distribution of the sample mean will be approximately Normal.</p>
 <box id="ips9e-ch06-box-025" block_type="MN-NOT-H">
-<p id="ips9e-ch06-p-180" block_type="MN-NOT1">standard deviation <em>s</em>, <link href="alias:page_38">p. 38</link></p></box></li>
+<p id="ips9e-ch06-p-180" block_type="MN-NOT1">standard<br/>deviation <em>s</em>, <link href="alias:page_38">p. 38</link></p></box></li>
 <li id="ips9e-ch06-li-029"><p id="ips9e-ch06-p-181" block_type="BL-last"><phrase block_type="maker">&#8226;</phrase> The interval <phrase data-math="math_66"></phrase> assumes that the standard deviation <em>&#x3c3;</em> of the population is known. This unrealistic requirement renders the interval of little use in statistical practice. We will learn in the next chapter what to do when <em>&#x3c3;</em> is unknown. If, however, the sample is large, the sample standard deviation <em>s</em> will be close to the unknown <em>&#x3c3;</em>. The interval <phrase data-math="math_67"></phrase> is then an approximate confidence interval for <em>&#956;</em>.</p></li>
 </list>
 <p id="ips9e-ch06-p-182" block_type="TXT">The most important caution concerning confidence intervals is a consequence of the first of these warnings. <em>The margin of error in a confidence interval covers only random sampling errors.</em> The margin of error is obtained from the sampling distribution and indicates how much error can be expected because of chance variation in randomized data production.</p>
@@ -498,7 +496,7 @@
 <p id="ips9e-ch06-p-253" block_type="SR-X-QUE-NL">The poll uses a complex multistage sample design, but the sample percent has approximately a Normal sampling distribution.</p>
 <list id="ips9e-ch06-list-021" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch06-li-066"><p id="ips9e-ch06-p-254" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> The announced poll result was 54.1&#37; &#xb1; 1&#37;. Can we be certain that the true population percent falls in this interval? Explain your answer.</p></li>
-<li id="ips9e-ch06-li-067"><p id="ips9e-ch06-p-255" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Explain to someone who knows no statistics what the announced result 54.1&#37; &#xb1; 1&#37; means.</p></li>
+<li id="ips9e-ch06-li-067"><p id="ips9e-ch06-p-255" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Explain to someone who knows no statistics what the announced result <phrase block_type="nowrap">54.1&#37; &#xb1; 1&#37;</phrase> means.</p></li>
 <li id="ips9e-ch06-li-068"><p id="ips9e-ch06-p-256" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(c)</phrase> This confidence interval has the same form we have met earlier:</p>
 <p id="ips9e-ch06-p-257" block_type="SR-Eq">estimate &#xb1; <em>z</em>* <em>&#x3c3;</em><sub>estimate</sub></p>
 <p id="ips9e-ch06-p-258" block_type="SR-X-QUE-NL-lvl2">What is the standard deviation <em>&#x3c3;</em><sub>estimate</sub> of the estimated percent?</p></li>
@@ -1845,10 +1843,10 @@
 </list>
 </question>
 <p id="ips9e_page_403" block_type="page_start" data-margin-content="right">403</p>
-<question id="ips9e-ch06-quest-128">
+<question id="ips9e-ch06-quest-128" block_type="exercise_6_128.html">
 <p id="ips9e-ch06-p-899" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch06-img-074" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <image asset-id="ips9e-ch06-img-075" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">6.128 Coverage percent of 95&#37; confidence interval.</phrase> For this exercise, you will use the <em>Confidence Interval</em> applet. Set the confidence level at 95&#37; and click the &#8220;Sample&#8221; button 10 times to simulate 10 confidence intervals. Record the percent hit. Simulate another 10 intervals by clicking another 10 times (do not click the &#8220;Reset&#8221; button). Record the percent hit for your 20 intervals. Repeat the process of simulating 10 additional intervals and recording the results until you have a total of 200 intervals. Create a time plot of your results and write a summary of what you have found.</p>
 </question>
-<question id="ips9e-ch06-quest-129">
+<question id="ips9e-ch06-quest-129" block_type="exercise_6_129.html">
 <p id="ips9e-ch06-p-900" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch06-img-076" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <image asset-id="ips9e-ch06-img-077" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">6.129 Coverage percent of 90&#37; confidence interval.</phrase> Refer to the previous exercise. Do the simulations and report the results for 90&#37; confidence.</p>
 </question>
 <question id="ips9e-ch06-quest-130" block_type="exercise_6_130.html">
