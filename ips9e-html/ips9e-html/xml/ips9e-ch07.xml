@@ -1785,7 +1785,7 @@
 <p id="ips9e_page_435" block_type="page_start" data-margin-content="right">435</p>
 <figure id="ips9e-ch07-fig-013" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="7.11" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-22" alt="image" src="images/17MOOREIPS-MSE_9e_fig_07_11ab.jpg"/>
+<image asset-id="ips9e-ch07-img-22" alt="image" src="images/17MOOREIPS-MSE_9e_fig_07_11.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.11</phrase> <phrase block_type="FG-CAP">Distributions, <link href="example_7_10.html">Example 7.10</link>. (a) Distributions of heights of 10-year-old boys and girls. (b) Distribution of the difference between mean heights of 12 girls and 8 boys.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p0468" block_type="EXP-TXT-ni">The standard deviation of the difference in sample means is, therefore, <m:math display='inline'><m:msqrt><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>18</m:mn></m:mrow></m:mrow></m:msqrt><m:mo>=</m:mo><m:mrow><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>48</m:mn></m:mrow></m:math> inches.</p>
