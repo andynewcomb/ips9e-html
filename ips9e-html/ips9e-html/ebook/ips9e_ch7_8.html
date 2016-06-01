@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch7</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="7">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch07-sec1-007" level="1" data-print_page="460">
+<h2 class="section-title">
+<span data-type="number">7.3</span> <span data-type="title" data-title-for="ips9e-ch07-sec1-007">7.3 Additional Topics on Inference
+</span>
+</h2>
+
+<div data-type="box" data-block_type="SP" id="ips9e-ch07-box-98"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-98"></h3>
+<div data-block_type="SP-TXT-ni" id="ips9e-ch07-p0830"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bluebullet" id="ips9e-ch07-list-069">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch07-p0831"><p><span data-block_type="maker">•</span> Compute the sample size <em>n</em> needed for a desired margin of error for a mean <em>μ</em>.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch07-p0832"><p><span data-block_type="maker">•</span> Define the power of a significance test.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch07-p0833"><p><span data-block_type="maker">•</span> Calculate the power of the one-sample <em>t</em>-test to detect an alternative for a given sample size <em>n</em>.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch07-p0834"><p><span data-block_type="maker">•</span> Determine the sample size necessary to have adequate power to detect a scaled difference in means of size <em>δ</em>.</p></div></li>
+<li><div data-block_type="SP-BL-last" id="ips9e-ch07-p0835"><p><span data-block_type="maker">•</span> Identify alternative strategies of inference for non-Normal populations.</p></div></li>
+</ul>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_461"><p>461</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch07-p0837"><p><img id="" src="asset/ch7/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0838"><p>In this section, we discuss two topics that are related to the procedures we have learned for inference about population means. First, we focus on planning a study—in particular, choosing the sample size. <em>A wise user of statistics does not plan for inference without at the same time planning data collection.</em>The second topic introduces us to various inference methods for non-Normal populations. These would be used when our populations are clearly non-Normal and we do not think that the sample size is large enough to rely on the robustness of the <em>t</em> procedures.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p0839"><p><span data-block_type="h2">Choosing the sample size</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0840"><p>We describe sample size procedures for both confidence intervals and significance tests. For anyone planning to design a study, a general understanding of these procedures is necessary. While the actual formulas are a bit technical, statistical software now makes it trivial to get sample size results.</p></div>
+<div data-block_type="TXT-3" id="ips9e-ch07-p0841"><p><span data-block_type="h3-ri">Sample size for confidence intervals</span> We can arrange to have both high confidence and a small margin of error by choosing an appropriate sample size. Let’s first focus on the one-sample <em>t</em> confidence interval. Its margin of error is</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p0842"><p><span data-math="math_294"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0843"><p>Besides the confidence level <em>C</em> and sample size <em>n</em>, this margin of error depends on the sample standard deviation <em>s</em>. Because we don’t know the value of <em>s</em> until we collect the data, we guess a value to use in the calculations. Because <em>s</em> is our estimate of the population standard deviation <em>σ</em>, this value can also be considered our guess of the population standard deviation.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0844"><p>We will call this guessed value <em>s</em>*. We typically guess at this value using results from a pilot study or from similar published studies. <em>It is always better to use a value of the standard deviation that is a little larger than what is expected.</em> This may result in a sample size that is a little larger than needed, but it helps avoid the situation where the resulting margin of error is larger than desired.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0845"><p>Given an estimate for <em>s</em> and the desired margin of error <em>m</em>, we can find the sample size by plugging everything into the margin of error formula and solving for <em>n</em>. The one complication, however, is that <em>t</em>* depends not only on the confidence level <em>C</em>, but also on the sample size <em>n</em>. Here are the details.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-99"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-99"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p0846"><p>SAMPLE SIZE FOR DESIRED MARGIN OF ERROR FOR A MEAN <em>μ</em></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0847"><p>The level <em>C</em> confidence interval for a mean <em>μ</em> will have an expected margin of error less than or equal to a specified value <em>m</em> when the sample size is such that</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p0848"><p><span data-math="math_295"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0849"><p>Here <em>t</em>* is the critical value for confidence level <em>C</em> with <em>n</em> − 1 degrees of freedom, and <em>s</em>* is the guessed value for the population standard deviation.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_462"><p>462</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0851"><p>Finding the smallest sample size <em>n</em> that satisfies this requirement can be done using the following iterative search:</p></div>
+<ol data-block_type="numbered" id="ips9e-ch07-list-070">
+<li><div data-block_type="NL-first" id="ips9e-ch07-p0852"><p><span data-block_type="maker">1.</span> Get an initial sample size by replacing <em>t</em>* with <em>z</em>*. Compute <em>n</em> = (<em>z</em>*<em>s</em>*/<em>m</em>)<sup>2</sup> and round up to the nearest integer.</p></div></li>
+<li><div data-block_type="NL-mid" id="ips9e-ch07-p0853"><p><span data-block_type="maker">2.</span> Use this sample size to obtain <em>t</em>*, and check if <span data-math="math_296"></span>.</p></div></li>
+<li><div data-block_type="NL-last" id="ips9e-ch07-p0854"><p><span data-block_type="maker">3.</span> If the requirement is satisfied, then this <em>n</em> is the needed sample size. If the requirement is not satisfied, increase <em>n</em> by 1 and return to Step 2.</p></div></li>
+</ol>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0855"><p>Notice that this method makes no reference to the size of the <em>population.</em> It is the size of the <em>sample</em> that determines the margin of error. The size of the population does not influence the sample size we need as long as the population is much larger than the sample. Here is an example.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_21.html" id="ips9e-ch07-box-100"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-100"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0856"><p>EXAMPLE 7.21</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0857"><p><span data-block_type="EXP-T-ri">Planning a survey of college students.</span> In <span data-type="link" data-href="example_7_1.html">Example 7.1</span> (page 411), we calculated a 95% confidence interval for the mean hours per week a college student watches traditional television. The margin of error based on an SRS of <em>n</em> = 8 students was 12.42 hours. Suppose that a new study is being planned and the goal is to have a margin of error of five hours. How many students need to be sampled?</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0858"><p>The sample standard deviation in <span data-type="link" data-href="example_7_1.html">Example 7.1</span> is <em>s</em> = 14.854 hours. To be conservative, we’ll guess that the population standard deviation is 17.5 hours.</p></div>
+<ol data-block_type="numbered" id="ips9e-ch07-list-071">
+<li><div data-block_type="EXP-NLF" id="ips9e-ch07-p0859"><p><span data-block_type="maker">1.</span> To compute an initial <em>n</em>, we replace <em>t</em>* with <em>z</em>*. This results in</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0860"><p><span data-math="math_297"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0861"><p>Round up to get <em>n</em> = 48.</p></div>
+</li>
+<li><div data-block_type="EXP-NLM" id="ips9e-ch07-p0862"><p><span data-block_type="maker">2.</span> We now check to see if this sample size satisfies the requirement when we switch back to <em>t</em>*. For <em>n</em> = 48, we have <em>n</em> − 1 = 47 degrees of freedom and <em>t</em>* = 2.011. Using this value, the expected margin of error is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0863"><p><span data-math="math_298"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0864"><p>This is larger than <em>m</em> = 5, so the requirement is not satisfied.</p></div>
+</li>
+<li><div data-block_type="EXP-NLL" id="ips9e-ch07-p0865"><p><span data-block_type="maker">3.</span> The following table summarizes these calculations for some larger values of <em>n</em>.</p></div></li>
+</ol>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-43" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="30"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>n</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><span data-math="math_299"></span></th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">49</td>
+<td data-block_type="EXP-TB1-TXT" align="char">5.03</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">50</td>
+<td data-block_type="EXP-TB1-TXT" align="char">4.97</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center">51</td>
+<td data-block_type="EXP-TB1-TXT" align="char">4.92</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0866"><p>The requirement is first satisfied when <em>n</em> = 50. Thus, we need to sample at least <em>n</em> = 50 students for the expected margin of error to be no more than five hours.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0867"><p><span data-type="link" data-href="figure_7_17.html">Figure 7.17</span> shows the Minitab input window used to do these calculations. Because the default confidence level is 95%, only the desired margin of error <em>m</em> and the estimate for <em>s</em> need to be entered.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_463"><p>463</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_7_17.html" data-figure-id="ips9e-ch07-fig-021" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_17.jpg" data-figure-id="ips9e-ch07-fig-021" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.17: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.17</span> <span data-block_type="FG-CAP">Minitab input window used to compute the sample size for the desired margin of error, <span data-type="link" data-href="example_7_21.html">Example 7.21</span>.</span></span>
+</div>
+</div>
+<div data-block_type="TXT" id="ips9e-ch07-p0869"><p>Note that the <em>n</em> = 50 refers to the <em>expected</em> margin of error being no more than five hours. This does not guarantee that the margin of error for the collected sample will be less than five hours. That is because the sample standard deviation <em>s</em> varies sample to sample and these calculations are treating it as a fixed quantity. More advanced sample size procedures ask you to also specify the probability of obtaining a margin of error less than the desired value. For our approach, this probability is roughly 50%. For a probability closer to 100%, the sample size will need to be larger. For example, suppose we wanted this probability to be roughly 80%. In SAS, we’d perform these calculations using the command</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0870"><p>proc power;</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0871"><p>onesamplemeans CI=t stddev=17.5 halfwidth=5 probwidth=0.80 ntotal=.;</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0872"><p>run;</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0873"><p>The needed sample size increases from <em>n</em> = 50 to <em>n</em> = 57.</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch07-p0874"><p><img id="" src="asset/ch7/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0875"><p><em>Unfortunately, the actual number of usable observations is often less than that planned at the beginning of a study.</em> This is particularly true of data collected in surveys or studies that involve a time commitment from the participants. Careful study designers often assume a nonresponse rate or dropout rate that specifies what proportion of the originally planned sample will fail to provide data. We use this information to calculate the sample size to be used at the start of the study. For example, if, in the preceding survey, we expect only 40% of those students to respond, we would need to start with a sample size of 2.5 × 50 =125 to obtain usable information from 50 students.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-101"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-101"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0877"><p>nonresponse, <span data-type="link" data-href="alias:page_196">p. 196</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0878"><p>These sample size calculations also do not account for collection costs. In practice, taking observations costs time and money. There are times when the required sample size may be impossibly expensive. In those situations, one might consider a larger margin of error and/or a lower confidence level to be acceptable.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0879"><p>For the two-sample <em>t</em> confidence interval, the margin of error is</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p0880"><p><span data-math="math_300"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0881"><p>A similar type of iterative search can be used to determine the sample sizes <em>n</em><sub>1</sub> and <em>n</em><sub>2</sub>, but now we need to guess both standard deviations and decide on an estimate for the degrees of freedom. We suggest taking the conservative approach and using the smaller of <em>n</em><sub>1</sub> − 1 and <em>n</em><sub>2</sub> − 1 for the degrees of freedom. Another approach is to consider the standard deviations and sample sizes are equal, so the margin of error is</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p0882"><p><span data-math="math_301"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0883"><p>and use degrees of freedom 2(<em>n</em> − 1). That is the approach most statistical software takes.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_464"><p>464</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_22.html" id="ips9e-ch07-box-102"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-102"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0885"><p>EXAMPLE 7.22</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0886"><p><span data-block_type="EXP-T-ri">Planning a new blood pressure study.</span> In <span data-type="link" data-href="example_7_20.html">Example 7.20</span> (page 452), we calculated a 90% confidence interval for the mean difference in blood pressure. The 90% margin of error was roughly 5.6 mm Hg. Suppose that a new study is being planned and the desired margin of error at 90% confidence is 2.8 mm Hg. How many subjects per group do we need?</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0887"><p>The pooled sample standard deviation in <span data-type="link" data-href="example_7_20.html">Example 7.20</span> is 7.385. To be a bit conservative, we’ll guess that the two population standard deviations are both 8.0. To compute an initial <em>n</em>, we replace <em>t</em>* with <em>z</em>*. This results in</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0888"><p><span data-math="math_302"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0889"><p>We round up to get <em>n</em> = 45. The following table summarizes the margin of error for this and some larger values of <em>n</em>.</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-44" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="40"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center"><em>n</em></td>
+<td data-block_type="EXP-TB1-TXT" align="char"><span data-math="math_303"></span></td>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">45</td>
+<td data-block_type="EXP-TB1-TXT" align="char">2.834</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">46</td>
+<td data-block_type="EXP-TB1-TXT" align="char">2.801</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center">47</td>
+<td data-block_type="EXP-TB1-TXT" align="char">2.770</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0890"><p>The requirement is first satisfied when <em>n</em> = 47. In SAS, we’d perform these calculations using the command</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0891"><p>proc power;</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0892"><p>twosamplemeans CI=diff alpha=0.1 stddev=8 halfwidth=2.8</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0893"><p>probwidth=0.50 npergroup=.;</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0894"><p>run;</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0895"><p>This sample size is roughly 4.5 times the sample size used in <span data-type="link" data-href="example_7_20.html">Example 7.20</span>. This researcher may not be able to recruit this large a sample. If so, we should consider a larger margin of error.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-103"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-103"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p0896"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_93.html" id="ips9e-ch07-quest-0093">
+<h3>Question
+			    <span data-type="number">7.93 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p0897"><p><span data-block_type="EXR-QUE-N-ri">7.93</span> <span data-block_type="EXR-QUE-T-ri">Starting salaries.</span> In a recent survey by the National Association of Colleges and Employers, the average starting salary for college graduate with a computer and information sciences degree was reported to be $62,194.<span data-type="termref" data-term="fn_ch7_fn40"><sup>40</sup></span> You are planning to do a survey of starting salaries for recent computer science majors from your university. Using an estimated standard deviation of $11,605, what sample size do you need to have a margin of error equal to $5000 with 95% confidence?</p></div>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_465"><p>465</p></div>
+<div data-type="question" data-block_type="exercise_7_94.html" id="ips9e-ch07-quest-0094">
+<h3>Question
+			    <span data-type="number">7.94 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0899"><p><span data-block_type="EXR-QUE-N-ri">7.94</span> <span data-block_type="EXR-QUE-T-ri">Changes in sample size.</span> Suppose that, in the setting of the previous exercise, you have the resources to contact 35 recent graduates. If all respond, will your margin of error be larger or smaller than $5000? What if only 50% respond? Verify your answers by performing the calculations.</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT-3" id="ips9e-ch07-p0900"><p><span data-block_type="h3-ri">The power of the one-sample <em>t</em> test</span> The power of a statistical test measures its ability to detect deviations from the null hypothesis. In practice, we carry out the test in the hope of showing that the null hypothesis is false, so high power is important. Power calculations are a way to assess whether or not a sample size is sufficiently large to answer the research question.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0901"><p>The power of the one-sample <em>t</em> test against a specific alternative value of the population mean <em>μ</em> is the probability that the test will reject the null hypothesis when this alternative is true. To calculate the power, we assume a fixed level of significance, usually <em>α</em> = 0.05.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-104"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-104"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0903"><p>power calculation, <span data-type="link" data-href="alias:page_392">p. 392</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0904"><p>Calculation of the exact power of the <em>t</em> test takes into account the estimation of <em>σ</em> by <em>s</em> and requires a new distribution. We will describe that calculation when discussing the power of the two-sample <em>t</em> test. Fortunately, an approximate calculation that is based on assuming that <em>σ</em> is known is almost always adequate for planning a study in the one-sample case. This calculation is very much like that for the <em>z</em> test, presented in <span data-type="link" data-href="ips9e-ch06-sec6-4">Section 6.4</span>. The steps are</p></div>
+<ol data-block_type="numbered" id="ips9e-ch07-list-072">
+<li><div data-block_type="NL-first" id="ips9e-ch07-p0905"><p><span data-block_type="maker">1.</span> Write the event, in terms of <span data-math="math_304"></span>, that the test rejects <em>H</em><sub>0</sub>.</p></div></li>
+<li><div data-block_type="NL-last" id="ips9e-ch07-p0906"><p><span data-block_type="maker">2.</span> Find the probability of this event when the population mean has the alternative value.</p></div></li>
+</ol>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0907"><p>Here is an example.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_23.html" id="ips9e-ch07-box-105"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-105"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0908"><p>EXAMPLE 7.23</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0909"><p><span data-block_type="EXP-T-ri">Is the sample size large enough?</span> Recall <span data-type="link" data-href="example_7_2.html">Example 7.2</span> (page 413) on the average time that U.S. college students spend watching traditional television. The sample mean of <em>n</em> = 8 students was four hours lower than the U.S. average of 18- to 24-year-olds but not found significantly different. Suppose a new study is being planned using a sample size of <em>n</em> = 50 students. Does this study have adequate power when the population mean is four hours less than the U.S. average?</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0910"><p>We wish to compute the power of the <em>t</em> test for</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0911"><p><em>H</em><sub>0</sub>: <em>μ</em> = 18.5</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0912"><p><em>H<sub>a</sub></em>: <em>μ</em> &lt; 18.5</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0913"><p>against the alternative that <em>μ</em> = 18.5 − 4 = 14.5 when <em>n</em> = 50. This gives us most of the information we need to compute the power. The other important piece is a rough guess of the size of <em>σ</em>. In planning a large study, a pilot study is often run for this and other purposes. In this case, we can use the standard deviation from the earlier survey. Similar to <span data-type="link" data-href="example_7_21.html">Example 7.21</span> (page 462), we will round up and use <em>σ</em> = 17.5 and <em>s</em> = 17.5 in the approximate calculation.</p></div>
+<div data-block_type="EXP-SLF" id="ips9e-ch07-p0914"><p><strong>Step 1.</strong> The <em>t</em> test with 50 observations rejects <em>H</em><sub>0</sub> at the 5% significance level if the <em>t</em> statistic</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0915"><p><span data-math="math_305"></span></p></div>
+<div data-block_type="EXP-SLF" id="ips9e-ch07-p0916"><p>is less than the lower 5% point of <em>t</em>(49), which is −1.677. Taking <em>s</em> = 17.5, the event that the test rejects <em>H</em><sub>0</sub> is, therefore,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0917"><p><span data-math="math_306"></span></p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_466"><p>466</p></div>
+<div data-block_type="EXP-SLF" id="ips9e-ch07-p0921"><p><strong>Step 2.</strong> The power is the probability that <span data-math="math_307"></span> when <em>μ</em> = 14.5. Taking <em>σ</em> = 17.5, we find this probability by standardizing <span data-math="math_308"></span>:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0922"><p><span data-math="math_309"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0923"><p> = <em>P</em>(<em>Z</em> ≤ −0.061)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0924"><p> = 0.4761</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0925"><p>A mean value of 14.5 hours per week will produce significance at the 5% level in only 47.6% of all possible samples. <span data-type="link" data-href="figure_7_18.html">Figure 7.18</span> shows Minitab output for the exact power calculation. It is about 48% and is represented by a dot on the power curve at a difference of −4. This curve is very informative. For many studies, 80% in consider the standard value for desirable power. We see that with a sample size of 50, the power is greater than 80% only for reductions larger than 6.25 hours per week. If we want to detect a reduction of only four hours, we definitely need to increase the sample size.</p></div>
+</div></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_7_18.html" data-figure-id="ips9e-ch07-fig-022" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_18.jpg" data-figure-id="ips9e-ch07-fig-022" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.18: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.18</span> <span data-block_type="FG-CAP">Minitab output (a power curve) for the one-sample power calculation, <span data-type="link" data-href="example_7_23.html">Example 7.23</span>.</span></span>
+</div>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_467"><p>467</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch07-p0927"><p><img id="" src="asset/ch7/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0928"><p>Power calculations are used in planning studies to ensure that we have a reasonable chance of detecting effects of interest. They give us some guidance in selecting a sample size. In making these calculations, we need assumptions about the standard deviation and the alternative of interest. In our example, we assumed that the standard deviation would be 17.5, but in practice, we are hoping that the value will be somewhere around this value. Similarly, we have used a somewhat arbitrary alternative of 14.5. This is a guess based on the results of the previous study. <em>Beware of putting too much trust in fine details of the results of these calculations.</em> They serve as a guide, not a mandate.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-106"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-106"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p0929"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_95.html" id="ips9e-ch07-quest-0095">
+<h3>Question
+			    <span data-type="number">7.95 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p0930"><p><span data-block_type="EXR-QUE-N-ri">7.95</span> <span data-block_type="EXR-QUE-T-ri">Power for other values of</span> <em>μ</em><strong>.</strong> If you repeat the calculation in <span data-type="link" data-href="example_7_23.html">Example 7.23</span> for values of <em>μ</em> that are smaller than 14.5, would you expect the power to be higher or lower than 0.4761? Why?</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_7_96.html" id="ips9e-ch07-quest-0096">
+<h3>Question
+			    <span data-type="number">7.96 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0931"><p><span data-block_type="EXR-QUE-N-ri">7.96</span> <span data-block_type="EXR-QUE-T-ri">Another power calculation.</span> Verify your answer to the previous exercise by doing the calculation for the alternative <em>μ</em> = 12 hours per week.</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT-3" id="ips9e-ch07-p0932"><p><span data-block_type="h3-ri">The power of the two-sample <em>t</em> test</span> The two-sample <em>t</em> test is one of the most used statistical procedures. Unfortunately, because of inadequate planning, users frequently fail to find evidence for the effects that they believe to be present. This is often the result of an inadequate sample size. Power calculations, performed prior to running the experiment, will help avoid this occurrence.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0933"><p>We just learned how to approximate the power of the one-sample <em>t</em> test. The basic idea is the same for the two-sample case, but we will describe the exact method rather than an approximation again. The exact power calculation involves a new distribution, the <span data-type="termref" data-term="noncentral t distribution"><strong>noncentral <em>t</em> distribution</strong></span><span data-block_type="MN-GL-term">noncentral <em>t</em> distribution</span>. This calculation is not practical by hand but is easy with software that calculates probabilities for this distribution.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0935"><p>We consider only the common case where the null hypothesis is “no difference,’’ <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub> = 0. We illustrate the calculation for the pooled two-sample <em>t</em> test. A simple modification is needed when we do not pool. The unknown parameters in the pooled <em>t</em> setting are <em>μ</em><sub>1</sub>, <em>μ</em><sub>2</sub>, and a single common standard deviation <em>σ</em>. To find the power for the pooled two-sample <em>t</em> test, follow these steps.</p></div>
+<div data-block_type="SLF" id="ips9e-ch07-p0936"><p><strong>Step 1.</strong> Specify these quantities:</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch07-list-073">
+<li><div data-block_type="SL-NL-Lvl2" id="ips9e-ch07-p0937"><p><span data-block_type="maker">(a)</span> An alternative value for <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub> that you consider important to detect.</p></div></li>
+<li><div data-block_type="SL-NL-Lvl2" id="ips9e-ch07-p0938"><p><span data-block_type="maker">(b)</span> The sample sizes, <em>n</em><sub>1</sub> and <em>n</em><sub>2</sub>.</p></div></li>
+<li><div data-block_type="SL-NL-Lvl2" id="ips9e-ch07-p0939"><p><span data-block_type="maker">(c)</span> A fixed significance level <em>α</em>, often <em>α</em> = 0.05.</p></div></li>
+<li><div data-block_type="SL-NL-Lvl2" id="ips9e-ch07-p0940"><p><span data-block_type="maker">(d)</span> An estimate of the standard deviation <em>σ</em> from a pilot study or previous studies under similar conditions.</p></div></li>
+</ol>
+<div data-block_type="SLL" id="ips9e-ch07-p0941"><p><strong>Step 2.</strong> Find the degrees of freedom df = <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> − 2 and the value of <em>t</em>* that will lead to rejecting <em>H</em><sub>0</sub> at your chosen level <em>α</em>.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_468"><p>468</p></div>
+<div data-block_type="SLL" id="ips9e-ch07-p0943"><p><strong>Step 3.</strong> Calculate the <span data-type="termref" data-term="noncentrality parameter"><strong>noncentrality parameter</strong></span><span data-block_type="MN-GL-term">noncentrality parameter</span></p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p0945"><p><span data-math="math_310"></span></p></div>
+<div data-block_type="SLL" id="ips9e-ch07-p0946"><p><strong>Step 4.</strong> The power is the probability that a noncentral <em>t</em> random variable with degrees of freedom df and noncentrality parameter <em>δ</em> will be greater than <em>t</em>*. Use software to calculate this probability. In SAS, the command is 1 - PROBT(tstar, df, delta). In R the commmand is 1-pt(tstar, df, delta). If you do not have software that can perform this calculation, you can approximate the power as the probability that a standard Normal random variable is greater than <em>t</em>* −<em>δ</em>, that is, <em>P</em>(<em>Z</em> &gt; <em>t</em>* <em>−δ</em>). Use <span data-type="link" data-href="table_a.html">Table A</span> or software for standard Normal probabilities.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0947"><p>Note that the denominator in the noncentrality parameter,</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p0948"><p><span data-math="math_311"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0949"><p>is our guess at the standard error for the difference in the sample means. Therefore, if we wanted to assess a possible study in terms of the margin of error for the estimated difference, we would examine <em>t</em>* times this quantity.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0950"><p>If we do not assume that the standard deviations are equal, we need to guess both standard deviations and then combine these to get an estimate of the standard error:</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p0951"><p><span data-math="math_312"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0952"><p>This guess is then used in the denominator of the noncentrality parameter. Use the conservative value, the smaller of <em>n</em><sub>1</sub> − 1 and <em>n</em><sub>2</sub> − 1, for the degrees of freedom.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_24.html" id="ips9e-ch07-box-107"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-107"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0953"><p>EXAMPLE 7.24</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0954"><p><span data-block_type="EXP-T-ri">Planning a new study of calcium versus placebo groups.</span> In <span data-type="link" data-href="example_7_19.html">Example 7.19</span> (page 451), we examined the effect of calcium on blood pressure by comparing the means of a treatment group and a placebo group using a pooled two-sample <em>t</em> test. The <em>P</em>-value was 0.059, failing to achieve the usual standard of 0.05 for statistical significance. Suppose that we wanted to plan a new study that would provide convincing evidence—say, at the 0.01 level—with high probability. Let’s examine a study design with 45 subjects in each group (<em>n</em><sub>1</sub> = <em>n</em><sub>2</sub> = 45) to see if this meets our goals.</p></div>
+<div data-block_type="EXP-SLF" id="ips9e-ch07-p0955"><p><strong>Step 1.</strong> Based on our previous results, we choose <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub> = 5 as an alternative that we would like to be able to detect with <em>α</em> = 0.01. For <em>σ</em> we use 7.4, our pooled estimate from <span data-type="link" data-href="example_7_19.html">Example 7.19</span>.</p></div>
+<div data-block_type="EXP-SLF" id="ips9e-ch07-p0956"><p><strong>Step 2.</strong> The degrees of freedom are <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> − 2 = 88, which leads to <em>t</em>* = 2.37 for the significance test.</p></div>
+<div data-block_type="EXP-SLF" id="ips9e-ch07-p0957"><p><strong>Step 3.</strong> The noncentrality parameter is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0958"><p><span data-math="math_313"></span></p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_469"><p>469</p></div>
+<div data-block_type="EXP-SLL" id="ips9e-ch07-p0960"><p><strong>Step 4.</strong> Software gives the power as 0.7965, or 80%. The Normal approximation gives 0.7983, a very accurate result.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0961"><p>With this choice of sample sizes, we are just barely below 80% power. If we judge this to be large enough power, we can proceed to the recruitment of our samples.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0962"><p>With software it is often very easy to examine the effects of variations in a study design. For example, <span data-type="link" data-href="figure_7_19.html">Figure 7.19</span> shows the JMP power calculator for the two-sample <em>t</em> test. You input values for <em>α</em>, <em>σ</em>, <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub>, and <em>δ</em> (Step 1) and it computes the power (Steps 2–4). <span data-type="link" data-href="figure_7_19.html">Figure 7.19</span> shows the results of the calculations for <span data-type="link" data-href="example_7_24.html">Example 7.24</span>. The JMP calculator only considers the two-sided alternative so to get the power for a one-sided alternative, the significance level must be input as 2<em>α</em>. Most other software, such as Minitab, provides the option to choose the alternative.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-108"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-108"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p0963"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_97.html" id="ips9e-ch07-quest-0097">
+<h3>Question
+			    <span data-type="number">7.97 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p0964"><p><span data-block_type="EXR-QUE-N-ri">7.97</span> <span data-block_type="EXR-QUE-T-ri">Power and the choice of alternative.</span> If you were to repeat the calculation in <span data-type="link" data-href="example_7_24.html">Example 7.24</span> for the two-sided alternative, would the power increase or decrease? Explain your answer.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_7_98.html" id="ips9e-ch07-quest-0098">
+<h3>Question
+			    <span data-type="number">7.98 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0965"><p><span data-block_type="EXR-QUE-N-ri">7.98</span> <span data-block_type="EXR-QUE-T-ri">Power and the standard deviation.</span> If the true population standard deviation were 8 instead of the 7.4 hypothesized in <span data-type="link" data-href="example_7_24.html">Example 7.24</span>, would the power increase or decrease? Explain.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_7_99.html" id="ips9e-ch07-quest-0099">
+<h3>Question
+			    <span data-type="number">7.99 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0966"><p><span data-block_type="EXR-QUE-N-ri">7.99</span> <span data-block_type="EXR-QUE-T-ri">Power and statistical software.</span> Refer to the two previous exercises. Use statistical software to compute the exact power of each scenario.</p></div>
+</div>
+</div></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_7_19.html" data-figure-id="ips9e-ch07-fig-023" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_19.jpg" data-figure-id="ips9e-ch07-fig-023" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.19: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.19</span> <span data-block_type="FG-CAP">JMP input/output window for the two-sample power calculation, <span data-type="link" data-href="example_7_24.html">Example 7.24</span>.</span></span>
+</div>
+</div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p0967"><p><span data-block_type="h2">Inference for non-Normal populations</span></p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_470"><p>470</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0969"><p>We have not discussed how to do inference about the mean of a clearly non-Normal distribution based on a small sample. If you face this problem, you should consult an expert. Three general strategies are available:</p></div>
+<ul data-block_type="bullet" id="ips9e-ch07-list-074">
+<li><div data-block_type="BL-first" id="ips9e-ch07-p0970"><p><span data-block_type="maker">•</span> In some cases, a distribution other than a Normal distribution describes the data well. There are many non-Normal models for data, and inference procedures for these models are available.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch07-p0971"><p><span data-block_type="maker">•</span> Because skewness is the chief barrier to the use of <em>t</em> procedures on data without outliers, you can attempt to transform skewed data so that the distribution is symmetric and as close to Normal as possible. Confidence levels and <em>P</em>-values from the <em>t</em> procedures applied to the transformed data will be quite accurate for even moderate sample sizes. Methods are generally available for transforming the results back to the original scale.</p></div></li>
+<li><div data-block_type="BL-last" id="ips9e-ch07-p0972"><p><span data-block_type="maker">•</span> Use a <span data-type="termref" data-term="distribution-free"><strong>distribution-free</strong></span><span data-block_type="MN-GL-term">distribution-free procedures</span> inference procedure. Such procedures do not assume that the population distribution has any specific form, such as Normal. Distribution-free procedures are often called <span data-type="termref" data-term="nonparametric procedures"><strong>nonparametric procedures</strong></span><span data-block_type="MN-GL-term">nonparametric procedures</span>. <span data-type="link" data-href="ips9e-ch015.xml">Chapter 15</span> discusses several of these procedures.</p></div></li>
+</ul>
+<div data-block_type="TXT" id="ips9e-ch07-p0975"><p>Each of these strategies can be effective, but each quickly carries us beyond the basic practice of statistics. We emphasize procedures based on Normal distributions because they are the most common in practice, because their robustness makes them widely useful, and (most important) because we are first of all concerned with understanding the principles of inference. Therefore, we will not discuss procedures for non-Normal continuous distributions. We will be content with illustrating by example the use of a transformation and of a simple distribution-free procedure.</p></div>
+<div data-block_type="TXT-3" id="ips9e-ch07-p0976"><p><span data-block_type="h3-ri">Transforming data</span> When the distribution of a variable is skewed, it often happens that a simple transformation results in a variable whose distribution is symmetric and even close to Normal. The most common transformation is the logarithm, or log. The logarithm tends to pull in the right tail of a distribution. For example, the data 2, 3, 4, 20 show an outlier in the right tail. Their common logarithms 0.30, 0.48, 0.60, 1.30 are much less skewed. Taking logarithms is a possible remedy for right-skewness. Instead of analyzing values of the original variable <em>X</em>, we compute their logarithms and analyze the values of log <em>X</em>. Here is an example of this approach.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-109"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-109"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0978"><p>log transformation, <span data-type="link" data-href="alias:page_91">p. 91</span></p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_25.html" id="ips9e-ch07-box-110"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-110"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0979"><p>EXAMPLE 7.25</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0980"><p><span data-block_type="EXP-T-ri">Length of audio files on an iPod.</span> <span data-type="link" data-href="table_7_5.html">Table 7.5</span> presents data on the length (in seconds) of audio files found on an iPod. There was a total of 10,003 audio files, and 50 files were randomly selected using the “shuffle songs’’ command.<span data-type="termref" data-term="fn_ch7_fn41"><sup>41</sup></span> We would like to give a confidence interval for the average audio file length <em>μ</em> for this iPod.</p></div>
+<div data-type="figure" data-filename="17MOOREIPS-MSE_9e_P_07_04.html" data-figure-id="ips9e-ch07-unfig-024" data-block_type="UN-FIGURE" data-layout-align="left" data-layout-width="small" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_P_07_04.jpg" data-figure-id="ips9e-ch07-unfig-024" data-layout-width="small" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">Justin Sullivan/Staff/Getty Images</span></div>
+</div>
+<div data-type="table" data-filename="table_7_5.html" data-block_type="TABLE" id="ips9e-ch07-tab-5" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="100">
+<div data-type="table_text">
+<span data-type="number">Table : </span><span data-type="table_caption"><span data-block_type="TBN-N">TABLE 7.5</span> <span data-block_type="TBN-T">Length (in Seconds) of Audio Files Sampled from an iPod</span></span>
+</div>
+<table><tbody>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">240</td>
+<td data-block_type="EXP-TB1-TXT" align="center">316</td>
+<td data-block_type="EXP-TB1-TXT" align="center">259</td>
+<td data-block_type="EXP-TB1-TXT" align="center">46</td>
+<td data-block_type="EXP-TB1-TXT" align="center">871</td>
+<td data-block_type="EXP-TB1-TXT" align="center">411</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1366</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">233</td>
+<td data-block_type="EXP-TB1-TXT" align="center">520</td>
+<td data-block_type="EXP-TB1-TXT" align="center">239</td>
+<td data-block_type="EXP-TB1-TXT" align="center">259</td>
+<td data-block_type="EXP-TB1-TXT" align="center">535</td>
+<td data-block_type="EXP-TB1-TXT" align="center">213</td>
+<td data-block_type="EXP-TB1-TXT" align="center">492</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">315</td>
+<td data-block_type="EXP-TB1-TXT" align="center">696</td>
+<td data-block_type="EXP-TB1-TXT" align="center">181</td>
+<td data-block_type="EXP-TB1-TXT" align="center">357</td>
+<td data-block_type="EXP-TB1-TXT" align="center">130</td>
+<td data-block_type="EXP-TB1-TXT" align="center">373</td>
+<td data-block_type="EXP-TB1-TXT" align="center">245</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">305</td>
+<td data-block_type="EXP-TB1-TXT" align="center">188</td>
+<td data-block_type="EXP-TB1-TXT" align="center">398</td>
+<td data-block_type="EXP-TB1-TXT" align="center">140</td>
+<td data-block_type="EXP-TB1-TXT" align="center">252</td>
+<td data-block_type="EXP-TB1-TXT" align="center">331</td>
+<td data-block_type="EXP-TB1-TXT" align="center">47</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">309</td>
+<td data-block_type="EXP-TB1-TXT" align="center">245</td>
+<td data-block_type="EXP-TB1-TXT" align="center">69</td>
+<td data-block_type="EXP-TB1-TXT" align="center">293</td>
+<td data-block_type="EXP-TB1-TXT" align="center">160</td>
+<td data-block_type="EXP-TB1-TXT" align="center">245</td>
+<td data-block_type="EXP-TB1-TXT" align="center">184</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">326</td>
+<td data-block_type="EXP-TB1-TXT" align="center">612</td>
+<td data-block_type="EXP-TB1-TXT" align="center">474</td>
+<td data-block_type="EXP-TB1-TXT" align="center">171</td>
+<td data-block_type="EXP-TB1-TXT" align="center">498</td>
+<td data-block_type="EXP-TB1-TXT" align="center">484</td>
+<td data-block_type="EXP-TB1-TXT" align="center">271</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">207</td>
+<td data-block_type="EXP-TB1-TXT" align="center">169</td>
+<td data-block_type="EXP-TB1-TXT" align="center">171</td>
+<td data-block_type="EXP-TB1-TXT" align="center">180</td>
+<td data-block_type="EXP-TB1-TXT" align="center">269</td>
+<td data-block_type="EXP-TB1-TXT" align="center">297</td>
+<td data-block_type="EXP-TB1-TXT" align="center">266</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">1847</td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+</tr>
+</tbody></table>
+</div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-111"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-111"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="SONGS" data-block_type="rl_dataset" id="ips9e-ch07-p0981"><p><span>SONGS</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp20009456"><p></p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_471"><p>471</p></div>
+<div data-type="box" data-block_type="sidebyside" id="idp20011424"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp20011424"></h3>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_7_20.html" data-figure-id="ips9e-ch07-fig-025" data-block_type="FIGURE" data-layout-align="left" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_20.jpg" data-figure-id="ips9e-ch07-fig-025" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.20: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.20</span> <span data-block_type="FG-CAP">Normal quantile plot of audio file length, <span data-type="link" data-href="example_7_25.html">Example 7.25</span>. This sort of pattern occurs when a distribution is skewed to the right.</span></span>
+</div>
+</div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_7_21.html" data-figure-id="ips9e-ch07-fig-026" data-block_type="FIGURE" data-layout-align="right" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_21.jpg" data-figure-id="ips9e-ch07-fig-026" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.21: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.21</span> <span data-block_type="FG-CAP">Normal quantile plot of the logarithms of the audio file lengths, <span data-type="link" data-href="example_7_25.html">Example 7.25</span>. This distribution appears approximately Normal.</span></span>
+</div>
+</div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0983"><p>A Normal quantile plot of the audio data from <span data-type="link" data-href="table_7_5.html">Table 7.5</span> (<span data-type="link" data-href="figure_7_20.html">Figure 7.20</span>) shows that the distribution is skewed to the right. Because there are no extreme outliers, the sample mean of the 50 observations will nonetheless have an approximately Normal sampling distribution. The <em>t</em> procedures could be used for approximate inference. For more exact inference, we will transform the data so that the distribution is more nearly Normal. <span data-type="link" data-href="figure_7_21.html">Figure 7.21</span> is a Normal quantile plot of the natural logarithms of the time measurements. The transformed data are very close to Normal, so <em>t</em> procedures will give quite exact results.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0984"><p>The application of the <em>t</em> procedures to the transformed data is straightforward. Call the original length values from <span data-type="link" data-href="table_7_5.html">Table 7.5</span> the variable <em>X</em>. The transformed data are values of <em>X</em><sub>new</sub> = log <em>X</em>. In most software packages, it is an easy task to transform data in this way and then analyze the new variable.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_26.html" id="ips9e-ch07-box-112"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-112"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0985"><p>EXAMPLE 7.26</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0986"><p><span data-block_type="EXP-T-ri">Software output of audio length data.</span> Analysis of the natural log of the length values in Minitab produces the following output:</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-113"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-113"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="SONGS" data-block_type="rl_dataset" id="ips9e-ch07-p0987"><p><span>SONGS</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp20041024"><p></p></div>
+</div></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0988"><p>N    Mean   StDev   SE Mean      95.0% C.I.</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0989"><p>50  5.6315  0.6840    ?0.0967   (5.4371, 5.8259)</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0990"><p>For comparison, the 95% <em>t</em> confidence interval for the original mean <em>μ</em> is found from the original data as follows:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0991"><p>N   Mean   StDev   SE Mean     95.0% C.I.</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0992"><p>50  354.1    307.9      43.6   (266.6, 441.6)</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_472"><p>472</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0994"><p>The advantage of analyzing transformed data is that use of procedures based on the Normal distributions is better justified and the results are more exact. The disadvantage is that a confidence interval for the mean <em>μ</em> in the original scale (in our example, seconds) cannot be easily recovered from the confidence interval for the mean of the logs. One approach based on the lognormal distribution<span data-type="termref" data-term="fn_ch7_fn42"><sup>42</sup></span> results in an interval of (285.5, 435.5), which is narrower and slightly asymmetric compared with the <em>t</em> interval.</p></div>
+<div data-block_type="TXT-3" id="ips9e-ch07-p0995"><p><span data-block_type="h3-ri">Use of a distribution-free procedure</span> Perhaps the most straightforward way to cope with non-Normal data is to use a <em>distribution-free,</em> or <em>nonparametric,</em> procedure. As the name indicates, these procedures do not require the population distribution to have any specific form, such as Normal. Distribution-free significance tests are quite simple and are available in most statistical software packages.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0996"><p>Distribution-free tests have two drawbacks. First, they are generally less powerful than tests designed for use with a specific distribution, such as the <em>t</em> test. Second, we must often modify the statement of the hypotheses in order to use a distribution-free test. A distribution-free test concerning the center of a distribution, for example, is usually stated in terms of the <em>median</em> rather than the mean. This is sensible when the distribution may be skewed. But the distribution-free test does not ask the same question (Has the mean changed?) that the <em>t</em> test does.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0997"><p>The simplest distribution-free test, and one of the most useful, is the <span data-type="termref" data-term="sign test"><strong>sign test</strong></span><span data-block_type="MN-GL-term">sign test</span>. The test gets its name from the fact that we look only at the signs of the differences, not their actual values. The following example illustrates this test.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_27.html" id="ips9e-ch07-box-114"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-114"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0999"><p>EXAMPLE 7.27</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p01000"><p><span data-block_type="EXP-T-ri">The effect of altering a software parameter.</span> <span data-type="link" data-href="example_7_7.html">Example 7.7</span> (page 419) describes an experiment to compare the measurements obtained from two software algorithms. In that example, we used the matched pairs <em>t</em> test on these data, despite some skewness, which makes the <em>P</em>-value only roughly correct. The sign test is based on the following simple observation: of the 51 parts measured, 29 had a larger measurement with the option off and 22 had a larger measurement with the option on.</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-115"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-115"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="GEPARTS" data-block_type="rl_dataset" id="ips9e-ch07-p01001"><p><span>GEPARTS</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp20068080"><p></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p01002"><p>To perform a significance test based on these counts, let <em>p</em> be the probability that a randomly chosen part would have a larger measurement with the option turned on. The null hypothesis of “no effect’’ says that these two measurements are just repeat measurements, so the measurement with the option off is equally likely to be larger or smaller than the measurement with the option on. Therefore, we want to test</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p01003"><p><em>H</em><sub>0</sub>: <em>p</em> = 1/2</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p01004"><p><em>H<sub>a</sub></em>: <em>p</em> ≠ 1/2</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-116"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-116"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p01006"><p>binomial distribution, <span data-type="link" data-href="alias:page_312">p. 312</span></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p01007"><p>The 51 parts are independent trials, so the number that had larger measurements with the option off has the binomial distribution <em>B</em>(51, 1/2) if <em>H</em><sub>0</sub> is true. The <em>P</em>-value for the observed count 29 is, therefore, 2<em>P</em>(<em>X</em> ≥ 29), where <em>X</em> has the <em>B</em>(51, 1/2) distribution. You can compute this probability with software or the Normal approximation to the binomial:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p01008"><p><span data-math="math_314"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p01009"><p> = 2<em>P</em> (<em>Z</em> ≥ 0.98)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p01010"><p> = 2(0.1635)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p01011"><p> = 0.3270</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_473"><p>473</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p01013"><p>As in <span data-type="link" data-href="example_7_7.html">Example 7.7</span>, there is not strong evidence that the two measurements are different.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p01014"><p>There are several varieties of sign test, all based on counts and the binomial distribution. The sign test for matched pairs is the most useful. The null hypothesis of “no effect’’ is then always <em>H</em><sub>0</sub>: <em>p</em> = 1/2. The alternative can be one-sided in either direction or two-sided, depending on the type of change we are considering.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-117"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-117"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p01015"><p>SIGN TEST FOR MATCHED PAIRS</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p01016"><p>Ignore pairs with difference 0; the number of trials <em>n</em> is the count of the remaining pairs. The test statistic is the count <em>X</em> of pairs with a positive difference. <em>P</em>-values for <em>X</em> are based on the binomial <em>B</em>(<em>n</em>, 1/2) distribution.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p01017"><p>The matched pairs <em>t</em> test in <span data-type="link" data-href="example_7_7.html">Example 7.7</span> tested the hypothesis that the mean of the distribution of differences is 0. The sign test in <span data-type="link" data-href="example_7_27.html">Example 7.27</span> is, in fact, testing the hypothesis that the <em>median</em> of the differences is 0. If <em>p</em> is the probability that a difference is positive, then <em>p</em> = 1/2 when the median is 0. This is true because the median of the distribution is the point with probability 1/2 lying to its right. As <span data-type="link" data-href="figure_7_22.html">Figure 7.22</span> illustrates, <em>p</em> &gt; 1/2 when the median is greater than 0, again because the probability to the right of the median is always 1/2. The sign test of <em>H</em><sub>0</sub>: <em>p</em> =1/2 against <em>H<sub>a</sub></em>: <em>p</em> &gt; 1/2 is a test of</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p01018"><p><em>H</em><sub>0</sub>: population median = 0</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p01019"><p><em>H<sub>a</sub></em>: population median &gt; 0</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p01020"><p>The sign test in <span data-type="link" data-href="example_7_27.html">Example 7.27</span> makes no use of the actual scores—it just counts how many parts had a larger measurement with the option off. Any parts that did not have different measurements would be ignored altogether. Because the sign test uses so little of the available information, it is much less powerful than the <em>t</em> test when the population is close to Normal. <span data-type="link" data-href="ips9e-ch015.xml">Chapter 15</span> describes other distribution-free tests that are more powerful than the sign test.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-118"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-118"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p01021"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_100.html" id="ips9e-ch07-quest-00100">
+<h3>Question
+			    <span data-type="number">7.100 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p01022"><p><span data-block_type="EXR-QUE-N-ri">7.100</span> <span data-block_type="EXR-QUE-T-ri">Sign test for the oil-free frying comparison.</span> <span data-type="link" data-href="exercise_7_10.html">Exercise 7.10</span> (page 422) gives data on the taste of hash browns made using a hot-oil fryer and an oil-free fryer. Is there evidence that the medians are different? State the hypotheses, carry out the sign test, and report your conclusion.</p></div>
+</div>
+</div></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_7_22.html" data-figure-id="ips9e-ch07-fig-027" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_22.jpg" data-figure-id="ips9e-ch07-fig-027" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.22: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.22</span> <span data-block_type="FG-CAP">Why the sign test tests the median difference: when the median is greater than 0, the probability <em>p</em> of a positive difference is greater than 1/2, and vice versa.</span></span>
+</div>
+</div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch7.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('574f336d757a2e5222000003');
+});
+    //-->
+</script>
+</body>
+</html>
+

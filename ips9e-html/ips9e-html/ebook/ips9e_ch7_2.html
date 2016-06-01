@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch7</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="7">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch07-sec1-001" level="1" data-print_page="408">
+<h2 class="section-title">
+<span data-type="number">7.1</span> <span data-type="title" data-title-for="ips9e-ch07-sec1-001">7.1 Inference for the Mean of a Population
+</span>
+</h2>
+
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_408"><p>408</p></div>
+<div data-type="box" data-block_type="SP" id="ips9e-ch07-box-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-2"></h3>
+<div data-block_type="SP-TXT-ni" id="ips9e-ch07-p012"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bluebullet" id="ips9e-ch07-list-002">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch07-p013"><p><span data-block_type="maker">•</span> Distinguish the standard deviation of the sample mean from the standard error of the sample mean.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch07-p014"><p><span data-block_type="maker">•</span> Describe a level <em>C</em> confidence interval for the population mean in terms of an estimate and its margin of error.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch07-p015"><p><span data-block_type="maker">•</span> Construct a level <em>C</em> confidence interval for <em>μ</em> from a simple random sample (SRS) size <em>n</em> from a large population.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch07-p016"><p><span data-block_type="maker">•</span> Perform a one-sample <em>t</em> significance test and summarize the results.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch07-p017"><p><span data-block_type="maker">•</span> Identify when the matched pairs <em>t</em> procedures should be used instead of two-sample <em>t</em> procedures.</p></div></li>
+<li><div data-block_type="SP-BL-last" id="ips9e-ch07-p018"><p><span data-block_type="maker">•</span> Explain when <em>t</em> procedures can be useful for non-Normal data.</p></div></li>
+</ul>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p019"><p>Both confidence intervals and tests of significance for the mean <span data-math="math_7"></span> of a Normal population are based on the sample mean <span data-math="math_8"></span>, which estimates the unknown <span data-math="math_9"></span>. The sampling distribution of <span data-math="math_10"></span> depends on <span data-math="math_11"></span>. This fact causes no difficulty when <span data-math="math_12"></span> is known. When <span data-math="math_13"></span> is unknown, however, we must estimate <span data-math="math_14"></span> even though we are primarily interested in <span data-math="math_15"></span>.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p020"><p>In this section, we meet the sampling distribution of the standardized sample mean when we use the sample standard deviation <em>s</em> to estimate the population standard deviation <span data-math="math_16"></span>. This sampling distribution is then used to produce both confidence intervals and significance tests about the mean <span data-math="math_17"></span>.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p021"><p><span data-block_type="h2">The <em>t</em> distributions</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p022"><p>Suppose that we have a simple random sample (SRS) of size <em>n</em> from a Normally distributed population with mean <span data-math="math_18"></span> and standard deviation <span data-math="math_19"></span>. The sample mean <span data-math="math_20"></span> is then Normally distributed with mean <span data-math="math_21"></span> and standard deviation <span data-math="math_22"></span>. When <span data-math="math_23"></span> is not known, we estimate it with the sample standard deviation <em>s</em>, and then we estimate the standard deviation of <span data-math="math_24"></span> by <span data-math="math_25"></span>. This quantity is called the <em>standard error</em> of the sample mean <span data-math="math_26"></span>, and we denote it by <span data-math="math_27"></span>.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-3"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p024"><p>sampling distribution of <span data-math="math_28"></span>, <span data-type="link" data-href="alias:page_298">p. 298</span></p></div>
+</div></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-4"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-4"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p025"><p>STANDARD ERROR</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p026"><p>When the standard deviation of a statistic is estimated from the data, the result is called the <strong>standard error</strong> of the statistic. The standard error of the sample mean is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p027"><p><span data-math="math_29"></span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p028"><p>The term “standard error” is sometimes used for the actual standard deviation of a statistic. The estimated value is then called the “estimated standard error.” In this book, we will use the term “standard error” only when the standard deviation of a statistic is estimated from the data. The term has this meaning in the output of many statistical computer packages and in research reports that apply statistical methods.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_409"><p>409</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p030"><p>In the previous chapter, the standardized sample mean, or one-sample <em>z</em> statistic,</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p031"><p><span data-math="math_30"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p032"><p>is the basis for inference about <span data-math="math_31"></span> when <span data-math="math_32"></span> is known. This statistic has the standard Normal distribution <em>N</em>(0, 1). However, when we substitute the standard error <span data-math="math_33"></span> for the standard deviation of <span data-math="math_34"></span>, the statistic does <em>not</em> have a Normal distribution. It has a distribution that is new to us, called a t <em>distribution.</em></p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-5"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-5"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p033"><p>THE <em>t</em> DISTRIBUTIONS</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p034"><p>Suppose that an SRS of size <em>n</em> is drawn from an <em>N</em>(<em>μ</em>, <em>σ</em>) population. Then the <strong>one-sample <em>t</em> statistic</strong></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p035"><p><span data-math="math_35"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p036"><p>has the <strong><em>t</em> distribution</strong> with <span data-math="math_36"></span> <strong>degrees of freedom</strong>.</p></div>
+</div></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-6"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-6"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p038"><p>degrees of freedom, <span data-type="link" data-href="alias:page_40">p. 40</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p039"><p>A particular <em>t</em> distribution is specified by giving the <em>degrees of freedom.</em> We use <span data-math="math_37"></span> to stand for the <em>t</em> distribution with <em>k</em> degrees of freedom. The degrees of freedom for this <em>t</em> statistic come from the sample standard deviation <em>s</em> in the denominator of <em>t</em>. We showed earlier that <em>s</em> has <span data-math="math_38"></span> degrees of freedom. Thus, there is a different <em>t</em> distribution for each sample size. There are also other <em>t</em> statistics with different degrees of freedom, some of which we will meet later in this chapter.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p040"><p>The <em>t</em> distributions were discovered in 1908 by William S. Gosset. Gosset was a statistician employed by the Guinness brewing company, which prohibited its employees from publishing their discoveries that were brewing related. In this case, the company let him publish under the pen name “Student” using an example that did not involve brewing. The <em>t</em> distribution is often called “Student’s <em>t</em>” in his honor.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p041"><p>The density curves of the <span data-math="math_39"></span> distributions are similar in shape to the standard Normal curve. That is, they are symmetric about 0 and are bell-shaped. <span data-type="link" data-href="figure_7_1.html">Figure 7.1</span> compares the density curves of the standard Normal distribution and the <em>t</em> distributions with 5 and 10 degrees of freedom. The similarity in shape is apparent, as is the fact that the <em>t</em> distributions have more probability in the tails and less in the center.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p042"><p>In reference to the standardized sample mean, this greater spread is due to the extra variability caused by substituting the random variable <em>s</em> for the fixed parameter <span data-math="math_40"></span>. In <span data-type="link" data-href="figure_7_1.html">Figure 7.1</span>, we see that as the degrees of freedom <em>k</em> increase, the <span data-math="math_41"></span> density gets closer to the <em>N</em>(0, 1) curve. This reflects the fact that <em>s</em> will be closer to <span data-math="math_42"></span> (more precise) as the sample size increases.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_410"><p>410</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_7_1.html" data-figure-id="ips9e-ch07-fig-002" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_01.jpg" data-figure-id="ips9e-ch07-fig-002" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.1: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.1</span> <span data-block_type="FG-CAP">Density curves for the standard Normal, <em>t</em>(10), and <em>t</em>(5) distributions. All are symmetric with center 0. The <em>t</em> distributions have more probability in the tails than the standard Normal distribution.</span></span>
+</div>
+</div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-7"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-7"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p044"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_1.html" id="ips9e-ch07-quest-001">
+<h3>Question
+			    <span data-type="number">7.1 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p045"><p><span data-block_type="EXR-QUE-N-ri">7.1</span> <span data-block_type="EXR-QUE-T-ri">One-bedroom apartment rates.</span> You randomly choose 16 unfurnished one-bedroom apartments from a large number of advertisements in your local newspaper. You calculate that their mean monthly rent is $766 and their standard deviation is $180.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch07-list-003">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch07-p046"><p><span data-block_type="maker">(a)</span> What is the standard error of the mean?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch07-p047"><p><span data-block_type="maker">(b)</span> What are the degrees of freedom for a one-sample <em>t</em> statistic?</p></div></li>
+</ol>
+</div>
+<div data-type="question" data-block_type="exercise_7_2.html" id="ips9e-ch07-quest-002">
+<h3>Question
+			    <span data-type="number">7.2 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p048"><p><span data-block_type="EXR-QUE-N-ri">7.2</span> <span data-block_type="EXR-QUE-T-ri">Changing the sample size.</span> Refer to the previous exercise. Suppose that instead of an SRS of 16, you sampled 25 advertisements.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch07-list-004">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch07-p049"><p><span data-block_type="maker">(a)</span> Would you expect the standard error of the mean to be larger or smaller in this case? Explain your answer.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch07-p050"><p><span data-block_type="maker">(b)</span> State why you can’t be certain that the standard error for this new SRS will be larger or smaller.</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p051"><p>With the <em>t</em> distributions to help us, we can now analyze a sample from a Normal population with unknown <span data-math="math_43"></span> or a large sample from a non-Normal population with unknown <span data-math="math_44"></span>. <span data-type="link" data-href="table_d.html">Table D</span> in the back of the book gives critical values <em>t</em>* for the <em>t</em> distributions. For convenience, we have labeled the table entries both by the value of <em>p</em> needed for significance tests and by the confidence level <em>C</em> (in percent) required for confidence intervals. The standard Normal critical values are in the bottom row of entries and labeled <em>z</em>*. As in the case of the Normal table (<span data-type="link" data-href="table_a.html">Table A</span>), computer software often makes <span data-type="link" data-href="table_d.html">Table D</span> unnecessary.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p052"><p><span data-block_type="h2">The one-sample <em>t</em> confidence interval</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p053"><p>The one-sample <em>t</em> confidence interval is similar in both reasoning and computational detail to the <em>z</em> confidence interval of <span data-type="link" data-href="ips9e-ch06.xml">Chapter 6</span>. There, the margin of error for the population mean was <span data-math="math_45"></span>. When <em>σ</em> is unknown, we replace it with its estimate <em>s</em> and switch from <em>z</em>* to <em>t</em>*. This means that the margin of error for the population mean when we use the data to estimate <em>σ</em> is <span data-math="math_46"></span>.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-8"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-8"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p055"><p><em>z</em> confidence interval, <span data-type="link" data-href="alias:page_349">p. 349</span></p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_411"><p>411</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-9"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-9"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p057"><p>THE ONE-SAMPLE <em>t</em> CONFIDENCE INTERVAL</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p058"><p>Suppose that an SRS of size <em>n</em> is drawn from a population having unknown mean <em>μ</em>. A level <em>C</em> <strong>confidence interval</strong> for <em>μ</em> is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p059"><p><span data-math="math_47"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p060"><p>where <em>t</em>* is the value for the <em>t</em>(<em>n</em> − 1) density curve with area <em>C</em> between −<em>t</em>* and <em>t</em>*. The quantity</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p061"><p><span data-math="math_48"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p062"><p>is the <strong>margin of error</strong>. The confidence level is exactly <em>C</em> when the population distribution is Normal and is approximately correct for large <em>n</em> in other cases.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_1.html" id="ips9e-ch07-box-10"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-10"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p063"><p>EXAMPLE 7.1</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p064"><p><span data-block_type="EXP-T-ri">Watching traditional television.</span> The Nielsen Company is a global information and media company and one of the leading suppliers of media information. In their annual Total Audience Report, the Nielsen Company states that adults age 18 to 24 years old average 18.5 hours per week watching traditional television.<span data-type="termref" data-term="fn_ch7_fn1"><sup>1</sup></span> Does this average seem reasonable for college students? They tend to watch a lot of television, but given their unusual schedules, they may be more likely to binge-watch or stream episodes after they air. To investigate, let’s construct a 95% confidence interval for the average time (hours per week) spent watching traditional television among full-time U.S. college students. We draw the following SRS of size 8 from this population:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p065"><p><span data-math="math_49"></span></p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-11"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-11"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="TVTIME" data-block_type="rl_dataset" id="ips9e-ch07-p066"><p><span>TVTIME</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp10441440"><p></p></div>
+</div></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p067"><p>The sample mean is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p068"><p><span data-math="math_50"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p069"><p>and the standard deviation is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p070"><p><span data-math="math_51"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p071"><p>with degrees of freedom <em>n</em> − 1 = 7. The standard error is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p072"><p><span data-math="math_52"></span></p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p073"><p>From <span data-type="link" data-href="table_d.html">Table D</span>, we find <em>t</em>* = 2.365. The 95% confidence interval is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p074"><p><span data-math="math_53"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p075"><p> = 14.5 ± (2.365)(5.252)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p076"><p> = 14.5 ± 12.421</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p077"><p> = (2.08, 26.92)</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-1" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="40"><table><tbody>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" colspan="4">df = 7</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder">
+<em>t</em>*</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">1.895</td>
+<td data-block_type="EXP-TB1-TXT" align="char">2.365</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">2.517</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder"><em>C</em></td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">0.90</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.95</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">0.96</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p078"><p>We are 95% confident that among U.S. college students the average time spent watching traditional television is between 2.1 and 26.9 hours per week.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_412"><p>412</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_7_2.html" data-figure-id="ips9e-ch07-fig-003" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_02.jpg" data-figure-id="ips9e-ch07-fig-003" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.2: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.2</span> <span data-block_type="FG-CAP">Normal quantile plot of data, <span data-type="link" data-href="example_7_1.html">Example 7.1</span>.</span></span>
+</div>
+</div>
+<div data-block_type="TXT" id="ips9e-ch07-p080"><p>In this example, we have given the actual interval <span data-math="math_54"></span> hours per week as our answer. Sometimes, we prefer to report the mean and margin of error: the mean time is 14.5 hours per week with a margin of error of 12.4 hours per week. This is a large margin of error in relation to the estimated mean. In <span data-type="link" data-href="ips9e-ch07-sec7-3">Section 7.3</span>, we will return to this example and discuss determining an appropriate sample size for a desired margin of error such as ±5 hours a week.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p081"><p>Valid interpretation of the <em>t</em> confidence interval in <span data-type="link" data-href="example_7_1.html">Example 7.1</span> rests on assumptions that appear reasonable here. First, we assume that our random sample is an SRS from the U.S. population of college students. Second, we assume that the distribution of watching times is Normal. <span data-type="link" data-href="figure_7_2.html">Figure 7.2</span> shows the Normal quantile plot. With only eight observations, this assumption cannot be effectively checked. In fact, because a watching time cannot be negative, we might expect this distribution to be skewed to the right. With these data, however, there are no extreme outliers to suggest a severe departure from Normality.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-12"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-12"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p082"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_3.html" id="ips9e-ch07-quest-003">
+<h3>Question
+			    <span data-type="number">7.3 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p083"><p><span data-block_type="EXR-QUE-N-ri">7.3</span> <span data-block_type="EXR-QUE-T-ri">More on apartment rents.</span> Recall <span data-type="link" data-href="exercise_7_1.html">Exercise 7.1</span> (page 410). Construct a 95% confidence interval for the mean monthly rent of all advertised one-bedroom apartments.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_7_4.html" id="ips9e-ch07-quest-004">
+<h3>Question
+			    <span data-type="number">7.4 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p084"><p><span data-block_type="EXR-QUE-N-ri">7.4</span> <span data-block_type="EXR-QUE-T-ri">Finding critical <em>t*</em>-values.</span> What critical value <em>t</em>* from <span data-type="link" data-href="table_d.html">Table D</span> should be used to construct</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch07-list-005">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch07-p085"><p><span data-block_type="maker">(a)</span> a 95% confidence interval when <span data-math="math_55"></span>?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch07-p086"><p><span data-block_type="maker">(b)</span> a 99% confidence interval when <span data-math="math_56"></span>?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch07-p087"><p><span data-block_type="maker">(c)</span> a 90% confidence interval when <span data-math="math_57"></span>?</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p088"><p><span data-block_type="h2">The one-sample <em>t</em> test</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p089"><p>Significance tests using the standard error are also very similar to the <em>z</em> test that we studied in the last chapter. We still carry out the four steps common to all significance tests, but because we use <em>s</em> in place of <span data-math="math_58"></span>, we use a <em>t</em> distribution to find the <em>P</em>-value.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-13"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-13"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p091"><p>four steps of significance test, <span data-type="link" data-href="alias:page_370">p. 370</span></p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_413"><p>413</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-14"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-14"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p093"><p>THE ONE-SAMPLE <em>t</em> TEST</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p094"><p>Suppose that an SRS of size <em>n</em> is drawn from a population having unknown mean <em>μ</em>. To test the hypothesis <span data-math="math_59"></span> based on an SRS of size <em>n</em>, compute the <strong>one-sample <em>t</em> statistic</strong></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p095"><p><span data-math="math_60"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p096"><p>In terms of a random variable <em>T</em> having the <em>t</em>(<em>n</em> − 1) distribution, the <em>P</em>-value for a test of <em>H</em><sub>0</sub> against</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p097"><p><em>H<sub>a</sub></em>: <em>μ</em> &gt; <em>μ</em><sub>0</sub>  is  <em>P</em>(<em>T</em> ≥ <em>t</em>)	<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_UNfig_07_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p098"><p><em>H<sub>a</sub></em>: <em>μ</em> &lt; <em>μ</em><sub>0</sub>  is  <em>P</em>(<em>T</em> ≤ <em>t</em>)	<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_UNfig_07_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p099"><p><em>H<sub>a</sub></em>: <em>μ</em> ≠ <em>μ</em><sub>0</sub>  is  2<em>P</em>(<em>T</em> ≥ |<em>t|</em>)	<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_UNfig_07_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0100"><p>These <em>P</em>-values are exact if the population distribution is Normal and are approximately correct for large <em>n</em> in other cases.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_2.html" id="ips9e-ch07-box-15"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-15"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0101"><p>EXAMPLE 7.2</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0102"><p><span data-block_type="EXP-T-ri">Significance test for watching traditional television.</span> We want to test whether the average time that U.S. college students spend watching traditional television differs from the reported overall U.S. average of 18- to 24-year-olds at the 0.05 significance level. Specifically, we want to test</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0103"><p><em>H</em><sub>0</sub>: <em>μ</em> = 18.5</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0104"><p><em>H<sub>a</sub></em>: <em>μ</em> ≠ 18.5</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0105"><p>Recall that <span data-math="math_61"></span>, <span data-math="math_62"></span>, and <span data-math="math_63"></span>. The <span data-math="math_64"></span> test statistic is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0106"><p><span data-math="math_65"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0107"><p>=−0.762</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-16"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-16"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="TVTIME" data-block_type="rl_dataset" id="ips9e-ch07-p0108"><p><span>TVTIME</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp10557536"><p></p></div>
+</div></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0109"><p>This means that the sample mean <span data-math="math_66"></span> is slightly more than 0.75 standard deviations below the null hypothesized value <span data-math="math_67"></span>. Because the degrees of freedom are <span data-math="math_68"></span>, this <span data-math="math_69"></span> statistic has the <span data-math="math_70"></span> distribution. <span data-type="link" data-href="figure_7_3.html">Figure 7.3</span> shows that the <em>P</em>-value is <span data-math="math_71"></span>, where <em>T</em> has the <span data-math="math_72"></span> distribution. From <span data-type="link" data-href="table_d.html">Table D</span>, we see that <span data-math="math_73"></span> and <span data-math="math_74"></span>.</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-2" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="40"><table><tbody>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" colspan="3">df = 7</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder"><em>p</em></td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">0.25</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">0.20</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder">
+<em>t</em>*</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">0.711</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">0.896</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0110"><p>Therefore, we conclude that the <em>P</em>-value is between <span data-math="math_75"></span> and <span data-math="math_76"></span>. Software gives the exact value as <span data-math="math_77"></span>. These data are compatible with a mean of 18.5 hours per week. Under <span data-math="math_78"></span>, a difference this large or larger would occur about half the time simply due to chance. There is not enough evidence to reject the null hypothesis at the 0.05 level.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_414"><p>414</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_7_3.html" data-figure-id="ips9e-ch07-fig-004" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_03.jpg" data-figure-id="ips9e-ch07-fig-004" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.3: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.3</span> <span data-block_type="FG-CAP">Sketch of the <em>P</em>-value calculation, <span data-type="link" data-href="example_7_2.html">Example 7.2</span>.</span></span>
+</div>
+</div>
+<div data-block_type="TXT" id="ips9e-ch07-p0112"><p>In this example, we tested the null hypothesis <span data-math="math_79"></span> hours per week against the two-sided alternative <span data-math="math_80"></span> hours per week because we had no prior suspicion that the average among college students would be larger or smaller. If we had suspected that the average would be smaller (for example, expected more streaming of shows), we would have used a one-sided test.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_3.html" id="ips9e-ch07-box-17"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-17"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0113"><p>EXAMPLE 7.3</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0114"><p><span data-block_type="EXP-T-ri">One-sided test for watching traditional television.</span> For the problem described in the previous example, we want to test whether the U.S. college student average is smaller than the overall U.S. population average. Here we test</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0115"><p><em>H</em><sub>0</sub>: <em>μ</em> = 18.5</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0116"><p>versus</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0117"><p><em>H<sub>a</sub></em>: <em>μ</em> &lt; 18.5</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-18"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-18"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="TVTIME" data-block_type="rl_dataset" id="ips9e-ch07-p0118"><p><span>TVTIME</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp10606144"><p></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0119"><p>The <em>t</em> test statistic does not change: <span data-math="math_81"></span>. As <span data-type="link" data-href="figure_7_4.html">Figure 7.4</span> illustrates, however, the <em>P</em>-value is now <span data-math="math_82"></span>, half of the value in the previous example. From <span data-type="link" data-href="table_d.html">Table D</span>, we can determine that <span data-math="math_83"></span>; software gives the exact value as <span data-math="math_84"></span>. Again, there is not enough evidence to reject the null hypothesis in favor of the alternative at the 0.05 significance level.</p></div>
+</div></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_7_4.html" data-figure-id="ips9e-ch07-fig-005" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_04.jpg" data-figure-id="ips9e-ch07-fig-005" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.4: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.4</span> <span data-block_type="FG-CAP">Sketch of the <em>P</em>-value calculation, <span data-type="link" data-href="example_7_3.html">Example 7.3</span>.</span></span>
+</div>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_415"><p>415</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch07-p0121"><p><img id="" src="asset/ch7/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0122"><p>For the watching-television example, our conclusion did not depend on the choice between a one-sided and a two-sided test. Sometimes, however, this choice <em>will</em> affect the conclusion, so this choice needs to be made prior to analysis. If in doubt, always use a two-sided test. <em>It is wrong to examine the data first and then decide to do a one-sided test in the direction indicated by the data.</em> Often, a significant result for a two-sided test can be used to justify a one-sided test for <em>another</em> sample from the same population.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-19"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-19"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p0123"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_5.html" id="ips9e-ch07-quest-005">
+<h3>Question
+			    <span data-type="number">7.5 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p0124"><p><span data-block_type="EXR-QUE-N-ri">7.5</span> <span data-block_type="EXR-QUE-T-ri">Significance test using the <em>t</em> distribution.</span> A test of a null hypothesis versus a two-sided alternative gives <span data-math="math_85"></span>.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch07-list-006">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch07-p0125"><p><span data-block_type="maker">(a)</span> The sample size is 23. Is the test result significant at the 5% level? Explain how you obtained your answer.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch07-p0126"><p><span data-block_type="maker">(b)</span> The sample size is 9. Is the test result significant at the 5% level? Explain how you obtained your answer.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch07-p0127"><p><span data-block_type="maker">(c)</span> Sketch the two <span data-math="math_86"></span> distributions to illustrate your answers.</p></div></li>
+</ol>
+</div>
+<div data-type="question" data-block_type="exercise_7_6.html" id="ips9e-ch07-quest-006">
+<h3>Question
+			    <span data-type="number">7.6 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0128"><p><span data-block_type="EXR-QUE-N-ri">7.6</span> <span data-block_type="EXR-QUE-T-ri">Significance test for apartment rents.</span> Refer to <span data-type="link" data-href="exercise_7_1.html">Exercise 7.1</span> (page 410). Does this SRS give good reason to believe that the mean rent of all advertised one-bedroom apartments is greater than $700? State the hypotheses, find the <em>t</em> statistic and its <em>P</em>-value, and state your conclusion.</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0129"><p>For small data sets, such as the one in <span data-type="link" data-href="example_7_1.html">Example 7.1</span> (page 411), it is easy to perform the computations for confidence intervals and significance tests with an ordinary calculator. For larger data sets, however, we prefer to use software or a statistical calculator.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_4.html" id="ips9e-ch07-box-20"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-20"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0130"><p>EXAMPLE 7.4</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0131"><p><span data-block_type="EXP-T-ri">Stock portfolio diversification?</span> An investor with a stock portfolio worth several hundred thousand dollars sued his broker and brokerage firm because lack of diversification in his portfolio led to poor performance. <span data-type="link" data-href="table_7_1.html">Table 7.1</span> gives the rates of return for the 39 months that the account was managed by the broker.<span data-type="termref" data-term="fn_ch7_fn2"><sup>2</sup></span></p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-21"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-21"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="STOCK" data-block_type="rl_dataset" id="ips9e-ch07-p0132"><p><span>STOCK</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp10654160"><p></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0133"><p><span data-type="link" data-href="figure_7_5.html">Figure 7.5</span> gives a histogram for these data, and <span data-type="link" data-href="figure_7_6.html">Figure 7.6</span> gives the Normal quantile plot. There are no outliers and the distribution shows no strong skewness. We are reasonably confident that the distribution of <span data-math="math_87"></span> is approximately Normal, and we proceed with our inference based on Normal theory.</p></div>
+<div data-type="table" data-filename="table_7_1.html" data-block_type="TABLE" id="ips9e-ch07-tab-1" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="100">
+<div data-type="table_text">
+<span data-type="number">Table : </span><span data-type="table_caption"><span data-block_type="TBN-N">TABLE 7.1</span> <span data-block_type="TBN-T">Monthly Rates of Return on a Portfolio (%)</span></span>
+</div>
+<table><tbody>
+<tr>
+<td data-block_type="TBN-TXT" align="char">−8.36</td>
+<td data-block_type="TBN-TXT" align="char">1.63</td>
+<td data-block_type="TBN-TXT" align="char">−2.27</td>
+<td data-block_type="TBN-TXT" align="char">−2.93</td>
+<td data-block_type="TBN-TXT" align="char">−2.70</td>
+<td data-block_type="TBN-TXT" align="char">−2.93</td>
+<td data-block_type="TBN-TXT" align="char">−9.14</td>
+<td data-block_type="TBN-TXT" align="char">−2.64</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="char">6.82</td>
+<td data-block_type="TBN-TXT" align="char">−2.35</td>
+<td data-block_type="TBN-TXT" align="char">−3.58</td>
+<td data-block_type="TBN-TXT" align="char">6.13</td>
+<td data-block_type="TBN-TXT" align="char">7.00</td>
+<td data-block_type="TBN-TXT" align="char">−15.25</td>
+<td data-block_type="TBN-TXT" align="char">−8.66</td>
+<td data-block_type="TBN-TXT" align="char">−1.03</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="char">−9.16</td>
+<td data-block_type="TBN-TXT" align="char">−1.25</td>
+<td data-block_type="TBN-TXT" align="char">−1.22</td>
+<td data-block_type="TBN-TXT" align="char">−10.27</td>
+<td data-block_type="TBN-TXT" align="char">−5.11</td>
+<td data-block_type="TBN-TXT" align="char">−0.80</td>
+<td data-block_type="TBN-TXT" align="char">−1.44</td>
+<td data-block_type="TBN-TXT" align="char">1.28</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="char">−0.65</td>
+<td data-block_type="TBN-TXT" align="char">4.34</td>
+<td data-block_type="TBN-TXT" align="char">12.22</td>
+<td data-block_type="TBN-TXT" align="char">−7.21</td>
+<td data-block_type="TBN-TXT" align="char">−0.09</td>
+<td data-block_type="TBN-TXT" align="char">7.34</td>
+<td data-block_type="TBN-TXT" align="char">5.04</td>
+<td data-block_type="TBN-TXT" align="char">−7.24</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="char">−2.14</td>
+<td data-block_type="TBN-TXT" align="char">−1.01</td>
+<td data-block_type="TBN-TXT" align="char">−1.41</td>
+<td data-block_type="TBN-TXT" align="char">12.03</td>
+<td data-block_type="TBN-TXT" align="char">−2.56</td>
+<td data-block_type="TBN-TXT" align="char">4.33</td>
+<td data-block_type="TBN-TXT" align="char">2.35</td>
+<td data-block_type="TBN-TXT" align="char"></td>
+</tr>
+</tbody></table>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_416"><p>416</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_7_5.html" data-figure-id="ips9e-ch07-fig-006" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_05.jpg" data-figure-id="ips9e-ch07-fig-006" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.5: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.5</span> <span data-block_type="FG-CAP">Histogram of monthly rates of return for a stock portfolio, <span data-type="link" data-href="example_7_4.html">Example 7.4</span>.</span></span>
+</div>
+</div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_7_6.html" data-figure-id="ips9e-ch07-fig-007" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_06.jpg" data-figure-id="ips9e-ch07-fig-007" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.6: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.6</span> <span data-block_type="FG-CAP">Normal quantile plot, <span data-type="link" data-href="example_7_4.html">Example 7.4</span>.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0135"><p>The arbitration panel compared these returns with the average of the Standard &amp; Poor’s 500 stock index for the same period. Consider the 39 monthly returns as a random sample from the population of monthly returns the brokerage firm would generate if it managed the account forever. Are these returns compatible with a population mean of <span data-math="math_88"></span>%, the S&amp;P 500 average? Our hypotheses are</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0136"><p><em>H</em><sub>0</sub>: <em>μ</em> = 0.95</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0137"><p><em>H<sub>a</sub></em>: <em>μ</em> ≠ 0.95</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0138"><p>Minitab and SPSS outputs appear in <span data-type="link" data-href="figure_7_7.html">Figure 7.7</span>. Output from other software will be similar.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0139"><p>Here is one way to report the conclusion: the mean monthly return on investment for this client’s account was <span data-math="math_89"></span>%. This is significantly worse than the performance of the S&amp;P 500 stock index for the same period (<span data-math="math_90"></span>, df = 38, <span data-math="math_91"></span>).</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_417"><p>417</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_7_7.html" data-figure-id="ips9e-ch07-fig-008" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_07.jpg" data-figure-id="ips9e-ch07-fig-008" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.7: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.7</span> <span data-block_type="FG-CAP">Minitab and SPSS output, <span data-type="link" data-href="example_7_4.html">Example 7.4</span>.</span></span>
+</div>
+</div>
+<div data-block_type="TXT" id="ips9e-ch07-p0141"><p>The hypothesis test in <span data-type="link" data-href="example_7_4.html">Example 7.4</span> leads us to conclude that the mean return on the client’s account differs from that of the S&amp;P 500 stock index. Now let’s assess the return on the client’s account with a confidence interval.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_5.html" id="ips9e-ch07-box-22"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-22"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0142"><p>EXAMPLE 7.5</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0143"><p><span data-block_type="EXP-T-ri">Estimating the mean monthly return.</span> The mean monthly return on the client’s portfolio was <span data-math="math_92"></span>%, and the standard deviation was <span data-math="math_93"></span>%. <span data-type="link" data-href="figure_7_7.html">Figure 7.7</span> gives Minitab output, and <span data-type="link" data-href="figure_7_8.html">Figure 7.8</span> gives JMP and Excel outputs for a 95% confidence interval for the population mean <span data-math="math_94"></span>. Note that Excel gives the margin of error next to the label “Confidence Level(95.0%)” rather than the actual confidence interval. We see that the 95% confidence interval is (−3.04, 0.84), or (from Excel) −1.0997 ± 1.9420.</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_7_8.html" data-figure-id="ips9e-ch07-fig-009" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_08.jpg" data-figure-id="ips9e-ch07-fig-009" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.8: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.8</span> <span data-block_type="FG-CAP">Excel and JMP output, <span data-type="link" data-href="example_7_5.html">Example 7.5</span>.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0144"><p>Because the S&amp;P 500 return, 0.95%, falls outside this interval, we know that <span data-math="math_95"></span> differs significantly from 0.95% at the <span data-math="math_96"></span> level. <span data-type="link" data-href="example_7_4.html">Example 7.4</span> gave the actual <em>P</em>-value as <span data-math="math_97"></span>.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_418"><p>418</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0146"><p>The confidence interval suggests that the broker’s management of this account had a long-term mean somewhere between a loss of 3.04% and a gain of 0.84% per month. We are interested, not in the actual mean, but in the difference between the performance of the client’s portfolio and that of the diversified S&amp;P 500 stock index.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_6.html" id="ips9e-ch07-box-23"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-23"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0147"><p>EXAMPLE 7.6</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0148"><p><span data-block_type="EXP-T-ri">Estimating the difference from a standard.</span> Following the analysis accepted by the arbitration panel, we are considering the S&amp;P 500 monthly average return as a constant standard. (It is easy to envision scenarios where we would want to treat this type of quantity as random.) The difference between the mean of the investor’s account and the S&amp;P 500 is <span data-math="math_98"></span>%. In <span data-type="link" data-href="example_7_5.html">Example 7.5</span>, we found that the 95% confidence interval for the investor’s account was (−3.04, 0.84).</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0149"><p>To obtain the corresponding interval for the difference, subtract 0.95 from each of the endpoints. The resulting interval is (−3.04 − 0.95, 0.84 − 0.95), or (−3.99, −0.11). We conclude with 95% confidence that the underperformance was between −3.99 % and −0.11%. This interval is presented in the SPSS output of <span data-type="link" data-href="figure_7_7.html">Figure 7.7</span>. This estimate helps to set the compensation owed the investor.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0150"><p>The assumption that these 39 monthly returns represent an SRS from the population of monthly returns is certainly questionable. If the monthly S&amp;P 500 returns were available, an alternative analysis would be to compare the average difference between each monthly return for this account and for the S&amp;P 500. This method of analysis is discussed next.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-24"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-24"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p0151"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_7.html" id="ips9e-ch07-quest-007">
+<h3>Question
+			    <span data-type="number">7.7 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p0152"><p><span data-block_type="EXR-QUE-N-ri">7.7</span> <span data-block_type="EXR-QUE-T-ri">Using software to obtain a confidence interval.</span> In <span data-type="link" data-href="example_7_1.html">Example 7.1</span> (page 411), we calculated the 95% confidence interval for the U.S. college student average of hours per month spent watching traditional television. Use software to compute this interval and verify that you obtain the same interval.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_7_8.html" id="ips9e-ch07-quest-008">
+<h3>Question
+			    <span data-type="number">7.8 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0153"><p><span data-block_type="EXR-QUE-N-ri">7.8</span> <span data-block_type="EXR-QUE-T-ri">Using software to perform a significance test.</span> In <span data-type="link" data-href="example_7_2.html">Example 7.2</span> (413), we tested whether the average time that U.S. college students spend watching traditional television differs from the reported overall U.S. average of 18- to 24-year-olds at the 0.05 significance level. Use software to perform this test and obtain the exact <em>P</em>-value.</p></div>
+</div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_419"><p>419</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p0155"><p><span data-block_type="h2">Matched pairs <em>t</em> procedures</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0156"><p>The watching-television problem of <span data-type="link" data-href="example_7_1.html">Example 7.1</span> (411) concerns only a single population. We know that comparative studies are usually preferred to single-sample investigations because of the protection they offer against confounding. For that reason, inference about a parameter of a single distribution is less common than comparative inference.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-25"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-25"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0158"><p>confounding, <span data-type="link" data-href="alias:page_150">p. 150</span></p></div>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0159"><p>matched pairs design, <span data-type="link" data-href="alias:page_182">p. 182</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0160"><p>One common comparative design, however, makes use of single-sample procedures. In a matched pairs study, subjects are matched in pairs, and their outcomes are compared within each matched pair. For example, an experiment to compare two smartphone packages might use pairs of subjects who are the same age, sex, and income level. The experimenter could toss a coin to assign the two packages to the two subjects in each pair. The idea is that matched subjects are more similar than unmatched subjects, so comparing outcomes within each pair is more efficient (smaller <em>σ</em>).</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0161"><p>Matched pairs are also common when randomization is not possible. For example, one situation calling for matched pairs is when observations are taken on the same subjects under two different conditions or before and after some intervention. Here is an example.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_7.html" id="ips9e-ch07-box-26"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-26"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0162"><p>EXAMPLE 7.7</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0163"><p><span data-block_type="EXP-T-ri">The effect of altering a software parameter.</span> The MeasureMind<sup>®</sup> 3D MultiSensor metrology software is used by various companies to measure complex machine parts. As part of a technical review of the software, researchers at GE Healthcare discovered that unchecking one software option reduced measurement time by 10%. This time reduction would help the company’s productivity provided the option has no impact on the measurement outcome. To investigate this, the researchers measured 51 parts using the software both with and without this option checked.<span data-type="termref" data-term="fn_ch7_fn3"><sup>3</sup></span> The experimenters tossed a fair coin to decide which measurement (with or without the option) to take first.</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-27"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-27"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="GEPARTS" data-block_type="rl_dataset" id="ips9e-ch07-p0164"><p><span>GEPARTS</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp10810496"><p></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0165"><p><span data-type="link" data-href="table_7_2.html">Table 7.2</span> gives the measurements (in microns) for the first 20 parts. For analysis, we subtract the measurement with the option on from the measurement with the option off. These differences form a single sample and appear in the “Diff” columns for each part.</p></div>
+<div data-type="table" data-filename="table_7_2.html" data-block_type="TABLE" id="ips9e-ch07-tab-2" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="115">
+<div data-type="table_text">
+<span data-type="number">Table : </span><span data-type="table_caption"><span data-block_type="TBN-N">TABLE 7.2</span> <span data-block_type="TBN-T">Parts Measurements Using Optical Software</span></span>
+</div>
+<table><tbody>
+<tr class="bborder">
+<th data-block_type="TBN-COLHD" align="center">Part</th>
+<th data-block_type="TBN-COLHD" align="char">OptionOn</th>
+<th data-block_type="TBN-COLHD" align="char">OptionOff</th>
+<th data-block_type="TBN-COLHD" align="char" class="rborder">Diff</th>
+<th data-block_type="TBN-COLHD" align="center">Part</th>
+<th data-block_type="TBN-COLHD" align="char">OptionOn</th>
+<th data-block_type="TBN-COLHD" align="char">OptionOff</th>
+<th data-block_type="TBN-COLHD" align="char">Diff</th>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">1</td>
+<td data-block_type="TBN-TXT" align="char">118.63</td>
+<td data-block_type="TBN-TXT" align="char">119.01</td>
+<td data-block_type="TBN-TXT" align="char" class="rborder">0.38</td>
+<td data-block_type="TBN-TXT" align="center">11</td>
+<td data-block_type="TBN-TXT" align="char">119.03</td>
+<td data-block_type="TBN-TXT" align="char">118.66</td>
+<td data-block_type="TBN-TXT" align="char">−0.37</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">2</td>
+<td data-block_type="TBN-TXT" align="char">117.34</td>
+<td data-block_type="TBN-TXT" align="char">118.51</td>
+<td data-block_type="TBN-TXT" align="char" class="rborder">1.17</td>
+<td data-block_type="TBN-TXT" align="center">12</td>
+<td data-block_type="TBN-TXT" align="char">118.74</td>
+<td data-block_type="TBN-TXT" align="char">118.88</td>
+<td data-block_type="TBN-TXT" align="char">0.14</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">3</td>
+<td data-block_type="TBN-TXT" align="char">119.30</td>
+<td data-block_type="TBN-TXT" align="char">119.50</td>
+<td data-block_type="TBN-TXT" align="char" class="rborder">0.20</td>
+<td data-block_type="TBN-TXT" align="center">13</td>
+<td data-block_type="TBN-TXT" align="char">117.96</td>
+<td data-block_type="TBN-TXT" align="char">118.23</td>
+<td data-block_type="TBN-TXT" align="char">0.27</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">4</td>
+<td data-block_type="TBN-TXT" align="char">119.46</td>
+<td data-block_type="TBN-TXT" align="char">118.65</td>
+<td data-block_type="TBN-TXT" align="char" class="rborder">−0.81</td>
+<td data-block_type="TBN-TXT" align="center">14</td>
+<td data-block_type="TBN-TXT" align="char">118.40</td>
+<td data-block_type="TBN-TXT" align="char">118.96</td>
+<td data-block_type="TBN-TXT" align="char">0.56</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">5</td>
+<td data-block_type="TBN-TXT" align="char">118.12</td>
+<td data-block_type="TBN-TXT" align="char">118.06</td>
+<td data-block_type="TBN-TXT" align="char" class="rborder">−0.06</td>
+<td data-block_type="TBN-TXT" align="center">15</td>
+<td data-block_type="TBN-TXT" align="char">118.06</td>
+<td data-block_type="TBN-TXT" align="char">118.28</td>
+<td data-block_type="TBN-TXT" align="char">0.22</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">6</td>
+<td data-block_type="TBN-TXT" align="char">117.78</td>
+<td data-block_type="TBN-TXT" align="char">118.04</td>
+<td data-block_type="TBN-TXT" align="char" class="rborder">0.26</td>
+<td data-block_type="TBN-TXT" align="center">16</td>
+<td data-block_type="TBN-TXT" align="char">118.69</td>
+<td data-block_type="TBN-TXT" align="char">117.46</td>
+<td data-block_type="TBN-TXT" align="char">−1.23</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">7</td>
+<td data-block_type="TBN-TXT" align="char">119.29</td>
+<td data-block_type="TBN-TXT" align="char">119.25</td>
+<td data-block_type="TBN-TXT" align="char" class="rborder">−0.04</td>
+<td data-block_type="TBN-TXT" align="center">17</td>
+<td data-block_type="TBN-TXT" align="char">118.20</td>
+<td data-block_type="TBN-TXT" align="char">118.25</td>
+<td data-block_type="TBN-TXT" align="char">0.05</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">8</td>
+<td data-block_type="TBN-TXT" align="char">120.26</td>
+<td data-block_type="TBN-TXT" align="char">118.84</td>
+<td data-block_type="TBN-TXT" align="char" class="rborder">−1.42</td>
+<td data-block_type="TBN-TXT" align="center">18</td>
+<td data-block_type="TBN-TXT" align="char">119.54</td>
+<td data-block_type="TBN-TXT" align="char">120.26</td>
+<td data-block_type="TBN-TXT" align="char">0.72</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">9</td>
+<td data-block_type="TBN-TXT" align="char">118.42</td>
+<td data-block_type="TBN-TXT" align="char">117.78</td>
+<td data-block_type="TBN-TXT" align="char" class="rborder">−0.64</td>
+<td data-block_type="TBN-TXT" align="center">19</td>
+<td data-block_type="TBN-TXT" align="char">118.28</td>
+<td data-block_type="TBN-TXT" align="char">120.26</td>
+<td data-block_type="TBN-TXT" align="char">1.98</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">10</td>
+<td data-block_type="TBN-TXT" align="char">119.49</td>
+<td data-block_type="TBN-TXT" align="char">119.66</td>
+<td data-block_type="TBN-TXT" align="char" class="rborder">0.17</td>
+<td data-block_type="TBN-TXT" align="center">20</td>
+<td data-block_type="TBN-TXT" align="char">119.13</td>
+<td data-block_type="TBN-TXT" align="char">119.15</td>
+<td data-block_type="TBN-TXT" align="char">0.02</td>
+</tr>
+</tbody></table>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_420"><p>420</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0167"><p>To assess whether there is a difference between the measurements with and without this option, we test</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0168"><p><em>H</em><sub>0</sub>: <em>μ</em> = 0</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0169"><p><em>H<sub>a</sub></em>: <em>μ</em> ≠ 0</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0170"><p>Here, <em>μ</em> is the mean difference for the entire population of parts. The null hypothesis says that there is no difference, and <em>H<sub>a</sub></em> says that there is a difference, but does not specify a direction.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0171"><p>The 51 differences have</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0172"><p><span data-math="math_99"></span> = 0.0504  and  <em>s</em> = 0.6943</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0173"><p><span data-type="link" data-href="figure_7_9.html">Figure 7.9</span> shows a histogram of the differences. It is reasonably symmetric with no outliers, so we can comfortably use the one-sample <em>t</em> procedures. <em>Remember to always check assumptions before proceeding with statistical inference.</em></p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_7_9.html" data-figure-id="ips9e-ch07-fig-010" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_09.jpg" data-figure-id="ips9e-ch07-fig-010" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.9: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.9</span> <span data-block_type="FG-CAP">Histogram of differences in times, <span data-type="link" data-href="example_7_7.html">Example 7.7</span>.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0174"><p>The one-sample <em>t</em> statistic is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0175"><p><span data-math="math_100"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0176"><p> = 0.52</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0177"><p>The <em>P</em>-value is found from the <em>t</em>(50) distribution. Remember that the degrees of freedom are 1 less than the sample size.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0178"><p><span data-type="link" data-href="table_d.html">Table D</span> shows that 0.52 lies to the left of the first column entry. This means the <em>P</em>-value is greater than 2(0.25) = 0.50. Software gives the exact value <em>P</em> = 0.6054. There is little evidence to suggest this option has an impact on the measurements. When reporting results, it is usual to omit the details of routine statistical procedures; our test would be reported in the form: “The difference in measurements was not statistically significant (<em>t</em> = 0.52, df = 50, <em>P</em> = 0.61).”</p></div>
+</div></div>
+<div data-block_type="Caution icon" id="ips9e-ch07-p0179"><p><img id="" src="asset/ch7/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0180"><p>This result, however, does not fully address the goal of this study. <em>A lack of statistical significance does not prove the null hypothesis is true.</em> If that were the case, we would simply design poor experiments whenever we wanted to prove the null hypothesis. The more appropriate method of inference in this setting is to consider <span data-type="termref" data-term="equivalence testing"><strong>equivalence testing</strong></span><span data-block_type="MN-GL-term">equivalence testing</span>. With this approach, we try to prove that the mean difference is within some acceptable region around 0. We can actually perform this test using a confidence interval.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_421"><p>421</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_8.html" id="ips9e-ch07-box-28"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-28"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0183"><p>EXAMPLE 7.8</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0184"><p><span data-block_type="EXP-T-ri">Are the two means equivalent?</span> Suppose the GE Healthcare researchers state that a mean difference less than 0.20 micron is not important. To see if the data support a mean difference within 0.00 ± 0.20 micron, we construct a 90% confidence interval for the mean difference.</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-29"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-29"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="GEPARTS" data-block_type="rl_dataset" id="ips9e-ch07-p0185"><p><span>GEPARTS</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp16209568"><p></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0186"><p>The standard error is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0187"><p><span data-math="math_101"></span></p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-3" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="40"><table><tbody>
+<tr class="bborder">
+<th data-block_type="EXP-TB1-COLHD" align="center" colspan="3">df = 50</th>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder">
+<em>t</em>*</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">1.676</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">2.009</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder"><em>C</em></td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">90%</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">95%</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0188"><p>so the margin of error is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0189"><p><span data-math="math_102"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0190"><p>where the critical value <em>t</em>* = 1.676 comes from <span data-type="link" data-href="table_d.html">Table D</span> using 50 degrees of freedom. The confidence interval is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0191"><p><span data-math="math_103"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0192"><p> = (−0.112, 0.2133)</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0193"><p>This interval is <em>not</em> entirely within the 0.00 ± 0.20 micron region that the researchers state is not important. Thus, we <em>cannot</em> conclude at the 5% signficance level that the two means are equivalent. Because the observed mean difference is close to zero and well within the “equivalent region,” the company may want to consider a larger study to improve precision.</p></div>
+</div></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-30"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-30"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p0194"><p>ONE SAMPLE TEST OF EQUIVALENCE</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0195"><p>Suppose that an SRS of size <em>n</em> is drawn from a population having unknown mean <em>μ</em>. To test, at significance level <em>α</em>, if <em>μ</em> is within a range of equivalency to <em>μ</em><sub>0</sub>, specified by the interval <em>μ</em><sub>0</sub> ± <em>δ</em>:</p></div>
+<ol data-block_type="numbered" id="ips9e-ch07-list-007">
+<li><div data-block_type="BX1-NLF" id="ips9e-ch07-p0196"><p><span data-block_type="maker">1.</span> Compute the confidence interval with <em>C</em> = 1 − 2<em>α</em>.</p></div></li>
+<li><div data-block_type="BX1-NL-L" id="ips9e-ch07-p0197"><p><span data-block_type="maker">2.</span> Compare this interval with the range of equivalency.</p></div></li>
+</ol>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0198"><p>If the confidence interval falls entirely within <em>μ</em><sub>0</sub> ± <em>δ</em>, conclude that <em>μ</em> is equivalent to <em>μ</em><sub>0</sub>. If the confidence interval is outside the equivalency range or contains values both within and outside the range, conclude the <em>μ</em> is not equivalent to <em>μ</em><sub>0</sub>.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0199"><p>One can also use statistical software to perform an equivalence test. <span data-type="link" data-href="figure_7_10.html">Figure 7.10</span> shows the Minitab output for <span data-type="link" data-href="example_7_8.html">Example 7.8</span> It is common to visually present the test using the confidence interval and the user-specified upper and lower equivalence limits.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_422"><p>422</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_7_10.html" data-figure-id="ips9e-ch07-fig-011" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_10.jpg" data-figure-id="ips9e-ch07-fig-011" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.10: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.10</span> <span data-block_type="FG-CAP">Minitab output of the equivalence test, <span data-type="link" data-href="example_7_8.html">Example 7.8</span>.</span></span>
+</div>
+</div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-31"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-31"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p0201"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_9.html" id="ips9e-ch07-quest-009">
+<h3>Question
+			    <span data-type="number">7.9 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p0202"><p><span data-block_type="EXR-QUE-N-ri">7.9</span> <span data-block_type="EXR-QUE-T-ri">Female wolf spider mate preferences.</span> As part of a study on factors affecting mate choice, researchers exposed 18 premature female wolf spiders twice a day until maturity to iPod videos of three courting males with average size tufts. Once mature, each female spider was exposed to two videos, one involving a male with large tufts and the other involving a male with small tufts. The number of receptivity displays by the female toward each male was recorded.<span data-type="termref" data-term="fn_ch7_fn4"><sup>4</sup></span> Explain why a paired <em>t</em>-test is appropriate in this setting.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_7_10.html" id="ips9e-ch07-quest-0010">
+<h3>Question
+			    <span data-type="number">7.10 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0203"><p><span data-block_type="EXR-QUE-N-ri">7.10</span> <span data-block_type="EXR-QUE-T-ri">Oil-free deep fryer.</span> Researchers at Purdue University are developing an oil-free deep fryer that will produce fried food faster, healthier, and safer than hot oil.<span data-type="termref" data-term="fn_ch7_fn5"><sup>5</sup></span> As part of this development, they ask food experts to compare foods made with hot oil and their oil-free fryer. Consider the following table comparing the taste of hash browns. Each hash brown was rated on a 0 to 100 scale, with 100 being the highest rating. For each expert, a coin was tossed to see which type of hash brown was tasted first.</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-4" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="60"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="center" colspan="6">Expert</th>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="tborder"><strong>1</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="tborder"><strong>2</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="tborder"><strong>3</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="tborder"><strong>4</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="tborder"><strong>5</strong></td>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">Hot oil:</td>
+<td data-block_type="EXP-TB1-TXT" align="center">78</td>
+<td data-block_type="EXP-TB1-TXT" align="center">84</td>
+<td data-block_type="EXP-TB1-TXT" align="center">62</td>
+<td data-block_type="EXP-TB1-TXT" align="center">73</td>
+<td data-block_type="EXP-TB1-TXT" align="center">63</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center">Oil free:</td>
+<td data-block_type="EXP-TB1-TXT" align="center">75</td>
+<td data-block_type="EXP-TB1-TXT" align="center">85</td>
+<td data-block_type="EXP-TB1-TXT" align="center">67</td>
+<td data-block_type="EXP-TB1-TXT" align="center">75</td>
+<td data-block_type="EXP-TB1-TXT" align="center">66</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0204"><p>Is there a difference in taste? State the appropriate hypotheses, and carry out a matched pairs <em>t</em> test using <em>α</em> = 0.05.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_7_11.html" id="ips9e-ch07-quest-0011">
+<h3>Question
+			    <span data-type="number">7.11 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0205"><p><span data-block_type="EXR-QUE-N-ri">7.11</span> <span data-block_type="EXR-QUE-T-ri">95% confidence interval for the difference in taste.</span> To a restaurant owner, the real question is how much difference there is in taste. Use the data to give a 95% confidence interval for the mean difference in taste scores between oil-free and hot-oil frying.</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p0206"><p><span data-block_type="h2">Robustness of the <em>t</em> procedures</span></p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_423"><p>423</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0208"><p>The matched pairs <em>t</em> procedures and test of equivalence use one-sample <em>t</em> confidence intervals and significance tests for differences. They are, therefore, based on an assumption that the population of differences has a Normal distribution. For the histogram of the 51 differences in <span data-type="link" data-href="example_7_7.html">Example 7.7</span> shown in <span data-type="link" data-href="figure_7_9.html">Figure 7.9</span> (420), the data appear to be slightly skewed. Does this slight non-Normality suggest that we should not use the <em>t</em> procedures for these data?</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0209"><p>All inference procedures are based on some conditions, such as Normality. Procedures that are not strongly affected by violations of a condition are called <em>robust.</em> Robust procedures are very useful in statistical practice because they can be used over a wide range of conditions with good performance.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-32"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-32"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p0210"><p>ROBUST PROCEDURES</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0211"><p>A statistical inference procedure is called <strong>robust</strong> if the required probability calculations are insensitive to violations of the assumptions made.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0212"><p>The assumption that the population is Normal rules out outliers, so the presence of outliers shows that this assumption is not valid. The <em>t</em> procedures are not robust against outliers because <span data-math="math_104"></span> and <em>s</em> are not resistant to outliers.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-33"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-33"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0214"><p>resistant measure, <span data-type="link" data-href="alias:page_30">p. 30</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0215"><p>Fortunately, the <em>t</em> procedures are quite robust against non-Normality of the population except in the case of outliers or strong skewness. Larger samples improve the accuracy of <em>P</em>-values and critical values from the <em>t</em> distributions when the population is not Normal. This is true for two reasons:</p></div>
+<ol data-block_type="numbered" id="ips9e-ch07-list-008">
+<li><div data-block_type="NL-first" id="ips9e-ch07-p0216"><p><span data-block_type="maker">1.</span> The sampling distribution of the sample mean <span data-math="math_105"></span> from a large sample is close to Normal (that’s the central limit theorem). Normality of the individual observations is of little concern when the sample is large.</p></div></li>
+<li><div data-block_type="NL-last" id="ips9e-ch07-p0217"><p><span data-block_type="maker">2.</span> As the sample size <em>n</em> grows, the sample standard deviation <em>s</em> will be an accurate estimate of <em>σ</em> whether or not the population has a Normal distribution. This fact is closely related to the law of large numbers.</p></div></li>
+</ol>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-34"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-34"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0219"><p>central limit theorem, <span data-type="link" data-href="alias:page_298">p. 298</span></p></div>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0220"><p>law of large numbers, <span data-type="link" data-href="alias:page_250">p. 250</span></p></div>
+</div></div>
+<div data-block_type="Applet icon" id="ips9e-ch07-p0221"><p><img id="" src="asset/ch7/BPSapplet-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0222"><p>To convince yourself of this fact, use the <em>t Statistic</em> applet to study the sampling distribution of the one-sample <em>t</em> statistic. From one of three population distributions, 10,000 SRSs of a user-specified sample size <em>n</em> are generated, and a histogram of the <em>t</em> statistics is constructed. You have the option to compare this estimated sampling distribution with the <em>t</em>(<em>n</em> − 1) distribution. When the population distribution is Normal, the sampling distribution of the <em>t</em> statistic is always <em>t</em> distributed. For the other two population distributions, you should see that as <em>n</em> increases, the histogram of <em>t</em> statistics looks more like the <em>t</em>(<em>n</em> − 1) distribution.</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch07-p0223"><p><img id="" src="asset/ch7/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0224"><p>To assess whether the <em>t</em> procedures can be used in practice, a Normal quantile plot, stemplot, or boxplot is a good tool to check for skewness and outliers. For most purposes, the one-sample <em>t</em> procedures can be safely used when <em>n</em> ≥ 15 unless an outlier or clearly marked skewness is present. <em>Except in the case of small samples, the assumption that the data are an SRS from the population of interest is more crucial than the assumption that the population distribution is Normal.</em> Here are practical guidelines for inference on a single mean:<span data-type="termref" data-term="fn_ch7_fn6"><sup>6</sup></span></p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_424"><p>424</p></div>
+<ul data-block_type="bullet" id="ips9e-ch07-list-009">
+<li><div data-block_type="BL-first" id="ips9e-ch07-p0226"><p><span data-block_type="maker">•</span> <em>Sample size less than 15:</em> Use <em>t</em> procedures if the data are close to Normal. If the data are clearly non-Normal or if outliers are present, do not use <em>t</em>.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch07-p0227"><p><span data-block_type="maker">•</span> <em>Sample size at least 15 and less than 40:</em> The <em>t</em> procedures can be used except in the presence of outliers or strong skewness.</p></div></li>
+<li><div data-block_type="BL-last" id="ips9e-ch07-p0228"><p><span data-block_type="maker">•</span> <em>Large samples:</em> The <em>t</em> procedures can be used even for clearly skewed distributions when the sample is large, roughly <em>n</em> ≥ 40.</p></div></li>
+</ul>
+<div data-block_type="TXT" id="ips9e-ch07-p0229"><p>For the measurement data in <span data-type="link" data-href="example_7_7.html">Example 7.7</span> (page 419), there is only slight skewness and no outliers. With <em>n</em> = 51 observations, we should feel comfortable that the <em>t</em> procedures give approximately correct results.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-35"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-35"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p0230"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_12.html" id="ips9e-ch07-quest-0012">
+<h3>Question
+			    <span data-type="number">7.12 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p0231"><p><span data-block_type="EXR-QUE-N-ri">7.12</span> <span data-block_type="EXR-QUE-T-ri"><em>t</em> procedures for time to start a business?</span> Consider the data from <span data-type="link" data-href="exercise_1_43.html">Exercise 1.43</span> (page 29) but with Suriname removed. Would you be comfortable applying the <em>t</em> procedures in this case? Explain your answer.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_7_13.html" id="ips9e-ch07-quest-0013">
+<h3>Question
+			    <span data-type="number">7.13 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0232"><p><span data-block_type="EXR-QUE-N-ri">7.13</span> <span data-block_type="EXR-QUE-T-ri"><em>t</em> procedures for ticket prices?</span> Consider the data on StubHub! ticket prices presented in <span data-type="link" data-href="figure_1_32.html">Figure 1.32</span> (page 69). Would you be comfortable applying the <em>t</em> procedures in this case? In explaining your answer, recall that these <em>t</em> procedures focus on the mean <em>μ</em>.</p></div>
+</div>
+</div></div>
+<div data-type="box" data-block_type="BX2" id="ips9e-ch07-box-36"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-36"></h3>
+<div data-block_type="BX2-H" id="ips9e-ch07-p0233"><p>BEYOND THE BASICS</p></div>
+<div data-block_type="BX2-T" id="ips9e-ch07-p0234"><p>The Bootstrap</p></div>
+<div data-block_type="BX2-TXT-ni" id="ips9e-ch07-p0235"><p>Confidence intervals are based on sampling distributions. In this section, we have used the fact that the sampling distribution of <span data-math="math_106"></span> is <span data-math="math_107"></span> when the data are an SRS from an <em>N</em>(<em>μ</em>, <em>σ</em>) population. If the data are not Normal, the central limit theorem tells us that this sampling distribution is still a reasonable approximation as long as the distribution of the data is not strongly skewed and there are no outliers. Even a fair amount of skewness can be tolerated when the sample size is large.</p></div>
+<div data-block_type="BX2-TXT" id="ips9e-ch07-p0236"><p>What if the population does not appear to be Normal and we have only a small sample? Then we do not know what the sampling distribution of <span data-math="math_108"></span> looks like. The <span data-type="termref" data-term="bootstrap"><strong>bootstrap</strong></span><span data-block_type="MN-GL-term">bootstrap</span> is a procedure for approximating sampling distributions when theory cannot tell us their shape.<span data-type="termref" data-term="fn_ch7_fn7"><sup>7</sup></span></p></div>
+<div data-block_type="BX2-TXT" id="ips9e-ch07-p0238"><p>The basic idea is to act as if our sample were the population. We take many samples from it. Each of these is called a <span data-type="termref" data-term="resample"><strong>resample</strong></span><span data-block_type="MN-GL-term">resample</span>. We calculate the mean <span data-math="math_109"></span> for each resample. We get different results from different resamples because we sample <em>with replacement.</em> Thus, an observation in the original sample can appear more than once in a resample. We treat the resulting distribution of <span data-math="math_110"></span>s as if it were the sampling distribution and use it to perform inference. If we want a 95% confidence interval, for example, we could use the middle 95% of this resample distribution.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_425"><p>425</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_9.html" id="ips9e-ch07-box-37"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-37"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0241"><p>EXAMPLE 7.9</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0242"><p><span data-block_type="EXP-T-ri">A bootstrap confidence interval.</span> Consider the eight time measurements (in hours per week) spent watching traditional television in <span data-type="link" data-href="example_7_1.html">Example 7.1</span> (page 411):</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0243"><p>3.0 16.5 10.5 40.5 5.5 33.5 0.0 6.5</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-38"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-38"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="TVTIME" data-block_type="rl_dataset" id="ips9e-ch07-p0244"><p><span>TVTIME</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp16399456"><p></p></div>
+</div></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0245"><p>We defended the use of the one-sided <em>t</em> confidence interval for an earlier analysis. Let’s now compare those results with the confidence interval constructed using the bootstrap.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0246"><p>We decide to collect the <span data-math="math_111"></span>’s from 1000 resamples of size <em>n</em> = 8. We use software to do this very quickly. One resample was</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0247"><p>5.5 6.5 5.5 40.5 16.5 33.5 10.5 6.5</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0248"><p>with <span data-math="math_112"></span>. The middle 95% of our 1000 <span data-math="math_113"></span>’s runs from 7.0 to 25.0. We repeat the procedure and get the interval (6.6, 25.1).</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0249"><p>The two bootstrap intervals are relatively close to each other and are more narrow than the one-sample <em>t</em> confidence interval (2.1, 26.9). This suggests that the standard <em>t</em> interval is likely a little wider than it needs to be for this data set.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0250"><p>The bootstrap is practical only when you can use a computer to take 1000 or more resamples quickly. It is an example of how the use of fast and easy computing is changing the way we do statistics. More details about the bootstrap can be found in <span data-type="link" data-href="ips9e-ch016.xml">Chapter 16</span>.</p></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch7.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('574f336d757a2e5222000003');
+});
+    //-->
+</script>
+</body>
+</html>
+
