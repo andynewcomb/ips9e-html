@@ -1,18 +1,18 @@
 <chapter id="ips9e-ch07" number="7" title="Chapter 7: Inference for Means" start-numbering-at="7" numbered="true">
-<section id="ips9e-ch07-sec-001" block_type="chapter" title="Inference for Means" numbered="false" level="1" print_page="407">
+<section id="ips9e-ch07-sec-001" block_type="Chapter" title="Inference for Means" numbered="false" level="1" print_page="407">
+<p id="ips9e-ch07-p01" block_type="CN">7</p>
+<p id="ips9e-ch07-p02" block_type="CT">Inference for Means</p>
 <p id="ips9e_page_407" block_type="page_start" data-margin-content="right">407</p>
 <figure id="ips9e-ch07-unfig-001" block_type="C-H-graphic" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="false"/>
-<image asset-id="ips9e-ch07-img-1" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_CO07.jpg"/>
+<image asset-id="ips9e-ch07-img-1" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_CO07.jpg"/>
 <asset_source><phrase block_type="CO_PHCR">piranka/Getty Images</phrase></asset_source>
 </figure>
-<p id="ips9e-ch07-p02" block_type="CT">Inference for Means</p>
-<p id="ips9e-ch07-p01" block_type="CN">7</p>
 <box id="ips9e-ch07-box-1" numbered="false" block_type="chap_outline" title="CHAPTER OUTLINE">
 <list id="ips9e-ch07-list-001" type="unordered" block_type="simple">
-<li id="ips9e-ch07-li-001"><p id="ips9e-ch07-p03" block_type="CO-TOC-h1"><link href="ips9e_ch7_2.html"><phrase>7.1</phrase> Inference for the Mean of a Population</link></p></li>
-<li id="ips9e-ch07-li-002"><p id="ips9e-ch07-p04" block_type="CO-TOC-h1"><link href="ips9e_ch7_5.html"><phrase>7.2</phrase> Comparing Two Means</link></p></li>
-<li id="ips9e-ch07-li-003"><p id="ips9e-ch07-p05" block_type="CO-TOC-h1"><link href="ips9e_ch7_8.html"><phrase>7.3</phrase> Additional Topics on Inference</link></p></li>
+<li id="ips9e-ch07-li-001"><p id="ips9e-ch07-p03" block_type="CO-TOC-h1"><link href="ips9e-ch07-sec1-01"><phrase>7.1</phrase> Inference for the Mean of a Population</link></p></li>
+<li id="ips9e-ch07-li-002"><p id="ips9e-ch07-p04" block_type="CO-TOC-h1"><link href="ips9e-ch07-sec1-02"><phrase>7.2</phrase> Comparing Two Means</link></p></li>
+<li id="ips9e-ch07-li-003"><p id="ips9e-ch07-p05" block_type="CO-TOC-h1"><link href="ips9e-ch07-sec1-03"><phrase>7.3</phrase> Additional Topics on Inference</link></p></li>
 </list>
 </box>
 <p id="ips9e-ch07-p07" block_type="CO-h1"><phrase block_type="section_title">Introduction</phrase></p>
@@ -67,7 +67,7 @@
 <p id="ips9e_page_410" block_type="page_start" data-margin-content="left">410</p>
 <figure id="ips9e-ch07-fig-002" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="7.1" mmtype="image" mmsrc="" attr="" data-filename="figure_7_1.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-2" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_01.jpg"/>
+<image asset-id="ips9e-ch07-img-2" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_01.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.1</phrase> <phrase block_type="FG-CAP">Density curves for the standard Normal, <em>t</em>(10), and <em>t</em>(5) distributions. All are symmetric with center 0. The <em>t</em> distributions have more probability in the tails than the standard Normal distribution.</phrase></caption>
 </figure>
 <box id="ips9e-ch07-box-7" numbered="false" block_type="EXR">
@@ -142,7 +142,7 @@
 <p id="ips9e_page_412" block_type="page_start" data-margin-content="left">412</p>
 <figure id="ips9e-ch07-fig-003" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="7.2" mmtype="image" mmsrc="" attr="" data-filename="figure_7_2.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-3" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_02.jpg"/>
+<image asset-id="ips9e-ch07-img-3" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_02.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.2</phrase> <phrase block_type="FG-CAP">Normal quantile plot of data, <link href="example_7_1.html">Example 7.1</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p080" block_type="TXT">In this example, we have given the actual interval <phrase data-math="math_54"></phrase> hours per week as our answer. Sometimes, we prefer to report the mean and margin of error: the mean time is 14.5 hours per week with a margin of error of 12.4 hours per week. This is a large margin of error in relation to the estimated mean. In <link href="ips9e-ch07-sec7-3">Section 7.3</link>, we will return to this example and discuss determining an appropriate sample size for a desired margin of error such as &#177;5 hours a week.</p>
@@ -172,9 +172,9 @@
 <p id="ips9e-ch07-p094" block_type="BX1-TXT-ni">Suppose that an SRS of size <em>n</em> is drawn from a population having unknown mean <em>&#956;</em>. To test the hypothesis <phrase data-math="math_59"></phrase> based on an SRS of size <em>n</em>, compute the <strong>one-sample <em>t</em> statistic</strong></p>
 <p id="ips9e-ch07-p095" block_type="BX1-EQ"><phrase data-math="math_60"></phrase></p>
 <p id="ips9e-ch07-p096" block_type="BX1-TXT-ni">In terms of a random variable <em>T</em> having the <em>t</em>(<em>n</em> &#8722; 1) distribution, the <em>P</em>-value for a test of <em>H</em><sub>0</sub> against</p>
-<p id="ips9e-ch07-p097" block_type="BX1-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em> &#62; <em>&#x3bc;</em><sub>0</sub> &#8195;is&#8195; <em>P</em>(<em>T</em> &#8805; <em>t</em>)	<image asset-id="ips9e-ch07-img-4" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_UNfig_07_01.jpg"/></p>
-<p id="ips9e-ch07-p098" block_type="BX1-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em> &#60; <em>&#x3bc;</em><sub>0</sub> &#8195;is&#8195; <em>P</em>(<em>T</em> &#8804; <em>t</em>)	<image asset-id="ips9e-ch07-img-5" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_UNfig_07_02.jpg"/></p>
-<p id="ips9e-ch07-p099" block_type="BX1-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em> &#x2260; <em>&#x3bc;</em><sub>0</sub> &#8195;is&#8195; 2<em>P</em>(<em>T</em> &#8805; &#124;<em>t&#124;</em>)	<image asset-id="ips9e-ch07-img-6" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_UNfig_07_03.jpg"/></p>
+<p id="ips9e-ch07-p097" block_type="BX1-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em> &#62; <em>&#x3bc;</em><sub>0</sub> &#8195;is&#8195; <em>P</em>(<em>T</em> &#8805; <em>t</em>)	<image asset-id="ips9e-ch07-img-4" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_UNfig_07_01.jpg"/></p>
+<p id="ips9e-ch07-p098" block_type="BX1-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em> &#60; <em>&#x3bc;</em><sub>0</sub> &#8195;is&#8195; <em>P</em>(<em>T</em> &#8804; <em>t</em>)	<image asset-id="ips9e-ch07-img-5" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_UNfig_07_02.jpg"/></p>
+<p id="ips9e-ch07-p099" block_type="BX1-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em> &#x2260; <em>&#x3bc;</em><sub>0</sub> &#8195;is&#8195; 2<em>P</em>(<em>T</em> &#8805; &#124;<em>t&#124;</em>)	<image asset-id="ips9e-ch07-img-6" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_UNfig_07_03.jpg"/></p>
 <p id="ips9e-ch07-p0100" block_type="BX1-TXT-ni">These <em>P</em>-values are exact if the population distribution is Normal and are approximately correct for large <em>n</em> in other cases.</p>
 </box>
 <box id="ips9e-ch07-box-15" numbered="false" block_type="EXP" data-filename="example_7_2.html">
@@ -209,7 +209,7 @@
 <p id="ips9e_page_414" block_type="page_start" data-margin-content="left">414</p>
 <figure id="ips9e-ch07-fig-004" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="7.3" mmtype="image" mmsrc="" attr="" data-filename="figure_7_3.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-7" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_03.jpg"/>
+<image asset-id="ips9e-ch07-img-7" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_03.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.3</phrase> <phrase block_type="FG-CAP">Sketch of the <em>P</em>-value calculation, <link href="example_7_2.html">Example 7.2</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p0112" block_type="TXT">In this example, we tested the null hypothesis <phrase data-math="math_79"></phrase> hours per week against the two-sided alternative <phrase data-math="math_80"></phrase> hours per week because we had no prior suspicion that the average among college students would be larger or smaller. If we had suspected that the average would be smaller (for example, expected more streaming of shows), we would have used a one-sided test.</p>
@@ -224,11 +224,11 @@
 </box>
 <figure id="ips9e-ch07-fig-005" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="7.4" mmtype="image" mmsrc="" attr="" data-filename="figure_7_4.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-8" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_04.jpg"/>
+<image asset-id="ips9e-ch07-img-8" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_04.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.4</phrase> <phrase block_type="FG-CAP">Sketch of the <em>P</em>-value calculation, <link href="example_7_3.html">Example 7.3</link>.</phrase></caption>
 </figure>
 <p id="ips9e_page_415" block_type="page_start" data-margin-content="right">415</p>
-<p id="ips9e-ch07-p0121" block_type="Caution icon"><image asset-id="ips9e-ch07-img-9" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+<p id="ips9e-ch07-p0121" block_type="Caution icon"><image asset-id="ips9e-ch07-img-9" alt="image" src="asset/ch07/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch07-p0122" block_type="TXT">For the watching-television example, our conclusion did not depend on the choice between a one-sided and a two-sided test. Sometimes, however, this choice <em>will</em> affect the conclusion, so this choice needs to be made prior to analysis. If in doubt, always use a two-sided test. <em>It is wrong to examine the data first and then decide to do a one-sided test in the direction indicated by the data.</em> Often, a significant result for a two-sided test can be used to justify a one-sided test for <em>another</em> sample from the same population.</p>
 <box id="ips9e-ch07-box-19" numbered="false" block_type="EXR">
 <p id="ips9e-ch07-p0123" block_type="EXR-H">USE YOUR KNOWLEDGE</p>
@@ -308,12 +308,12 @@
 <p id="ips9e_page_416" block_type="page_start" data-margin-content="left">416</p>
 <figure id="ips9e-ch07-fig-006" block_type="FIGURE" data-caption-compass="S" numbered="true" number="7.5" mmtype="image" mmsrc="" attr="" data-filename="figure_7_5.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-10" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_05.jpg"/>
+<image asset-id="ips9e-ch07-img-10" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_05.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.5</phrase> <phrase block_type="FG-CAP">Histogram of monthly rates of return for a stock portfolio, <link href="example_7_4.html">Example 7.4</link>.</phrase></caption>
 </figure>
 <figure id="ips9e-ch07-fig-007" block_type="FIGURE" data-caption-compass="S" numbered="true" number="7.6" mmtype="image" mmsrc="" attr="" data-filename="figure_7_6.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-11" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_06.jpg"/>
+<image asset-id="ips9e-ch07-img-11" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_06.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.6</phrase> <phrase block_type="FG-CAP">Normal quantile plot, <link href="example_7_4.html">Example 7.4</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p0135" block_type="EXP-last">The arbitration panel compared these returns with the average of the Standard &#38; Poor&#8217;s 500 stock index for the same period. Consider the 39 monthly returns as a random sample from the population of monthly returns the brokerage firm would generate if it managed the account forever. Are these returns compatible with a population mean of <phrase data-math="math_88"></phrase>&#37;, the S&#38;P 500 average? Our hypotheses are</p>
@@ -325,7 +325,7 @@
 <p id="ips9e_page_417" block_type="page_start" data-margin-content="right">417</p>
 <figure id="ips9e-ch07-fig-008" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="7.7" mmtype="image" mmsrc="" attr="" data-filename="figure_7_7.html">
 <layout align="center" width="large" border="false"/>
-<image asset-id="ips9e-ch07-img-12" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_07.jpg"/>
+<image asset-id="ips9e-ch07-img-12" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_07.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.7</phrase> <phrase block_type="FG-CAP">Minitab and SPSS output, <link href="example_7_4.html">Example 7.4</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p0141" block_type="TXT">The hypothesis test in <link href="example_7_4.html">Example 7.4</link> leads us to conclude that the mean return on the client&#8217;s account differs from that of the S&#38;P 500 stock index. Now let&#8217;s assess the return on the client&#8217;s account with a confidence interval.</p>
@@ -334,7 +334,7 @@
 <p id="ips9e-ch07-p0143" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Estimating the mean monthly return.</phrase> The mean monthly return on the client&#8217;s portfolio was <phrase data-math="math_92"></phrase>&#37;, and the standard deviation was <phrase data-math="math_93"></phrase>&#37;. <link href="figure_7_7.html">Figure 7.7</link> gives Minitab output, and <link href="figure_7_8.html">Figure 7.8</link> gives JMP and Excel outputs for a 95&#37; confidence interval for the population mean <phrase data-math="math_94"></phrase>. Note that Excel gives the margin of error next to the label &#8220;Confidence Level(95.0&#37;)&#8221; rather than the actual confidence interval. We see that the 95&#37; confidence interval is (&#8722;3.04, 0.84), or (from Excel) &#8722;1.0997 &#177; 1.9420.</p>
 <figure id="ips9e-ch07-fig-009" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="7.8" mmtype="image" mmsrc="" attr="" data-filename="figure_7_8.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-13" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_08.jpg"/>
+<image asset-id="ips9e-ch07-img-13" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_08.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.8</phrase> <phrase block_type="FG-CAP">Excel and JMP output, <link href="example_7_5.html">Example 7.5</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p0144" block_type="EXP-last">Because the S&#38;P 500 return, 0.95&#37;, falls outside this interval, we know that <phrase data-math="math_95"></phrase> differs significantly from 0.95&#37; at the <phrase data-math="math_96"></phrase> level. <link href="example_7_4.html">Example 7.4</link> gave the actual <em>P</em>-value as <phrase data-math="math_97"></phrase>.</p>
@@ -495,7 +495,7 @@
 <p id="ips9e-ch07-p0173" block_type="EXP-TXT-ni"><link href="figure_7_9.html">Figure 7.9</link> shows a histogram of the differences. It is reasonably symmetric with no outliers, so we can comfortably use the one-sample <em>t</em> procedures. <em>Remember to always check assumptions before proceeding with statistical inference.</em></p>
 <figure id="ips9e-ch07-fig-010" block_type="FIGURE" data-caption-compass="S" numbered="true" number="7.9" mmtype="image" mmsrc="" attr="" data-filename="figure_7_9.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-14" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_09.jpg"/>
+<image asset-id="ips9e-ch07-img-14" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_09.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.9</phrase> <phrase block_type="FG-CAP">Histogram of differences in times, <link href="example_7_7.html">Example 7.7</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p0174" block_type="EXP-last">The one-sample <em>t</em> statistic is</p>
@@ -504,7 +504,7 @@
 <p id="ips9e-ch07-p0177" block_type="EXP-TXT-ni">The <em>P</em>-value is found from the <em>t</em>(50) distribution. Remember that the degrees of freedom are 1 less than the sample size.</p>
 <p id="ips9e-ch07-p0178" block_type="EXP-last"><link href="table_d.html">Table D</link> shows that 0.52 lies to the left of the first column entry. This means the <em>P</em>-value is greater than 2(0.25) = 0.50. Software gives the exact value <em>P</em> = 0.6054. There is little evidence to suggest this option has an impact on the measurements. When reporting results, it is usual to omit the details of routine statistical procedures; our test would be reported in the form: &#8220;The difference in measurements was not statistically significant (<em>t</em> = 0.52, df = 50, <em>P</em> = 0.61).&#8221;</p>
 </box>
-<p id="ips9e-ch07-p0179" block_type="Caution icon"><image asset-id="ips9e-ch07-img-15" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+<p id="ips9e-ch07-p0179" block_type="Caution icon"><image asset-id="ips9e-ch07-img-15" alt="image" src="asset/ch07/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch07-p0180" block_type="TXT">This result, however, does not fully address the goal of this study. <em>A lack of statistical significance does not prove the null hypothesis is true.</em> If that were the case, we would simply design poor experiments whenever we wanted to prove the null hypothesis. The more appropriate method of inference in this setting is to consider <termref term="equivalence testing"><strong>equivalence testing</strong></termref><phrase block_type="MN-GL-term">equivalence testing</phrase>. With this approach, we try to prove that the mean difference is within some acceptable region around 0. We can actually perform this test using a confidence interval.</p>
 <p id="ips9e_page_421" block_type="page_start" data-margin-content="right">421</p>
 <box id="ips9e-ch07-box-28" numbered="false" block_type="EXP" data-filename="example_7_8.html">
@@ -550,7 +550,7 @@
 <p id="ips9e_page_422" block_type="page_start" data-margin-content="left">422</p>
 <figure id="ips9e-ch07-fig-011" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="7.10" mmtype="image" mmsrc="" attr="" data-filename="figure_7_10.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-16" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_10.jpg"/>
+<image asset-id="ips9e-ch07-img-16" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_10.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.10</phrase> <phrase block_type="FG-CAP">Minitab output of the equivalence test, <link href="example_7_8.html">Example 7.8</link>.</phrase></caption>
 </figure>
 <box id="ips9e-ch07-box-31" numbered="false" block_type="EXR">
@@ -618,9 +618,9 @@
 <p id="ips9e-ch07-p0219" block_type="MN-NOT1">central limit theorem, <link href="alias:page_298">p. 298</link></p>
 <p id="ips9e-ch07-p0220" block_type="MN-NOT1">law of large numbers, <link href="alias:page_250">p. 250</link></p>
 </box>
-<p id="ips9e-ch07-p0221" block_type="Applet icon"><image asset-id="ips9e-ch07-img-17" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/></p>
+<p id="ips9e-ch07-p0221" block_type="Applet icon"><image asset-id="ips9e-ch07-img-17" alt="image" src="asset/ch07/BPSapplet-icon.jpg"/></p>
 <p id="ips9e-ch07-p0222" block_type="TXT">To convince yourself of this fact, use the <em>t Statistic</em> applet to study the sampling distribution of the one-sample <em>t</em> statistic. From one of three population distributions, 10,000 SRSs of a user-specified sample size <em>n</em> are generated, and a histogram of the <em>t</em> statistics is constructed. You have the option to compare this estimated sampling distribution with the <em>t</em>(<em>n</em> &#8722; 1) distribution. When the population distribution is Normal, the sampling distribution of the <em>t</em> statistic is always <em>t</em> distributed. For the other two population distributions, you should see that as <em>n</em> increases, the histogram of <em>t</em> statistics looks more like the <em>t</em>(<em>n</em> &#8722; 1) distribution.</p>
-<p id="ips9e-ch07-p0223" block_type="Caution icon"><image asset-id="ips9e-ch07-img-18" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+<p id="ips9e-ch07-p0223" block_type="Caution icon"><image asset-id="ips9e-ch07-img-18" alt="image" src="asset/ch07/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch07-p0224" block_type="TXT">To assess whether the <em>t</em> procedures can be used in practice, a Normal quantile plot, stemplot, or boxplot is a good tool to check for skewness and outliers. For most purposes, the one-sample <em>t</em> procedures can be safely used when <em>n</em> &#8805; 15 unless an outlier or clearly marked skewness is present. <em>Except in the case of small samples, the assumption that the data are an SRS from the population of interest is more crucial than the assumption that the population distribution is Normal.</em> Here are practical guidelines for inference on a single mean:<termref term="fn_ch7_fn6"><sup>6</sup></termref></p>
 <p id="ips9e_page_424" block_type="page_start" data-margin-content="left">424</p>
 <list id="ips9e-ch07-list-009" type="unordered" block_type="bullet">
@@ -1062,7 +1062,7 @@
 <p id="ips9e-ch07-p0371" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.37 Are the parents feeling extreme stress?</phrase> Refer to the previous exercise. The researchers considered a score greater than 45 to represent extreme stress. Is there evidence that the average stress level for the parents in this study is above this level? Perform a test of significance using <phrase data-math="math_151"></phrase> and summarize your results.</p>
 </question>
 <question id="ips9e-ch07-quest-0038" block_type="exercise_7_38.html">
-<p id="ips9e-ch07-p0372" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-19" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.38 Food intake and weight gain.</phrase> If we increase our food intake, we generally gain weight. Nutrition scientists can calculate the amount of weight gain that would be associated with a given increase in calories. In one study, 16 nonobese adults, aged 25 to 36 years, were fed 1000 calories per day in excess of the calories needed to maintain a stable body weight. The subjects maintained this diet for eight weeks, so they consumed a total of 56,000 extra calories.<termref term="fn_ch7_fn18"><sup>18</sup></termref> According to theory, 3500 extra calories will translate into a weight gain of 1 pound. Therefore, we expect each of these subjects to gain 56,000/3500 = 16 pounds (lb). Here are the weights before and after the eight-week period, expressed in kilograms (kg):</p>
+<p id="ips9e-ch07-p0372" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-19" alt="image" src="asset/ch07/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.38 Food intake and weight gain.</phrase> If we increase our food intake, we generally gain weight. Nutrition scientists can calculate the amount of weight gain that would be associated with a given increase in calories. In one study, 16 nonobese adults, aged 25 to 36 years, were fed 1000 calories per day in excess of the calories needed to maintain a stable body weight. The subjects maintained this diet for eight weeks, so they consumed a total of 56,000 extra calories.<termref term="fn_ch7_fn18"><sup>18</sup></termref> According to theory, 3500 extra calories will translate into a weight gain of 1 pound. Therefore, we expect each of these subjects to gain 56,000/3500 = 16 pounds (lb). Here are the weights before and after the eight-week period, expressed in kilograms (kg):</p>
 <box id="ips9e-ch07-box-46" block_type="rl_linkbox"><p id="ips9e-ch07-p0373" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="WTGAIN"><phrase>WTGAIN</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch07-untab-11" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
@@ -1379,7 +1379,7 @@
 <table id="ips9e-ch07-untab-15" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
 <tr class="tborder">
-<th align="center" block_type="SR-X-QUE-NL-TB1-COLHD" colspan="9">Subject</th>
+<th align="center" block_type="SR-X-QUE-NL-TB1-COLHD" colspan="8">Subject</th>
 </tr>
 <tr>
 <th align="center" block_type="SR-X-QUE-NL-TB1-COLHD">Operator</th>
@@ -1548,7 +1548,7 @@
 </list>
 </question>
 <question id="ips9e-ch07-quest-0047" block_type="exercise_7_47.html">
-<p id="ips9e-ch07-p0418" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-20" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.47 Assessment of a foreign-language institute.</phrase> The National Endowment for the Humanities sponsors summer institutes to improve the skills of high school teachers of foreign languages. One such institute hosted 20 French teachers for four weeks. At the beginning of the period, the teachers were given the Modern Language Association&#8217;s listening test of understanding of spoken French. After four weeks of immersion in French in and out of class, the listening test was given again. (The actual French spoken in the two tests was different, so that simply taking the first test should not improve the score on the second test.) The maximum possible score on the test is 36.<termref term="fn_ch7_fn21"><sup>21</sup></termref> Here are the data:</p>
+<p id="ips9e-ch07-p0418" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-20" alt="image" src="asset/ch07/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.47 Assessment of a foreign-language institute.</phrase> The National Endowment for the Humanities sponsors summer institutes to improve the skills of high school teachers of foreign languages. One such institute hosted 20 French teachers for four weeks. At the beginning of the period, the teachers were given the Modern Language Association&#8217;s listening test of understanding of spoken French. After four weeks of immersion in French in and out of class, the listening test was given again. (The actual French spoken in the two tests was different, so that simply taking the first test should not improve the score on the second test.) The maximum possible score on the test is 36.<termref term="fn_ch7_fn21"><sup>21</sup></termref> Here are the data:</p>
 <box id="ips9e-ch07-box-53" block_type="rl_linkbox"><p id="ips9e-ch07-p0419" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="SUMLANG"><phrase>SUMLANG</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch07-untab-17" numbered="false" block_type="UN-TABLE" attr="100">
 <tbody>
@@ -1771,7 +1771,7 @@
 <p id="ips9e-ch07-p0460" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Heights of 10-year-old girls and boys.</phrase> A fourth-grade class has 12 girls and 8 boys. The children&#8217;s heights are recorded on their 10th birthdays. What is the chance that the girls are taller than the boys? Of course, it is very unlikely that all the girls are taller than all the boys. We translate the question into the following: what is the probability that the mean height of the girls is greater than the mean height of the boys?</p>
 <figure id="ips9e-ch07-unfig-012" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="" data-filename="17MOOREIPS-MSE_9e_P_07_01.html">
 <layout align="left" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-21" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_P_07_01.jpg"/>
+<image asset-id="ips9e-ch07-img-21" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_P_07_01.jpg"/>
 <asset_source><phrase block_type="PHCR">Robert Warren/Getty Images</phrase></asset_source>
 </figure>
 <p id="ips9e-ch07-p0461" block_type="EXP-last">Based on information from the National Health and Nutrition Examination Survey, we assume that the heights (in inches) of 10-year-old girls are <em>N</em>(56.9, 2.8) and the heights of 10-year-old boys are <em>N</em>(56.0, 3.5).<termref term="fn_ch7_fn22"><sup>22</sup></termref> The heights of the students in our class are assumed to be random samples from these populations. The two distributions are shown in <link href="figure_7_11.html">Figure 7.11</link>(a).</p>
@@ -1783,7 +1783,7 @@
 <p id="ips9e_page_435" block_type="page_start" data-margin-content="right">435</p>
 <figure id="ips9e-ch07-fig-013" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="7.11" mmtype="image" mmsrc="" attr="" data-filename="figure_7_11.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-22" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_11.jpg"/>
+<image asset-id="ips9e-ch07-img-22" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_11.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.11</phrase> <phrase block_type="FG-CAP">Distributions, <link href="example_7_10.html">Example 7.10</link>. (a) Distributions of heights of 10-year-old boys and girls. (b) Distribution of the difference between mean heights of 12 girls and 8 boys.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p0468" block_type="EXP-TXT-ni">The standard deviation of the difference in sample means is, therefore, <phrase data-math="math_165"></phrase> inches.</p>
@@ -1792,7 +1792,7 @@
 <p id="ips9e-ch07-p0471" block_type="EXP-EQ"> = <em>P</em>(<em>Z</em> &#62; &#8722;0.61) = 0.7257</p>
 </box>
 <p id="ips9e-ch07-p0472" block_type="TXT">Even though the population mean height of 10-year-old girls is greater than the population mean height of 10-year-old boys, the probability that the sample mean of the girls is greater than the sample mean of the boys in our class is only 73&#37;. <em>Large samples are needed to see the effects of small differences.</em></p>
-<p id="ips9e-ch07-p0473" block_type="Caution icon"><image asset-id="ips9e-ch07-img-23" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+<p id="ips9e-ch07-p0473" block_type="Caution icon"><image asset-id="ips9e-ch07-img-23" alt="image" src="asset/ch07/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch07-p0474" block_type="TXT">As <link href="example_7_10.html">Example 7.10</link> reminds us, any Normal random variable has the <em>N</em>(0, 1) distribution when standardized. We have arrived at a new <em>z</em> statistic.</p>
 <box id="ips9e-ch07-box-60" numbered="false" block_type="BX1">
 <p id="ips9e-ch07-p0475" block_type="BX1-T">TWO-SAMPLE <em>z</em> STATISTIC</p>
@@ -1829,12 +1829,10 @@
 <p id="ips9e-ch07-p0502" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Directed reading activities assessment.</phrase> An educator believes that new directed reading activities in the classroom will help elementary school pupils improve some aspects of their reading ability. She arranges for a third-grade class of 21 students to take part in these activities for an eight-week period. A control classroom of 23 third-graders follows the same curriculum without the activities. At the end of the eight weeks, all students are given a Degree of Reading Power (DRP) test, which measures the aspects of reading ability that the treatment is designed to improve. The data appear in <link href="table_7_3.html">Table 7.3</link>.<termref term="fn_ch7_fn24"><sup>24</sup></termref></p>
 <figure id="ips9e-ch07-unfig-014" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="" data-filename="17MOOREIPS-MSE_9e_P_07_02.html">
 <layout align="left" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-24" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_P_07_02.jpg"/>
+<image asset-id="ips9e-ch07-img-24" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_P_07_02.jpg"/>
 <asset_source><phrase block_type="PHCR">RICHARD HUTCHINGS/Science Source/Getty Images</phrase></asset_source></figure>
 </box>
-
-
-
+<p id="ips9e-ch07-p0503" block_type="TXT">The design of the study in <link href="example_7_11.html">Example 7.11</link> is not ideal. Random assignment of students was not possible in a school environment, so existing third-grade classes were used. The effect of the reading programs is, therefore, confounded with any other differences between the two classes. The classes were chosen to be as similar as possible&#8212;for example, in terms of the social and economic status of the students. Extensive pretesting showed that the two classes were, on the average, quite similar in reading ability at the beginning of the experiment. To avoid the effect of two different teachers, the researcher herself taught reading in both classes during the eight-week period of the experiment. Therefore, we can be somewhat confident that the two-sample test is detecting the effect of the treatment and not some other difference between the classes. This example is typical of many situations in which an experiment is carried out but randomization is not possible.</p>
 <box id="ips9e-ch07-box-63" block_type="rl_linkbox"><p id="ips9e-ch07-p0504" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="DRP"><phrase>DRP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <table id="ips9e-ch07-tab-3" numbered="false" block_type="TABLE" caption-placement="Top" attr="100" data-filename="table_7_3.html">
 <table_caption><phrase block_type="TBN-N">TABLE 7.3</phrase> <phrase block_type="TBN-T">DRP Scores for Third-Graders</phrase></table_caption>
@@ -1905,11 +1903,6 @@
 </tr>
 </tbody>
 </table>
-
-
-
-
-<p id="ips9e-ch07-p0503" block_type="TXT">The design of the study in <link href="example_7_11.html">Example 7.11</link> is not ideal. Random assignment of students was not possible in a school environment, so existing third-grade classes were used. The effect of the reading programs is, therefore, confounded with any other differences between the two classes. The classes were chosen to be as similar as possible&#8212;for example, in terms of the social and economic status of the students. Extensive pretesting showed that the two classes were, on the average, quite similar in reading ability at the beginning of the experiment. To avoid the effect of two different teachers, the researcher herself taught reading in both classes during the eight-week period of the experiment. Therefore, we can be somewhat confident that the two-sample test is detecting the effect of the treatment and not some other difference between the classes. This example is typical of many situations in which an experiment is carried out but randomization is not possible.</p>
 <box id="ips9e-ch07-box-64" block_type="MN-NOT-H">
 <p id="ips9e-ch07-p0506" block_type="MN-NOT1">confounding, <link href="alias:page_150">p. 150</link></p>
 </box>
@@ -1969,7 +1962,7 @@
 <box id="ips9e-ch07-box-66" block_type="rl_linkbox"><p id="ips9e-ch07-p0510" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="DRP"><phrase>DRP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <figure id="ips9e-ch07-fig-015" block_type="FIGURE" data-caption-compass="S" numbered="true" number="7.12" mmtype="image" mmsrc="" attr="" data-filename="figure_7_12.html">
 <layout align="center" width="large" border="false"/>
-<image asset-id="ips9e-ch07-img-25" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_12.jpg"/>
+<image asset-id="ips9e-ch07-img-25" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_12.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.12</phrase> <phrase block_type="FG-CAP">Normal quantile plots of the DRP scores in <link href="table_7_3.html">Table 7.3</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p0511" block_type="EXP-last">The back-to-back stemplot suggests that there is a mild outlier in the control group but no deviation from Normality serious enough to forbid use of <em>t</em> procedures. Separate Normal quantile plots for both groups (<link href="figure_7_12.html">Figure 7.12</link>) confirm that both distributions are approximately Normal. The scores of the treatment group appear to be somewhat higher than those of the control group. The summary statistics are</p>
@@ -2090,7 +2083,7 @@
 <box id="ips9e-ch07-box-73" block_type="rl_linkbox"><p id="ips9e-ch07-p0550" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="DRP"><phrase>DRP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <figure id="ips9e-ch07-fig-016" block_type="FIGURE" data-caption-compass="S" numbered="true" number="7.13" mmtype="image" mmsrc="" attr="" data-filename="figure_7_13.html">
 <layout align="center" width="large" border="false"/>
-<image asset-id="ips9e-ch07-img-26" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_13.jpg"/>
+<image asset-id="ips9e-ch07-img-26" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_13.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.13</phrase> <phrase block_type="FG-CAP">JMP and Minitab output, <link href="example_7_14.html">Example 7.14</link>.</phrase></caption>
 </figure>
 <p id="ips9e_page_442" block_type="page_start" data-margin-content="left">442</p>
@@ -2110,7 +2103,7 @@
 <li id="ips9e-ch07-li-147"><p id="ips9e-ch07-p0563" block_type="BL"><phrase block_type="maker">&#8226;</phrase> <em>If n</em><sub>1</sub> + <em>n</em><sub>2</sub> <em>is at least 15 and less than 40:</em> The <em>t</em> procedures can be used except in the presence of outliers or strong skewness.</p></li>
 <li id="ips9e-ch07-li-148"><p id="ips9e-ch07-p0564" block_type="BL-last"><phrase block_type="maker">&#8226;</phrase> <em>Large samples:</em> The <em>t</em> procedures can be used even for clearly skewed distributions when the sample is large, roughly <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> &#8805; 40.</p></li>
 </list>
-<p id="ips9e-ch07-p0565" block_type="Caution icon"><image asset-id="ips9e-ch07-img-27" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+<p id="ips9e-ch07-p0565" block_type="Caution icon"><image asset-id="ips9e-ch07-img-27" alt="image" src="asset/ch07/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch07-p0566" block_type="TXT-ni">These guidelines are rather conservative, especially when the two samples are of equal size. <em>In planning a two-sample study, choose equal sample sizes if you can.</em> The two-sample <em>t</em> procedures are most robust against non-Normality in this case, and the conservative probability values are most accurate.</p>
 <p id="ips9e_page_443" block_type="page_start" data-margin-content="right">443</p>
 <p id="ips9e-ch07-p0568" block_type="TXT">Here is an example with large sample sizes that are almost equal. Even if the distributions are not Normal, we are confident that the sample means will be approximately Normal. The two-sample <em>t</em> test is very robust in this case.</p>
@@ -2141,7 +2134,7 @@
 </table>
 <figure id="ips9e-ch07-unfig-017" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="" data-filename="17MOOREIPS-MSE_9e_P_07_03.html">
 <layout align="left" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-28" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_P_07_03.jpg"/>
+<image asset-id="ips9e-ch07-img-28" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_P_07_03.jpg"/>
 <asset_source><phrase block_type="PHCR">Serge Krouglikoff/Getty Images</phrase></asset_source>
 </figure>
 <p id="ips9e-ch07-p0571" block_type="EXP-last">The early eaters lost more weight on average. Can we conclude that these two groups are not the same? Or is this observed difference merely what we could expect to see given the variation among participants?</p>
@@ -2173,7 +2166,7 @@
 </box>
 <p id="ips9e_page_444" block_type="page_start" data-margin-content="left">444</p>
 <p id="ips9e-ch07-p0583" block_type="TXT">In this example the exact <em>P</em>-value is very small because <em>t</em> = 3.71 says that the observed difference in means is over 3.5 standard errors above the hypothesized difference of zero (<em>&#956;</em><sub>1</sub> = <em>&#956;</em><sub>2</sub>). In this study, the researchers also compared energy intake and energy expenditure between late and early eaters. Despite the observed weight loss difference of 2.2 kg, no significant differences in these variables were found.</p>
-<p id="ips9e-ch07-p0584" block_type="Caution icon"><image asset-id="ips9e-ch07-img-29" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+<p id="ips9e-ch07-p0584" block_type="Caution icon"><image asset-id="ips9e-ch07-img-29" alt="image" src="asset/ch07/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch07-p0585" block_type="TXT">In this and other examples, we can choose which population to label 1 and which to label 2. After inspecting the data, we chose early eaters as Population 1 because this choice makes the <em>t</em> statistic a positive number. This avoids any possible confusion from reporting a negative value for <em>t</em>. <em>Choosing the population labels is <strong>not</strong> the same as choosing a one-sided alternative after looking at the data.</em> Choosing hypotheses after seeing a result in the data is a violation of sound statistical practice.</p>
 <p id="ips9e-ch07-p0586" block_type="level_2_title"><phrase block_type="h2">Inference for small samples</phrase></p>
 <p id="ips9e-ch07-p0587" block_type="TXT-ni">Small samples require special care. We do not have enough observations to examine the distribution shapes, and only extreme outliers stand out. The power of significance tests tends to be low, and the margins of error of confidence intervals tend to be large. Despite these difficulties, we can often draw important conclusions from studies with small sample sizes. If the size of an effect is very large, it should still be evident even if the <em>n</em>&#8217;s are small.</p>
@@ -2244,7 +2237,7 @@
 <p id="ips9e-ch07-p0597" block_type="TXT"><link href="figure_7_14.html">Figure 7.14</link> gives outputs for this analysis from several software packages. Although the formats differ, the basic information is the same. All report the sample sizes, the sample means and standard deviations (or variances), the <em>t</em> statistic, and its <em>P</em>-value. All agree that the <em>P</em>-value is small, though some give more detail than others. Software often labels the groups in alphabetical order. Always check the means first and report the statistic (you may need to change the sign) in an appropriate way. Be sure to also mention the size of the effect you observed, such as &#8220;The mean weight loss for the early eaters was 6.44 kg higher than for the late eaters.&#8221;</p>
 <figure id="ips9e-ch07-fig-018" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="7.14" mmtype="image" mmsrc="" attr="" data-filename="figure_7_14.html">
 <layout align="center" width="large" border="false"/>
-<image asset-id="ips9e-ch07-img-30" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_14.jpg"/>
+<image asset-id="ips9e-ch07-img-30" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_14.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.14</phrase> <phrase block_type="FG-CAP">SAS, Excel, JMP, and SPSS output, <link href="example_7_16.html">Example 7.16</link>.</phrase></caption>
 </figure>
 <p id="ips9e_page_446" block_type="page_start" data-margin-content="left">446</p>
@@ -2312,9 +2305,9 @@
 <p id="ips9e-ch07-p0633" block_type="BX1-TXT">To test the hypothesis <phrase data-math="math_215"></phrase>, compute the <strong>pooled two-sample <em>t</em> statistic</strong></p>
 <p id="ips9e-ch07-p0634" block_type="BX1-EQ"><phrase data-math="math_216"></phrase></p>
 <p id="ips9e-ch07-p0635" block_type="BX1-TXT-ni">In terms of a random variable <em>T</em> having the <phrase data-math="math_217"></phrase> distribution, the <em>P</em>-value for a test of <phrase data-math="math_218"></phrase> against</p>
-<p id="ips9e-ch07-p0636" block_type="BX1-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em><sub>1</sub> &#8722; <em>&#956;</em><sub>2</sub> &#62; <em>&#x394;</em><sub>0</sub>&#8195; is&#8195; <em>P</em>(<em>T</em> &#8805; <em>t</em>)&#8195;&#8195;<image asset-id="ips9e-ch07-img-4a" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_UNfig_07_01.jpg"/></p>
-<p id="ips9e-ch07-p0637" block_type="BX1-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em><sub>1</sub> &#8722; <em>&#956;</em><sub>2</sub> &#60; <em>&#x394;</em><sub>0</sub>&#8195; is&#8195; <em>P</em>(<em>T</em> &#8804; <em>t</em>)&#8195;&#8195;<image asset-id="ips9e-ch07-img-4b" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_UNfig_07_02.jpg"/></p>
-<p id="ips9e-ch07-p0638" block_type="BX1-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em><sub>1</sub> &#8722; <em>&#956;</em><sub>2</sub> &#x2260; <em>&#x394;</em><sub>0</sub>&#8195; is&#8195; 2<em>P</em>(<em>T</em> &#8805; &#124;<em>t&#124;</em>)&#8195;<image asset-id="ips9e-ch07-img-4c" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_UNfig_07_03.jpg"/></p>
+<p id="ips9e-ch07-p0636" block_type="BX1-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em><sub>1</sub> &#8722; <em>&#956;</em><sub>2</sub> &#62; <em>&#x394;</em><sub>0</sub>&#8195; is&#8195; <em>P</em>(<em>T</em> &#8805; <em>t</em>)&#8195;&#8195;<image asset-id="ips9e-ch07-img-4a" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_UNfig_07_01.jpg"/></p>
+<p id="ips9e-ch07-p0637" block_type="BX1-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em><sub>1</sub> &#8722; <em>&#956;</em><sub>2</sub> &#60; <em>&#x394;</em><sub>0</sub>&#8195; is&#8195; <em>P</em>(<em>T</em> &#8804; <em>t</em>)&#8195;&#8195;<image asset-id="ips9e-ch07-img-4b" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_UNfig_07_02.jpg"/></p>
+<p id="ips9e-ch07-p0638" block_type="BX1-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em><sub>1</sub> &#8722; <em>&#956;</em><sub>2</sub> &#x2260; <em>&#x394;</em><sub>0</sub>&#8195; is&#8195; 2<em>P</em>(<em>T</em> &#8805; &#124;<em>t&#124;</em>)&#8195;<image asset-id="ips9e-ch07-img-4c" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_UNfig_07_03.jpg"/></p>
 </box>
 <box id="ips9e-ch07-box-80" numbered="false" block_type="EXP" data-filename="example_7_18.html">
 <p id="ips9e-ch07-p0639" block_type="EXP-N">EXAMPLE 7.18</p>
@@ -2430,13 +2423,13 @@
 <p id="ips9e-ch07-p0642" block_type="TXT">As usual, we first examine the data. To compare the effects of the two treatments, take the response variable to be the amount of the decrease in blood pressure. Inspection of the data reveals that there are no outliers. Side-by-side boxplots and Normal quantile plots (<link href="figure_7_15.html">Figure 7.15</link> and <link href="figure_7_16.html">7.16</link>) give a more detailed picture. The calcium group has a somewhat short left tail, but there are no severe departures from Normality that will prevent use of <em>t</em> procedures. To examine the question of the researchers who collected these data, we perform a significance test.</p>
 <figure id="ips9e-ch07-fig-019" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="7.15" mmtype="image" mmsrc="" attr="" data-filename="figure_7_15.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-31" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_15.jpg"/>
+<image asset-id="ips9e-ch07-img-31" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_15.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.15</phrase> <phrase block_type="FG-CAP">Side-by-side boxplots of the decrease in blood pressure from <link href="table_7_4.html">Table 7.4</link>.</phrase></caption>
 </figure>
 <p id="ips9e_page_451" block_type="page_start" data-margin-content="right">451</p>
 <figure id="ips9e-ch07-fig-020" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="7.16" mmtype="image" mmsrc="" attr="" data-filename="figure_7_16.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-32" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_16.jpg"/>
+<image asset-id="ips9e-ch07-img-32" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_16.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.16</phrase> <phrase block_type="FG-CAP">Normal quantile plots of the change in blood pressure from <link href="table_7_4.html">Table 7.4</link>.</phrase></caption>
 </figure>
 <box id="ips9e-ch07-box-82" numbered="false" block_type="EXP" data-filename="example_7_19.html">
@@ -2507,7 +2500,7 @@
 <box id="ips9e-ch07-box-85" block_type="rl_linkbox"><p id="ips9e-ch07-p0668" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="BP&#95;CA"><phrase>BP&#95;CA</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <p id="ips9e-ch07-p0669" block_type="EXP-last">We are 90&#37; confident that the difference in means is in the interval<phrase data-math="math_232"></phrase>. The calcium treatment reduced blood pressure by about 5.3 mm Hg more than a placebo on the average, but the margin of error for this estimate is 5.6 mm Hg.</p>
 </box>
-<p id="ips9e-ch07-p0670" block_type="Caution icon"><image asset-id="ips9e-ch07-img-33" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+<p id="ips9e-ch07-p0670" block_type="Caution icon"><image asset-id="ips9e-ch07-img-33" alt="image" src="asset/ch07/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch07-p0671" block_type="TXT">The pooled two-sample <em>t</em> procedures are anchored in statistical theory and so have long been the standard version of the two-sample <em>t</em> in textbooks. <em>But they require the assumption that the two unknown population standard deviations are equal.</em> We discuss methods to assess this condition in <link href="ips9e-ch012.xml">Chapter 12</link>.</p>
 <p id="ips9e_page_453" block_type="page_start" data-margin-content="right">453</p>
 <p id="ips9e-ch07-p0673" block_type="TXT">The pooled <em>t</em> procedures are therefore a bit risky. They are reasonably robust against both non-Normality and unequal standard deviations when the sample sizes are nearly the same. When the samples are quite different in size, the pooled <em>t</em> procedures become sensitive to unequal standard deviations and should be used with caution unless the samples are large. Unequal standard deviations are quite common. In particular, it is not unusual for the spread of data to increase when the center of the data increases. We recommend regular use of the unpooled <em>t</em> procedures because most software automates the Satterthwaite approximation.</p>
@@ -3253,7 +3246,7 @@
 <box id="ips9e-ch07-box-96" block_type="rl_linkbox"><p id="ips9e-ch07-p0823" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="EWPINES"><phrase>EWPINES</phrase></p><p block_type="rl_crunchit" data-dataset="SR-X-QUE-NL-TB1-TXT"/></box>
 </question>
 <question id="ips9e-ch07-quest-0091" block_type="exercise_7_91.html">
-<p id="ips9e-ch07-p0824" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-34" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.91 Revisiting the small-sample example.</phrase> Refer to <link href="example_7_16.html">Example 7.16</link> (page 444). This is a case where the sample sizes are quite small. With only five observations per group, we have very little information to make a judgment about whether the population standard deviations are equal. The potential gain from pooling is large when the sample sizes are small. Assume that we will perform a two-sided test using the 5&#37; significance level.</p>
+<p id="ips9e-ch07-p0824" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-34" alt="image" src="asset/ch07/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.91 Revisiting the small-sample example.</phrase> Refer to <link href="example_7_16.html">Example 7.16</link> (page 444). This is a case where the sample sizes are quite small. With only five observations per group, we have very little information to make a judgment about whether the population standard deviations are equal. The potential gain from pooling is large when the sample sizes are small. Assume that we will perform a two-sided test using the 5&#37; significance level.</p>
 <box id="ips9e-ch07-box-97" block_type="rl_linkbox"><p id="ips9e-ch07-p0825" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="EATER"><phrase>EATER</phrase></p><p block_type="rl_crunchit" data-dataset="SR-X-QUE-NL-TB1-TXT"/></box>
 <list id="ips9e-ch07-list-068" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch07-li-228"><p id="ips9e-ch07-p0826" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Find the critical value for the unpooled <em>t</em> test statistic that does not assume equal variances. Use the minimum of <phrase data-math="math_292"></phrase> and <phrase data-math="math_293"></phrase> for the degrees of freedom.</p></li>
@@ -3262,7 +3255,7 @@
 </list>
 </question>
 <question id="ips9e-ch07-quest-0092" block_type="exercise_7_92.html">
-<p id="ips9e-ch07-p0829" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-35" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.92 Two-sample test of equivalence.</phrase> In <link href="ips9e-ch07-sec7-1">Section 7.1</link> (page 421), we were introduced to the one-sample test of equivalence. Using those same concepts, describe how to perform a two-sample test of equivalence.</p>
+<p id="ips9e-ch07-p0829" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-35" alt="image" src="asset/ch07/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.92 Two-sample test of equivalence.</phrase> In <link href="ips9e-ch07-sec7-1">Section 7.1</link> (page 421), we were introduced to the one-sample test of equivalence. Using those same concepts, describe how to perform a two-sample test of equivalence.</p>
 </question>
 </section>
 <section id="ips9e-ch07-sec1-007" block_type="h1" chapter="ch7" number="7.3" numbered="true" level="1" print_page="460">
@@ -3278,7 +3271,7 @@
 </list>
 </box>
 <p id="ips9e_page_461" block_type="page_start" data-margin-content="right">461</p>
-<p id="ips9e-ch07-p0837" block_type="Caution icon"><image asset-id="ips9e-ch07-img-36" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+<p id="ips9e-ch07-p0837" block_type="Caution icon"><image asset-id="ips9e-ch07-img-36" alt="image" src="asset/ch07/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch07-p0838" block_type="TXT-ni">In this section, we discuss two topics that are related to the procedures we have learned for inference about population means. First, we focus on planning a study&#8212;in particular, choosing the sample size. <em>A wise user of statistics does not plan for inference without at the same time planning data collection.</em>The second topic introduces us to various inference methods for non-Normal populations. These would be used when our populations are clearly non-Normal and we do not think that the sample size is large enough to rely on the robustness of the <em>t</em> procedures.</p>
 <p id="ips9e-ch07-p0839" block_type="level_2_title"><phrase block_type="h2">Choosing the sample size</phrase></p>
 <p id="ips9e-ch07-p0840" block_type="TXT-ni">We describe sample size procedures for both confidence intervals and significance tests. For anyone planning to design a study, a general understanding of these procedures is necessary. While the actual formulas are a bit technical, statistical software now makes it trivial to get sample size results.</p>
@@ -3340,7 +3333,7 @@
 <p id="ips9e_page_463" block_type="page_start" data-margin-content="right">463</p>
 <figure id="ips9e-ch07-fig-021" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="7.17" mmtype="image" mmsrc="" attr="" data-filename="figure_7_17.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-37" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_17.jpg"/>
+<image asset-id="ips9e-ch07-img-37" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_17.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.17</phrase> <phrase block_type="FG-CAP">Minitab input window used to compute the sample size for the desired margin of error, <link href="example_7_21.html">Example 7.21</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p0869" block_type="TXT">Note that the <em>n</em> = 50 refers to the <em>expected</em> margin of error being no more than five hours. This does not guarantee that the margin of error for the collected sample will be less than five hours. That is because the sample standard deviation <em>s</em> varies sample to sample and these calculations are treating it as a fixed quantity. More advanced sample size procedures ask you to also specify the probability of obtaining a margin of error less than the desired value. For our approach, this probability is roughly 50&#37;. For a probability closer to 100&#37;, the sample size will need to be larger. For example, suppose we wanted this probability to be roughly 80&#37;. In SAS, we&#8217;d perform these calculations using the command</p>
@@ -3348,7 +3341,7 @@
 <p id="ips9e-ch07-p0871" block_type="TXT">onesamplemeans CI=t stddev=17.5 halfwidth=5 probwidth=0.80 ntotal=.;</p>
 <p id="ips9e-ch07-p0872" block_type="TXT">run;</p>
 <p id="ips9e-ch07-p0873" block_type="TXT-ni">The needed sample size increases from <em>n</em> = 50 to <em>n</em> = 57.</p>
-<p id="ips9e-ch07-p0874" block_type="Caution icon"><image asset-id="ips9e-ch07-img-38" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+<p id="ips9e-ch07-p0874" block_type="Caution icon"><image asset-id="ips9e-ch07-img-38" alt="image" src="asset/ch07/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch07-p0875" block_type="TXT"><em>Unfortunately, the actual number of usable observations is often less than that planned at the beginning of a study.</em> This is particularly true of data collected in surveys or studies that involve a time commitment from the participants. Careful study designers often assume a nonresponse rate or dropout rate that specifies what proportion of the originally planned sample will fail to provide data. We use this information to calculate the sample size to be used at the start of the study. For example, if, in the preceding survey, we expect only 40&#37; of those students to respond, we would need to start with a sample size of 2.5 &#215; 50 =125 to obtain usable information from 50 students.</p>
 <box id="ips9e-ch07-box-101" block_type="MN-NOT-H">
 <p id="ips9e-ch07-p0877" block_type="MN-NOT1">nonresponse, <link href="alias:page_196">p. 196</link></p>
@@ -3434,11 +3427,11 @@
 </box>
 <figure id="ips9e-ch07-fig-022" block_type="FIGURE" data-caption-compass="S" numbered="true" number="7.18" mmtype="image" mmsrc="" attr="" data-filename="figure_7_18.html">
 <layout align="center" width="large" border="false"/>
-<image asset-id="ips9e-ch07-img-39" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_18.jpg"/>
+<image asset-id="ips9e-ch07-img-39" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_18.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.18</phrase> <phrase block_type="FG-CAP">Minitab output (a power curve) for the one-sample power calculation, <link href="example_7_23.html">Example 7.23</link>.</phrase></caption>
 </figure>
 <p id="ips9e_page_467" block_type="page_start" data-margin-content="right">467</p>
-<p id="ips9e-ch07-p0927" block_type="Caution icon"><image asset-id="ips9e-ch07-img-40" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
+<p id="ips9e-ch07-p0927" block_type="Caution icon"><image asset-id="ips9e-ch07-img-40" alt="image" src="asset/ch07/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch07-p0928" block_type="TXT">Power calculations are used in planning studies to ensure that we have a reasonable chance of detecting effects of interest. They give us some guidance in selecting a sample size. In making these calculations, we need assumptions about the standard deviation and the alternative of interest. In our example, we assumed that the standard deviation would be 17.5, but in practice, we are hoping that the value will be somewhere around this value. Similarly, we have used a somewhat arbitrary alternative of 14.5. This is a guess based on the results of the previous study. <em>Beware of putting too much trust in fine details of the results of these calculations.</em> They serve as a guide, not a mandate.</p>
 <box id="ips9e-ch07-box-106" numbered="false" block_type="EXR">
 <p id="ips9e-ch07-p0929" block_type="EXR-H">USE YOUR KNOWLEDGE</p>
@@ -3496,7 +3489,7 @@
 </box>
 <figure id="ips9e-ch07-fig-023" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="7.19" mmtype="image" mmsrc="" attr="" data-filename="figure_7_19.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-41" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_19.jpg"/>
+<image asset-id="ips9e-ch07-img-41" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_19.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.19</phrase> <phrase block_type="FG-CAP">JMP input/output window for the two-sample power calculation, <link href="example_7_24.html">Example 7.24</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p0967" block_type="level_2_title"><phrase block_type="h2">Inference for non-Normal populations</phrase></p>
@@ -3517,7 +3510,7 @@
 <p id="ips9e-ch07-p0980" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Length of audio files on an iPod.</phrase> <link href="table_7_5.html">Table 7.5</link> presents data on the length (in seconds) of audio files found on an iPod. There was a total of 10,003 audio files, and 50 files were randomly selected using the &#8220;shuffle songs&#8217;&#8217; command.<termref term="fn_ch7_fn41"><sup>41</sup></termref> We would like to give a confidence interval for the average audio file length <em>&#956;</em> for this iPod.</p>
 <figure id="ips9e-ch07-unfig-024" block_type="UN-FIGURE" numbered="false" mmtype="image" mmsrc="" attr="" data-filename="17MOOREIPS-MSE_9e_P_07_04.html">
 <layout align="left" width="small" border="false"/>
-<image asset-id="ips9e-ch07-img-42" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_P_07_04.jpg"/>
+<image asset-id="ips9e-ch07-img-42" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_P_07_04.jpg"/>
 <asset_source><phrase block_type="PHCR">Justin Sullivan/Staff/Getty Images</phrase></asset_source>
 </figure>
 <table id="ips9e-ch07-tab-5" numbered="false" block_type="TABLE" caption-placement="Top" attr="100" data-filename="table_7_5.html">
@@ -3602,12 +3595,12 @@
 <box block_type="sidebyside">
 <figure id="ips9e-ch07-fig-025" block_type="FIGURE" data-caption-compass="S" numbered="true" number="7.20" mmtype="image" mmsrc="" attr="" data-filename="figure_7_20.html">
 <layout align="left" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-43" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_20.jpg"/>
+<image asset-id="ips9e-ch07-img-43" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_20.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.20</phrase> <phrase block_type="FG-CAP">Normal quantile plot of audio file length, <link href="example_7_25.html">Example 7.25</link>. This sort of pattern occurs when a distribution is skewed to the right.</phrase></caption>
 </figure>
 <figure id="ips9e-ch07-fig-026" block_type="FIGURE" data-caption-compass="S" numbered="true" number="7.21" mmtype="image" mmsrc="" attr="" data-filename="figure_7_21.html">
 <layout align="right" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-44" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_21.jpg"/>
+<image asset-id="ips9e-ch07-img-44" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_21.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.21</phrase> <phrase block_type="FG-CAP">Normal quantile plot of the logarithms of the audio file lengths, <link href="example_7_25.html">Example 7.25</link>. This distribution appears approximately Normal.</phrase></caption>
 </figure>
 </box>
@@ -3664,7 +3657,7 @@
 </box>
 <figure id="ips9e-ch07-fig-027" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="7.22" mmtype="image" mmsrc="" attr="" data-filename="figure_7_22.html">
 <layout align="center" width="medium" border="false"/>
-<image asset-id="ips9e-ch07-img-45" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_22.jpg"/>
+<image asset-id="ips9e-ch07-img-45" alt="image" src="asset/ch07/17MOOREIPS-MSE_9e_fig_07_22.jpg"/>
 <caption><phrase block_type="FG-N-ri">FIGURE 7.22</phrase> <phrase block_type="FG-CAP">Why the sign test tests the median difference: when the median is greater than 0, the probability <em>p</em> of a positive difference is greater than 1/2, and vice versa.</phrase></caption>
 </figure>
 </section>
@@ -3739,10 +3732,10 @@
 <p id="ips9e-ch07-p01057" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.108 Sample size calculations.</phrase> You are designing a study to test the null hypothesis that <em>&#956;</em> = 0 versus the alternative that <em>&#956;</em> is positive. Assume that <em>&#963;</em> is 20. Suppose that it would be important to be able to detect the alternative <em>&#956;</em> = 4. What sample size is needed to detect this alternative with power of at least 0.80?</p>
 </question>
 <question id="ips9e-ch07-quest-00109" block_type="exercise_7_109.html">
-<p id="ips9e-ch07-p01058" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-46" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.109 Power of the comparison of DXA machine operators.</phrase> Suppose that the bone researchers in <link href="exercise_7_45.html">Exercise 7.45</link> (page 431) want to be able to detect an alternative mean difference of 0.002. Find the power for this alternative for a sample size of 20 patients. Make sure to explain the reasoning of your choice of standard deviation in these calculations.</p>
+<p id="ips9e-ch07-p01058" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-46" alt="image" src="asset/ch07/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.109 Power of the comparison of DXA machine operators.</phrase> Suppose that the bone researchers in <link href="exercise_7_45.html">Exercise 7.45</link> (page 431) want to be able to detect an alternative mean difference of 0.002. Find the power for this alternative for a sample size of 20 patients. Make sure to explain the reasoning of your choice of standard deviation in these calculations.</p>
 </question>
 <question id="ips9e-ch07-quest-00110" block_type="exercise_7_110.html">
-<p id="ips9e-ch07-p01059" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-47" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.110 Determining the sample size.</phrase> Consider <link href="example_7_23.html">Example 7.23</link> (page 465). What is the minimum sample size needed for the power to be greater than 80&#37; when <em>&#956;</em> = 14.5?</p>
+<p id="ips9e-ch07-p01059" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-47" alt="image" src="asset/ch07/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.110 Determining the sample size.</phrase> Consider <link href="example_7_23.html">Example 7.23</link> (page 465). What is the minimum sample size needed for the power to be greater than 80&#37; when <em>&#956;</em> = 14.5?</p>
 </question>
 <question id="ips9e-ch07-quest-00111" block_type="exercise_7_111.html">
 <p id="ips9e-ch07-p01060" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.111 Changing the significance level.</phrase> In <link href="example_7_24.html">Example 7.24</link> (page 468), we assessed the power of a new study of calcium on blood pressure assuming <em>n</em><sub>1</sub> = <em>n</em><sub>2</sub> = 45 subjects. The power was based on <em>&#945;</em> = 0.01. Suppose that we wanted to use <em>&#945;</em> = 0.05 instead.</p>
@@ -3761,7 +3754,7 @@
 </question>
 <p id="ips9e_page_476" block_type="page_start" data-margin-content="left">476</p>
 <question id="ips9e-ch07-quest-00113" block_type="exercise_7_113.html">
-<p id="ips9e-ch07-p01068" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-48" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.113 More on planning a study to compare tree size.</phrase> Refer to the previous exercise. Find the two standard deviations from <link href="exercise_7_79.html">Exercise 7.79</link>. Do the same for the data in <link href="exercise_7_80.html">Exercise 7.80</link> (page 459), which is a similar setting. These are somewhat smaller than the assumed value that you used in the previous exercise. Explain why it is generally a better idea to assume a standard deviation that is larger than you expect than one that is smaller. Repeat the power calculations for some other reasonable values of <em>&#963;</em> and comment on the impact of the size of <em>&#963;</em> for planning the new study.</p>
+<p id="ips9e-ch07-p01068" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-48" alt="image" src="asset/ch07/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.113 More on planning a study to compare tree size.</phrase> Refer to the previous exercise. Find the two standard deviations from <link href="exercise_7_79.html">Exercise 7.79</link>. Do the same for the data in <link href="exercise_7_80.html">Exercise 7.80</link> (page 459), which is a similar setting. These are somewhat smaller than the assumed value that you used in the previous exercise. Explain why it is generally a better idea to assume a standard deviation that is larger than you expect than one that is smaller. Repeat the power calculations for some other reasonable values of <em>&#963;</em> and comment on the impact of the size of <em>&#963;</em> for planning the new study.</p>
 </question>
 <question id="ips9e-ch07-quest-00114" block_type="exercise_7_114.html">
 <p id="ips9e-ch07-p01069" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.114 Planning a study to compare ad placement.</phrase> Refer to <link href="exercise_7_78.html">Exercise 7.78</link> (page 458), where we compared trustworthiness ratings for ads from two different publications. Suppose that you are planning a similar study using two different publications that are not expected to show the differences seen when comparing the <em>Wall Street Journal</em> with the <em>National Enquirer</em>. You would like to detect a difference of 1.5 points using a two-sided significance test with a 5&#37; level of significance. Based on <link href="exercise_7_78.html">Exercise 7.78</link>, it is reasonable to use 1.6 as the value of the common standard deviation for planning purposes.</p>
@@ -4001,7 +3994,7 @@
 <p id="ips9e-ch07-p01128" block_type="CR-X-QUE-NL"><phrase block_type="SR-XH">7.130 Interracial friendships in college, continued.</phrase> Refer to the previous exercise. For each year, construct a 95&#37; confidence interval for the difference in means <em>&#956;</em><sub>1</sub> &#8722;<em>&#956;</em><sub>2</sub> and describe how these intervals can be used to test the null hypotheses in part (b) of the previous exercise.</p>
 </question>
 <question id="ips9e-ch07-quest-00131" block_type="exercise_7_131.html">
-<p id="ips9e-ch07-p01129" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch07-img-49" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.131 Alcohol consumption and body composition.</phrase> Individuals who consume large amounts of alcohol do not use the calories from this source as efficiently as calories from other sources. One study examined the effects of moderate alcohol consumption on body composition and the intake of other foods. Fourteen subjects participated in a crossover design where they either drank wine for the first six weeks and then abstained for the next six weeks or vice versa.<termref term="fn_ch7_fn47"><sup>47</sup></termref> During the period when they drank wine, the subjects, on average, lost 0.4 kilogram (kg) of body weight; when they did not drink wine, they lost an average of 1.1 kg. The standard deviation of the difference between the weight lost under these two conditions is 8.6 kg. During the wine period, they consumed an average of 2589 calories; with no wine, the mean consumption was 2575. The standard deviation of the difference was 210.</p>
+<p id="ips9e-ch07-p01129" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch07-img-49" alt="image" src="asset/ch07/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.131 Alcohol consumption and body composition.</phrase> Individuals who consume large amounts of alcohol do not use the calories from this source as efficiently as calories from other sources. One study examined the effects of moderate alcohol consumption on body composition and the intake of other foods. Fourteen subjects participated in a crossover design where they either drank wine for the first six weeks and then abstained for the next six weeks or vice versa.<termref term="fn_ch7_fn47"><sup>47</sup></termref> During the period when they drank wine, the subjects, on average, lost 0.4 kilogram (kg) of body weight; when they did not drink wine, they lost an average of 1.1 kg. The standard deviation of the difference between the weight lost under these two conditions is 8.6 kg. During the wine period, they consumed an average of 2589 calories; with no wine, the mean consumption was 2575. The standard deviation of the difference was 210.</p>
 <list id="ips9e-ch07-list-094" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch07-li-315"><p id="ips9e-ch07-p01130" block_type="CR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Compute the differences in means and the standard errors for comparing body weight and caloric intake under the two experimental conditions.</p></li>
 <li id="ips9e-ch07-li-316"><p id="ips9e-ch07-p01131" block_type="CR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> A report of the study indicated that there were no significant differences in these two outcome measures. Verify this result for each measure, giving the test statistic, degrees of freedom, and the <em>P</em>-value.</p></li>
@@ -4054,7 +4047,7 @@
 <p id="ips9e-ch07-p01136" block_type="CR-X-QUE-NL">Did the patrons who thought that the wine was from California consume more? Analyze the data and write a report summarizing your work. Be sure to include details regarding the statistical methods you used, your assumptions, and your conclusions.</p>
 </question>
 <question id="ips9e-ch07-quest-00133" block_type="exercise_7_133.html">
-<p id="ips9e-ch07-p01137" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch07-img-50" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.133 Can mockingbirds learn to identify specific humans?</phrase> A central question in urban ecology is why some animals adapt well to the presence of humans and others do not. The following results summarize part of a study of the northern mockingbird (<em>Mimus polyglottos</em>) that took place on a campus of a large university.<termref term="fn_ch7_fn49"><sup>49</sup></termref> For four consecutive days, the same human approached a nest and stood 1 meter away for 30 seconds, placing his or her hand on the rim of the nest. On the fifth day, a new person did the same thing. Each day, the distance of the human from the nest when the bird flushed was recorded. This was repeated for 24 nests. The human intruder varied his or her appearance (that is, wore different clothes) over the four days. We report results for only Days 1, 4, and 5 here. The response variable is flush distance measured in meters.</p>
+<p id="ips9e-ch07-p01137" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch07-img-50" alt="image" src="asset/ch07/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.133 Can mockingbirds learn to identify specific humans?</phrase> A central question in urban ecology is why some animals adapt well to the presence of humans and others do not. The following results summarize part of a study of the northern mockingbird (<em>Mimus polyglottos</em>) that took place on a campus of a large university.<termref term="fn_ch7_fn49"><sup>49</sup></termref> For four consecutive days, the same human approached a nest and stood 1 meter away for 30 seconds, placing his or her hand on the rim of the nest. On the fifth day, a new person did the same thing. Each day, the distance of the human from the nest when the bird flushed was recorded. This was repeated for 24 nests. The human intruder varied his or her appearance (that is, wore different clothes) over the four days. We report results for only Days 1, 4, and 5 here. The response variable is flush distance measured in meters.</p>
 <table id="ips9e-ch07-untab-50" numbered="false" block_type="UN-TABLE" attr="80">
 <tbody>
 <tr class="tborder">
@@ -4095,7 +4088,7 @@
 <p id="ips9e-ch07-p01145" block_type="CR-X-QUE-NL"><phrase block_type="SR-XH">7.135 Study design information.</phrase> Refer to <link href="exercise_7_132.html">Exercise 7.132</link>. In this study, diners were seated alone or in groups of two, three, four, and, in one case, nine (for a total of <em>n</em> = 16 tables). Also, each table, not each patron, was randomly assigned a particular wine label. Does this information alter how you might do the analysis in the previous problem? Explain your answer.</p>
 </question>
 <question id="ips9e-ch07-quest-00136" block_type="exercise_7_136.html">
-<p id="ips9e-ch07-p01146" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch07-img-51" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.136 Analysis of tree size using the complete data set.</phrase> The data used in <link href="exercise_7_33.html">Exercises 7.33</link> (page 429), <link href="exercise_7_79.html">7.79</link>, and <link href="exercise_7_80.html">7.80</link> (page 459) were obtained by taking SRSs from the 584 longleaf pine trees that were measured in the Wade Tract. The entire data set is given in the WADE data set. Find the 95&#37; confidence interval for the mean DBH using the entire data set, and compare this interval with the one that you calculated in <link href="exercise_7_33.html">Exercise 7.33</link>. Write a report about these data. Include comments on the effect of the sample size on the margin of error, the distribution of the data, the appropriateness of the Normality-based methods for this problem, and the generalizability of the results to other similar stands of longleaf pine or other kinds of trees in this area of the United States and other areas.</p>
+<p id="ips9e-ch07-p01146" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch07-img-51" alt="image" src="asset/ch07/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.136 Analysis of tree size using the complete data set.</phrase> The data used in <link href="exercise_7_33.html">Exercises 7.33</link> (page 429), <link href="exercise_7_79.html">7.79</link>, and <link href="exercise_7_80.html">7.80</link> (page 459) were obtained by taking SRSs from the 584 longleaf pine trees that were measured in the Wade Tract. The entire data set is given in the WADE data set. Find the 95&#37; confidence interval for the mean DBH using the entire data set, and compare this interval with the one that you calculated in <link href="exercise_7_33.html">Exercise 7.33</link>. Write a report about these data. Include comments on the effect of the sample size on the margin of error, the distribution of the data, the appropriateness of the Normality-based methods for this problem, and the generalizability of the results to other similar stands of longleaf pine or other kinds of trees in this area of the United States and other areas.</p>
 <box id="ips9e-ch07-box-126" block_type="rl_linkbox"><p id="ips9e-ch07-p01147" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="WADE"><phrase>WADE</phrase></p><p block_type="rl_crunchit" data-dataset="CR-X-QUE-NL-TB1-TXT"/></box>
 </question>
 <question id="ips9e-ch07-quest-00137" block_type="exercise_7_137.html">
@@ -4253,11 +4246,11 @@
 </list>
 </question>
 <question id="ips9e-ch07-quest-00143" block_type="exercise_7_143.html">
-<p id="ips9e-ch07-p01164" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch07-img-52" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.143 Do women perform better in school?</phrase> Some research suggests that women perform better than men in school, but men score higher on standardized tests. <link href="table_1_3.html">Table 1.3</link> (page 26) presents data on a measure of school performance, grade point average (GPA), and a standardized test, IQ, for 78 seventh-grade students. Do these data lend further support to the previously found gender differences? Give graphical displays of the data and describe the distributions. Use significance tests and confidence intervals to examine this question, and prepare a short report summarizing your findings.</p>
+<p id="ips9e-ch07-p01164" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch07-img-52" alt="image" src="asset/ch07/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.143 Do women perform better in school?</phrase> Some research suggests that women perform better than men in school, but men score higher on standardized tests. <link href="table_1_3.html">Table 1.3</link> (page 26) presents data on a measure of school performance, grade point average (GPA), and a standardized test, IQ, for 78 seventh-grade students. Do these data lend further support to the previously found gender differences? Give graphical displays of the data and describe the distributions. Use significance tests and confidence intervals to examine this question, and prepare a short report summarizing your findings.</p>
 <box id="ips9e-ch07-box-128" block_type="rl_linkbox"><p id="ips9e-ch07-p01165" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="GRADES"><phrase>GRADES</phrase></p><p block_type="rl_crunchit" data-dataset="CR-X-QUE-NL-TB1-TXT"/></box>
 </question>
 <question id="ips9e-ch07-quest-00144" block_type="exercise_7_144.html">
-<p id="ips9e-ch07-p01166" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch07-img-53" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.144 Self-concept and school performance.</phrase> Refer to the previous exercise. Although self-concept in this study was measured on a scale with values in the data set ranging from 20 to 80, many prefer to think of this kind of variable as having only two possible values: low self-concept or high self-concept. Find the median of the self-concept scores in <link href="table_1_3.html">Table 1.3</link>, and define those students with scores at or below the median to be low-self-concept students and those with scores above the median to be high-self-concept students. Do high-self-concept students have GPAs that differ from those of low-self-concept students? What about IQ? Prepare a report addressing these questions. Be sure to include graphical and numerical summaries and confidence intervals, and state clearly the details of significance tests.</p>
+<p id="ips9e-ch07-p01166" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch07-img-53" alt="image" src="asset/ch07/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.144 Self-concept and school performance.</phrase> Refer to the previous exercise. Although self-concept in this study was measured on a scale with values in the data set ranging from 20 to 80, many prefer to think of this kind of variable as having only two possible values: low self-concept or high self-concept. Find the median of the self-concept scores in <link href="table_1_3.html">Table 1.3</link>, and define those students with scores at or below the median to be low-self-concept students and those with scores above the median to be high-self-concept students. Do high-self-concept students have GPAs that differ from those of low-self-concept students? What about IQ? Prepare a report addressing these questions. Be sure to include graphical and numerical summaries and confidence intervals, and state clearly the details of significance tests.</p>
 <box id="ips9e-ch07-box-129" block_type="rl_linkbox"><p id="ips9e-ch07-p01167" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="GRADES"><phrase>GRADES</phrase></p><p block_type="rl_crunchit" data-dataset="CR-X-QUE-NL-TB1-TXT"/></box>
 </question>
 <p id="ips9e_page_481" block_type="page_start" data-margin-content="right">481</p>
