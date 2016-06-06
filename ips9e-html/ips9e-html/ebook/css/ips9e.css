@@ -100,7 +100,7 @@ div[data-type="section"][data-block_type="chapter"] [data-block_type="chap_outli
   font-weight: normal;
 }
 div[data-type="section"][data-block_type="chapter"] [data-block_type="CO-h1"] {
-  color: #69009D;
+  color: #690039;
   font-family: arial, sans-serif;
   font-size: 1.1em;
   font-weight: bold;
@@ -122,7 +122,7 @@ div[data-block_type="h1"] {
   /* example boxes */
 }
 div[data-block_type="h1"] h2.section-title {
-  color: #69009D;
+  color: #690039;
   font-size: 1.3em;
   font-family: sans-serif;
 }
@@ -290,7 +290,7 @@ div[data-block_type="h1"] [data-block_type="EXP"] > [data-type="box_inner"] {
 div[data-block_type="h1"] [data-block_type="EXP"] [data-block_type="EXP-N"] {
   background-image: url("../asset/css/bgexampletitle.png");
   background-repeat: repeat-y;
-  color: #69009D;
+  color: #690039;
   font-family: arial, sans-serif;
   font-weight: bold;
   letter-spacing: 0.07em;
@@ -309,7 +309,7 @@ div[data-block_type="h1"] [data-block_type="EXP"] [data-block_type="EXP-N"] p {
   margin-top: .2em;
 }
 div[data-block_type="h1"] [data-block_type="EXP"] [data-block_type="EXP-T-ri"] {
-  color: #69009D;
+  color: #690039;
   font-family: arial;
   font-weight: bold;
   cursor: pointer;
@@ -600,12 +600,14 @@ div[data-block_type="CR-X-H"] [data-type="question"] {
 div[data-block_type="CR-X-H"] [data-type="question"] h3 {
   display: none;
 }
-div[data-block_type="CR-X-H"] [data-type="question"] [data-block_type="SR-X-QUE-NL"] [data-block_type="SR-XH"] {
+div[data-block_type="CR-X-H"] [data-type="question"] [data-block_type="SR-X-QUE-NL"] [data-block_type="SR-XH"],
+div[data-block_type="CR-X-H"] [data-type="question"] [data-block_type="CR-X-QUE-NL"] [data-block_type="SR-XH"] {
   color: #004178;
   font-weight: bold;
   cursor: pointer;
 }
-div[data-block_type="CR-X-H"] [data-type="question"] [data-block_type="SR-X-QUE-NL"] [data-block_type="SR-XH"]:hover {
+div[data-block_type="CR-X-H"] [data-type="question"] [data-block_type="SR-X-QUE-NL"] [data-block_type="SR-XH"]:hover,
+div[data-block_type="CR-X-H"] [data-type="question"] [data-block_type="CR-X-QUE-NL"] [data-block_type="SR-XH"]:hover {
   text-decoration: underline;
 }
 div[data-block_type="CR-X-H"] [data-type="question"] ol[data-block_type="lower-alpha"] {
@@ -699,6 +701,14 @@ div[data-block_type="CR-X-H"] [data-type="table"] tr th.lborder {
 }
 div[data-block_type="CR-X-H"] [data-type="table"] tr th.rborder {
   border-right: 1px solid #F37021 !important;
+}
+div[data-block_type="CR-X-H"] [data-block_type="CR-Ext"] {
+  margin: 1em;
+}
+div[data-block_type="CR-X-H"] [data-block_type="CR-EQ"] {
+  text-align: center;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 /* margin terms */
 [data-block_type="MN-GL-term"] {
@@ -1066,8 +1076,24 @@ span[data_href]:hover {
   margin-top: 7px;
   width: 29px;
 }
+[data-type="question"] [data-block_type*="CR-X-QUE-NL"] img[src="asset/global_images/BPSapplet-icon.jpg"] {
+  float: left;
+  margin-right: 6px;
+  margin-top: 7px;
+  width: 29px;
+}
 [data-type="question"] [data-block_type="Applet icon"] {
   left: -140px;
+}
+[data-type="question"] [data-block_type="SR-Eq"] {
+  text-align: center;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+[data-type="question"] [data-block_type="EXR-EQ"] {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 [data-block_type="Applet icon"] {
   left: 217px;
@@ -1126,4 +1152,7 @@ div[data-block_type="MN-NOT-H"] p {
 }
 [data-block_type="page_start"][data-margin-content="left"] {
   left: 10px !important;
+}
+span[data-block_type="nowrap"] {
+  white-space: nowrap;
 }

@@ -1,13 +1,13 @@
 <chapter id="ips9e-ch06" number="6" title="Chapter 6: Introduction to Inference" start-numbering-at="6" numbered="true">
 <section id="ips9e-ch06-sec-001" block_type="chapter" title="Introduction to Inference" numbered="false" level="1" print_page="341">
-<p id="ips9e-ch06-p-001" block_type="CN">6</p>
-<p id="ips9e-ch06-p-002" block_type="CT">Introduction to Inference</p>
-<p id="ips9e_page_341" block_type="page_start" data-margin-content="right">341</p>
-<figure id="ips9e-ch06-unfig-001" block_type="C-H-graphic" numbered="false" mmtype="image" mmsrc="" attr="">
+<p id="ips9e_page_341" block_type="page_start" data-margin-content="right">341</p>  
+ <figure id="ips9e-ch06-unfig-001" block_type="C-H-graphic" numbered="false" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="false"/>
 <image asset-id="ips9e-ch06-img-001" alt="image" src="asset/ch6/17MOOREIPS-MSE_9e_CO06.jpg"/>
 <asset_source><phrase block_type="CO_PHCR">Danita Delimont/Getty Images</phrase></asset_source>
 </figure>
+<p id="ips9e-ch06-p-002" block_type="CT">Introduction to Inference</p>
+<p id="ips9e-ch06-p-001" block_type="CN">6</p>
 <box id="ips9e-ch06-box-001" numbered="false" block_type="chap_outline" title="CHAPTER OUTLINE">
 <list id="ips9e-ch06-list-001" type="unordered" block_type="simple">
 <li id="ips9e-ch06-li-001"><p id="ips9e-ch06-p-003" block_type="CO-TOC-h1"><link href="ips9e_ch6_3.html"><phrase>6.1</phrase> Estimating with Confidence</link></p></li>
@@ -18,7 +18,7 @@
 </box>
 <p id="ips9e-ch06-p-007" block_type="CO-h1"><phrase block_type="section_title">Introduction</phrase></p>
 <p id="ips9e-ch06-p-008" block_type="CO-TXT-ni">Statistical inference draws conclusions about a population or process from sample data. It also provides a statement of how much confidence we can place in our conclusions. Although there are numerous methods for inference, there are only a few general types of statistical inference. This chapter introduces the two most common types: <em>confidence intervals</em> and <em>tests of significance</em>.</p>
-<p id="ips9e-ch06-p-009" block_type="CO-TXT">Because the underlying reasoning for these two types of inference remains the same across different settings, this chapter considers just one simple setting that is closely related to our study of the sampling distributions of <phrase data-math="math_1"></phrase> in <link href="ips9e-ch05-sec1-02">Section 5.2</link> (page 293): inference about the mean of a large population whose standard deviation is known. This setting, although unrealistic, allows us to focus on the underlying rationale of statistical inference rather than the calculations.</p>
+<p id="ips9e-ch06-p-009" block_type="CO-TXT">Because the underlying reasoning for these two types of inference remains the same across different settings, this chapter considers just one simple setting that is closely related to our study of the sampling distributions of <phrase data-math="math_1"></phrase> in <link href="ips9e_ch5_5.html">Section 5.2</link> (page 293): inference about the mean of a large population whose standard deviation is known. This setting, although unrealistic, allows us to focus on the underlying rationale of statistical inference rather than the calculations.</p>
 <p id="ips9e-ch06-p-010" block_type="CO-TXT">Later chapters present inference methods to use in most of the settings we met in learning to explore data. In fact, there are libraries&#8212;both of books and of computer software&#8212;full of more elaborate statistical techniques. Informed use of any of these methods, however, requires a firm understanding of the underlying reasoning. That is the goal of this chapter. A computer or calculator will do the arithmetic, but <em>you must exercise sound judgment based on understanding.</em></p>
 </section>
   
@@ -45,10 +45,11 @@
 <p id="ips9e-ch06-p-019" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Effectiveness of a new oral antibiotic.</phrase> Researchers want to know if a new oral antibiotic is more effective in relieving acne than a popular topical (on the skin) antibiotic. Twenty patients are randomly assigned to receive the oral medication, and another 20 receive the topical medication. Fifteen (75&#37;) of those taking the oral medication find satisfactory symptom relief versus only 11 (55&#37;) of the topical medication patients.</p>
 <p id="ips9e-ch06-p-020" block_type="EXP-last">Our unaided judgment suggests that the oral medication is better, 75&#37; to 55&#37;. However, probability calculations tell us that a difference this large or larger between the results in the two groups of 20 patients would occur about one time in five simply because of chance variation. In this case, it is better to conclude that the data fail to establish a real difference between the two treatments. This probability (nearly 0.19) is too large to ignore.</p>
 </box>
-<p id="ips9e-ch06-p-021" block_type="TXT">In this chapter, we introduce the two most frequently used types of statistical inference. <link href="ips9e_ch6_3.html">Section 6.1</link> concerns <em>confidence intervals</em> for estimating the value of a population parameter. <link href="ips9e_ch6_6.html">Section 6.2</link> presents <em>tests of significance,</em> which assess the evidence for a claim, such as those in <link href="example_6_1.html">Examples 6.1</link> and <link href="example_6_2.html">6.2</link>.</p>
 <box id="ips9e-ch06-box-005" block_type="MN-NOT-H">
 <p id="ips9e-ch06-p-022" block_type="MN-NOT1">sampling distribution, <link href="alias:page_286">p. 286</link></p>
 </box>
+  <p id="ips9e-ch06-p-021" block_type="TXT">In this chapter, we introduce the two most frequently used types of statistical inference. <link href="ips9e_ch6_3.html">Section 6.1</link> concerns <em>confidence intervals</em> for estimating the value of a population parameter. <link href="ips9e_ch6_6.html">Section 6.2</link> presents <em>tests of significance,</em> which assess the evidence for a claim, such as those in <link href="example_6_1.html">Examples 6.1</link> and <link href="example_6_2.html">6.2</link>.</p>
+
 <p id="ips9e-ch06-p-023" block_type="TXT">Both types of inference are based on the sampling distributions of statistics. That is, both report probabilities that state <em>what would happen if we used the inference method many times.</em> This kind of probability statement is characteristic of standard statistical inference. Users of statistics must understand the nature of this reasoning and the meaning of the probability statements that appear, for example, online and in journal articles and statistical software output.</p>
 <p id="ips9e-ch06-p-024" block_type="TXT">Because the methods of formal inference are based on sampling distributions, they require a probability model for the data. Trustworthy probability models can arise in many ways, but the model is most secure and inference is most reliable when the data are produced by a properly randomized design.</p>
 <p id="ips9e-ch06-p-025" block_type="Caution icon"><image asset-id="ips9e-ch06-img-003" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
@@ -67,10 +68,11 @@
 </list>
 </box>
 <p id="ips9e_page_344" block_type="page_start" data-margin-content="left">344</p>
-<p id="ips9e-ch06-p-033" block_type="TXT-ni">The SAT is a widely used measure of readiness for college study. It consists of three sections, one for mathematical reasoning ability (SATM), one for verbal reasoning ability (SATV), and one for writing ability (SATW). Possible scores on each section range from 200 to 800, for a total range of 600 to 2400. Since 1995, section scores have been <em>recentered</em> so that the mean is approximately 500 with a standard deviation of 100 in a large &#8220;standardized group.&#8221; This scale has been maintained so that scores have a constant interpretation.</p>
 <box id="ips9e-ch06-box-007" block_type="MN-NOT-H">
 <p id="ips9e-ch06-p-034" block_type="MN-NOT1">linear transformations, <link href="alias:page_44">p. 44</link></p>
 </box>
+  <p id="ips9e-ch06-p-033" block_type="TXT-ni">The SAT is a widely used measure of readiness for college study. It consists of three sections, one for mathematical reasoning ability (SATM), one for verbal reasoning ability (SATV), and one for writing ability (SATW). Possible scores on each section range from 200 to 800, for a total range of 600 to 2400. Since 1995, section scores have been <em>recentered</em> so that the mean is approximately 500 with a standard deviation of 100 in a large &#8220;standardized group.&#8221; This scale has been maintained so that scores have a constant interpretation.</p>
+
 <box id="ips9e-ch06-box-008" numbered="false" block_type="EXP" data-filename="example_6_3.html">
 <p id="ips9e-ch06-p-035" block_type="EXP-N">EXAMPLE 6.3</p>
 <p id="ips9e-ch06-p-036" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Estimating the mean SATM score for seniors in California.</phrase> Suppose that you want to estimate the mean SATM score for the 485,264 high school seniors in California.<termref term="fn_ch6_fn2"><sup>2</sup></termref> You know better than to trust data from the students who choose to take the SAT. Only about 38&#37; of California students typically take the SAT. These self-selected students are planning to attend college and are not representative of all California seniors. At considerable effort and expense, you give the test to a simple random sample (SRS) of 500 California high school seniors. The mean score for your sample is <phrase data-math="math_3"></phrase>. What can you say about the mean score <em>&#956;</em> in the population of all 485,264 seniors?</p>
@@ -80,18 +82,21 @@
 <asset_source><phrase block_type="PHCR">Peter Cade/The Image Bank/Getty Images</phrase></asset_source>
 </figure>
 </box>
-<p id="ips9e-ch06-p-037" block_type="TXT">The sample mean <phrase data-math="math_4"></phrase> is the natural estimator of the unknown population mean <em>&#956;</em>. We know that <phrase data-math="math_5"></phrase> is an unbiased estimator of <em>&#956;</em>. More important, the law of large numbers says that the sample mean must approach the population mean as the size of the sample grows. The value <phrase data-math="math_6"></phrase>, therefore, appears to be a reasonable estimate of the mean score <em>&#956;</em> that all 485,264 students would achieve if they took the test.</p>
 <box id="ips9e-ch06-box-009" block_type="MN-NOT-H">
 <p id="ips9e-ch06-p-038" block_type="MN-NOT1">unbiased estimator, <link href="alias:page_287">p. 287</link></p>
 <p id="ips9e-ch06-p-039" block_type="MN-NOT1">law of large numbers, <link href="alias:page_250">p. 250</link></p>
 </box>
+  <p id="ips9e-ch06-p-037" block_type="TXT">The sample mean <phrase data-math="math_4"></phrase> is the natural estimator of the unknown population mean <em>&#956;</em>. We know that <phrase data-math="math_5"></phrase> is an unbiased estimator of <em>&#956;</em>. More important, the law of large numbers says that the sample mean must approach the population mean as the size of the sample grows. The value <phrase data-math="math_6"></phrase>, therefore, appears to be a reasonable estimate of the mean score <em>&#956;</em> that all 485,264 students would achieve if they took the test.</p>
+
 <p id="ips9e-ch06-p-040" block_type="TXT">But how reliable is this estimate? A second sample of 500 students would surely not give a sample mean of 495 again. Unbiasedness says only that there is no systematic tendency to underestimate or overestimate the truth. Could we plausibly get a sample mean of 485 and a sample mean of 520 in repeated samples? <em>An estimate without an indication of its variability is of little value.</em></p>
 <p id="ips9e-ch06-p-041" block_type="level_2_title"><phrase block_type="h2">Statistical confidence</phrase></p>
-<p id="ips9e-ch06-p-043" block_type="TXT-ni">The unbiasedness of an estimator concerns the center of its sampling distribution, but questions about variation are answered by looking at its spread. The central limit theorem says that if the entire population of SATM scores has mean <em>&#956;</em> and standard deviation <em>&#x3c3;</em>, then in repeated SRSs of size 500, the sample mean <phrase data-math="math_7"></phrase> is approximately <phrase data-math="math_8"></phrase>. Let us suppose that we know that the standard deviation <em>&#x3c3;</em> of SATM scores in our California population is <em>&#x3c3;</em> = 100. (We will see in the next chapter how to proceed when <em>&#x3c3;</em> is not known. For now, we are more interested in statistical reasoning than in details of realistic methods.) This means that in repeated sampling the sample mean <phrase data-math="math_9"></phrase> has an approximately Normal distribution centered at the unknown population mean <em>&#956;</em> and a standard deviation of</p>
-<p id="ips9e-ch06-p-044" block_type="EQ"><phrase data-math="math_10"></phrase></p>
+
 <box id="ips9e-ch06-box-010" block_type="MN-NOT-H">
 <p id="ips9e-ch06-p-042" block_type="MN-NOT1">central limit theorem, <link href="alias:page_298">p. 298</link></p>
-</box>
+</box>  
+  <p id="ips9e-ch06-p-043" block_type="TXT-ni">The unbiasedness of an estimator concerns the center of its sampling distribution, but questions about variation are answered by looking at its spread. The central limit theorem says that if the entire population of SATM scores has mean <em>&#956;</em> and standard deviation <em>&#x3c3;</em>, then in repeated SRSs of size 500, the sample mean <phrase data-math="math_7"></phrase> is approximately <phrase data-math="math_8"></phrase>. Let us suppose that we know that the standard deviation <em>&#x3c3;</em> of SATM scores in our California population is <em>&#x3c3;</em> = 100. (We will see in the next chapter how to proceed when <em>&#x3c3;</em> is not known. For now, we are more interested in statistical reasoning than in details of realistic methods.) This means that in repeated sampling the sample mean <phrase data-math="math_9"></phrase> has an approximately Normal distribution centered at the unknown population mean <em>&#956;</em> and a standard deviation of</p>
+<p id="ips9e-ch06-p-044" block_type="EQ"><phrase data-math="math_10"></phrase></p>
+
 <p id="ips9e_page_345" block_type="page_start" data-margin-content="right">345</p>
 <figure id="ips9e-ch06-fig-002" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="6.2" mmtype="image" mmsrc="" attr="" data-filename="figure_6_2.html">
 <layout align="center" width="medium" border="false"/>
@@ -129,11 +134,12 @@
 </box>
 <p id="ips9e-ch06-p-061" block_type="level_2_title"><phrase block_type="h2">Confidence intervals</phrase></p>
 <p id="ips9e-ch06-p-062" block_type="TXT-ni">In the setting of <link href="example_6_3.html">Example 6.3</link>, the interval of numbers between the values <phrase data-math="math_27"></phrase> is called a <em>95&#37; confidence interval</em> for <em>&#956;</em>. Like most confidence intervals we will discuss, this one has the form</p>
-<p id="ips9e-ch06-p-063" block_type="EQ">estimate &#xb1; margin of error</p>
-<p id="ips9e-ch06-p-064" block_type="TXT-ni">The estimate (<phrase data-math="math_28"></phrase> in this case) is our guess for the value of the unknown parameter. The margin of error (9 here) reflects how accurate we believe our guess is, based on the variability of the estimate, and how confident we are that the procedure will produce an interval that will contain the true population mean <em>&#956;</em>.</p>
 <box id="ips9e-ch06-box-012" block_type="MN-NOT-H">
 <p id="ips9e-ch06-p-065" block_type="MN-NOT1">margin of error, <link href="alias:page_287">p. 287</link></p>
 </box>
+  <p id="ips9e-ch06-p-063" block_type="EQ">estimate &#xb1; margin of error</p>
+<p id="ips9e-ch06-p-064" block_type="TXT-ni">The estimate (<phrase data-math="math_28"></phrase> in this case) is our guess for the value of the unknown parameter. The margin of error (9 here) reflects how accurate we believe our guess is, based on the variability of the estimate, and how confident we are that the procedure will produce an interval that will contain the true population mean <em>&#956;</em>.</p>
+
 <p id="ips9e-ch06-p-066" block_type="TXT"><link href="figure_6_3.html">Figure 6.3</link> illustrates the behavior of 95&#37; confidence intervals in repeated sampling from a Normal distribution with mean <em>&#956;</em>. The center of each interval (marked by a dot) is at <phrase data-math="math_29"></phrase> and varies from sample to sample. The sampling distribution of <phrase data-math="math_30"></phrase> (also Normal) appears at the top of the figure to show the long-term pattern of this variation.</p>
 <p id="ips9e-ch06-p-067" block_type="TXT">The 95&#37; confidence intervals, <phrase data-math="math_31"></phrase> &#xb1; margin of error, from 25 SRSs appear below the sampling distribution. The arrows on either side of the dot (<phrase data-math="math_32"></phrase>) span the confidence interval. All except one of the 25 intervals contain the true value of <em>&#956;</em>. In those intervals that contain <em>&#956;</em>, sometimes <em>&#956;</em> is near the middle of the interval and sometimes it is closer to one of the ends. This again reflects the variation of <phrase data-math="math_33"></phrase>. In practice, we don&#8217;t know the value of <em>&#956;</em>, but we have a method such that, in a very large number of samples, 95&#37; of the confidence intervals will contain <em>&#956;</em>.</p>
 <figure id="ips9e-ch06-fig-003" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="6.3" mmtype="image" mmsrc="" attr="" data-filename="figure_6_3.html">
@@ -157,27 +163,30 @@
 <p id="ips9e-ch06-p-076" block_type="TXT">When generating single samples, the data for the latest SRS are shown below the confidence interval. The spread in these data reflects the spread of the population distribution. This spread is assumed known, and it does not change with sample size. What does change, as you vary <em>n</em>, is the margin of error, since it reflects the uncertainty in the estimate of <em>&#956;</em>. As you increase <em>n</em>, you&#8217;ll find that the span of the interval gets smaller.</p>
 <box id="ips9e-ch06-box-014" numbered="false" block_type="EXR">
 <p id="ips9e-ch06-p-077" block_type="EXR-H">USE YOUR KNOWLEDGE</p>
-<question id="ips9e-ch06-quest-004">
-<p id="ips9e-ch06-p-078" block_type="EXR-QUE-NL-first"><image asset-id="ips9e-ch06-img-008" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="EXR-QUE-N-ri">6.4</phrase> <phrase block_type="EXR-QUE-T-ri">Generating a single confidence interval.</phrase> Using the default settings in the <em>Confidence Interval</em> applet (95&#37; confidence level and <em>n</em> = 20), click &#8220;Sample&#8221; to choose an SRS and display its confidence interval.</p>
-<list id="ips9e-ch06-list-006" type="ordered" block_type="lower-alpha">
+<question id="ips9e-ch06-quest-004" block_type="exercise_6_4.html">
+<p id="ips9e-ch06-p-078" block_type="EXR-QUE-NL-first"><phrase block_type="EXR-QUE-N-ri">6.4</phrase> <phrase block_type="EXR-QUE-T-ri">Generating a single confidence interval.</phrase> Using the default settings in the <em>Confidence Interval</em> applet (95&#37; confidence level and <em>n</em> = 20), click &#8220;Sample&#8221; to choose an SRS and display its confidence interval.</p>
+<p id="ips9e-ch06-p-074a" block_type="Applet icon"><image asset-id="ips9e-ch06-img-007" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/></p>
+  <list id="ips9e-ch06-list-006" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch06-li-017"><p id="ips9e-ch06-p-079" block_type="EXR-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Is the spread in the data, shown as yellow dots below the confidence interval, larger than the span of the confidence interval? Explain why this would typically be the case.</p></li>
 <li id="ips9e-ch06-li-018"><p id="ips9e-ch06-p-080" block_type="EXR-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> For the same data set, you can compare the span of the confidence interval for different values of <em>C</em> by sliding the confidence level to a new value. For the SRS you generated in part (a), what happens to the span of the interval when you move <em>C</em> to 99&#37;? What about 90&#37;? Describe the relationship you find between the confidence level <em>C</em> and the span of the confidence interval.</p></li>
 </list>
 </question>
 <p id="ips9e_page_348" block_type="page_start" data-margin-content="left">348</p>
-<question id="ips9e-ch06-quest-005">
-<p id="ips9e-ch06-p-081" block_type="EXR-QUE-NL-last"><image asset-id="ips9e-ch06-img-009" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <phrase block_type="EXR-QUE-N-ri">6.5</phrase> <phrase block_type="EXR-QUE-T-ri">80&#37; confidence intervals.</phrase> The idea of an 80&#37; confidence interval is that the interval captures the true parameter value in 80&#37; of all samples. That&#8217;s not high enough confidence for practical use, but 80&#37; hits and 20&#37; misses make it easy to see how a confidence interval behaves in repeated samples from the same population.</p>
-<list id="ips9e-ch06-list-007" type="ordered" block_type="lower-alpha">
+<question id="ips9e-ch06-quest-005" block_type="exercise_6_5.html">
+<p id="ips9e-ch06-p-081" block_type="EXR-QUE-NL-last"><phrase block_type="EXR-QUE-N-ri">6.5</phrase> <phrase block_type="EXR-QUE-T-ri">80&#37; confidence intervals.</phrase> The idea of an 80&#37; confidence interval is that the interval captures the true parameter value in 80&#37; of all samples. That&#8217;s not high enough confidence for practical use, but 80&#37; hits and 20&#37; misses make it easy to see how a confidence interval behaves in repeated samples from the same population.</p>
+<p id="ips9e-ch06-p-074b" block_type="Applet icon"><image asset-id="ips9e-ch06-img-007" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/></p>
+  <list id="ips9e-ch06-list-007" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch06-li-019"><p id="ips9e-ch06-p-082" block_type="EXR-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Set the confidence level in the <em>Confidence Interval</em> applet to 80&#37;. Click &#8220;Sample 25&#8221; to choose 25 SRSs and display their confidence intervals. How many of the 25 intervals contain the true mean <em>&#956;</em>? What proportion contain the true mean?</p></li>
 <li id="ips9e-ch06-li-020"><p id="ips9e-ch06-p-083" block_type="EXR-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> We can&#8217;t determine whether a new SRS will result in an interval that contains <em>&#956;</em> or not. The confidence level only tells us what percent will contain <em>&#956;</em> in the long run. Click &#8220;Sample 25&#8221; again to get the confidence intervals from 50 SRSs. What proportion hit? Keep clicking &#8220;Sample 25&#8221; and record the proportion of hits among 100, 200, 300, 400, and 500 SRSs. As the number of samples increases, we expect the percent of captures to get closer to the confidence level, 80&#37;. Do you find this pattern in your results?</p></li>
 </list>
 </question>
 </box>
 <p id="ips9e-ch06-p-084" block_type="level_2_title"><phrase block_type="h2">Confidence interval for a population mean</phrase></p>
-<p id="ips9e-ch06-p-085" block_type="TXT-ni">We now construct a level <em>C</em> confidence interval for the mean <em>&#956;</em> of a population when the data are an SRS of size <em>n</em>. The construction is based on the sampling distribution of the sample mean <phrase data-math="math_36"></phrase>. This distribution is exactly <phrase data-math="math_37"></phrase> when the population has the <em>N</em>(<em>&#956;</em>, <em>&#x3c3;</em>) distribution. The central limit theorem says that this same sampling distribution is approximately correct for large samples whenever the population mean and standard deviation are <em>&#956;</em> and <em>&#x3c3;</em>. For now, we will assume we are in one of these two situations. We discuss what we mean by &#8220;large sample&#8221; after we briefly study these intervals.</p>
 <box id="ips9e-ch06-box-015" block_type="MN-NOT-H">
 <p id="ips9e-ch06-p-086" block_type="MN-NOT1">central limit theorem, <link href="alias:page_298">p. 298</link></p>
 </box>
+  <p id="ips9e-ch06-p-085" block_type="TXT-ni">We now construct a level <em>C</em> confidence interval for the mean <em>&#956;</em> of a population when the data are an SRS of size <em>n</em>. The construction is based on the sampling distribution of the sample mean <phrase data-math="math_36"></phrase>. This distribution is exactly <phrase data-math="math_37"></phrase> when the population has the <em>N</em>(<em>&#956;</em>, <em>&#x3c3;</em>) distribution. The central limit theorem says that this same sampling distribution is approximately correct for large samples whenever the population mean and standard deviation are <em>&#956;</em> and <em>&#x3c3;</em>. For now, we will assume we are in one of these two situations. We discuss what we mean by &#8220;large sample&#8221; after we briefly study these intervals.</p>
+
 <p id="ips9e-ch06-p-087" block_type="TXT">Our construction of a 95&#37; confidence interval for the mean SATM score began by noting that any Normal distribution has probability about 0.95 within &#xb1;2 standard deviations of its mean. To construct a level <em>C</em> confidence interval we first catch the central <em>C</em> area under a Normal curve. That is, we must find the number <em>z</em>* such that any Normal distribution has probability <em>C</em> within &#xb1;<em>z</em>* standard deviations of its mean.</p>
 <p id="ips9e-ch06-p-088" block_type="TXT">Because all Normal distributions have the same standardized form, we can obtain everything we need from the standard Normal curve. <link href="figure_6_4.html">Figure 6.4</link> shows how <em>C</em> and <em>z</em>* are related. Values of <em>z</em>* for many choices of <em>C</em> appear in the row labeled <em>z</em>* at the bottom of <link href="table_d.html">Table D</link>. Here are the most important entries from that row:</p>
 <table id="ips9e-ch06-untab-001" numbered="false" block_type="UN-TABLE" attr="40">
@@ -237,7 +246,6 @@
 <p id="ips9e-ch06-p-114" block_type="EXP-N">EXAMPLE 6.5</p>
 <p id="ips9e-ch06-p-115" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">How sample size affects the confidence interval.</phrase> As in <link href="example_6_4.html">Example 6.4</link>, the sample mean of the college savings fund contribution is &#36;1768 and the population standard deviation is &#36;1483. Suppose that the sample size is only 177 but still large enough for us to rely on the central limit theorem. In this case, the margin of error for 95&#37; confidence is</p>
 <p id="ips9e-ch06-p-116" block_type="EXP-EQ"><phrase data-math="math_50"></phrase></p>
-<p id="ips9e-ch06-p-117" block_type="EXP-EQ">= 111.47</p>
 <p id="ips9e-ch06-p-118" block_type="EXP-TXT-ni">and the approximate 95&#37; confidence interval is</p>
 <p id="ips9e-ch06-p-119" block_type="EXP-EQ"><phrase data-math="math_51"></phrase></p>
 <p id="ips9e-ch06-p-120" block_type="EXP-EQ">= (1657, 1879)</p>
@@ -278,7 +286,6 @@
 <p id="ips9e-ch06-p-137" block_type="EXP-N">EXAMPLE 6.6</p>
 <p id="ips9e-ch06-p-138" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">How the confidence level affects the confidence interval.</phrase> Suppose that for the college saving fund contribution data in <link href="example_6_4.html">Example 6.4</link> (page 350), we wanted 99&#37; confidence. <link href="table_d.html">Table D</link> tells us that for 99&#37; confidence, <em>z</em>* = 2.576. The margin of error for 99&#37; confidence based on 1593 observations is</p>
 <p id="ips9e-ch06-p-139" block_type="EXP-EQ"><phrase data-math="math_56"></phrase></p>
-<p id="ips9e-ch06-p-140" block_type="EXP-EQ">= 95.71</p>
 <p id="ips9e-ch06-p-141" block_type="EXP-TXT-ni">and the 99&#37; confidence interval is</p>
 <p id="ips9e-ch06-p-142" block_type="EXP-EQ"><phrase data-math="math_57"></phrase></p>
 <p id="ips9e-ch06-p-143" block_type="EXP-EQ">= (1672, 1864)</p>
@@ -341,7 +348,7 @@
 <li id="ips9e-ch06-li-027"><p id="ips9e-ch06-p-178" block_type="BL"><phrase block_type="maker">&#8226;</phrase> Because <phrase data-math="math_64"></phrase> is not a resistant measure, outliers can have a large effect on the confidence interval. <em>You should search for outliers and try to correct them or justify their removal before computing the interval</em>. If the outliers cannot be removed, ask your statistical consultant about procedures that are not sensitive to outliers.</p></li>
 <li id="ips9e-ch06-li-028"><p id="ips9e-ch06-p-179" block_type="BL"><phrase block_type="maker">&#8226;</phrase> If the sample size is small and the population is not Normal, the true confidence level will be different from the value <em>C</em> used in computing the interval. <em>Prior to any calculations, examine your data carefully for skewness and other signs of non-Normality.</em> Remember though that the interval relies only on the distribution of <phrase data-math="math_65"></phrase>, which even for quite small sample sizes is much closer to Normal than is the distribution of the individual observations. When <em>n</em> &#x2265; 15, the confidence level is not greatly disturbed by non-Normal populations unless extreme outliers or quite strong skewness are present. Our college fund contribution data in <link href="example_6_4.html">Example 6.4</link> are very likely skewed, but because of the large sample size, we are confident that the distribution of the sample mean will be approximately Normal.</p>
 <box id="ips9e-ch06-box-025" block_type="MN-NOT-H">
-<p id="ips9e-ch06-p-180" block_type="MN-NOT1">standard deviation <em>s</em>, <link href="alias:page_38">p. 38</link></p></box></li>
+<p id="ips9e-ch06-p-180" block_type="MN-NOT1">standard<br/>deviation <em>s</em>, <link href="alias:page_38">p. 38</link></p></box></li>
 <li id="ips9e-ch06-li-029"><p id="ips9e-ch06-p-181" block_type="BL-last"><phrase block_type="maker">&#8226;</phrase> The interval <phrase data-math="math_66"></phrase> assumes that the standard deviation <em>&#x3c3;</em> of the population is known. This unrealistic requirement renders the interval of little use in statistical practice. We will learn in the next chapter what to do when <em>&#x3c3;</em> is unknown. If, however, the sample is large, the sample standard deviation <em>s</em> will be close to the unknown <em>&#x3c3;</em>. The interval <phrase data-math="math_67"></phrase> is then an approximate confidence interval for <em>&#956;</em>.</p></li>
 </list>
 <p id="ips9e-ch06-p-182" block_type="TXT">The most important caution concerning confidence intervals is a consequence of the first of these warnings. <em>The margin of error in a confidence interval covers only random sampling errors.</em> The margin of error is obtained from the sampling distribution and indicates how much error can be expected because of chance variation in randomized data production.</p>
@@ -489,7 +496,7 @@
 <p id="ips9e-ch06-p-253" block_type="SR-X-QUE-NL">The poll uses a complex multistage sample design, but the sample percent has approximately a Normal sampling distribution.</p>
 <list id="ips9e-ch06-list-021" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch06-li-066"><p id="ips9e-ch06-p-254" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> The announced poll result was 54.1&#37; &#xb1; 1&#37;. Can we be certain that the true population percent falls in this interval? Explain your answer.</p></li>
-<li id="ips9e-ch06-li-067"><p id="ips9e-ch06-p-255" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Explain to someone who knows no statistics what the announced result 54.1&#37; &#xb1; 1&#37; means.</p></li>
+<li id="ips9e-ch06-li-067"><p id="ips9e-ch06-p-255" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Explain to someone who knows no statistics what the announced result <phrase block_type="nowrap">54.1&#37; &#xb1; 1&#37;</phrase> means.</p></li>
 <li id="ips9e-ch06-li-068"><p id="ips9e-ch06-p-256" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(c)</phrase> This confidence interval has the same form we have met earlier:</p>
 <p id="ips9e-ch06-p-257" block_type="SR-Eq">estimate &#xb1; <em>z</em>* <em>&#x3c3;</em><sub>estimate</sub></p>
 <p id="ips9e-ch06-p-258" block_type="SR-X-QUE-NL-lvl2">What is the standard deviation <em>&#x3c3;</em><sub>estimate</sub> of the estimated percent?</p></li>
@@ -609,7 +616,7 @@
 </list>
 <p id="ips9e-ch06-p-303" block_type="TXT-ni">Because this probability is so small, we prefer the second conclusion: the average current income contribution from parents for undergraduates attending public colleges and for undergraduates attending private colleges is different, with the private school group contribution higher than that of the public school group.</p>
 <p id="ips9e-ch06-p-304" block_type="TXT">The probabilities in <link href="example_6_8.html">Examples 6.8</link> and <link href="example_6_9.html">6.9</link> are measures of the compatibility of the data (a difference in means of &#36;425 and &#36;1639) with the <em>null hypothesis</em> that there is no difference in the true means. <link href="figure_6_7.html">Figure 6.7</link> and <link href="figure_6_8.html">6.8</link> compare the two results graphically. For each, a Normal curve centered at 0 is the sampling distribution. You can see from <link href="figure_6_7.html">Figure 6.7</link> that we should not be particularly surprised to observe the difference &#36;425, but the difference &#36;1639 in <link href="figure_6_8.html">Figure 6.8</link> is clearly an unusual observation. We will now consider some of the formal aspects of significance testing.</p>
-<box block_type="sidebyside">
+<box id="idm372064" block_type="sidebyside">
 <figure id="ips9e-ch06-fig-007" block_type="FIGURE" data-caption-compass="S" numbered="true" number="6.7" mmtype="image" mmsrc="" attr="" data-filename="figure_6_7.html">
 <layout align="left" width="medium" border="false"/>
 <image asset-id="ips9e-ch06-img-021" alt="image" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_07.jpg"/>
@@ -640,7 +647,7 @@
 <p id="ips9e-ch06-p-317" block_type="EQ"><em>H<sub>a</sub></em>: the difference in population means is not zero</p>
 <p id="ips9e-ch06-p-318" block_type="Caution icon"><image asset-id="ips9e-ch06-img-023" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch06-p-319" block_type="TXT-ni"><em>Hypotheses always refer to some populations or a model, not to a particular outcome. For this reason, we must state H</em><sub>0</sub> <em>and H<sub>a</sub> in terms of population parameters.</em></p>
-<p id="ips9e-ch06-p-320" block_type="TXT">Because <em>H<sub>a</sub></em> expresses the effect that we hope to find evidence <em>for,</em> we will sometimes begin with <em>H<sub>a</sub></em> and then set up <em>H</em><sub>0</sub> as the statement that the hoped-for effect is not present. Stating <em>H<sub>a</sub></em>, however, is often the more difficult task. It is not always clear, in particular, whether <em>H<sub>a</sub></em> should be <termref term="one-sided or two-sided"><strong>one-sided</strong> or <strong>two-sided</strong></termref><phrase block_type="MN-GL-term">one-sided or two-sided alternatives</phrase>, which refers to whether a parameter differs from its null hypothesis value in a specific direction or in either direction.</p>
+<p id="ips9e-ch06-p-320" block_type="TXT">Because <em>H<sub>a</sub></em> expresses the effect that we hope to find evidence <em>for,</em> we will sometimes begin with <em>H<sub>a</sub></em> and then set up <em>H</em><sub>0</sub> as the statement that the hoped-for effect is not present. Stating <em>H<sub>a</sub></em>, however, is often the more difficult task. It is not always clear, in particular, whether <em>H<sub>a</sub></em> should be <termref term="one-sided or two-sided"><strong>one-sided</strong> or <strong>two-sided</strong></termref><phrase block_type="MN-GL-term">one-sided or<br/>two-sided alternatives</phrase>, which refers to whether a parameter differs from its null hypothesis value in a specific direction or in either direction.</p>
 <p id="ips9e-ch06-p-321" block_type="Caution icon"><image asset-id="ips9e-ch06-img-024" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch06-p-322" block_type="TXT">The alternative hypothesis should express the hopes or suspicions we bring to the data. <em>It is cheating to first look at the data and then frame H<sub>a</sub> to fit what the data show.</em> If you do not have a specific direction firmly in mind in advance, you must use a two-sided alternative. Moreover, some users of statistics argue that we should always use a two-sided alternative.</p>
 <box id="ips9e-ch06-box-032" numbered="false" block_type="EXR">
@@ -679,10 +686,10 @@
 <p id="ips9e-ch06-p-344" block_type="EXP-EQ"><phrase data-math="math_80"></phrase></p>
 <p id="ips9e-ch06-p-345" block_type="EXP-TXT-ni">We have observed a sample estimate that is one and one-fifth standard deviations away from the hypothesized value of the parameter.</p>
 </box>
-<p id="ips9e-ch06-p-346" block_type="TXT">Because the sample sizes are sufficiently large for us to conclude that the distribution of the sample estimate is approximately Normal, the standardized test statistic <em>z</em> will have approximately the <em>N</em>(0, 1) distribution. We will use facts about the Normal distribution in what follows.</p>
 <box id="ips9e-ch06-box-035" block_type="MN-NOT-H">
 <p id="ips9e-ch06-p-347" block_type="MN-NOT1">Normal distribution, <link href="alias:page_56">p. 56</link></p>
 </box>
+<p id="ips9e-ch06-p-346" block_type="TXT">Because the sample sizes are sufficiently large for us to conclude that the distribution of the sample estimate is approximately Normal, the standardized test statistic <em>z</em> will have approximately the <em>N</em>(0, 1) distribution. We will use facts about the Normal distribution in what follows.</p>
 <p id="ips9e-ch06-p-348" block_type="level_2_title"><phrase block_type="h2"><em>P</em>-values</phrase></p>
 <p id="ips9e-ch06-p-349" block_type="TXT-ni">If all test statistics were Normal, we could base our conclusions on the value of the <em>z</em> test statistic. In fact, the Supreme Court of the United States has said that &#8220;two or three standard deviations&#8221; (<em>z</em> = 2 or 3) is its criterion for rejecting <em>H</em><sub>0</sub> (see <link href="exercise_6_44.html">Exercise 6.44</link> on page 370), and this is the criterion used in most applications involving the law. But because not all test statistics are Normal, we use the language of probability to express the meaning of a test statistic.</p>
 <p id="ips9e_page_366" block_type="page_start" data-margin-content="left">366</p>
@@ -800,10 +807,10 @@
 <p id="ips9e-ch06-p-416" block_type="EQ"><em>H</em><sub>0</sub>: <em>&#956;</em> = <em>&#956;</em><sub>0</sub></p>
 <p id="ips9e-ch06-p-417" block_type="TXT-ni">where <em>&#956;</em><sub>0</sub> is the hypothesized value of <em>&#956;</em> that we would like to examine.</p>
 <p id="ips9e-ch06-p-418" block_type="TXT">The test is based on data summarized as an estimate of the parameter. For a population mean this is the sample mean <phrase data-math="math_85"></phrase>. Our test statistic measures the difference between the sample estimate and the hypothesized parameter in terms of standard deviations of the test statistic:</p>
-<p id="ips9e-ch06-p-419" block_type="EQ"><phrase data-math="math_86"></phrase></p>
 <box id="ips9e-ch06-box-043" block_type="MN-NOT-H">
 <p id="ips9e-ch06-p-420" block_type="MN-NOT1">distribution of sample mean, <link href="alias:page_298">p. 298</link></p>
 </box>
+<p id="ips9e-ch06-p-419" block_type="EQ"><phrase data-math="math_86"></phrase></p>
 <p id="ips9e-ch06-p-421" block_type="TXT-ni">Recall from <link href="ips9e-ch05.xml">Chapter 5</link> that the standard deviation of <phrase data-math="math_87"></phrase> is <phrase data-math="math_88"></phrase>. Therefore, the test statistic is</p>
 <p id="ips9e-ch06-p-422" block_type="EQ"><phrase data-math="math_89"></phrase></p>
 <box id="ips9e-ch06-box-044" block_type="MN-NOT-H">
@@ -1292,7 +1299,7 @@
 <p id="ips9e-ch06-p-655" block_type="EXR-QUE-NL-first"><phrase block_type="EXR-QUE-N-ri">6.90</phrase> <phrase block_type="EXR-QUE-T-ri">Is it significant?</phrase> More than 200,000 people worldwide take the GMAT examination each year when they apply for MBA programs. Their scores vary Normally with mean <em>&#956;</em> = 540 and standard deviation <em>&#x3c3;</em> = 100. One hundred students go through a rigorous training program designed to raise their GMAT scores. Test the following hypotheses about the training program</p>
 <p id="ips9e-ch06-p-656" block_type="EXR-EQ"><em>H</em><sub>0</sub>: <em>&#956;</em> = 540</p>
 <p id="ips9e-ch06-p-657" block_type="EXR-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em> &#x3e; 540</p>
-<p id="ips9e-ch06-p-658" block_type="EXR-QUE-NL-first">in each of the following situations.</p>
+<p id="ips9e-ch06-p-658">in each of the following situations.</p>
 <list id="ips9e-ch06-list-052" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch06-li-158"><p id="ips9e-ch06-p-659" block_type="EXR-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> The students&#8217; average score is <phrase data-math="math_123"></phrase>. Is this result significant at the 5&#37; level?</p></li>
 <li id="ips9e-ch06-li-159"><p id="ips9e-ch06-p-660" block_type="EXR-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Now suppose that the average score is <phrase data-math="math_124"></phrase>. Is this result significant at the 5&#37; level?</p></li>
@@ -1323,17 +1330,18 @@
 <p id="ips9e-ch06-p-675" block_type="level_2_title"><phrase block_type="h2">Statistical inference is not valid for all sets of data</phrase></p>
 <p id="ips9e-ch06-p-676" block_type="Caution icon"><image asset-id="ips9e-ch06-img-052" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch06-p-677" block_type="TXT-ni">In <link href="ips9e-ch03.xml">Chapter 3</link>, we learned that badly designed surveys or experiments often produce invalid results. <em>Formal statistical inference cannot correct basic flaws in the design.</em></p>
-<box block_type="MN-NOT-H">
+<box id="idm1956112" block_type="MN-NOT-H">
 <p id="ips9e-ch06-p-678" block_type="MN-NOT1">design of experiments, <link href="alias:page_171">p. 171</link></p>
 </box>
 <p id="ips9e_page_388" block_type="page_start" data-margin-content="left">388</p>
 <box id="ips9e-ch06-box-066" numbered="false" block_type="EXP" data-filename="example_6_27.html">
 <p id="ips9e-ch06-p-679" block_type="EXP-N">EXAMPLE 6.27</p>
 <p id="ips9e-ch06-p-680" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">English vocabulary and studying a foreign language.</phrase> There is no doubt that there is a significant difference in English vocabulary scores between high school seniors who have studied a foreign language and those who have not. But because the effect of actually studying a language is confounded with the differences between students who choose language study and those who do not, this statistical significance is hard to interpret. The most plausible explanation is that students who were already good at English chose to study another language. A randomized comparative experiment would isolate the actual effect of language study and so make significance meaningful. Do you think it would be ethical to do such a study?</p>
-</box>
 <box block_type="MN-NOT-H">
 <p id="ips9e-ch06-p-681" block_type="MN-NOT1">confounding, <link href="alias:page_150">p. 150</link></p>
 </box>
+  </box>
+
 <p id="ips9e-ch06-p-682" block_type="Caution icon"><image asset-id="ips9e-ch06-img-053" alt="image" src="asset/global_images/BPScaution-icon.jpg"/></p>
 <p id="ips9e-ch06-p-683" block_type="TXT">Tests of significance and confidence intervals are based on the laws of probability. Randomization in sampling or experimentation ensures that these laws apply. But we must often analyze data that do not arise from randomized samples or experiments. <em>To apply statistical inference to such data, we must have confidence in a probability model for the data.</em> The diameters of successive holes bored in auto engine blocks during production, for example, may behave like independent observations from a Normal distribution. We can check this probability model by examining the data. If the Normal distribution model appears approximately correct, we can apply the methods of this chapter to do inference about the process mean diameter <em>&#956;</em>.</p>
 <box id="ips9e-ch06-box-067" numbered="false" block_type="EXR">
@@ -1492,13 +1500,15 @@
 <p id="ips9e-ch06-p-760" block_type="SLL">Because the significance level is <em>&#x3b1;</em> = 0.05, this event has probability 0.05 of occurring <em>when the population mean &#956; is 0.</em></p>
 <p id="ips9e-ch06-p-761" block_type="SL"><strong>Step 3.</strong> The power to detect the alternative <em>&#956;</em> = 1&#37; is the probability that <em>H</em><sub>0</sub> will be rejected <em>when in fact &#956;</em> = <em>1&#37;.</em> We calculate this probability by standardizing <phrase data-math="math_133"></phrase>, using the value <em>&#956;</em> = 1, the population standard deviation <em>&#x3c3;</em> = 2, and the sample size <em>n</em> = 25. The power is</p>
 <p id="ips9e_page_393" block_type="page_start" data-margin-content="right">393</p>
-<figure id="ips9e-ch06-fig-016" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="6.16" mmtype="image" mmsrc="" attr="" data-filename="figure_6_16.html">
+<p id="ips9e-ch06-p-762" block_type="EQ"><phrase data-math="math_135"></phrase></p>
+<p id="ips9e-ch06-p-763" block_type="EQ">= <em>P</em>(<em>Z</em> &#x2265; &#8722;0.855) = 0.80</p>
+  <figure id="ips9e-ch06-fig-016" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="6.16" mmtype="image" mmsrc="" attr="" data-filename="figure_6_16.html">
 <layout align="center" width="medium" border="false"/>
 <image asset-id="ips9e-ch06-img-060" alt="image" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_16.jpg"/>
 <caption><phrase block_type="FG-N-ri">Figure 6.16</phrase> <phrase block_type="FG-CAP">The sampling distributions of <phrase data-math="math_134"></phrase> when <em>&#956;</em> = 0 and when <em>&#956;</em> = 1. The power is the probability that the test rejects <em>H</em><sub>0</sub> when the alternative is true.</phrase></caption>
 </figure>
-<p id="ips9e-ch06-p-762" block_type="EQ"><phrase data-math="math_135"></phrase></p>
-<p id="ips9e-ch06-p-763" block_type="EQ">= <em>P</em>(<em>Z</em> &#x2265; &#8722;0.855) = 0.80</p>
+
+
 <p id="ips9e-ch06-p-764" block_type="TXT"><link href="figure_6_16.html">Figure 6.16</link> illustrates the power with the sampling distribution of <phrase data-math="math_136"></phrase> when <em>&#956;</em> = 1. This significance test rejects the null hypothesis that exercise has no effect on TBBMC 80&#37; of the time if the true effect of exercise is a 1&#37; increase in TBBMC. If the true effect of exercise is a greater percent increase, the test will have greater power; it will reject with a higher probability.</p>
 <p id="ips9e-ch06-p-765" block_type="TXT">Here is another example of a power calculation, this time for a two-sided <em>z</em> test.</p>
 <box id="ips9e-ch06-box-072" numbered="false" block_type="EXP" data-filename="example_6_30.html">
@@ -1560,7 +1570,7 @@
 <p id="ips9e-ch06-p-801" block_type="TXT-ni">on the basis of a sample of bearings.</p>
 <p id="ips9e-ch06-p-802" block_type="TXT">We hope that our decision will be correct, but sometimes it will be wrong. There are two types of incorrect decisions. We can accept a bad lot of bearings, or we can reject a good lot. Accepting a bad lot injures the consumer, while rejecting a good lot hurts the producer. To help distinguish these two types of error, we give them specific names.</p>
 <p id="ips9e_page_397" block_type="page_start" data-margin-content="right">397</p>
-<box block_type="sidebyside">
+<box id="idp5222688" block_type="sidebyside">
 <figure id="ips9e-ch06-fig-019" block_type="FIGURE" data-caption-compass="S" numbered="true" number="6.19" mmtype="image" mmsrc="" attr="" data-filename="figure_6_19.html">
 <layout align="left" width="medium" border="false"/>
 <image asset-id="ips9e-ch06-img-063" alt="image" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_19.jpg"/>
@@ -1833,10 +1843,10 @@
 </list>
 </question>
 <p id="ips9e_page_403" block_type="page_start" data-margin-content="right">403</p>
-<question id="ips9e-ch06-quest-128">
+<question id="ips9e-ch06-quest-128" block_type="exercise_6_128.html">
 <p id="ips9e-ch06-p-899" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch06-img-074" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <image asset-id="ips9e-ch06-img-075" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">6.128 Coverage percent of 95&#37; confidence interval.</phrase> For this exercise, you will use the <em>Confidence Interval</em> applet. Set the confidence level at 95&#37; and click the &#8220;Sample&#8221; button 10 times to simulate 10 confidence intervals. Record the percent hit. Simulate another 10 intervals by clicking another 10 times (do not click the &#8220;Reset&#8221; button). Record the percent hit for your 20 intervals. Repeat the process of simulating 10 additional intervals and recording the results until you have a total of 200 intervals. Create a time plot of your results and write a summary of what you have found.</p>
 </question>
-<question id="ips9e-ch06-quest-129">
+<question id="ips9e-ch06-quest-129" block_type="exercise_6_129.html">
 <p id="ips9e-ch06-p-900" block_type="CR-X-QUE-NL"><image asset-id="ips9e-ch06-img-076" alt="image" src="asset/global_images/BPSapplet-icon.jpg"/> <image asset-id="ips9e-ch06-img-077" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">6.129 Coverage percent of 90&#37; confidence interval.</phrase> Refer to the previous exercise. Do the simulations and report the results for 90&#37; confidence.</p>
 </question>
 <question id="ips9e-ch06-quest-130" block_type="exercise_6_130.html">

@@ -26,5 +26,9 @@
   {
     "outputFile": "ebook/css/ips9e_ch5.css",
     "inputFile": "ebook/css/ips9e_ch5.less"
+  },
+  {
+    "outputFile": "ebook/css/ips9e_ch6.css",
+    "inputFile": "ebook/css/ips9e_ch6.less"
   }
 ]
