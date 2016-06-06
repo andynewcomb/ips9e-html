@@ -1311,6 +1311,7 @@
     <Content Include="docs\05_Moore_13387_Ch05_281-340_Hires.pdf" />
     <Content Include="docs\06_MooreIPS9e_13387_Ch06_341-406_2nd_Pass.pdf" />
     <Content Include="docs\07_MooreIPS9e_13387_Ch07_407-482_2nd_Pass.pdf" />
+    <Content Include="ebook\css\ips9e_ch7.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
