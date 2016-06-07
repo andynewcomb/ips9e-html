@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<title>Example 7.27</title>
+<link href = "../../../../css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/ips9e_ch7.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../supp_win.css" media="screen" rel="stylesheet" type="text/css" >
+</head>
+<body id="supp_win">
+<div id="manuscript" class="example">
+<div data-type="section" data-block_type="h1">
+<div data-type="box" data-block_type="EXP" data-filename="example_7_27.html" id="ips9e-ch07-box-114"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-114"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0999"><p>EXAMPLE 7.27</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p01000"><p><span data-block_type="EXP-T-ri">The effect of altering a software parameter.</span> <span data-type="link" data-href="example_7_7.html">Example 7.7</span> (page 419) describes an experiment to compare the measurements obtained from two software algorithms. In that example, we used the matched pairs <em>t</em> test on these data, despite some skewness, which makes the <em>P</em>-value only roughly correct. The sign test is based on the following simple observation: of the 51 parts measured, 29 had a larger measurement with the option off and 22 had a larger measurement with the option on.</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-115"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-115"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="GEPARTS" data-block_type="rl_dataset" id="ips9e-ch07-p01001"><p><span>GEPARTS</span></p></div>
+<div data-dataset data-block_type="rl_crunchit" id="idp10543216"><p></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p01002"><p>To perform a significance test based on these counts, let <em>p</em> be the probability that a randomly chosen part would have a larger measurement with the option turned on. The null hypothesis of &#8220;no effect&#8217;&#8217; says that these two measurements are just repeat measurements, so the measurement with the option off is equally likely to be larger or smaller than the measurement with the option on. Therefore, we want to test</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p01003"><p><em>H</em><sub>0</sub>: <em>p</em> = 1/2</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p01004"><p><em>H<sub>a</sub></em>: <em>p</em> &#8800; 1/2</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-116"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-116"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p01006"><p>binomial distribution, <span data-type="link" data-href="alias:page_312">p. 312</span></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p01007"><p>The 51 parts are independent trials, so the number that had larger measurements with the option off has the binomial distribution <em>B</em>(51, 1/2) if <em>H</em><sub>0</sub> is true. The <em>P</em>-value for the observed count 29 is, therefore, 2<em>P</em>(<em>X</em> &#8805; 29), where <em>X</em> has the <em>B</em>(51, 1/2) distribution. You can compute this probability with software or the Normal approximation to the binomial:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p01008"><p><span data-math="math_314"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p01009"><p> = 2<em>P</em> (<em>Z</em> &#8805; 0.98)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p01010"><p> = 2(0.1635)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p01011"><p> = 0.3270</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_473"><p>473</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p01013"><p>As in <span data-type="link" data-href="example_7_7.html">Example 7.7</span>, there is not strong evidence that the two measurements are different.</p></div>
+</div></div>
+</div>
+</div>
+<script type = "text/javascript" src="../../../../js/utilities.js"></script>
+<script type = "text/javascript" src="../../../../js/query_types.js"></script>
+<script type = "text/javascript" src="../../../../js/player.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery_extensions.js"></script>
+<script type = "text/javascript" src="../../../../js/swfobject.js"></script>
+<script type = "text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type = "text/javascript" src="../../../../js/digfir_ebook_fw.js"></script>
+<script type = "text/javascript" src="../../../../js/ips9e.js"></script>
+<script type = "text/javascript" src="../../../../js/ips9e_ch7.js"></script>
+<script type = "text/javascript" src="../../../supp_win.js"></script>
+<script type = "text/javascript">
+
+//<!--
+$(window).ready(function ()
+    {
+        player.initialize('52c6e83c757a2ef70c000000');
+    });
+//-->
+</script>
+</body>
+</html>

@@ -144,8 +144,10 @@ var suppwins_Player_subtype = Player_subtype.extend({
              var scale = 1.15;
              figImg.css('width', 'auto');
              var w = parseInt(figImg.css('width'));
-             var neww = w * scale;
-             figImg.css('width', neww );
+	     if(w > 0){ //sanity check. this fails sometimes, for some odd reason.
+             	var neww = w * scale;
+             	figImg.css('width', neww );
+	     }
         }
 
      } // end initialize2

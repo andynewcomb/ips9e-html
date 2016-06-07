@@ -1197,6 +1197,12 @@
     <Content Include="ebook\css\ips9e_ch6.min.css">
       <DependentUpon>ips9e_ch6.css</DependentUpon>
     </Content>
+    <Content Include="ebook\css\ips9e_ch7.css">
+      <DependentUpon>ips9e_ch7.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\ips9e_ch7.min.css">
+      <DependentUpon>ips9e_ch7.css</DependentUpon>
+    </Content>
     <Content Include="ebook\ips9e_ch2_1.html" />
     <Content Include="ebook\ips9e_ch2_10.html" />
     <Content Include="ebook\ips9e_ch2_11.html" />
@@ -1329,7 +1335,9 @@
     <Content Include="xml\ips9e-ch04.xml" />
     <Content Include="xml\ips9e-ch05.xml" />
     <Content Include="xml\ips9e-ch06.xml" />
-    <Content Include="xml\ips9e-ch07.xml" />
+    <Content Include="xml\ips9e-ch07.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="xml\math2js.pl" />
     <None Include="xml\xsd\digfir_manuscript.xsd">
       <SubType>Designer</SubType>

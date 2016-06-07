@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<title>Example 7.12</title>
+<link href = "../../../../css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../../css/ips9e_ch7.css" media="screen" rel="stylesheet" type="text/css" >
+<link href = "../../../supp_win.css" media="screen" rel="stylesheet" type="text/css" >
+</head>
+<body id="supp_win">
+<div id="manuscript" class="example">
+<div data-type="section" data-block_type="h1">
+<div data-type="box" data-block_type="EXP" data-filename="example_7_12.html" id="ips9e-ch07-box-65"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-65"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0508"><p>EXAMPLE 7.12</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0509"><p><span data-block_type="EXP-T-ri">Computing an approximate 95% confidence interval for the difference in means.</span> First examine the data:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-20" data-layout-align data-layout-width data-layout-border data-mmsrc data-attr="50"><table><tbody>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>Control</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>Treatment</strong></td>
+</tr>
+<tr>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>970</strong></td>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>1</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+</tr>
+<tr>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>860</strong></td>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>2</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>4</strong></td>
+</tr>
+<tr>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>773</strong></td>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>3</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>3</strong></td>
+</tr>
+<tr>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>8632221</strong></td>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>4</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>3334699</strong></td>
+</tr>
+<tr>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>5543</strong></td>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>5</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>23467789</strong></td>
+</tr>
+<tr>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>20</strong></td>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>6</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>127</strong></td>
+</tr>
+<tr>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"></td>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>7</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>1</strong></td>
+</tr>
+<tr>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>5</strong></td>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="center"><strong>8</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+</tr>
+</tbody></table></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-66"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-66"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="DRP" data-block_type="rl_dataset" id="ips9e-ch07-p0510"><p><span>DRP</span></p></div>
+<div data-dataset data-block_type="rl_crunchit" id="idp1971600"><p></p></div>
+</div></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_7_12.html" data-figure-id="ips9e-ch07-fig-015" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+
+<img id src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_12.jpg" data-figure-id="ips9e-ch07-fig-015" data-layout-width="large" data-mmtype="image" data-mmsrc data-attr alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.12: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.12</span> <span data-block_type="FG-CAP">Normal quantile plots of the DRP scores in <span data-type="link" data-href="table_7_3.html">Table 7.3</span>.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0511"><p>The back-to-back stemplot suggests that there is a mild outlier in the control group but no deviation from Normality serious enough to forbid use of <em>t</em> procedures. Separate Normal quantile plots for both groups (<span data-type="link" data-href="figure_7_12.html">Figure 7.12</span>) confirm that both distributions are approximately Normal. The scores of the treatment group appear to be somewhat higher than those of the control group. The summary statistics are</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_439"><p>439</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-21" data-layout-align data-layout-width data-layout-border data-mmsrc data-attr="50"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="center">Group</th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>n</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><span data-math="math_174"></span></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><em>s</em></th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">Treatment</td>
+<td data-block_type="EXP-TB1-TXT" align="center">21</td>
+<td data-block_type="EXP-TB1-TXT" align="char">51.48</td>
+<td data-block_type="EXP-TB1-TXT" align="char">11.01</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center">Control</td>
+<td data-block_type="EXP-TB1-TXT" align="center">23</td>
+<td data-block_type="EXP-TB1-TXT" align="char">41.52</td>
+<td data-block_type="EXP-TB1-TXT" align="char">17.15</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0513"><p>To describe the size of the treatment effect, let&#8217;s construct a confidence interval for the difference between the treatment group and the control group means. The interval is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0514"><p><span data-math="math_175"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0515"><p> = 9.96 &#177; 4.31<em>t</em>*</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-22" data-layout-align data-layout-width data-layout-border data-mmsrc data-attr="50"><table><tbody>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-COLHD" align="center" colspan="4">df = 20</td>
+</tr>
+<tr class="bborder">
+<td class="lborder" data-block_type="EXP-TB1-TXT" align="center">
+<em>t</em>*</td>
+<td class="lborder" data-block_type="EXP-TB1-TXT" align="char">1.725</td>
+<td data-block_type="EXP-TB1-TXT" align="char">2.086</td>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="char">2.197</td>
+</tr>
+<tr class="bborder">
+<td class="lborder" data-block_type="EXP-TB1-TXT" align="center"><em>C</em></td>
+<td class="lborder" data-block_type="EXP-TB1-TXT" align="char">0.90</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.95</td>
+<td class="rborder" data-block_type="EXP-TB1-TXT" align="char">0.96</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0516"><p>The second degrees of freedom approximation uses the <em>t</em>(20) distribution.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0517"><p><span data-type="link" data-href="table_d.html">Table D</span> gives <em>t</em>* = 2.086. With this approximation, we have</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0518"><p>9.96 &#177; (4.31 &#215; 2.086) = 9.96 &#177; 8.99 = (1.0, 18.9)</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0519"><p>We estimate the mean improvement to be about 10 points, with a margin of error of almost 9 points. Unfortunately, the data do not allow a very precise estimate of the size of the average improvement.</p></div>
+</div></div>
+</div>
+</div>
+<script type = "text/javascript" src="../../../../js/utilities.js"></script>
+<script type = "text/javascript" src="../../../../js/query_types.js"></script>
+<script type = "text/javascript" src="../../../../js/player.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type = "text/javascript" src="../../../../js/jquery_extensions.js"></script>
+<script type = "text/javascript" src="../../../../js/swfobject.js"></script>
+<script type = "text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type = "text/javascript" src="../../../../js/digfir_ebook_fw.js"></script>
+<script type = "text/javascript" src="../../../../js/ips9e.js"></script>
+<script type = "text/javascript" src="../../../../js/ips9e_ch7.js"></script>
+<script type = "text/javascript" src="../../../supp_win.js"></script>
+<script type = "text/javascript">
+
+//<!--
+$(window).ready(function ()
+    {
+        player.initialize('52c6e83c757a2ef70c000000');
+    });
+//-->
+</script>
+</body>
+</html>
