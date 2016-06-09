@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch8</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e_ch8.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="8">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch08-sec1-01" level="1" data-print_page="484">
+<h2 class="section-title">
+<span data-type="number">8.1</span> <span data-type="title" data-title-for="ips9e-ch08-sec1-01">8.1 Inference for a Single Proportion
+</span>
+</h2>
+
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_484"><p>484</p></div>
+<div data-type="box" data-block_type="SP" id="ips9e-ch08-box-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-2"></h3>
+<div data-block_type="SP-TXT-ni" id="ips9e-ch08-p011"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bluebullet" id="ips9e-ch08-list-002">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch08-p012"><p><span data-block_type="maker">•</span> Identify the sample proportion, the sample size, and the count for a single sample. Use this information to estimate the population proportion.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p013"><p><span data-block_type="maker">•</span> Describe the relationship between the population proportion and the sample proportion.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p014"><p><span data-block_type="maker">•</span> Identify the standard error for a sample proportion and the margin of error for confidence level <em>C</em>.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p015"><p><span data-block_type="maker">•</span> Apply the guidelines for when to use the large-sample confidence interval for a population proportion.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p016"><p><span data-block_type="maker">•</span> Find and interpret the large-sample confidence interval for a single proportion.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p017"><p><span data-block_type="maker">•</span> Apply the guidelines for when to use the large-sample significance test for a population proportion.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p018"><p><span data-block_type="maker">•</span> Use the large-sample significance test to test a null hypothesis about a population proportion.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p019"><p><span data-block_type="maker">•</span> Find the sample size needed for a desired margin of error.</p></div></li>
+<li><div data-block_type="SP-BL-last" id="ips9e-ch08-p020"><p><span data-block_type="maker">•</span> Find the sample size needed for a significance test.</p></div></li>
+</ul>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p021"><p>We want to estimate the proportion <em>p</em> of some characteristic in a large population. For example, we may want to know the proportion of likely voters who approve of the president’s conduct in office. We select a simple random sample (SRS) of size <em>n</em> from the population and record the count <em>X</em> of “successes” (such as Yes answers to a question about the president). A “success” response represents the characteristic of interest in this example.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch08-box-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-3"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch08-p023"><p>simple random sample, <span data-type="link" data-href="alias:page_191">p. 191</span></p></div>
+<div data-block_type="MN-NOT1" id="ips9e-ch08-p024"><p>sampling distribution of a count, <span data-type="link" data-href="alias:page_314">p. 314</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p025"><p>In statistical terms, we are concerned with inference about the probability <em>p</em> of a success in the binomial setting. The sample proportion of successes <span data-math="math_1"></span> estimates the unknown population proportion <em>p</em>. If the population is much larger than the sample (at least 20 times as large), the count <em>X</em> has approximately the binomial distribution <em>B</em>(<em>n</em>, <em>p</em>).<span data-type="termref" data-term="fn_ch8_fn1"><sup>1</sup></span></p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_1.html" id="ips9e-ch08-box-4"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-4"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p026"><p>EXAMPLE 8.1</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p027"><p><span data-block_type="EXP-T-ri">Robotics and jobs.</span> A Pew survey asked a panel of experts whether or not they thought that networked, automated, artificial intelligence (AI), and robotic devices will have displaced more jobs than they have created (net jobs) by 2025.<span data-type="termref" data-term="fn_ch8_fn2"><sup>2</sup></span></p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch08-box-5"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-5"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="ROBOT" data-block_type="rl_dataset" id="ips9e-ch08-p028"><p><span>ROBOT</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp2484416"><p></p></div>
+</div></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p029"><p>The sample size is the number of experts who responded to the Pew survey question, <em>n</em> = 1896. The report on the survey tells us that 48% of the respondents said they “believe net jobs will decrease by 2025 due to networked, automated, artificial intelligence (AI), and robotic devices.” Thus, the sample proportion is <span data-math="math_2"></span> We can calculate the count <em>X</em> from the information given; it is the sample size times the proportion responding Yes, <span data-math="math_3"></span></p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_485"><p>485</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch08-box-6"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-6"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch08-p031"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_8_1.html" id="ips9e-ch08-quest-001">
+<h3>Question
+			    <span data-type="number">8.1 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch08-p032"><p><span data-block_type="EXR-QUE-N-ri">8.1</span> <span data-block_type="EXR-QUE-T-ri">Smartphones and purchases.</span> A Google research study asked 5013 smartphone users about how they used their phones. In response to a question about purchases, 2657 reported that they purchased an item after using their smartphone to search for information about the item.<span data-type="termref" data-term="fn_ch8_fn3"><sup>3</sup></span></p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch08-list-003">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p033"><p><span data-block_type="maker">(a)</span> What is the sample size <em>n</em> for this survey?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p034"><p><span data-block_type="maker">(b)</span> In this setting, describe the population proportion <em>p</em> in a short sentence.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p035"><p><span data-block_type="maker">(c)</span> What is the value of the count <em>X</em>? Describe the count in a short sentence.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p036"><p><span data-block_type="maker">(d)</span> Find the sample proportion <span data-math="math_4"></span>.</p></div></li>
+</ol>
+</div>
+<div data-type="question" data-block_type="exercise_8_2.html" id="ips9e-ch08-quest-002">
+<h3>Question
+			    <span data-type="number">8.2 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-mid" id="ips9e-ch08-p037"><p><span data-block_type="EXR-QUE-N-ri">8.2</span> <span data-block_type="EXR-QUE-T-ri">Coca-Cola and demographics.</span> A Pew survey interviewed 162 CEOs from U.S. companies. The report of the survey quotes Muhtar Kent, Coca-Cola Company chairman and CEO, on the importance of demographics in developing customer strategies. Kent notes that the population of the United States is aging and that there is a need to provide products that appeal to this segment of the market. The survey found that 52% of the CEOs in the sample are planning to change their customer growth and retention strategies.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch08-list-004">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p038"><p><span data-block_type="maker">(a)</span> How many CEOs participated in the survey? What is the sample size <em>n</em> for the survey?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p039"><p><span data-block_type="maker">(b)</span> What is the count <em>X</em> of those who said that they are planning to change their customer growth and retention strategies?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p040"><p><span data-block_type="maker">(c)</span> Find the sample proportion <span data-math="math_5"></span>.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p041"><p><span data-block_type="maker">(d)</span> The quotes from Muhtar Kent in the report could be viewed as anecdotal data. Do you think that these quotes are useful to explain and interpret the results of the survey? Write a short paragraph discussing your answer.</p></div></li>
+</ol>
+</div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch08-box-7"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-7"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch08-p043"><p>anecdotal data, <span data-type="link" data-href="alias:page_164">p. 164</span></p></div>
+</div></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p044"><p>If the sample size <em>n</em> is very small, we must base tests and confidence intervals for <em>p</em> on the binomial distributions. These are awkward to work with because of the discreteness of the binomial distributions.<span data-type="termref" data-term="fn_ch8_fn4"><sup>4</sup></span> But we know that when the these counts are large, both the count <em>X</em> and the sample proportion <span data-math="math_6"></span> are approximately Normal. We will consider only inference procedures based on the Normal approximation. These procedures are similar to those for inference about the mean of a Normal distribution.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch08-box-8"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-8"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch08-p046"><p>Normal approximations for counts and proportions, <span data-type="link" data-href="alias:page_322">p. 322</span></p></div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch08-p047"><p><span data-block_type="h2">Large-sample confidence interval for a single proportion</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p048"><p>The unknown population proportion <em>p</em> is estimated by the sample proportion <span data-math="math_7"></span>. If the sample size <em>n</em> is sufficiently large, the sampling distribution of <span data-math="math_8"></span> is approximately Normal, with mean <span data-math="math_9"></span> and standard deviation <span data-math="math_10"></span>. This means that approximately 95% of the time <span data-math="math_11"></span> will be within <span data-math="math_12"></span> of the unknown population proportion <em>p</em>.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_486"><p>486</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch08-box-9"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-9"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch08-p051"><p>standard error, <span data-type="link" data-href="alias:page_408">p. 408</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p052"><p>Note that the standard deviation <span data-math="math_13"></span> depends upon the unknown parameter <em>p</em>. To estimate this standard deviation using the data, we replace <em>p</em> in the formula by the sample proportion <span data-math="math_14"></span>. As we did in <span data-type="link" data-href="ips9e-ch07.xml">Chapter 7</span>, we use the term <em>standard error</em> for the standard deviation of a statistic that is estimated from data. Here is a summary of the procedure.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch08-box-10"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-10"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch08-p053"><p>LARGE-SAMPLE CONFIDENCE INTERVAL FOR A POPULATION PROPORTION</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p054"><p>Choose an SRS of size <em>n</em> from a large population with an unknown proportion <em>p</em> of successes. The <strong>sample proportion</strong> is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p055"><p><span data-math="math_15"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p056"><p>where <em>X</em> is the number of successes. The <strong>standard error of <span data-math="math_16"></span></strong> is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p057"><p><span data-math="math_17"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p058"><p>and the <strong>margin of error</strong> for confidence level <em>C</em> is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p059"><p><span data-math="math_18"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p060"><p>where the critical value <em>z</em>* is the value for the standard Normal density curve with area <em>C</em> between −<em>z</em>* and <em>z</em>*.</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch08-p061"><p>An <strong>approximate level <em>C</em> confidence interval</strong> for <em>p</em> is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p062"><p><span data-math="math_19"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p063"><p>Use this interval for 90% (<em>z</em>* = 1.645), 95% (<em>z</em>* = 1.96), or 99% (<em>z</em>* = 2.576) confidence when the number of successes and the number of failures are both at least 10.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p064"><p><span data-type="link" data-href="table_d.html">Table D</span> includes a line at the bottom with values of <em>z</em>* for selected values of <em>C</em>. Use <span data-type="link" data-href="table_a.html">Table A</span> for other values of <em>C</em>.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_2.html" id="ips9e-ch08-box-11"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-11"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p065"><p>EXAMPLE 8.2</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p066"><p><span data-block_type="EXP-T-ri">Inference for robotics and jobs.</span> The sample survey in <span data-type="link" data-href="example_8_1.html">Example 8.1</span> found that 910 of a sample of 1896 experts reported that they think net jobs will decrease by 2025 because of robots and related technology developments. Thus, the sample size is <em>n</em> = 1896 and the count is <em>X</em> = 910. The sample proportion is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p067"><p><span data-math="math_20"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p068"><p>The standard error is</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p069"><p><span data-math="math_21"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p070"><p>The <em>z</em> critical value for 95% confidence is <em>z</em>* = 1.96, so the margin of error is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p071"><p><span data-math="math_22"></span></p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_487"><p>487</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p073"><p>The confidence interval is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p074"><p><span data-math="math_23"></span></p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p075"><p>We are 95% confident that between 45.8% and 50.2% of CEOs would report that they think net jobs will decrease by 2025 because of robots and related technology developments.</p></div>
+</div></div>
+<div data-block_type="Caution icon" id="ips9e-ch08-p076"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p077"><p>In performing these calculations, we have kept a large number of digits for our intermediate calculations. However, when reporting the results, we prefer to use rounded values. For example, “48.0% with a margin of error of 2.2%.” <em>You should always focus on what is important. Reporting extra digits that are not needed can divert attention from the main point of your summary.</em> There is no additional information to be gained by reporting <span data-math="math_24"></span> with a margin of error of 0.022489. Do you think it would be better to report 48% with a 2% margin of error?</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch08-p078"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p079"><p><em>Remember that the margin of error in any confidence interval includes only random sampling error.</em> If people do not respond honestly to the questions asked, for example, your estimate is likely to miss by more than the margin of error. Likewise, if the response rate is low, your estimate and standard error may be biased.</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p080"><p>Although the calculations for statistical inference for a single proportion are relatively straightforward and can be done with a calculator or in a spreadsheet, we prefer to use software.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_3.html" id="ips9e-ch08-box-12"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-12"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p081"><p>EXAMPLE 8.3</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p082"><p><span data-block_type="EXP-T-ri">Robotics and jobs confidence interval using software.</span> <span data-type="link" data-href="figure_8_1.html">Figure 8.1</span> shows a spreadsheet for the robotics and jobs example that could be used as input for statistical software. Note that there are 1896 experts who expressed an opinion in this example. The sheet specifies a value for each of these 1896 cases: there are 910 cases with the value Yes and 986 cases with the value No. An alternative spreadsheet would not summarize the responses but rather would list all 1896 cases with the response for each case.</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_8_1.html" data-figure-id="ips9e-ch08-p1" data-block_type="FIGURE" data-layout-align="center" data-layout-width="small" data-layout-border="false">
+
+<img id="" src="asset/ch8/17MOOREIPS-MSE_9e_fig_08_01.jpg" data-figure-id="ips9e-ch08-p1" data-layout-width="small" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 8.1: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 8.1</span> <span data-block_type="FG-CAP">The robotics and jobs data in an Excel spreadsheet for the confidence interval, <span data-type="link" data-href="example_8_3.html">Example 8.3</span>.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p084"><p><span data-type="link" data-href="figure_8_2.html">Figure 8.2</span> gives output from JMP and Minitab for these data. There are differences in the displays, but it is easy to find the 95% confidence interval. For JMP, the confidence interval is on the line with “Level” equal to Yes under the headings “Lower CI” and “Upper CI.” Minitab gives the output in the form of an interval under the heading “95% CI.” Notice that the confidence intervals are similar but not identical. Minitab notes that the Normal approximation is used. This is the large-sample method that we described. JMP notes that an alternative method, using score functions, is used.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_488"><p>488</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_8_2.html" data-figure-id="ips9e-ch08-p2" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch8/17MOOREIPS-MSE_9e_fig_08_02.jpg" data-figure-id="ips9e-ch08-p2" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 8.2: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 8.2</span> <span data-block_type="FG-CAP">(a) JMP and (b) Minitab output for the robotics and jobs survey, <span data-type="link" data-href="example_8_3.html">Example 8.3</span>.</span></span>
+</div>
+</div>
+</div></div>
+<div data-block_type="Caution icon" id="ips9e-ch08-p087"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p088"><p>As usual, the output reports more digits than are useful. <em>When you use software, be sure to think about how many digits are meaningful for your purposes. Do not clutter your report with information that is not meaningful.</em></p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p089"><p>We recommend the large-sample confidence interval for 90%, 95%, and 99% confidence whenever the number of successes and the number of failures are both at least 10. For smaller sample sizes, we recommend exact methods that use the binomial distribution. These, as well as other alternative procedures, such as the score function, are available as the default or as options in many statistical software packages. We do not cover them here. There is also an intermediate case between large samples and very small samples where a slight modification of the large-sample approach works quite well. This method is called the “plus four” procedure and is described next.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_489"><p>489</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch08-box-13"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-13"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch08-p091"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_8_3.html" id="ips9e-ch08-quest-003">
+<h3>Question
+			    <span data-type="number">8.3 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch08-p092"><p><span data-block_type="EXR-QUE-N-ri">8.3</span> <span data-block_type="EXR-QUE-T-ri">Robotics and jobs.</span> Refer to <span data-type="link" data-href="example_8_1.html">Example 8.1</span> (page 484).</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch08-list-005">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p093"><p><span data-block_type="maker">(a)</span> Find <span data-math="math_25"></span>, the standard error of <span data-math="math_26"></span>.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p094"><p><span data-block_type="maker">(b)</span> Give the 95% confidence interval for <em>p</em> in the form of estimate plus or minus the margin of error.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p095"><p><span data-block_type="maker">(c)</span> Give the confidence interval as an interval of percents.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p096"><p><span data-block_type="maker">(d)</span> State your conclusion and interpret the meaning of the confidence interval in part (c).</p></div></li>
+</ol>
+</div>
+<div data-type="question" data-block_type="exercise_8_4.html" id="ips9e-ch08-quest-004">
+<h3>Question
+			    <span data-type="number">8.4 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch08-p097"><p><span data-block_type="EXR-QUE-N-ri">8.4</span> <span data-block_type="EXR-QUE-T-ri">Coca-Cola and demographics.</span> Refer to <span data-type="link" data-href="exercise_8_2.html">Exercise 8.2</span> (page 485).</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch08-list-006">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p098"><p><span data-block_type="maker">(a)</span> Find <span data-math="math_27"></span>, the standard error of <span data-math="math_28"></span>.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p099"><p><span data-block_type="maker">(b)</span> Give the 95% confidence interval for <em>p</em> in the form of estimate plus or minus the margin of error.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p0100"><p><span data-block_type="maker">(c)</span> Give the confidence interval as an interval of percents.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p0101"><p><span data-block_type="maker">(d)</span> State your conclusion and interpret the meaning of the confidence interval in part (c).</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-type="box" data-block_type="BX2" id="ips9e-ch08-box-14"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-14"></h3>
+<div data-block_type="BX2-H" id="ips9e-ch08-p0102"><p>BEYOND THE BASICS</p></div>
+<div data-block_type="BX2-T" id="ips9e-ch08-p0103"><p>The Plus Four Confidence Interval for a Single Proportion</p></div>
+<div data-block_type="BX2-TXT-ni" id="ips9e-ch08-p0104"><p>Computer studies reveal that confidence intervals based on the large-sample approach can be quite inaccurate when the number of successes and the number of failures are not at least 10. When this occurs, a simple adjustment to the confidence interval works very well in practice. The adjustment is based on assuming that the sample contains four additional observations, two of which are successes and two of which are failures. The estimator of the population proportion based on this <em>plus four</em> rule is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0105"><p><span data-math="math_29"></span></p></div>
+<div data-block_type="BX2-TXT-ni" id="ips9e-ch08-p0106"><p>This estimate was first suggested by Edwin Bidwell Wilson in 1927, and it is sometimes called the Agresti-Coull interval.<span data-type="termref" data-term="fn_ch8_fn5"><sup>5</sup></span> We call it the <span data-type="termref" data-term="plus four estimate"><strong>plus four estimate</strong></span><span data-block_type="MN-GL-term">plus four estimate</span>. The confidence interval is based on the <em>z</em> statistic obtained by standardizing the plus four estimate <span data-math="math_30"></span> Because <span data-math="math_31"></span> is the sample proportion for our modified sample of size <em>n</em> + 4, it isn’t surprising that the distribution of <span data-math="math_32"></span> is close to the Normal distribution with mean <em>p</em> and standard deviation <span data-math="math_33"></span>. To get a confidence interval, we estimate <em>p</em> by <span data-math="math_34"></span> in this standard deviation to get the standard error of <span data-math="math_35"></span> Here is an example.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_490"><p>490</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_4.html" id="ips9e-ch08-box-15"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-15"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0109"><p>EXAMPLE 8.4</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0110"><p><span data-block_type="EXP-T-ri">Percent of equol producers.</span> Research has shown that there are many health benefits associated with a diet that contains soy foods. Substances in soy called isoflavones are known to be responsible for these benefits. When soy foods are consumed, some subjects produce a chemical called equol, and it is thought that production of equol is a key factor in the health benefits of a soy diet. Unfortunately, not all people are equol producers; there appear to be two distinct subpopulations: equol producers and equol nonproducers.</p></div>
+<div data-type="figure" data-filename="17MOOREIPS-MSE_9e_P_08_01.html" data-figure-id="ips9e-ch08-unfig-002" data-block_type="UN-FIGURE" data-layout-align="left" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch8/17MOOREIPS-MSE_9e_P_08_01.jpg" data-figure-id="ips9e-ch08-unfig-002" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">Asia Images Group/Getty Images</span></div>
+</div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0111"><p>A nutrition researcher planning some bone health experiments would like to include some equol producers and some nonproducers among her subjects. A preliminary sample of 12 female subjects were measured, and four were found to be equol producers. We would like to estimate the proportion of equol producers in the population from which this researcher will draw her subjects.</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0112"><p>The plus four estimate of the proportion of equol producers is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0113"><p><span data-math="math_36"></span></p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0114"><p>For a 95% confidence interval, we use <span data-type="link" data-href="table_d.html">Table D</span> to find <em>z</em>* = 1.96. We first compute the standard error</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0115"><p><span data-math="math_37"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0116"><p><span data-math="math_38"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0117"><p>= 0.12103</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0118"><p>and then the margin of error</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0119"><p><span data-math="math_39"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0120"><p>= (1.96)(0.12103)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0121"><p>= 0.237</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0122"><p>So the confidence interval is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0123"><p><span data-math="math_40"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0124"><p>= (0.138, 0.612)</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0125"><p>We estimate with 95% confidence that between 14% and 61% of women from this population are equol producers. Note that the interval is very wide because the sample size is very small. Compare this result with the large-sample confidence interval.</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0126"><p>If the true proportion of equol users is near 14%, the lower limit of this interval, there may not be a sufficient number of equol producers in the study if subjects are tested only after they are enrolled in the experiment. It may be necessary to determine whether or not a potential subject is an equol producer. The study could then be designed to have the same number of equol producers and nonproducers.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_491"><p>491</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch08-p0127"><p><span data-block_type="h2">Significance test for a single proportion</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0129"><p>Recall that the sample proportion <span data-math="math_41"></span> is approximately Normal, with mean <span data-math="math_42"></span> and standard deviation <span data-math="math_43"></span>. For confidence intervals, we substitute <span data-math="math_44"></span> for <em>p</em> in the last expression to obtain the standard error. When performing a significance test, however, the null hypothesis specifies a value for <em>p</em>, and we assume that this is the true value when calculating the <em>P</em>-value. Therefore, when we test <em>H</em><sub>0</sub>: <em>p</em> = <em>p</em><sub>0</sub>, we substitute <em>p</em><sub>0</sub> into the expression for <span data-math="math_45"></span> and then standardize <span data-math="math_46"></span>. Here are the details.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch08-box-16"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-16"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch08-p0131"><p>Normal approximation for proportions, <span data-type="link" data-href="alias:page_322">p. 322</span></p></div>
+</div></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch08-box-17"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-17"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch08-p0132"><p>LARGE-SAMPLE SIGNIFICANCE TEST FOR A POPULATION PROPORTION</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0133"><p>Draw an SRS of size <em>n</em> from a large population with an unknown proportion <em>p</em> of successes. To test the hypothesis <em>H</em><sub>0</sub>: <em>p</em> = <em>p</em><sub>0</sub>, compute the <strong><em>z</em> statistic</strong></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0134"><p><span data-math="math_47"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0135"><p>In terms of a standard Normal random variable <em>Z</em>, the approximate <em>P</em>-value for a test of <em>H</em><sub>0</sub> against</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0136"><p><em>H<sub>a</sub></em>: <em>p</em> &gt; <em>p</em><sub>0</sub>  is  <em>P</em>(<em>Z</em> ≥ <em>z</em>)     <img id="" src="asset/ch8/17MOOREIPS-MSE_9e_UNfig_08_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0137"><p><em>H<sub>a</sub></em>: <em>p</em> &lt; <em>p</em><sub>0</sub>  is  <em>P</em>(<em>Z</em> ≤ <em>z</em>)     <img id="" src="asset/ch8/17MOOREIPS-MSE_9e_UNfig_08_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0138"><p><em>H<sub>a</sub></em>: <em>p</em> ≠ <em>p</em><sub>0</sub>  is  2<em>P</em>(<em>Z</em> ≥ |<em>z</em>|)    <img id="" src="asset/ch8/17MOOREIPS-MSE_9e_UNfig_08_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0139"><p>We recommend the large-sample <em>z</em> significance test as long as the expected number of successes, <em>np</em><sub>0</sub>, and the expected number of failures, <em>n</em>(1 − <em>p</em><sub>0</sub>), are both at least 10.</p></div>
+</div></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch08-box-18"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-18"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch08-p0141"><p>sign test for matched pairs, <span data-type="link" data-href="alias:page_473">p. 473</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0142"><p>If the numbers of successes and failures are not both at least 10, or if the population is less than 20 times as large as the sample, other procedures should be used. One such approach is to use the binomial distribution as we did with the sign test. Here is a large-sample example.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_5.html" id="ips9e-ch08-box-19"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-19"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0143"><p>EXAMPLE 8.5</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0144"><p><span data-block_type="EXP-T-ri">Comparing two sunblock lotions.</span> Your company produces a sunblock lotion designed to protect the skin from both UVA and UVB exposure to the sun. You hire a company to compare your product with the product sold by your major competitor. The testing company exposes skin on the backs of a sample of 20 people to UVA and UVB rays and measures the protection provided by each product. For 13 of the subjects, your product provided better protection, while for the other 7 subjects, your competitor’s product provided better protection. Do you have evidence to support a commercial claiming that your product provides superior UVA and UVB protection? For the data we have <em>n</em> = 20 subjects and <em>X</em> = 13 successes. The parameter <em>p</em> is the proportion of people who would receive superior UVA and UVB protection from your product. To answer the claim question, we test</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0145"><p><em>H</em><sub>0</sub>: <em>p</em> = 0.5</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0146"><p><em>H<sub>a</sub></em>: <em>p</em> ≠ 0.5</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch08-box-20"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-20"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="SUNBL" data-block_type="rl_dataset" id="ips9e-ch08-p0147"><p><span>SUNBL</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp164768"><p></p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_492"><p>492</p></div>
+<div data-type="figure" data-filename="17MOOREIPS-MSE_9e_P_08_02.html" data-figure-id="ips9e-ch08-unfig-003" data-block_type="UN-FIGURE" data-layout-align="left" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch8/17MOOREIPS-MSE_9e_P_08_02.jpg" data-figure-id="ips9e-ch08-unfig-003" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">Fancy/Alamy</span></div>
+</div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0149"><p>The expected numbers of successes (your product provides better protection) and failures (your competitor’s product provides better protection) are 20 × 0.5 = 10 and 20 × 0.5 = 10. Both are at least 10, so we can use the <em>z</em> test. The sample proportion is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0150"><p><span data-math="math_48"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0151"><p>The test statistic is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0152"><p><span data-math="math_49"></span></p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0153"><p>From <span data-type="link" data-href="table_a.html">Table A</span>, we find <em>P</em>(<em>Z</em> &lt; 1.34) = 0.9099, so the probability in the upper tail is 1 − 0.9099 = 0.0901. The <em>P</em>-value is the area in both tails, <em>P</em> = 2 × 0.0901 = 0.1802.</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0154"><p>We conclude that the sunblock testing data are compatible with the hypothesis of no difference between your product and your competitor’s product (<span data-math="math_50"></span>, <em>z</em> = 1.34, <em>P</em> = 0.18). The data do not support your proposed advertising claim.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0155"><p>Note that we have used the two-sided alternative for this example. In settings like this, we must start with the view that either product could be better if we want to prove a claim of superiority. Thinking or hoping that your product is superior cannot be used to justify a one-sided test.</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0156"><p>Although these calculations are not particularly difficult to do using a calculator, we prefer to use software. Here are some details.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_6.html" id="ips9e-ch08-box-21"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-21"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0157"><p>EXAMPLE 8.6</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0158"><p><span data-block_type="EXP-T-ri">Sunblock significance tests using software.</span> JMP and Minitab outputs for the analysis in <span data-type="link" data-href="example_8_5.html">Example 8.5</span> appear in <span data-type="link" data-href="figure_8_3.html">Figure 8.3</span>. First, JMP uses a slightly different way of reporting the results. Two ways of performing the significance test are labeled in the column “Test.” The one that corresponds to the procedure that we have described is on the second line, labeled “Pearson.” The <em>P</em>-value under the heading “Prob&gt;Chisq” is 0.1797, which is very close to the 0.1802 that we calculated using <span data-type="link" data-href="table_a.html">Table A</span>. Minitab reports the value of the test statistic <em>z</em>, and the <em>P</em>-value is rounded to 0.180.</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch08-box-22"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-22"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="SUNBL" data-block_type="rl_dataset" id="ips9e-ch08-p0159"><p><span>SUNBL</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp195728"><p></p></div>
+</div></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_493"><p>493</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_8_3.html" data-figure-id="ips9e-ch08-p3" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch8/17MOOREIPS-MSE_9e_fig_08_03.jpg" data-figure-id="ips9e-ch08-p3" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 8.3: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 8.3</span> <span data-block_type="FG-CAP">(a) JMP and (b) Minitab output for comparing sunblock lotions, <span data-type="link" data-href="example_8_5.html">Example 8.5</span>.</span></span>
+</div>
+</div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch08-box-23"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-23"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch08-p0162"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_8_5.html" id="ips9e-ch08-quest-005">
+<h3>Question
+			    <span data-type="number">8.5 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch08-p0163"><p><span data-block_type="EXR-QUE-N-ri">8.5</span> <span data-block_type="EXR-QUE-T-ri">Draw a picture.</span> Draw a picture of a standard Normal curve and shade the tail areas to illustrate the calculation of the <em>P</em>-value for <span data-type="link" data-href="example_8_5.html">Example 8.5</span>.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_8_6.html" id="ips9e-ch08-quest-006">
+<h3>Question
+			    <span data-type="number">8.6 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-mid" id="ips9e-ch08-p0164"><p><span data-block_type="EXR-QUE-N-ri">8.6</span> <span data-block_type="EXR-QUE-T-ri">What does the confidence interval tell us?</span> Inspect the outputs in <span data-type="link" data-href="figure_8_3.html">Figure 8.3</span>. Report the confidence interval for the percent of people who would get better sun protection from your product than from your competitor’s. Be sure to convert from proportions to percents and to round appropriately. Interpret the confidence interval and compare this way of analyzing data with the significance test.</p></div>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_494"><p>494</p></div>
+<div data-type="question" data-block_type="exercise_8_7.html" id="ips9e-ch08-quest-007">
+<h3>Question
+			    <span data-type="number">8.7 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-mid" id="ips9e-ch08-p0166"><p><span data-block_type="EXR-QUE-N-ri">8.7</span> <span data-block_type="EXR-QUE-T-ri">The effect of <em>X</em>.</span> In <span data-type="link" data-href="example_8_5.html">Example 8.5</span> (page 491), suppose that your product provided better UVA and UVB protection for 15 of the 20 subjects. Perform the significance test and summarize the results.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_8_8.html" id="ips9e-ch08-quest-008">
+<h3>Question
+			    <span data-type="number">8.8 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-mid" id="ips9e-ch08-p0167"><p><span data-block_type="EXR-QUE-N-ri">8.8</span> <span data-block_type="EXR-QUE-T-ri">The effect of <em>n</em>.</span> In <span data-type="link" data-href="example_8_5.html">Example 8.5</span> (page 491), consider what would have happened if you had paid for twice as many subjects to be tested. Assume that the results would be similar to those in <span data-type="link" data-href="example_8_5.html">Example 8.5</span>, that is, 65% of the subjects had better UVA and UVB protection with your product. Perform the significance test and summarize the results.</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0168"><p>In <span data-type="link" data-href="example_8_5.html">Example 8.5</span>, we treated an outcome as a success whenever your product provided better sun protection. Would we get the same results if we defined success as an outcome where your competitor’s product was superior? In this setting, the null hypothesis is still <em>H</em><sub>0</sub>: <em>p</em> = 0.5. You will find that the <em>z</em> test statistic is unchanged except for its sign and that the <em>P</em>-value remains the same.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch08-box-24"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-24"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch08-p0169"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_8_9.html" id="ips9e-ch08-quest-009">
+<h3>Question
+			    <span data-type="number">8.9 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch08-p0170"><p><span data-block_type="EXR-QUE-N-ri">8.9</span> <span data-block_type="EXR-QUE-T-ri">Redefining success.</span> In <span data-type="link" data-href="example_8_5.html">Example 8.5</span> (page 491), we performed a significance test to compare your product with your competitor’s. Success was defined as the outcome where your product provided better protection. Now, take the viewpoint of your competitor where success is defined to be the outcome where your competitor’s product provides better protection. In other words, <em>n</em> remains the same, but <em>X</em> is now 7.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch08-list-007">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p0171"><p><span data-block_type="maker">(a)</span> Perform the two-sided significance test and report the results. How do these compare with what we found in <span data-type="link" data-href="example_8_5.html">Example 8.5</span>?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p0172"><p><span data-block_type="maker">(b)</span> Find the 95% confidence interval for this setting, and compare it with the interval calculated when success is defined as the outcome where your product provides better protection.</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="Caution icon" id="ips9e-ch08-p0173"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0174"><p><em>We do not often use significance tests for a single proportion because it is uncommon to have a situation where there is a precise p</em><sub>0</sub> <em>that we want to test.</em> For physical experiments such as coin tossing or drawing cards from a well-shuffled deck, probability arguments lead to an ideal <em>p</em><sub>0</sub>. Even here, however, it can be argued, for example, that no real coin has a probability of heads <em>exactly</em> equal to 0.5. Data from past large samples can sometimes provide a <em>p</em><sub>0</sub> for the null hypothesis of a significance test. In some types of epidemiology research, for example, “historical controls” from past studies serve as the benchmark for evaluating new treatments. Medical researchers argue about the validity of these approaches, because the past never quite resembles the present. In general, we prefer comparative studies whenever possible. The matched pairs study of <span data-type="link" data-href="example_8_5.html">Example 8.5</span> is an example of a comparative study that involved a single proportion.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch08-p0175"><p><span data-block_type="h2">Choosing a sample size for a confidence interval</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0176"><p>In <span data-type="link" data-href="ips9e-ch06.xml">Chapter 6</span>, we showed how to choose the sample size <em>n</em> to obtain a confidence interval with specified margin of error <em>m</em> for a Normal mean. We also discussed the effect of the sample size on the power of a significance test for a Normal mean. Because we are using a Normal approximation for inference about a population proportion, sample size selection proceeds in much the same way.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch08-box-25"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-25"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch08-p0178"><p>choosing sample size, <span data-type="link" data-href="alias:page_351">p. 351</span></p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_495"><p>495</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0180"><p>Recall that the margin of error for the large-sample confidence interval for a population proportion is</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p0181"><p><span data-math="math_51"></span></p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0182"><p>Choosing a confidence level <em>C</em> fixes the critical value <em>z</em>*. The margin of error also depends on the value of <span data-math="math_52"></span> and the sample size <em>n</em>. Because we don’t know the value of <span data-math="math_53"></span> until we gather the data, we must guess a value to use in the calculations. We will call the guessed value <em>p</em>*. There are two common ways to get <em>p</em>*:</p></div>
+<ol data-block_type="numbered" id="ips9e-ch08-list-008">
+<li><div data-block_type="NL-first" id="ips9e-ch08-p0183"><p><span data-block_type="maker">1.</span> Use the sample estimate from a pilot study or from similar studies done earlier.</p></div></li>
+<li><div data-block_type="NL-last" id="ips9e-ch08-p0184"><p><span data-block_type="maker">2.</span> Use <em>p</em>* = 0.5. Because the margin of error is largest when <span data-math="math_54"></span>, this choice gives a sample size that is somewhat larger than we really need for the confidence level we choose. It is a safe choice no matter what the data later show.</p></div></li>
+</ol>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0185"><p>Once we have chosen <em>p</em>* and the margin of error <em>m</em> that we want, we can find the <em>n</em> we need to achieve this margin of error. Here is the result.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch08-box-26"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-26"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch08-p0186"><p>SAMPLE SIZE FOR DESIRED MARGIN OF ERROR</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0187"><p>The level <em>C</em> confidence interval for a proportion <em>p</em> will have a margin of error approximately equal to a specified value <em>m</em> when the sample size satisfies</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0188"><p><span data-math="math_55"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0189"><p>Here, <em>z</em>* is the critical value for confidence level <em>C</em>, and <em>p</em>* is a guessed value for the proportion of successes in the future sample.</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch08-p0190"><p>The margin of error will be less than or equal to <em>m</em> if <em>p</em>* is chosen to be 0.5. Substituting <em>p</em>* = 0.5 into the formula above gives</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0191"><p><span data-math="math_56"></span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0192"><p>The value of <em>n</em> obtained by this method is not particularly sensitive to the choice of <em>p</em>* when <em>p</em>* is fairly close to 0.5. However, if the value of <em>p</em> is likely to be smaller than about 0.3 or larger than about 0.7, use of <em>p</em>* = 0.5 may result in a sample size that is much larger than needed.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_7.html" id="ips9e-ch08-box-27"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-27"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0193"><p>EXAMPLE 8.7</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0194"><p><span data-block_type="EXP-T-ri">Planning a survey of students.</span> A large university is interested in assessing student satisfaction with the overall campus environment. The plan is to distribute a questionnaire to an SRS of students, but before proceeding, the university wants to determine how many students to sample. The questionnaire asks about a student’s degree of satisfaction with various student services, each measured on a five-point scale. The university is interested in the proportion <em>p</em> of students who are satisfied (that is, who choose either “satisfied” or “very satisfied,” the two highest levels on the five-point scale).</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_496"><p>496</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0196"><p>The university wants to estimate <em>p</em> with 95% confidence and a margin of error less than or equal to 3%, or 0.03. For planning purposes, it is willing to use <em>p</em>* = 0.5. To find the sample size required,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0197"><p><span data-math="math_57"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0198"><p>Round up to get <em>n</em> = 1068. (Always round up. Rounding down would give a margin of error slightly greater than 0.03.)</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0199"><p>Similarly, for a 2.5% margin of error, we have (after rounding up)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0200"><p><span data-math="math_58"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0201"><p>and for a 2% margin of error,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0202"><p><span data-math="math_59"></span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0203"><p>News reports frequently describe the results of surveys with sample sizes between 1000 and 1500 and a margin of error of about 3%. These surveys generally use sampling procedures more complicated than simple random sampling, so the calculation of confidence intervals is more involved than what we have studied in this section. The calculations in <span data-type="link" data-href="example_8_7.html">Example 8.7</span> show in principle how such surveys are planned.</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0204"><p>In practice, many factors influence the choice of a sample size. The following example illustrates one set of factors.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_8.html" id="ips9e-ch08-box-28"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-28"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0205"><p>EXAMPLE 8.8</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0206"><p><span data-block_type="EXP-T-ri">Assessing interest in Pilates classes.</span> The Division of Recreational Sports (Rec Sports) at a major university is responsible for offering comprehensive recreational programs, services, and facilities to the students. Rec Sports is continually examining its programs to determine how well it is meeting the needs of the students. Rec Sports is considering adding some new programs and would like to know how much interest there is in a new exercise program based on the Pilates method.<span data-type="termref" data-term="fn_ch8_fn6"><sup>6</sup></span> It will take a survey of undergraduate students. In the past, Rec Sports emailed short surveys to all undergraduate students. The response rate obtained in this way was about 5%. This time, it will send emails to a simple random sample of the students and will follow up with additional emails and eventually a phone call to get a higher response rate. Because of limited staff and the work involved with the follow-up, it would like to use a sample size of about 200 responses. It assumes that the new procedures will improve the response rate to 90%, so it will contact 225 students in the hope that these will provide at least 200 valid responses. One of the questions it will ask is, “Have you ever heard about the Pilates method of exercise?”</p></div>
+<div data-type="figure" data-filename="17MOOREIPS-MSE_9e_P_08_03.html" data-figure-id="ips9e-ch08-unfig-004" data-block_type="UN-FIGURE" data-layout-align="left" data-layout-width="small" data-layout-border="false">
+
+<img id="" src="asset/ch8/17MOOREIPS-MSE_9e_P_08_03.jpg" data-figure-id="ips9e-ch08-unfig-004" data-layout-width="small" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">iStockphoto</span></div>
+</div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_497"><p>497</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0208"><p>The primary purpose of the survey is to estimate various sample proportions for undergraduate students. Will the proposed sample size of <em>n</em> = 200 be adequate to provide Rec Sports with the needed information? To address this question, we calculate the margins of error of 95% confidence intervals for various values of <span data-math="math_60"></span>.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_9.html" id="ips9e-ch08-box-29"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-29"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0209"><p>EXAMPLE 8.9</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0210"><p><span data-block_type="EXP-T-ri">Margins of error.</span> In the Rec Sports survey, the margin of error of a 95% confidence interval for any value of <span data-math="math_61"></span> and <em>n</em> = 200 is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0211"><p><span data-math="math_62"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0214"><p>The results for various values of <span data-math="math_63"></span> are</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch08-untab-1" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="50"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="char"><span data-math="math_64"></span></th>
+<th data-block_type="EXP-TB1-COLHD" align="char" class="rborder"><em>m</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><span data-math="math_65"></span></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><em>m</em></th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="char">0.05</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">0.030</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.60</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.068</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="char">0.10</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">0.042</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.70</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.064</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="char">0.20</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">0.056</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.80</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.056</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="char">0.30</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">0.064</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.90</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.042</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="char">0.40</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">0.068</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.95</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.030</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="char">0.50</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">0.070</td>
+<td data-block_type="EXP-TB1-TXT" align="char"></td>
+<td data-block_type="EXP-TB1-TXT" align="char"></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0215"><p>Rec Sports judged these margins of error to be acceptable, and it contacted 225 students, hoping to achieve a sample size of 200 for its survey.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0216"><p>The table in <span data-type="link" data-href="example_8_9.html">Example 8.9</span> illustrates two points. First, the margins of error for <span data-math="math_66"></span> and <span data-math="math_67"></span> are the same. The margins of error will always be the same for <span data-math="math_68"></span> and <span data-math="math_69"></span>. This is a direct consequence of the form of the confidence interval. Second, the margin of error varies between only 0.064 and 0.070 as <span data-math="math_70"></span> varies from 0.3 to 0.7, and the margin of error is greatest when <span data-math="math_71"></span>, as we claimed earlier (page xxx). It is true in general that the margin of error will vary relatively little for values of <span data-math="math_72"></span> between 0.3 and 0.7. Therefore, when planning a study, it is not necessary to have a very precise guess for <em>p</em>. If <em>p</em>* = 0.5 is used and the observed <span data-math="math_73"></span> is between 0.3 and 0.7, the actual interval will be a little shorter than needed, but the difference will be small.</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch08-p0217"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0218"><p><em>Again it is important to emphasize that these calculations consider only the effects of sampling variability that are quantified in the margin of error.</em> Other sources of error, such as nonresponse and possible misinterpretation of questions, are not included in the table of margins of error for <span data-type="link" data-href="example_8_9.html">Example 8.9</span>. Rec Sports is trying to minimize these kinds of errors. It performed a pilot study using a small group of current users of its facilities to check the wording of the questions, and for the final survey it devised a careful plan to follow up with the students who did not respond to the initial email.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_498"><p>498</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch08-box-30"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-30"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch08-p0220"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_8_10.html" id="ips9e-ch08-quest-0010">
+<h3>Question
+			    <span data-type="number">8.10 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0221"><p><span data-block_type="EXR-QUE-N-ri">8.10</span> <span data-block_type="EXR-QUE-T-ri">Confidence level and sample size.</span> Refer to <span data-type="link" data-href="example_8_7.html">Example 8.7</span> (page 494). Suppose that the university was interested in a 95% confidence interval with margin of error 0.04. Would the required sample size be smaller or larger than 1068 students? Verify this by performing the calculation.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_8_11.html" id="ips9e-ch08-quest-0011">
+<h3>Question
+			    <span data-type="number">8.11 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0222"><p><span data-block_type="EXR-QUE-N-ri">8.11</span> <span data-block_type="EXR-QUE-T-ri">Make a plot.</span> Use the values for <span data-math="math_74"></span> and <em>m</em> given in <span data-type="link" data-href="example_8_9.html">Example 8.9</span> to draw a plot of the sample proportion versus the margin of error. Summarize the major features of your plot.</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch08-p0223"><p><span data-block_type="h2">Choosing a sample size for a significance test</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0224"><p>In <span data-type="link" data-href="ips9e-ch06.xml">Chapter 6</span>, we also introduced the idea of power for a significance test. These ideas apply to the significance test for a proportion that we studied in this section. There are some more complicated details, but the basic ideas are the same. Fortunately, software can take care of the details, and we can concentrate on the input and output.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch08-box-31"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-31"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch08-p0226"><p>power, <span data-type="link" data-href="alias:page_391">p. 391</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0227"><p>To find the required sample size, we need to specify</p></div>
+<ul data-block_type="bullet" id="ips9e-ch08-list-009">
+<li><div data-block_type="BL-first" id="ips9e-ch08-p0228"><p><span data-block_type="maker">•</span> The value of <em>p</em><sub>0</sub> in the null hypothesis <em>H</em><sub>0</sub>: <em>p</em> = <em>p</em><sub>0</sub>.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch08-p0229"><p><span data-block_type="maker">•</span> The alternative hypothesis, two-sided (<em>H<sub>a</sub></em>: <em>p</em> ≠ <em>p</em><sub>0</sub>), one-sided (<em>H<sub>a</sub></em>: <em>p</em> &gt; <em>p</em><sub>0</sub> or <em>H<sub>a</sub></em>: <em>p</em> &lt; <em>p</em><sub>0</sub>).</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch08-p0230"><p><span data-block_type="maker">•</span> A value of <em>p</em> for the alternative hypothesis.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch08-p0231"><p><span data-block_type="maker">•</span> The Type I error (<em>α</em>, the probability of rejecting the null hypothesis when it is true); usually we choose 5% (<em>α</em> = 0.05) for the Type I error.</p></div></li>
+<li><div data-block_type="BL-last" id="ips9e-ch08-p0232"><p><span data-block_type="maker">•</span> Power (probability of rejecting the null hypothesis when it is false); usually we choose 80% (0.80) for power.</p></div></li>
+</ul>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_10.html" id="ips9e-ch08-box-32"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-32"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0233"><p>EXAMPLE 8.10</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0234"><p><span data-block_type="EXP-T-ri">Sample size for comparing two sunblock lotions.</span> In <span data-type="link" data-href="example_8_5.html">Example 8.5</span> (page 491), we performed the significance test for comparing two sunblock lotions in a setting where each subject used the two lotions and the product that provided better protection was recorded. Although your product performed better 13 times in 20 trials, the value of <span data-math="math_75"></span> was not sufficiently far from the null hypothesized value of <em>p</em><sub>0</sub> = 0.5 for us to reject the <em>H</em><sub>0</sub>, (<em>p</em> = 0.18). Let’s suppose that the true percent of the time that your lotion would perform better is <em>p</em><sub>0</sub> = 0.65, and we plan to test the null hypothesis <em>H</em><sub>0</sub>: <em>p</em> = 0.5 versus the two-sided alternative <em>H<sub>a</sub></em>: <em>p</em> ≠ 0.5 using a Type I error probability of 0.05.</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0235"><p>What sample size <em>n</em> should we choose if we want to have an 80% chance of rejecting <em>H</em><sub>0</sub>? Outputs from JMP and Minitab are given in <span data-type="link" data-href="figure_8_4.html">Figure 8.4</span>. JMP indicates that <em>n</em> = 89 should be used, while Minitab suggests <em>n</em> = 85. The difference is due to the different methods that can be used for these calculations.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_499"><p>499</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_8_4.html" data-figure-id="ips9e-ch08-p4" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+
+<img id="" src="asset/ch8/17MOOREIPS-MSE_9e_fig_08_04.jpg" data-figure-id="ips9e-ch08-p4" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 8.4: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 8.4</span> <span data-block_type="FG-CAP">(a) JMP and (b) Minitab output for sample size needed to compare sunblock lotions, <span data-type="link" data-href="example_8_10.html">Example 8.10</span>.</span></span>
+</div>
+</div>
+<div data-block_type="TXT" id="ips9e-ch08-p0238"><p>Note that Minitab provides a graph as a function of the value of the proportion for the alternative hypothesis. Similar plots can be produced by JMP. In some situations, you might want to specify the sample size <em>n</em> and have software compute the power. This option is available in JMP, Minitab, and other software.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_500"><p>500</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch08-box-33"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-33"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch08-p0240"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_8_12.html" id="ips9e-ch08-quest-0012">
+<h3>Question
+			    <span data-type="number">8.12 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0241"><p><span data-block_type="EXR-QUE-N-ri">8.12</span> <span data-block_type="EXR-QUE-T-ri">Compute the sample size for a different alternative.</span> Refer to <span data-type="link" data-href="example_8_10.html">Example 8.10</span> (page 498). Use software to find the sample size needed for a two-sided test of the null hypothesis that <em>p</em> = 0.5 versus the two-sided alternative with <em>α</em> = 0.05 and 80% power if the alternative is <em>p</em> = 0.7.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_8_13.html" id="ips9e-ch08-quest-0013">
+<h3>Question
+			    <span data-type="number">8.13 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0242"><p><span data-block_type="EXR-QUE-N-ri">8.13</span> <span data-block_type="EXR-QUE-T-ri">Compute the power for a given sample size.</span> Consider the setting in <span data-type="link" data-href="example_8_10.html">Example 8.10</span> (page 498). You have a budget that will allow you to test 100 subjects. Use software to find the power of the test for this value of <em>n</em>.</p></div>
+</div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch8.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('5759b9d7757a2e0d15000000');
+});
+    //-->
+</script>
+</body>
+</html>
+

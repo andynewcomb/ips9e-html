@@ -1130,6 +1130,21 @@
     <Content Include="ebook\asset\ch7\17MOOREIPS-MSE_9e_UNfig_07_01.jpg" />
     <Content Include="ebook\asset\ch7\17MOOREIPS-MSE_9e_UNfig_07_02.jpg" />
     <Content Include="ebook\asset\ch7\17MOOREIPS-MSE_9e_UNfig_07_03.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_CO08.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_fig_08_01.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_fig_08_02.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_fig_08_03.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_fig_08_04.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_fig_08_05.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_fig_08_06.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_fig_08_07.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_fig_08_08.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_P_08_01.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_P_08_02.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_P_08_03.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_UNfig_08_01.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_UNfig_08_02.jpg" />
+    <Content Include="ebook\asset\ch8\17MOOREIPS-MSE_9e_UNfig_08_03.jpg" />
     <Content Include="ebook\asset\css\bgexampletitle.png" />
     <Content Include="ebook\asset\css\bgexampletop.png" />
     <Content Include="ebook\asset\css\bgknowledgetitle.png" />
@@ -1202,6 +1217,13 @@
     </Content>
     <Content Include="ebook\css\ips9e_ch7.min.css">
       <DependentUpon>ips9e_ch7.css</DependentUpon>
+    </Content>
+    <None Include="ebook\css\ips9e_ch8.less" />
+    <Content Include="ebook\css\ips9e_ch8.css">
+      <DependentUpon>ips9e_ch8.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\ips9e_ch8.min.css">
+      <DependentUpon>ips9e_ch8.css</DependentUpon>
     </Content>
     <Content Include="ebook\ips9e_ch2_1.html" />
     <Content Include="ebook\ips9e_ch2_10.html" />
@@ -1300,6 +1322,7 @@
     <Content Include="ebook\js\ips9e_ch5.js" />
     <Content Include="ebook\js\ips9e_ch6.js" />
     <Content Include="ebook\js\ips9e_ch7.js" />
+    <Content Include="ebook\js\ips9e_ch8.js" />
     <Content Include="packages.config" />
     <Content Include="docs\01_MooreIPS9e_13387_Ch01_01-78_2nd_Pass.pdf" />
     <Content Include="docs\02_MooreIPS9e_13387_Ch02_79-162_2nd_Pass.pdf" />
@@ -1334,10 +1357,13 @@
     <Content Include="xml\ips9e-ch01.xml" />
     <Content Include="xml\ips9e-ch04.xml" />
     <Content Include="xml\ips9e-ch05.xml" />
-    <Content Include="xml\ips9e-ch06.xml" />
+    <Content Include="xml\ips9e-ch06.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="xml\ips9e-ch07.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="xml\ips9e-ch08.xml" />
     <Content Include="xml\math2js.pl" />
     <None Include="xml\xsd\digfir_manuscript.xsd">
       <SubType>Designer</SubType>
@@ -1400,7 +1426,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ebook\asset\ch8\supp_wins\examples\" />
+    <Folder Include="ebook\asset\ch8\supp_wins\exercises\" />
+    <Folder Include="ebook\asset\ch8\supp_wins\figures\" />
+    <Folder Include="ebook\asset\ch8\supp_wins\tables\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
