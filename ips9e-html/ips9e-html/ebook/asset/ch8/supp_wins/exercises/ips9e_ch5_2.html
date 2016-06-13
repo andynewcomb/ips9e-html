@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch5</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e_ch5.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="5">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch05-sec1-01" level="1" data-print_page="282">
+<h2 class="section-title">
+<span data-type="number">5.1</span> <span data-type="title" data-title-for="ips9e-ch05-sec1-01">5.1 Toward Statistical Inference
+</span>
+</h2>
+
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_282"><p>282</p></div>
+<div data-type="box" data-block_type="SP" id="ips9e-ch05-box-001"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-001"></h3>
+<div data-block_type="SP-TXT-ni" id="ips9e-ch05-p-013"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bluebullet" id="ips9e-ch05-list-001">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch05-p-014"><p><span data-block_type="maker">•</span> Identify parameters, populations, statistics, and samples and the relationships among these items.</p></div></li>
+<li><div data-block_type="SP-BL-first" id="ips9e-ch05-p-015"><p><span data-block_type="maker">•</span> Use simulation to study a sampling distribution.</p></div></li>
+<li><div data-block_type="SP-BL-first" id="ips9e-ch05-p-016"><p><span data-block_type="maker">•</span> Interpret and use a sampling distribution to describe a property of a statistic.</p></div></li>
+<li><div data-block_type="SP-BL-first" id="ips9e-ch05-p-017"><p><span data-block_type="maker">•</span> Identify bias in a statistic by examining its sampling distribution and characterize an unbiased estimator of a parameter.</p></div></li>
+<li><div data-block_type="SP-BL-first" id="ips9e-ch05-p-018"><p><span data-block_type="maker">•</span> Describe the relationship between the sample size and the variability of a statistic.</p></div></li>
+<li><div data-block_type="SP-BL-first" id="ips9e-ch05-p-019"><p><span data-block_type="maker">•</span> Identify ways to reduce bias and variability of a statistic.</p></div></li>
+<li><div data-block_type="SP-BL-first" id="ips9e-ch05-p-020"><p><span data-block_type="maker">•</span> Use the margin of error to describe the variability of a statistic.</p></div></li>
+</ul>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-021"><p>A market research firm interviews a random sample of 1200 undergraduates enrolled in four-year colleges and universities throughout the United States. One result: the average number of hours spent online weekly is 19.0 hours. That’s the truth about the 1200 students in the sample. What is the truth about the millions of undergraduates who make up this population?</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-022"><p>Because the sample was chosen at random, it’s reasonable to think that these 1200 students represent the entire population fairly well. So the market researchers turn the <em>fact</em> that the <em>sample mean</em> is <span data-math="math_1"></span> hours into an <em>estimate</em> that the average time spent online weekly in the <em>population of undergraduates</em> enrolled in four-year colleges and universities is 19.0 hours.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-023"><p>That’s a basic idea in statistics: use a fact about a sample to estimate the truth about the whole population. We call this <span data-type="termref" data-term="statistical inference"><strong>statistical inference</strong></span><span data-block_type="MN-GL-term">statistical inference</span> because we infer conclusions about the larger population from data on selected individuals.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-025"><p>To think about inference, we must keep straight whether a number describes a sample or a population. Here is the vocabulary we use.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-002"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-002"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-026"><p>PARAMETERS AND STATISTICS</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-027"><p>A <strong>parameter</strong> is a number that describes the <strong>population</strong>. A parameter is a fixed number, but in practice, we do not know its value.</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-028"><p>A <strong>statistic</strong> is a number that describes a <strong>sample</strong>. The value of a statistic is known when we have taken a sample, but it can change from sample to sample. We often use a statistic to estimate an unknown parameter.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_283"><p>283</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_1.html" id="ips9e-ch05-box-003"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-003"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-030"><p>EXAMPLE 5.1</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-031"><p><span data-block_type="EXP-T-ri">Understanding the college student market.</span> Since 1987, <em>Student Monitor</em> has published an annual market research study that provides clients with information about the college student market. The firm uses a random sample of 1200 students located throughout the United States.<span data-type="termref" data-term="fn_ch5_fn1"><sup>1</sup></span> One phase of the research focuses on computing and technology. The firm reports that undergraduates spend an average of 19.0 hours per week on the Internet and that 88% own a cell phone.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch05-p-032"><p>The sample mean <span data-math="math_2"></span> hours is a <em>statistic.</em> The corresponding <em>parameter</em> is the average (call it <em>μ</em>) of all undergraduates enrolled in four-year colleges and universities. Similarly, the <span data-type="termref" data-term="proportion of the sample"><strong>proportion of the sample</strong></span><span data-block_type="MN-GL-term">sample proportion</span> who own a cell phone</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch05-p-034"><p><span data-math="math_3"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch05-p-035"><p>is a <em>statistic.</em> The corresponding <em>parameter</em> is the <span data-type="termref" data-term="proportion"><strong>proportion</strong></span><span data-block_type="MN-GL-term">population proportion</span> (call it <em>p</em>) of all undergraduates at four-year colleges and universities who own a cell phone. We don’t know the values of the parameters <em>μ</em> and <em>p</em>, so we use the statistics <span data-math="math_4"></span> and <span data-math="math_5"></span>, respectively, to estimate them.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-004"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-004"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-037"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_1.html" id="ips9e-ch05-quest-001">
+<h3>Question
+			    <span data-type="number">5.1 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch05-p-038"><p><span data-block_type="EXR-QUE-N-ri">5.1</span> <span data-block_type="EXR-QUE-T-ri">Street harassment.</span> A large-scale survey of 16,607 women from 42 cities around the world reports that 84% of women experience their first street harassment before the age of 17.<span data-type="termref" data-term="fn_ch5_fn2"><sup>2</sup></span> Describe the statistic, population, and population parameter for this setting.</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-039"><p><span data-block_type="h2">Sampling variability</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-040"><p>If <em>Student Monitor</em> took a second random sample of 1200 students, the new sample would have different undergraduates in it. It is almost certain that the sample mean <span data-math="math_6"></span> would not again be 19.0. Likewise, we would not expect there to be exactly 1056 students who own a cell phone. In other words, the value of a statistic will vary from sample to sample. This basic fact is called <span data-type="termref" data-term="sampling variability"><strong>sampling variability</strong></span><span data-block_type="MN-GL-term">sampling variability</span>: the value of a statistic varies in repeated random sampling.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-042"><p>Random samples eliminate any preferences or favoritism from the act of choosing a sample, but they can still be misleading because of this <em>variability</em> that results when we choose at random. For example, what if a second random sample of 1200 undergraduates resulted in only 57% of the students owning a cell phone? Do these two results, 88% and 57%, leave you more or less confident in the value of the true population proportion? When sampling variability is too great, we can’t trust the results of any one sample.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idm2794336"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idm2794336"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-044"><p>simple random samples and bias, p. 174</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-045"><p>We can assess this variability by using the second advantage of random samples (the first advantage being the elimination of <em>bias</em>). Specifically, the fact that if we take lots of random samples of the same size from the same population, the variation from sample to sample will follow a predictable pattern. <strong>All of statistical inference is based on one idea: to see how trustworthy a procedure is, ask what would happen if we repeated it many times</strong>.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_284"><p>284</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-047"><p>To understand why sampling variability is not fatal, we ask, “What would happen if we took many samples?” Here’s how to answer that question for any statistic:</p></div>
+<ul data-block_type="bullet" id="ips9e-ch05-list-002">
+<li><div data-block_type="BL-first" id="ips9e-ch05-p-048"><p><span data-block_type="maker">•</span> Take a large number of random samples of size <em>n</em> from the same population.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch05-p-049"><p><span data-block_type="maker">•</span> Calculate the statistic for each sample.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch05-p-050"><p><span data-block_type="maker">•</span> Make a histogram of the values of the statistic.</p></div></li>
+<li><div data-block_type="BL-last" id="ips9e-ch05-p-051"><p><span data-block_type="maker">•</span> Examine the distribution displayed in the histogram for shape, center, and spread, as well as outliers or other deviations.</p></div></li>
+</ul>
+<div data-block_type="TXT" id="ips9e-ch05-p-052"><p>In practice, it is too expensive to take many samples from a large population such as all undergraduates enrolled in four-year colleges and universities. But we can imitate taking many samples by using random digits from a table or computer software to emulate chance behavior. This is called <span data-type="termref" data-term="simulation"><strong>simulation</strong></span><span data-block_type="MN-GL-term">simulation</span>.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_2.html" id="ips9e-ch05-box-005"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-005"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-054"><p>EXAMPLE 5.2</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch05-p-055"><p><span data-block_type="EXP-T-ri">Simulate a random sample.</span> Let’s simulate drawing simple random samples (SRSs) of size 100 from the population of undergraduates. Suppose that, in fact, 90% of the population owns a cell phone. Then the true value of the parameter we want to estimate is <em>p</em> = 0.9. (Of course, we would not sample in practice if we already knew that <em>p</em> = 0.9. We are sampling here to understand how the statistic <span data-math="math_7"></span> behaves.)</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idm2749648"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idm2749648"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-057"><p>random digits, <span data-type="link" data-href="alias:page_179">p. 179</span></p></div>
+</div></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-058"><p>For cell phone ownership, we can imitate the population by a table of random digits, with each entry standing for a person. Nine of the 10 digits (say, 0 to 8) stand for students who own a cell phone. The remaining digit, 9, stands for those who do not. Because all digits in a random number table are equally likely, this assignment produces a population proportion of cell phone owners equal to <em>p</em> = 0.9. We then simulate an SRS of 100 students from the population by taking 100 consecutive digits from <span data-type="link" data-href="table_b.html">Table B</span>. The statistic <span data-math="math_8"></span> is the proportion of 0s to 8s in the sample.</p></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-059"><p>Here are the first 100 entries in <span data-type="link" data-href="table_b.html">Table B</span> with digits 0 to 8 highlighted:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch05-tab-1" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="80"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">
+<strong>1</strong>9<strong>223</strong>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">9<strong>5034</strong>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<strong>05756</strong> </td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<strong>28713</strong> </td>
+<td data-block_type="EXP-TB1-TXT" align="center">9<strong>640</strong>9</td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>12531</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>42544</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>82853</strong></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>73676</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>47150</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center">99<strong>400</strong>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<strong>01</strong>9<strong>27</strong> </td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<strong>27754</strong> </td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>42648</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<strong>82425</strong> </td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<strong>362</strong>9<strong>0</strong>
+</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>45467</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<strong>7170</strong>9</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<strong>77558</strong> </td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<strong>000</strong>9<strong>5</strong> </td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-060"><p>There are 90 digits between 0 and 8, so <span data-math="math_9"></span>. We are fortunate here that our estimate is the true population value <em>p</em> = 0.9. A second SRS based on the second 100 entries in <span data-type="link" data-href="table_b.html">Table B</span> gives a different result, <span data-math="math_10"></span>. The third SRS gives the result <span data-math="math_11"></span>. All three sample results are different. That’s sampling variability.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-006"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-006"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-061"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_2.html" id="ips9e-ch05-quest-002">
+<h3>Question
+			    <span data-type="number">5.2 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch05-p-062"><p><span data-block_type="EXR-QUE-N-ri">5.2</span> <span data-block_type="EXR-QUE-T-ri">Using a random numbers table.</span> In <span data-type="link" data-href="example_5_2.html">Example 5.2</span>, we considered <em>p</em> = 0.9 and used each entry in <span data-type="link" data-href="table_b.html">Table B</span> as a person for our simulations. Suppose instead that <em>p</em> = 0.85. How might we use <span data-type="link" data-href="table_b.html">Table B</span> for simulations in this setting?</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-063"><p><span data-block_type="h2">Sampling distributions</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-064"><p>Simulation is a powerful tool for studying chance variation. Now that we see how simulation works, it is faster to abandon <span data-type="link" data-href="table_b.html">Table B</span> and to use a computer to generate random numbers. This also allows us to study other statistics, such as the sample mean, when the population cannot be easily imitated by a table of random numbers. We address the sampling distribution of <span data-math="math_12"></span> in the next section.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_285"><p>285</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_5_3.html" id="ips9e-ch05-box-007"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-007"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch05-p-066"><p>EXAMPLE 5.3</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch05-p-067"><p><span data-block_type="EXP-T-ri">Take many random samples.</span> <span data-type="link" data-href="figure_5_1.html">Figure 5.1</span> illustrates the process of choosing many samples and finding the statistic <span data-math="math_13"></span> for each one. Follow the flow of the figure from the population at the left, to choosing an SRS and finding the <span data-math="math_14"></span> for this sample, to collecting together the <span data-math="math_15"></span>’s from many samples. The histogram at the right of the figure shows the distribution of the values of <span data-math="math_16"></span> from 1000 separate SRSs of size 100 drawn from a population with <em>p</em> = 0.9.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="idm20882784"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idm20882784"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch05-p-069"><p>histogram, <span data-type="link" data-href="alias:page_14">p. 14</span></p></div>
+</div></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_5_1.html" data-figure-id="ips9e-ch05-fig-002" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_01.jpg" data-figure-id="ips9e-ch05-fig-002" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.1: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.1</span> <span data-block_type="FG-CAP">The results of many SRSs have a regular pattern, <span data-type="link" data-href="example_5_3.html">Example 5.3</span>. Here we draw 1000 SRSs of size 100 from the same population. The population parameter is <em>p</em> = 0.9. The histogram shows the distribution of 1000 sample proportions.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-mid" id="ips9e-ch05-p-070"><p>Of course, <em>Student Monitor</em> samples 1200 students, not just 100. <span data-type="link" data-href="figure_5_2.html">Figure 5.2</span> is parallel to <span data-type="link" data-href="figure_5_1.html">Figure 5.1</span>. It shows the process of choosing 1000 SRSs, each of size 1200, from a population in which the true proportion is <em>p</em> = 0.9. The 1000 values of <span data-math="math_17"></span> from these samples form the histogram at the right of the figure. <span data-type="link" data-href="figure_5_1.html">Figure 5.1</span> and <span data-type="link" data-href="figure_5_2.html">5.2</span> are drawn on the same scale. Comparing them shows what happens when we increase the size of our samples from 100 to 1200. These histograms display the <em>sampling distribution</em> of the statistic <span data-math="math_18"></span> for two sample sizes.</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_5_2.html" data-figure-id="ips9e-ch05-fig-003" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_02.jpg" data-figure-id="ips9e-ch05-fig-003" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.2: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.2</span> <span data-block_type="FG-CAP">The distribution of the sample proportion for 1000 SRSs of size 1200 drawn from the same population as in <span data-type="link" data-href="figure_5_1.html">Figure 5.1</span>. The two histograms have the same scale. The statistic from the larger sample is less variable.</span></span>
+</div>
+</div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_286"><p>286</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-008"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-008"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-072"><p>SAMPLING DISTRIBUTION</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-073"><p>The <strong>sampling distribution</strong> of a statistic is the distribution of values taken by the statistic in all possible samples of the same size from the same population.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-074"><p>Strictly speaking, the sampling distribution is the ideal pattern that would emerge if we looked at all possible samples of size <em>n</em> (here, 100 or 1200) from our population. A distribution obtained from a fixed number of trials, like the 1000 trials in <span data-type="link" data-href="figure_5_1.html">Figure 5.1</span> and <span data-type="link" data-href="figure_5_2.html">5.2</span>, is only an approximation to the sampling distribution. We will see that probability theory, the mathematics of chance behavior, can sometimes describe sampling distributions exactly. The interpretation of a sampling distribution is the same, however, whether we obtain it by simulation or by the mathematics of probability.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-009"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-009"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-075"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_3.html" id="ips9e-ch05-quest-003">
+<h3>Question
+			    <span data-type="number">5.3 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch05-p-076"><p><span data-block_type="EXR-QUE-N-ri">5.3</span> <span data-block_type="EXR-QUE-T-ri">Poker winnings.</span> Doug plays poker with the same group of friends once a week for three hours. At the end of each night, he records how much he won or lost in an Excel spreadsheet. Does this collection of amounts represent an approximation to a sampling distribution of his weekly winnings? Explain your answer.</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-077"><p>We can use the tools of data analysis to describe any distribution. Let’s apply those tools to <span data-type="link" data-href="figure_5_1.html">Figure 5.1</span> and <span data-type="link" data-href="figure_5_2.html">5.2</span>.</p></div>
+<ul data-block_type="bullet" id="ips9e-ch05-list-003">
+<li><div data-block_type="BL-first" id="ips9e-ch05-p-078"><p><span data-block_type="maker">•</span> <strong>Shape:</strong> The histograms look Normal. <span data-type="link" data-href="figure_5_3.html">Figure 5.3</span> is a Normal quantile plot of the values of <span data-math="math_19"></span> for our samples of size 100. It confirms that the distribution in <span data-type="link" data-href="figure_5_1.html">Figure 5.1</span> is close to Normal. The 1000 values for samples of size 1200 in <span data-type="link" data-href="figure_5_2.html">Figure 5.2</span> are even closer to Normal. The Normal curves drawn through the histograms describe the overall shape quite well.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch05-p-079"><p><span data-block_type="maker">•</span> <strong>Center:</strong> In both cases, the values of the sample proportion <span data-math="math_20"></span> vary from sample to sample, but the values are centered at 0.9. Recall that <em>p</em> = 0.9 is the true population parameter. Some samples have a <span data-math="math_21"></span> less than 0.9 and some greater, but there is no tendency to be always low or always high. That is, <span data-math="math_22"></span> has no <em>bias</em> as an estimator of <em>p</em>. This is true for both large and small samples. (Want the details? The mean of the 1000 values of <span data-math="math_23"></span> is 0.8985 for samples of size 100 and 0.8994 for samples of size 1200. The median value of <span data-math="math_24"></span> is exactly 0.9 for samples of both sizes.)</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_5_3.html" data-figure-id="ips9e-ch05-fig-004" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_03.jpg" data-figure-id="ips9e-ch05-fig-004" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.3: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.3</span> <span data-block_type="FG-CAP">Normal quantile plot of the sample proportions in <span data-type="link" data-href="figure_5_1.html">Figure 5.1</span>. The distribution is close to Normal except for some clustering due to the fact that the sample proportions from a sample of size 100 can take only values that are a multiple of 0.01.</span></span>
+</div>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_287"><p>287</p></div>
+</li>
+<li><div data-block_type="BL-last" id="ips9e-ch05-p-081"><p><span data-block_type="maker">•</span> <strong>Spread:</strong> The values of <span data-math="math_25"></span> from samples of size 1200 are much less spread out than the values from samples of size 100. In fact, the standard deviations are 0.0304 for <span data-type="link" data-href="figure_5_1.html">Figure 5.1</span> and 0.0083 for <span data-type="link" data-href="figure_5_2.html">Figure 5.2</span>.</p></div></li>
+</ul>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-082"><p>Although these results describe just two sets of simulations, they reflect facts that are true whenever we use random sampling.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-083"><p><span data-block_type="h2">Bias and variability</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-084"><p>Our simulations show that a sample of size 1200 will almost always give an estimate <span data-math="math_26"></span> that is close to the truth about the population. <span data-type="link" data-href="figure_5_2.html">Figure 5.2</span> illustrates this fact for just one value of the population proportion (<em>p</em> = 0.9), but it is true for any proportion. That is a primary reason <em>Student Monitor</em> uses a sample of size of 1200. There is more sampling variability the smaller the sample size. Samples of size 100, for example, might give an estimate of 83% or 97% when the truth is 90%.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-085"><p>Thinking about <span data-type="link" data-href="figure_5_1.html">Figure 5.1</span> and <span data-type="link" data-href="figure_5_2.html">5.2</span> helps us restate the idea of bias when we use a statistic like <span data-math="math_27"></span> to estimate a parameter like <em>p</em>. It also reminds us that variability matters as much as bias.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-010"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-010"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-086"><p>BIAS AND VARIABILITY</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-087"><p><strong>Bias</strong> concerns the center of the sampling distribution. A statistic used to estimate a parameter is an <strong>unbiased estimator</strong> if the mean of its sampling distribution is equal to the true value of the parameter being estimated.</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-088"><p>The <strong>variability of a statistic</strong> is described by the spread of its sampling distribution. This spread is determined by the sampling design and the sample size <em>n</em>. Statistics from larger probability samples have smaller spreads.</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-089"><p>The <strong>margin of error</strong> is a numerical measure of the spread of a sampling distribution. It can be used to set bounds on the size of the likely error in using the statistic as an estimator of a population parameter.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-090"><p>We can think of the true value of the population parameter as the bull’s-eye on a target and of the sample statistic as an arrow fired at the bull’s-eye. Bias and variability describe what happens when an archer fires many arrows at the target. <em>Bias</em> means that the aim is off, and the sample values do not center about the population value. Large <em>variability</em> means that sample values are widely scattered about the target. In other words, there is a lack of precision, or consistency, among the sample values. <span data-type="link" data-href="figure_5_4.html">Figure 5.4</span> shows this target illustration of the two types of error.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-091"><p>Notice that small variability (repeated shots are close together) can accompany large bias (the arrows are consistently away from the bull’s-eye in one direction). And small bias (the arrows center on the bull’s-eye) can accompany large variability (repeated shots are widely scattered). A good sampling scheme, like a good archer, must have both small bias and small variability. Here’s how we do this.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_288"><p>288</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_5_4.html" data-figure-id="ips9e-ch05-fig-005" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch5/17MOOREIPS-MSE_9e_fig_05_04.jpg" data-figure-id="ips9e-ch05-fig-005" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.4: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 5.4</span> <span data-block_type="FG-CAP">Bias and variability in shooting arrows at a target. Bias means the shots do not center around the bull’s-eye. Variability means that the shots are scattered.</span></span>
+</div>
+</div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-011"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-011"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-093"><p>MANAGING BIAS AND VARIABILITY</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-094"><p><strong>To reduce bias</strong>, use random sampling. When we start with a list of the entire population, simple random sampling produces unbiased estimates—the values of a statistic computed from an SRS neither consistently overestimate nor consistently underestimate the value of the population parameter.</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-095"><p><strong>To reduce the variability</strong> of a statistic from an SRS, use a larger sample. You can make the variability as small as you want by taking a large enough sample.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-096"><p>In practice, the <em>Student Monitor</em> takes only one random sample. We don’t know how close to the truth the estimate from this one sample is because we don’t know what the true population parameter value is. But <em>large random samples almost always give an estimate that is close to the truth.</em> Looking at the pattern of many samples when <em>n</em> = 1200 shows that we can trust the result of one sample.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_289"><p>289</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-098"><p>Similarly, the Current Population Survey’s sample of about 60,000 households estimates the national unemployment rate very accurately. Of course, only probability samples carry this guarantee. Using a probability sampling design and taking care to deal with practical difficulties reduce bias in a sample.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-099"><p>The size of the sample then determines how close to the population truth the sample result is likely to fall. Results from a sample survey usually come with a <em>margin of error</em> that sets bounds on the size of the likely error. The margin of error directly reflects the variability of the sample statistic, so it is smaller for larger samples. We will describe the details of its calculation to later chapters.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch05-box-012"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-012"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch05-p-0100"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_5_4.html" id="ips9e-ch05-quest-004">
+<h3>Question
+			    <span data-type="number">5.4 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch05-p-0101"><p><span data-block_type="EXR-QUE-N-ri">5.4</span> <span data-block_type="EXR-QUE-T-ri">Bigger is better?</span> Radio talk shows often report opinion polls based on tens of thousands of listeners. These sample sizes are typically much larger than those used in opinion polls that incorporate probability sampling. Does a larger sample size mean more trustworthy results? Explain your answer.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_5_5.html" id="ips9e-ch05-quest-005">
+<h3>Question
+			    <span data-type="number">5.5 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch05-p-0102"><p><span data-block_type="EXR-QUE-N-ri">5.5</span> <span data-block_type="EXR-QUE-T-ri">Effect of sample size on the sampling distribution.</span> You are planning an opinion study and are considering taking an SRS of either 200 or 600 people. Explain how the sampling distributions of the population proportion <em>p</em> would differ in terms of center and spread for these two scenarios.</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0103"><p><span data-block_type="h2">Sampling from large populations</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0104"><p><em>Student Monitor</em>’s sample of 1200 students is only about 1 out of every 90,000 undergraduate students in the United States. Does it matter whether we sample 1-in-1000 individuals in the population or 1-in-90,000?</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch05-box-013"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch05-box-013"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch05-p-0105"><p>LARGE POPULATIONS DO NOT REQUIRE LARGE SAMPLES</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch05-p-0106"><p>The variability of a statistic from a random sample depends little on the size of the population, as long as the population is at least 20 times larger than the sample.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0107"><p>Why does the size of the population have little influence on the behavior of statistics from random samples? To see why this is plausible, imagine sampling harvested corn by thrusting a scoop into a lot of corn kernels. The scoop doesn’t know whether it is surrounded by a bag of corn or by an entire truckload. As long as the corn is well mixed (so that the scoop selects a random sample), the variability of the result depends only on the size of the scoop.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0108"><p>The fact that the variability of sample results is controlled by the size of the sample has important consequences for sampling design. An SRS of size 1200 from the 10.5 million undergraduates gives results as precise as an SRS of size 1200 from the roughly 156,000 inhabitants of San Francisco between the ages of 20 and 29. This is good news for designers of national samples but bad news for those who want accurate information about these citizens of San Francisco. If both use an SRS, both must use the same size sample to obtain equally trustworthy results.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_290"><p>290</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch05-p-0110"><p><span data-block_type="h2">Why randomize?</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch05-p-0111"><p>Why randomize? The act of randomizing guarantees that the results of analyzing our data are subject to the laws of probability. The behavior of statistics is described by a sampling distribution. The form of the distribution is known and, in many cases, is approximately Normal. Often, the center of the distribution lies at the true parameter value so that the notion that randomization eliminates bias is made more explicit. The spread of the distribution describes the variability of the statistic and can be made as small as we wish by choosing a large enough sample. In a randomized experiment, we can reduce variability by choosing larger groups of subjects for each treatment.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0112"><p>These facts are at the heart of formal statistical inference. The remainder of this chapter has much to say in more technical language about sampling distributions. Later chapters describe the way statistical conclusions are based on them. What any user of statistics must understand is that all the technical talk has its basis in a simple question: <em>What would happen if the sample or the experiment were repeated many times?</em> The reasoning applies not only to an SRS, but also to the complex sampling designs actually used by opinion polls and other national sample surveys. The same conclusions hold as well for randomized experimental designs. The details vary with the design, but the basic facts are true whenever randomization is used to produce data.</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch05-p-0113"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0114"><p>Remember that proper statistical design is not the only aspect of a good sample or experiment. <em>The sampling distribution shows only how a statistic varies due to the operation of chance in randomization. It reveals nothing about possible bias due to undercoverage or nonresponse in a sample or to lack of realism in an experiment.</em> The actual error in estimating a parameter by a statistic can be much larger than the sampling distribution suggests. What is worse, there is no way to say how large the added error is. The real world is less orderly than statistics textbooks imply.</p></div>
+<div data-block_type="TXT" id="ips9e-ch05-p-0115"><p>In the next two sections, we will study the sampling distributions of two common statistics, the sample mean and the sample proportion. The focus will be on the important features of these distributions so that we can quickly describe and use them in the later chapters on statistical inference. We will see that, in each case, the sampling distribution depends on <strong>both</strong> the population and the way we collect the data from the population.</p></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch5.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('573ba099757a2e274d000001');
+});
+    //-->
+</script>
+</body>
+</html>
+

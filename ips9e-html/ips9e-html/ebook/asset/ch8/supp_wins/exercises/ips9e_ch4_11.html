@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch4</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e_ch4.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="4">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch04-sec1-04" level="1" data-print_page="246">
+<h2 class="section-title">
+<span data-type="number">4.4</span> <span data-type="title" data-title-for="ips9e-ch04-sec1-04">4.4 Means and Variances of Random Variables
+</span>
+</h2>
+
+<div data-type="box" data-block_type="SP" id="ips9e-ch04-box-55"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-55"></h3>
+<div data-block_type="SP-TXT-ni" id="ips9e-ch04-p-503"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bluebullet" id="ips9e-ch04-list-45">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch04-p-504"><p><span data-block_type="maker">•</span> Use a probability distribution to find the mean of a discrete random variable.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch04-p-505"><p><span data-block_type="maker">•</span> Apply the law of large numbers to describe the behavior of the sample mean as the sample size increases.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch04-p-506"><p><span data-block_type="maker">•</span> Find means using the rules for means of linear transformations, sums, and differences.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch04-p-507"><p><span data-block_type="maker">•</span> Use a probability distribution to find the variance and the standard deviation of a discrete random variable.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch04-p-508"><p><span data-block_type="maker">•</span> Find variances and standard deviations using the rules for variances and standard deviations for linear transformations.</p></div></li>
+<li><div data-block_type="SP-BL-last" id="ips9e-ch04-p-509"><p><span data-block_type="maker">•</span> Find variances and standard deviations using the rules for variances and standard deviations for sums of and differences between two random variables and for uncorrelated and for correlated random variables.</p></div></li>
+</ul>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch04-p-510"><p>The probability histograms and density curves that picture the probability distributions of random variables resemble our earlier pictures of distributions of data. In describing data, we moved from graphs to numerical measures such as means and standard deviations. Now we will make the same move to expand our descriptions of the distributions of random variables. We can speak of the mean winnings in a game of chance or the standard deviation of the randomly varying number of calls a travel agency receives in an hour. In this section, we will learn more about how to compute these descriptive measures and about the laws they obey.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch04-p-511"><p><span data-block_type="h2">The mean of a random variable</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch04-p-512"><p>In <span data-type="link" data-href="ips9e-ch01.xml">Chapter 1</span> (page 28), we learned that the mean <span data-math="math_24"></span> is the average of the observations in a <em>sample.</em> Recall that a random variable <em>X</em> is a numerical outcome of a random process. Think about repeating the random process many times and recording the resulting values of the random variable. You can think of the value of a random variable as the average of a very large sample where the relative frequencies of the values are the same as their probabilities.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_247"><p>247</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-513"><p>If we think of the random process as corresponding to the population, then the mean of the random variable is a characteristic of this population. Here is an example.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_27.html" id="ips9e-ch04-box-56"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-56"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-514"><p>EXAMPLE 4.27</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-515"><p><span data-block_type="EXP-T-ri">The Tri-State Pick 3 lottery.</span> Most states and Canadian provinces have government-sponsored lotteries. Here is a simple lottery wager from the Tri-State Pick 3 game that New Hampshire shares with Maine and Vermont. You choose a three-digit number, 000 to 999. The state chooses a three-digit winning number at random and pays you $500 if your number is chosen.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-516"><p>Because there are 1000 three-digit numbers, you have probability 1/1000 of winning. Taking <em>X</em> to be the amount your ticket pays you, the probability distribution of <em>X</em> is</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-15" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="40"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Payoff <em>X</em>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="char">$0</td>
+<td data-block_type="EXP-TB1-TXT" align="char">$500</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.999</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.001</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-517"><p>The random process consists of drawing a three-digit number. The population consists of the numbers 000 to 999. Each of these possible outcomes is equally likely in this example. In the setting of sampling in <span data-type="link" data-href="ips9e-ch03.xml">Chapter 3</span> (page 191), we can view the random process as selecting an SRS of size 1 from the population. The random variable <em>X</em> is 1 if the selected number is equal to the one that you chose and 0 if it is not.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-518"><p>What is your average payoff from many tickets? The ordinary average of the two possible outcomes $0 and $500 is $250, but that makes no sense as the average because $500 is much less likely than $0. In the long run, you receive $500 once in every 1000 tickets and $0 on the remaining 999 of 1000 tickets. The long-run average payoff is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-519"><p><span data-math="math_25"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-520"><p>or 50 cents. That number is the mean of the random variable <em>X</em>. (Tickets cost $1, so in the long run, the state keeps half the money you wager.)</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-521"><p>If you play Tri-State Pick 3 several times, we would—as usual—call the mean of the actual amounts you win <span data-math="math_26"></span>. The mean in <span data-type="link" data-href="example_4_27.html">Example 4.27</span> is a different quantity—it is the long-run average winnings you expect if you play a very large number of times.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-57"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-57"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch04-p-522"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_4_63.html" id="ips9e-ch04-ques-63">
+<h3>Question
+			    <span data-type="number">4.63 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-523"><p><span data-block_type="EXR-QUE-N-ri">4.63</span> <span data-block_type="EXR-QUE-T-ri">Find the mean of the probability distribution.</span> You toss a fair coin. If the outcome is heads, you win $10.00; if the outcome is tails, you win nothing. Let <em>X</em> be the amount that you win in a single toss of a coin. Find the probability distribution of this random variable and its mean.</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-524"><p>Just as probabilities are an idealized description of long-run proportions, the mean of a probability distribution describes the long-run average outcome. We can’t call this mean <span data-math="math_27"></span>, so we need a different symbol. The common symbol for the <span data-type="termref" data-term="mean of a probability distribution"><strong>mean of a probability distribution</strong></span><span data-block_type="MN-GL-term">mean <em>μ</em></span> is <em>μ</em>, the Greek letter mu. We used <em>μ</em> in <span data-type="link" data-href="ips9e-ch01.xml">Chapter 1</span> for the mean of a Normal distribution, so this is not a new notation. We will often be interested in several random variables, each having a different probability distribution with a different mean.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_248"><p>248</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-525"><p>To remind ourselves that we are talking about the mean of <em>X</em>, we often write <em>μ<sub>X</sub></em> rather than simply <em>μ</em>. In <span data-type="link" data-href="example_4_27.html">Example 4.27</span>, <em>μ<sub>X</sub></em> = $0.50. Notice that, as often happens, the mean is not a possible value of <em>X</em>. You will often find the mean of a random variable <em>X</em> called the <span data-type="termref" data-term="expected value"><strong>expected value</strong></span><span data-block_type="MN-GL-term">expected value</span> of <em>X</em>. This term can be misleading because we don’t necessarily expect one observation on <em>X</em> to be close to its expected value.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-526"><p>The mean of any discrete random variable is found just as in <span data-type="link" data-href="example_4_27.html">Example 4.27</span>. It is an average of the possible outcomes, but a weighted average in which each outcome is weighted by its probability. Because the probabilities add to 1, we have total weight 1 to distribute among the outcomes. An outcome that occurs half the time has probability one-half and gets one-half the weight in calculating the mean. Here is the general definition.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-58"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-58"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch04-p-527"><p>MEAN OF A DISCRETE RANDOM VARIABLE</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-528"><p>Suppose that <em>X</em> is a <strong>discrete random variable</strong> whose distribution is</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-16" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="50"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Value of <em>X</em>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>x</em><sub>1</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>x</em><sub>2</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>x</em><sub>3</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">. . .</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>p</em><sub>1</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>p</em><sub>2</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>p</em><sub>3</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">. . .</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-529"><p>To find the <strong>mean</strong> of <em>X</em>, multiply each possible value by its probability, then add all the products:</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch04-p-530"><p><em>μ<sub>X</sub></em> = <em>x</em><sub>1</sub><em>p</em><sub>1</sub> + <em>x</em><sub>2</sub><em>p</em><sub>2</sub> + · · ·</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch04-p-531"><p>= ∑ <em>x<sub>i</sub></em> <em>p<sub>i</sub></em></p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_28.html" id="ips9e-ch04-box-59"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-59"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-532"><p>EXAMPLE 4.28</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-533"><p><span data-block_type="EXP-T-ri">The mean of equally likely first digits.</span> If first digits in a set of data all have the same probability, the probability distribution of the first digit <em>X</em> is then</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-17" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="90"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">First digit <em>X</em>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1</td>
+<td data-block_type="EXP-TB1-TXT" align="center">2</td>
+<td data-block_type="EXP-TB1-TXT" align="center">3</td>
+<td data-block_type="EXP-TB1-TXT" align="center">4</td>
+<td data-block_type="EXP-TB1-TXT" align="center">5</td>
+<td data-block_type="EXP-TB1-TXT" align="center">6</td>
+<td data-block_type="EXP-TB1-TXT" align="center">7</td>
+<td data-block_type="EXP-TB1-TXT" align="center">8</td>
+<td data-block_type="EXP-TB1-TXT" align="center">9</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1/9</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1/9</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1/9</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1/9</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1/9</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1/9</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1/9</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1/9</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1/9</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-534"><p>The mean of this distribution is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-535"><p><span data-math="math_28"></span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-538"><p>Suppose that the random digits in <span data-type="link" data-href="example_4_28.html">Example 4.28</span> had a different probability distribution. In <span data-type="link" data-href="example_4_12.html">Example 4.12</span> (page 226), we described Benford’s law as a probability distribution that describes first digits of numbers in many real situations. Let’s calculate the mean for Benford’s law.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_249"><p>249</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_29.html" id="ips9e-ch04-box-60"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-60"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-539"><p>EXAMPLE 4.29</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-540"><p><span data-block_type="EXP-T-ri">The mean of first digits that follow Benford’s law.</span> Here is the distribution of the first digit for data that follow Benford’s law. We use the letter <em>V</em> for this random variable to distinguish it from the one that we studied in <span data-type="link" data-href="example_4_28.html">Example 4.28</span>. The distribution of <em>V</em> is</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-18" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="100"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">First digit <em>V</em>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1</td>
+<td data-block_type="EXP-TB1-TXT" align="center">2</td>
+<td data-block_type="EXP-TB1-TXT" align="center">3</td>
+<td data-block_type="EXP-TB1-TXT" align="center">4</td>
+<td data-block_type="EXP-TB1-TXT" align="center">5</td>
+<td data-block_type="EXP-TB1-TXT" align="center">6</td>
+<td data-block_type="EXP-TB1-TXT" align="center">7</td>
+<td data-block_type="EXP-TB1-TXT" align="center">8</td>
+<td data-block_type="EXP-TB1-TXT" align="center">9</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.301</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.176</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.125</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.097</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.079</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.067</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.058</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.051</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.046</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-541"><p>The mean of <em>V</em> is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-542"><p><em>μ<sub>V</sub></em> = (1)(0.301) + (2)(0.176) + (3)(0.125) + (4)(0.097) + (5)(0.079)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-543"><p>+ (6)(0.067) + (7)(0.058) + (8)(0.051) + (9)(0.046)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-544"><p>= 3.441</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-545"><p>The mean reflects the greater probability of smaller first digits under Benford’s law than when first digits 1 to 9 are equally likely.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-546"><p><span data-type="link" data-href="figure_4_13.html">Figure 4.13</span> locates the means of <em>X</em> and <em>V</em> on the two probability histograms. Because the discrete uniform distribution of <span data-type="link" data-href="figure_4_13.html">Figure 4.13(a)</span> is symmetric, the mean lies at the center of symmetry. We can’t locate the mean of the right-skewed distribution of <span data-type="link" data-href="figure_4_13.html">Figure 4.13(b)</span> by eye—calculation is needed.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-547"><p>What about continuous random variables? The probability distribution of a continuous random variable <em>X</em> is described by a density curve. <span data-type="link" data-href="ips9e-ch01.xml">Chapter 1</span> (page 54) showed how to find the mean of the distribution: it is the point at which the area under the density curve would balance if it were made out of solid material. The mean lies at the center of symmetric density curves such as the Normal curves. Exact calculation of the mean of a distribution with a skewed density curve requires advanced mathematics.<span data-type="termref" data-term="fn_ch4_fn13"><sup>13</sup></span> The idea that the mean is the balance point of the distribution applies to discrete random variables as well, but in the discrete case, we have a formula that gives us this point.</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_4_13.html" data-figure-id="ips9e-ch04-fig-17" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_13.jpg" data-figure-id="ips9e-ch04-fig-17" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 4.13: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 4.13</span> <span data-block_type="FG-CAP">Locating the mean of a discrete random variable on the probability histogram for (a) digits between 1 and 9 chosen at random; (b) digits between 1 and 9 chosen from records that obey Benford’s law.</span></span>
+</div>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_250"><p>250</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch04-p-548"><p><span data-block_type="h2">Statistical estimation and the law of large numbers</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch04-p-549"><p>We would like to estimate the mean height <em>μ</em> of the population of all American women between the ages of 18 and 24 years. This <em>μ</em> is the mean <em>μ<sub>X</sub></em> of the random variable <em>X</em> obtained by choosing a young woman at random and measuring her height. To estimate <em>μ</em>, we choose an SRS of young women and use the sample mean <span data-math="math_29"></span> to estimate the unknown population mean <em>μ</em>. In the language of <span data-type="link" data-href="ips9e-ch05-sec1-01">Section 5.1</span> (page 282), <em>μ</em> is a <em>parameter</em> and <span data-math="math_30"></span> is a <em>statistic.</em></p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-550"><p>Statistics obtained from probability samples are random variables because their values vary in repeated sampling. The sampling distributions of statistics are just the probability distributions of these random variables.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-551"><p>It seems reasonable to use <span data-math="math_31"></span> to estimate <em>μ</em>. An SRS should fairly represent the population, so the mean <span data-math="math_32"></span> of the sample should be somewhere near the mean <em>μ</em> of the population. Of course, we don’t expect <span data-math="math_33"></span> to be exactly equal to <em>μ</em>, and we realize that if we choose another SRS, the luck of the draw will probably produce a different <span data-math="math_34"></span>.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-552"><p>If <span data-math="math_35"></span> is rarely exactly right and varies from sample to sample, why is it nonetheless a reasonable estimate of the population mean <em>μ</em>? If we keep on adding observations to our random sample, the statistic <span data-math="math_36"></span> is <em>guaranteed</em> to get as close as we wish to the parameter <em>μ</em> and then stay that close. We have the comfort of knowing that if we can afford to keep on measuring more women, eventually we will estimate the mean height of all young women very accurately. This remarkable fact is called the <em>law of large numbers.</em> It is remarkable because it holds for <em>any</em> population, not just for some special class such as Normal distributions.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-61"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-61"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch04-p-553"><p>LAW OF LARGE NUMBERS</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-554"><p>Draw independent observations at random from any population with finite mean <em>μ</em>. Decide how accurately you would like to estimate <em>μ</em>. As the number of observations drawn increases, the mean <span data-math="math_37"></span> of the observed values eventually approaches the mean <em>μ</em> of the population as closely as you specified and then stays that close.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-555"><p>The behavior of <span data-math="math_38"></span> is similar to the idea of probability. In the long run, the <em>proportion</em> of outcomes taking any value gets close to the <em>probability</em> of that value, and the <em>average outcome</em> gets close to the distribution <em>mean.</em> <span data-type="link" data-href="figure_4_1.html">Figure 4.1</span> (page 216) shows how proportions approach probability in one example. Here is an example of how sample means approach the distribution mean.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_30.html" id="ips9e-ch04-box-62"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-62"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-556"><p>EXAMPLE 4.30</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-557"><p><span data-block_type="EXP-T-ri">Heights of young women.</span> The distribution of the heights of all young women is close to the Normal distribution with mean 64.5 inches and standard deviation 2.5 inches. Suppose that <em>μ</em> = 64.5 were exactly true.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_251"><p>251</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_4_14.html" data-figure-id="ips9e-ch04-fig-18" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_14.jpg" data-figure-id="ips9e-ch04-fig-18" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 4.14: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 4.14</span> <span data-block_type="FG-CAP">The law of large numbers in action, <span data-type="link" data-href="example_4_30.html">Example 4.30</span>. As we take more observations, the sample mean always approaches the mean of the population.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-558"><p><span data-type="link" data-href="figure_4_14.html">Figure 4.14</span> shows the behavior of the mean height <span data-math="math_39"></span> of <em>n</em> women chosen at random from a population whose heights follow the <em>N</em>(64.5, 2.5) distribution. The graph plots the values of <span data-math="math_40"></span> as we add women to our sample. The first woman drawn had height 64.21 inches, so the line starts there. The second had height 64.35 inches, so for <em>n</em> = 2 the mean is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-559"><p><span data-math="math_41"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-560"><p>This is the second point on the line in the graph.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-561"><p>At first, the graph shows that the mean of the sample changes as we take more observations. Eventually, however, the mean of the observations gets close to the population mean <em>μ</em> = 64.5 and settles down at that value. The law of large numbers says that this <em>always</em> happens.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-63"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-63"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch04-p-562"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_4_64.html" id="ips9e-ch04-ques-64">
+<h3>Question
+			    <span data-type="number">4.64 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-563"><p><span data-block_type="EXR-QUE-N-ri">4.64</span> <span data-block_type="EXR-QUE-T-ri">Use the <em>Law of Large Numbers</em> applet.</span> The <em>Law of Large Numbers</em> applet animates a graph like <span data-type="link" data-href="figure_4_14.html">Figure 4.14</span> for rolling dice. Use it to better understand the law of large numbers by making a similar graph.</p></div>
+</div>
+</div></div>
+<div data-block_type="Applet icon" id="ips9e-ch04-p-564"><p><img id="" src="asset/global_images/BPSapplet-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-565"><p>The mean <em>μ</em> of a random variable is the average value of the variable in two senses. By its definition, <em>μ</em> is the average of the possible values, weighted by their probability of occurring. The law of large numbers says that <em>μ</em> is also the long-run average of many independent observations on the variable. The law of large numbers can be proved mathematically starting from the basic laws of probability.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch04-p-566"><p><span data-block_type="h2">Thinking about the law of large numbers</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch04-p-567"><p>The law of large numbers says broadly that the average results of many independent observations are stable and predictable. The gamblers in a casino may win or lose, but the casino will win in the long run because the law of large numbers says what the average outcome of many thousands of bets will be. An insurance company deciding how much to charge for life insurance and a fast-food restaurant deciding how many beef patties to prepare also rely on the fact that averaging over many individuals produces a stable result. It is worth the effort to think a bit more closely about so important a fact.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_252"><p>252</p></div>
+<div data-block_type="TXT-3" id="ips9e-ch04-p-568"><p><span data-block_type="h3-ri">The “law of small numbers”</span> Both the rules of probability and the law of large numbers describe the regular behavior of chance phenomena <em>in the long run.</em> Psychologists have discovered that our intuitive understanding of randomness is quite different from the true laws of chance.<span data-type="termref" data-term="fn_ch4_fn14"><sup>14</sup></span> For example, most people believe in an incorrect “law of small numbers.” That is, we expect even short sequences of random events to show the kind of average behavior that in fact appears only in the long run.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-569"><p>Some teachers of statistics begin a course by asking students to toss a coin 50 times and bring the sequence of heads and tails to the next class. The teacher then announces which students just wrote down a random-looking sequence rather than actually tossing a coin. The faked tosses don’t have enough “runs” of consecutive heads or consecutive tails. Runs of the same outcome don’t look random to us but are, in fact, common. For example, the probability of a run of three or more consecutive heads or tails in just 10 tosses is greater than 0.8.<span data-type="termref" data-term="fn_ch4_fn15"><sup>15</sup></span> The runs of consecutive heads or consecutive tails that appear in real coin tossing (and that are predicted by the mathematics of probability) seem surprising to us. Because we don’t expect to see long runs, we may conclude that the coin tosses are not independent or that some influence is disturbing the random behavior of the coin.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_31.html" id="ips9e-ch04-box-64"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-64"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-570"><p>EXAMPLE 4.31</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-571"><p><span data-block_type="EXP-T-ri">The “hot hand” in basketball.</span> Belief in the law of small numbers influences behavior. If a basketball player makes several consecutive shots, both the fans and her teammates believe that she has a “hot hand” and is more likely to make the next shot. This is doubtful.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-572"><p>Careful study suggests that runs of baskets made or missed are no more frequent in basketball than would be expected if each shot were independent of the player’s previous shots. Baskets made or missed are just like heads and tails in tossing a coin. (Of course, some players make 30% of their shots in the long run and others make 50%, so a coin-toss model for basketball must allow coins with different probabilities of a head.) Our perception of hot or cold streaks simply shows that we don’t perceive random behavior very well.<span data-type="termref" data-term="fn_ch4_fn16"><sup>16</sup></span></p></div>
+</div></div>
+<div data-block_type="Caution icon" id="ips9e-ch04-p-573"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-574"><p><em>Our intuition doesn’t do a good job of distinguishing random behavior from systematic influences. This is also true when we look at data. We need statistical inference to supplement exploratory analysis of data because probability calculations can help verify that what we see in the data is more than a random pattern.</em></p></div>
+<div data-block_type="TXT-3" id="ips9e-ch04-p-575"><p><span data-block_type="h3-ri">How large is a large number?</span> The law of large numbers says that the actual mean outcome of many trials gets close to the distribution mean <em>μ</em> as more trials are made. It doesn’t say how many trials are needed to guarantee a mean outcome close to <em>μ</em>. That depends on the <em>variability</em> of the random outcomes. The more variable the outcomes, the more trials are needed to ensure that the mean outcome <span data-math="math_42"></span> is close to the distribution mean <em>μ</em>. Casinos understand this: the outcomes of games of chance are variable enough to hold the interest of gamblers. Only the casino plays often enough to rely on the law of large numbers. Gamblers get entertainment; the casino has a business.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_253"><p>253</p></div>
+<div data-type="box" data-block_type="BX2" id="ips9e-ch04-box-65"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-65"></h3>
+<div data-block_type="BX2-H" id="ips9e-ch04-p-576"><p>BEYOND THE BASICS</p></div>
+<div data-block_type="BX2-T" id="ips9e-ch04-p-577"><p>More Laws of Large Numbers</p></div>
+<div data-block_type="BX2-TXT-ni" id="ips9e-ch04-p-578"><p>The law of large numbers is one of the central facts about probability. It helps us understand the mean <em>μ</em> of a random variable. It explains why gambling casinos and insurance companies make money. It assures us that statistical estimation will be accurate if we can afford enough observations. The basic law of large numbers applies to independent observations that all have the same distribution. Mathematicians have extended the law to many more general settings. Here are two of these.</p></div>
+</div></div>
+<div data-block_type="TXT-3" id="ips9e-ch04-p-579"><p><span data-block_type="h3-ri">Is there a winning system for gambling?</span> Serious gamblers often follow a system of betting in which the amount bet on each play depends on the outcome of previous plays. You might, for example, double your bet on each spin of the roulette wheel until you win—or, of course, until your fortune is exhausted. Such a system tries to take advantage of the fact that you have a memory even though the roulette wheel does not. Can you beat the odds with a system based on the outcomes of past plays? No. Mathematicians have established a stronger version of the law of large numbers that says that, if you do not have an infinite fortune to gamble with, your long-run average winnings <em>μ</em> remain the same as long as successive trials of the game (such as spins of the roulette wheel) are independent.</p></div>
+<div data-block_type="TXT-3" id="ips9e-ch04-p-580"><p><span data-block_type="h3-ri">What if observations are not independent?</span> You are in charge of a process that manufactures video screens for computer monitors. Your equipment measures the tension on the metal mesh that lies behind each screen and is critical to its image quality. You want to estimate the mean tension <em>μ</em> for the process by the average <span data-math="math_43"></span> of the measurements. Alas, the tension measurements are not independent. If the tension on one screen is a bit too high, the tension on the next is more likely to also be high. Many real-world processes are like this—the process stays stable in the long run, but two observations made close together are likely to both be above or both be below the long-run mean. Again the mathematicians come to the rescue: as long as the dependence dies out fast enough as we take measurements farther and farther apart in time, the law of large numbers still holds.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch04-p-581"><p><span data-block_type="h2">Rules for means</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch04-p-582"><p>You are studying flaws in the painted finish of refrigerators made by your firm. Dimples and paint sags are two kinds of surface flaw. Not all refrigerators have the same number of dimples: many have none, some have one, some two, and so on. You ask for the average number of imperfections on a refrigerator. The inspectors report finding an average of 0.7 dimple and 1.4 sags per refrigerator. How many total imperfections of both kinds (on the average) are there on a refrigerator? That’s easy: if the average number of dimples is 0.7 and the average number of sags is 1.4, then counting both gives an average of 0.7 + 1.4 = 2.1 flaws.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-583"><p>In more formal language, the number of dimples on a refrigerator is a random variable <em>X</em> that varies as we inspect one refrigerator after another. We know only that the mean number of dimples is <em>μ<sub>X</sub></em> = 0.7. The number of paint sags is a second random variable <em>Y</em> having mean <em>μ<sub>X</sub></em> = 1.4. (As usual, the subscripts keep straight which variable we are talking about.) The total number of both dimples and sags is another random variable, the sum <em>X</em> + <em>Y</em>. Its mean <em>μ</em><em><sub>X</sub></em><sub>+</sub><em><sub>Y</sub></em> is the average number of dimples and sags together. It is just the sum of the individual means <em>μ<sub>X</sub></em> and <em>μ<sub>Y</sub></em>. That’s an important rule for how means of random variables behave.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_254"><p>254</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-584"><p>Here’s another rule. The crickets living in a field have mean length of 1.2 inches. What is the mean in centimeters? There are 2.54 centimeters in an inch, so the length of a cricket in centimeters is 2.54 times its length in inches. If we multiply every observation by 2.54, we also multiply their average by 2.54. The mean in centimeters must be 2.54 × 1.2, or about 3.05 centimeters. More formally, the length in inches of a cricket chosen at random from the field is a random variable <em>X</em> with mean <em>μ<sub>X</sub></em>. The length in centimeters is 2.54<em>X</em>, and this new random variable has mean 2.54<em>μ<sub>X</sub></em>.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-585"><p>The point of these examples is that means behave like averages. Here are the rules we need.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-66"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-66"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch04-p-586"><p>RULES FOR MEANS OF LINEAR TRANSFORMATIONS, SUMS, AND DIFFERENCES</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch04-p-587"><p><strong>Rule 1.</strong> If <em>X</em> is a random variable and <em>a</em> and <em>b</em> are fixed numbers, then</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch04-p-588"><p><em>μ</em><em><sub>a</sub></em><sub>+</sub><em><sub>bX</sub></em> = <em>a</em> + <em>bμ<sub>X</sub></em></p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch04-p-589"><p><strong>Rule 2.</strong> If <em>X</em> and <em>Y</em> are random variables, then</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch04-p-590"><p><em>μ</em><em><sub>X</sub></em><sub>+</sub><em><sub>Y</sub></em> = <em>μ<sub>X</sub></em> + <em>μ<sub>Y</sub></em></p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch04-p-591"><p><strong>Rule 3.</strong> If <em>X</em> and <em>Y</em> are random variables, then</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch04-p-592"><p><em>μ</em><em><sub>X</sub></em><sub>−</sub><em><sub>Y</sub></em> = <em>μ<sub>X</sub></em> − <em>μ<sub>Y</sub></em></p></div>
+</div></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch04-box-67"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-67"></h3>
+  
+<div data-block_type="RNM" id="ips9e-ch04-p-595"><p>linear transformation, <span data-type="link" data-href="alias:page_44">p. 44</span></p></div>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch04-p-596"><p>Note that <em>a</em> + <em>bX</em> is a linear transformation of the random variable <em>X</em>.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_32.html" id="ips9e-ch04-box-68"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-68"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-597"><p>EXAMPLE 4.32</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-598"><p><span data-block_type="EXP-T-ri">How many courses?</span> In <span data-type="link" data-href="exercise_4_45.html">Exercise 4.45</span> (page 244) you described the probability distribution of the number of courses taken in the fall by students at a small liberal arts college. Here is the distribution:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-19" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="80"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Courses in the fall</td>
+<td data-block_type="EXP-TB1-TXT" align="char">1</td>
+<td data-block_type="EXP-TB1-TXT" align="char">2</td>
+<td data-block_type="EXP-TB1-TXT" align="char">3</td>
+<td data-block_type="EXP-TB1-TXT" align="char">4</td>
+<td data-block_type="EXP-TB1-TXT" align="char">5</td>
+<td data-block_type="EXP-TB1-TXT" align="char">6</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.05</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.05</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.13</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.26</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.36</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.15</td>
+</tr>
+</tbody></table></div>
+<div data-type="figure" data-figure-id="ips9e-ch04-fig-19" data-block_type="UN-FIGURE" data-layout-align="left" data-layout-width="small" data-layout-border="false">
+
+<img id="" src="asset/ch4/17MOOREIPS-MSE_9e_P_04_04.jpg" data-figure-id="ips9e-ch04-fig-19" data-layout-width="small" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">skynesher/iStockphoto</span></div>
+</div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-599"><p>For the spring semester, the distribution is a little different.</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-20" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="80"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Courses in the spring</td>
+<td data-block_type="EXP-TB1-TXT" align="char">1</td>
+<td data-block_type="EXP-TB1-TXT" align="char">2</td>
+<td data-block_type="EXP-TB1-TXT" align="char">3</td>
+<td data-block_type="EXP-TB1-TXT" align="char">4</td>
+<td data-block_type="EXP-TB1-TXT" align="char">5</td>
+<td data-block_type="EXP-TB1-TXT" align="char">6</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.06</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.08</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.15</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.25</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.34</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.12</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-600"><p>For a randomly selected student, let <em>X</em> be the number of courses taken in the fall semester, and let <em>Y</em> be the number of courses taken in the spring semester. The means of these random variables are</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_255"><p>255</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-601"><p><em>μ<sub>X</sub></em> = (1)(0.05) + (2)(0.05) + (3)(0.13) + (4)(0.26) + (5)(0.36) + (6)(0.15)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-602"><p>= 4.28</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-603"><p><em>μ<sub>Y</sub></em> = (1)(0.06) + (2)(0.08) + (3)(0.15) + (4)(0.25) + (5)(0.34) + (6)(0.12)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-604"><p>= 4.09</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-605"><p>The mean course load for the fall is 4.28 courses, and the mean course load for the spring is 4.09 courses. We assume that these distributions apply to students who earned credit for courses taken in the fall and the spring semesters. The mean of the total number of courses taken for the academic year is <em>X</em> + <em>Y</em>. Using Rule 2, we calculate the mean of the total number of courses:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-606"><p><em>μ<sub>Z</sub></em> = <em>μ<sub>X</sub></em> + <em>μ<sub>Y</sub></em></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-607"><p>= 4.28 + 4.09 = 8.37</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-608"><p>Note that it is not possible for a student to take 8.37 courses in an academic year. This number is the mean of the probability distribution.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_33.html" id="ips9e-ch04-box-69"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-69"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-609"><p>EXAMPLE 4.33</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-610"><p><span data-block_type="EXP-T-ri">What about credit hours?</span> In the previous exercise, we examined the number of courses taken in the fall and in the spring at a small liberal arts college. Suppose that we were interested in the total number of credit hours earned for the academic year. We assume that for each course taken at this college, three credit hours are earned. Let <em>T</em> be the mean of the distribution of the total number of credit hours earned for the academic year. What is the mean of the distribution of <em>T</em>? To find the answer, we can use Rule 1 with <em>a</em> = 0 and <em>b</em> = 3. Here is the calculation:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-611"><p><em>μ<sub>T</sub></em> = <em>μ</em><em><sub>a</sub></em><sub>+</sub><em><sub>bZ</sub></em></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-612"><p>= <em>a</em> + <em>bμ<sub>Z</sub></em></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-613"><p>= 0 + (3)(8.37) = 25.11</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-614"><p>The mean of the distribution of the total number of credit hours earned is 25.11.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-70"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-70"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch04-p-615"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_4_65.html" id="ips9e-ch04-ques-65">
+<h3>Question
+			    <span data-type="number">4.65 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-616"><p><span data-block_type="EXR-QUE-N-ri">4.65</span> <span data-block_type="EXR-QUE-T-ri">Find <em>μ<sub>Y</sub></em>.</span> The random variable <em>X</em> has mean <em>μ<sub>X</sub></em> = 12. If <em>Y</em> = 12 + 6<em>X</em>, what is <em>μ<sub>Y</sub></em>?</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_4_66.html" id="ips9e-ch04-ques-66">
+<h3>Question
+			    <span data-type="number">4.66 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-617"><p><span data-block_type="EXR-QUE-N-ri">4.66</span> <span data-block_type="EXR-QUE-T-ri">Find <em>μ<sub>W</sub></em>.</span> The random variable <em>U</em> has mean <em>μ<sub>U</sub></em> = 25, and the random variable <em>V</em> has mean <em>μ<sub>V</sub></em> = 25. If <em>W</em> = 0.5<em>U</em> + 0.5<em>V</em>, find <em>μ<sub>W</sub></em>.</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch04-p-618"><p><span data-block_type="h2">The variance of a random variable</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch04-p-619"><p>The mean is a measure of the center of a distribution. A basic numerical description requires, in addition, a measure of the spread or variability of the distribution. The variance and the standard deviation are the measures of spread that accompany the choice of the mean to measure center. Just as for the mean, we need a distinct symbol to distinguish the variance of a random variable from the variance <em>s</em><sup>2</sup> of a data set. We write the variance of a random variable <em>X</em> as <span data-math="math_44"></span>. Once again, the subscript reminds us which variable we have in mind. The definition of the variance <span data-math="math_45"></span> of a random variable is similar to the definition of the variance <em>s</em><sup>2</sup> given in <span data-type="link" data-href="ips9e-ch01.xml">Chapter 1</span>(page 38). That is, the variance is an average value of the squared deviation (<em>X</em> − <em>μ<sub>X</sub></em>)<sup>2</sup> of the variable <em>X</em> from its mean <em>μ<sub>X</sub></em>. As for the mean, the average we use is a weighted average in which each outcome is weighted by its probability in order to take account of outcomes that are not equally likely. Calculating this weighted average is straightforward for discrete random variables but requires advanced mathematics in the continuous case. Here is the definition.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_256"><p>256</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-71"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-71"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch04-p-620"><p>VARIANCE OF A DISCRETE RANDOM VARIABLE</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-621"><p>Suppose that <em>X</em> is a <strong>discrete random variable</strong> whose distribution is</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-21" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="40"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Value of <em>X</em>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>x</em><sub>1</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>x</em><sub>2</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>x</em><sub>3</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">. . .</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>p</em><sub>1</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>p</em><sub>2</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>p</em><sub>3</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">. . .</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-622"><p>and that <em>μ<sub>X</sub></em> is the mean of <em>X</em>. The <strong>variance</strong> of <em>X</em> is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch04-p-623"><p><span data-math="math_46"></span> = (<em>x</em><sub>1</sub> − <em>μ<sub>X</sub></em>)<sup>2</sup><em>p</em><sub>1</sub> + (<em>x</em><sub>2</sub> − <em>μ<sub>X</sub></em>)<sup>2</sup><em>p</em><sub>2</sub> + · · ·</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch04-p-624"><p>= ∑ (<em>x<sub>i</sub></em> − <em>μ<sub>X</sub></em>)<sup>2</sup><em>p<sub>i</sub></em></p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch04-p-625"><p>The <strong>standard deviation</strong> <em>σ<sub>X</sub></em> of <em>X</em> is the square root of the variance.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_34.html" id="ips9e-ch04-box-72"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-72"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-626"><p>EXAMPLE 4.34</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-627"><p><span data-block_type="EXP-T-ri">Find the mean and the variance.</span> In <span data-type="link" data-href="example_4_32.html">Example 4.32</span> (pages 254–255) , we saw that the distribution of the number <em>X</em> of fall courses taken by students at a small liberal arts college is</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-22" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="80"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Courses in the fall</td>
+<td data-block_type="EXP-TB1-TXT" align="char">1</td>
+<td data-block_type="EXP-TB1-TXT" align="char">2</td>
+<td data-block_type="EXP-TB1-TXT" align="char">3</td>
+<td data-block_type="EXP-TB1-TXT" align="char">4</td>
+<td data-block_type="EXP-TB1-TXT" align="char">5</td>
+<td data-block_type="EXP-TB1-TXT" align="char">6</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.05</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.05</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.13</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.26</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.36</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.15</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-628"><p>We can find the mean and variance of <em>X</em> by arranging the calculation in the form of a table. Both <em>μ<sub>X</sub></em> and <span data-math="math_47"></span> are sums of columns in this table.</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-23" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="70"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>x<sub>i</sub></em></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><em>p<sub>i</sub></em></th>
+<th data-block_type="EXP-TB1-COLHD" align="char">
+<em>x<sub>i</sub></em> <em>p<sub>i</sub></em>
+</th>
+<th data-block_type="EXP-TB1-COLHD" align="char">(<em>x<sub>i</sub></em> − <em>μ<sub>X</sub></em>)<sup>2</sup><em>p<sub>i</sub></em>
+</th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">1</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.05</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.05</td>
+<td data-block_type="EXP-TB1-TXT" align="char">(1 − 4.28)<sup>2</sup>(0.05) = 0.53792</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">2</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.05</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.10</td>
+<td data-block_type="EXP-TB1-TXT" align="char">(2 − 4.28)<sup>2</sup>(0.05) = 0.25992</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">3</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.13</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.39</td>
+<td data-block_type="EXP-TB1-TXT" align="char">(3 − 4.28)<sup>2</sup> (0.13) = 0.21299</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">4</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.26</td>
+<td data-block_type="EXP-TB1-TXT" align="char">1.04</td>
+<td data-block_type="EXP-TB1-TXT" align="char">(4 − 4.28)<sup>2</sup>(0.26) = 0.02038</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">5</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.36</td>
+<td data-block_type="EXP-TB1-TXT" align="char">1.80</td>
+<td data-block_type="EXP-TB1-TXT" align="char">(5 − 4.28)<sup>2</sup>(0.36) = 0.18662</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center">6</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.15</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.90</td>
+<td data-block_type="EXP-TB1-TXT" align="char">(6 − 4.28)<sup>2</sup>(0.15) = 0.44376</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="char" colspan="3">
+<em>μ<sub>X</sub></em> = 4.28</td>
+<td data-block_type="EXP-TB1-TXT" align="char">
+<span data-math="math_48"></span> = 1.662</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-629"><p>We see that <span data-math="math_49"></span> = 1.662. The standard deviation of <em>X</em> is <span data-math="math_50"></span>. The standard deviation is a measure of the variability of the number of fall courses taken by the students at the small liberal arts college. As in the case of distributions for data, the standard deviation of a probability distribution is easiest to understand for Normal distributions.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_257"><p>257</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-73"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-73"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch04-p-630"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_4_67.html" id="ips9e-ch04-ques-67">
+<h3>Question
+			    <span data-type="number">4.67 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-631"><p><span data-block_type="EXR-QUE-N-ri">4.67</span> <span data-block_type="EXR-QUE-T-ri">Find the variance and the standard deviation.</span> The random variable <em>X</em> has the following probability distribution:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-24" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="40"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Value of <em>X</em>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0</td>
+<td data-block_type="EXP-TB1-TXT" align="char">3</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.3</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.7</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch04-p-632"><p>Find the variance <span data-math="math_51"></span> and the standard deviation <em>σ<sub>X</sub></em> for this random variable.</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch04-p-633"><p><span data-block_type="h2">Rules for variances and standard deviations</span></p></div>
+<div data-block_type="Caution icon" id="ips9e-ch04-p-634"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch04-p-635"><p>What are the facts for variances that parallel Rules 1, 2, and 3 for means? <em>The mean of a sum of random variables is always the sum of their means, but this addition rule is true for variances only in special situations.</em> To understand why, take <em>X</em> to be the percent of a family’s after-tax income that is spent, and take <em>Y</em> to be the percent that is saved. When <em>X</em> increases, <em>Y</em> decreases by the same amount. Though <em>X</em> and <em>Y</em> may vary widely from year to year, their sum <em>X</em> + <em>Y</em> is always 100% and does not vary at all. It is the association between the variables <em>X</em> and <em>Y</em> that prevents their variances from adding.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-636"><p>If random variables are independent, this kind of association between their values is ruled out and their variances do add. Two random variables <em>X</em> and <em>Y</em> are <span data-type="termref" data-term="independent"><strong>independent</strong></span><span data-block_type="MN-GL-term">independence</span> if knowing that any event involving <em>X</em> alone did or did not occur tells us nothing about the occurrence of any event involving <em>Y</em> alone.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-637"><p>Probability models often assume independence when the random variables describe outcomes that appear unrelated to each other. You should ask in each instance whether the assumption of independence seems reasonable.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-638"><p>When random variables are not independent, the variance of their sum depends on the <span data-type="termref" data-term="correlation"><strong>correlation</strong></span><span data-block_type="MN-GL-term">correlation</span> between them as well as on their individual variances. In <span data-type="link" data-href="ips9e-ch02.xml">Chapter 2</span>, we met the correlation <em>r</em> between two observed variables measured on the same individuals. We defined (<span data-type="link" data-href="alias:page_101">page 101</span>) the correlation <em>r</em> as an average of the products of the standardized <em>x</em> and <em>y</em> observations. The correlation between two random variables is defined in the same way, once again using a weighted average with probabilities as weights. We won’t give the details—it is enough to know that the correlation between two random variables has the same basic properties as the correlation <em>r</em> calculated from data. We use <em>ρ</em>, the Greek letter rho, for the correlation between two random variables. The correlation <em>ρ</em> is a number between −1 and 1 that measures the direction and strength of the linear relationship between two variables. <strong>The correlation between two independent random variables is zero</strong>.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-639"><p>Returning to family finances, if <em>X</em> is the percent of a family’s after-tax income that is spent and <em>Y</em> is the percent that is saved, then <em>Y</em> = 100 − <em>X</em>. This is a perfect linear relationship with a negative slope, so the correlation between <em>X</em> and <em>Y</em> is <em>ρ</em> = −1. With the correlation at hand, we can state the rules for manipulating variances.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_258"><p>258</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-74"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-74"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch04-p-640"><p>RULES FOR VARIANCES AND STANDARD DEVIATIONS OF LINEAR TRANSFORMATIONS, SUMS, AND DIFFERENCES</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch04-p-641"><p><strong>Rule 1.</strong> If <em>X</em> is a random variable and <em>a</em> and <em>b</em> are fixed numbers, then</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch04-p-642"><p><span data-math="math_52"></span></p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch04-p-643"><p><strong>Rule 2.</strong> If <em>X</em> and <em>Y</em> are independent random variables, then</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch04-p-644"><p><span data-math="math_53"></span></p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch04-p-646"><p>This is the <strong>addition rule for variances of independent random variables</strong>.</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch04-p-647"><p><strong>Rule 3.</strong> If <em>X</em> and <em>Y</em> have correlation <em>ρ</em>, then</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch04-p-648"><p><span data-math="math_54"></span></p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch04-p-650"><p>This is the <strong>general addition rule for variances of random variables</strong>.</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch04-p-651"><p>To find the standard deviation, take the square root of the variance.</p></div>
+</div></div>
+<div data-block_type="Caution icon" id="ips9e-ch04-p-652"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-653"><p><em>Because a variance is the average of squared deviations from the mean, multiplying X by a constant b multiplies</em> <span data-math="math_55"></span> <em>by the square of the constant.</em> Adding a constant <em>a</em> to a random variable changes its mean but does not change its variability. The variance of <em>X</em> + <em>a</em> is, therefore, the same as the variance of <em>X</em>. Because the square of −1 is 1, the addition rule says that the variance of a difference between independent random variables is the <em>sum</em> of the variances. For independent random variables, the difference <em>X</em> − <em>Y</em> is more variable than either <em>X</em> or <em>Y</em> alone because variations in both <em>X</em> and <em>Y</em> contribute to variation in their difference.</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch04-p-654"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-655"><p>As with data, we prefer the standard deviation to the variance as a measure of the variability of a random variable. <em>Rule 2 for variances implies that standard deviations of independent random variables do not add. To combine standard deviations, use the rules for variances.</em> For example, the standard deviations of 2<em>X</em> and −2<em>X</em> are both equal to 2<em>σ<sub>X</sub></em> because this is the square root of the variance <span data-math="math_56"></span>.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_35.html" id="ips9e-ch04-box-75"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-75"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-656"><p>EXAMPLE 4.35</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-657"><p><span data-block_type="EXP-T-ri">Payoff in the Tri-State Pick 3 lottery.</span> The payoff <em>X</em> of a $1 ticket in the Tri-State Pick 3 game is $500 with probability 1/1000 and 0 the rest of the time. Here is the combined calculation of mean and variance:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-25" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="80"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>x<sub>i</sub></em></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><em>p<sub>i</sub></em></th>
+<th data-block_type="EXP-TB1-COLHD" align="char">
+<em>x<sub>i</sub></em> <em>p<sub>i</sub></em>
+</th>
+<th data-block_type="EXP-TB1-COLHD" align="char">(<em>x<sub>i</sub></em> − <em>μ<sub>X</sub></em>)<sup>2</sup><em>p<sub>i</sub></em>
+</th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">0</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.999</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0</td>
+<td data-block_type="EXP-TB1-TXT" align="char">(0 − 0.5)<sup>2</sup>(0.999) = 0.24975</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center">500</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.001</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.5</td>
+<td data-block_type="EXP-TB1-TXT" align="char">(500 − 0.5)<sup>2</sup>(0.001) = 249.50025</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="char" colspan="3">
+<em>μ<sub>X</sub></em> = 0.5</td>
+<td data-block_type="EXP-TB1-TXT" align="char">
+<span data-math="math_57"></span> = 249.75</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-658"><p>The mean payoff is 50 cents. The standard deviation is <span data-math="math_58"></span> 15.80. It is usual for games of chance to have large standard deviations because large variability makes gambling exciting.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_259"><p>259</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-659"><p>If you buy a Pick 3 ticket, your winnings are <em>W</em> = <em>X</em> − 1 because the dollar you paid for the ticket must be subtracted from the payoff. Let’s find the mean and variance for this random variable.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_36.html" id="ips9e-ch04-box-76"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-76"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-660"><p>EXAMPLE 4.36</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-661"><p><span data-block_type="EXP-T-ri">Winnings in the Tri-State Pick 3 lottery.</span> By the rules for means, the mean amount you win is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-662"><p><em>μ<sub>W</sub></em> = <em>μ<sub>X</sub></em> − 1 = −$0.50</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-663"><p>That is, you lose an average of 50 cents on a ticket. The rules for variances remind us that the variance and standard deviation of the winnings <em>W</em> = <em>X</em> −1 are the same as those of <em>X</em>. Subtracting a fixed number changes the mean but not the variance.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-664"><p>Suppose now that you buy a $1 ticket on each of two different days. The payoffs <em>X</em> and <em>Y</em> on the two tickets are independent because separate drawings are held each day. Your total payoff is <em>X</em> + <em>Y</em>. Let’s find the mean and standard deviation for this payoff.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_37.html" id="ips9e-ch04-box-77"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-77"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-665"><p>EXAMPLE 4.37</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-666"><p><span data-block_type="EXP-T-ri">Two tickets.</span> The mean for the payoff for the two tickets is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-667"><p><em>μ</em><em><sub>X</sub></em><sub>+</sub><em><sub>Y</sub></em> = <em>μ<sub>X</sub></em> + <em>μ<sub>Y</sub></em> = $0.50 + $0.50 = $1.00</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-668"><p>Because <em>X</em> and <em>Y</em> are independent, the variance of <em>X</em> + <em>Y</em> is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-669"><p><span data-math="math_59"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-670"><p>The standard deviation of the total payoff is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-671"><p><span data-math="math_60"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-672"><p>This is not the same as the sum of the individual standard deviations, which is $15.80 + $15.80 = $31.60. Variances of independent random variables add; standard deviations do not.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-673"><p>When we add random variables that are correlated, we need to use the correlation for the calculation of the variance but not for the calculation of the mean. Here is an example.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_38.html" id="ips9e-ch04-box-78"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-78"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-674"><p>EXAMPLE 4.38</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-675"><p><span data-block_type="EXP-T-ri">Utility bills.</span> Consider a household where the monthly bill for natural-gas averages $125 with a standard deviation of $75, while the monthly bill for electricity averages $174 with a standard deviation of $41. The correlation between the two bills is −0.55.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-676"><p>Let’s compute the mean and standard deviation of the sum of the natural-gas bill and the electricity bill. We let <em>X</em> stand for the natural-gas bill and <em>Y</em> stand for the electricity bill. Then the total is <em>X</em> + <em>Y</em>. Using the rules for means, we have</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-677"><p><em>μ</em><em><sub>X</sub></em><sub>+</sub><em><sub>Y</sub></em> = <em>μ<sub>X</sub></em> + <em>μ<sub>Y</sub></em> = 125 + 174 = 299</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-678"><p>To find the standard deviation, we first find the variance and then take the square root to determine the standard deviation. From the general addition rule for variances of random variables,</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_260"><p>260</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-679"><p><span data-math="math_61"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-680"><p>= (75)<sup>2</sup> + (41)<sup>2</sup> + (2)(-0.55)(75)(41)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-681"><p>= 3923.5</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-682"><p>Therefore, the standard deviation is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-683"><p><span data-math="math_62"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-684"><p>The total of the natural-gas bill and the electricity bill has mean $299 and standard deviation $63.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-685"><p>The negative correlation in <span data-type="link" data-href="example_4_38.html">Example 4.38</span> is due to the fact that, in this household, natural gas is used for heating and electricity is used for air-conditioning. So, when it is warm, the electricity charges are high and the natural-gas charges are low. When it is cool, the reverse is true. This causes the standard deviation of the sum to be less than it would be if the two bills were uncorrelated (see <span data-type="link" data-href="exercise_4_79.html">Exercise 4.79</span>, page 263).</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-686"><p>There are situations where we need to combine several of our rules to find means and standard deviations. Here is an example.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_39.html" id="ips9e-ch04-box-79"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-79"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-687"><p>EXAMPLE 4.39</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-688"><p><span data-block_type="EXP-T-ri">Calcium intake.</span> To get enough calcium for optimal bone health, tablets containing calcium are often recommended to supplement the calcium in the diet. One study designed to evaluate the effectiveness of a supplement followed a group of young people for seven years. Each subject was assigned to take either a tablet containing 1000 milligrams of calcium per day (mg/d) or a placebo tablet that was identical except that it had no calcium.<span data-type="termref" data-term="fn_ch4_fn17"><sup>17</sup></span> A major problem with studies like this one is compliance: subjects do not always take the treatments assigned to them.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-689"><p>In this study, the compliance rate declined to about 47% toward the end of the seven-year period. The standard deviation of compliance was 22%. Calcium from the diet averaged 850 mg/d with a standard deviation of 330 mg/d. The correlation between compliance and dietary intake was 0.68. Let’s find the mean and standard deviation for the total calcium intake. We let <em>S</em> stand for the intake from the supplement and <em>D</em> stand for the intake from the diet.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-690"><p>We start with the intake from the supplement. Because the compliance is 47% and the amount in each tablet is 1000 mg, the mean for <em>S</em> is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-691"><p><em>μ<sub>S</sub></em> = 1000(0.47) = 470</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-692"><p>Because the standard deviation of the compliance is 22%, the variance of <em>S</em> is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-693"><p><span data-math="math_63"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-694"><p>The standard deviation is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-695"><p><span data-math="math_64"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-696"><p>Be sure to verify which rules for means and variances are used in these calculations.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-697"><p>We can now find the mean and standard deviation for the total intake. The mean is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-698"><p><em>μ</em><em><sub>S</sub></em><sub>+</sub><em><sub>D</sub></em> = <em>μ<sub>S</sub></em> + <em>μ<sub>D</sub></em> = 470 + 850 = 1320</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-699"><p>the variance is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-700"><p><span data-math="math_65"></span></p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_261"><p>261</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-701"><p>and the standard deviation is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-702"><p><span data-math="math_66"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-703"><p>The mean of the total calcium intake is 1320 mg/d and the standard deviation is 506 mg/d.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-704"><p>The correlation in this example illustrates an unfortunate fact about compliance and having an adequate diet. Some of the subjects in this study have diets that provide an adequate amount of calcium while others do not. The positive correlation between compliance and dietary intake tells us that those who have relatively high dietary intakes are more likely to take the assigned supplements. On the other hand, those subjects with relatively low dietary intakes, the ones who need the supplement the most, are less likely to take the assigned supplements.</p></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch4.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('5732604a757a2e2770000002');
+});
+    //-->
+</script>
+</body>
+</html>
+
