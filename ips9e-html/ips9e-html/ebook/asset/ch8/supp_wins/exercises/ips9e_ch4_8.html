@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch4</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e_ch4.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="4">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch04-sec1-03" level="1" data-print_page="235">
+<h2 class="section-title">
+<span data-type="number">4.3</span> <span data-type="title" data-title-for="ips9e-ch04-sec1-03">4.3 Random Variables
+</span>
+</h2>
+
+<div data-type="box" data-block_type="SP" id="ips9e-ch04-box-41"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-41"></h3>
+<div data-block_type="SP-TXT-ni" id="ips9e-ch04-p-334"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bluebullet" id="ips9e-ch04-list-29">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch04-p-335"><p><span data-block_type="maker">•</span> Describe the probability distribution of a discrete random variable.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch04-p-336"><p><span data-block_type="maker">•</span> Use a probability histogram to provide a graphical description of the probability distribution of a discrete random variable.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch04-p-337"><p><span data-block_type="maker">•</span> Use the distribution of a discrete random variable to calculate probabilities of events.</p></div></li>
+<li><div data-block_type="SP-BL-last" id="ips9e-ch04-p-338"><p><span data-block_type="maker">•</span> Find probabilities of events for the uniform and normal distributions.</p></div></li>
+</ul>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch04-p-339"><p>Sample spaces need not consist of numbers. When we toss a coin four times, we can record the outcome as a string of heads and tails, such as HTTH. In statistics, however, we are most often interested in numerical outcomes such as the count of heads in the four tosses. It is convenient to use a shorthand notation: Let <em>X</em> be the number of heads. If our outcome is HTTH, then <em>X</em> = 2. If the next outcome is TTTH, the value of <em>X</em> changes to <em>X</em> = 1. The possible values of <em>X</em> are 0, 1, 2, 3, and 4. Tossing a coin four times will give <em>X</em> one of these possible values. Tossing four more times will give <em>X</em> another and probably different value. We call <em>X</em> a <em>random variable</em> because its values vary when the coin tossing is repeated.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-42"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-42"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch04-p-340"><p>RANDOM VARIABLE</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-341"><p>A <strong>random variable</strong> is a variable whose value is a numerical outcome of a random process.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_236"><p>236</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-342"><p>In our earlier coin-tossing example, the process is the tossing of a coin four times. The random variable is the number of heads in the four tosses.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-343"><p>We usually denote random variables by capital letters near the end of the alphabet, such as <em>X</em> or <em>Y</em>. Of course, the random variables of greatest interest to us are outcomes such as the mean <span data-math="math_4"></span> of a random sample, for which we will keep the familiar notation.<span data-type="termref" data-term="fn_ch4_fn9"><sup>9</sup></span> As we progress from general rules of probability toward statistical inference, we will concentrate on random variables.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-344"><p>When a random variable <em>X</em> describes a random process, the sample space <em>S</em> just lists the possible values of the random variable. We usually do not mention <em>S</em> separately. There remains the second part of any probability model, the assignment of probabilities to events. There are two main ways of assigning probabilities to the values of a random variable. The two types of probability models that result will dominate our application of probability to statistical inference.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch04-p-345"><p><span data-block_type="h2">Discrete random variables</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch04-p-346"><p>We have learned several rules of probability, but only one method of assigning probabilities: state the probabilities of the individual outcomes and assign probabilities to events by summing over the outcomes. The outcome probabilities must be between 0 and 1 and have sum 1. When the outcomes are numerical, they are values of a random variable. We will now attach a name to random variables having probability assigned in this way.<span data-type="termref" data-term="fn_ch4_fn10"><sup>10</sup></span></p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-43"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-43"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch04-p-347"><p>DISCRETE RANDOM VARIABLE</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-348"><p>A <strong>discrete random variable</strong> <em>X</em> has possible values that can be given in an ordered list. The <strong>probability distribution</strong> of <em>X</em> lists the values and their probabilities:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-09" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="60"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Value of <em>X</em>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>x</em><sub>1</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>x</em><sub>2</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>x</em><sub>3</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">. . .</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>p</em><sub>1</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>p</em><sub>2</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>p</em><sub>3</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">. . .</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-349"><p>The probabilities <em>p<sub>i</sub></em> must satisfy two requirements:</p></div>
+<ol data-block_type="numbered" id="ips9e-ch04-list-30">
+<li><div data-block_type="BX1-NLF" id="ips9e-ch04-p-350"><p><span data-block_type="maker">1.</span> Every probability <em>p<sub>i</sub></em> is a number between 0 and 1.</p></div></li>
+<li><div data-block_type="BX1-NLF" id="ips9e-ch04-p-351"><p><span data-block_type="maker">2.</span> <em>p</em><sub>1</sub> + <em>p</em><sub>2</sub> + · · · = 1.</p></div></li>
+</ol>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-352"><p>Find the probability of any event by adding the probabilities <em>p<sub>i</sub></em> of the particular values <em>x<sub>i</sub></em> that make up the event.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-353"><p>In most discrete random variable situations that we will study, the number of possible values is a finite number, <em>k</em>. For example, in our example on the number of heads in four tosses of a coin, there are <em>k</em> = 5 possible values: 0, 1, 2, 3, and 4.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-354"><p>There are, however, settings in which the number of possible values can be infinite. Think about tossing a fair coin until you get a head. The number of possible tosses is any positive integer.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_237"><p>237</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_22.html" id="ips9e-ch04-box-44"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-44"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-355"><p>EXAMPLE 4.22</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-356"><p><span data-block_type="EXP-T-ri">Grade distributions.</span> A liberal arts college posts the grade distributions for its courses. In a recent semester, students in one section of English 130 received 32% A’s, 42% B’s, 19% C’s, 3% D’s, and 4% F’s. Choose an English 130 student at random. To “choose at random” means to give every student the same chance to be chosen. The student’s grade on a five-point scale (with A = 4) is a random variable <em>X</em>.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-357"><p>The value of <em>X</em> changes when we repeatedly choose students at random, but it is always one of 0, 1, 2, 3, or 4. Here is the distribution of <em>X</em>:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-10" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="70"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Value of <em>X</em>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0</td>
+<td data-block_type="EXP-TB1-TXT" align="char">1</td>
+<td data-block_type="EXP-TB1-TXT" align="char">2</td>
+<td data-block_type="EXP-TB1-TXT" align="char">3</td>
+<td data-block_type="EXP-TB1-TXT" align="char">4</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.04</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.03</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.19</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.42</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.32</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-358"><p>The probability that the student got a B or better is the sum of the probabilities of an A and a B. In the language of random variables,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-359"><p><em>P</em>(<em>X</em> ≥ 3) = <em>P</em>(<em>X</em> = 3) + <em>P</em>(<em>X</em> = 4)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-360"><p>= 0.42 + 0.32 = 0.74</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-45"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-45"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch04-p-361"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_4_42.html" id="ips9e-ch04-ques-42">
+<h3>Question
+			    <span data-type="number">4.42 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-362"><p><span data-block_type="EXR-QUE-N-ri">4.42</span> <span data-block_type="EXR-QUE-T-ri">Will the course satisfy the requirement?</span> Refer to <span data-type="link" data-href="example_4_22.html">Example 4.22</span>. Suppose that a grade of D or F in English 130 does not satisfy a requirement for a major in linguistics. What is the probability that a randomly selected student will not satisfy this requirement?</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-363"><p>We can use histograms to show probability distributions as well as distributions of data. <span data-type="link" data-href="figure_4_5.html">Figure 4.5</span> displays <span data-type="termref" data-term="probability histograms"><strong>probability histograms</strong></span><span data-block_type="MN-GL-term">probability histogram</span> that compare the probability model for equally likely random digits (<span data-type="link" data-href="example_4_15.html">Example 4.15</span>, page 227) with the model given by Benford’s law (<span data-type="link" data-href="example_4_12.html">Example 4.12</span>, page 226). The height of each bar shows the probability of the outcome at its base. Because the heights are probabilities, they add to 1. As usual, all the bars in a histogram have the same width. So the areas also display the assignment of probability to outcomes. Think of these histograms as idealized pictures of the results of very many trials. The histograms make it easy to quickly compare the two distributions.</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_4_5.html" data-figure-id="ips9e-ch04-fig-09" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_05.jpg" data-figure-id="ips9e-ch04-fig-09" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 4.5: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 4.5</span> <span data-block_type="FG-CAP">Probability histograms for (a) equally likely random digits 1 to 9 and (b) Benford’s law. The height of each bar shows the probability assigned to a single outcome.</span></span>
+</div>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_238"><p>238</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_23.html" id="ips9e-ch04-box-46"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-46"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-364"><p>EXAMPLE 4.23</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-365"><p><span data-block_type="EXP-T-ri">Number of heads in four tosses of a coin.</span> What is the probability distribution of the discrete random variable <em>X</em> that counts the number of heads in four tosses of a coin? We can derive this distribution if we make two reasonable assumptions:</p></div>
+<ul data-block_type="bullet" id="ips9e-ch04-list-31">
+<li><div data-block_type="EXP-BLF" id="ips9e-ch04-p-366"><p><span data-block_type="maker">•</span> The coin is balanced, so it is fair and each toss is equally likely to give H or T.</p></div></li>
+<li><div data-block_type="EXP-BLL" id="ips9e-ch04-p-367"><p><span data-block_type="maker">•</span> The coin has no memory, so tosses are independent.</p></div></li>
+</ul>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-368"><p>The outcome of four tosses is a sequence of heads and tails such as HTTH. There are 16 possible outcomes in all. <span data-type="link" data-href="figure_4_6.html">Figure 4.6</span> lists these outcomes along with the value of <em>X</em> for each outcome. The multiplication rule for independent events tells us that, for example,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-369"><p><span data-math="math_5"></span></p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_4_6.html" data-figure-id="ips9e-ch04-fig-10" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_06.jpg" data-figure-id="ips9e-ch04-fig-10" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 4.6: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 4.6</span> <span data-block_type="FG-CAP">Possible outcomes in four tosses of a coin, <span data-type="link" data-href="example_4_23.html">Example 4.23</span>. The outcomes are arranged by the values of the random variable <em>X</em>, the number of heads.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-370"><p>Each of the 16 possible outcomes similarly has probability 1/16. That is, these outcomes are equally likely.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-371"><p>The number of heads <em>X</em> has possible values 0, 1, 2, 3, and 4. These values are <em>not</em> equally likely. As <span data-type="link" data-href="figure_4_6.html">Figure 4.6</span> shows, there is only one way that <em>X</em> = 0 can occur: namely, when the outcome is TTTT. So</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-372"><p><span data-math="math_6"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-373"><p>The event {<em>X</em> = 2} can occur in six different ways, so that</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-374"><p><span data-math="math_7"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-376"><p>We can find the probability of each value of <em>X</em> from <span data-type="link" data-href="figure_4_6.html">Figure 4.6</span> in the same way. Here is the result:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch04-tab-11" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="80"><table><tbody>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Value of <em>X</em>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0</td>
+<td data-block_type="EXP-TB1-TXT" align="char">1</td>
+<td data-block_type="EXP-TB1-TXT" align="char">2</td>
+<td data-block_type="EXP-TB1-TXT" align="char">3</td>
+<td data-block_type="EXP-TB1-TXT" align="char">4</td>
+</tr>
+<tr class="tborder bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder">Probability</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.0625</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.25</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.375</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.25</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.0625</td>
+</tr>
+</tbody></table></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_239"><p>239</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_4_7.html" data-figure-id="ips9e-ch04-fig-11" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_07.jpg" data-figure-id="ips9e-ch04-fig-11" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 4.7: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 4.7</span> <span data-block_type="FG-CAP">Probability histogram for the number of heads in four tosses of a coin(<span data-type="link" data-href="example_4_23.html">Example 4.23</span>).</span></span>
+</div>
+</div>
+<div data-block_type="TXT" id="ips9e-ch04-p-377"><p><span data-type="link" data-href="figure_4_7.html">Figure 4.7</span> is a probability histogram for the distribution in <span data-type="link" data-href="example_4_23.html">Example 4.23</span>. The probability distribution is exactly symmetric. The probabilities (bar heights) are idealizations of the proportions after very many tosses of four coins. The actual distribution of proportions observed would be nearly symmetric but is unlikely to be exactly symmetric.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_4_24.html" id="ips9e-ch04-box-47"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-47"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-378"><p>EXAMPLE 4.24</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-379"><p><span data-block_type="EXP-T-ri">Probability of at least three heads.</span> Any event involving the number of heads observed can be expressed in terms of <em>X</em>, and its probability can be found from the distribution of <em>X</em>. For example, the probability of tossing at least three heads is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-380"><p><em>P</em>(<em>X</em> ≥ 3) = 0.25 + 0.0625 = 0.3125</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-381"><p>The probability of at least one head is most simply found by use of the complement rule:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-382"><p><em>P</em>(<em>X</em> ≥ 1) = 1 − <em>P</em>(<em>X</em> = 0)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-383"><p>= 1 − 0.0625 = 0.9375</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-384"><p>Recall that tossing a coin <em>n</em> times is similar to choosing an SRS of size <em>n</em> from a large population and asking a Yes or No question. We will extend the results of <span data-type="link" data-href="example_4_23.html">Example 4.23</span> when we return to sampling distributions in the next chapter.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-48"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-48"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch04-p-385"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_4_43.html" id="ips9e-ch04-ques-43">
+<h3>Question
+			    <span data-type="number">4.43 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-386"><p><span data-block_type="EXR-QUE-N-ri">4.43</span> <span data-block_type="EXR-QUE-T-ri">Two tosses of a fair coin.</span> Find the probability distribution for the number of heads that appear in two tosses of a fair coin.</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch04-p-387"><p><span data-block_type="h2">Continuous random variables</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch04-p-388"><p>When we use the table of random digits to select a digit between 0 and 9, the result is a discrete random variable. The probability model assigns probability 1/10 to each of the 10 possible outcomes. Suppose that we want to choose a number at random between 0 and 1, allowing <em>any</em> number between 0 and 1 as the outcome. Software random number generators will do this.</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_4_8.html" data-figure-id="ips9e-ch04-fig-12" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_08.jpg" data-figure-id="ips9e-ch04-fig-12" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 4.8: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 4.8</span> <span data-block_type="FG-CAP">A spinner that generates a random number between 0 and 1.</span></span>
+</div>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_240"><p>240</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-389"><p>You can visualize such a random number by thinking of a spinner (<span data-type="link" data-href="figure_4_8.html">Figure 4.8</span>) that turns freely on its axis and slowly comes to a stop. The pointer can come to rest anywhere on a circle that is marked from 0 to 1. The sample space is now an entire interval of numbers:</p></div>
+<div data-block_type="EQ" id="ips9e-ch04-p-390"><p><em>S</em> = {all numbers <em>x</em> such that 0 ≤ <em>x</em> ≤ 1}</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch04-box-49"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-49"></h3>
+<div data-block_type="RNM" id="ips9e-ch04-p-394"><p>density curve, <span data-type="link" data-href="alias:page_51">p. 51</span></p></div>
+</div></div>
+  <div data-block_type="TXT" id="ips9e-ch04-p-391"><p>How can we assign probabilities to events such as {0.3 ≤ <em>x</em> ≤ 0.7}? As in the case of selecting a random digit, we would like all possible outcomes to be equally likely. But we cannot assign probabilities to each individual value of <em>x</em> and then sum because there are too many possible values. Instead, we use a new way of assigning probabilities directly to events—as <em>areas under a density curve.</em> Any density curve has area exactly 1 underneath it, corresponding to total probability 1.</p></div>
+
+<div data-type="box" data-block_type="EXP" data-filename="example_4_25.html" id="ips9e-ch04-box-50"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-50"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-395"><p>EXAMPLE 4.25</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-396"><p><span data-block_type="EXP-T-ri">Uniform random numbers.</span> The random number generator will spread its output uniformly across the entire interval from 0 to 1 as we allow it to generate a long sequence of numbers. The results of many trials are represented by the density curve of a <span data-type="termref" data-term="uniform distribution"><strong>uniform distribution</strong></span>
+<span data-block_type="MN-GL-term">uniform distribution</span>.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-397"><p>This density curve appears in red in <span data-type="link" data-href="figure_4_9.html">Figure 4.9</span>. It has height 1 over the interval from 0 to 1, and height 0 everywhere else. The area under the density curve is 1: the area of a square with base 1 and height 1. The probability of any event is the area under the density curve and above the event in question.</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_4_9.html" data-figure-id="ips9e-ch04-fig-13" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+
+<img id="" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_09.jpg" data-figure-id="ips9e-ch04-fig-13" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 4.9: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 4.9</span> <span data-block_type="FG-CAP">Assigning probabilities for generating a random number between 0 and 1, <span data-type="link" data-href="example_4_25.html">Example 4.25</span>. The probability of any interval of numbers is the area above the interval and under the density curve.</span></span>
+</div>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_241"><p>241</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-398"><p>As <span data-type="link" data-href="figure_4_9.html">Figure 4.9(a)</span> illustrates, the probability that the random number generator produces a number <em>X</em> between 0.3 and 0.7 is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-399"><p><em>P</em>(0.3 ≤ <em>X</em> ≤ 0.7) = 0.4</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-400"><p>because the area under the density curve and above the interval from 0.3 to 0.7 is 0.4. The height of the density curve is 1, and the area of a rectangle is the product of height and length, so the probability of any interval of outcomes is just the length of the interval.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-401"><p>Similarly,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-402"><p><em>P</em>(<em>X</em> ≤ 0.5) = 0.5</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-403"><p><em>P</em>(<em>X</em> &gt; 0.8) = 0.2</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-404"><p><em>P</em>(<em>X</em> ≤ 0.5 or <em>X</em> &gt; 0.8) = 0.7</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-405"><p>Notice that the last event consists of two nonoverlapping intervals, so the total area above the event is found by adding two areas, as illustrated by <span data-type="link" data-href="figure_4_9.html">Figure 4.9(b)</span>. This assignment of probabilities obeys all of our rules for probability.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch04-box-51"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-51"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch04-p-406"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_4_44.html" id="ips9e-ch04-ques-44">
+<h3>Question
+			    <span data-type="number">4.44 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch04-p-407"><p><span data-block_type="EXR-QUE-N-ri">4.44</span> <span data-block_type="EXR-QUE-T-ri">Find the probability.</span> For the uniform distribution described in <span data-type="link" data-href="example_4_25.html">Example 4.25</span>, find the probability that <em>X</em> is between 0.3 and 0.9.</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-408"><p>Probability as area under a density curve is a second important way of assigning probabilities to events. <span data-type="link" data-href="figure_4_10.html">Figure 4.10</span> illustrates this idea in general form. We call <em>X</em> in <span data-type="link" data-href="example_4_25.html">Example 4.25</span> a <em>continuous random variable</em> because its values are not isolated numbers but an entire interval of numbers.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch04-box-52"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-52"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch04-p-409"><p>CONTINUOUS RANDOM VARIABLE</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch04-p-410"><p>A <strong>continuous random variable</strong> <em>X</em> takes all values in an interval of numbers. The <strong>probability distribution</strong> of <em>X</em> is described by a density curve. The probability of any event is the area under the density curve and above the values of <em>X</em> that make up the event.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-411"><p>The probability model for a continuous random variable assigns probabilities to intervals of outcomes rather than to individual outcomes. In fact, <strong>all continuous probability distributions assign probability 0 to every individual outcome</strong>. Only intervals of values have positive probability. To see that this is true, consider a specific outcome such as <em>P</em>(<em>X</em> = 0.8) in the context of <span data-type="link" data-href="example_4_25.html">Example 4.25</span>. The probability of any interval is the same as its length. The point 0.8 has no length, so its probability is 0.</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_4_10.html" data-figure-id="ips9e-ch04-fig-14" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_10.jpg" data-figure-id="ips9e-ch04-fig-14" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 4.10: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 4.10</span> <span data-block_type="FG-CAP">The probability distribution of a continuous random variable assigns probabilities as areas under a density curve. The total area under any density curve is 1.</span></span>
+</div>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_242"><p>242</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-412"><p>Although this fact may seem odd, it makes intuitive, as well as mathematical, sense. The random number generator produces a number between 0.79 and 0.81 with probability 0.02. An outcome between 0.799 and 0.801 has probability 0.002. A result between 0.799999 and 0.800001 has probability 0.000002. You see that as we approach 0.8, the probability gets closer to 0.</p></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-413"><p>To be consistent, the probability of an outcome <em>exactly</em> equal to 0.8 must be 0. Because there is no probability exactly at <em>X</em> = 0.8, the two events {<em>X</em> &gt; 0.8} and {<em>X</em> ≥ 0.8} have the same probability. <em>We can ignore the distinction between</em> &gt; <em>and</em> ≥ <em>when finding probabilities for continuous (but not discrete) random variables.</em></p></div>
+<div data-block_type="Caution icon" id="ips9e-ch04-p-414"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="level_2_title" id="ips9e-ch04-p-415"><p><span data-block_type="h2">Normal distributions as probability distributions</span></p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch04-box-53"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-53"></h3>
+  
+<div data-block_type="RNM" id="ips9e-ch04-p-421"><p>Normal distributions, <span data-type="link" data-href="alias:page_56">p. 56</span></p></div>
+</div></div>
+  <div data-block_type="TXT-ni" id="ips9e-ch04-p-416"><p>The density curves that are most familiar to us are the Normal curves. Because any density curve describes an assignment of probabilities, <em>Normal distributions are probability distributions.</em> Recall that <em>N</em>(<em>μ</em>, <em>σ</em>) is our shorthand for the Normal distribution having mean <em>μ</em> and standard deviation <em>σ</em>. In the language of random variables, if <em>X</em> has the <em>N</em>(<em>μ</em>, <em>σ</em>) distribution, then the standardized variable</p></div>
+<div data-block_type="EQ" id="ips9e-ch04-p-417"><p><span data-math="math_8"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch04-p-418"><p>is a standard Normal random variable having the distribution <em>N</em>(0,1).</p></div>
+
+<div data-type="box" data-block_type="EXP" data-filename="example_4_26.html" id="ips9e-ch04-box-54"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch04-box-54"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch04-p-422"><p>EXAMPLE 4.26</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch04-p-423"><p><span data-block_type="EXP-T-ri">Texting while driving.</span> Texting while driving can be dangerous, but young people want to remain connected. Suppose that 26% of teen drivers text while driving. If we take a sample of 500 teen drivers, what percent would we expect to say that they text while driving?<span data-type="termref" data-term="fn_ch4_fn11"><sup>11</sup></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-424"><p>The proportion <em>p</em> = 0.26 is a number that describes the population of teen drivers. The proportion <span data-math="math_9"></span> of the sample who say that they text while driving is used to estimate <em>p</em>. The proportion <span data-math="math_10"></span> is a random variable because repeating the SRS would give a different sample of 500 teen drivers and a different value of <span data-math="math_11"></span>.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-425"><p>We will see in the next chapter that in this setting, with teen drivers answering honestly, <span data-math="math_12"></span> has approximately the <em>N</em>(0.26, 0.0196) distribution. The mean 0.26 of this distribution is the same as the population proportion because <span data-math="math_13"></span> is an unbiased estimate of <em>p</em>. The standard deviation is controlled mainly by the size of the sample.</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-426"><p>What is the probability that the survey result differs from the truth about the population by no more than 3 percentage points? We can use what we learned about Normal distribution calculations to answer this question. Because <em>p</em> = 0.26, the survey misses by no more than 3 percentage points if the sample proportion is between 0.23 and 0.29.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_243"><p>243</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_4_11.html" data-figure-id="ips9e-ch04-fig-15" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch4/17MOOREIPS-MSE_9e_fig_04_11.jpg" data-figure-id="ips9e-ch04-fig-15" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 4.11: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 4.11</span> <span data-block_type="FG-CAP">Probability as area under a Normal density curve, <span data-type="link" data-href="example_4_26.html">Example 4.26</span>.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-427"><p><span data-type="link" data-href="figure_4_11.html">Figure 4.11</span> shows this probability as an area under a Normal density curve. You can find it by software or by standardizing and using <span data-type="link" data-href="table_a.html">Table A</span>. From <span data-type="link" data-href="table_a.html">Table A</span>,</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-428"><p><span data-math="math_14"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-429"><p>= <em>P</em>(-1.53 ≤ <em>Z</em> ≤ 1.53)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch04-p-430"><p>= 0.9370 − 0.0630 = 0.8740</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch04-p-431"><p>About 87% of the time, the sample <span data-math="math_15"></span> will be within 3 percentage points of the proportion <em>p</em>.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch04-p-432"><p>We began this chapter with a general discussion of the idea of probability and the properties of probability models. Two very useful specific types of probability models are distributions of discrete and continuous random variables. In our study of statistics, we will employ only these two types of probability models.</p></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch4.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('5732604a757a2e2770000002');
+});
+    //-->
+</script>
+</body>
+</html>
+

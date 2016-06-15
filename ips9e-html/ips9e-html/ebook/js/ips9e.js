@@ -11,7 +11,7 @@ var Player_subtype = Player_manuscript_type.extend({
     //cfg_Box_moveTitleExclude: "",
 
     //cfg_Figures_targetDefault: "_blank",
-    //cfg_Figures_resizeDivWidth: "off",
+    cfg_Figures_resizeDivWidth: "off",
 
     //cfg_Figures_autoHtml: "on",
     //cfg_LH_autoHtml: "on",

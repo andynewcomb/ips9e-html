@@ -80,7 +80,7 @@
 <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-43" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="30"><table><tbody>
 <tr class="tborder">
 <th data-block_type="EXP-TB1-COLHD" align="center"><em>n</em></th>
-<th data-block_type="EXP-TB1-COLHD" align="char"><span data-math="math_299"></span></th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><span data-math="math_299"></span></th>
 </tr>
 <tr class="tborder">
 <td data-block_type="EXP-TB1-TXT" align="center">49</td>
@@ -134,7 +134,7 @@
 <div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-44" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="40"><table><tbody>
 <tr class="tborder">
 <td data-block_type="EXP-TB1-TXT" align="center"><em>n</em></td>
-<td data-block_type="EXP-TB1-TXT" align="char"><span data-math="math_303"></span></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><span data-math="math_303"></span></td>
 </tr>
 <tr class="tborder">
 <td data-block_type="EXP-TB1-TXT" align="center">45</td>
@@ -193,12 +193,12 @@
 <div data-block_type="EXP-EQ" id="ips9e-ch07-p0911"><p><em>H</em><sub>0</sub>: <em>μ</em> = 18.5</p></div>
 <div data-block_type="EXP-EQ" id="ips9e-ch07-p0912"><p><em>H<sub>a</sub></em>: <em>μ</em> &lt; 18.5</p></div>
 <div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0913"><p>against the alternative that <em>μ</em> = 18.5 − 4 = 14.5 when <em>n</em> = 50. This gives us most of the information we need to compute the power. The other important piece is a rough guess of the size of <em>σ</em>. In planning a large study, a pilot study is often run for this and other purposes. In this case, we can use the standard deviation from the earlier survey. Similar to <span data-type="link" data-href="example_7_21.html">Example 7.21</span> (page 462), we will round up and use <em>σ</em> = 17.5 and <em>s</em> = 17.5 in the approximate calculation.</p></div>
-<div data-block_type="EXP-SLF" id="ips9e-ch07-p0914"><p><strong>Step 1.</strong> The <em>t</em> test with 50 observations rejects <em>H</em><sub>0</sub> at the 5% significance level if the <em>t</em> statistic</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0914"><p><strong>Step 1.</strong> The <em>t</em> test with 50 observations rejects <em>H</em><sub>0</sub> at the 5% significance level if the <em>t</em> statistic</p></div>
 <div data-block_type="EXP-EQ" id="ips9e-ch07-p0915"><p><span data-math="math_305"></span></p></div>
 <div data-block_type="EXP-SLF" id="ips9e-ch07-p0916"><p>is less than the lower 5% point of <em>t</em>(49), which is −1.677. Taking <em>s</em> = 17.5, the event that the test rejects <em>H</em><sub>0</sub> is, therefore,</p></div>
 <div data-block_type="EXP-EQ" id="ips9e-ch07-p0917"><p><span data-math="math_306"></span></p></div>
 <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_466"><p>466</p></div>
-<div data-block_type="EXP-SLF" id="ips9e-ch07-p0921"><p><strong>Step 2.</strong> The power is the probability that <span data-math="math_307"></span> when <em>μ</em> = 14.5. Taking <em>σ</em> = 17.5, we find this probability by standardizing <span data-math="math_308"></span>:</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0921"><p><strong>Step 2.</strong> The power is the probability that <span data-math="math_307"></span> when <em>μ</em> = 14.5. Taking <em>σ</em> = 17.5, we find this probability by standardizing <span data-math="math_308"></span>:</p></div>
 <div data-block_type="EXP-EQ" id="ips9e-ch07-p0922"><p><span data-math="math_309"></span></p></div>
 <div data-block_type="EXP-EQ" id="ips9e-ch07-p0923"><p> = <em>P</em>(<em>Z</em> ≤ −0.061)</p></div>
 <div data-block_type="EXP-EQ" id="ips9e-ch07-p0924"><p> = 0.4761</p></div>
@@ -233,18 +233,18 @@
 <div data-block_type="TXT-3" id="ips9e-ch07-p0932"><p><span data-block_type="h3-ri">The power of the two-sample <em>t</em> test</span> The two-sample <em>t</em> test is one of the most used statistical procedures. Unfortunately, because of inadequate planning, users frequently fail to find evidence for the effects that they believe to be present. This is often the result of an inadequate sample size. Power calculations, performed prior to running the experiment, will help avoid this occurrence.</p></div>
 <div data-block_type="TXT" id="ips9e-ch07-p0933"><p>We just learned how to approximate the power of the one-sample <em>t</em> test. The basic idea is the same for the two-sample case, but we will describe the exact method rather than an approximation again. The exact power calculation involves a new distribution, the <span data-type="termref" data-term="noncentral t distribution"><strong>noncentral <em>t</em> distribution</strong></span><span data-block_type="MN-GL-term">noncentral <em>t</em> distribution</span>. This calculation is not practical by hand but is easy with software that calculates probabilities for this distribution.</p></div>
 <div data-block_type="TXT" id="ips9e-ch07-p0935"><p>We consider only the common case where the null hypothesis is “no difference,’’ <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub> = 0. We illustrate the calculation for the pooled two-sample <em>t</em> test. A simple modification is needed when we do not pool. The unknown parameters in the pooled <em>t</em> setting are <em>μ</em><sub>1</sub>, <em>μ</em><sub>2</sub>, and a single common standard deviation <em>σ</em>. To find the power for the pooled two-sample <em>t</em> test, follow these steps.</p></div>
-<div data-block_type="SLF" id="ips9e-ch07-p0936"><p><strong>Step 1.</strong> Specify these quantities:</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0936"><p><strong>Step 1.</strong> Specify these quantities:</p></div>
 <ol data-block_type="lower-alpha" id="ips9e-ch07-list-073">
 <li><div data-block_type="SL-NL-Lvl2" id="ips9e-ch07-p0937"><p><span data-block_type="maker">(a)</span> An alternative value for <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub> that you consider important to detect.</p></div></li>
 <li><div data-block_type="SL-NL-Lvl2" id="ips9e-ch07-p0938"><p><span data-block_type="maker">(b)</span> The sample sizes, <em>n</em><sub>1</sub> and <em>n</em><sub>2</sub>.</p></div></li>
 <li><div data-block_type="SL-NL-Lvl2" id="ips9e-ch07-p0939"><p><span data-block_type="maker">(c)</span> A fixed significance level <em>α</em>, often <em>α</em> = 0.05.</p></div></li>
 <li><div data-block_type="SL-NL-Lvl2" id="ips9e-ch07-p0940"><p><span data-block_type="maker">(d)</span> An estimate of the standard deviation <em>σ</em> from a pilot study or previous studies under similar conditions.</p></div></li>
 </ol>
-<div data-block_type="SLL" id="ips9e-ch07-p0941"><p><strong>Step 2.</strong> Find the degrees of freedom df = <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> − 2 and the value of <em>t</em>* that will lead to rejecting <em>H</em><sub>0</sub> at your chosen level <em>α</em>.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0941"><p><strong>Step 2.</strong> Find the degrees of freedom df = <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> − 2 and the value of <em>t</em>* that will lead to rejecting <em>H</em><sub>0</sub> at your chosen level <em>α</em>.</p></div>
 <div data-margin-content="left" data-block_type="page_start" id="ips9e_page_468"><p>468</p></div>
-<div data-block_type="SLL" id="ips9e-ch07-p0943"><p><strong>Step 3.</strong> Calculate the <span data-type="termref" data-term="noncentrality parameter"><strong>noncentrality parameter</strong></span><span data-block_type="MN-GL-term">noncentrality parameter</span></p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0943"><p><strong>Step 3.</strong> Calculate the <span data-type="termref" data-term="noncentrality parameter"><strong>noncentrality parameter</strong></span><span data-block_type="MN-GL-term">noncentrality parameter</span></p></div>
 <div data-block_type="EQ" id="ips9e-ch07-p0945"><p><span data-math="math_310"></span></p></div>
-<div data-block_type="SLL" id="ips9e-ch07-p0946"><p><strong>Step 4.</strong> The power is the probability that a noncentral <em>t</em> random variable with degrees of freedom df and noncentrality parameter <em>δ</em> will be greater than <em>t</em>*. Use software to calculate this probability. In SAS, the command is 1 - PROBT(tstar, df, delta). In R the commmand is 1-pt(tstar, df, delta). If you do not have software that can perform this calculation, you can approximate the power as the probability that a standard Normal random variable is greater than <em>t</em>* −<em>δ</em>, that is, <em>P</em>(<em>Z</em> &gt; <em>t</em>* <em>−δ</em>). Use <span data-type="link" data-href="table_a.html">Table A</span> or software for standard Normal probabilities.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0946"><p><strong>Step 4.</strong> The power is the probability that a noncentral <em>t</em> random variable with degrees of freedom df and noncentrality parameter <em>δ</em> will be greater than <em>t</em>*. Use software to calculate this probability. In SAS, the command is 1 - PROBT(tstar, df, delta). In R the commmand is 1-pt(tstar, df, delta). If you do not have software that can perform this calculation, you can approximate the power as the probability that a standard Normal random variable is greater than <em>t</em>* −<em>δ</em>, that is, <em>P</em>(<em>Z</em> &gt; <em>t</em>* <em>−δ</em>). Use <span data-type="link" data-href="table_a.html">Table A</span> or software for standard Normal probabilities.</p></div>
 <div data-block_type="TXT" id="ips9e-ch07-p0947"><p>Note that the denominator in the noncentrality parameter,</p></div>
 <div data-block_type="EQ" id="ips9e-ch07-p0948"><p><span data-math="math_311"></span></p></div>
 <div data-block_type="TXT-ni" id="ips9e-ch07-p0949"><p>is our guess at the standard error for the difference in the sample means. Therefore, if we wanted to assess a possible study in terms of the margin of error for the estimated difference, we would examine <em>t</em>* times this quantity.</p></div>
@@ -255,12 +255,12 @@
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-107"></h3>
 <div data-block_type="EXP-N" id="ips9e-ch07-p0953"><p>EXAMPLE 7.24</p></div>
 <div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0954"><p><span data-block_type="EXP-T-ri">Planning a new study of calcium versus placebo groups.</span> In <span data-type="link" data-href="example_7_19.html">Example 7.19</span> (page 451), we examined the effect of calcium on blood pressure by comparing the means of a treatment group and a placebo group using a pooled two-sample <em>t</em> test. The <em>P</em>-value was 0.059, failing to achieve the usual standard of 0.05 for statistical significance. Suppose that we wanted to plan a new study that would provide convincing evidence—say, at the 0.01 level—with high probability. Let’s examine a study design with 45 subjects in each group (<em>n</em><sub>1</sub> = <em>n</em><sub>2</sub> = 45) to see if this meets our goals.</p></div>
-<div data-block_type="EXP-SLF" id="ips9e-ch07-p0955"><p><strong>Step 1.</strong> Based on our previous results, we choose <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub> = 5 as an alternative that we would like to be able to detect with <em>α</em> = 0.01. For <em>σ</em> we use 7.4, our pooled estimate from <span data-type="link" data-href="example_7_19.html">Example 7.19</span>.</p></div>
-<div data-block_type="EXP-SLF" id="ips9e-ch07-p0956"><p><strong>Step 2.</strong> The degrees of freedom are <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> − 2 = 88, which leads to <em>t</em>* = 2.37 for the significance test.</p></div>
-<div data-block_type="EXP-SLF" id="ips9e-ch07-p0957"><p><strong>Step 3.</strong> The noncentrality parameter is</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0955"><p><strong>Step 1.</strong> Based on our previous results, we choose <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub> = 5 as an alternative that we would like to be able to detect with <em>α</em> = 0.01. For <em>σ</em> we use 7.4, our pooled estimate from <span data-type="link" data-href="example_7_19.html">Example 7.19</span>.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0956"><p><strong>Step 2.</strong> The degrees of freedom are <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> − 2 = 88, which leads to <em>t</em>* = 2.37 for the significance test.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0957"><p><strong>Step 3.</strong> The noncentrality parameter is</p></div>
 <div data-block_type="EXP-EQ" id="ips9e-ch07-p0958"><p><span data-math="math_313"></span></p></div>
 <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_469"><p>469</p></div>
-<div data-block_type="EXP-SLL" id="ips9e-ch07-p0960"><p><strong>Step 4.</strong> Software gives the power as 0.7965, or 80%. The Normal approximation gives 0.7983, a very accurate result.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0960"><p><strong>Step 4.</strong> Software gives the power as 0.7965, or 80%. The Normal approximation gives 0.7983, a very accurate result.</p></div>
 <div data-block_type="EXP-last" id="ips9e-ch07-p0961"><p>With this choice of sample sizes, we are just barely below 80% power. If we judge this to be large enough power, we can proceed to the recruitment of our samples.</p></div>
 </div></div>
 <div data-block_type="TXT" id="ips9e-ch07-p0962"><p>With software it is often very easy to examine the effects of variations in a study design. For example, <span data-type="link" data-href="figure_7_19.html">Figure 7.19</span> shows the JMP power calculator for the two-sample <em>t</em> test. You input values for <em>α</em>, <em>σ</em>, <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub>, and <em>δ</em> (Step 1) and it computes the power (Steps 2–4). <span data-type="link" data-href="figure_7_19.html">Figure 7.19</span> shows the results of the calculations for <span data-type="link" data-href="example_7_24.html">Example 7.24</span>. The JMP calculator only considers the two-sided alternative so to get the power for a one-sided alternative, the significance level must be input as 2<em>α</em>. Most other software, such as Minitab, provides the option to choose the alternative.</p></div>
@@ -398,11 +398,11 @@
 <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-111"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-111"></h3>
 <div data-url="asset/datasets/Data_Icon.jpg" data-file="SONGS" data-block_type="rl_dataset" id="ips9e-ch07-p0981"><p><span>SONGS</span></p></div>
-<div data-dataset="" data-block_type="rl_crunchit" id="idp10484592"><p></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp15182064"><p></p></div>
 </div></div>
 <div data-margin-content="right" data-block_type="page_start" id="ips9e_page_471"><p>471</p></div>
-<div data-type="box" data-block_type="sidebyside" id="idp10486608"><div data-type="box_inner">
-<h3 data-type="title" data-for_type="box" data-title-for="idp10486608"></h3>
+<div data-type="box" data-block_type="sidebyside" id="idp15184080"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp15184080"></h3>
 <div data-type="figure" data-caption-compass="S" data-filename="figure_7_20.html" data-figure-id="ips9e-ch07-fig-025" data-block_type="FIGURE" data-layout-align="left" data-layout-width="medium" data-layout-border="false">
 
 <img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_20.jpg" data-figure-id="ips9e-ch07-fig-025" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
@@ -428,7 +428,7 @@
 <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-113"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-113"></h3>
 <div data-url="asset/datasets/Data_Icon.jpg" data-file="SONGS" data-block_type="rl_dataset" id="ips9e-ch07-p0987"><p><span>SONGS</span></p></div>
-<div data-dataset="" data-block_type="rl_crunchit" id="idp10516160"><p></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp15213680"><p></p></div>
 </div></div>
 <div data-block_type="EXP-EQ" id="ips9e-ch07-p0988"><p>N    Mean   StDev   SE Mean      95.0% C.I.</p></div>
 <div data-block_type="EXP-EQ" id="ips9e-ch07-p0989"><p>50  5.6315  0.6840    ?0.0967   (5.4371, 5.8259)</p></div>
@@ -448,7 +448,7 @@
 <div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-115"><div data-type="box_inner">
 <h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-115"></h3>
 <div data-url="asset/datasets/Data_Icon.jpg" data-file="GEPARTS" data-block_type="rl_dataset" id="ips9e-ch07-p01001"><p><span>GEPARTS</span></p></div>
-<div data-dataset="" data-block_type="rl_crunchit" id="idp10543216"><p></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp15240688"><p></p></div>
 </div></div>
 <div data-block_type="EXP-last" id="ips9e-ch07-p01002"><p>To perform a significance test based on these counts, let <em>p</em> be the probability that a randomly chosen part would have a larger measurement with the option turned on. The null hypothesis of “no effect’’ says that these two measurements are just repeat measurements, so the measurement with the option off is equally likely to be larger or smaller than the measurement with the option on. Therefore, we want to test</p></div>
 <div data-block_type="EXP-EQ" id="ips9e-ch07-p01003"><p><em>H</em><sub>0</sub>: <em>p</em> = 1/2</p></div>

@@ -3318,7 +3318,7 @@
 <tbody>
 <tr class="tborder">
 <th align="center" block_type="EXP-TB1-COLHD"><em>n</em></th>
-<th align="char" char="." block_type="EXP-TB1-COLHD"><phrase data-math="math_299"></phrase></th>
+<th align="center" char="." block_type="EXP-TB1-COLHD"><phrase data-math="math_299"></phrase></th>
 </tr>
 <tr class="tborder">
 <td align="center" block_type="EXP-TB1-TXT">49</td>
@@ -3370,7 +3370,7 @@
 <tbody>
 <tr class="tborder">
 <td align="center" block_type="EXP-TB1-TXT"><em>n</em></td>
-<td align="char" char="." block_type="EXP-TB1-TXT"><phrase data-math="math_303"></phrase></td>
+<td align="center" char="." block_type="EXP-TB1-TXT"><phrase data-math="math_303"></phrase></td>
 </tr>
 <tr class="tborder">
 <td align="center" block_type="EXP-TB1-TXT">45</td>
@@ -3421,12 +3421,12 @@
 <p id="ips9e-ch07-p0911" block_type="EXP-EQ"><em>H</em><sub>0</sub>: <em>&#956;</em> = 18.5</p>
 <p id="ips9e-ch07-p0912" block_type="EXP-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em> &#60; 18.5</p>
 <p id="ips9e-ch07-p0913" block_type="EXP-TXT-ni">against the alternative that <em>&#956;</em> = 18.5 &#8722; 4 = 14.5 when <em>n</em> = 50. This gives us most of the information we need to compute the power. The other important piece is a rough guess of the size of <em>&#963;</em>. In planning a large study, a pilot study is often run for this and other purposes. In this case, we can use the standard deviation from the earlier survey. Similar to <link href="example_7_21.html">Example 7.21</link> (page 462), we will round up and use <em>&#963;</em> = 17.5 and <em>s</em> = 17.5 in the approximate calculation.</p>
-<p id="ips9e-ch07-p0914" block_type="EXP-SLF"><strong>Step 1.</strong> The <em>t</em> test with 50 observations rejects <em>H</em><sub>0</sub> at the 5&#37; significance level if the <em>t</em> statistic</p>
+<p id="ips9e-ch07-p0914" block_type="TXT"><strong>Step 1.</strong> The <em>t</em> test with 50 observations rejects <em>H</em><sub>0</sub> at the 5&#37; significance level if the <em>t</em> statistic</p>
 <p id="ips9e-ch07-p0915" block_type="EXP-EQ"><phrase data-math="math_305"></phrase></p>
 <p id="ips9e-ch07-p0916" block_type="EXP-SLF">is less than the lower 5&#37; point of <em>t</em>(49), which is &#8722;1.677. Taking <em>s</em> = 17.5, the event that the test rejects <em>H</em><sub>0</sub> is, therefore,</p>
 <p id="ips9e-ch07-p0917" block_type="EXP-EQ"><phrase data-math="math_306"></phrase></p>
 <p id="ips9e_page_466" block_type="page_start" data-margin-content="left">466</p>
-<p id="ips9e-ch07-p0921" block_type="EXP-SLF"><strong>Step 2.</strong> The power is the probability that <phrase data-math="math_307"></phrase> when <em>&#956;</em> = 14.5. Taking <em>&#963;</em> = 17.5, we find this probability by standardizing <phrase data-math="math_308"></phrase>:</p>
+<p id="ips9e-ch07-p0921" block_type="TXT"><strong>Step 2.</strong> The power is the probability that <phrase data-math="math_307"></phrase> when <em>&#956;</em> = 14.5. Taking <em>&#963;</em> = 17.5, we find this probability by standardizing <phrase data-math="math_308"></phrase>:</p>
 <p id="ips9e-ch07-p0922" block_type="EXP-EQ"><phrase data-math="math_309"></phrase></p>
 <p id="ips9e-ch07-p0923" block_type="EXP-EQ"> = <em>P</em>(<em>Z</em> &#x2264; &#x2212;0.061)</p>
 <p id="ips9e-ch07-p0924" block_type="EXP-EQ"> = 0.4761</p>
@@ -3452,18 +3452,18 @@
 <p id="ips9e-ch07-p0932" block_type="TXT-3"><phrase block_type="h3-ri">The power of the two-sample <em>t</em> test</phrase> The two-sample <em>t</em> test is one of the most used statistical procedures. Unfortunately, because of inadequate planning, users frequently fail to find evidence for the effects that they believe to be present. This is often the result of an inadequate sample size. Power calculations, performed prior to running the experiment, will help avoid this occurrence.</p>
 <p id="ips9e-ch07-p0933" block_type="TXT">We just learned how to approximate the power of the one-sample <em>t</em> test. The basic idea is the same for the two-sample case, but we will describe the exact method rather than an approximation again. The exact power calculation involves a new distribution, the <termref term="noncentral t distribution"><strong>noncentral <em>t</em> distribution</strong></termref><phrase block_type="MN-GL-term">noncentral <em>t</em> distribution</phrase>. This calculation is not practical by hand but is easy with software that calculates probabilities for this distribution.</p>
 <p id="ips9e-ch07-p0935" block_type="TXT">We consider only the common case where the null hypothesis is &#8220;no difference,&#8217;&#8217; <em>&#956;</em><sub>1</sub> &#8722;<em>&#956;</em><sub>2</sub> = 0. We illustrate the calculation for the pooled two-sample <em>t</em> test. A simple modification is needed when we do not pool. The unknown parameters in the pooled <em>t</em> setting are <em>&#956;</em><sub>1</sub>, <em>&#956;</em><sub>2</sub>, and a single common standard deviation <em>&#963;</em>. To find the power for the pooled two-sample <em>t</em> test, follow these steps.</p>
-<p id="ips9e-ch07-p0936" block_type="SLF"><strong>Step 1.</strong> Specify these quantities:</p>
+<p id="ips9e-ch07-p0936" block_type="TXT"><strong>Step 1.</strong> Specify these quantities:</p>
 <list id="ips9e-ch07-list-073" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch07-li-248"><p id="ips9e-ch07-p0937" block_type="SL-NL-Lvl2"><phrase block_type="maker">(a)</phrase> An alternative value for <em>&#956;</em><sub>1</sub> &#8722;<em>&#956;</em><sub>2</sub> that you consider important to detect.</p></li>
 <li id="ips9e-ch07-li-249"><p id="ips9e-ch07-p0938" block_type="SL-NL-Lvl2"><phrase block_type="maker">(b)</phrase> The sample sizes, <em>n</em><sub>1</sub> and <em>n</em><sub>2</sub>.</p></li>
 <li id="ips9e-ch07-li-250"><p id="ips9e-ch07-p0939" block_type="SL-NL-Lvl2"><phrase block_type="maker">(c)</phrase> A fixed significance level <em>&#945;</em>, often <em>&#945;</em> = 0.05.</p></li>
 <li id="ips9e-ch07-li-251"><p id="ips9e-ch07-p0940" block_type="SL-NL-Lvl2"><phrase block_type="maker">(d)</phrase> An estimate of the standard deviation <em>&#963;</em> from a pilot study or previous studies under similar conditions.</p></li>
 </list>
-<p id="ips9e-ch07-p0941" block_type="SLL"><strong>Step 2.</strong> Find the degrees of freedom df = <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> &#8722; 2 and the value of <em>t</em>* that will lead to rejecting <em>H</em><sub>0</sub> at your chosen level <em>&#945;</em>.</p>
+<p id="ips9e-ch07-p0941" block_type="TXT"><strong>Step 2.</strong> Find the degrees of freedom df = <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> &#8722; 2 and the value of <em>t</em>* that will lead to rejecting <em>H</em><sub>0</sub> at your chosen level <em>&#945;</em>.</p>
 <p id="ips9e_page_468" block_type="page_start" data-margin-content="left">468</p>
-<p id="ips9e-ch07-p0943" block_type="SLL"><strong>Step 3.</strong> Calculate the <termref term="noncentrality parameter"><strong>noncentrality parameter</strong></termref><phrase block_type="MN-GL-term">noncentrality parameter</phrase></p>
+<p id="ips9e-ch07-p0943" block_type="TXT"><strong>Step 3.</strong> Calculate the <termref term="noncentrality parameter"><strong>noncentrality parameter</strong></termref><phrase block_type="MN-GL-term">noncentrality parameter</phrase></p>
 <p id="ips9e-ch07-p0945" block_type="EQ"><phrase data-math="math_310"></phrase></p>
-<p id="ips9e-ch07-p0946" block_type="SLL"><strong>Step 4.</strong> The power is the probability that a noncentral <em>t</em> random variable with degrees of freedom df and noncentrality parameter <em>&#948;</em> will be greater than <em>t</em>*. Use software to calculate this probability. In SAS, the command is 1 - PROBT(tstar, df, delta). In R the commmand is 1-pt(tstar, df, delta). If you do not have software that can perform this calculation, you can approximate the power as the probability that a standard Normal random variable is greater than <em>t</em>* &#8722;<em>&#948;</em>, that is, <em>P</em>(<em>Z</em> &#62; <em>t</em>* <em>&#8722;&#948;</em>). Use <link href="table_a.html">Table A</link> or software for standard Normal probabilities.</p>
+<p id="ips9e-ch07-p0946" block_type="TXT"><strong>Step 4.</strong> The power is the probability that a noncentral <em>t</em> random variable with degrees of freedom df and noncentrality parameter <em>&#948;</em> will be greater than <em>t</em>*. Use software to calculate this probability. In SAS, the command is 1 - PROBT(tstar, df, delta). In R the commmand is 1-pt(tstar, df, delta). If you do not have software that can perform this calculation, you can approximate the power as the probability that a standard Normal random variable is greater than <em>t</em>* &#8722;<em>&#948;</em>, that is, <em>P</em>(<em>Z</em> &#62; <em>t</em>* <em>&#8722;&#948;</em>). Use <link href="table_a.html">Table A</link> or software for standard Normal probabilities.</p>
 <p id="ips9e-ch07-p0947" block_type="TXT">Note that the denominator in the noncentrality parameter,</p>
 <p id="ips9e-ch07-p0948" block_type="EQ"><phrase data-math="math_311"></phrase></p>
 <p id="ips9e-ch07-p0949" block_type="TXT-ni">is our guess at the standard error for the difference in the sample means. Therefore, if we wanted to assess a possible study in terms of the margin of error for the estimated difference, we would examine <em>t</em>* times this quantity.</p>
@@ -3473,12 +3473,12 @@
 <box id="ips9e-ch07-box-107" numbered="false" block_type="EXP" data-filename="example_7_24.html">
 <p id="ips9e-ch07-p0953" block_type="EXP-N">EXAMPLE 7.24</p>
 <p id="ips9e-ch07-p0954" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Planning a new study of calcium versus placebo groups.</phrase> In <link href="example_7_19.html">Example 7.19</link> (page 451), we examined the effect of calcium on blood pressure by comparing the means of a treatment group and a placebo group using a pooled two-sample <em>t</em> test. The <em>P</em>-value was 0.059, failing to achieve the usual standard of 0.05 for statistical significance. Suppose that we wanted to plan a new study that would provide convincing evidence&#8212;say, at the 0.01 level&#8212;with high probability. Let&#8217;s examine a study design with 45 subjects in each group (<em>n</em><sub>1</sub> = <em>n</em><sub>2</sub> = 45) to see if this meets our goals.</p>
-<p id="ips9e-ch07-p0955" block_type="EXP-SLF"><strong>Step 1.</strong> Based on our previous results, we choose <em>&#956;</em><sub>1</sub> &#8722;<em>&#956;</em><sub>2</sub> = 5 as an alternative that we would like to be able to detect with <em>&#945;</em> = 0.01. For <em>&#963;</em> we use 7.4, our pooled estimate from <link href="example_7_19.html">Example 7.19</link>.</p>
-<p id="ips9e-ch07-p0956" block_type="EXP-SLF"><strong>Step 2.</strong> The degrees of freedom are <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> &#8722; 2 = 88, which leads to <em>t</em>* = 2.37 for the significance test.</p>
-<p id="ips9e-ch07-p0957" block_type="EXP-SLF"><strong>Step 3.</strong> The noncentrality parameter is</p>
+<p id="ips9e-ch07-p0955" block_type="TXT"><strong>Step 1.</strong> Based on our previous results, we choose <em>&#956;</em><sub>1</sub> &#8722;<em>&#956;</em><sub>2</sub> = 5 as an alternative that we would like to be able to detect with <em>&#945;</em> = 0.01. For <em>&#963;</em> we use 7.4, our pooled estimate from <link href="example_7_19.html">Example 7.19</link>.</p>
+<p id="ips9e-ch07-p0956" block_type="TXT"><strong>Step 2.</strong> The degrees of freedom are <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> &#8722; 2 = 88, which leads to <em>t</em>* = 2.37 for the significance test.</p>
+<p id="ips9e-ch07-p0957" block_type="TXT"><strong>Step 3.</strong> The noncentrality parameter is</p>
 <p id="ips9e-ch07-p0958" block_type="EXP-EQ"><phrase data-math="math_313"></phrase></p>
 <p id="ips9e_page_469" block_type="page_start" data-margin-content="right">469</p>
-<p id="ips9e-ch07-p0960" block_type="EXP-SLL"><strong>Step 4.</strong> Software gives the power as 0.7965, or 80&#37;. The Normal approximation gives 0.7983, a very accurate result.</p>
+<p id="ips9e-ch07-p0960" block_type="TXT"><strong>Step 4.</strong> Software gives the power as 0.7965, or 80&#37;. The Normal approximation gives 0.7983, a very accurate result.</p>
 <p id="ips9e-ch07-p0961" block_type="EXP-last">With this choice of sample sizes, we are just barely below 80&#37; power. If we judge this to be large enough power, we can proceed to the recruitment of our samples.</p>
 </box>
 <p id="ips9e-ch07-p0962" block_type="TXT">With software it is often very easy to examine the effects of variations in a study design. For example, <link href="figure_7_19.html">Figure 7.19</link> shows the JMP power calculator for the two-sample <em>t</em> test. You input values for <em>&#945;</em>, <em>&#963;</em>, <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub>, and <em>&#948;</em> (Step 1) and it computes the power (Steps 2&#8211;4). <link href="figure_7_19.html">Figure 7.19</link> shows the results of the calculations for <link href="example_7_24.html">Example 7.24</link>. The JMP calculator only considers the two-sided alternative so to get the power for a one-sided alternative, the significance level must be input as 2<em>&#945;</em>. Most other software, such as Minitab, provides the option to choose the alternative.</p>

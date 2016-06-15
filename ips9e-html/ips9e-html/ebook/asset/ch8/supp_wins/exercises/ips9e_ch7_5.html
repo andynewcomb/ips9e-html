@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch7</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e_ch7.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="7">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch07-sec1-004" level="1" data-print_page="432">
+<h2 class="section-title">
+<span data-type="number">7.2</span> <span data-type="title" data-title-for="ips9e-ch07-sec1-004">7.2 Comparing Two Means
+</span>
+</h2>
+
+<div data-type="box" data-block_type="SP" id="ips9e-ch07-box-54"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-54"></h3>
+<div data-block_type="SP-TXT-ni" id="ips9e-ch07-p0425"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bluebullet" id="ips9e-ch07-list-038">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch07-p0426"><p><span data-block_type="maker">•</span> Describe a level <em>C</em> confidence interval for the difference between two population means in terms of an estimate and its margin of error.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch07-p0427"><p><span data-block_type="maker">•</span> Construct a level <em>C</em> confidence interval for the difference between two population means <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub> from two SRSs of size <em>n</em><sub>1</sub> and <em>n</em><sub>2</sub>, respectively.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch07-p0428"><p><span data-block_type="maker">•</span> Perform a two-sample <em>t</em> significance test and summarize the results.</p></div></li>
+<li><div data-block_type="SP-BL-last" id="ips9e-ch07-p0429"><p><span data-block_type="maker">•</span> Explain when the <em>t</em> procedures can be useful for non-Normal data.</p></div></li>
+</ul>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_433"><p>433</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0431"><p>A psychologist wants to compare male and female college students’ impressions of personality based on selected Facebook pages. A nutritionist is interested in the effect of increased calcium on blood pressure. A bank wants to know which of two incentive plans will most increase the use of its debit cards. Two-sample problems such as these are among the most common situations encountered in statistical practice.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-55"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-55"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p0432"><p>TWO-SAMPLE PROBLEMS</p></div>
+<ul data-block_type="bullet" id="ips9e-ch07-list-039">
+<li><div data-block_type="Bx1-BL-first" id="ips9e-ch07-p0433"><p><span data-block_type="maker">•</span> The goal of inference is to compare the means of the response variable in two groups.</p></div></li>
+<li><div data-block_type="Bx1-BL" id="ips9e-ch07-p0434"><p><span data-block_type="maker">•</span> Each group is considered to be a sample from a distinct population.</p></div></li>
+<li><div data-block_type="Bx1-BL-last" id="ips9e-ch07-p0435"><p><span data-block_type="maker">•</span> The responses in each group are independent of those in the other group.</p></div></li>
+</ul>
+</div></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-56"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-56"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0437"><p>randomized comparative experiment, <span data-type="link" data-href="alias:page_177">p. 177</span></p></div>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0438"><p>side-by-side boxplots, <span data-type="link" data-href="alias:page_37">p. 37</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0439"><p>A two-sample problem can arise from a randomized comparative experiment that randomly divides the subjects into two groups and exposes each group to a different treatment. A two-sample problem can also arise when comparing random samples separately selected from two populations. Unlike the matched pairs designs studied earlier, there is no matching of the units in the two samples, and the two samples may be of different sizes. As a result, inference procedures for two-sample data differ from those for matched pairs.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0440"><p>We can present two-sample data graphically by a back-to-back stemplot (for small samples) or by side-by-side boxplots (for larger samples). Now we will apply the ideas of formal inference in this setting. When both population distributions are symmetric, and especially when they are at least approximately Normal, a comparison of the mean responses in the two populations is most often the goal of inference.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0441"><p>We have two independent samples, from two distinct populations (such as subjects given the latest Apple iPhone and those given the latest Samsung Galaxy smartphone). The same response variable—say, battery life—is measured for both samples. We will call the variable <em>x</em><sub>1</sub> in the first population and <em>x</em><sub>2</sub> in the second because the variable may have different distributions in the two populations. Here is the notation that we will use to describe the two populations:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-18" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="80"><table><tbody>
+<tr class="tborder">
+<th data-block_type="TBN-COLHD" align="center">Population</th>
+<th data-block_type="TBN-COLHD" align="center">Variable</th>
+<th data-block_type="TBN-COLHD" align="center">Mean</th>
+<th data-block_type="TBN-COLHD" align="center">Standard deviation</th>
+</tr>
+<tr class="tborder">
+<td data-block_type="TBN-TXT" align="center">1</td>
+<td data-block_type="TBN-TXT" align="center">
+<em>x</em><sub>1</sub>
+</td>
+<td data-block_type="TBN-TXT" align="center">
+<em>μ</em><sub>1</sub>
+</td>
+<td data-block_type="TBN-TXT" align="center">
+<em>σ</em><sub>1</sub>
+</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="TBN-TXT" align="center">2</td>
+<td data-block_type="TBN-TXT" align="center">
+<em>x</em><sub>2</sub>
+</td>
+<td data-block_type="TBN-TXT" align="center">
+<em>μ</em><sub>2</sub>
+</td>
+<td data-block_type="TBN-TXT" align="center">
+<em>σ</em><sub>2</sub>
+</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0442"><p>We want to compare the two population means, either by giving a confidence interval for <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub> or by testing the hypothesis of no difference, <em>H</em><sub>0</sub>: <em>μ</em><sub>1</sub> = <em>μ</em><sub>2</sub>.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0443"><p>Inference is based on two independent SRSs, one from each population. Here is the notation that describes the samples:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-19" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="90"><table><tbody>
+<tr class="tborder">
+<th data-block_type="TBN-COLHD" align="center">Population</th>
+<th data-block_type="TBN-COLHD" align="center">Sample size</th>
+<th data-block_type="TBN-COLHD" align="center">Sample<br>mean</th>
+<th data-block_type="TBN-COLHD" align="center">Sample<br>standard deviation</th>
+</tr>
+<tr class="tborder">
+<td data-block_type="TBN-TXT" align="center">1</td>
+<td data-block_type="TBN-TXT" align="center">
+<em>n</em><sub>1</sub>
+</td>
+<td data-block_type="TBN-TXT" align="center"><span data-math="math_152"></span></td>
+<td data-block_type="TBN-TXT" align="center">
+<em>s</em><sub>1</sub>
+</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="TBN-TXT" align="center">2</td>
+<td data-block_type="TBN-TXT" align="center">
+<em>n</em><sub>2</sub>
+</td>
+<td data-block_type="TBN-TXT" align="center"><span data-math="math_153"></span></td>
+<td data-block_type="TBN-TXT" align="center">
+<em>s</em><sub>2</sub>
+</td>
+</tr>
+</tbody></table></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_434"><p>434</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0445"><p>Throughout this section, the subscripts 1 and 2 show the population to which a parameter or a sample statistic refers.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p0446"><p><span data-block_type="h2">The two-sample <em>z</em> statistic</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0447"><p>The natural estimator of the difference <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub> is the difference between the sample means, <span data-math="math_154"></span>. If we are to base inference on this statistic, we must know its sampling distribution. Here are some facts from our study of probability:</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-57"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-57"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0449"><p>addition rule for means, <span data-type="link" data-href="alias:page_254">p. 254</span></p></div>
+</div></div>
+<ul data-block_type="bullet" id="ips9e-ch07-list-040">
+<li><div data-block_type="BL-first" id="ips9e-ch07-p0450"><p><span data-block_type="maker">•</span> The mean of the difference <span data-math="math_155"></span> is the difference between the means <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub>. This follows from the addition rule for means and the fact that the mean of any <span data-math="math_156"></span> is the same as the mean <em>μ</em> of the population.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch07-p0451"><p><span data-block_type="maker">•</span> The variance of the difference <span data-math="math_157"></span> is the sum of their variances, which is</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p0452"><p><span data-math="math_158"></span></p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-58"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-58"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0454"><p>addition rule for variances, <span data-type="link" data-href="alias:page_258">p. 258</span></p></div>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0455"><p>linear combination of Normal random variables <span data-type="link" data-href="alias:page_304">p. 304</span></p></div>
+</div></div>
+<div data-block_type="BL" id="ips9e-ch07-p0456"><p>This follows from the addition rule for variances. Because the samples are independent, their sample means <span data-math="math_159"></span> and <span data-math="math_160"></span> are independent random variables.</p></div>
+</li>
+<li><div data-block_type="BL-last" id="ips9e-ch07-p0457"><p><span data-block_type="maker">•</span> If the two population distributions are both Normal, then the distribution of <span data-math="math_161"></span> is also Normal. This is true because each sample mean alone is Normally distributed and because a difference between independent Normal random variables is also Normal.</p></div></li>
+</ul>
+<div data-block_type="TXT" id="ips9e-ch07-p0458"><p>We now know the sampling distribution of <span data-math="math_162"></span> when both populations are Normally distributed. The mean and variance of this distribution can be expressed in terms of the parameters of the two populations.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_10.html" id="ips9e-ch07-box-59"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-59"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0459"><p>EXAMPLE 7.10</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0460"><p><span data-block_type="EXP-T-ri">Heights of 10-year-old girls and boys.</span> A fourth-grade class has 12 girls and 8 boys. The children’s heights are recorded on their 10th birthdays. What is the chance that the girls are taller than the boys? Of course, it is very unlikely that all the girls are taller than all the boys. We translate the question into the following: what is the probability that the mean height of the girls is greater than the mean height of the boys?</p></div>
+<div data-type="figure" data-filename="17MOOREIPS-MSE_9e_P_07_01.html" data-figure-id="ips9e-ch07-unfig-012" data-block_type="UN-FIGURE" data-layout-align="left" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_P_07_01.jpg" data-figure-id="ips9e-ch07-unfig-012" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">Robert Warren/Getty Images</span></div>
+</div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0461"><p>Based on information from the National Health and Nutrition Examination Survey, we assume that the heights (in inches) of 10-year-old girls are <em>N</em>(56.9, 2.8) and the heights of 10-year-old boys are <em>N</em>(56.0, 3.5).<span data-type="termref" data-term="fn_ch7_fn22"><sup>22</sup></span> The heights of the students in our class are assumed to be random samples from these populations. The two distributions are shown in <span data-type="link" data-href="figure_7_11.html">Figure 7.11</span>(a).</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0462"><p>The difference <span data-math="math_163"></span> between the female and male mean heights varies in different random samples. The sampling distribution has mean</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0463"><p><em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub> = 56.9 − 56.0 = 0.9 inches</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0464"><p>and variance</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0465"><p><span data-math="math_164"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0466"><p> = 2.18</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_435"><p>435</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_7_11.html" data-figure-id="ips9e-ch07-fig-013" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_11.jpg" data-figure-id="ips9e-ch07-fig-013" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.11: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.11</span> <span data-block_type="FG-CAP">Distributions, <span data-type="link" data-href="example_7_10.html">Example 7.10</span>. (a) Distributions of heights of 10-year-old boys and girls. (b) Distribution of the difference between mean heights of 12 girls and 8 boys.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0468"><p>The standard deviation of the difference in sample means is, therefore, <span data-math="math_165"></span> inches.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0469"><p>If the heights vary Normally, the difference in sample means is also Normally distributed. The distribution of the difference in heights is shown in <span data-type="link" data-href="figure_7_11.html">Figure 7.11</span>(b). We standardize <span data-math="math_166"></span> by subtracting its mean (0.9) and dividing by its standard deviation (1.48). Therefore, the probability that the girls, on average, are taller than the boys is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0470"><p><span data-math="math_167"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0471"><p> = <em>P</em>(<em>Z</em> &gt; −0.61) = 0.7257</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0472"><p>Even though the population mean height of 10-year-old girls is greater than the population mean height of 10-year-old boys, the probability that the sample mean of the girls is greater than the sample mean of the boys in our class is only 73%. <em>Large samples are needed to see the effects of small differences.</em></p></div>
+<div data-block_type="Caution icon" id="ips9e-ch07-p0473"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0474"><p>As <span data-type="link" data-href="example_7_10.html">Example 7.10</span> reminds us, any Normal random variable has the <em>N</em>(0, 1) distribution when standardized. We have arrived at a new <em>z</em> statistic.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-60"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-60"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p0475"><p>TWO-SAMPLE <em>z</em> STATISTIC</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0476"><p>Suppose that <span data-math="math_168"></span> is the mean of an SRS of size <em>n</em><sub>1</sub> drawn from an <em>N</em>(<em>μ</em><sub>1</sub>, <em>σ</em><sub>1</sub>) population and that <span data-math="math_169"></span> is the mean of an independent SRS of size <em>n</em><sub>2</sub> drawn from an <em>N</em>(<em>μ</em><sub>2</sub>, <em>σ</em><sub>2</sub>) population. Then the <strong>two-sample <em>z</em> statistic</strong></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p0477"><p><span data-math="math_170"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0478"><p>has the standard Normal <em>N</em>(0, 1) sampling distribution.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_436"><p>436</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0480"><p>In the unlikely event that both population standard deviations are known, the two-sample <em>z</em> statistic is the basis for inference about <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub>. Exact <em>z</em> procedures are seldom used, however, because <em>σ</em><sub>1</sub> and <em>σ</em><sub>2</sub> are rarely known. In <span data-type="link" data-href="ips9e-ch06.xml">Chapter 6</span>, we discussed the one-sample <em>z</em> procedures in order to introduce the ideas of inference. Here we move directly to the more useful <em>t</em> procedures.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p0481"><p><span data-block_type="h2">The two-sample <em>t</em> procedures</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0482"><p>Suppose now that the population standard deviations <em>σ</em><sub>1</sub> and <em>σ</em><sub>2</sub> are not known. We estimate them by the sample standard deviations <em>s</em><sub>1</sub> and <em>s</em><sub>2</sub> from our two samples. Following the pattern of the one-sample case, we substitute the standard errors for the standard deviations used in the two-sample <em>z</em> statistic. The result is the <em>two-sample t statistic:</em></p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p0483"><p><span data-math="math_171"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0484"><p>Unfortunately, this statistic does <em>not</em> have a <em>t</em> distribution. A <em>t</em> distribution replaces the <em>N</em>(0, 1) distribution only when a single standard deviation (<em>σ</em>) in a <em>z</em> statistic is replaced by its sample standard deviation (<em>s</em>). In this case, we replace two standard deviations (<em>σ</em><sub>1</sub> and <em>σ</em><sub>2</sub>) by their estimates (<em>s</em><sub>1</sub> and <em>s</em><sub>2</sub>), which does not produce a statistic having a <em>t</em> distribution.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0485"><p>Nonetheless, we can approximate the distribution of the two-sample <em>t</em> statistic by using the <em>t</em>(<em>k</em>) distribution with an <span data-type="termref" data-term="approximation for the degrees of freedom"><strong>approximation for the degrees of freedom <em>k</em></strong></span><span data-block_type="MN-GL-term">df approximation</span>. We use these approximations to find approximate values of <em>t</em>* for confidence intervals and to find approximate <em>P</em>-values for significance tests. Here are two approximations:</p></div>
+<ol data-block_type="numbered" id="ips9e-ch07-list-041">
+<li><div data-block_type="NL-first" id="ips9e-ch07-p0487"><p><span data-block_type="maker">1.</span> Use an approximation known as the <span data-type="termref" data-term="Satterthwaite approximation"><strong>Satterthwaite approximation</strong></span><span data-block_type="MN-GL-term">Satterthwaite approximation</span> for the value of <em>k</em>. It is calculated from the data and, in general, will not be a whole number.</p></div></li>
+<li><div data-block_type="NL-last" id="ips9e-ch07-p0489"><p><span data-block_type="maker">2.</span> Use <em>k</em> equal to the smaller of <em>n</em><sub>1</sub> − 1 and <em>n</em><sub>2</sub> − 1.</p></div></li>
+</ol>
+<div data-block_type="TXT" id="ips9e-ch07-p0490"><p>In practice, the choice of approximation rarely makes a difference in our conclusion. Most statistical software uses the first option to approximate the <em>t</em>(<em>k</em>) distribution for two-sample problems unless the user requests another method. Use of this approximation without software is a bit complicated; we give the details later in this section (see <span data-type="link" data-href="alias:page_447">447</span>).</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0491"><p>If you are not using software, the second approximation is preferred. This approximation is appealing because it is conservative.<span data-type="termref" data-term="fn_ch7_fn23"><sup>23</sup></span> Margins of error for the level <em>C</em> confidence intervals are a bit larger than they need to be, so the true confidence level is larger than <em>C.</em> For significance testing, the <em>P</em>-values are a bit larger; thus, for tests at a fixed significance level, we are a little less likely to reject <em>H</em><sub>0</sub> when it is true.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p0492"><p><span data-block_type="h2">The two-sample <em>t</em> confidence interval</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0493"><p>We now apply the basic ideas about <em>t</em> procedures to the problem of comparing two means when the standard deviations are unknown. We start with confidence intervals.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_437"><p>437</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-61"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-61"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p0495"><p>THE TWO-SAMPLE <em>t</em> CONFIDENCE INTERVAL</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0496"><p>Suppose that an SRS of size <em>n</em><sub>1</sub> is drawn from a Normal population with unknown mean <em>μ</em><sub>1</sub> and that an independent SRS of size <em>n</em><sub>2</sub> is drawn from another Normal population with unknown mean <em>μ</em><sub>2</sub>. The <strong>confidence interval for <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub></strong> given by</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p0497"><p><span data-math="math_172"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0498"><p>has confidence level at least <em>C</em> no matter what the population standard deviations may be. The quantity</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p0499"><p><span data-math="math_173"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0500"><p>is the <strong>margin of error</strong>. Here, <em>t</em>* is the value for the <em>t</em>(<em>k</em>) density curve with area <em>C</em> between −<em>t</em>* and <em>t</em>*. The value of the degrees of freedom <em>k</em> is approximated by software, or we use the smaller of <em>n</em><sub>1</sub> − 1 and <em>n</em><sub>2</sub> − 1. Similarly, we can use either software or the conservative approach with <span data-type="link" data-href="table_d.html">Table D</span> to approximate the value of <em>t</em>*.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_11.html" id="ips9e-ch07-box-62"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-62"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0501"><p>EXAMPLE 7.11</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0502"><p><span data-block_type="EXP-T-ri">Directed reading activities assessment.</span> An educator believes that new directed reading activities in the classroom will help elementary school pupils improve some aspects of their reading ability. She arranges for a third-grade class of 21 students to take part in these activities for an eight-week period. A control classroom of 23 third-graders follows the same curriculum without the activities. At the end of the eight weeks, all students are given a Degree of Reading Power (DRP) test, which measures the aspects of reading ability that the treatment is designed to improve. The data appear in <span data-type="link" data-href="table_7_3.html">Table 7.3</span>.<span data-type="termref" data-term="fn_ch7_fn24"><sup>24</sup></span></p></div>
+<div data-type="figure" data-filename="17MOOREIPS-MSE_9e_P_07_02.html" data-figure-id="ips9e-ch07-unfig-014" data-block_type="UN-FIGURE" data-layout-align="left" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_P_07_02.jpg" data-figure-id="ips9e-ch07-unfig-014" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">RICHARD HUTCHINGS/Science Source/Getty Images</span></div>
+</div>
+</div></div>
+
+
+
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-63"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-63"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="DRP" data-block_type="rl_dataset" id="ips9e-ch07-p0504"><p><span>DRP</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm5662432"><p></p></div>
+</div></div>
+<div data-type="table" data-filename="table_7_3.html" data-block_type="TABLE" id="ips9e-ch07-tab-3" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="100">
+<div data-type="table_text">
+<span data-type="number">Table : </span><span data-type="table_caption"><span data-block_type="TBN-N">TABLE 7.3</span> <span data-block_type="TBN-T">DRP Scores for Third-Graders</span></span>
+</div>
+<table><tbody>
+<tr class="bborder">
+<th data-block_type="TBN-COLHD" align="center" colspan="4" class="rborder">Treatment group</th>
+<th data-block_type="TBN-COLHD" align="center" colspan="4">Control group</th>
+</tr>
+<tr class="tborder">
+<td data-block_type="TBN-TXT" align="center">24</td>
+<td data-block_type="TBN-TXT" align="center">61</td>
+<td data-block_type="TBN-TXT" align="center">59</td>
+<td data-block_type="TBN-TXT" align="center" class="rborder">46</td>
+<td data-block_type="TBN-TXT" align="center">42</td>
+<td data-block_type="TBN-TXT" align="center">33</td>
+<td data-block_type="TBN-TXT" align="center">46</td>
+<td data-block_type="TBN-TXT" align="center">37</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">43</td>
+<td data-block_type="TBN-TXT" align="center">44</td>
+<td data-block_type="TBN-TXT" align="center">52</td>
+<td data-block_type="TBN-TXT" align="center" class="rborder">43</td>
+<td data-block_type="TBN-TXT" align="center">43</td>
+<td data-block_type="TBN-TXT" align="center">41</td>
+<td data-block_type="TBN-TXT" align="center">10</td>
+<td data-block_type="TBN-TXT" align="center">42</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">58</td>
+<td data-block_type="TBN-TXT" align="center">67</td>
+<td data-block_type="TBN-TXT" align="center">62</td>
+<td data-block_type="TBN-TXT" align="center" class="rborder">57</td>
+<td data-block_type="TBN-TXT" align="center">55</td>
+<td data-block_type="TBN-TXT" align="center">19</td>
+<td data-block_type="TBN-TXT" align="center">17</td>
+<td data-block_type="TBN-TXT" align="center">55</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">71</td>
+<td data-block_type="TBN-TXT" align="center">49</td>
+<td data-block_type="TBN-TXT" align="center">54</td>
+<td data-block_type="TBN-TXT" align="center" class="rborder"></td>
+<td data-block_type="TBN-TXT" align="center">26</td>
+<td data-block_type="TBN-TXT" align="center">54</td>
+<td data-block_type="TBN-TXT" align="center">60</td>
+<td data-block_type="TBN-TXT" align="center">28</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">43</td>
+<td data-block_type="TBN-TXT" align="center">53</td>
+<td data-block_type="TBN-TXT" align="center">57</td>
+<td data-block_type="TBN-TXT" align="center" class="rborder"></td>
+<td data-block_type="TBN-TXT" align="center">62</td>
+<td data-block_type="TBN-TXT" align="center">20</td>
+<td data-block_type="TBN-TXT" align="center">53</td>
+<td data-block_type="TBN-TXT" align="center">48</td>
+</tr>
+<tr>
+<td data-block_type="TBN-TXT" align="center">49</td>
+<td data-block_type="TBN-TXT" align="center">56</td>
+<td data-block_type="TBN-TXT" align="center">33</td>
+<td data-block_type="TBN-TXT" align="center" class="rborder"></td>
+<td data-block_type="TBN-TXT" align="center">37</td>
+<td data-block_type="TBN-TXT" align="center">85</td>
+<td data-block_type="TBN-TXT" align="center">42</td>
+<td data-block_type="TBN-TXT" align="center"></td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+
+<div data-block_type="TXT" id="ips9e-ch07-p0503"><p>The design of the study in <span data-type="link" data-href="example_7_11.html">Example 7.11</span> is not ideal. Random assignment of students was not possible in a school environment, so existing third-grade classes were used. The effect of the reading programs is, therefore, confounded with any other differences between the two classes. The classes were chosen to be as similar as possible—for example, in terms of the social and economic status of the students. Extensive pretesting showed that the two classes were, on the average, quite similar in reading ability at the beginning of the experiment. To avoid the effect of two different teachers, the researcher herself taught reading in both classes during the eight-week period of the experiment. Therefore, we can be somewhat confident that the two-sample test is detecting the effect of the treatment and not some other difference between the classes. This example is typical of many situations in which an experiment is carried out but randomization is not possible.</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch07-box-64"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-64"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch07-p0506"><p>confounding, <span data-type="link" data-href="alias:page_150">p. 150</span></p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_438"><p>438</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_12.html" id="ips9e-ch07-box-65"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-65"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0508"><p>EXAMPLE 7.12</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0509"><p><span data-block_type="EXP-T-ri">Computing an approximate 95% confidence interval for the difference in means.</span> First examine the data:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-20" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="50"><table><tbody>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>Control</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>Treatment</strong></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>970</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>1</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>860</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>2</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>4</strong></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>773</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>3</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>3</strong></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>8632221</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>4</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>3334699</strong></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>5543</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>5</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>23467789</strong></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>20</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>6</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>127</strong></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>7</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>1</strong></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>5</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>8</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+</tr>
+</tbody></table></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-66"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-66"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="DRP" data-block_type="rl_dataset" id="ips9e-ch07-p0510"><p><span>DRP</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm5554736"><p></p></div>
+</div></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_7_12.html" data-figure-id="ips9e-ch07-fig-015" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_12.jpg" data-figure-id="ips9e-ch07-fig-015" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.12: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.12</span> <span data-block_type="FG-CAP">Normal quantile plots of the DRP scores in <span data-type="link" data-href="table_7_3.html">Table 7.3</span>.</span></span>
+</div>
+</div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0511"><p>The back-to-back stemplot suggests that there is a mild outlier in the control group but no deviation from Normality serious enough to forbid use of <em>t</em> procedures. Separate Normal quantile plots for both groups (<span data-type="link" data-href="figure_7_12.html">Figure 7.12</span>) confirm that both distributions are approximately Normal. The scores of the treatment group appear to be somewhat higher than those of the control group. The summary statistics are</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_439"><p>439</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-21" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="50"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="center">Group</th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>n</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><span data-math="math_174"></span></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><em>s</em></th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">Treatment</td>
+<td data-block_type="EXP-TB1-TXT" align="center">21</td>
+<td data-block_type="EXP-TB1-TXT" align="char">51.48</td>
+<td data-block_type="EXP-TB1-TXT" align="char">11.01</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center">Control</td>
+<td data-block_type="EXP-TB1-TXT" align="center">23</td>
+<td data-block_type="EXP-TB1-TXT" align="char">41.52</td>
+<td data-block_type="EXP-TB1-TXT" align="char">17.15</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0513"><p>To describe the size of the treatment effect, let’s construct a confidence interval for the difference between the treatment group and the control group means. The interval is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0514"><p><span data-math="math_175"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0515"><p> = 9.96 ± 4.31<em>t</em>*</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-22" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="50"><table><tbody>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-COLHD" align="center" colspan="4">df = 20</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder">
+<em>t</em>*</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">1.725</td>
+<td data-block_type="EXP-TB1-TXT" align="char">2.086</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">2.197</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder"><em>C</em></td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">0.90</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.95</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">0.96</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0516"><p>The second degrees of freedom approximation uses the <em>t</em>(20) distribution.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0517"><p><span data-type="link" data-href="table_d.html">Table D</span> gives <em>t</em>* = 2.086. With this approximation, we have</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0518"><p>9.96 ± (4.31 × 2.086) = 9.96 ± 8.99 = (1.0, 18.9)</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0519"><p>We estimate the mean improvement to be about 10 points, with a margin of error of almost 9 points. Unfortunately, the data do not allow a very precise estimate of the size of the average improvement.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-67"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-67"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p0520"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_48.html" id="ips9e-ch07-quest-0048">
+<h3>Question
+			    <span data-type="number">7.48 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p0521"><p><span data-block_type="EXR-QUE-N-ri">7.48</span> <span data-block_type="EXR-QUE-T-ri">Two-sample <em>t</em> confidence interval.</span> Suppose a study similar to <span data-type="link" data-href="example_7_11.html">Example 7.11</span> was performed using two second-grade classes. Assume the summary statistics are <span data-math="math_176"></span>, <span data-math="math_177"></span>, <em>s</em><sub>1</sub> = 11.53, <em>s</em><sub>2</sub> = 15.33, <em>n</em><sub>1</sub> = 26, and <em>n</em><sub>2</sub> = 24. Find a 95% confidence interval for the difference between the treatment (Group 1) and the control (Group 2) means using the second approximation for degrees of freedom. Also write a one-sentence summary of what this confidence interval says about the difference in means.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_7_49.html" id="ips9e-ch07-quest-0049">
+<h3>Question
+			    <span data-type="number">7.49 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0522"><p><span data-block_type="EXR-QUE-N-ri">7.49</span> <span data-block_type="EXR-QUE-T-ri">Smaller sample sizes.</span> Refer to the previous exercise. Suppose instead that the two classes are smaller, so the summary statistics are <span data-math="math_178"></span>, <span data-math="math_179"></span>, <em>s</em><sub>1</sub> = 11.53, <em>s</em><sub>2</sub> = 15.33, <em>n</em><sub>1</sub> = 16, and <em>n</em><sub>2</sub> = 14. Find a 95% confidence interval for the difference using the second approximation for degrees of freedom. Compare this interval with the one in the previous exercise and discuss the impact smaller sample sizes have on a confidence interval.</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p0523"><p><span data-block_type="h2">The two-sample <em>t</em> significance test</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0524"><p>The same ideas that we used for the two-sample <em>t</em> confidence interval also apply to <em>two-sample t significance tests.</em> We can use either software or the conservative approach with <span data-type="link" data-href="table_d.html">Table D</span> to approximate the <em>P</em>-value.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_440"><p>440</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-68"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-68"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p0526"><p>THE TWO-SAMPLE <em>t</em> SIGNIFICANCE TEST</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0527"><p>Suppose that an SRS of size <em>n</em><sub>1</sub> is drawn from a Normal population with unknown mean <em>μ</em><sub>1</sub> and that an independent SRS of size <em>n</em><sub>2</sub> is drawn from another Normal population with unknown mean <em>μ</em><sub>2</sub>. To test the hypothesis <em>H</em><sub>0</sub>: <em>μ</em><sub>1</sub> −<em>μ</em><sub>2</sub> = <em>Δ</em><sub>0</sub>, compute the <strong>two-sample <em>t</em> statistic</strong></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p0528"><p><span data-math="math_180"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0529"><p>and use <em>P</em>-values or critical values for the <em>t</em>(<em>k</em>) distribution, where the degrees of freedom <em>k</em> either are approximated by software or are the smaller of <em>n</em><sub>1</sub> − 1 and <em>n</em><sub>2</sub> − 1.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_13.html" id="ips9e-ch07-box-69"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-69"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0530"><p>EXAMPLE 7.13</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0531"><p><span data-block_type="EXP-T-ri">Is there an improvement?</span> For the DRP study described in <span data-type="link" data-href="example_7_11.html">Example 7.11</span> (page 437), we hope to show that the treatment (Group 1) performs better than the control (Group 2). For a formal significance test, the hypotheses are</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0532"><p><em>H</em><sub>0</sub>: <em>μ</em><sub>1</sub> = <em>μ</em><sub>2</sub></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0533"><p><em>H<sub>a</sub></em>: <em>μ</em><sub>1</sub> &gt;<em>μ</em><sub>2</sub></p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-70"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-70"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="DRP" data-block_type="rl_dataset" id="ips9e-ch07-p0534"><p><span>DRP</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm5449456"><p></p></div>
+</div></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0535"><p>The two-sample <em>t</em> test statistic is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0536"><p><span data-math="math_181"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0537"><p><span data-math="math_182"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0538"><p> = 2.31</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0539"><p>The <em>P</em>-value for the one-sided test is <em>P</em>(<em>T</em> ≥ 2.31). For the second approximation, the degrees of freedom <em>k</em> are equal to the smaller of</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0540"><p><em>n</em><sub>1</sub> − 1 = 21 − 1 = 20  and  <em>n</em><sub>2</sub> − 1 = 23 − 1 = 22</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-23" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="40"><table><tbody>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" colspan="3">df = 20</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder"><em>p</em></td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">0.02</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">0.01</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder">
+<em>t</em>*</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">2.197</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">2.528</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0541"><p>Comparing 2.31 with the entries in <span data-type="link" data-href="table_d.html">Table D</span> for 20 degrees of freedom, we see that <em>P</em> lies between 0.01 and 0.02.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0542"><p>The data strongly suggest that directed reading activity improves the DRP score (<em>t</em> = 2.31, df = 20, 0.01 &lt; <em>P</em> &lt; 0.02).</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-71"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-71"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p0543"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_50.html" id="ips9e-ch07-quest-0050">
+<h3>Question
+			    <span data-type="number">7.50 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p0544"><p><span data-block_type="EXR-QUE-N-ri">7.50</span> <span data-block_type="EXR-QUE-T-ri">A two-sample <em>t</em> significance test.</span> Refer to <span data-type="link" data-href="exercise_7_48.html">Exercise 7.48</span> (page 439). Perform a significance test at the 0.05 level to assess whether the average improvement is five points versus the alternative that it is greater than five points. Write a one-sentence conclusion.</p></div>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_441"><p>441</p></div>
+<div data-type="question" data-block_type="exercise_7_51.html" id="ips9e-ch07-quest-0051">
+<h3>Question
+			    <span data-type="number">7.51 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0546"><p><span data-block_type="EXR-QUE-N-ri">7.51</span> <span data-block_type="EXR-QUE-T-ri">Interpreting the confidence interval.</span> Refer to the previous exercise and <span data-type="link" data-href="exercise_7_48.html">Exercise 7.48</span>. Can the confidence interval in <span data-type="link" data-href="exercise_7_48.html">Exercise 7.48</span> be used to determine whether the significance test of the previous exercise rejects or does not reject the null hypothesis? Explain your answer.</p></div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0547"><p>Most statistical software requires the raw data for analysis. A few, like Minitab, will also perform a <em>t</em> test on data in summarized form (such as the summary statistics table in <span data-type="link" data-href="example_7_12.html">Example 7.12</span>, pages 438–439). It is always preferable to work with the raw data because one can also examine the data through plots such as the back-to-back stemplot and those in <span data-type="link" data-href="figure_7_12.html">Figure 7.12</span>.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_14.html" id="ips9e-ch07-box-72"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-72"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0548"><p>EXAMPLE 7.14</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0549"><p><span data-block_type="EXP-T-ri">Using software.</span> <span data-type="link" data-href="figure_7_13.html">Figure 7.13</span> shows JMP and Minitab <strong>output</strong> for the comparison of DRP scores. Both outputs include the 95% confidence interval and the significance test that the means are equal. JMP reports the difference as the mean of treatment minus the mean of control, while Minitab reports the difference in the opposite order.</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-73"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-73"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="DRP" data-block_type="rl_dataset" id="ips9e-ch07-p0550"><p><span>DRP</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm5398016"><p></p></div>
+</div></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_7_13.html" data-figure-id="ips9e-ch07-fig-016" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_13.jpg" data-figure-id="ips9e-ch07-fig-016" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.13: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.13</span> <span data-block_type="FG-CAP">JMP and Minitab output, <span data-type="link" data-href="example_7_14.html">Example 7.14</span>.</span></span>
+</div>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_442"><p>442</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0552"><p>Recall the confidence interval (treatment minus control) is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0553"><p><span data-math="math_183"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0554"><p> = 9.96 ± 4.31<em>t</em>*</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0555"><p>From the JMP output, we see that the degrees of freedom under the first approximation are 37.9. Using these degrees of freedom, the interval is (1.2, 18.7). This interval, as expected, is more narrow than the confidence interval in <span data-type="link" data-href="example_7_12.html">Example 7.12</span> (pages 438–439), which uses the conservative approach. The difference, however, is pretty small.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0556"><p>For the significance test, the <em>P</em>-value for the one-sided significance test is <em>P</em>(<em>T</em> ≥ 2.31). JMP gives the approximate <em>P</em>-value as 0.0132, again using 37.9 as the degrees of freedom.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0557"><p>Minitab also uses the first degrees of freedom approximation but rounds the degrees of freedom down to the nearest integer (<span data-math="math_184"></span>). As a result, the margin of error is slightly wider than that of JMP and the <em>P</em>-value of the significance test is slightly larger.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0558"><p>In order to get a confidence interval as part of the Minitab output, the two-sided alternative was considered. If your software gives you the <em>P</em>-value for only the two-sided alternative, 2<em>P</em>(<em>T</em> ≥ |<em>t</em>|), you need to divide the reported value by 2 after checking that the means differ in the direction specified by the alternative hypothesis.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p0559"><p><span data-block_type="h2">Robustness of the two-sample procedures</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0560"><p>The two-sample <em>t</em> procedures are more robust than the one-sample <em>t</em> methods. When the sizes of the two samples are equal and the distributions of the two populations being compared have similar shapes, probability values from the <em>t</em> table are quite accurate for a broad range of distributions when the sample sizes are as small as <em>n</em><sub>1</sub> = <em>n</em><sub>2</sub> = 5.<span data-type="termref" data-term="fn_ch7_fn25"><sup>25</sup></span> When the two population distributions have different shapes, larger samples are needed.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0561"><p>The guidelines for the use of one-sample <em>t</em> procedures can be adapted to two-sample procedures by replacing “sample size” with the “sum of the sample sizes” <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub>. Specifically,</p></div>
+<ul data-block_type="bullet" id="ips9e-ch07-list-042">
+<li><div data-block_type="BL-first" id="ips9e-ch07-p0562"><p><span data-block_type="maker">•</span> <em>If n</em><sub>1</sub> + <em>n</em><sub>2</sub> <em>is less than 15:</em> Use <em>t</em> procedures if the data are close to Normal. If the data in either sample are clearly non-Normal or if outliers are present, do not use <em>t</em>.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch07-p0563"><p><span data-block_type="maker">•</span> <em>If n</em><sub>1</sub> + <em>n</em><sub>2</sub> <em>is at least 15 and less than 40:</em> The <em>t</em> procedures can be used except in the presence of outliers or strong skewness.</p></div></li>
+<li><div data-block_type="BL-last" id="ips9e-ch07-p0564"><p><span data-block_type="maker">•</span> <em>Large samples:</em> The <em>t</em> procedures can be used even for clearly skewed distributions when the sample is large, roughly <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> ≥ 40.</p></div></li>
+</ul>
+<div data-block_type="Caution icon" id="ips9e-ch07-p0565"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0566"><p>These guidelines are rather conservative, especially when the two samples are of equal size. <em>In planning a two-sample study, choose equal sample sizes if you can.</em> The two-sample <em>t</em> procedures are most robust against non-Normality in this case, and the conservative probability values are most accurate.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_443"><p>443</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0568"><p>Here is an example with large sample sizes that are almost equal. Even if the distributions are not Normal, we are confident that the sample means will be approximately Normal. The two-sample <em>t</em> test is very robust in this case.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_15.html" id="ips9e-ch07-box-74"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-74"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0569"><p>EXAMPLE 7.15</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0570"><p><span data-block_type="EXP-T-ri">Timing of food intake and weight loss.</span> There is emerging evidence of a relationship between timing of feeding and weight regulation. In one study, researchers followed 402 obese or overweight individuals through a 20-week weight-loss treatment.<span data-type="termref" data-term="fn_ch7_fn26"><sup>26</sup></span> To investigate the timing of food intake, participants were grouped into early eaters and late eaters, based on the timing of their main meal. Here are the summary statistics of their weight loss over the 20 weeks, in kilograms (kg):</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-24" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="50"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="center">Group</th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>n</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><span data-math="math_185"></span></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><em>s</em></th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">Early eater</td>
+<td data-block_type="EXP-TB1-TXT" align="center">202</td>
+<td data-block_type="EXP-TB1-TXT" align="char">9.9</td>
+<td data-block_type="EXP-TB1-TXT" align="char">5.8</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center">Late eater</td>
+<td data-block_type="EXP-TB1-TXT" align="center">200</td>
+<td data-block_type="EXP-TB1-TXT" align="char">7.7</td>
+<td data-block_type="EXP-TB1-TXT" align="char">6.1</td>
+</tr>
+</tbody></table></div>
+<div data-type="figure" data-filename="17MOOREIPS-MSE_9e_P_07_03.html" data-figure-id="ips9e-ch07-unfig-017" data-block_type="UN-FIGURE" data-layout-align="left" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_P_07_03.jpg" data-figure-id="ips9e-ch07-unfig-017" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">Serge Krouglikoff/Getty Images</span></div>
+</div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0571"><p>The early eaters lost more weight on average. Can we conclude that these two groups are not the same? Or is this observed difference merely what we could expect to see given the variation among participants?</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0572"><p>While other evidence suggests that early eaters should lose more weight, the researchers did not specify a direction for the difference. Thus, the hypotheses are</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0573"><p><em>H</em><sub>0</sub>: <em>μ</em><sub>1</sub> = <em>μ</em><sub>2</sub></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0574"><p><em>H<sub>a</sub></em>: <em>μ</em><sub>1</sub> ≠ <em>μ</em><sub>2</sub></p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0575"><p>Because the samples are large, we can confidently use the <em>t</em> procedures even though we lack the detailed data and so cannot verify the Normality condition.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0576"><p>The two-sample <em>t</em> statistic is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0577"><p><span data-math="math_186"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0578"><p><span data-math="math_187"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0579"><p> = 3.71</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-25" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="30"><table><tbody>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" colspan="2">df = 100</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder"><em>p</em></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder rborder">0.0005</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder">
+<em>t</em>*</td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder rborder">3.390</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0580"><p>The conservative approach finds the <em>P</em>-value by comparing 3.71 to critical values for the <em>t</em>(199) distribution because the smaller sample has 200 observations. Because <span data-type="link" data-href="table_d.html">Table D</span> does not contain a row for 199 degrees of freedom, we will be even more conservative and use the first row in the table with degrees of freedom less than 199. This means we’ll use the <em>t</em>(100) distribution to compute the <em>P</em>-value.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0581"><p>Our calculated value of <em>t</em> is larger than the <em>p</em> = 0.0005 entry in the table. We must double the table tail area <em>p</em> because the alternative is two-sided, so we conclude that the <em>P</em>-value is less than 0.001. The data give conclusive evidence that early eaters lost more weight, on average, than late eaters (<em>t</em> = 3.71, df = 100, <em>P</em> &lt; 0.001).</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_444"><p>444</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0583"><p>In this example the exact <em>P</em>-value is very small because <em>t</em> = 3.71 says that the observed difference in means is over 3.5 standard errors above the hypothesized difference of zero (<em>μ</em><sub>1</sub> = <em>μ</em><sub>2</sub>). In this study, the researchers also compared energy intake and energy expenditure between late and early eaters. Despite the observed weight loss difference of 2.2 kg, no significant differences in these variables were found.</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch07-p0584"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0585"><p>In this and other examples, we can choose which population to label 1 and which to label 2. After inspecting the data, we chose early eaters as Population 1 because this choice makes the <em>t</em> statistic a positive number. This avoids any possible confusion from reporting a negative value for <em>t</em>. <em>Choosing the population labels is <strong>not</strong> the same as choosing a one-sided alternative after looking at the data.</em> Choosing hypotheses after seeing a result in the data is a violation of sound statistical practice.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p0586"><p><span data-block_type="h2">Inference for small samples</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0587"><p>Small samples require special care. We do not have enough observations to examine the distribution shapes, and only extreme outliers stand out. The power of significance tests tends to be low, and the margins of error of confidence intervals tend to be large. Despite these difficulties, we can often draw important conclusions from studies with small sample sizes. If the size of an effect is very large, it should still be evident even if the <em>n</em>’s are small.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_16.html" id="ips9e-ch07-box-75"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-75"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0588"><p>EXAMPLE 7.16</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0589"><p><span data-block_type="EXP-T-ri">Timing of food intake.</span> In the setting of <span data-type="link" data-href="example_7_15.html">Example 7.15</span>, let’s consider a much smaller study that collects weight loss data from only five participants in each eating group. Also, given the results of this past example, we choose the one-sided alternative. The data are</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-26" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="60"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="center">Group</th>
+<th data-block_type="EXP-TB1-COLHD" align="center" colspan="5">Weight loss (kg)</th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">Early eater</td>
+<td data-block_type="EXP-TB1-TXT" align="char">6.3</td>
+<td data-block_type="EXP-TB1-TXT" align="char">15.1</td>
+<td data-block_type="EXP-TB1-TXT" align="char">9.4</td>
+<td data-block_type="EXP-TB1-TXT" align="char">16.8</td>
+<td data-block_type="EXP-TB1-TXT" align="char">10.2</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center">Late eater</td>
+<td data-block_type="EXP-TB1-TXT" align="char">7.8</td>
+<td data-block_type="EXP-TB1-TXT" align="char">0.2</td>
+<td data-block_type="EXP-TB1-TXT" align="char">1.5</td>
+<td data-block_type="EXP-TB1-TXT" align="char">11.5</td>
+<td data-block_type="EXP-TB1-TXT" align="char">4.6</td>
+</tr>
+</tbody></table></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-76"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-76"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="EATER" data-block_type="rl_dataset" id="ips9e-ch07-p0590"><p><span>EATER</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm5247312"><p></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0591"><p>First, examine the distributions with a back-to-back stemplot (the data are rounded to the nearest integer).</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-27" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="30"><table><tbody>
+<tr>
+<th data-block_type="EXP-TB1-COLHD" align="center">Early</th>
+<th data-block_type="EXP-TB1-COLHD" align="center"></th>
+<th data-block_type="EXP-TB1-COLHD" align="center">Late</th>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>0</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>02</strong></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>96</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>0</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>58</strong></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>0</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>1</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"><strong>2</strong></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>75</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="rborder"><strong>1</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0592"><p>While there is variation among weight losses within each group, there is also a noticeable separation. The early-eaters group contains four of the five largest losses, and the late-eaters group contains four of the five smallest losses. A significance test can confirm whether this pattern can arise just by chance or if the early-eaters group has a higher mean. We test</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0593"><p><em>H</em><sub>0</sub>: <em>μ</em><sub>1</sub> = <em>μ</em><sub>2</sub></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0594"><p><em>H<sub>a</sub></em>: <em>μ</em><sub>1</sub> &gt;<em>μ</em><sub>2</sub></p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0595"><p>The average weight loss is higher in the early-eater group (<em>t</em> = 2.28, df = 7.96, <em>P</em> = 0.0262). The difference in sample means is 6.44 kg.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_445"><p>445</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0597"><p><span data-type="link" data-href="figure_7_14.html">Figure 7.14</span> gives outputs for this analysis from several software packages. Although the formats differ, the basic information is the same. All report the sample sizes, the sample means and standard deviations (or variances), the <em>t</em> statistic, and its <em>P</em>-value. All agree that the <em>P</em>-value is small, though some give more detail than others. Software often labels the groups in alphabetical order. Always check the means first and report the statistic (you may need to change the sign) in an appropriate way. Be sure to also mention the size of the effect you observed, such as “The mean weight loss for the early eaters was 6.44 kg higher than for the late eaters.”</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_7_14.html" data-figure-id="ips9e-ch07-fig-018" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_14.jpg" data-figure-id="ips9e-ch07-fig-018" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.14: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.14</span> <span data-block_type="FG-CAP">SAS, Excel, JMP, and SPSS output, <span data-type="link" data-href="example_7_16.html">Example 7.16</span>.</span></span>
+</div>
+</div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_446"><p>446</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0599"><p>There are two other things to notice in the outputs. First, SAS and SPSS only give results for the two-sided alternative. To get the <em>P</em>-value for the one-sided alternative, we must first check the mean difference to make sure it is in the proper direction. If it is, we divide the given <em>P</em>-value by 2. Also, SAS and SPSS report the results of <em>two t</em> procedures: a special procedure that assumes that the two population variances are equal and the general two-sample procedure that we have just studied. We don’t recommend the “equal-variances” procedures, but we describe them later, in the section on pooled two-sample <em>t</em> procedures.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_447"><p>447</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p0601"><p><span data-block_type="h2">Software approximation for the degrees of freedom</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0602"><p>We noted earlier that the two-sample <em>t</em> statistic does not have a <em>t</em> distribution. Moreover, the distribution changes as the unknown population standard deviations <span data-math="math_188"></span> and <span data-math="math_189"></span> change. However, the distribution can be approximated by a <em>t</em> distribution with degrees of freedom given by</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p0603"><p><span data-math="math_190"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0604"><p>This is the approximation used by most statistical software. It is quite accurate when both sample sizes <span data-math="math_191"></span> and <span data-math="math_192"></span> are 5 or larger.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_17.html" id="ips9e-ch07-box-77"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-77"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0605"><p>EXAMPLE 7.17</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0606"><p><span data-block_type="EXP-T-ri">Degrees of freedom for directed reading assessment.</span> For the DRP study of <span data-type="link" data-href="example_7_11.html">Example 7.11</span> (page 437), the following table summarizes the data:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-28" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="40"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="center">Group</th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>n</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><span data-math="math_193"></span></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><em>s</em></th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">1</td>
+<td data-block_type="EXP-TB1-TXT" align="center">21</td>
+<td data-block_type="EXP-TB1-TXT" align="char">51.48</td>
+<td data-block_type="EXP-TB1-TXT" align="char">11.01</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center">2</td>
+<td data-block_type="EXP-TB1-TXT" align="center">23</td>
+<td data-block_type="EXP-TB1-TXT" align="char">41.52</td>
+<td data-block_type="EXP-TB1-TXT" align="char">17.15</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0607"><p>For greatest accuracy, we will use critical points from the <em>t</em> distribution with degrees of freedom given by the preceding equation:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0608"><p><span data-math="math_194"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0610"><p>This is the value that we reported in <span data-type="link" data-href="example_7_14.html">Example 7.14</span> (pages 441–442), where we gave the results produced by software.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0611"><p>The number df given by the preceding approximation is always at least as large as the smaller of <em>n</em><sub>1</sub> − 1 and <em>n</em><sub>2</sub> − 1. On the other hand, the number df is never larger than the sum <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> − 2 of the two individual degrees of freedom. The number df is generally not a whole number. There is a <em>t</em> distribution with any positive degrees of freedom, even though <span data-type="link" data-href="table_d.html">Table D</span> contains entries only for whole-number degrees of freedom. When the number df is small and is not a whole number, interpolation between entries in <span data-type="link" data-href="table_d.html">Table D</span> may be needed to obtain an accurate critical value or <em>P</em>-value. Because of this and the need to calculate df, we do not recommend regular use of this approximation if a computer is not doing the arithmetic. With a computer, however, the more accurate procedures are painless.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_448"><p>448</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-78"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-78"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p0613"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_52.html" id="ips9e-ch07-quest-0052">
+<h3>Question
+			    <span data-type="number">7.52 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p0614"><p><span data-block_type="EXR-QUE-N-ri">7.52</span> <span data-block_type="EXR-QUE-T-ri">Calculating the degrees of freedom.</span> Assume that <span data-math="math_195"></span>, <span data-math="math_196"></span>, <span data-math="math_197"></span>, and <span data-math="math_198"></span>. Find the approximate degrees of freedom.</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch07-p0615"><p><span data-block_type="h2">The pooled two-sample <em>t</em> procedures</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0616"><p>There is one situation in which a <em>t</em> statistic for comparing two means has exactly a <em>t</em> distribution. This is when the two Normal population distributions have the <em>same</em> standard deviation. As we’ve done with other <em>t</em> statistics, we will first develop the <em>z</em> statistic and then, from it, the <em>t</em> statistic. In this case, notice that we need to substitute only a single standard error when we go from the <em>z</em> to the <em>t</em> statistic. This is why the resulting <em>t</em> statistic has a <em>t</em> distribution.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0617"><p>Call the common—and still unknown—standard deviation of both populations <em>σ</em>. Both sample variances <span data-math="math_199"></span> and <span data-math="math_200"></span> estimate <span data-math="math_201"></span>. The best way to combine these two estimates is to average them with weights equal to their degrees of freedom. This gives more weight to the sample variance from the larger sample, which is reasonable. The resulting estimator of <span data-math="math_202"></span> is</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p0618"><p><span data-math="math_203"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0619"><p>This is called the <span data-type="termref" data-term="pooled estimator of"><strong>pooled estimator of <em>σ</em><sup>2</sup></strong></span><span data-block_type="MN-GL-term">pooled estimator of <em>σ</em><sup>2</sup></span> because it combines the information in both samples.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0621"><p>When both populations have variance <em>σ</em><sup>2</sup>, the addition rule for variances says that <span data-math="math_204"></span> has variance equal to the <em>sum</em> of the individual variances, which is</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p0622"><p><span data-math="math_205"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0623"><p>The standardized difference between means in this equal-variance case is, therefore,</p></div>
+<div data-block_type="EQ" id="ips9e-ch07-p0624"><p><span data-math="math_206"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch07-p0625"><p>This is a special two-sample <em>z</em> statistic for the case in which the populations have the same <em>σ</em>. Replacing the unknown <em>σ</em> by the estimate <span data-math="math_207"></span> gives a <em>t</em> statistic. The degrees of freedom are <span data-math="math_208"></span>, the sum of the degrees of freedom of the two sample variances. This <em>t</em> statistic is the basis of the pooled two-sample <em>t</em> inference procedures.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_449"><p>449</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch07-box-79"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-79"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch07-p0627"><p>THE POOLED TWO-SAMPLE <em>t</em> PROCEDURES</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0628"><p>Suppose that an SRS of size <span data-math="math_209"></span> is drawn from a Normal population with unknown mean <span data-math="math_210"></span> and that an independent SRS of size <span data-math="math_211"></span> is drawn from another Normal population with unknown mean <em>μ</em><sub>2</sub>. Suppose also that the two populations have the same standard deviation. A level <em>C</em> <strong>confidence interval for <em>μ</em><sub>1</sub> − <em>μ</em><sub>2</sub></strong> is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p0629"><p><span data-math="math_212"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0630"><p>Here, <em>t</em>*is the value for the <span data-math="math_213"></span> density curve with area <em>C</em> between −<em>t</em>* and <em>t</em>*. The quantity</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p0631"><p><span data-math="math_214"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0632"><p>is the <strong>margin of error</strong>.</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch07-p0633"><p>To test the hypothesis <span data-math="math_215"></span>, compute the <strong>pooled two-sample <em>t</em> statistic</strong></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p0634"><p><span data-math="math_216"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch07-p0635"><p>In terms of a random variable <em>T</em> having the <span data-math="math_217"></span> distribution, the <em>P</em>-value for a test of <span data-math="math_218"></span> against</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p0636"><p><em>H<sub>a</sub></em>: <em>μ</em><sub>1</sub> − <em>μ</em><sub>2</sub> &gt; <em>Δ</em><sub>0</sub>  is  <em>P</em>(<em>T</em> ≥ <em>t</em>)  <img id="" src="asset/ch7/17MOOREIPS-MSE_9e_UNfig_07_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p0637"><p><em>H<sub>a</sub></em>: <em>μ</em><sub>1</sub> − <em>μ</em><sub>2</sub> &lt; <em>Δ</em><sub>0</sub>  is  <em>P</em>(<em>T</em> ≤ <em>t</em>)  <img id="" src="asset/ch7/17MOOREIPS-MSE_9e_UNfig_07_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch07-p0638"><p><em>H<sub>a</sub></em>: <em>μ</em><sub>1</sub> − <em>μ</em><sub>2</sub> ≠ <em>Δ</em><sub>0</sub>  is  2<em>P</em>(<em>T</em> ≥ |<em>t|</em>) <img id="" src="asset/ch7/17MOOREIPS-MSE_9e_UNfig_07_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_18.html" id="ips9e-ch07-box-80"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-80"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0639"><p>EXAMPLE 7.18</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0640"><p><span data-block_type="EXP-T-ri">Calcium and blood pressure.</span> Does increasing the amount of calcium in our diet reduce blood pressure? Examination of a large sample of people revealed a relationship between calcium intake and blood pressure, but such observational studies do not establish causation. Animal experiments, however, showed that calcium supplements do reduce blood pressure in rats, justifying an experiment with human subjects. A randomized comparative experiment gave one group of 10 black men a calcium supplement for 12 weeks. The control group of 11 black men received a placebo that appeared identical. (In fact, a block design with black and white men as the blocks was used. We will look only at the results for blacks because the earlier survey suggested that calcium is more effective for blacks.) The experiment was double-blind. <span data-type="link" data-href="table_7_4.html">Table 7.4</span> gives the seated systolic (heart contracted) blood pressure for all subjects at the beginning and end of the 12-week period, in millimeters of mercury (mm Hg). Because the researchers were interested in decreasing blood pressure, <span data-type="link" data-href="table_7_4.html">Table 7.4</span> also shows the decrease for each subject. An increase appears as a negative entry.<span data-type="termref" data-term="fn_ch7_fn27"><sup>27</sup></span></p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_450"><p>450</p></div>
+<div data-type="table" data-filename="table_7_4.html" data-block_type="TABLE" id="ips9e-ch07-tab-4" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="100">
+<div data-type="table_text">
+<span data-type="number">Table : </span><span data-type="table_caption"><span data-block_type="TBN-N">TABLE 7.4</span> <span data-block_type="TBN-T">Seated Systolic Blood Pressure (mm Hg)</span></span>
+</div>
+<table><tbody>
+<tr>
+<th data-block_type="EXP-TB1-COLHD" align="center" colspan="3">Calcium Group</th>
+<th data-block_type="EXP-TB1-COLHD" align="center" colspan="3">Placebo Group</th>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="tborder"><strong>Begin</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="tborder"><strong>End</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="tborder"><strong>Decrease</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="tborder"><strong>Begin</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="tborder"><strong>End</strong></td>
+<td data-block_type="EXP-TB1-TXT" align="center" class="tborder"><strong>Decrease</strong></td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">107</td>
+<td data-block_type="EXP-TB1-TXT" align="center">100</td>
+<td data-block_type="EXP-TB1-TXT" align="center">7</td>
+<td data-block_type="EXP-TB1-TXT" align="center">123</td>
+<td data-block_type="EXP-TB1-TXT" align="center">124</td>
+<td data-block_type="EXP-TB1-TXT" align="center">−1</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">110</td>
+<td data-block_type="EXP-TB1-TXT" align="center">114</td>
+<td data-block_type="EXP-TB1-TXT" align="center">−4</td>
+<td data-block_type="EXP-TB1-TXT" align="center">109</td>
+<td data-block_type="EXP-TB1-TXT" align="center">97</td>
+<td data-block_type="EXP-TB1-TXT" align="center">12</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">123</td>
+<td data-block_type="EXP-TB1-TXT" align="center">105</td>
+<td data-block_type="EXP-TB1-TXT" align="center">18</td>
+<td data-block_type="EXP-TB1-TXT" align="center">112</td>
+<td data-block_type="EXP-TB1-TXT" align="center">113</td>
+<td data-block_type="EXP-TB1-TXT" align="center">−1</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">129</td>
+<td data-block_type="EXP-TB1-TXT" align="center">112</td>
+<td data-block_type="EXP-TB1-TXT" align="center">17</td>
+<td data-block_type="EXP-TB1-TXT" align="center">102</td>
+<td data-block_type="EXP-TB1-TXT" align="center">105</td>
+<td data-block_type="EXP-TB1-TXT" align="center">−3</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">112</td>
+<td data-block_type="EXP-TB1-TXT" align="center">115</td>
+<td data-block_type="EXP-TB1-TXT" align="center">−3</td>
+<td data-block_type="EXP-TB1-TXT" align="center">98</td>
+<td data-block_type="EXP-TB1-TXT" align="center">95</td>
+<td data-block_type="EXP-TB1-TXT" align="center">3</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">111</td>
+<td data-block_type="EXP-TB1-TXT" align="center">116</td>
+<td data-block_type="EXP-TB1-TXT" align="center">−5</td>
+<td data-block_type="EXP-TB1-TXT" align="center">114</td>
+<td data-block_type="EXP-TB1-TXT" align="center">119</td>
+<td data-block_type="EXP-TB1-TXT" align="center">−5</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">107</td>
+<td data-block_type="EXP-TB1-TXT" align="center">106</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1</td>
+<td data-block_type="EXP-TB1-TXT" align="center">119</td>
+<td data-block_type="EXP-TB1-TXT" align="center">114</td>
+<td data-block_type="EXP-TB1-TXT" align="center">5</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">112</td>
+<td data-block_type="EXP-TB1-TXT" align="center">102</td>
+<td data-block_type="EXP-TB1-TXT" align="center">10</td>
+<td data-block_type="EXP-TB1-TXT" align="center">114</td>
+<td data-block_type="EXP-TB1-TXT" align="center">112</td>
+<td data-block_type="EXP-TB1-TXT" align="center">2</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">136</td>
+<td data-block_type="EXP-TB1-TXT" align="center">125</td>
+<td data-block_type="EXP-TB1-TXT" align="center">11</td>
+<td data-block_type="EXP-TB1-TXT" align="center">110</td>
+<td data-block_type="EXP-TB1-TXT" align="center">121</td>
+<td data-block_type="EXP-TB1-TXT" align="center">−11</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center">102</td>
+<td data-block_type="EXP-TB1-TXT" align="center">104</td>
+<td data-block_type="EXP-TB1-TXT" align="center">−2</td>
+<td data-block_type="EXP-TB1-TXT" align="center">117</td>
+<td data-block_type="EXP-TB1-TXT" align="center">118</td>
+<td data-block_type="EXP-TB1-TXT" align="center">−1</td>
+</tr>
+<tr>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center"></td>
+<td data-block_type="EXP-TB1-TXT" align="center">130</td>
+<td data-block_type="EXP-TB1-TXT" align="center">133</td>
+<td data-block_type="EXP-TB1-TXT" align="center">−3</td>
+</tr>
+</tbody></table>
+</div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-81"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-81"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="BP_CA" data-block_type="rl_dataset" id="ips9e-ch07-p0642a"><p><span>BP_CA</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm4990272"><p></p></div>
+</div></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0642"><p>As usual, we first examine the data. To compare the effects of the two treatments, take the response variable to be the amount of the decrease in blood pressure. Inspection of the data reveals that there are no outliers. Side-by-side boxplots and Normal quantile plots (<span data-type="link" data-href="figure_7_15.html">Figure 7.15</span> and <span data-type="link" data-href="figure_7_16.html">7.16</span>) give a more detailed picture. The calcium group has a somewhat short left tail, but there are no severe departures from Normality that will prevent use of <em>t</em> procedures. To examine the question of the researchers who collected these data, we perform a significance test.</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_7_15.html" data-figure-id="ips9e-ch07-fig-019" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_15.jpg" data-figure-id="ips9e-ch07-fig-019" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.15: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.15</span> <span data-block_type="FG-CAP">Side-by-side boxplots of the decrease in blood pressure from <span data-type="link" data-href="table_7_4.html">Table 7.4</span>.</span></span>
+</div>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_451"><p>451</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_7_16.html" data-figure-id="ips9e-ch07-fig-020" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_16.jpg" data-figure-id="ips9e-ch07-fig-020" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 7.16: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 7.16</span> <span data-block_type="FG-CAP">Normal quantile plots of the change in blood pressure from <span data-type="link" data-href="table_7_4.html">Table 7.4</span>.</span></span>
+</div>
+</div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_19.html" id="ips9e-ch07-box-82"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-82"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0644"><p>EXAMPLE 7.19</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0645"><p><span data-block_type="EXP-T-ri">Does increased calcium reduce blood pressure?</span> Take Group 1 to be the calcium group and Group 2 to be the placebo group. The evidence that calcium lowers blood pressure more than a placebo is assessed by testing</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0646"><p><em>H</em><sub>0</sub>: <em>μ</em><sub>1</sub> = <em>μ</em><sub>2</sub></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0647"><p><em>H<sub>a</sub></em>: <em>μ</em><sub>1</sub> &gt;<em>μ</em><sub>2</sub></p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-83"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-83"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="BP_CA" data-block_type="rl_dataset" id="ips9e-ch07-p0648"><p><span>BP_CA</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm4959040"><p></p></div>
+</div></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0649"><p>Here are the summary statistics for the decrease in blood pressure:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-29" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="50"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="center">Group</th>
+<th data-block_type="EXP-TB1-COLHD" align="center">Treatment</th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>n</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><span data-math="math_219"></span></th>
+<th data-block_type="EXP-TB1-COLHD" align="char"><em>s</em></th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">1</td>
+<td data-block_type="EXP-TB1-TXT" align="center">Calcium</td>
+<td data-block_type="EXP-TB1-TXT" align="center">10</td>
+<td data-block_type="EXP-TB1-TXT" align="char">5.000</td>
+<td data-block_type="EXP-TB1-TXT" align="char">8.743</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center">2</td>
+<td data-block_type="EXP-TB1-TXT" align="center">Placebo</td>
+<td data-block_type="EXP-TB1-TXT" align="center">11</td>
+<td data-block_type="EXP-TB1-TXT" align="char">−0.273</td>
+<td data-block_type="EXP-TB1-TXT" align="char">5.901</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0650"><p>The calcium group shows a drop in blood pressure, and the placebo group has a small increase. The sample standard deviations do not rule out equal population standard deviations. A difference this large will often arise by chance in samples this small. We are willing to assume equal population standard deviations. The pooled sample variance is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0651"><p><span data-math="math_220"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0653"><p>so that</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0654"><p><span data-math="math_221"></span></p></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0655"><p>The pooled two-sample <em>t</em> statistic is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0656"><p><span data-math="math_222"></span></p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_452"><p>452</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch07-p0660"><p>The <em>P</em>-value is <span data-math="math_223"></span>, where <em>T</em> has the <span data-math="math_224"></span> distribution.</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch07-untab-30" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="30"><table><tbody>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" colspan="3">df = 19</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder"><em>p</em></td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">0.10</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">0.05</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center" class="lborder">
+<em>t</em>*</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="lborder">1.328</td>
+<td data-block_type="EXP-TB1-TXT" align="char" class="rborder">1.729</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0661"><p>From <span data-type="link" data-href="table_d.html">Table D</span>, we can see that <em>P</em> falls between the <span data-math="math_225"></span> and <span data-math="math_226"></span> levels. Statistical software gives the exact value <span data-math="math_227"></span>. The experiment found evidence that calcium reduces blood pressure, but the evidence falls a bit short of the traditional 5% and 1% levels.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0662"><p>Sample size strongly influences the <em>P</em>-value of a test. An effect that fails to be significant at a specified level <em>α</em> in a small sample can be significant in a larger sample. In the light of the rather small samples in <span data-type="link" data-href="example_7_19.html">Example 7.19</span>, the evidence for some effect of calcium on blood pressure is rather good. The published account of the study combined these results for blacks with the results for whites and adjusted for pretest differences among the subjects. Using this more detailed analysis, the researchers were able to report a <em>P</em>-value of 0.008.</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0663"><p>Of course, a <em>P</em>-value is almost never the last part of a statistical analysis. To make a judgment regarding the size of the effect of calcium on blood pressure, we need a confidence interval.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_7_20.html" id="ips9e-ch07-box-84"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-84"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch07-p0664"><p>EXAMPLE 7.20</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch07-p0665"><p><span data-block_type="EXP-T-ri">How different are the calcium and placebo groups?</span> We estimate that the effect of calcium supplementation is the difference between the sample means of the calcium and the placebo groups, <span data-math="math_228"></span> mm Hg. A 90% confidence interval for <span data-math="math_229"></span> uses the critical value <em>t</em>* = 1.729 from the <span data-math="math_230"></span> distribution. The interval is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch07-p0666"><p><span data-math="math_231"></span></p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch07-box-85"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-85"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="BP_CA" data-block_type="rl_dataset" id="ips9e-ch07-p0668"><p><span>BP_CA</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idm4893888"><p></p></div>
+</div></div>
+<div data-block_type="EXP-last" id="ips9e-ch07-p0669"><p>We are 90% confident that the difference in means is in the interval<span data-math="math_232"></span>. The calcium treatment reduced blood pressure by about 5.3 mm Hg more than a placebo on the average, but the margin of error for this estimate is 5.6 mm Hg.</p></div>
+</div></div>
+<div data-block_type="Caution icon" id="ips9e-ch07-p0670"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0671"><p>The pooled two-sample <em>t</em> procedures are anchored in statistical theory and so have long been the standard version of the two-sample <em>t</em> in textbooks. <em>But they require the assumption that the two unknown population standard deviations are equal.</em> We discuss methods to assess this condition in <span data-type="link" data-href="ips9e-ch012.xml">Chapter 12</span>.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_453"><p>453</p></div>
+<div data-block_type="TXT" id="ips9e-ch07-p0673"><p>The pooled <em>t</em> procedures are therefore a bit risky. They are reasonably robust against both non-Normality and unequal standard deviations when the sample sizes are nearly the same. When the samples are quite different in size, the pooled <em>t</em> procedures become sensitive to unequal standard deviations and should be used with caution unless the samples are large. Unequal standard deviations are quite common. In particular, it is not unusual for the spread of data to increase when the center of the data increases. We recommend regular use of the unpooled <em>t</em> procedures because most software automates the Satterthwaite approximation.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch07-box-86"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch07-box-86"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch07-p0674"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_7_53.html" id="ips9e-ch07-quest-0053">
+<h3>Question
+			    <span data-type="number">7.53 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-first" id="ips9e-ch07-p0675"><p><span data-block_type="EXR-QUE-N-ri">7.53</span> <span data-block_type="EXR-QUE-T-ri">Timing of food intake revisited.</span> <span data-type="link" data-href="figure_7_14.html">Figure 7.14</span> (pages 445–446) gives the outputs from four software packages for comparing the weight loss of two groups with different eating schedules. Some of the software reports both pooled and unpooled analyses. Which outputs give the pooled results? What are the pooled <em>t</em> and its <em>P</em>-value?</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_7_54.html" id="ips9e-ch07-quest-0054">
+<h3>Question
+			    <span data-type="number">7.54 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch07-p0676"><p><span data-block_type="EXR-QUE-N-ri">7.54</span> <span data-block_type="EXR-QUE-T-ri">Equal sample sizes.</span> The software outputs in <span data-type="link" data-href="figure_7_14.html">Figure 7.14</span> give the <em>same value</em> for the pooled and unpooled <em>t</em> statistics. Do some simple algebra to show that this is always true when the two sample sizes <span data-math="math_233"></span> and <span data-math="math_234"></span> are the same. In other cases, the two <em>t</em> statistics usually differ.</p></div>
+</div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch7.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('574f336d757a2e5222000003');
+});
+    //-->
+</script>
+</body>
+</html>
+

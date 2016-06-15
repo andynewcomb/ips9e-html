@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch8</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e_ch8.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="8">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch08-sec1-02" level="1" data-print_page="505">
+<h2 class="section-title">
+<span data-type="number">8.2</span> <span data-type="title" data-title-for="ips9e-ch08-sec1-02">8.2 Comparing Two Proportions
+</span>
+</h2>
+
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_505"><p>505</p></div>
+<div data-type="box" data-block_type="SP" id="ips9e-ch08-box-34"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-34"></h3>
+<div data-block_type="SP-TXT-ni" id="ips9e-ch08-p0361"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bluebullet" id="ips9e-ch08-list-036">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch08-p0362"><p><span data-block_type="maker">•</span> Identify the counts and sample sizes for a comparison between two proportions, compute the sample proportions, and find their difference.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p0363"><p><span data-block_type="maker">•</span> Apply the guidelines for when to use the large-sample confidence interval for a difference between two proportions.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p0364"><p><span data-block_type="maker">•</span> Apply the large-sample method to find the confidence interval for a difference between two proportions and interpret the confidence interval.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p0365"><p><span data-block_type="maker">•</span> Apply the guidelines for when to use the large-sample significance test for a difference between two proportions.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p0366"><p><span data-block_type="maker">•</span> Apply the large-sample method to perform a significance test for comparing two proportions and interpret the results of the significance test.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p0367"><p><span data-block_type="maker">•</span> Find the sample size needed for a desired margin of error for the difference in proportions.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch08-p0368"><p><span data-block_type="maker">•</span> Find the sample size needed for a significance test for comparing two proportions.</p></div></li>
+<li><div data-block_type="SP-BL-last" id="ips9e-ch08-p0369"><p><span data-block_type="maker">•</span> Calculate and interpret the relative risk.</p></div></li>
+</ul>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0370"><p>Because comparative studies are so common, we often want to compare the proportions of two groups (such as men and women) that have some characteristic. In the previous section, we learned how to estimate a single proportion. Our problem now concerns the comparison of two proportions.</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0371"><p>We call the two groups being compared Population 1 and Population 2 and the two population proportions of “successes” <em>p</em><sub>1</sub> and <em>p</em><sub>2</sub>. The data consist of two independent SRSs, of size <em>n</em><sub>1</sub> from Population 1 and size <em>n</em><sub>2 </sub>from Population 2. The proportion of successes in each sample estimates the corresponding population proportion. Here is the notation we will use in this section:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch08-untab-2" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="80"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="center"></th>
+<th data-block_type="EXP-TB1-COLHD" align="center">Population</th>
+<th data-block_type="EXP-TB1-COLHD" align="center">Sample</th>
+<th data-block_type="EXP-TB1-COLHD" align="center">Count of</th>
+<th data-block_type="EXP-TB1-COLHD" align="center">Sample</th>
+</tr>
+<tr>
+<th data-block_type="EXP-TB1-COLHD" align="center">Population</th>
+<th data-block_type="EXP-TB1-COLHD" align="center">proportion</th>
+<th data-block_type="EXP-TB1-COLHD" align="center">size</th>
+<th data-block_type="EXP-TB1-COLHD" align="center">successes</th>
+<th data-block_type="EXP-TB1-COLHD" align="center">proportion</th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="center">1</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>p</em><sub>1</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>n</em><sub>1</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>X</em><sub>1</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center"><span data-math="math_93"></span></td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="center">2</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>p</em><sub>2</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>n</em><sub>2</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center">
+<em>X</em><sub>2</sub>
+</td>
+<td data-block_type="EXP-TB1-TXT" align="center"><span data-math="math_94"></span></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0372"><p>To compare the two populations, we use the difference between the two sample proportions:</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p0373"><p><span data-math="math_95"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0374"><p>When both sample sizes are sufficiently large, the sampling distribution of the difference <em>D</em> is approximately Normal.</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0375"><p>Inference procedures for comparing proportions are <em>z</em> procedures based on the Normal approximation and on standardizing the difference <em>D</em>. The first step is to obtain the mean and standard deviation of <em>D</em>. By the addition rule for means, the mean of <em>D</em> is the difference of the means:</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p0376"><p><span data-math="math_96"></span></p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_506"><p>506</p></div>
+<div data-type="box" data-block_type="MN-NOT-H" id="ips9e-ch08-box-35"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-35"></h3>
+<div data-block_type="MN-NOT1" id="ips9e-ch08-p0379"><p>addition rule for means, <span data-type="link" data-href="alias:page_254">p. 254</span></p></div>
+<div data-block_type="MN-NOT1" id="ips9e-ch08-p0380"><p>addition rule for variances, <span data-type="link" data-href="alias:page_258">p. 258</span></p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0381"><p>That is, the difference <span data-math="math_97"></span> between the sample proportions is an unbiased estimator of the population difference <em>p</em><sub>1</sub> − <em>p</em><sub>2</sub>. Similarly, the addition rule for variances tells us that the variance of <em>D</em> is the <em>sum</em> of the variances:</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p0382"><p><span data-math="math_98"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0384"><p>Therefore, when <em>n</em><sub>1</sub> and <em>n</em><sub>2</sub> are large, <em>D</em> is approximately Normal with mean <em>μ<sub>D</sub></em> = <em>p</em><sub>1</sub> − <em>p</em><sub>2</sub> and standard deviation</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p0385"><p><span data-math="math_99"></span></p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch08-box-36"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-36"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch08-p0386"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_8_47.html" id="ips9e-ch08-quest-0047">
+<h3>Question
+			    <span data-type="number">8.47 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0387"><p><span data-block_type="EXR-QUE-N-ri">8.47</span> <span data-block_type="EXR-QUE-T-ri">Rules for means and variances.</span> Suppose that <em>p</em><sub>1</sub> = 0.4, <em>n</em><sub>1</sub> = 25, <em>p</em><sub>2</sub> = 0.5, <em>n</em><sub>2</sub> = 30. Find the mean and the standard deviation of the sampling distribution of <em>p</em><sub>1</sub> − <em>p</em><sub>2</sub>.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_8_48.html" id="ips9e-ch08-quest-0048">
+<h3>Question
+			    <span data-type="number">8.48 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0388"><p><span data-block_type="EXR-QUE-N-ri">8.48</span> <span data-block_type="EXR-QUE-T-ri">Effect of the sample sizes.</span> Suppose that <em>p</em><sub>1</sub> = 0.4, <em>n</em><sub>1</sub> = 100, <em>p</em><sub>2</sub> = 0.5, <span data-block_type="nowrap"><em>n</em><sub>2</sub> = 120.</span></p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch08-list-037">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p0389"><p><span data-block_type="maker">(a)</span> Find the mean and the standard deviation of the sampling distribution of <em>p</em><sub>1</sub> − <em>p</em><sub>2</sub>.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p0390"><p><span data-block_type="maker">(b)</span> The sample sizes here are four times as large as those in the previous exercise while the population proportions are the same. Compare the results for this exercise with those that you found in the previous exercise. What is the effect of multiplying the sample sizes by 4?</p></div></li>
+</ol>
+</div>
+<div data-type="question" data-block_type="exercise_8_49.html" id="ips9e-ch08-quest-0049">
+<h3>Question
+			    <span data-type="number">8.49 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0391"><p><span data-block_type="EXR-QUE-N-ri">8.49</span> <span data-block_type="EXR-QUE-T-ri">Rules for means and variances.</span> It is quite easy to verify the formulasfor the mean and standard deviation of the difference <em>D</em>.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch08-list-038">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p0392"><p><span data-block_type="maker">(a)</span> What are the means and standard deviations of the two sample proportions <span data-math="math_100"></span> and <span data-math="math_101"></span>?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p0393"><p><span data-block_type="maker">(b)</span> Use the addition rule for means of random variables: what is the mean of <span data-math="math_102"></span>?</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p0394"><p><span data-block_type="maker">(c)</span> The two samples are independent. Use the addition rule for variances of random variables: what is the variance of <em>D</em>?</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch08-p0395"><p><span data-block_type="h2">Large-sample confidence interval for a difference in proportions</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0396"><p>To obtain a confidence interval for <em>p</em><sub>1</sub> − <em>p</em><sub>2</sub>, we once again replace the unknown parameters in the standard deviation with estimates to obtain an estimated standard deviation, or standard error. Here is the confidence interval we want.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_507"><p>507</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch08-box-37"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-37"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch08-p0398"><p>LARGE-SAMPLE CONFIDENCE INTERVAL FOR COMPARING TWO PROPORTIONS</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0399"><p>Choose an SRS of size <em>n</em><sub>1</sub> from a large population having proportion <em>p</em><sub>1</sub> of successes and an independent SRS of size <em>n</em><sub>2</sub> from another population having proportion <em>p</em><sub>2</sub> of successes. The estimate of the difference in the population proportions is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0400"><p><span data-math="math_103"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0401"><p>The <strong>standard error of <em>D</em></strong> is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0402"><p><span data-math="math_104"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0403"><p>and the <strong>margin of error</strong> for confidence level <em>C</em> is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0404"><p><span data-math="math_105"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0405"><p>where the critical value <em>z</em>* is the value for the standard Normal density curve with area <em>C</em> between −<em>z</em>* and <em>z</em>*. An <strong>approximate level <em>C</em> confidence interval</strong> for <em>p</em><sub>1</sub> − <em>p</em><sub>2</sub> is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0406"><p><em>D</em> ± <em>m</em></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0407"><p>Use this method for 90%, 95%, or 99% confidence when the number of successes and the number of failures in each sample are both 10 or more.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_11.html" id="ips9e-ch08-box-38"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-38"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0408"><p>EXAMPLE 8.11</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0409"><p><span data-block_type="EXP-T-ri">Who uses Instagram?</span> A recent study compared the proportions of young women and men who use Instagram.<span data-type="termref" data-term="fn_ch8_fn15"><sup>15</sup></span> A total of 1069 young women and men were surveyed. These are the cases for the study. The response variable is User with values Yes and No. The explanatory variable is Sex with values “Men” and “Women.” Here are the data:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch08-untab-3" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="50"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="left">Sex</th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>n</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>X</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><span data-math="math_106"></span></th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="left">Women</td>
+<td data-block_type="EXP-TB1-TXT" align="center">537</td>
+<td data-block_type="EXP-TB1-TXT" align="center">328</td>
+<td data-block_type="EXP-TB1-TXT" align="center">0.6108</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="left">Men</td>
+<td data-block_type="EXP-TB1-TXT" align="center">532</td>
+<td data-block_type="EXP-TB1-TXT" align="center">234</td>
+<td data-block_type="EXP-TB1-TXT" align="center">0.4398</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="left">Total</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1069</td>
+<td data-block_type="EXP-TB1-TXT" align="center">562</td>
+<td data-block_type="EXP-TB1-TXT" align="center">0.5257</td>
+</tr>
+</tbody></table></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch08-box-39"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-39"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="INSTAG" data-block_type="rl_dataset" id="ips9e-ch08-p0410"><p><span>INSTAG</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp2615936"><p></p></div>
+</div></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0411"><p>In this table, the <span data-math="math_107"></span> column gives the sample proportions of women and men who use Instagram. The proportion for the total sample is given in the last entry in this column.</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0412"><p>Let’s find a 95% confidence interval for the difference between the proportions of women and of men who use Instagram. We first find the difference in the proportions:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0413"><p><span data-math="math_108"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0414"><p>= 0.6108 − 0.4398</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0415"><p>= 0.1710</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_508"><p>508</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0417"><p>Then we calculate the standard error of <em>D</em>:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0418"><p><span data-math="math_109"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0419"><p><span data-math="math_110"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0420"><p>= 0.0301</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0421"><p>For 95% confidence, we have <em>z</em>* = 1.96, so the margin of error is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0422"><p><em>m</em> = <em>z</em>*SE<em><sub>D</sub></em></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0423"><p>= (1.96)(0.0301)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0424"><p>= 0.0590</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0425"><p>The 95% confidence interval is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0426"><p><em>D</em> ± <em>m</em> = 0.1710 ± 0.0590</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0427"><p>= (0.112, 0.230)</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0428"><p>With 95% confidence, we can say that the difference in the proportions is between 0.112 and 0.230. Alternatively, we can report that the difference between the percent of women who are Instagram users and the percent of men who are Instagram users is 17.1%, with a 95% margin of error of 5.9%.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0429"><p>In this example, men and women were not sampled separately. The sample sizes are, in fact, random and reflect the gender distributions of the subjects who responded to the survey. Two-sample significance tests and confidence intervals are still approximately correct in this situation.</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0430"><p>In the preceding example, we chose women to be the first population. Had we chosen men to be the first population, the estimate of the difference would be negative (−0.1710). Because it is easier to discuss positive numbers, we generally choose the first population to be the one with the higher proportion.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_12.html" id="ips9e-ch08-box-40"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-40"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0431"><p>EXAMPLE 8.12</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0432"><p><span data-block_type="EXP-T-ri">Instagram confidence interval from software.</span> <span data-type="link" data-href="figure_8_5.html">Figure 8.5</span> shows a spreadsheet that can be used as input to software. Output from JMP and Minitab is given in <span data-type="link" data-href="figure_8_6.html">Figure 8.6</span>. Compare these outputs with the calculations that we performed in <span data-type="link" data-href="example_8_11.html">Example 8.11</span>.</p></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch08-box-41"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-41"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="INSTAG" data-block_type="rl_dataset" id="ips9e-ch08-p0433"><p><span>INSTAG</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp2649680"><p></p></div>
+</div></div>
+</div></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_8_5.html" data-figure-id="ips9e-ch08-p5" data-block_type="FIGURE" data-layout-align="center" data-layout-width="small" data-layout-border="false">
+
+<img id="" src="asset/ch8/17MOOREIPS-MSE_9e_fig_08_05.jpg" data-figure-id="ips9e-ch08-p5" data-layout-width="small" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 8.5: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 8.5</span> <span data-block_type="FG-CAP">Spreadsheet that can be used as input to software that computes the confidence interval for the Instagram data, <span data-type="link" data-href="example_8_11.html">Example 8.11</span>.</span></span>
+</div>
+</div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_509"><p>509</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_8_6.html" data-figure-id="ips9e-ch08-p6" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch8/17MOOREIPS-MSE_9e_fig_08_06.jpg" data-figure-id="ips9e-ch08-p6" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 8.6: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 8.6</span> <span data-block_type="FG-CAP">(a) JMP and (b) Minitab output for the Instagram confidence interval, <span data-type="link" data-href="example_8_11.html">Example 8.11</span>.</span></span>
+</div>
+</div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch08-box-42"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-42"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch08-p0437"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_8_50.html" id="ips9e-ch08-quest-0050">
+<h3>Question
+			    <span data-type="number">8.50 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0438"><p><span data-block_type="EXR-QUE-N-ri">8.50</span> <span data-block_type="EXR-QUE-T-ri">Gender and commercial preference.</span> A study was designed to compare two energy drink commercials. Each participant was shown the commercials in random order and asked to select the better one. Commercial A was selected by 54 out of 115 women and 83 out of 145 men. Give an estimate of the difference in gender proportions that favored Commercial A. Also construct a large-sample 95% confidence interval for this difference.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_8_51.html" id="ips9e-ch08-quest-0051">
+<h3>Question
+			    <span data-type="number">8.51 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0439"><p><span data-block_type="EXR-QUE-N-ri">8.51</span> <span data-block_type="EXR-QUE-T-ri">Gender and commercial preference, revisited.</span> Refer to <span data-type="link" data-href="exercise_8_50.html">Exercise 8.50</span>. Construct a 95% confidence interval for the difference in proportions that favor Commercial B. Explain how you could have obtained these results from the calculations you did in <span data-type="link" data-href="exercise_8_50.html">Exercise 8.50</span>.</p></div>
+</div>
+</div></div>
+<div data-type="box" data-block_type="BX2" id="ips9e-ch08-box-43"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-43"></h3>
+<div data-block_type="BX2-H" id="ips9e-ch08-p0440"><p>BEYOND THE BASICS</p></div>
+<div data-block_type="BX2-T" id="ips9e-ch08-p0441"><p>The Plus Four Confidence Interval for a Difference in Proportions</p></div>
+<div data-block_type="BX2-TXT-ni" id="ips9e-ch08-p0442"><p>Just as in the case of estimating a single proportion, a small modification of the sample proportions can greatly improve the accuracy of confidence intervals.<span data-type="termref" data-term="fn_ch8_fn16"><sup>16</sup></span> As before, we add two successes and two failures to the actual data, but now we divide them equally between the two samples. That is, we <em>add one success and one failure to each sample</em>. This method can be used for 90%, 95%, or 99% confidence when both sample sizes are at least five. Here is an example.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_510"><p>510</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_13.html" id="ips9e-ch08-box-44"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-44"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0444"><p>EXAMPLE 8.13</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0445"><p><span data-block_type="EXP-T-ri">Gender and sexual maturity.</span> In studies that look for a difference between genders, a major concern is whether or not apparent differences are due to other variables that are associated with gender. Because boys mature more slowly than girls, a study of adolescents that compares boys and girls of the same age may confuse a gender effect with an effect of sexual maturity. The “Tanner score” is a commonly used measure of sexual maturity.<span data-type="termref" data-term="fn_ch8_fn17"><sup>17</sup></span> Subjects are asked to determine their score by placing a mark next to a rough drawing of an individual at their level of sexual maturity. There are five different drawings, so the score is an integer between 1 and 5.</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0446"><p>A pilot study included 12 girls and 12 boys from a population that will be used for a large experiment. Four of the boys and three of the girls had Tanner scores of 4 or 5, a high level of sexual maturity. Let’s find a 95% confidence interval for the difference between the proportions of boys and girls who have high (4 or 5) Tanner scores in this population. The numbers of successes and failures in both groups are not all at least 10, so the large-sample approach is not recommended. On the other hand, the sample sizes are both at least 5, so the plus four method is appropriate.</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0447"><p>The plus four estimate of the population proportion for boys is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0448"><p><span data-math="math_111"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0449"><p>For girls, the estimate is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0450"><p><span data-math="math_112"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0451"><p>Therefore, the estimate of the difference is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0452"><p><span data-math="math_113"></span></p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0453"><p>The standard error of <span data-math="math_114"></span> is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0454"><p><span data-math="math_115"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0455"><p><span data-math="math_116"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0456"><p>= 0.1760</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0457"><p>For 95% confidence, <em>z</em>* = 1.96 and the margin of error is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0458"><p><span data-math="math_117"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0459"><p>The confidence interval is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0460"><p><span data-math="math_118"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0461"><p>= (−0.274, 0.416)</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0462"><p>With 95% confidence, we can say that the difference in the proportions is between −0.274 and 0.416. Alternatively, we can report that the difference in the proportions of boys and girls with high Tanner scores in this population is 7.1% with a 95% margin of error of 34.5%.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_511"><p>511</p></div>
+<div data-block_type="Caution icon" id="ips9e-ch08-p0464"><p><img id="" src="asset/global_images/BPScaution-icon.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0465"><p>The very large margin of error in this example indicates that either boys or girls could be more sexually mature in this population and that the difference could be quite large. <em>Although the interval includes the possibility that there is no difference, corresponding to p</em><sub>1</sub> = <em>p</em><sub>2</sub> <em>or p</em><sub>1</sub> − <em>p</em><sub>2</sub> = 0<em>, we should not conclude that there is</em> <strong><em>no</em></strong> <em>difference in the proportions.</em> With small sample sizes such as these, the data do not provide us with a lot of information for our inference. This fact is expressed quantitatively through the very large margin of error.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch08-p0466"><p><span data-block_type="h2">Significance test for a difference in proportions</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0467"><p>Although we prefer to compare two proportions by giving a confidence interval for the difference between the two population proportions, it is sometimes useful to test the null hypothesis that the two population proportions are the same.</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0468"><p>We standardize <span data-math="math_119"></span> by subtracting its mean <em>p</em><sub>1</sub> − <em>p</em><sub>2</sub> and then dividing by its standard deviation</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p0469"><p><span data-math="math_120"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0470"><p>If <em>n</em><sub>1</sub> and <em>n</em><sub>2</sub> are large, the standardized difference is approximately <em>N</em>(0, 1). For the large-sample confidence interval we used sample estimates in place of the unknown population values in the expression for <em>σ<sub>D</sub></em>. Although this approach would lead to a valid significance test, we instead adopt the more common practice of replacing the unknown <em>σ<sub>D</sub></em> with an estimate that takes into account our null hypothesis <em>H</em><sub>0</sub>: <em>p</em><sub>1</sub> = <em>p</em><sub>2</sub>. If these two proportions are equal, then we can view all the data as coming from a single population. Let <em>p</em> denote the common value of <em>p</em><sub>1</sub> and <em>p</em><sub>2</sub>; then the standard deviation of <span data-math="math_121"></span> is</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p0471"><p><span data-math="math_122"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0473"><p>We estimate the common value of <em>p</em> by the overall proportion of successes in the two samples:</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p0474"><p><span data-math="math_123"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0475"><p>This estimate of <em>p</em> is called the <span data-type="termref" data-term="pooled estimate"><strong>pooled estimate</strong></span><span data-block_type="MN-GL-term">pooled estimate of <em>p</em></span> because it combines, or pools, the information from both samples.</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0477"><p>To estimate <em>σ<sub>D</sub></em> under the null hypothesis, we substitute <span data-math="math_124"></span> for <em>p</em> in the expression for <em>σ<sub>D</sub></em>. The result is a standard error for <em>D</em> that assumes <em>H</em><sub>0</sub>: <em>p</em><sub>1</sub> = <em>p</em><sub>2</sub>:</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p0478"><p><span data-math="math_125"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0479"><p>The subscript on SE<em><sub>Dp</sub></em> reminds us that we pooled data from the two samples to construct the estimate.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_512"><p>512</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch08-box-45"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-45"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch08-p0481"><p>SIGNIFICANCE TEST FOR COMPARING TWO PROPORTIONS</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0482"><p>To test the hypothesis</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0483"><p><em>H</em><sub>0</sub>: <em>p</em><sub>1</sub> = <em>p</em><sub>2</sub></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0484"><p>compute the <strong><em>z</em> statistic</strong></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0485"><p><span data-math="math_126"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0486"><p>where the <strong>pooled standard error</strong> is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0487"><p><span data-math="math_127"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0488"><p>and where the <strong>pooled estimate</strong> of the common value of <em>p</em><sub>1</sub> and <em>p</em><sub>2</sub> is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0489"><p><span data-math="math_128"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0490"><p>In terms of a standard Normal random variable <em>Z</em>, the approximate <em>P</em>-value for a test of <em>H</em><sub>0</sub> against</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0491"><p><em>H<sub>a</sub></em>: <em>p</em><sub>1</sub> &gt; <em>p</em><sub>2</sub> is <em>P</em>(<em>Z</em> ≥ <em>z</em>)    <img id="" src="asset/ch8/17MOOREIPS-MSE_9e_UNfig_08_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0492"><p><em>H<sub>a</sub></em>: <em>p</em><sub>1</sub> &lt; <em>p</em><sub>2</sub> is <em>P</em>(<em>Z</em> ≤ <em>z</em>)    <img id="" src="asset/ch8/17MOOREIPS-MSE_9e_UNfig_08_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0493"><p><em>H<sub>a</sub></em>: <em>p</em><sub>1</sub> ≠ <em>p</em><sub>2</sub> is 2<em>P</em>(<em>Z</em> ≥ |<em>z</em>|)    <img id="" src="asset/ch8/17MOOREIPS-MSE_9e_UNfig_08_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0494"><p>This <em>z</em> test is based on the Normal approximation to the binomial distribution. As a general rule, we will use it when the number of successes and the number of failures in each of the samples are at least 5.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_14.html" id="ips9e-ch08-box-46"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-46"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0495"><p>EXAMPLE 8.14</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0496"><p><span data-block_type="EXP-T-ri">Sex and Instagram use: The <em>z</em> test.</span> Are young women and men equally likely to say they use Instagram? We examine the data in <span data-type="link" data-href="example_8_11.html">Example 8.11</span> (page 597) to answer this question. Here is the data summary:</p></div>
+<div data-type="table" data-block_type="UN-TABLE" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="50"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="left">Sex</th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>n</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>X</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><span data-math="math_129"></span></th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="left">Women</td>
+<td data-block_type="EXP-TB1-TXT" align="center">537</td>
+<td data-block_type="EXP-TB1-TXT" align="center">328</td>
+<td data-block_type="EXP-TB1-TXT" align="center">0.6108</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="left">Men</td>
+<td data-block_type="EXP-TB1-TXT" align="center">532</td>
+<td data-block_type="EXP-TB1-TXT" align="center">234</td>
+<td data-block_type="EXP-TB1-TXT" align="center">0.4398</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="left">Total</td>
+<td data-block_type="EXP-TB1-TXT" align="center">1069</td>
+<td data-block_type="EXP-TB1-TXT" align="center">562</td>
+<td data-block_type="EXP-TB1-TXT" align="center">0.5257</td>
+</tr>
+</tbody></table></div>
+<div data-type="box" data-block_type="rl_linkbox" id="ips9e-ch08-box-47"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-47"></h3>
+<div data-url="asset/datasets/Data_Icon.jpg" data-file="INSTAG" data-block_type="rl_dataset" id="ips9e-ch08-p0497"><p><span>INSTAG</span></p></div>
+<div data-dataset="" data-block_type="rl_crunchit" id="idp2811968"><p></p></div>
+</div></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0498"><p>The sample proportions are certainly quite different, but we will perform a significance test to see if the difference is large enough to lead us to believe that the population proportions are not equal. Formally, we test the hypotheses</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0499"><p><em>H</em><sub>0</sub>: <em>p</em><sub>1</sub> = <em>p</em><sub>2</sub></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0500"><p><em>H<sub>a</sub></em>: <em>p</em><sub>1</sub> ≠ <em>p</em><sub>2</sub></p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_513"><p>513</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0502"><p>The pooled estimate of the common value of <em>p</em> is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0503"><p><span data-math="math_130"></span></p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0504"><p>Note that this is the estimate on the bottom line of the preceding data summary. The test statistic is calculated as follows:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0505"><p><span data-math="math_131"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0506"><p><span data-math="math_132"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0507"><p>= 5.60</p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0508"><p>The <em>P</em>-value is 2<em>P</em>(<em>Z</em> ≥ 5.60). Note that the largest value for <em>z</em> in <span data-type="link" data-href="table_a.html">Table A</span> is 3.49. Therefore, from <span data-type="link" data-href="table_a.html">Table A</span>, we can conclude that <em>P</em> &lt; 2(1 − 0.9998) = 0.0004, although we know that the true <em>P</em> value is smaller.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0509"><p>Here is our summary: 61% of the women and 44% of the men are Instagram users; the difference is statistically significant (<em>z</em> = 5.60, <em>P</em> &lt; 0.0004).</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_15.html" id="ips9e-ch08-box-48"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-48"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0510"><p>EXAMPLE 8.15</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0511"><p><span data-block_type="EXP-T-ri">Output for the Instagram significance test.</span> We prefer to use software to obtain the significance test results for comparing the Instagram use of young women and men. Output from JMP and Minitab is given in <span data-type="link" data-href="figure_8_7.html">Figure 8.7</span>. JMP reports the significance tests for the two-sided alternative and for the two one-sided alternatives. We are interested in the two-sided alternative. Therefore, we report the <em>P</em>-value as &lt; 0.0001. Minitab reports the test statistic, <em>z</em> = 5.60, and gives the <em>P</em>-value as 0.000 (this means <em>P</em> &lt; 0.0005) for the Fisher exact test. This test is an alternative to the large-sample significance test that we have discussed. It is preferred by many, particularly for small sample sizes.</p></div>
+<div data-type="figure" data-caption-compass="NW" data-filename="figure_8_7.html" data-figure-id="ips9e-ch08-p7" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch8/17MOOREIPS-MSE_9e_fig_08_07.jpg" data-figure-id="ips9e-ch08-p7" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 8.7: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 8.7</span> <span data-block_type="FG-CAP">(a) JMP and (b) Minitab output for the Instagram significance test, <span data-type="link" data-href="example_8_15.html">Example 8.15</span>.</span></span>
+</div>
+</div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_514"><p>514</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0514"><p>Do you think that we could have argued that the proportion would be higher for women than for men before looking at the data in this example? This would allow us to use the one-sided alternative <em>H<sub>a</sub></em>: <em>p</em><sub>1</sub> &gt; <em>p</em><sub>2</sub>. The <em>P</em>-value would be half of the value obtained for the two-sided test. Do you think that this approach is justified?</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch08-box-49"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-49"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch08-p0515"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_8_52.html" id="ips9e-ch08-quest-0052">
+<h3>Question
+			    <span data-type="number">8.52 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0516"><p><span data-block_type="EXR-QUE-N-ri">8.52</span> <span data-block_type="EXR-QUE-T-ri">Gender and commercial preference: the <em>z</em> test.</span> Refer to <span data-type="link" data-href="exercise_8_50.html">Exercise 8.50</span> (page 509). Test whether the proportions of women and men who liked Commercial A are the same versus the two-sided alternative at the 5% level.</p></div>
+</div>
+<div data-type="question" data-block_type="exercise_8_53.html" id="ips9e-ch08-quest-0053">
+<h3>Question
+			    <span data-type="number">8.53 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0517"><p><span data-block_type="EXR-QUE-N-ri">8.53</span> <span data-block_type="EXR-QUE-T-ri">Changing the alternative hypothesis.</span> Refer to the previous exercise. Does your conclusion change if you test whether the proportion of men who favor Commercial A is larger than the proportion of females? Explain.</p></div>
+</div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch08-p0518"><p><span data-block_type="h2">Choosing a sample size for two sample proportions</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0519"><p>In <span data-type="link" data-href="ips9e_ch8_2.html">Section 8.1</span>, we studied methods for determining the sample size using two settings. First, we used the margin of error for a confidence interval for a single proportion as the criterion for choosing <em>n</em> (page xxx). Second, we used the power of the significance test for a single proportion as the determining factor (page xxx). We follow the same approach here for comparing two proportions.</p></div>
+<div data-block_type="TXT-3" id="ips9e-ch08-p0520"><p><span data-block_type="h3-ri">Use the margin of error</span> Recall that the large-sample estimate of the difference in proportions is</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p0521"><p><span data-math="math_133"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0522"><p>the standard error of the difference is</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p0523"><p><span data-math="math_134"></span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0524"><p>and the margin of error for confidence level <em>C</em> is</p></div>
+<div data-block_type="EQ" id="ips9e-ch08-p0525"><p><em>m</em> = <em>z</em>*SE<em><sub>D</sub></em></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch08-p0526"><p>where <em>z</em>* is the value for the standard Normal density curve with area <em>C</em> between −<em>z</em>* and <em>z</em>*.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_515"><p>515</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0528"><p>For a single proportion, we guessed a value for the true proportion and computed the margins of error for various choices of <em>n</em>. Here, we use the same idea but we need to guess values for the two proportions. We can display the results in a table, as in <span data-type="link" data-href="example_8_9.html">Example 8.9</span> (page 497), or in a graph, as in <span data-type="link" data-href="exercise_8_43.html">Exercise 8.43</span> (page 504).</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch08-box-50"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-50"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch08-p0529"><p>SAMPLE SIZE FOR DESIRED MARGIN OF ERROR</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0530"><p>The level <em>C</em> confidence interval for a difference in two proportions will have a margin of error approximately equal to a specified value <em>m</em> when the sample size for each of the two proportions is</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0531"><p><span data-math="math_135"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0532"><p>Here, <em>z</em>* is the critical value for confidence <em>C</em>, and <span data-math="math_136"></span> and <span data-math="math_137"></span> are guessed values for <em>p</em><sub>1</sub> and <em>p</em><sub>2</sub>, the proportions of successes in the future sample.</p></div>
+<div data-block_type="BX1-TXT" id="ips9e-ch08-p0533"><p>The margin of error will be less than or equal to <em>m</em> if <span data-math="math_138"></span> and <span data-math="math_139"></span> are chosen to be 0.5. The common sample size required is then given by</p></div>
+<div data-block_type="BX1-EQ" id="ips9e-ch08-p0534"><p><span data-math="math_140"></span></p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch08-p0535"><p>Note that to use the confidence interval, which is based on the Normal approximation, we still require that the number of successes and the number of failures in each of the samples are at least 10.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_16.html" id="ips9e-ch08-box-51"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-51"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0536"><p>EXAMPLE 8.16</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0537"><p><span data-block_type="EXP-T-ri">Confidence interval–based sample sizes for preferences of women and men.</span> Consider the setting in <span data-type="link" data-href="exercise_8_50.html">Exercise 8.50</span>, where we compared the preferences of women and men for two commercials. Suppose we want to do a study in which we perform a similar comparison using a 95% confidence interval that will have a margin of error of 0.1 or less. What should we choose for our sample size? Using <em>m</em> = 0.1 and <em>z</em>* in our formula, we have</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0538"><p><span data-math="math_141"></span></p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0539"><p>We would include 192 women and 192 men in our study.</p></div>
+</div></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_516"><p>516</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0541"><p>Note that we have rounded the calculated value, 192.08, down because it is very close to 192. The normal procedure would be to round the calculated value up to the next larger integer.</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch08-box-52"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-52"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch08-p0542"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_8_54.html" id="ips9e-ch08-quest-0054">
+<h3>Question
+			    <span data-type="number">8.54 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0543"><p><span data-block_type="EXR-QUE-N-ri">8.54</span> <span data-block_type="EXR-QUE-T-ri">What would the margin of error be?</span> Consider the setting in <span data-type="link" data-href="example_8_50.html">Example 8.50</span>.</p></div>
+<ol data-block_type="lower-alpha" id="ips9e-ch08-list-039">
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p0544"><p><span data-block_type="maker">(a)</span> Compute the margins of error for <em>n</em><sub>1</sub> = 24 and <em>n</em><sub>2</sub> = 24 for each of the following scenarios: <em>p</em><sub>1</sub> = 0.6, <em>p</em><sub>2</sub> = 0.5; <em>p</em><sub>1</sub> = 0.7, <em>p</em><sub>2</sub> = 0.5; and <em>p</em><sub>1</sub> = 0.8, <em>p</em><sub>2</sub> = 0.5.</p></div></li>
+<li><div data-block_type="EXR-QUE-NL-lvl2" id="ips9e-ch08-p0545"><p><span data-block_type="maker">(b)</span> If you think that any of these scenarios is likely to fit your study, should you reconsider your choice of <em>n</em><sub>1</sub> = 24 and <em>n</em><sub>2</sub> = 24? Explain your answer.</p></div></li>
+</ol>
+</div>
+</div></div>
+<div data-block_type="TXT-3" id="ips9e-ch08-p0546"><p><span data-block_type="h3-ri">Use the power of the significance test</span> When we studied using power to compute the sample size needed for a significance test for a single proportion, we used software. We will do the same for the significance test for comparing two proportions.</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0547"><p>Some software allows us to consider significance tests that are a little more general than the version we studied in this section. Specifically, we used the null hypothesis <em>H</em><sub>0</sub>: <em>p</em><sub>1</sub> = <em>p</em><sub>2</sub>, which we can rewrite as <em>H</em><sub>0</sub>: <em>p</em><sub>1</sub> − <em>p</em><sub>2</sub> = 0. The generalization allows us to use values different from zero in the alternative way of writing <em>H</em><sub>0</sub>. Therefore, we write <em>H</em><sub>0</sub>: <em>p</em><sub>1</sub> − <em>p</em><sub>2</sub> = <em>Δ</em><sub>0</sub> for the null hypothesis, and we will need to specify <em>Δ</em><sub>0</sub> = 0 for the significance test that we studied.</p></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0548"><p>Here is a summary of the inputs needed for software to perform the calculations:</p></div>
+<ul data-block_type="bullet" id="ips9e-ch08-list-040">
+<li><div data-block_type="BL-first" id="ips9e-ch08-p0549"><p><span data-block_type="maker">•</span> The value of <em>Δ</em><sub>0</sub> in the null hypothesis <em>H</em><sub>0</sub>: <em>p</em><sub>1</sub> − <em>p</em><sub>2</sub> = <em>Δ</em><sub>0</sub>.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch08-p0550"><p><span data-block_type="maker">•</span> The alternative hypothesis, two-sided (<em>H<sub>a</sub></em>: <em>p</em><sub>1</sub> ≠ <em>p</em><sub>2</sub>) or one-sided (<em>H<sub>a</sub></em>: <em>p</em><sub>1</sub> &gt; <em>p</em><sub>2</sub> or <em>H</em><sub>a</sub>: <em>p</em><sub>1</sub> &lt; <em>p</em><sub>2</sub>).</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch08-p0551"><p><span data-block_type="maker">•</span> Values for <em>p</em><sub>1</sub> and <em>p</em><sub>2</sub> in the alternative hypothesis.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch08-p0552"><p><span data-block_type="maker">•</span> The Type I error (<em>α</em>, the probability of rejecting the null hypothesis when it is true); usually we choose 5% (<em>α</em> = 0.05) for the Type I error.</p></div></li>
+<li><div data-block_type="BL-last" id="ips9e-ch08-p0553"><p><span data-block_type="maker">•</span> Power (probability of rejecting the null hypothesis when it is false); usually we choose 80% (0.80) for power.</p></div></li>
+</ul>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_17.html" id="ips9e-ch08-box-53"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-53"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0554"><p>EXAMPLE 8.17</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0555"><p><span data-block_type="EXP-T-ri">Sample sizes for preferences of women and men.</span> Refer to <span data-type="link" data-href="example_8_16.html">Example 8.16</span> where we used the margin of error to find the sample sizes for comparing the preferences of women and men for two commercials. Let’s find the sample sizes required for a significance test that the two proportions who prefer Commercial A are equal (<em>Δ</em><sub>0</sub> = 0) using a two-sided alternative with <em>p</em><sub>1</sub> = 0.6 and <em>p</em><sub>2</sub> = 0.4, <em>α</em> = 0.05, and 80% (0.80) power. Outputs from JMP and Minitab are given in <span data-type="link" data-href="figure_8_8.html">Figure 8.8</span>. We need <em>n</em><sub>1</sub> = 97 women and <em>n</em><sub>2</sub> = 97 men for our study.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_517"><p>517</p></div>
+<div data-type="figure" data-caption-compass="SW" data-filename="figure_8_8.html" data-figure-id="ips9e-ch08-p8" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+
+<img id="" src="asset/ch8/17MOOREIPS-MSE_9e_fig_08_08.jpg" data-figure-id="ips9e-ch08-p8" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 8.8: </span><span data-type="caption"><span data-block_type="FG-N-ri">FIGURE 8.8</span> <span data-block_type="FG-CAP">(a) JMP and (b) Minitab output for finding the sample size, <span data-type="link" data-href="example_8_17.html">Example 8.17</span>.</span></span>
+</div>
+</div>
+<div data-block_type="TXT" id="ips9e-ch08-p0558"><p>Note that the Minitab output [<span data-type="link" data-href="figure_8_8.html">Figure 8.8</span>(b)] gives the power curve for different alternatives. All of these have <em>p</em><sub>1</sub> = 0.6, which Minitab calls the “Comparison p,” while <em>p</em><sub>2</sub> varies from 0.3 to 0.9. We see that the power is essentially 100% (1) at these extremes. It is 0.05, the type I error, at <em>p</em><sub>2</sub> = 0.6, which corresponds to the null hypothesis.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_518"><p>518</p></div>
+<div data-type="box" data-block_type="EXR" id="ips9e-ch08-box-54"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-54"></h3>
+<div data-block_type="EXR-H" id="ips9e-ch08-p0560"><p>USE YOUR KNOWLEDGE</p></div>
+<div data-type="question" data-block_type="exercise_8_55.html" id="ips9e-ch08-quest-0055">
+<h3>Question
+			    <span data-type="number">8.55 </span><span data-type="title"></span>
+</h3>
+<div data-block_type="EXR-QUE-NL-last" id="ips9e-ch08-p0561"><p><span data-block_type="EXR-QUE-N-ri">8.55</span> <span data-block_type="EXR-QUE-T-ri">Find the sample sizes.</span> Consider the setting in <span data-type="link" data-href="example_8_17.html">Example 8.17</span>. Change <em>p</em><sub>1</sub> to 0.85 and <em>p</em><sub>2</sub> to 0.90. Find the required sample sizes.</p></div>
+</div>
+</div></div>
+<div data-type="box" data-block_type="BX2" id="ips9e-ch08-box-55"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-55"></h3>
+<div data-block_type="BX2-H" id="ips9e-ch08-p0562"><p>BEYOND THE BASICS</p></div>
+<div data-block_type="BX2-T" id="ips9e-ch08-p0563"><p>Relative Risk</p></div>
+<div data-block_type="BX2-TXT-ni" id="ips9e-ch08-p0564"><p>We compared Instagram use for women and men by reporting the difference in the proportions with a confidence interval. Another way to compare two proportions is to take the ratio. This approach can be used in any setting and it is particularly common in medical settings.</p></div>
+<div data-block_type="BX2-TXT-ni" id="ips9e-ch08-p0566"><p>We think of each proportion as a <span data-type="termref" data-term="risk"><strong>risk</strong></span><span data-block_type="MN-GL-term">risk</span> that something (usually bad) will happen. We then compare these two risks with the ratio of the two proportions, which is called the <span data-type="termref" data-term="relative risk"><strong>relative risk</strong></span><span data-block_type="MN-GL-term">relative risk</span> (RR). Note that a relative risk of 1 means that the two proportions, <span data-math="math_142"></span> and <span data-math="math_143"></span>, are equal. The procedure for calculating confidence intervals for relative risk is based on the same kind of principles that we have studied, but the details are somewhat more complicated. Fortunately, we can leave the details to software and concentrate on interpretation and communication of the results.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_8_18.html" id="ips9e-ch08-box-56"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch08-box-56"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch08-p0568"><p>EXAMPLE 8.18</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch08-p0569"><p><span data-block_type="EXP-T-ri">Aspirin and blood clots: Relative risk.</span> A study of patients who had blood clots (venous thromboembolism) and had completed the standard treatment were randomly assigned to receive a low-dose aspirin or a placebo treatment. The 822 patients in the study were randomized to the treatments, 411 to each. Patients were monitored for several years for the occurrence of several related medical conditions. Counts of patients who experienced one or more of these conditions were reported for each year after the study began.<span data-type="termref" data-term="fn_ch8_fn18"><sup>18</sup></span> The following table gives the data for a composite of events, termed “major vascular events.” Here, <em>X</em> is the number of patients who had a major event.</p></div>
+<div data-type="table" data-block_type="UN-TABLE" id="ips9e-ch08-untab-4" data-layout-align="" data-layout-width="" data-layout-border="" data-mmsrc="" data-attr="50"><table><tbody>
+<tr class="tborder">
+<th data-block_type="EXP-TB1-COLHD" align="left">Population</th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>n</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><em>X</em></th>
+<th data-block_type="EXP-TB1-COLHD" align="center"><span data-math="math_144"></span></th>
+</tr>
+<tr class="tborder">
+<td data-block_type="EXP-TB1-TXT" align="left">1 (aspirin)</td>
+<td data-block_type="EXP-TB1-TXT" align="center">411</td>
+<td data-block_type="EXP-TB1-TXT" align="center">45</td>
+<td data-block_type="EXP-TB1-TXT" align="center">0.1095</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="left">2 (placebo)</td>
+<td data-block_type="EXP-TB1-TXT" align="center">411</td>
+<td data-block_type="EXP-TB1-TXT" align="center">73</td>
+<td data-block_type="EXP-TB1-TXT" align="center">0.1776</td>
+</tr>
+<tr class="bborder">
+<td data-block_type="EXP-TB1-TXT" align="left">Total</td>
+<td data-block_type="EXP-TB1-TXT" align="center">822</td>
+<td data-block_type="EXP-TB1-TXT" align="center">118</td>
+<td data-block_type="EXP-TB1-TXT" align="center">0.1436</td>
+</tr>
+</tbody></table></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch08-p0570"><p>The relative risk is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch08-p0571"><p><span data-math="math_145"></span></p></div>
+<div data-block_type="EXP-TXT" id="ips9e-ch08-p0572"><p>Software gives the 95% confidence interval as 0.4364 to 0.8707. Taking aspirin has reduced the occurrence of major events to 62% of what it is for patients taking the placebo. The 95% confidence interval is 44% to 87%.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch08-p0573"><p>Note that the confidence interval is not symmetric about the estimate. Relative risk is one of many situations where this occurs.</p></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch8.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('5759b9d7757a2e0d15000000');
+});
+    //-->
+</script>
+</body>
+</html>
+

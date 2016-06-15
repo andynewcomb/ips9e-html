@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>ips9e_ch6</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ips9e_ch6.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="6">
+    <div data-type="section" data-block_type="h1" id="ips9e-ch06-sec1-04" level="1" data-print_page="391">
+<h2 class="section-title">
+<span data-type="number">6.4</span> <span data-type="title" data-title-for="ips9e-ch06-sec1-04">6.4 Power and Inference as a Decision
+</span>
+</h2>
+
+<div data-type="box" data-block_type="SP" id="ips9e-ch06-box-069"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-069"></h3>
+<div data-block_type="SP-TXT-ni" id="ips9e-ch06-p-735"><p>When you complete this section, you will be able to:</p></div>
+<ul data-block_type="bluebullet" id="ips9e-ch06-list-059">
+<li><div data-block_type="SP-BL-first" id="ips9e-ch06-p-736"><p><span data-block_type="maker">•</span> Define what is meant by the power of a test.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch06-p-737"><p><span data-block_type="maker">•</span> Determine the power of a test to detect an alternative for a given sample size <em>n</em>.</p></div></li>
+<li><div data-block_type="SP-BL-mid" id="ips9e-ch06-p-738"><p><span data-block_type="maker">•</span> Describe the two types of possible errors when performing a test that focuses on deciding between two hypotheses.</p></div></li>
+<li><div data-block_type="SP-BL-last" id="ips9e-ch06-p-739"><p><span data-block_type="maker">•</span> Relate the two errors to the significance level and power of the test.</p></div></li>
+</ul>
+</div></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-740"><p>Although we prefer to use <em>P</em>-values rather than the reject-or-not view of the level <em>α</em> significance test, the latter view is very important for planning studies and for understanding statistical decision theory. We will discuss these two topics in this section.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-741"><p><span data-block_type="h2">Power</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-742"><p>Level <em>α</em> significance tests are closely related to confidence intervals—in fact, we saw that a two-sided test can be carried out directly from a confidence interval (pages 353–354). The significance level, like the confidence level, says how reliable the method is in repeated use. If we use 5% significance tests repeatedly when <em>H</em><sub>0</sub> is, in fact, true, we will be wrong (the test will reject <em>H</em><sub>0</sub>) 5% of the time and right (the test will fail to reject <em>H</em><sub>0</sub>) 95% of the time.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-743"><p>The ability of a test to detect that <em>H</em><sub>0</sub> is false is measured by the probability that the test will reject <em>H</em><sub>0</sub> when an alternative is true. The higher this probability is, the more sensitive the test is.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_392"><p>392</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch06-box-070"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-070"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch06-p-744"><p>POWER</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch06-p-745"><p>The probability that a level <em>α</em> significance test will reject <em>H</em><sub>0</sub> when a particular alternative value of the parameter is true is called the <strong>power</strong> of the test to detect that alternative.</p></div>
+</div></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_29.html" id="ips9e-ch06-box-071"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-071"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-746"><p>EXAMPLE 6.29</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-747"><p><span data-block_type="EXP-T-ri">The power of a TBBMC significance test.</span> Can a six-month exercise program increase the total body bone mineral content (TBBMC) of young women? A team of researchers is planning a study to examine this question. Based on the results of a previous study, they are willing to assume that <em>σ</em> = 2 for the percent change in TBBMC over the six-month period. They also believe that a change in TBBMC of 1% is important, so they would like to have a reasonable chance of detecting a change this large or larger. Is 25 subjects a large enough sample for this project?</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-748"><p>We will answer this question by calculating the power of the significance test that will be used to evaluate the data to be collected. The calculation consists of three steps:</p></div>
+<ol data-block_type="numbered" id="ips9e-ch06-list-060">
+<li><div data-block_type="NLF" id="ips9e-ch06-p-749"><p><span data-block_type="maker">1.</span> State <em>H</em><sub>0</sub>, <em>H<sub>a</sub></em> (the particular alternative we want to detect), and the significance level <em>α</em>.</p></div></li>
+<li><div data-block_type="NLM" id="ips9e-ch06-p-750"><p><span data-block_type="maker">2.</span> Find the values of <span data-math="math_128"></span> that will lead us to reject <em>H</em><sub>0</sub>.</p></div></li>
+<li><div data-block_type="NLL" id="ips9e-ch06-p-751"><p><span data-block_type="maker">3.</span> Calculate the probability of observing these values of <span data-math="math_129"></span> when the alternative is true.</p></div></li>
+</ol>
+<div data-block_type="SLF" id="ips9e-ch06-p-752"><p><strong>Step 1.</strong> The null hypothesis is that the exercise program has no effect on TBBMC. In other words, the mean percent change is zero. The alternative is that exercise is beneficial; that is, the mean change is positive. Formally, we have</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-753"><p><em>H</em><sub>0</sub>: <em>μ</em> = 0</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-754"><p><em>H<sub>a</sub></em>: <em>μ</em> &gt; 0</p></div>
+<div data-block_type="SLF" id="ips9e-ch06-p-755"><p>The alternative of interest is <em>μ</em> = 1% increase in TBBMC. A 5% test of significance will be used.</p></div>
+<div data-block_type="SL" id="ips9e-ch06-p-756"><p><strong>Step 2.</strong> The <em>z</em> test rejects <em>H</em><sub>0</sub> at the <em>α</em> = 0.05 level whenever</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-757"><p><span data-math="math_130"></span></p></div>
+<div data-block_type="SLF" id="ips9e-ch06-p-758"><p>Be sure you understand why we use 1.645. Rewrite this in terms of <span data-math="math_131"></span>:</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-759"><p><span data-math="math_132"></span></p></div>
+<div data-block_type="SLL" id="ips9e-ch06-p-760"><p>Because the significance level is <em>α</em> = 0.05, this event has probability 0.05 of occurring <em>when the population mean μ is 0.</em></p></div>
+<div data-block_type="SL" id="ips9e-ch06-p-761"><p><strong>Step 3.</strong> The power to detect the alternative <em>μ</em> = 1% is the probability that <em>H</em><sub>0</sub> will be rejected <em>when in fact μ</em> = <em>1%.</em> We calculate this probability by standardizing <span data-math="math_133"></span>, using the value <em>μ</em> = 1, the population standard deviation <em>σ</em> = 2, and the sample size <em>n</em> = 25. The power is</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_393"><p>393</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-762"><p><span data-math="math_135"></span></p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-763"><p>= <em>P</em>(<em>Z</em> ≥ −0.855) = 0.80</p></div>
+  <div data-type="figure" data-caption-compass="SW" data-filename="figure_6_16.html" data-figure-id="ips9e-ch06-fig-016" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_16.jpg" data-figure-id="ips9e-ch06-fig-016" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.16: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 6.16</span> <span data-block_type="FG-CAP">The sampling distributions of <span data-math="math_134"></span> when <em>μ</em> = 0 and when <em>μ</em> = 1, <span data-type="link" data-href="example_6_29.html">Example 6.29</span>. The power is the probability that the test rejects <em>H</em><sub>0</sub> when the alternative is true.</span></span>
+</div>
+</div>
+
+
+<div data-block_type="TXT" id="ips9e-ch06-p-764"><p><span data-type="link" data-href="figure_6_16.html">Figure 6.16</span> illustrates the power with the sampling distribution of <span data-math="math_136"></span> when <em>μ</em> = 1. This significance test rejects the null hypothesis that exercise has no effect on TBBMC 80% of the time if the true effect of exercise is a 1% increase in TBBMC. If the true effect of exercise is a greater percent increase, the test will have greater power; it will reject with a higher probability.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-765"><p>Here is another example of a power calculation, this time for a two-sided <em>z</em> test.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_30.html" id="ips9e-ch06-box-072"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-072"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-766"><p>EXAMPLE 6.30</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-767"><p><span data-block_type="EXP-T-ri">Power of the lead concentration test.</span> <span data-type="link" data-href="example_6_17.html">Example 6.17</span> (page 375) presented a test of</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-768"><p><em>H</em><sub>0</sub>: <em>μ</em> = 15.00</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-769"><p><em>H<sub>a</sub></em>: <em>μ</em> ≠ 15.00</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-770"><p>at the 1% level of significance. What is the power of this test against the specific alternative <em>μ</em> = 15.50?</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-771"><p>The test rejects <em>H</em><sub>0</sub> when |<em>z</em>| ≥ 2.576. The test statistic is</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-772"><p><span data-math="math_137"></span></p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_394"><p>394</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-773"><p>Some arithmetic shows that the test rejects when either of the following is true:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-774"><p><em>z</em> ≥ 2.576  (in other words, <span data-math="math_138"></span> ≥ 15.37)</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-775"><p><em>z</em> ≤ −2.576 (in other words, <span data-math="math_139"></span> ≤ 14.63)</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-776"><p>These are disjoint events, so the power is the sum of their probabilities, <em>computed assuming that the alternative μ</em> = <em>15.50 is true.</em> We find that</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-777"><p><span data-math="math_140"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-778"><p>= <em>P</em>(<em>Z</em> ≥ −0.90) = 0.8159</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-779"><p><span data-math="math_141"></span></p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-780"><p>= <em>P</em>(<em>Z</em> ≤ −6.03) ≐ 0</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-781"><p><span data-type="link" data-href="figure_6_17.html">Figure 6.17</span> illustrates this calculation. A power of about 0.82, we are quite confident that the test will reject <em>H</em><sub>0</sub> when this alternative is true.</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_6_17.html" data-figure-id="ips9e-ch06-fig-017" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_17.jpg" data-figure-id="ips9e-ch06-fig-017" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.17: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 6.17</span> <span data-block_type="FG-CAP">The power, <span data-type="link" data-href="example_6_30.html">Example 6.30</span>. Unlike <span data-type="link" data-href="figure_6_16.html">Figure 6.16</span>, only the sampling distribution under the alternative is shown.</span></span>
+</div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-782"><p>High power is desirable. Along with 95% confidence intervals and 5% significance tests, 80% power is becoming a standard. Many U.S. government agencies that provide research funds require that the sample size for the funded studies be sufficient to detect important results 80% of the time using a 5% test of significance.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_31.html" id="ips9e-ch06-box-073"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-073"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-783"><p>EXAMPLE 6.31</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-784"><p><span data-block_type="EXP-T-ri">Constructing a power curve.</span> <span data-type="link" data-href="example_6_30.html">Example 6.30</span> considered one specific alternative, <em>μ</em> = 15.50. Often, it is helpful to consider the power for a range of alternatives. Fortunately, most statistical software saves us from having to do these calculations manually. <span data-type="link" data-href="figure_6_18.html">Figure 6.18</span> shows Minitab output for the power over the range 15.00 ppm to 15.80 ppm. The power calculation of <span data-type="link" data-href="example_6_30.html">Example 6.30</span> is represented by a dot on the curve at a difference of 15.50 − 15.00 = 0.50. This curve is very informative. We see that with a sample size of three, the power is greater than 80% only for differences larger than about 0.48. If it is important to detect differences less than this, the Deely Laboratory needs to consider ways to increase the power.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_395"><p>395</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_6_18.html" data-figure-id="ips9e-ch06-fig-018" data-block_type="FIGURE" data-layout-align="center" data-layout-width="large" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_18.jpg" data-figure-id="ips9e-ch06-fig-018" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.18: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 6.18</span> <span data-block_type="FG-CAP">Minitab output (a power curve) for the one-sample power calculation, <span data-type="link" data-href="example_6_31.html">Example 6.31</span>.</span></span>
+</div>
+</div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-785"><p><span data-block_type="h2">Increasing the power</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-786"><p>Suppose that you have performed a power calculation and found that the power is too small. What can you do to increase it? Here are four ways. Note the similarity between these and the choices to reduce the margin of error (<span data-type="link" data-href="alias:page_352">page 352</span>).</p></div>
+<ul data-block_type="bullet" id="ips9e-ch06-list-061">
+<li><div data-block_type="BL-first" id="ips9e-ch06-p-787"><p><span data-block_type="maker">•</span> Increase <em>α</em>. A 5% test of significance will have a greater chance of rejecting the alternative than a 1% test because the strength of evidence required for rejection is less.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch06-p-788"><p><span data-block_type="maker">•</span> Consider a particular alternative that is farther away from <em>μ</em><sub>0</sub>. Values of <em>μ</em> that are in <em>H<sub>a</sub></em> but lie close to the hypothesized value <em>μ</em><sub>0</sub> are harder to detect (lower power) than values of <em>μ</em> that are far from <em>μ</em><sub>0</sub>.</p></div></li>
+<li><div data-block_type="BL" id="ips9e-ch06-p-789"><p><span data-block_type="maker">•</span> Increase the sample size. More data will provide more information about <span data-math="math_142"></span> so we have a better chance of distinguishing values of <em>μ</em>.</p></div></li>
+<li><div data-block_type="BL-last" id="ips9e-ch06-p-790"><p><span data-block_type="maker">•</span> Decrease <em>σ</em>. This has the same effect as increasing the sample size: more information about <em>μ</em>. Improving the measurement process and restricting attention to a subpopulation are possible ways to decrease <em>σ</em>.</p></div></li>
+</ul>
+<div data-block_type="TXT" id="ips9e-ch06-p-791"><p>Power calculations are important in planning studies. Using a significance test with low power makes it unlikely that you will find a significant effect even if the truth is far from the null hypothesis. A null hypothesis that is, in fact, false can become widely believed if repeated attempts to find evidence against it fail because of low power. The following example illustrates this point.</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_396"><p>396</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_32.html" id="ips9e-ch06-box-074"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-074"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-792"><p>EXAMPLE 6.32</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-793"><p><span data-block_type="EXP-T-ri">Are stock markets efficient?</span> The “efficient market hypothesis” for the time series of stock prices says that future stock prices (when adjusted for inflation) show only random variation. No information available now will help us predict stock prices in the future because the efficient working of the market has already incorporated all available information in the present price. Many studies have tested the claim that one or another kind of information is helpful. In these studies, the efficient market hypothesis is <em>H</em><sub>0</sub>, and the claim that prediction is possible is <em>H<sub>a</sub></em>. Almost all the studies have failed to find good evidence against <em>H</em><sub>0</sub>. As a result, the efficient market hypothesis is quite popular. But an examination of the significance tests employed finds that the power is generally low. Failure to reject <em>H</em><sub>0</sub> when using tests of low power is not evidence that <em>H</em><sub>0</sub> is true. As one expert says, “The widespread impression that there is strong evidence for market efficiency may be due just to a lack of appreciation of the low power of many statistical tests.”<span data-type="termref" data-term="fn_ch6_fn30"><sup>30</sup></span></p></div>
+</div></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-794"><p><span data-block_type="h2">Inference as decision</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-795"><p>We have presented tests of significance as methods for assessing the strength of evidence against the null hypothesis. This assessment is made by the <em>P</em>-value, which is a probability computed under the assumption that <em>H</em><sub>0</sub> is true. The alternative hypothesis (the statement we seek evidence for) enters the test only to help us see what outcomes count against the null hypothesis.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-796"><p>There is another way to think about these issues. Sometimes, we are really concerned about making a decision or choosing an action based on our evaluation of the data. <span data-type="termref" data-term="Acceptance sampling"><strong>Acceptance sampling</strong></span><span data-block_type="MN-GL-term">acceptance sampling</span> is one such circumstance. A producer of bearings and a skateboard manufacturer agree that each carload lot of bearings shall meet certain quality standards. When a carload arrives, the manufacturer chooses a sample of bearings to be inspected. On the basis of the sample outcome, the manufacturer will either accept or reject the carload. Let’s examine how the idea of inference as a decision changes the reasoning used in tests of significance.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-797"><p><span data-block_type="h2">Two types of error</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-798"><p>Tests of significance concentrate on <em>H</em><sub>0</sub>, the null hypothesis. If a decision is called for, however, there is no reason to single out <em>H</em><sub>0</sub>. There are simply two hypotheses, and we must accept one and reject the other. It is convenient to call the two hypotheses <em>H</em><sub>0</sub> and <em>H<sub>a</sub></em>, but <em>H</em><sub>0</sub> no longer has the special status (the statement we try to find evidence against) that it had in tests of significance. In the acceptance sampling problem, we must decide between</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-799"><p><em>H</em><sub>0</sub>: the lot of bearings meets standards</p></div>
+<div data-block_type="EQ" id="ips9e-ch06-p-800"><p><em>H<sub>a</sub></em>: the lot does not meet standards</p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-801"><p>on the basis of a sample of bearings.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-802"><p>We hope that our decision will be correct, but sometimes it will be wrong. There are two types of incorrect decisions. We can accept a bad lot of bearings, or we can reject a good lot. Accepting a bad lot injures the consumer, while rejecting a good lot hurts the producer. To help distinguish these two types of error, we give them specific names.</p></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_397"><p>397</p></div>
+<div data-type="box" data-block_type="sidebyside" id="idp5222688"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp5222688"></h3>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_6_19.html" data-figure-id="ips9e-ch06-fig-019" data-block_type="FIGURE" data-layout-align="left" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_19.jpg" data-figure-id="ips9e-ch06-fig-019" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.19: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 6.19</span> <span data-block_type="FG-CAP">The two types of error in testing hypotheses.</span></span>
+</div>
+</div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_6_20.html" data-figure-id="ips9e-ch06-fig-020" data-block_type="FIGURE" data-layout-align="right" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_20.jpg" data-figure-id="ips9e-ch06-fig-020" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.20: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 6.20</span> <span data-block_type="FG-CAP">The two types of error in the acceptance sampling setting.</span></span>
+</div>
+</div>
+</div></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch06-box-075"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-075"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch06-p-803"><p>TYPE I AND TYPE II ERRORS</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch06-p-804"><p>If we reject <em>H</em><sub>0</sub> (accept <em>H<sub>a</sub></em>) when in fact <em>H</em><sub>0</sub> is true, this is a <strong>Type I error</strong>. If we accept <em>H</em><sub>0</sub> (reject <em>H<sub>a</sub></em>) when in fact <em>H<sub>a</sub></em> is true, this is a <strong>Type II error</strong>.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-805"><p>The possibilities are summed up in <span data-type="link" data-href="figure_6_19.html">Figure 6.19</span>. If <em>H</em><sub>0</sub> is true, our decision either is correct (if we accept <em>H</em><sub>0</sub>) or is a Type I error. If <em>H<sub>a</sub></em> is true, our decision either is correct or is a Type II error. Only one error is possible at one time. <span data-type="link" data-href="figure_6_20.html">Figure 6.20</span> applies these ideas to the acceptance sampling example.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-806"><p><span data-block_type="h2">Error probabilities</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-807"><p>Any rule for making decisions is assessed in terms of the probabilities of the two types of error. This is in keeping with the idea that statistical inference is based on probability. We cannot (short of inspecting the whole lot) guarantee that good lots of bearings will never be rejected and bad lots never be accepted. But by random sampling and the laws of probability, we can say what the probabilities of both kinds of error are.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-808"><p>Significance tests with fixed level <em>α</em> give a rule for making decisions because the test either rejects <em>H</em><sub>0</sub> or fails to reject it. If we adopt the decision-making way of thought, failing to reject <em>H</em><sub>0</sub> means deciding that <em>H</em><sub>0</sub> is true. We can then describe the performance of a test by the probabilities of Type I and Type II errors.</p></div>
+<div data-type="box" data-block_type="EXP" data-filename="example_6_33.html" id="ips9e-ch06-box-076"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-076"></h3>
+<div data-block_type="EXP-N" id="ips9e-ch06-p-809"><p>EXAMPLE 6.33</p></div>
+<div data-block_type="EXP-TXT-first" id="ips9e-ch06-p-810"><p><span data-block_type="EXP-T-ri">Outer diameter of a skateboard bearing.</span> The mean outer diameter of a skateboard bearing is supposed to be 22.000 millimeters (mm). The outer diameters vary Normally with standard deviation <em>σ</em> = 0.010 mm. When a lot of the bearings arrives, the skateboard manufacturer takes an SRS of five bearings from the lot and measures their outer diameters. The manufacturer rejects the bearings if the sample mean diameter is significantly different from 22 mm at the 5% significance level.</p></div>
+<div data-type="figure" data-filename="17MOOREIPS-MSE_9e_P_06_04.html" data-figure-id="ips9e-ch06-unfig-005" data-block_type="UN-FIGURE" data-layout-align="left" data-layout-width="small" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_P_06_04.jpg" data-figure-id="ips9e-ch06-unfig-005" data-layout-width="small" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="asset_source"><span data-block_type="PHCR">Photo by The Photo Works</span></div>
+</div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-811"><p>This is a test of the hypotheses</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-812"><p><em>H</em><sub>0</sub>: <em>μ</em> = 22</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-813"><p><em>H<sub>a</sub></em>: <em>μ</em> ≠ 22</p></div>
+<div data-margin-content="left" data-block_type="page_start" id="ips9e_page_398"><p>398</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-814"><p>To carry out the test, the manufacturer computes the <em>z</em> statistic:</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-815"><p><span data-math="math_143"></span></p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-816"><p>and rejects <em>H</em><sub>0</sub> if</p></div>
+<div data-block_type="EXP-EQ" id="ips9e-ch06-p-817"><p><em>z</em> &lt; −1.96  or  <em>z</em> &gt; 1.96</p></div>
+<div data-block_type="EXP-TXT-ni" id="ips9e-ch06-p-818"><p>A Type I error is to reject <em>H</em><sub>0</sub> when in fact <em>μ</em> = 22.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-819"><p>What about Type II errors? Because there are many values of <em>μ</em> in <em>H<sub>a</sub></em>, we will concentrate on one value. The producer and the manufacturer agree that a lot of bearings with mean 0.015 mm away from the desired mean 22.000 should be rejected. So a particular Type II error is to accept <em>H</em><sub>0</sub> when in fact <em>μ</em> = 22.015.</p></div>
+<div data-block_type="EXP-last" id="ips9e-ch06-p-820"><p><span data-type="link" data-href="figure_6_21.html">Figure 6.21</span> shows how the two probabilities of error are obtained from the two sampling distributions of <span data-math="math_144"></span>, for <em>μ</em> = 22 and for <em>μ</em> = 22.015. When <em>μ</em> = 22, <em>H</em><sub>0</sub> is true and to reject <em>H</em><sub>0</sub> is a Type I error. When <em>μ</em> = 22.015, accepting <em>H</em><sub>0</sub> is a Type II error. We will now calculate these error probabilities.</p></div>
+<div data-type="figure" data-caption-compass="S" data-filename="figure_6_21.html" data-figure-id="ips9e-ch06-fig-021" data-block_type="FIGURE" data-layout-align="center" data-layout-width="medium" data-layout-border="false">
+
+<img id="" src="asset/ch6/17MOOREIPS-MSE_9e_fig_06_21.jpg" data-figure-id="ips9e-ch06-fig-021" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 6.21: </span><span data-type="caption"><span data-block_type="FG-N-ri">Figure 6.21</span> <span data-block_type="FG-CAP">The two error probabilities, <span data-type="link" data-href="example_6_33.html">Example 6.33</span>. The probability of a Type I error (yellow area) is the probability of rejecting <em>H</em><sub>0</sub>: <em>μ</em> = 22 when, in fact, <em>μ</em> = 22. The probability of a Type II error (blue area) is the probability of accepting <em>H</em><sub>0</sub> when, in fact, <em>μ</em> = 22.015.</span></span>
+</div>
+</div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-821"><p>The probability of a Type I error is the probability of rejecting <em>H</em><sub>0</sub> when it is really true. In <span data-type="link" data-href="example_6_33.html">Example 6.33</span>, this is the probability that |<em>z</em>| ≥ 1.96 when <em>μ</em> = 22. But this is exactly the significance level of the test. The critical value 1.96 was chosen to make this probability 0.05, so we do not have to compute it again. The definition of “significant at level 0.05” is that sample outcomes this extreme will occur with probability 0.05 when <em>H</em><sub>0</sub> is true.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch06-box-077"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-077"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch06-p-822"><p>SIGNIFICANCE AND TYPE I ERROR</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch06-p-823"><p>The significance level <em>α</em> of any fixed level test is the probability of a Type I error. That is, <em>α</em> is the probability that the test will reject the null hypothesis <em>H</em><sub>0</sub> when <em>H</em><sub>0</sub> is in fact true.</p></div>
+</div></div>
+<div data-margin-content="right" data-block_type="page_start" id="ips9e_page_399"><p>399</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-824"><p>The probability of a Type II error for the particular alternative <em>μ</em> = 22.015 in <span data-type="link" data-href="example_6_33.html">Example 6.33</span> is the probability that the test will fail to reject <em>H</em><sub>0</sub> when <em>μ</em> has this alternative value. The <em>power</em> of the test to detect the alternative <em>μ</em> = 22.015 is just the probability that the test <em>does</em> reject <em>H</em><sub>0</sub>. By following the method of <span data-type="link" data-href="example_6_30.html">Example 6.30</span>, we can calculate that the power is about 0.92. The probability of a Type II error is therefore 1 − 0.92, or 0.08.</p></div>
+<div data-type="box" data-block_type="BX1" id="ips9e-ch06-box-078"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="ips9e-ch06-box-078"></h3>
+<div data-block_type="BX1-T" id="ips9e-ch06-p-825"><p>POWER AND TYPE II ERROR</p></div>
+<div data-block_type="BX1-TXT-ni" id="ips9e-ch06-p-826"><p>The power of a fixed level test to detect a particular alternative is 1 minus the probability of a Type II error for that alternative.</p></div>
+</div></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-827"><p>The two types of error and their probabilities give another interpretation of the significance level and power of a test. The distinction between tests of significance and tests as rules for deciding between two hypotheses does not lie in the calculations <em>but in the reasoning that motivates the calculations.</em> In a test of significance, we focus on a single hypothesis (<em>H</em><sub>0</sub>) and a single probability (the <em>P</em>-value). The goal is to measure the strength of the sample evidence against <em>H</em><sub>0</sub>. Calculations of power are done to check the sensitivity of the test. If we cannot reject <em>H</em><sub>0</sub>, we conclude only that there is not sufficient evidence against <em>H</em><sub>0</sub>, not that <em>H</em><sub>0</sub> is actually true.</p></div>
+<div data-block_type="TXT" id="ips9e-ch06-p-828"><p>If the same inference problem is thought of as a decision problem, we focus on two hypotheses and give a rule for deciding between them based on the sample evidence. Therefore, we must focus equally on two probabilities, the probabilities of the two types of error. We must choose one hypothesis and cannot abstain on grounds of insufficient evidence.</p></div>
+<div data-block_type="level_2_title" id="ips9e-ch06-p-829"><p><span data-block_type="h2">The common practice of testing hypotheses</span></p></div>
+<div data-block_type="TXT-ni" id="ips9e-ch06-p-830"><p>Such a clear distinction between the two ways of thinking is helpful for understanding. In practice, the two approaches often merge. We continued to call one of the hypotheses in a decision problem <em>H</em><sub>0</sub>. The common practice of <em>testing hypotheses</em> mixes the reasoning of significance tests and decision rules as follows:</p></div>
+<ol data-block_type="numbered" id="ips9e-ch06-list-062">
+<li><div data-block_type="NLF" id="ips9e-ch06-p-831"><p><span data-block_type="maker">1.</span> State <em>H</em><sub>0</sub> and <em>H<sub>a</sub></em> just as in a test of significance.</p></div></li>
+<li><div data-block_type="NLM" id="ips9e-ch06-p-832"><p><span data-block_type="maker">2.</span> Think of the problem as a decision problem, so that the probabilities of Type I and Type II errors are relevant.</p></div></li>
+<li><div data-block_type="NLM" id="ips9e-ch06-p-833"><p><span data-block_type="maker">3.</span> Because of Step 1, Type I errors are more serious. So choose an <em>α</em> (significance level) and consider only tests with probability of a Type I error no greater than <em>α</em>.</p></div></li>
+<li><div data-block_type="NLL" id="ips9e-ch06-p-834"><p><span data-block_type="maker">4.</span> Among these tests, select one that makes the probability of a Type II error as small as possible (that is, power as large as possible). If this probability is too large, you will have to take a larger sample to reduce the chance of an error.</p></div></li>
+</ol>
+<div data-block_type="TXT" id="ips9e-ch06-p-835"><p>Testing hypotheses may seem to be a hybrid approach. It was, historically, the effective beginning of decision-oriented ideas in statistics. An impressive mathematical theory of hypothesis testing was developed between 1928 and 1938 by Jerzy Neyman and Egon Pearson. The decision-making approach came later (1940s). Because decision theory in its pure form leaves you with two error probabilities and no simple rule on how to balance them, it has been used less often than either tests of significance or tests of hypotheses. Decision ideas have been applied in testing problems mainly by way of the Neyman-Pearson hypothesis-testing theory. That theory asks you first to choose <em>α</em>, and the influence of Fisher has often led users of hypothesis testing comfortably back to <em>α</em> = 0.05 or <em>α</em> = 0.01. Fisher, who was exceedingly argumentative, violently attacked the Neyman-Pearson decision-oriented ideas, and the argument still continues.</p></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/ips9e.js"></script>
+<script type="text/javascript" src="js/ips9e_ch6.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('5745e10e757a2e4744000000');
+});
+    //-->
+</script>
+</body>
+</html>
+
