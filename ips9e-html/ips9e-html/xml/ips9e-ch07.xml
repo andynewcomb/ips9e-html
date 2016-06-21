@@ -28,7 +28,7 @@
 <list id="ips9e-ch07-list-002" type="unordered" block_type="bluebullet">
 <li id="ips9e-ch07-li-004"><p id="ips9e-ch07-p013" block_type="SP-BL-first"><phrase block_type="maker">&#8226;</phrase> Distinguish the standard deviation of the sample mean from the standard error of the sample mean.</p></li>
 <li id="ips9e-ch07-li-005"><p id="ips9e-ch07-p014" block_type="SP-BL-mid"><phrase block_type="maker">&#8226;</phrase> Describe a level <em>C</em> confidence interval for the population mean in terms of an estimate and its margin of error.</p></li>
-<li id="ips9e-ch07-li-006"><p id="ips9e-ch07-p015" block_type="SP-BL-mid"><phrase block_type="maker">&#8226;</phrase> Construct a level <em>C</em> confidence interval for <em>&#956;</em> from a simple random sample (SRS) size <em>n</em> from a large population.</p></li>
+<li id="ips9e-ch07-li-006"><p id="ips9e-ch07-p015" block_type="SP-BL-mid"><phrase block_type="maker">&#8226;</phrase> Construct a level <em>C</em> confidence interval for <em>&#956;</em> from a simple random sample (SRS) of size <em>n</em> from a large population.</p></li>
 <li id="ips9e-ch07-li-007"><p id="ips9e-ch07-p016" block_type="SP-BL-mid"><phrase block_type="maker">&#8226;</phrase> Perform a one-sample <em>t</em> significance test and summarize the results.</p></li>
 <li id="ips9e-ch07-li-008"><p id="ips9e-ch07-p017" block_type="SP-BL-mid"><phrase block_type="maker">&#8226;</phrase> Identify when the matched pairs <em>t</em> procedures should be used instead of two-sample <em>t</em> procedures.</p></li>
 <li id="ips9e-ch07-li-009"><p id="ips9e-ch07-p018" block_type="SP-BL-last"><phrase block_type="maker">&#8226;</phrase> Explain when <em>t</em> procedures can be useful for non-Normal data.</p></li>
@@ -50,7 +50,7 @@
 <p id="ips9e_page_409" block_type="page_start" data-margin-content="right">409</p>
 <p id="ips9e-ch07-p030" block_type="TXT">In the previous chapter, the standardized sample mean, or one-sample <em>z</em> statistic,</p>
 <p id="ips9e-ch07-p031" block_type="EQ"><phrase data-math="math_30"></phrase></p>
-<p id="ips9e-ch07-p032" block_type="TXT-ni">is the basis for inference about <phrase data-math="math_31"></phrase> when <phrase data-math="math_32"></phrase> is known. This statistic has the standard Normal distribution <em>N</em>(0, 1). However, when we substitute the standard error <phrase data-math="math_33"></phrase> for the standard deviation of <phrase data-math="math_34"></phrase>, the statistic does <em>not</em> have a Normal distribution. It has a distribution that is new to us, called a t <em>distribution.</em></p>
+<p id="ips9e-ch07-p032" block_type="TXT-ni">is the basis for inference about <phrase data-math="math_31"></phrase> when <phrase data-math="math_32"></phrase> is known. This statistic has the standard Normal distribution <em>N</em>(0, 1). However, when we substitute the standard error <phrase data-math="math_33"></phrase> for the standard deviation of <phrase data-math="math_34"></phrase>, the statistic does <em>not</em> have a Normal distribution. It has a distribution that is new to us, called a <em>t distribution.</em></p>
 <box id="ips9e-ch07-box-5" numbered="false" block_type="BX1">
 <p id="ips9e-ch07-p033" block_type="BX1-T">THE <em>t</em> DISTRIBUTIONS</p>
 <p id="ips9e-ch07-p034" block_type="BX1-TXT-ni">Suppose that an SRS of size <em>n</em> is drawn from an <em>N</em>(<em>&#956;</em>, <em>&#963;</em>) population. Then the <strong>one-sample <em>t</em> statistic</strong></p>
@@ -326,16 +326,16 @@
 <figure id="ips9e-ch07-fig-008" block_type="FIGURE" data-caption-compass="SW" numbered="true" number="7.7" mmtype="image" mmsrc="" attr="" data-filename="figure_7_7.html">
 <layout align="center" width="large" border="false"/>
 <image asset-id="ips9e-ch07-img-12" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_07.jpg"/>
-<caption><phrase block_type="FG-N-ri">FIGURE 7.7</phrase> <phrase block_type="FG-CAP">Minitab and SPSS output, <link href="example_7_4.html">Example 7.4</link>.</phrase></caption>
+<caption><phrase block_type="FG-N-ri">FIGURE 7.7</phrase> <phrase block_type="FG-CAP">Minitab and SPSS outputs, <link href="example_7_4.html">Example 7.4</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p0141" block_type="TXT">The hypothesis test in <link href="example_7_4.html">Example 7.4</link> leads us to conclude that the mean return on the client&#8217;s account differs from that of the S&#38;P 500 stock index. Now let&#8217;s assess the return on the client&#8217;s account with a confidence interval.</p>
 <box id="ips9e-ch07-box-22" numbered="false" block_type="EXP" data-filename="example_7_5.html">
 <p id="ips9e-ch07-p0142" block_type="EXP-N">EXAMPLE 7.5</p>
-<p id="ips9e-ch07-p0143" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Estimating the mean monthly return.</phrase> The mean monthly return on the client&#8217;s portfolio was <phrase data-math="math_92"></phrase>&#37;, and the standard deviation was <phrase data-math="math_93"></phrase>&#37;. <link href="figure_7_7.html">Figure 7.7</link> gives Minitab output, and <link href="figure_7_8.html">Figure 7.8</link> gives JMP and Excel outputs for a 95&#37; confidence interval for the population mean <phrase data-math="math_94"></phrase>. Note that Excel gives the margin of error next to the label &#8220;Confidence Level(95.0&#37;)&#8221; rather than the actual confidence interval. We see that the 95&#37; confidence interval is (&#8722;3.04, 0.84), or (from Excel) &#8722;1.0997 &#177; 1.9420.</p>
+<p id="ips9e-ch07-p0143" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Estimating the mean monthly return.</phrase> The mean monthly return on the client&#8217;s portfolio was <phrase data-math="math_92"></phrase>&#37;, and the standard deviation was <phrase data-math="math_93"></phrase>&#37;. <link href="figure_7_7.html">Figure 7.7</link> gives Minitab output, and <link href="figure_7_8.html">Figure 7.8</link> gives Excel and JMP outputs for a 95&#37; confidence interval for the population mean <phrase data-math="math_94"></phrase>. Note that Excel gives the margin of error next to the label &#8220;Confidence Level(95.0&#37;)&#8221; rather than the actual confidence interval. We see that the 95&#37; confidence interval is (&#8722;3.04, 0.84), or (from Excel) &#8722;1.0997 &#177; 1.9420.</p>
 <figure id="ips9e-ch07-fig-009" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="7.8" mmtype="image" mmsrc="" attr="" data-filename="figure_7_8.html">
 <layout align="center" width="medium" border="false"/>
 <image asset-id="ips9e-ch07-img-13" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_08.jpg"/>
-<caption><phrase block_type="FG-N-ri">FIGURE 7.8</phrase> <phrase block_type="FG-CAP">Excel and JMP output, <link href="example_7_5.html">Example 7.5</link>.</phrase></caption>
+<caption><phrase block_type="FG-N-ri">FIGURE 7.8</phrase> <phrase block_type="FG-CAP">Excel and JMP outputs, <link href="example_7_5.html">Example 7.5</link>.</phrase></caption>
 </figure>
 <p id="ips9e-ch07-p0144" block_type="EXP-last">Because the S&#38;P 500 return, 0.95&#37;, falls outside this interval, we know that <phrase data-math="math_95"></phrase> differs significantly from 0.95&#37; at the <phrase data-math="math_96"></phrase> level. <link href="example_7_4.html">Example 7.4</link> gave the actual <em>P</em>-value as <phrase data-math="math_97"></phrase>.</p>
 </box>
@@ -648,7 +648,7 @@
 <p id="ips9e_page_425" block_type="page_start" data-margin-content="right">425</p>
 <box id="ips9e-ch07-box-37" numbered="false" block_type="EXP" data-filename="example_7_9.html">
 <p id="ips9e-ch07-p0241" block_type="EXP-N">EXAMPLE 7.9</p>
-<p id="ips9e-ch07-p0242" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">A bootstrap confidence interval.</phrase> Consider the eight time measurements (in hours per week) spent watching traditional television in <link href="example_7_1.html">Example 7.1</link> (page 411):</p>
+<p id="ips9e-ch07-p0242" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">A bootstrap confidence interval.</phrase> Consider the eight time measurements (in hours per week) spent watching traditional television in <link href="example_7_1.html">Example 7.1</link>:</p>
 <p id="ips9e-ch07-p0243" block_type="EXP-EQ">3.0&#8195;16.5&#8195;10.5&#8195;40.5&#8195;5.5&#8195;33.5&#8195;0.0&#8195;6.5</p>
 <box id="ips9e-ch07-box-38" block_type="rl_linkbox"><p id="ips9e-ch07-p0244" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="TVTIME"><phrase>TVTIME</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <p id="ips9e-ch07-p0245" block_type="EXP-TXT-ni">We defended the use of the one-sided <em>t</em> confidence interval for an earlier analysis. Let&#8217;s now compare those results with the confidence interval constructed using the bootstrap.</p>
@@ -919,7 +919,7 @@
 </list>
 </question>
 <question id="ips9e-ch07-quest-0030" block_type="exercise_7_30.html">
-<p id="ips9e-ch07-p0339" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.30 Using the Internet on a computer.</phrase> The Nielsen Company reported that U.S. residents aged 18 to 24 years spend an average of 32.5 hours per month using the Internet on a computer.<termref term="fn_ch7_fn13"><sup>13</sup></termref> You wonder if this it true for students at your large university because so many students use their smartphone to access the Internet. You collect an SRS of <phrase data-math="math_146"></phrase> students and obtain <phrase data-math="math_147"></phrase> hours with <phrase data-math="math_148"></phrase> hours.</p>
+<p id="ips9e-ch07-p0339" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.30 Using the Internet on a computer.</phrase> The Nielsen Company reported that U.S. residents aged 18 to 24 years spend an average of 32.5 hours per month using the Internet on a computer.<termref term="fn_ch7_fn13"><sup>13</sup></termref> You wonder if this it true for students at your large university because so many students use their smartphones to access the Internet. You collect an SRS of <phrase data-math="math_146"></phrase> students and obtain <phrase data-math="math_147"></phrase> hours with <phrase data-math="math_148"></phrase> hours.</p>
 <list id="ips9e-ch07-list-022" type="ordered" block_type="lower-alpha">
 <li id="ips9e-ch07-li-074"><p id="ips9e-ch07-p0340" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(a)</phrase> Report the 95&#37; confidence interval for <em>&#956;</em>, the average number of hours per month that students at your university use the Internet on a computer.</p></li>
 <li id="ips9e-ch07-li-075"><p id="ips9e-ch07-p0341" block_type="SR-X-QUE-NL-lvl2"><phrase block_type="maker">(b)</phrase> Use this interval to test whether the average time for students at your university is different from the average reported by Nielsen. Use the 5&#37; significance level. Summarize your results.</p></li>
@@ -2076,28 +2076,28 @@
 <box id="ips9e-ch07-box-71" numbered="false" block_type="EXR">
 <p id="ips9e-ch07-p0543" block_type="EXR-H">USE YOUR KNOWLEDGE</p>
 <question id="ips9e-ch07-quest-0050" block_type="exercise_7_50.html">
-<p id="ips9e-ch07-p0544" block_type="EXR-QUE-NL-first"><phrase block_type="EXR-QUE-N-ri">7.50</phrase> <phrase block_type="EXR-QUE-T-ri">A two-sample <em>t</em> significance test.</phrase> Refer to <link href="exercise_7_48.html">Exercise 7.48</link> (page 439). Perform a significance test at the 0.05 level to assess whether the average improvement is five points versus the alternative that it is greater than five points. Write a one-sentence conclusion.</p>
+<p id="ips9e-ch07-p0544" block_type="EXR-QUE-NL-first"><phrase block_type="EXR-QUE-N-ri">7.50</phrase> <phrase block_type="EXR-QUE-T-ri">A two-sample <em>t</em> significance test.</phrase> Refer to <link href="exercise_7_48.html">Exercise 7.48</link>. Perform a significance test at the 0.05 level to assess whether the average improvement is five points versus the alternative that it is greater than five points. Write a one-sentence conclusion.</p>
 </question>
 <p id="ips9e_page_441" block_type="page_start" data-margin-content="right">441</p>
 <question id="ips9e-ch07-quest-0051" block_type="exercise_7_51.html">
 <p id="ips9e-ch07-p0546" block_type="EXR-QUE-NL-last"><phrase block_type="EXR-QUE-N-ri">7.51</phrase> <phrase block_type="EXR-QUE-T-ri">Interpreting the confidence interval.</phrase> Refer to the previous exercise and <link href="exercise_7_48.html">Exercise 7.48</link>. Can the confidence interval in <link href="exercise_7_48.html">Exercise 7.48</link> be used to determine whether the significance test of the previous exercise rejects or does not reject the null hypothesis? Explain your answer.</p>
 </question>
 </box>
-<p id="ips9e-ch07-p0547" block_type="TXT">Most statistical software requires the raw data for analysis. A few, like Minitab, will also perform a <em>t</em> test on data in summarized form (such as the summary statistics table in <link href="example_7_12.html">Example 7.12</link>, pages 438&#8211;439). It is always preferable to work with the raw data because one can also examine the data through plots such as the back-to-back stemplot and those in <link href="figure_7_12.html">Figure 7.12</link>.</p>
+<p id="ips9e-ch07-p0547" block_type="TXT">Most statistical software requires the raw data for analysis. A few, like Minitab, will also perform a <em>t</em> test on data in summarized form (such as the summary statistics table in <link href="example_7_12.html">Example 7.12</link>, page 439). It is always preferable to work with the raw data because one can also examine the data through plots such as the back-to-back stemplot and those in <link href="figure_7_12.html">Figure 7.12</link>.</p>
 <box id="ips9e-ch07-box-72" numbered="false" block_type="EXP" data-filename="example_7_14.html">
 <p id="ips9e-ch07-p0548" block_type="EXP-N">EXAMPLE 7.14</p>
-<p id="ips9e-ch07-p0549" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Using software.</phrase> <link href="figure_7_13.html">Figure 7.13</link> shows JMP and Minitab <strong>output</strong> for the comparison of DRP scores. Both outputs include the 95&#37; confidence interval and the significance test that the means are equal. JMP reports the difference as the mean of treatment minus the mean of control, while Minitab reports the difference in the opposite order.</p>
+<p id="ips9e-ch07-p0549" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Using software.</phrase> <link href="figure_7_13.html">Figure 7.13</link> shows JMP and Minitab outputs for the comparison of DRP scores. Both outputs include the 95&#37; confidence interval and the significance test that the means are equal. JMP reports the difference as the mean of treatment minus the mean of control, while Minitab reports the difference in the opposite order.</p>
 <box id="ips9e-ch07-box-73" block_type="rl_linkbox"><p id="ips9e-ch07-p0550" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="DRP"><phrase>DRP</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 <figure id="ips9e-ch07-fig-016" block_type="FIGURE" data-caption-compass="S" numbered="true" number="7.13" mmtype="image" mmsrc="" attr="" data-filename="figure_7_13.html">
 <layout align="center" width="large" border="false"/>
 <image asset-id="ips9e-ch07-img-26" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_13.jpg"/>
-<caption><phrase block_type="FG-N-ri">FIGURE 7.13</phrase> <phrase block_type="FG-CAP">JMP and Minitab output, <link href="example_7_14.html">Example 7.14</link>.</phrase></caption>
+<caption><phrase block_type="FG-N-ri">FIGURE 7.13</phrase> <phrase block_type="FG-CAP">JMP and Minitab outputs, <link href="example_7_14.html">Example 7.14</link>.</phrase></caption>
 </figure>
 <p id="ips9e_page_442" block_type="page_start" data-margin-content="left">442</p>
 <p id="ips9e-ch07-p0552" block_type="EXP-last">Recall the confidence interval (treatment minus control) is</p>
 <p id="ips9e-ch07-p0553" block_type="EXP-EQ"><phrase data-math="math_183"></phrase></p>
 <p id="ips9e-ch07-p0554" block_type="EXP-EQ"> = 9.96 &#177; 4.31<em>t</em>*</p>
-<p id="ips9e-ch07-p0555" block_type="EXP-last">From the JMP output, we see that the degrees of freedom under the first approximation are 37.9. Using these degrees of freedom, the interval is (1.2, 18.7). This interval, as expected, is more narrow than the confidence interval in <link href="example_7_12.html">Example 7.12</link> (pages 438&#8211;439), which uses the conservative approach. The difference, however, is pretty small.</p>
+<p id="ips9e-ch07-p0555" block_type="EXP-last">From the JMP output, we see that the degrees of freedom under the first approximation are 37.9. Using these degrees of freedom, the interval is (1.2, 18.7). This interval, as expected, is more narrow than the confidence interval in <link href="example_7_12.html">Example 7.12</link> (page 439), which uses the conservative approach. The difference, however, is pretty small.</p>
 <p id="ips9e-ch07-p0556" block_type="EXP-last">For the significance test, the <em>P</em>-value for the one-sided significance test is <em>P</em>(<em>T</em> &#8805; 2.31). JMP gives the approximate <em>P</em>-value as 0.0132, again using 37.9 as the degrees of freedom.</p>
 <p id="ips9e-ch07-p0557" block_type="EXP-last">Minitab also uses the first degrees of freedom approximation but rounds the degrees of freedom down to the nearest integer (<phrase data-math="math_184"></phrase>). As a result, the margin of error is slightly wider than that of JMP and the <em>P</em>-value of the significance test is slightly larger.</p>
 </box>
@@ -2245,7 +2245,7 @@
 <figure id="ips9e-ch07-fig-018" block_type="FIGURE" data-caption-compass="NW" numbered="true" number="7.14" mmtype="image" mmsrc="" attr="" data-filename="figure_7_14.html">
 <layout align="center" width="large" border="false"/>
 <image asset-id="ips9e-ch07-img-30" alt="image" src="asset/ch7/17MOOREIPS-MSE_9e_fig_07_14.jpg"/>
-<caption><phrase block_type="FG-N-ri">FIGURE 7.14</phrase> <phrase block_type="FG-CAP">SAS, Excel, JMP, and SPSS output, <link href="example_7_16.html">Example 7.16</link>.</phrase></caption>
+<caption><phrase block_type="FG-N-ri">FIGURE 7.14</phrase> <phrase block_type="FG-CAP">SAS, Excel, JMP, and SPSS outputs, <link href="example_7_16.html">Example 7.16</link>.</phrase></caption>
 </figure>
 <p id="ips9e_page_446" block_type="page_start" data-margin-content="left">446</p>
 <p id="ips9e-ch07-p0599" block_type="TXT">There are two other things to notice in the outputs. First, SAS and SPSS only give results for the two-sided alternative. To get the <em>P</em>-value for the one-sided alternative, we must first check the mean difference to make sure it is in the proper direction. If it is, we divide the given <em>P</em>-value by 2. Also, SAS and SPSS report the results of <em>two t</em> procedures: a special procedure that assumes that the two population variances are equal and the general two-sample procedure that we have just studied. We don&#8217;t recommend the &#8220;equal-variances&#8221; procedures, but we describe them later, in the section on pooled two-sample <em>t</em> procedures.</p>
@@ -2256,7 +2256,7 @@
 <p id="ips9e-ch07-p0604" block_type="TXT-ni">This is the approximation used by most statistical software. It is quite accurate when both sample sizes <phrase data-math="math_191"></phrase> and <phrase data-math="math_192"></phrase> are 5 or larger.</p>
 <box id="ips9e-ch07-box-77" numbered="false" block_type="EXP" data-filename="example_7_17.html">
 <p id="ips9e-ch07-p0605" block_type="EXP-N">EXAMPLE 7.17</p>
-<p id="ips9e-ch07-p0606" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Degrees of freedom for directed reading assessment.</phrase> For the DRP study of <link href="example_7_11.html">Example 7.11</link> (page 437), the following table summarizes the data:</p>
+<p id="ips9e-ch07-p0606" block_type="EXP-TXT-first"><phrase block_type="EXP-T-ri">Degrees of freedom for directed reading assessment.</phrase> For the DRP study of <link href="example_7_11.html">Example 7.11</link>, the following table summarizes the data:</p>
 <table id="ips9e-ch07-untab-28" numbered="false" block_type="UN-TABLE" attr="40">
 <tbody>
 <tr class="tborder">
@@ -3238,7 +3238,7 @@
 <p id="ips9e-ch07-p0816" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.86 Revisiting dietary composition.</phrase> In <link href="exercise_7_71.html">Exercise 7.71</link> (page 457), the total amount of fats was analyzed using the two-sample <em>t</em> procedures that do not assume equal standard deviations. Compare the means using a significance test and find the 95&#37; confidence interval for the difference using the pooled methods. How do the results compare with those you obtained in <link href="exercise_7_71.html">Exercise 7.71</link>?</p>
 </question>
 <question id="ips9e-ch07-quest-0087" block_type="exercise_7_87.html">
-<p id="ips9e-ch07-p0817" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.87 Revisiting the size of trees.</phrase> Refer to the Wade Tract DBH data in <link href="exercise_7_79.html">Exercise 7.79</link> (page 459), where we compared a sample of trees from the northern half of the tract with a sample from the southern half. Because the standard deviations for the two samples are quite close, it is reasonable to analyze these data using the pooled procedures. Perform the significance test and find the 95&#37; confidence interval for the difference in means using these methods. Summarize your results and compare them with what you found in <link href="exercise_7_79.html">Exercise 7.79</link>.</p>
+<p id="ips9e-ch07-p0817" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.87 Revisiting the size of trees.</phrase> Refer to the Wade Tract DBH data in <link href="exercise_7_79.html">Exercise 7.79</link>, where we compared a sample of trees from the northern half of the tract with a sample from the southern half. Because the standard deviations for the two samples are quite close, it is reasonable to analyze these data using the pooled procedures. Perform the significance test and find the 95&#37; confidence interval for the difference in means using these methods. Summarize your results and compare them with what you found in <link href="exercise_7_79.html">Exercise 7.79</link>.</p>
 <box id="ips9e-ch07-box-94" block_type="rl_linkbox"><p id="ips9e-ch07-p0818" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="NSPINES"><phrase>NSPINES</phrase></p><p block_type="rl_crunchit" data-dataset="SR-X-QUE-NL-TB1-TXT"/></box>
 </question>
 <question id="ips9e-ch07-quest-0088" block_type="exercise_7_88.html">
@@ -3249,7 +3249,7 @@
 <box id="ips9e-ch07-box-95" block_type="rl_linkbox"><p id="ips9e-ch07-p0821" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="NSPINES"><phrase>NSPINES</phrase></p><p block_type="rl_crunchit" data-dataset="SR-X-QUE-NL-TB1-TXT"/></box>
 </question>
 <question id="ips9e-ch07-quest-0090" block_type="exercise_7_90.html">
-<p id="ips9e-ch07-p0822" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.90 Again computing the degrees of freedom.</phrase> Use the Wade Tract data in <link href="exercise_7_80.html">Exercise 7.80</link> (page 459) to calculate the software approximation to the degrees of freedom using the formula on <link href="alias:page_447">447</link>. Verify your calculation with software.</p>
+<p id="ips9e-ch07-p0822" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.90 Again computing the degrees of freedom.</phrase> Use the Wade Tract data in <link href="exercise_7_80.html">Exercise 7.80</link> to calculate the software approximation to the degrees of freedom using the formula on <link href="alias:page_447">447</link>. Verify your calculation with software.</p>
 <box id="ips9e-ch07-box-96" block_type="rl_linkbox"><p id="ips9e-ch07-p0823" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="EWPINES"><phrase>EWPINES</phrase></p><p block_type="rl_crunchit" data-dataset="SR-X-QUE-NL-TB1-TXT"/></box>
 </question>
 <question id="ips9e-ch07-quest-0091" block_type="exercise_7_91.html">
@@ -3262,7 +3262,7 @@
 </list>
 </question>
 <question id="ips9e-ch07-quest-0092" block_type="exercise_7_92.html">
-<p id="ips9e-ch07-p0829" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-35" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.92 Two-sample test of equivalence.</phrase> In <link href="ips9e-ch07-sec7-1">Section 7.1</link> (page 421), we were introduced to the one-sample test of equivalence. Using those same concepts, describe how to perform a two-sample test of equivalence.</p>
+<p id="ips9e-ch07-p0829" block_type="SR-X-QUE-NL"><image asset-id="ips9e-ch07-img-35" alt="image" src="asset/global_images/Gear_Icon_9e.jpg"/> <phrase block_type="SR-XH">7.92 Two-sample test of equivalence.</phrase> In <link href="ips9e-ch07-sec7-1">Section 7.1</link>, we were introduced to the one-sample test of equivalence (page 421). Using those same concepts, describe how to perform a two-sample test of equivalence.</p>
 </question>
 </section>
 <section id="ips9e-ch07-sec1-007" block_type="h1" chapter="ch7" number="7.3" numbered="true" level="1" print_page="460">
@@ -3358,7 +3358,7 @@
 <p id="ips9e-ch07-p0880" block_type="EQ"><phrase data-math="math_300"></phrase></p>
 <p id="ips9e-ch07-p0881" block_type="TXT-ni">A similar type of iterative search can be used to determine the sample sizes <em>n</em><sub>1</sub> and <em>n</em><sub>2</sub>, but now we need to guess both standard deviations and decide on an estimate for the degrees of freedom. We suggest taking the conservative approach and using the smaller of <em>n</em><sub>1</sub> &#8722; 1 and <em>n</em><sub>2</sub> &#8722; 1 for the degrees of freedom. Another approach is to consider the standard deviations and sample sizes are equal, so the margin of error is</p>
 <p id="ips9e-ch07-p0882" block_type="EQ"><phrase data-math="math_301"></phrase></p>
-<p id="ips9e-ch07-p0883" block_type="TXT-ni">and use degrees of freedom 2(<em>n</em> &#8722; 1). That is the approach most statistical software takes.</p>
+<p id="ips9e-ch07-p0883" block_type="TXT-ni">and use degrees of freedom 2(<em>n</em> &#8722; 1). That is the approach most statistical software take.</p>
 <p id="ips9e_page_464" block_type="page_start" data-margin-content="left">464</p>
 <box id="ips9e-ch07-box-102" numbered="false" block_type="EXP" data-filename="example_7_22.html">
 <p id="ips9e-ch07-p0885" block_type="EXP-N">EXAMPLE 7.22</p>
@@ -3420,7 +3420,7 @@
 <p id="ips9e-ch07-p0910" block_type="EXP-last">We wish to compute the power of the <em>t</em> test for</p>
 <p id="ips9e-ch07-p0911" block_type="EXP-EQ"><em>H</em><sub>0</sub>: <em>&#956;</em> = 18.5</p>
 <p id="ips9e-ch07-p0912" block_type="EXP-EQ"><em>H<sub>a</sub></em>: <em>&#956;</em> &#60; 18.5</p>
-<p id="ips9e-ch07-p0913" block_type="EXP-TXT-ni">against the alternative that <em>&#956;</em> = 18.5 &#8722; 4 = 14.5 when <em>n</em> = 50. This gives us most of the information we need to compute the power. The other important piece is a rough guess of the size of <em>&#963;</em>. In planning a large study, a pilot study is often run for this and other purposes. In this case, we can use the standard deviation from the earlier survey. Similar to <link href="example_7_21.html">Example 7.21</link> (page 462), we will round up and use <em>&#963;</em> = 17.5 and <em>s</em> = 17.5 in the approximate calculation.</p>
+<p id="ips9e-ch07-p0913" block_type="EXP-TXT-ni">against the alternative that <em>&#956;</em> = 18.5 &#8722; 4 = 14.5 when <em>n</em> = 50. This gives us most of the information we need to compute the power. The other important piece is a rough guess of the size of <em>&#963;</em>. In planning a large study, a pilot study is often run for this and other purposes. In this case, we can use the standard deviation from the earlier survey. Similar to <link href="example_7_21.html">Example 7.21</link>, we will round up and use <em>&#963;</em> = 17.5 and <em>s</em> = 17.5 in the approximate calculation.</p>
 <p id="ips9e-ch07-p0914" block_type="TXT"><strong>Step 1.</strong> The <em>t</em> test with 50 observations rejects <em>H</em><sub>0</sub> at the 5&#37; significance level if the <em>t</em> statistic</p>
 <p id="ips9e-ch07-p0915" block_type="EXP-EQ"><phrase data-math="math_305"></phrase></p>
 <p id="ips9e-ch07-p0916" block_type="EXP-SLF">is less than the lower 5&#37; point of <em>t</em>(49), which is &#8722;1.677. Taking <em>s</em> = 17.5, the event that the test rejects <em>H</em><sub>0</sub> is, therefore,</p>
@@ -3430,7 +3430,7 @@
 <p id="ips9e-ch07-p0922" block_type="EXP-EQ"><phrase data-math="math_309"></phrase></p>
 <p id="ips9e-ch07-p0923" block_type="EXP-EQ"> = <em>P</em>(<em>Z</em> &#x2264; &#x2212;0.061)</p>
 <p id="ips9e-ch07-p0924" block_type="EXP-EQ"> = 0.4761</p>
-<p id="ips9e-ch07-p0925" block_type="EXP-last">A mean value of 14.5 hours per week will produce significance at the 5&#37; level in only 47.6&#37; of all possible samples. <link href="figure_7_18.html">Figure 7.18</link> shows Minitab output for the exact power calculation. It is about 48&#37; and is represented by a dot on the power curve at a difference of &#8722;4. This curve is very informative. For many studies, 80&#37; in consider the standard value for desirable power. We see that with a sample size of 50, the power is greater than 80&#37; only for reductions larger than 6.25 hours per week. If we want to detect a reduction of only four hours, we definitely need to increase the sample size.</p>
+<p id="ips9e-ch07-p0925" block_type="EXP-last">A mean value of 14.5 hours per week will produce significance at the 5&#37; level in only 47.6&#37; of all possible samples. <link href="figure_7_18.html">Figure 7.18</link> shows Minitab output for the exact power calculation. It is about 48&#37; and is represented by a dot on the power curve at a difference of &#8722;4. This curve is very informative. For many studies, 80&#37; is considered the standard value for desirable power. We see that with a sample size of 50, the power is greater than 80&#37; only for reductions larger than 6.25 hours per week. If we want to detect a reduction of only four hours, we definitely need to increase the sample size.</p>
 </box>
 <figure id="ips9e-ch07-fig-022" block_type="FIGURE" data-caption-compass="S" numbered="true" number="7.18" mmtype="image" mmsrc="" attr="" data-filename="figure_7_18.html">
 <layout align="center" width="large" border="false"/>
@@ -3776,11 +3776,11 @@
 <box id="ips9e-ch07-box-119" block_type="rl_linkbox"><p id="ips9e-ch07-p01074" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="JOCKO"><phrase>JOCKO</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <question id="ips9e-ch07-quest-00116" block_type="exercise_7_116.html">
-<p id="ips9e-ch07-p01075" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.116 Sign test for the comparison of operators.</phrase> The differences in the TBBMC measures in <link href="exercise_7_45.html">Exercise 7.45</link> (pages 431&#8211;432) can also be analyzed using a sign test. Set up the appropriate null and alternative hypotheses, carry out the test, and summarize the results. How do these results compare with those that you obtained in <link href="exercise_7_45.html">Exercise 7.45</link>?</p>
+<p id="ips9e-ch07-p01075" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.116 Sign test for the comparison of operators.</phrase> The differences in the TBBMC measures in <link href="exercise_7_45.html">Exercise 7.45</link> (page 431) can also be analyzed using a sign test. Set up the appropriate null and alternative hypotheses, carry out the test, and summarize the results. How do these results compare with those that you obtained in <link href="exercise_7_45.html">Exercise 7.45</link>?</p>
 <box id="ips9e-ch07-box-120" block_type="rl_linkbox"><p id="ips9e-ch07-p01076" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="TBBMC"><phrase>TBBMC</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <question id="ips9e-ch07-quest-00117" block_type="exercise_7_117.html">
-<p id="ips9e-ch07-p01077" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.117 Sign test for fuel efficiency comparison.</phrase> Use the sign test to assess whether the computer calculates a higher mpg than the driver in <link href="exercise_7_41.html">Exercise 7.41</link> (pages 430&#8211;431). State the hypotheses, give the <em>P</em>-value using the binomial table (<link href="table_c.html">Table C</link>), and report your conclusion.</p>
+<p id="ips9e-ch07-p01077" block_type="SR-X-QUE-NL"><phrase block_type="SR-XH">7.117 Sign test for fuel efficiency comparison.</phrase> Use the sign test to assess whether the computer calculates a higher mpg than the driver in <link href="exercise_7_41.html">Exercise 7.41</link> (page 430). State the hypotheses, give the <em>P</em>-value using the binomial table (<link href="table_c.html">Table C</link>), and report your conclusion.</p>
 <box id="ips9e-ch07-box-121" block_type="rl_linkbox"><p id="ips9e-ch07-p01078" block_type="rl_dataset" data-url="asset/datasets/Data_Icon.jpg" data-file="MPGDIFF"><phrase>MPGDIFF</phrase></p><p block_type="rl_crunchit" data-dataset=""/></box>
 </question>
 <question id="ips9e-ch07-quest-00118" block_type="exercise_7_118.html">
